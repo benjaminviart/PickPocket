@@ -50,6 +50,7 @@ crossValidation=3
 scoreCutoff=0.9
 outputFile="PickPocketResults.tsv"
 outputModel="model.out"
+MYDIR="$(dirname "$(readlink -f "$0")")"
 # Parse the argument
 while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:L:m:M:n:o:p:q:r:s:t:u:vx:y:z:w:" OPTION
 do
@@ -121,8 +122,8 @@ fi
 
 echo "Training the model "
 # Training the model
-echo "./src/main.py train $inputFile $outputModel $modelType $crossValidation"
-./src/main.py train $inputFile $outputModel $modelType $crossValidation
+echo "$MYDIR/main.py train $inputFile $outputModel $modelType $crossValidation"
+${MYDIR}/main.py train $inputFile $outputModel $modelType $crossValidation
 
 echo -n "Is the model prediction good enough (y/n)? "
 read answer
@@ -134,8 +135,8 @@ else
 fi
 
 # Full pdb parsing and results sorting
-echo "./src/main.py test data/FullPDB_June_2019.tsv results_tmp $outputModel"
-./src/main.py test data/FullPDB_June_2019.tsv results_tmp $outputModel
+echo "${MYDIR}/main.py test data/FullPDB_June_2019.tsv results_tmp $outputModel"
+${MYDIR}/main.py test data/FullPDB_June_2019.tsv results_tmp $outputModel
 
 # Selecting the results
 
