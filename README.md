@@ -2,7 +2,7 @@ INTRODUCTION
 
 
 
-## Vidjil-algo
+## PickPocket
 
   - Stable releases can be downloaded from <git> 
   - Documentation : ./README.md
