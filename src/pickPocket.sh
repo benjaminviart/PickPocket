@@ -322,7 +322,6 @@ fi
 # A lot more things to catch !!! 
 
 
-
 ##########################################################
 # Now starting to work ! 
 ##########################################################
@@ -344,6 +343,19 @@ if [ "$verbose" = true ]  ; then
 	echo "Downloading the PDB using pdb_fetch" >> $logfile
 else 
 	echo "Downloading the PDB using pdb_fetch" >> $logfile
+fi
+
+# Checking the website of PDB
+
+server="209.99.64.43"
+ping -c 2  $server  > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    if [ "$verbose" = true ]  ; then
+        echo "Protein Databank site check ";
+    fi
+else
+    echo "Protein Databank not reachable ";
+    exit ;
 fi
 
 
