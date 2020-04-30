@@ -243,10 +243,11 @@ write.table( results, file = paste(argsL$folderOutput,"results_tmp.tsv",sep ="")
 #Check if file exist, if yes reads.
 
 if (argsL$negativeSet != "false"){
+
 	#Creating the training dataset file in case of negative use
 	negatif = read.csv(paste(argsL$folderOutput,argsL$negativeSummaryFileName,sep = ""), sep = " ", header = T)
 	negatif$correctPocket=rep(FALSE, nrow(negatif))
-	train = rbind(results[which(results$correctPocket == TRUE), c(1,2,3,31, 4:24)], negatif[,c(1,2,3,25,4:24)])
+	train = rbind(results[which(results$correctPocket == TRUE),c(1,2,3,31, 4:24)],results[which(results$correctPocket == FALSE),c(1,2,3,31, 4:24)], negatif[,c(1,2,3,25,4:24)])
 	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0")
 
 }else{
