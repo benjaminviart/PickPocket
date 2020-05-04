@@ -347,7 +347,6 @@ fi
 
 # Checking the website of PDB
 
-server="https://files.rcsb.org/"
 server_status=$(wget -S --spider https://files.rcsb.org 2>&1 |  awk '/HTTP\// {print $2}')
 
 if [ "${server_status}" -eq 200 ]; then
