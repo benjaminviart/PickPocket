@@ -39,5 +39,5 @@ COPY ./data /PickPocket/data
 
 RUN ln -s /PickPocket/src/pickPocket.sh /usr/bin/pickPocket
 RUN ln -s /PickPocket/src/neuralNetwork.sh /usr/bin/neuralNetwork
-  
+ 
 WORKDIR /PickPocket
