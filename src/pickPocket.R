@@ -51,7 +51,7 @@ if(is.null(argsL$cutoffDistance)) {
 argsL$cutoffDistance = as.numeric(argsL$cutoffDistance )
 
 if(argsL$verbose){
-	print(paste("Starting pickpocket R analysis for Pathway = ", argsL$folderOutput, " Pocket Summary File Name : ", argsL$pocketSummaryFileName ,
+	print(paste("A:Starting pickpocket R analysis for Pathway = ", argsL$folderOutput, " Pocket Summary File Name : ", argsL$pocketSummaryFileName ,
 				"   Cutoff distance = ", argsL$cutoffDistance , " verbose = ", argsL$verbose ,sep =""))
 }
 ##########################################################################################################################################################
@@ -249,6 +249,8 @@ if (argsL$negativeSet != "false"){
 	negatif$correctPocket=rep(FALSE, nrow(negatif))
 	train = rbind(results[which(results$correctPocket == TRUE),c(1,2,3,31, 4:24)],results[which(results$correctPocket == FALSE),c(1,2,3,31, 4:24)], negatif[,c(1,2,3,25,4:24)])
 	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0")
+	print( paste (" Enter here, results = ", nrow(results)," negatif =", nrow(negatif), " train =", nrow(train)))
+
 
 }else{
 	# Creating the training dataset file without negatives 	
