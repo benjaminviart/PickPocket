@@ -379,7 +379,7 @@ done < ${inputFile}
 if [ "$negativePDB" != false ]  ; then
 
 	if [ "$verbose" = true ]  ; then
-		echo "Downloading the Negative PDB using pdb_fetch"
+  		echo "Downloading the Negative PDB using pdb_fetch"
 		echo "Downloading the Negative PDB using pdb_fetch" >> $logfile
 	else 
 		echo "Downloading the Negative PDB using pdb_fetch" >> $logfile
