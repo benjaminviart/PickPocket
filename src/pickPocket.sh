@@ -347,9 +347,9 @@ fi
 
 # Checking the website of PDB
 
-server="209.99.64.43"
-ping -c 2  $server  > /dev/null 2>&1
-if [ $? -eq 0 ]; then
+server_status=$(wget -S --spider https://files.rcsb.org 2>&1 |  awk '/HTTP\// {print $2}')
+
+if [ "${server_status}" -eq 200 ]; then
     if [ "$verbose" = true ]  ; then
         echo "Protein Databank site check ";
     fi

@@ -29,6 +29,9 @@ RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 	make && \
 	make test && \
 	make install 
+RUN mkdir /stride  && cd /stride && wget http://webclu.bio.wzw.tum.de/stride/stride.tar.gz && \
+	 tar -zxf stride.tar.gz && make && mv ./stride /usr/bin/
+	
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
 COPY ./src /PickPocket/src
@@ -36,5 +39,5 @@ COPY ./data /PickPocket/data
 
 RUN ln -s /PickPocket/src/pickPocket.sh /usr/bin/pickPocket
 RUN ln -s /PickPocket/src/neuralNetwork.sh /usr/bin/neuralNetwork
-  
+ 
 WORKDIR /PickPocket
