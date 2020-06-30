@@ -429,6 +429,7 @@ if [ "$training" = false ]  ; then
     done < ${inputFile}
     echo "File other ligand created in the ouput folder !"
   fi
+fi
   ###################################################
   # For all pdb files in pdb folder
   files=$pdbFolder*.pdb
@@ -438,7 +439,7 @@ if [ "$training" = false ]  ; then
   done
 
       mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
-fi
+
 ###########################################################################################
 # FPOCKET 
 if [ "$verbose" = true ]  ; then
