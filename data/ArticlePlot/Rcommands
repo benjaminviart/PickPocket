@@ -1,0 +1,24 @@
+library(pROC)
+require(ggplot2)
+require(multiROC)
+require(devtools)
+
+
+real = read.csv("FA_MannuallyCurated_Train.tsv", sep = "\t" , header = T ) 
+str(real)
+prediction = read.csv("resultsFA.tsv", sep = "\t" )
+str(prediction)
+
+p  = data.frame(real$PDB,real$PocketNumber, real$correctPocket, prediction$prob_True)
+str(p)
+
+pdf( "FattyAcidPredictionRoc.pdf")
+roc(p$real.correctPocket, p$prediction.prob_True, plot = TRUE, legacy.axes=TRUE, percent=TRUE, xlab="False Positive Percentage", ylab="True Postive Percentage", col="#377eb8", lwd=4, print.auc=TRUE)
+dev.off()
+
+
+
+jpeg( "FattyAcidPredictionRoc.jpeg", 600 , 600)
+roc(p$real.correctPocket, p$prediction.prob_True, plot = TRUE, legacy.axes=TRUE, percent=TRUE, xlab="False Positive Percentage", ylab="True Postive Percentage", col="#377eb8", lwd=4, print.auc=TRUE)
+dev.off()
+
