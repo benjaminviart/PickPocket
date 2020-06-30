@@ -37,21 +37,21 @@ help() {
 where:
 	-h 	: show this help text
 	-i 	: Specify input file contain the list of desired pdb to train. 
-	-n	: Specific PDB set for negative pocket. If not specified, pocket from input structure that do not contain the ligands
+	-n	: Specific PDB set for negative pocket. Pocket from input structure that do not contain the ligands are also used as negatives.
 	-o 	: Ouput folder, will be stored all PDB downloaded, pocket files and R files. 
 	-l 	: Ligand codes file. File containing the 3 letter code for all the considered ligand. \n 
-			 A script needs to be made to do that.
 	-p  : PDB folder. All pdb will be download here if not already present
 	-D	: D argument of fpocket (  see man fpocket, default 2.5 )
 	-m	: m argument of fpocket  (  see man fpocket, default 4 )
 	-M	: M argument of fpocjet (see man fpocket, default 6 )
 	-r	: Cutoff distance between pocket and ligand to be considered -correct-, default 1A
-    -v 	: Verbose. Default False.
-	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix. 
+  -v 	: Verbose. Default False.
+	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix.
+	      Negative PDB are not used if traning is false.
 	-R	: Remove default False. If set to True, all temporary files from fpocket and other program will be deleted. 
-		  If training is set to false, remove will be set to true. 
+		    If training is set to false, remove will be set to true.
 	-L	: Default false. Check for other ligands. PDB may contain other ligand that will be automatically assume as negative pockets. 
-		  If set to true a file will be create storing the other ligands in the PDB for you to check and add if necessary. 
+		    If set to true a file will be create storing the other ligands in the PDB for you to check and add if necessary.
 
 "
     exit 1 ; 
@@ -270,13 +270,14 @@ fi
 ##########################################################
 # catching problems For Ligand file
 ##########################################################
-#check if file
-if [ ! -e ${ligandFile} ]
-then
-    echo "Error: The file ${ligandFile} does not exist" 1>&2
-    help
+#check if file / if training is true no ligand file is needed
+if [ "$training" = false ]  ; then
+  if [ ! -e ${ligandFile} ]
+  then
+      echo "Error: The file ${ligandFile} does not exist" 1>&2
+      help
+  fi
 fi
-
 #check if file
 if [ "$negativePDB" != false ]  ; then
 	if [ ! -e ${negativePDB} ]
@@ -284,43 +285,49 @@ if [ "$negativePDB" != false ]  ; then
 	    echo "Error: The file ${negativePDB} does not exist" 1>&2
 	    help
 	fi
-fi
 
-nbcol=$(awk 'BEGIN{FS="\t"}{print NF ; exit}' $ligandFile)
-#check the number of column (integer and >=1)
-if [[ ${nbcol} =~ ^-?[0-9]+$ ]]
-then
-    if [ ${nbcol} -lt 1 ]
-    then
-	echo "Error: The number of column \"${nbcol}\" is not >=1!" 1>&2
-	help
+
+  nbcol=$(awk 'BEGIN{FS="\t"}{print NF ; exit}' $ligandFile)
+  #check the number of column (integer and >=1)
+  if [[ ${nbcol} =~ ^-?[0-9]+$ ]]
+  then
+      if [ ${nbcol} -lt 1 ]
+      then
+    echo "Error: The number of column \"${nbcol}\" is not >=1!" 1>&2
+    help
+      fi
+  else
+      echo "Error: The number of column \"${nbcol}\" is not an integer!" 1>&2
+      help
+  fi
+
+  # checking for column consistency
+
+  colNumber=$(awk 'BEGIN{FS="\t"}{print NF}' ${ligandFile}  | sort -nu | wc -l )
+
+  if [ ${colNumber} -eq 1 ]
+  then
+    if [ "$verbose" = true ]  ; then
+      echo "Ligand file line count is uniform, proceeding..."
+      echo "Ligand file line count is uniform, proceeding..." >> $logfile
+    else
+      echo "Ligand file line count is uniform, proceeding..." >> $logfile
     fi
-else
-    echo "Error: The number of column \"${nbcol}\" is not an integer!" 1>&2
-    help
+  else
+     echo "Error: The number of column is not uniform throughout the ligand file!" 1>&2
+      help
+
+  fi
 fi
-
-# checking for column consistency 
-
-colNumber=$(awk 'BEGIN{FS="\t"}{print NF}' ${ligandFile}  | sort -nu | wc -l )
-
-if [ ${colNumber} -eq 1 ]
-then 
-	if [ "$verbose" = true ]  ; then
-		echo "Ligand file line count is uniform, proceeding..."
-		echo "Ligand file line count is uniform, proceeding..." >> $logfile
-	else 
-		echo "Ligand file line count is uniform, proceeding..." >> $logfile
-	fi
-else
-	 echo "Error: The number of column is not uniform throughout the ligand file!" 1>&2
-    help
-	
-fi
-
 
 # A lot more things to catch !!! 
-
+#
+# #
+# #
+# #
+# #
+# #
+# #
 
 ##########################################################
 # Now starting to work ! 
@@ -333,9 +340,7 @@ else
 	echo "Now starting to work !" >> $logfile
 fi
 
-
-
-# Make pfb list all small caps and remove .pdb incase 
+# Make pfb list all small caps and remove .pdb incase
 # todo
 
 if [ "$verbose" = true ]  ; then
@@ -406,32 +411,34 @@ else
 fi
 
 ################## Other ligands ##########################""
-if [ "$otherLigands" = true ]  ; then
-	touch ${outputFolder}negativeligands_tmp
-	# Take care of other ligands that might be similar 
-	while read line; do  
-		ligandNumber=$(grep "^HETNAM" ${pdbFolder}$line.pdb | wc -l)
-		if [ ${ligandNumber} > 1 ] 
-		then 
-			#echo "$line $ligandNumber"
-			# more than one ligand in file 
-			grep "^HETNAM" ${pdbFolder}$line.pdb | grep -v -f $ligandFile | grep -v -f ${outputFolder}negativeligands_tmp  | sed -r 's/^.{11}//' >> ${outputFolder}otherligands_tmp
-			
-		fi
+# if training is true no need to do that
+if [ "$training" = false ]  ; then
+  if [ "$otherLigands" = true ]  ; then
+    touch ${outputFolder}negativeligands_tmp
+    # Take care of other ligands that might be similar
+    while read line; do
+      ligandNumber=$(grep "^HETNAM" ${pdbFolder}$line.pdb | wc -l)
+      if [ ${ligandNumber} -gt 1 ]
+      then
+        #echo "$line $ligandNumber"
+        # more than one ligand in file
+        grep "^HETNAM" ${pdbFolder}$line.pdb | grep -v -f $ligandFile | grep -v -f ${outputFolder}negativeligands_tmp  | sed -r 's/^.{11}//' >> ${outputFolder}otherligands_tmp
 
-	done < ${inputFile} 
-	echo "File other ligand created in the ouput folder !"
+      fi
+
+    done < ${inputFile}
+    echo "File other ligand created in the ouput folder !"
+  fi
+  ###################################################
+  # For all pdb files in pdb folder
+  files=$pdbFolder*.pdb
+  for f in $files ; do
+    # Removed the HETATM from the start because fome F**** file look like this : HETATM11988 .......
+    grep -f $ligandFile $f | grep "^HETATM" |  sed -e "s/^HETATM//" | awk '{print $2 "_" $1 ";" $3 ";" $6 ";" $7 ";" $8}' > ${f}.ligand_tmp
+  done
+
+      mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
 fi
-###################################################
-# For all pdb files in pdb folder
-files=$pdbFolder*.pdb
-for f in $files ; do 
-	# Removed the HETATM from the start because fome F**** file look like this : HETATM11988 ....... 
-	grep -f $ligandFile $f | grep "^HETATM" |  sed -e "s/^HETATM//" | awk '{print $2 "_" $1 ";" $3 ";" $6 ";" $7 ";" $8}' > ${f}.ligand_tmp
-done
-
-    mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
-
 ###########################################################################################
 # FPOCKET 
 if [ "$verbose" = true ]  ; then
@@ -559,7 +566,7 @@ fi
 # For each PDB in the input file parse the output folder and gather all the atm.pdb files ( pocket  ) 
 while read line; do 
 	# Retrieve the atm files from the pocket folder
-	# Test if the folder contains at least on file !!!! 
+	# Test if the folder contains at least one file !!!!
 	if [ ! -f ${outputFolder}${line}_NoHET_out/pockets/pocket0_vert.pqr ]; then
 	    if [ "$verbose" = true ]  ; then
    		    echo "No pocket found for $line, passing through "
@@ -579,28 +586,28 @@ while read line; do
 			# Extract only the line that start with 'ATOM' 
 			grep "^ATOM" ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_atm.pdb > ${outputFolder}atmpdb_tmp
 			if [[ -s "${outputFolder}atmpdb_tmp" ]]; then
-                  # build a tmp file with the chain and number of residue from the pocket.
-                rm -f ${outputFolder}residue_tmp
-                touch ${outputFolder}residue_tmp
-                while read fileline; do
-                    chain=${fileline:21:1}
-                    position=${fileline:22:4}
-                    #echo "Chain=" $chain "   Position=" $position
-                    echo $chain";"$position >> ${outputFolder}residue_tmp
-                done < ${outputFolder}atmpdb_tmp
+            # build a tmp file with the chain and number of residue from the pocket.
+          rm -f ${outputFolder}residue_tmp
+          touch ${outputFolder}residue_tmp
+          while read fileline; do
+              chain=${fileline:21:1}
+              position=${fileline:22:4}
+              #echo "Chain=" $chain "   Position=" $position
+              echo $chain";"$position >> ${outputFolder}residue_tmp
+          done < ${outputFolder}atmpdb_tmp
 
-                cat ${outputFolder}residue_tmp | sort | uniq  | grep "^[A-Z0-9];*" > ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv
-                # make a file of the different portions of chain  ex A 1-12 \n B 24-34
-                # Check if file is empty before running script
-                if [[ -s "${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv" ]]; then
-                    Rscript $MYDIR/residueDomain.R --filepath=${outputFolder}${line}_NoHET_out/pockets/ --filename=pocket${pocketNum}_residues.csv
-                else
-                    echo " No line in pocket residue file for ${line}"
-                fi
+          cat ${outputFolder}residue_tmp | sort | uniq  | grep "^[A-Z0-9];*" > ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv
+          # make a file of the different portions of chain  ex A 1-12 \n B 24-34
+          # Check if file is empty before running script
+          if [[ -s "${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv" ]]; then
+              Rscript $MYDIR/residueDomain.R --filepath=${outputFolder}${line}_NoHET_out/pockets/ --filename=pocket${pocketNum}_residues.csv
+          else
+              echo " No line in pocket residue file for ${line}"
+          fi
 
-            else
+      else
                 echo "No atom in the file ${outputFolder}atmpdb_tmp"
-            fi
+      fi
 
 
 			# Cross match the line from stride file to ATOM selection. ( col 4 5 and 6 match 2 3 and 4 )			
@@ -752,8 +759,15 @@ fi
 
 if [ "$training" != true ]  ; then
 
-	echo "the results are in ${folderOutput}pocketSummary.csv"
-	echo "the results are in ${folderOutput}pocketSummary.csv"  >> $logfile
+
+  if [ "$verbose" = true ]  ; then
+    Rscript $MYDIR/reformatTrainingOutput.R --filepath=${outputFolder} --filename="pocketSummary.csv"
+  else
+    Rscript $MYDIR/reformatTrainingOutput.R --filepath=${outputFolder} --filename="pocketSummary.csv">> $logfile
+  fi
+
+	echo "the results are in ${outputFolder}testing.tsv"
+	echo "the results are in ${outputFolder}testing.tsv"  >> $logfile
     exit 0
 fi
 

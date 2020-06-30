@@ -93,6 +93,7 @@ re='^[0-9]+$'
 if ! [[ $crossValidation =~ $re ]] ; then
    echo "error: Cross validation is not a number" >&2; exit 1
 fi
+re='^[0-9]+([.][0-9]+)?$'
 if ! [[ $scoreCutoff =~ $re ]] ; then
    echo "error: Score cutoff is not a number" >&2; exit 1
 fi
