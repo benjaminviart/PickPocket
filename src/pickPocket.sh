@@ -38,12 +38,13 @@ where:
 	-h 	: show this help text
 	-i 	: Specify input file contain the list of desired pdb to train. 
 	-n	: Specific PDB set for negative pocket. Pocket from input structure that do not contain the ligands are also used as negatives.
-	-o 	: Ouput folder, will be stored all PDB downloaded, pocket files and R files. 
-	-l 	: Ligand codes file. File containing the 3 letter code for all the considered ligand. \n 
+	-o 	: Output folder, will be stored all PDB downloaded, pocket files and R files.
+	-l 	: Ligand codes file. File containing the 3 letter code for all the considered ligand.
+	      For a multiclass option a second column (tsv) can be added.  
 	-p  : PDB folder. All pdb will be download here if not already present
 	-D	: D argument of fpocket (  see man fpocket, default 2.5 )
 	-m	: m argument of fpocket  (  see man fpocket, default 4 )
-	-M	: M argument of fpocjet (see man fpocket, default 6 )
+	-M	: M argument of fpocket (  see man fpocket, default 6 )
 	-r	: Cutoff distance between pocket and ligand to be considered -correct-, default 1A
   -v 	: Verbose. Default False.
 	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix.
@@ -402,17 +403,18 @@ if [ "$negativePDB" != false ]  ; then
 fi 
 
 
-# Extract the ligand lines. select only Molecule 3letter codes and X,Y,Z
-if [ "$verbose" = true ]  ; then
-	echo "Extracting the ligand coordinates"
-	echo "Extracting the ligand coordinates"  >> $logfile
-else 
-	echo "Extracting the ligand coordinates"  >> $logfile
-fi
+# Extract the ligand lines. select only Molecule 3letter codes and X,Y,Z. Only done in training mode
+
+if [ "$training" = true ]  ; then
+  if [ "$verbose" = true ]  ; then
+    echo "Extracting the ligand coordinates"
+    echo "Extracting the ligand coordinates"  >> $logfile
+  else
+    echo "Extracting the ligand coordinates"  >> $logfile
+  fi
 
 ################## Other ligands ##########################""
 # if training is true no need to do that
-if [ "$training" = false ]  ; then
   if [ "$otherLigands" = true ]  ; then
     touch ${outputFolder}negativeligands_tmp
     # Take care of other ligands that might be similar
@@ -432,13 +434,18 @@ if [ "$training" = false ]  ; then
   ###################################################
   # For all pdb files in pdb folder
   files=$pdbFolder*.pdb
+  cp $ligandFile ${outputFolder}tmp/ligandFile
+  awk '{print $1}' $ligandFile > ${outputFolder}tmp/ligandCode
   for f in $files ; do
+     ######## HERE ONLY USE the first column !!! ################
+
     # Removed the HETATM from the start because fome F**** file look like this : HETATM11988 .......
-    grep -f $ligandFile $f | grep "^HETATM" |  sed -e "s/^HETATM//" | awk '{print $2 "_" $1 ";" $3 ";" $6 ";" $7 ";" $8}' > ${f}.ligand_tmp
+    grep -f ${outputFolder}tmp/ligandCode $f | grep "^HETATM" |  sed -e "s/^HETATM//" | awk '{print $2 "_" $1 ";" $3 ";" $6 ";" $7 ";" $8}' > ${f}.ligand_tmp
   done
 
-      mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
+  mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
 fi
+
 ###########################################################################################
 # FPOCKET 
 if [ "$verbose" = true ]  ; then
@@ -759,8 +766,12 @@ fi
 
 if [ "$training" != true ]  ; then
 
+  if [ "$negativePDB" != false ]  ; then
+    cat ${outputFolder}negativeSummary.csv >> ${outputFolder}pocketSummary.csv
+  fi
 
   if [ "$verbose" = true ]  ; then
+
     Rscript $MYDIR/reformatTrainingOutput.R --filepath=${outputFolder} --filename="pocketSummary.csv"
   else
     Rscript $MYDIR/reformatTrainingOutput.R --filepath=${outputFolder} --filename="pocketSummary.csv">> $logfile
@@ -778,10 +789,12 @@ if [ "$verbose" = true ]  ; then
 		echo "Rscript will launch now. Correct pocket will be computed"  >> $logfile
 fi
 
+
+
 if [ "$verbose" = true ]  ; then
-    echo "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv --verbose=$verbose"
+    echo "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose"
 else
-    echo "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv --verbose=$verbose" >> $logfile
+    echo "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose" >> $logfile
 fi
 
 Rscript $MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose 2>>$logfile

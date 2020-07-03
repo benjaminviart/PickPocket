@@ -47,7 +47,6 @@ if(is.null(argsL$cutoffDistance)) {
  	print("Cutoff Distance Argument is Null.  ")
 	q(save = "no", status = 1 )
 }
-
 argsL$cutoffDistance = as.numeric(argsL$cutoffDistance )
 
 if(argsL$verbose){
@@ -103,6 +102,34 @@ if(length(pdbList)<1) {
 	print("No PDB found in the summary file !  ")
 	q(save = "no" , status = 1 )
 }
+
+ligandCodeInputPath = paste(argsL$folderOutput,"tmp/ligandFile", sep  ="")
+if (file.exists(ligandCodeInputPath)){
+	# Testing if file is not empty
+	info = file.info(ligandCodeInputPath)
+	if(info$size < 1){
+		# The file is empty
+		if(argsL$verbose){
+			cat("\nNo line in the ligand file \n")
+		}
+	}else{
+		ligandCodeInput = read.csv(ligandCodeInputPath, sep = "\t", header = F )
+	}
+	# else for file exists.
+}else{
+	if(argsL$verbose){
+		cat(c("\nNo ligand file found for at filepath = ", ligandCodeInputPath))
+	}
+}
+
+# if the ligand input file contains more than one column, then the multiclass option is on
+argsL$multicol = FALSE
+if(ncol(ligandCodeInput) > 1 ){
+	argsL$multicol = TRUE
+	print("Multicolumn mode ON")
+	colnames(ligandCodeInput) = c("ligandResidueType", "ligandClass")
+}
+
 
 #Let's make a function that test 2 files. 
 #print(pdbList)
@@ -187,9 +214,10 @@ for (pdb in pdbList){
 
                     isgoodpocket = FALSE
                     if(is.na(distance$distance) ){distance$distance  = 1000}
-                    isgoodpocket = distance$distance <= argsL$cutoffDistance
-                    if(isgoodpocket){
-						if(argsL$verbose){cat( "* " )}
+                    	isgoodpocket = distance$distance <= argsL$cutoffDistance
+                    	if(isgoodpocket){
+							if(argsL$verbose){cat( "* " )
+						}
 					}
 
 					#print(distance$ligand[1])
@@ -237,25 +265,50 @@ correctPocket$correctBinary = rep(0, length(correctPocket$distance))
 correctPocket$correctBinary[which(correctPocket$distance <= argsL$cutoffDistance)] = 1 
 results = cbind(summary, correctPocket)
 
-write.table( results, file = paste(argsL$folderOutput,"results_tmp.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0")
+#write.table( results, file = paste(argsL$folderOutput,"results_tmp.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0")
 
 # write out the file for training
 #Check if file exist, if yes reads.
+
+
+# MULTICOL OPTION #
+if(argsL$multicol){
+  # adding the ligandClass column.
+	results=merge(results,ligandCodeInput,by="ligandResidueType")
+	# changing the ligandClass to 0 for negatives pockets
+	results$ligandClass[which(results$correctPocket == FALSE )] = 0
+
+}else{
+	# if the set is not multiclass it will just be 0 and 1 following the $correctPocket value
+	results$ligandClass = rep(1,nrow(results))
+	results$ligandClass[which(results$correctPocket == FALSE )] = 0
+}
+save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
+
+
+
+columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandResidueType","ligandClass","Pocket_Score","Drug_Score",
+			 "Number_of_V._Vertices","Mean_alpha.sphere_radius","Mean_alpha.sphere_SA","Mean_B.factor","Hydrophobicity_Score",
+			  "Polarity_Score","Volume_Score","Real_volume","Charge_Score","Local_hydrophobic_density_Score",
+			  "Number_of_apolar_alpha_sphere","Proportion_of_apolar_alpha_sphere","SASA","AlphaHelix","Coil","Strand",
+			  "Turn","Bridge","Helix310")
 
 if (argsL$negativeSet != "false"){
 
 	#Creating the training dataset file in case of negative use
 	negatif = read.csv(paste(argsL$folderOutput,argsL$negativeSummaryFileName,sep = ""), sep = " ", header = T)
 	negatif$correctPocket=rep(FALSE, nrow(negatif))
-	train = rbind(results[which(results$correctPocket == TRUE),c(1,2,3,31, 4:24)],results[which(results$correctPocket == FALSE),c(1,2,3,31, 4:24)], negatif[,c(1,2,3,25,4:24)])
-	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0")
-	print( paste (" Enter here, results = ", nrow(results)," negatif =", nrow(negatif), " train =", nrow(train)))
-
+	negatif$ligandResidueType=rep("NO",nrow(negatif))
+	negatif$ligandClass=rep(0,nrow(negatif))
+	train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave], negatif[,columntosave])
+	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0",quote =F)
+	print( paste ("Positive set =", nrow(results)," negatif set =", nrow(negatif), " Total trainning =", nrow(train)))
 
 }else{
+
 	# Creating the training dataset file without negatives 	
-	train = results[, c(1,2,3,31, 4:24)]
-	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0")
+	train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
+	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
 }
 
 save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
