@@ -53,7 +53,7 @@ file=read.csv(file=paste(argsL$filepath, argsL$filename, sep = ""), sep =" ", he
 #print(str(file))
 
 # write the line
-write.table(file, paste(argsL$filepath, "testing.tsv", sep = ""),  quote = F, row.names = F, sep = "\t" )
+write.table(file, paste(argsL$filepath, "testing.tsv", sep = ""),  sep = "\t",  row.names = F, dec=".", na = "0", quote =F )
 #print(output)
 
 #save.image()
