@@ -21,8 +21,9 @@ help() {
 
 where:
 	-h 	: show this help text
-	-p 	: path
-
+	-o	: OUTPUT folder complete path, end with /
+	-P  : PDB folder complte path, end with /
+  -p  : PDB id to treat, in capital letter without .pdb
 "
 
 
@@ -32,15 +33,21 @@ where:
 
 #################################
 # PARSIN ARGUMENTS
-while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:L:m:n:o:p:q:r:s:t:u:vx:y:z:w:" OPTION
+while getopts "a:b:c:d:e:f:g:hi:j:k:l:L:m:n:o:p:P:q:r:s:t:u:vx:y:z:w:" OPTION
 do
     case $OPTION in
 		h)
 			help
 			;;
-		p)
-			path=$OPTARG
+		o)
+			outputFolderPath=$OPTARG
 			;;
+	  p)
+	    pdbid=$OPTARG
+	    ;;
+	  P)
+	    pdbFolderPath=$OPTARG
+	    ;;
 		?)
 			help
             ;;
@@ -52,8 +59,6 @@ if [ $OPTIND -eq 1 ]; then help; fi
 
 
 
-folder=$(echo $path | awk -F "/" '{print $NF}')
-pathlessdot=$(echo $path | cut -c2-)
 
 
 script="./pocketViz.pml"
@@ -71,9 +76,9 @@ touch $script
 
 echo "from pymol import cmd,stored
 
-cd /home/benjamin/Documents/pickpocketpdb${pathlessdot}_NoHET_out/
-load ${folder}_NoHET.pml
-load /home/benjamin/Documents/pickpocketpdb${pathlessdot}.ent
+cd ${outputFolderPath}${pdbid}_NoHET_out/
+load  ${pdbid}_NoHET.pml
+load ${pdbFolderPath}${pdbid}.pdb
 
 util.cbc(selection='(all)',first_color=7,quiet=1,legacy=0,_self=cmd)
 
@@ -102,7 +107,7 @@ show cartoon
 hide lines
 
 select organic
-show sphere, sele
+show sticks, sele
 color red, sele
 " > $script
 

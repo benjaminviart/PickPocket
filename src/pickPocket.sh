@@ -321,6 +321,7 @@ if [ "$negativePDB" != false ]  ; then
   fi
 fi
 
+
 # A lot more things to catch !!! 
 #
 # #
@@ -441,7 +442,8 @@ if [ "$training" = true ]  ; then
      ######## HERE ONLY USE the first column !!! ################
 
     # Removed the HETATM from the start because fome F**** file look like this : HETATM11988 .......
-    grep -f ${outputFolder}tmp/ligandCode $f | grep "^HETATM" |  sed -e "s/^HETATM//" | awk '{print $2 "_" $1 ";" $3 ";" $6 ";" $7 ";" $8}' > ${f}.ligand_tmp
+    # Some F***** lines looks like this : HETATM 2069  C1  STE A1001      27.878  26.507   8.311  1.00 50.33           C
+    grep -f ${outputFolder}tmp/ligandCode $f | grep "^HETATM" | awk -F "!" '{print substr($0,14,3) "_" substr($0,23,4) ";" substr($0,18,3)";" substr($0,31,8)";" substr($0,39,8)";" substr($0,47,8)}' | tr -d ' ' > ${f}.ligand_tmp
   done
 
   mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
