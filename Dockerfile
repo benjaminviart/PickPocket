@@ -37,7 +37,10 @@ RUN ln -s /usr/bin/python3 /usr/bin/python
 COPY ./src /PickPocket/src
 COPY ./data /PickPocket/data
 
-RUN ln -s /PickPocket/src/pickPocket.sh /usr/bin/pickPocket
-RUN ln -s /PickPocket/src/neuralNetwork.sh /usr/bin/neuralNetwork
+RUN ln -s /PickPocket/src/pickPocket.sh /usr/bin/pickPocket && \
+	ln -s /PickPocket/src/neuralNetwork.sh /usr/bin/neuralNetwork
  
+
 WORKDIR /PickPocket
+
+ENTRYPOINT ["pickPocket"]

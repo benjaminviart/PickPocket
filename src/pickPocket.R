@@ -1,5 +1,7 @@
 #!/usr/bin/env Rscript
 
+#debug setwd("~/test/PickPockerBenchmark/PP_smaller/")
+
 # Collect arguments
 args <- commandArgs(TRUE)
  
@@ -24,6 +26,8 @@ if("--help" %in% args) {
  
   q(save="no", status = 1 )
 }
+
+#debug args=c("--folderOutput=./results/", "--pocketSummaryFileName=pocketSummary.csv", "--cutoffDistance=1", "--negativeSet=false", "--negativeSummaryFileName=negativeSummary.csv", "--verbose=true")
  
 ## Parse arguments (we expect the form --arg=value)
 parseArgs <- function(x) strsplit(sub("^--", "", x), "=")
@@ -142,8 +146,9 @@ if(ncol(ligandCodeInput) > 1 ){
 
 # data.frame that will store the results. later will be fused with the summary data.f
 correctPocket = data.frame( distance = rep(100, nrow(summary)), ligandResidueType = rep(NA,nrow(summary)), pocketPolcar = rep(NA,nrow(summary)), ligandResidueInfo = rep(NA,nrow(summary)), pocketSphereRadius = rep(0,nrow(summary)), correctPostion = rep(NA,nrow(summary)) )
-
+pdb="1aqu"
 for (pdb in pdbList){
+  
 	if(argsL$verbose){
 		cat(c("Treating ", pdb))
 	}
@@ -275,14 +280,18 @@ results = cbind(summary, correctPocket)
 if(argsL$multicol){
   # adding the ligandClass column.
 	results=merge(results,ligandCodeInput,by="ligandResidueType")
+	levels(results$ligandClass)=c(levels(results$ligandClass), "negative")
 	# changing the ligandClass to 0 for negatives pockets
-	results$ligandClass[which(results$correctPocket == FALSE )] = 0
-
+	results$ligandClass[which(results$correctPocket == FALSE )] = "negative"
+	if (argsL$verbose){
+	  print(summary(results$ligandClass))  
+	}
 }else{
 	# if the set is not multiclass it will just be 0 and 1 following the $correctPocket value
 	results$ligandClass = rep(1,nrow(results))
 	results$ligandClass[which(results$correctPocket == FALSE )] = 0
 }
+
 save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 
 
