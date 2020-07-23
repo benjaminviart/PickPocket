@@ -92,7 +92,7 @@ summaryFilePath = paste(argsL$folderOutput,argsL$pocketSummaryFileName,sep="")
 #print(summaryFilePath)
 #Check if file exist, if yes reads. 
 if (file.exists(summaryFilePath)){
-	summary = read.csv(summaryFilePath, sep = " ", header = T )
+	summary = read.csv(summaryFilePath, sep = "\t", header = T )
 }else{
 	print("No summary file found !  ")
 	q(save = "no" , status = 1 )
@@ -316,6 +316,7 @@ if (argsL$negativeSet != "false"){
 }else{
 
 	# Creating the training dataset file without negatives 	
+  colnames(results)
 	train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
 	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
 }

@@ -82,8 +82,11 @@ progress() {
 message() {
     timestamp="[$(date +%y-%m-%d-%H:%M:%S)] "
     if [[ "${verbose}" == "true" ]]; then
-        echo
-        echo ${timestamp} $@
+        if [[ "${progress_total}" == "${progress_curr}" ]] ; then
+            echo ${timestamp} $@
+        else
+            printf "\r${timestamp} $@                                           \n" 
+        fi
     fi
     echo ${timestamp} $@ >> $logfile
 }
@@ -143,7 +146,7 @@ training=true
 remove=false
 outputFolder="./PickPocket_output/"
 otherLigands=false
-
+sep="\t"
 # Backing execution dir 
 MYDIR="$(dirname "$(readlink -f "$0")")"
 # negative pdb
@@ -393,7 +396,6 @@ message "Running fpocket"
 progress "init" $inputFile 
 while read line; do 
     progress "fpocket on $line"
-    
 	if [ ! -f ${outputFolder}${line}_out/pockets/pocket0_vert.pqr ]; then
 		# Delete HETATM # remove the pdb file
    		pdb_delhetatm $pdbFolder$line.pdb |  pdb_tidy > ${pdbFolder}${line}_NoHET.pdb
@@ -414,7 +416,6 @@ if [ "$negativePDB" != false ]  ; then
 			# Delete HETATM 
 			pdb_delhetatm $pdbFolder$line.pdb |  pdb_tidy > ${pdbFolder}${line}_NoHET.pdb
 			fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -f ${pdbFolder}${line}_NoHET.pdb 1>> $logfile 2>>$logfile
-			
 		else
 			if [ "$verbose" = true ]  ; then
 				echo "No fpocket skipped for negative PDB $line "
@@ -473,14 +474,13 @@ message "Compiling all the fpocket results into one file"
 
 
 # Reference of values to extract from the pocket results 
-pocketValues="Pocket Score;Drug Score;Number of V. Vertices;Mean alpha-sphere radius;Mean alpha-sphere SA;Mean B-factor;Hydrophobicity Score;Polarity Score;Volume Score;Real volume;Charge Score;Local hydrophobic density Score;Number of apolar alpha sphere;Proportion of apolar alpha sphere"
+pocketValues="Pocket Score${sep}Drug Score${sep}Number of V. Vertices${sep}Mean alpha-sphere radius${sep}Mean alpha-sphere SA${sep}Mean B-factor${sep}Hydrophobicity Score${sep}Polarity Score${sep}Volume Score${sep}Real volume${sep}Charge Score${sep}Local hydrophobic density Score${sep}Number of apolar alpha sphere${sep}Proportion of apolar alpha sphere"
 
-echo $pocketValues | awk 'BEGIN {RS=";"} { print }' | awk '/\w+/ {print}' > ${outputFolder}/tmp/pocketValue_tmp
+echo -e "${pocketValues}" | awk -F "${sep}" 'NR==1 {for (i=1; i<= NF; i++) {print $i } } ' > ${outputFolder}/tmp/pocketValue_tmp
 
 # Create the pocket summary file. # The output file will use space as separator ! 
 touch ${outputFolder}pocketSummary.csv
-echo "PDB PocketNumber PocketPosition "${pocketValues// /_}" SASA AlphaHelix Coil Strand Turn Bridge Helix310" > ${outputFolder}pocketSummary.csv
-
+echo -e "PDB${sep}PocketNumber${sep}PocketPosition${sep}"${pocketValues// /_}"${sep}SASA${sep}AlphaHelix${sep}Coil${sep}Strand${sep}Turn${sep}Bridge${sep}Helix310" > ${outputFolder}pocketSummary.csv
 
 #output before treatment
 message "Parsing all pocket file one by one"
@@ -550,19 +550,18 @@ while read line; do
 			if [ -f ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv.out ]; then
 			    pocketPosition=$(cat ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv.out)
 		 	fi
-		 	lineBuild="$line $pocketNum $pocketPosition"
+		 	lineBuild="${line}${sep}${pocketNum}${sep}$pocketPosition"
 			##################################################################
 			#  	Here we treat the file to make a line out of it 	         #
 			##################################################################
 			# Extract the lines with the pocket descriptives values and reformat. 
 			
-	 		resultLine=$(grep -f ${outputFolder}/tmp/pocketValue_tmp ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr |  cut -d ':' -f 2 |sed 's/[^0-9.+-]*//g')
+	 		resultLine=$(grep -f ${outputFolder}/tmp/pocketValue_tmp ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr | awk -v sep="${sep}" '{toprint=toprint sep $NF } END { print toprint }' )
 			
-			#Reformat the line so it's csv 
-			resultLineFormat=$(echo $resultLine | sed -n -e 'H;${x;s/\n/;/g;s/^,//;p;}' )
-			lineBuild="$lineBuild$resultLineFormat"
-			lineBuild="$lineBuild $sasasum $alpha $coil $strand $turn $bridge $helix310"
-			echo $lineBuild >> ${outputFolder}pocketSummary.csv
+			#Reformat the line so it's tsv 
+			lineBuild="${lineBuild}${resultLine}"
+			lineBuild="${lineBuild}${sep}${sasasum}${sep}${alpha}${sep}${coil}${sep}${strand}${sep}${turn}${sep}${bridge}${sep}${helix310}"
+			echo -e "${lineBuild}" >> ${outputFolder}pocketSummary.csv
 			# Let's also store the X Y Z of the AA from the pocket in temp files similar to the ones for the ligand. Format in the same way than the ligand
 			grep "^ATOM " ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr |  
 			awk '{print $10 ";" $3 ";" $6 ";" $7 ";" $8}' > ${outputFolder}tmp/${line}.pdb.pocket.${pocketNum}_tmp
@@ -577,7 +576,7 @@ message "Parsing done, results are in ${outputFolder}pocketSummary.csv"
 if [ "$negativePDB" != false ]  ; then
 	# Create the negative pocket summary file. # The output file will use space as separator ! 
 	touch ${outputFolder}negativeSummary.csv
-	echo "PDB PocketNumber PocketPosition "${pocketValues// /_}" SASA AlphaHelix Coil Strand Turn Bridge Helix310" > ${outputFolder}negativeSummary.csv
+	echo -e "PDB\tPocketNumber\tPocketPosition\t"${pocketValues// /_}"\tSASA\tAlphaHelix\tCoil\tStrand\tTurn\tBridge\tHelix310" > ${outputFolder}negativeSummary.csv
 
 	# For each PDB in the input file parse the output folder and gather all the atm.pdb files ( pocket  ) 
 	while read line; do 
@@ -683,7 +682,7 @@ message "The Rscript will be launched now and the correct pockets will be identi
 
 message "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose"
 
-Rscript $MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose 2>>$logfile || ( echo "ERROR in during the R script! " >&2 && exit 1 )
+Rscript $MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose 2>>$logfile ||  echo "ERROR in during the R script! " >&2 
 
 message "Rscript finished"
 
