@@ -475,7 +475,7 @@ message "Compiling all the fpocket results into one file"
 # Reference of values to extract from the pocket results 
 pocketValues="Pocket Score;Drug Score;Number of V. Vertices;Mean alpha-sphere radius;Mean alpha-sphere SA;Mean B-factor;Hydrophobicity Score;Polarity Score;Volume Score;Real volume;Charge Score;Local hydrophobic density Score;Number of apolar alpha sphere;Proportion of apolar alpha sphere"
 
-echo $pocketValues | awk -F ";" '{print}' > ${outputFolder}/tmp/pocketValue_tmp
+echo $pocketValues | awk 'BEGIN {RS=";"} { print }' | awk '/\w+/ {print}' > ${outputFolder}/tmp/pocketValue_tmp
 
 # Create the pocket summary file. # The output file will use space as separator ! 
 touch ${outputFolder}pocketSummary.csv
@@ -549,10 +549,8 @@ while read line; do
 			pocketPosition="[]"
 			if [ -f ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv.out ]; then
 			    pocketPosition=$(cat ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv.out)
-		 	    lineBuild="$line $pocketNum $pocketPosition"
-		 	else
-		 	    lineBuild="$line $pocketNum $pocketPosition"
 		 	fi
+		 	lineBuild="$line $pocketNum $pocketPosition"
 			##################################################################
 			#  	Here we treat the file to make a line out of it 	         #
 			##################################################################
