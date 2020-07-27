@@ -85,7 +85,7 @@ message() {
         if [[ "${progress_total}" == "${progress_curr}" ]] ; then
             echo ${timestamp} $@
         else
-            printf "\r${timestamp} $@                                           \n" 
+            printf "\r${timestamp} $@                                         \n" 
         fi
     fi
     echo ${timestamp} $@ >> $logfile
@@ -161,7 +161,7 @@ distanceCutoff=1
 # PARSIN ARGUMENTS 
 
 
-while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:Lm:M:n:o:p:q:r:s:t:u:vx:y:z:w:" OPTION
+while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:Lm:M:n:o:p:q:r:st:u:vx:y:z:w:" OPTION
 do
     case $OPTION in
 		h)
@@ -371,7 +371,7 @@ if [ "$training" = true ]  ; then
     done < ${inputFile}
     sort ${outputFolder}otherligands_tmp | uniq >  ${outputFolder}otherligands
     rm ${outputFolder}otherligands_tmp
-    echo "File other ligand created in the ouput folder: ${outputFolder}otherligands"
+    message "File other ligand created in the ouput folder: ${outputFolder}otherligands"
   fi
 
   ###################################################
