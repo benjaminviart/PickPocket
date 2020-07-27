@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-
-import numpy as np
-import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
+
+import numpy as np
+import pandas as pd
 import pickle
 import sys
 
@@ -47,7 +47,7 @@ def training_process(file_name, model, features_to_use, cv):
     
     X, labels = import_data(file_name, features_to_use , ['ligandClass' ,'correctPocket'] )
     if labels.shape[1] == 2:
-        lables= labels[:,0]
+        labels=labels[:,0] 
     classnames, Y = np.unique(labels, return_inverse=True)
     groupcount = np.bincount(Y)
     print("Training process")
@@ -71,6 +71,7 @@ def training_process(file_name, model, features_to_use, cv):
     X = scaler.fit_transform(X, Y)
     
     ### Modify the following "parameters" to tune the grid search
+    
     
     if (model == "mlp"):
         print("Neural network - MultiLayer Perceptron Classifier")
