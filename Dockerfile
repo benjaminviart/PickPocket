@@ -13,6 +13,7 @@ RUN apt-get update \
     python3-sklearn \
     python3-numpy \
     r-base r-base-core \
+	pymol \
   && rm -rf /var/lib/apt/lists/*
 RUN pip3 install pdb-tools
 RUN apt-get update \
@@ -31,8 +32,6 @@ RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 	make install 
 RUN mkdir /stride  && cd /stride && wget http://webclu.bio.wzw.tum.de/stride/stride.tar.gz && \
 	 tar -zxf stride.tar.gz && make && mv ./stride /usr/bin/
-	
-RUN ln -s /usr/bin/python3 /usr/bin/python
 
 COPY ./src /PickPocket/src
 COPY ./data /PickPocket/data

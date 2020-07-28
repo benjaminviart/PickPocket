@@ -17,8 +17,6 @@ if("--help" %in% args) {
 	"--folderOutput=Folder output folder \n",
 	"--pocketSummaryFileName= File corresponding to the pocket summary computed by the pickpocket.sh ",
 	"--cutoffDistance= distance threshold. Under this value the pocket will be considered positive",
-	"--negativeSet = second matrice of pocket description to serve as negatives in the training ",
-	"--negativeSummaryFileName= file name if negative is used",
 	"--verbose= true or false",
 
    "   Example:",
@@ -27,7 +25,7 @@ if("--help" %in% args) {
   q(save="no", status = 1 )
 }
 
-#debug args=c("--folderOutput=./results/", "--pocketSummaryFileName=pocketSummary.csv", "--cutoffDistance=1", "--negativeSet=false", "--negativeSummaryFileName=negativeSummary.csv", "--verbose=true")
+#debug args=c("--folderOutput=./results/", "--pocketSummaryFileName=pocketSummary.csv", "--cutoffDistance=1", "--verbose=true")
  
 ## Parse arguments (we expect the form --arg=value)
 parseArgs <- function(x) strsplit(sub("^--", "", x), "=")
@@ -302,24 +300,9 @@ columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandRe
 			  "Number_of_apolar_alpha_sphere","Proportion_of_apolar_alpha_sphere","SASA","AlphaHelix","Coil","Strand",
 			  "Turn","Bridge","Helix310")
 
-if (argsL$negativeSet != "false"){
-
-	#Creating the training dataset file in case of negative use
-	negatif = read.csv(paste(argsL$folderOutput,argsL$negativeSummaryFileName,sep = ""), sep = " ", header = T)
-	negatif$correctPocket=rep(FALSE, nrow(negatif))
-	negatif$ligandResidueType=rep("NO",nrow(negatif))
-	negatif$ligandClass=rep(0,nrow(negatif))
-	train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave], negatif[,columntosave])
-	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0",quote =F)
-	print( paste ("Positive set =", nrow(results)," negatif set =", nrow(negatif), " Total trainning =", nrow(train)))
-
-}else{
-
-	# Creating the training dataset file without negatives 	
-  colnames(results)
-	train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
-	write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
-}
+colnames(results)
+train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
+write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
 
 save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 

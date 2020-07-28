@@ -36,7 +36,6 @@ help() {
 where:
 	-h 	: Show this help
 	-i 	: The input file containing the list of the PDB ids to train. 
-	-n	: PDB ids set for negative pocket. Pocket from input structure that do not contain the ligands are also used as negatives.
 	-o 	: Output folder, will contain all PDB downloaded, pocket files and R files.
 	-l 	: Ligand codes file. It has to contain a list of 3 letter code ligands considered as target.
 	      For a multiclass option a second column (tsv) has to contain the name of the class.  
@@ -48,7 +47,6 @@ where:
     -v 	: Verbose. Show additional output Default False.
     -s  : Silent. Don't show the progress bar. Default False. 
 	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix.
-	      Negative PDB are not used if traning is false.
 	-R	: Remove default False. If set to True, all temporary files from fpocket and other program will be deleted. 
 		    If training is set to false, remove will be set to true.
 	-L	: Default false. Check for other ligands. PDB may contain other ligand that will be automatically assume as negative pockets. 
@@ -150,7 +148,6 @@ sep="\t"
 # Backing execution dir 
 MYDIR="$(dirname "$(readlink -f "$0")")"
 # negative pdb
-negativePDB=false
 silent=false
 # fpocket defaults arguments  
 fpocketDarg=2.5
@@ -202,9 +199,6 @@ do
 			;;
 		L)
 			otherLigands=true
-			;;
-		n)
-			negativePDB=$OPTARG
 			;;
         s)
             silent=true
@@ -283,10 +277,6 @@ if [ "$training" = false ]  ; then
   checkFile ${ligandFile} 
 fi
 
-if [ "$negativePDB" != false ]  ; then
-  checkFile ${negativePDB}
-  checkPDBList $negativePDB
-fi
 
 
 
@@ -338,17 +328,6 @@ done < ${inputFile}
 
 inputFile=${outputFolder}/pdb_list.ls
 
-# Negative PDB if specified 
-
-if [ "$negativePDB" != false ]  ; then
-    message "Downloading the Negative PDB using pdb_fetch"
-	while read line; do 
-		if [ ! -f ${pdbFolder}${line}_NoHET.pdb ];then
-			pdb_fetch -biounit $line > "$pdbFolder$line.pdb" 
-		fi
-	done < ${negativePDB} 
-fi 
-
 
 # Extract the ligand lines. select only Molecule 3letter codes and X,Y,Z. Only done in training mode
 
@@ -359,14 +338,12 @@ if [ "$training" = true ]  ; then
 ################## Other ligands ##########################""
 # if training is true no need to do that
   if [ "$otherLigands" = true ]  ; then
-    touch ${outputFolder}negativeligands_tmp
-    # Take care of other ligands that might be similar
     while read line; do
       ligandNumber=$(grep "^HETNAM" ${pdbFolder}$line.pdb | wc -l  | awk '{print $1}')
       if [ ${ligandNumber} -gt 1 ]; then
             #echo "$line $ligandNumber"
             # more than one ligand in file
-            grep "^HETNAM" ${pdbFolder}$line.pdb | grep -v -f ${outputFolder}tmp/ligandCode | grep -v -f ${outputFolder}negativeligands_tmp  | sed -r 's/^.{11}//' >> ${outputFolder}otherligands_tmp
+            grep "^HETNAM" ${pdbFolder}$line.pdb | grep -v -f ${outputFolder}tmp/ligandCode | sed -r 's/^.{11}//' >> ${outputFolder}otherligands_tmp
       fi
     done < ${inputFile}
     sort ${outputFolder}otherligands_tmp | uniq >  ${outputFolder}otherligands
@@ -408,23 +385,6 @@ while read line; do
 done < ${inputFile} 
 # moving the fpocket results 
 
-
-# in case of negative PDB 
-if [ "$negativePDB" != false ]  ; then
-	while read line; do 
-		if [ ! -f ${outputFolder}${line}_out/pockets/pocket0_vert.pqr ]; then
-			# Delete HETATM 
-			pdb_delhetatm $pdbFolder$line.pdb |  pdb_tidy > ${pdbFolder}${line}_NoHET.pdb
-			fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -f ${pdbFolder}${line}_NoHET.pdb 1>> $logfile 2>>$logfile
-		else
-			if [ "$verbose" = true ]  ; then
-				echo "No fpocket skipped for negative PDB $line "
-				echo "No fpocket skipped for negative PDB $line "  >> $logfile
-			fi
-		fi
-		mv ${pdbFolder}${line}_NoHET_out ${outputFolder} 2>>$logfile
-	done < ${negativePDB} 
-fi 
 #################################STRIDE ######################################
 # New iteration of the PDB input file to compute the stride 
 
@@ -447,24 +407,6 @@ while read line; do
 		rm ${outputFolder}${line}_NoHET_out/${line}_stride.tmp
 	fi 
 done < ${inputFile} 
-
-# In case of negative PDB 
-if [ "$negativePDB" != false ]  ; then
-	message "Computing Stride for all negative PDBs"
-	while read line; do 
-		if [ ! -d ${outputFolder}${line}_NoHET_out/ ]; then
-		    if [ "$verbose" = true ]  ; then
-	   		    echo "No directory found for $line, passing through "
-	   		fi
-		else
-			# Here you compute the stride ouptput for the pdb 
-			touch ${outputFolder}${line}_NoHET_out/${line}_stride.tmp
-			stride -f ${pdbFolder}${line}_NoHET.pdb -f${outputFolder}${line}_NoHET_out/${line}_stride.tmp >> $logfile 2>>$logfile
-			grep "^ASG" ${outputFolder}${line}_NoHET_out/${line}_stride.tmp > ${outputFolder}${line}_NoHET_out/${line}_stride.out
-			rm ${outputFolder}${line}_NoHET_out/${line}_stride.tmp
-		fi 
-	done < ${negativePDB}
-fi
 
 ###########################################################################################
 # in each _out folder there are files _atm.pdb that need to be parsed and stored.  
@@ -572,78 +514,6 @@ done < ${inputFile}
 #output after treatment treatment
 message "Parsing done, results are in ${outputFolder}pocketSummary.csv"
 
-####################### Same code for the negative PDB if needed 
-if [ "$negativePDB" != false ]  ; then
-	# Create the negative pocket summary file. # The output file will use space as separator ! 
-	touch ${outputFolder}negativeSummary.csv
-	echo -e "PDB\tPocketNumber\tPocketPosition\t"${pocketValues// /_}"\tSASA\tAlphaHelix\tCoil\tStrand\tTurn\tBridge\tHelix310" > ${outputFolder}negativeSummary.csv
-
-	# For each PDB in the input file parse the output folder and gather all the atm.pdb files ( pocket  ) 
-	while read line; do 
-		# Retrieve the atm files from the pocket folder
-		# Test if the folder contains at least on file !!!! 
-		if [ ! -f ${outputFolder}${line}_NoHET_out/pockets/pocket0_vert.pqr ]; then
-		    if [ "$verbose" = true ]  ; then
-	   		    echo "No pocket found for $line, passing through "
-	   		fi
-		else
-			##
-			pocketfiles=$(cd  ${outputFolder}${line}_NoHET_out/pockets/ ; ls *_vert.pqr)
-			#echo "##############  Pocket"  $pocketfiles
-			
-
-			# iteration of the different files called pocketfiles
-			while read f; do 
-			# extracting the pdb and pocket number out of the file name. 
-				pocketNum=$(echo $f | sed 's/[^0-9]*//g') 
-				#########################################################################
-				# Stride part ! 
-				# Extract only the line that start with 'ATOM' 
-				grep "^ATOM" ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_atm.pdb > ${outputFolder}atmpdb_tmp
-				# Cross match the line from stride file to ATOM selection. ( col 4 5 and 6 match 2 3 and 4 )			
-				awk 'NR==FNR{a[$4,$5,$6];next} ($2,$3,$4) in a'  ${outputFolder}atmpdb_tmp ${outputFolder}${line}_NoHET_out/${line}_stride.out > ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out
-				# compute the diffent value we want to add in the matrix 		
-				sasasum=$(awk '{sum+=$10} END {print sum}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)
-				# Different type of SS => 
-				alpha=$(awk ' BEGIN {count=0;}  { if ($7 == "AlphaHelix") count+=1} END {print count}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)			
-				coil=$(awk ' BEGIN {count=0;}  { if ($7 == "Coil") count+=1} END {print count}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)	
-				strand=$(awk ' BEGIN {count=0;}  { if ($7 == "Strand") count+=1} END {print count}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)		
-				turn=$(awk ' BEGIN {count=0;}  { if ($7 == "Turn") count+=1} END {print count}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)	
-				bridge=$(awk ' BEGIN {count=0;}  { if ($7 == "Bridge") count+=1} END {print count}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)	
-				helix310=$(awk ' BEGIN {count=0;}  { if ($7 == "310Helix") count+=1} END {print count}' ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out)	
-				# End stride part
-				#########################################################################
-			 	lineBuild="$line $pocketNum" 
-				#echo "### line = $line file =   $f  Pocket Num =  $pocketNum"
-				##################################################################
-				#  	Here we treat the file to make a line out of it 	 #
-				##################################################################
-				# Extract the lines with the pocket descriptives values and reformat. 
-		 		resultLine=$(grep -f ${outputFolder}/tmp/pocketValue_tmp ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr |  cut -d ':' -f 2 |sed 's/[^0-9.+-]*//g')
-				#Reformat the line so it's csv 
-				resultLineFormat=$(echo $resultLine | sed -n -e 'H;${x;s/\n/;/g;s/^,//;p;}' )
-				lineBuild="$lineBuild []$resultLineFormat"
-				lineBuild="$lineBuild $sasasum $alpha $coil $strand $turn $bridge $helix310"
-				echo $lineBuild >> ${outputFolder}negativeSummary.csv
-				# Let's also store the X Y Z of the AA from the pocket in temp files similar to the ones for the ligand. Format in the same way than the ligand
-				grep "^ATOM " ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr |  
-				awk '{print $10 ";" $3 ";" $6 ";" $7 ";" $8}' > ${outputFolder}tmp/${line}.pdb.pocket.${pocketNum}_tmp
-			done <<< $pocketfiles
-		fi
-
-	done < ${negativePDB} 
-
-	# remove temporary file 
-	rm ${outputFolder}*_tmp
-	#output after treatment treatment
-	if [ "$verbose" = true ]  ; then
-		echo "Parsing done, negative results are in ${outputFolder}negativeSummary.csv"
-		echo "Parsing done, negative results are in ${outputFolder}negativeSummary.csv"  >> $logfile
-	else 
-		echo "Parsing done, negative results are in ${outputFolder}negativeSummary.csv"  >> $logfile
-	fi
-fi
-
 # if option remove  
 if [ "$remove" = true ]; then
 	rm -R $outputFolder/*_out
@@ -658,15 +528,12 @@ fi
 # See you tomorow ! 
 # 
 # The R script compute the distance between pockets and ligands. 
-# From that we determine the correct pocket and the negative.
+# From that we determine the correct pocket .
 #################################################################################
 
 # If training is false then the program should stop here with a message => the results are paste(argsL$folderOutput,"results_tmp.tsv",sep ="")
 
 if [ "$training" != true ]  ; then
-  if [ "$negativePDB" != false ]  ; then
-    cat ${outputFolder}negativeSummary.csv >> ${outputFolder}pocketSummary.csv
-  fi
 
   if [ "$verbose" = true ]  ; then
     Rscript $MYDIR/reformatTrainingOutput.R --filepath=${outputFolder} --filename="pocketSummary.csv"
@@ -680,9 +547,9 @@ fi
 
 message "The Rscript will be launched now and the correct pockets will be identified."
 
-message "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose"
+message "$MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff  --verbose=$verbose"
 
-Rscript $MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff --negativeSet=$negativePDB --negativeSummaryFileName=negativeSummary.csv  --verbose=$verbose 2>>$logfile ||  echo "ERROR in during the R script! " >&2 
+Rscript $MYDIR/pickPocket.R  --folderOutput=$outputFolder --pocketSummaryFileName=pocketSummary.csv --cutoffDistance=$distanceCutoff  --verbose=$verbose 2>>$logfile ||  echo "ERROR in during the R script! " >&2 
 
 message "Rscript finished"
 
