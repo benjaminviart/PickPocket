@@ -46,7 +46,7 @@ if(is.null(argsL$filename)) {
 #print(paste(" Treating : ", argsL$filepath, argsL$filename, sep = ""))
 
 # read the file
-file=read.csv(file=paste(argsL$filepath, argsL$filename, sep = ""), sep =";", header = F)
+file=read.csv(file=paste(argsL$filepath, argsL$filename, sep = ""), sep =";", header = F, colClasses=c("character","numeric"))
 
 output = c()
 
@@ -64,4 +64,4 @@ for(i in unique(file$V1)){
 write.table(output, paste(argsL$filepath, argsL$filename, ".out", sep = ""),  quote = F, row.names = F , col.names = F )
 #print(output)
 
-save.image()
+# save.image()
