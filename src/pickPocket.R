@@ -282,7 +282,7 @@ if(argsL$multicol){
 	# changing the ligandClass to 0 for negatives pockets
 	results$ligandClass[which(results$correctPocket == FALSE )] = "negative"
 	if (argsL$verbose){
-	  print(summary(results$ligandClass))  
+	  print(summary(results$ligandClass))
 	}
 }else{
 	# if the set is not multiclass it will just be 0 and 1 following the $correctPocket value
@@ -300,7 +300,7 @@ columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandRe
 			  "Number_of_apolar_alpha_sphere","Proportion_of_apolar_alpha_sphere","SASA","AlphaHelix","Coil","Strand",
 			  "Turn","Bridge","Helix310")
 
-colnames(results)
+#colnames(results)
 train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
 write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
 

@@ -505,8 +505,10 @@ while read line; do
 			lineBuild="${lineBuild}${sep}${sasasum}${sep}${alpha}${sep}${coil}${sep}${strand}${sep}${turn}${sep}${bridge}${sep}${helix310}"
 			echo -e "${lineBuild}" >> ${outputFolder}pocketSummary.csv
 			# Let's also store the X Y Z of the AA from the pocket in temp files similar to the ones for the ligand. Format in the same way than the ligand
-			grep "^ATOM " ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr |  
-			awk '{print $10 ";" $3 ";" $6 ";" $7 ";" $8}' > ${outputFolder}tmp/${line}.pdb.pocket.${pocketNum}_tmp
+			# file will look like this => 4.04;APOL;46.598;-99.180;-37.105
+			grep "^ATOM " ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr |
+			awk -F "!" '{print substr($0,67,10) ";"  substr($0,13,4) ";" substr($0,31,8)";" substr($0,39,8)";" substr($0,47,8)}' |
+			tr -d ' '  > ${outputFolder}tmp/${line}.pdb.pocket.${pocketNum}_tmp
 		done <<< $pocketfiles
 	fi
 done < ${inputFile} 

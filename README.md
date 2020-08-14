@@ -66,13 +66,13 @@ pdb_negativeFA contains a list of PDB diverse enough while none of them contains
 This step will (a)compute all the pockets from the structures, (b)compute the descriptive values for each pockets, 
 (c) assign TRUE or FALSE to each pocket based on distance with selected ligands and (d) output a training matrix.
 
-./src/pickPocket.sh -i pdbID_list -n negative_pdbID_list -l ligand_3lettercode_list -OutputFolder -PDB_Folder
+./src/pickPocket.sh -i pdbID_list -l ligand_3lettercode_list -OutputFolder -PDB_Folder
 For more information ./src/pickPocket.sh --help
 
 *****
 Exemple :
 ``` bash 
-./src/pickPocket.sh -i data/Fatty_Acid_input/pdb_listFA -n data/Fatty_Acid_input/pdb_negativeFA -l data/Fatty_Acid_input/ligand_codeFA  -o OUT/ -p PDB/ 
+./src/pickPocket.sh -i data/Fatty_Acid_input/pdb_listFA -l data/Fatty_Acid_input/ligand_codeFA  -o OUT/ -p PDB/
 ``` 
 *****
 Once pickpocket finished the results matrix can be found at OUT/train.tsv 
