@@ -290,7 +290,7 @@ if(argsL$multicol){
 	results$ligandClass[which(results$correctPocket == FALSE )] = 0
 }
 
-save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
+#save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 
 
 
@@ -304,7 +304,7 @@ columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandRe
 train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
 write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
 
-# save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
+save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 
 
 

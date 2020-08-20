@@ -47,13 +47,19 @@ if(is.null(argsL$filename)) {
 print(paste(" Treating : ", argsL$filepath, argsL$filename, sep = ""))
 
 # read the file
-file=read.csv(file=paste(argsL$filepath, argsL$filename, sep = ""), sep =" ", header = T)
+file=read.csv(file=paste(argsL$filepath, argsL$filename, sep = ""), sep ="\t", header = T)
 
 
+#columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandResidueType","ligandClass","Pocket_Score","Drug_Score",
+#			 "Number_of_V._Vertices","Mean_alpha.sphere_radius","Mean_alpha.sphere_SA","Mean_B.factor","Hydrophobicity_Score",
+#			  "Polarity_Score","Volume_Score","Real_volume","Charge_Score","Local_hydrophobic_density_Score",
+#			  "Number_of_apolar_alpha_sphere","Proportion_of_apolar_alpha_sphere","SASA","AlphaHelix","Coil","Strand",
+#               "Turn","Bridge","Helix310")
+#
 #print(str(file))
 
 # write the line
-write.table(file, paste(argsL$filepath, "testing.tsv", sep = ""),  sep = "\t",  row.names = F, dec=".", na = "0", quote =F )
+write.table(file, paste(argsL$filepath, "testing.tsv", sep = ""),  sep = "\t",  row.names = F, dec=".", na = "0",quote =F )
 #print(output)
+save.image(paste(argsL$filepath,".backup.R", sep = ""))
 
-#save.image()
