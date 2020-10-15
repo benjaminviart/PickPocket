@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.neural_network import MLPClassifier

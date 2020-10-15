@@ -1,25 +1,20 @@
 FROM ubuntu:bionic
 MAINTAINER Benjamin Viart and Claudio lorenzi
-
+ENV TZ=Europe/Paris
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     less \
     locales \
     wget \
+	make build-essential gcc gawk \
     ca-certificates \
     python3-pip \
     python3 \
-    python3-pandas \
-    python3-sklearn \
-    python3-numpy \
     r-base r-base-core \
 	pymol \
-  && rm -rf /var/lib/apt/lists/*
-RUN pip3 install pdb-tools
-RUN apt-get update \
-  && apt-get install -y  \
-	make build-essential gcc gawk \
-	&& rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* && \
+ pip3 install pdb-tools numpy==1.18.5 scipy==0.19.1 scikit-learn==0.20.1 pandas==0.22.0
 ## Includes a change of the makefile required for the installation ( https://sourceforge.net/p/fpocket/mailman/message/28785185/ )
 RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 	tar -xzf fpocket2.tar.gz && \

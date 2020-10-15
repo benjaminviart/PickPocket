@@ -218,7 +218,7 @@ if [ $OPTIND -eq 1 ]; then help; fi
 ##########################################################
 # Make sure output folder end with / 
 
-outputFolder=$(echo $outputFolder | awk '{if ($1 !~/\/$/ ) { print $1 "/" }  }' )
+outputFolder=$(echo $outputFolder | awk '{if ($1 !~/\/$/ ) { print $1 "/" } else { print $1 }  }' )
 
 # Let's remove all files from previous run
 # remove log files
@@ -247,7 +247,7 @@ rm -R -f $outputFolder*_out $outputFolder*_tmp
 ##########################################################
 # Make sure output folder end with / 
 
-pdbFolder=$(echo $pdbFolder | awk '{ if ($1 !~/\/$/ ) { print $1 "/" }  }' )
+pdbFolder=$(echo $pdbFolder | awk '{ if ($1 !~/\/$/ ) { print $1 "/" } else { print $1 } }' )
 
 # Create the output folder existing or not 
 mkdir -p ${pdbFolder}
