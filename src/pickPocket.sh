@@ -38,19 +38,19 @@ where:
 	-i 	: The input file containing the list of the PDB ids to train. 
 	-o 	: Output folder, will contain all PDB downloaded, pocket files and R files.
 	-l 	: Ligand codes file. It has to contain a list of 3 letter code ligands considered as target.
-	      For a multiclass option a second column (tsv) has to contain the name of the class.  
-	-p  : PDB folder. All pdb will be downloaded here if not already present
+	      		For a multiclass option a second column (tsv) has to contain the name of the class.  
+	-p  	: PDB folder. All pdb will be downloaded here if not already present
 	-D	: D argument of fpocket (  see man fpocket, default 2.5 )
 	-m	: m argument of fpocket  (  see man fpocket, default 4 )
 	-M	: M argument of fpocket (  see man fpocket, default 6 )
 	-r	: Cutoff distance between the pocket and the ligand to be considered -correct-, default 1A
-    -v 	: Verbose. Show additional output Default False.
-    -s  : Silent. Don't show the progress bar. Default False. 
+	-v 	: Verbose. Show additional output Default False.
+    	-s	: Silent. Don't show the progress bar. Default False. 
 	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix.
 	-R	: Remove default False. If set to True, all temporary files from fpocket and other program will be deleted. 
-		    If training is set to false, remove will be set to true.
+			If training is set to false, remove will be set to true.
 	-L	: Default false. Check for other ligands. PDB may contain other ligand that will be automatically assume as negative pockets. 
-		    If set to true a file will be create storing the other ligands in the PDB for you to check and add if necessary.
+		 	If set to true a file will be create storing the other ligands in the PDB for you to check and add if necessary.
 
 "
     exit 1 ; 
