@@ -33,8 +33,11 @@ def import_data(file_name, feature_names=[], label_name='None'):
             for lab in label_name:
                 mask = table.columns.str.contains(lab)
                 if any(mask):
-                    labels = np.array(table[lab], dtype="str");
-                    break
+                    if len(labels) == 0:
+                        labels = np.transpose(np.array([table[lab]], dtype="str"));
+                    else :
+                        tmp=np.transpose(np.array([table[lab]], dtype="str"));
+                        labels = np.concatenate((labels, tmp), 1)
             if len(labels) == 0:
                 raise TypeError("None of the labels {} was found in the table".format(label_name))
         else:
@@ -49,7 +52,7 @@ def training_process(file_name, model, features_to_use, cv):
     
     X, labels = import_data(file_name, features_to_use , ['ligandClass' ,'correctPocket'] )
     
-    if len(labels.shape) == 2 and labels.shape[1] == 2:
+    if len(labels.shape) == 2 and labels.shape[1] > 1:
         labels=labels[:,0] 
     classnames, Y = np.unique(labels, return_inverse=True)
     groupcount = np.bincount(Y)
@@ -131,10 +134,19 @@ def training_process(file_name, model, features_to_use, cv):
 def test_process(file_input, file_output, model_file, features_to_use):
     print("Prediction process \nParameters:\n\t input file\t {}\n\t output file\t {} \n\t model file\t {}".format(file_input, file_output, model_file))
     ofs = open(file_output, "w")
-    ifs = open(model_file, "rb")
-    scaler, clfs, classnames = pickle.load(ifs)
-    ifs.close()
+    try :
+        ifs = open(model_file, "rb")
+        scaler, clfs, classnames = pickle.load(ifs)
+        ifs.close()
+    except:
+        try:
+            ifs = open(model_file, "rb")
+            scaler, clfs, classnames = pickle.load(ifs, encoding='latin1')
+            ifs.close()
+        except:
+            print("Erro loading the model file.")
     print("Loaded model"+(  "" if len(clfs) == 1 else "s")+" based on "+ ", ".join(clfs.keys()))
+    classnames=[str(elem) for elem in classnames]
     header = "PDB\tPocketNumber\tprob_" + "\tprob_".join(classnames) +"\tClass\n"
     X, sample_IDS = import_data(file_input, features_to_use, ['PDB', 'PocketNumber']) ## Note: labels is an empty list
     print("Transforming the input data")
