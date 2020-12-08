@@ -26,14 +26,16 @@ def generate_train_test_idx(groups, nbtest, nbtrain):
 
 def import_data(file_name, feature_names=[], label_name='None'):
     table = pd.read_csv(file_name, decimal=".", sep='\t')
+    labels=[]
     if ( label_name != 'None' ):
         if type(label_name) ==  type([]):
             mask = []
             for lab in label_name:
-                mask.append(table.columns.contains(lab))
-            if any(mask):
-                labels = np.array(table[np.array(label_name)[mask]], dtype="str")
-            else:
+                mask = table.columns.str.contains(lab)
+                if any(mask):
+                    labels = np.array(table[lab], dtype="str");
+                    break
+            if len(labels) == 0:
                 raise TypeError("None of the labels {} was found in the table".format(label_name))
         else:
             labels = np.array(table[label_name], dtype="str")
@@ -46,7 +48,8 @@ def import_data(file_name, feature_names=[], label_name='None'):
 def training_process(file_name, model, features_to_use, cv):
     
     X, labels = import_data(file_name, features_to_use , ['ligandClass' ,'correctPocket'] )
-    if labels.shape[1] == 2:
+    
+    if len(labels.shape) == 2 and labels.shape[1] == 2:
         labels=labels[:,0] 
     classnames, Y = np.unique(labels, return_inverse=True)
     groupcount = np.bincount(Y)
