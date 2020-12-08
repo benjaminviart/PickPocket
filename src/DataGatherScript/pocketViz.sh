@@ -22,8 +22,7 @@ help() {
 where:
 	-h 	: show this help text
 	-o	: OUTPUT folder complete path, end with /
-	-P  : PDB folder complte path, end with /
-  -p  : PDB id to treat, in capital letter without .pdb
+	-p  : PDB id to treat, in capital letter without .pdb
 "
 
 
@@ -38,19 +37,23 @@ do
     case $OPTION in
 		h)
 			help
-			;;
+		;;
+
 		o)
-			outputFolderPath=$OPTARG
-			;;
-	  p)
-	    pdbid=$OPTARG
-	    ;;
-	  P)
-	    pdbFolderPath=$OPTARG
-	    ;;
+ 			outputFolderPath=$OPTARG
+		;;
+
+	  	p)
+	    		pdbid=$OPTARG
+	    	;;
+
+	  	P)
+	    		pdbFolderPath=$OPTARG
+	    	;;
+
 		?)
 			help
-            ;;
+            	;;
     esac
 done
 # Catching no arguments
@@ -107,8 +110,8 @@ show cartoon
 hide lines
 
 select organic
-show sticks, sele
-color red, sele
+show sphere, sele
+color atomic, sele
 " > $script
 
 

@@ -40,11 +40,13 @@ where:
 	-l 	: Ligand codes file. It has to contain a list of 3 letter code ligands considered as target.
 	      		For a multiclass option a second column (tsv) has to contain the name of the class.  
 	-p  	: PDB folder. All pdb will be downloaded here if not already present
-	-D	: D argument of fpocket (  see man fpocket, default 2.5 )
-	-m	: m argument of fpocket  (  see man fpocket, default 4 )
+	-D	: D argument of fpocket (  see man fpocket, default 1.73 )
+	-m	: m argument of fpocket  (  see man fpocket, default 3 )
 	-M	: M argument of fpocket (  see man fpocket, default 6 )
-	-r	: Cutoff distance between the pocket and the ligand to be considered -correct-, default 1A
-	-v 	: Verbose. Show additional output Default False.
+	-r 	: r argument of fpocket ( see man fpocket, default 4.5 )
+	-S 	: s argument of fpocket ( see man fpocket, default 2 ) 
+	-c	: Cutoff distance between the pocket and the ligand to be considered -correct-, default 1A
+	-v 	: Verbose. Show additional output Default False
     	-s	: Silent. Don't show the progress bar. Default False. 
 	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix.
 	-R	: Remove default False. If set to True, all temporary files from fpocket and other program will be deleted. 
@@ -150,15 +152,17 @@ MYDIR="$(dirname "$(readlink -f "$0")")"
 # negative pdb
 silent=false
 # fpocket defaults arguments  
-fpocketDarg=2.5
-fpocketmarg=4
+fpocketDarg=1.73
+fpocketmarg=3
 fpocketMarg=6
+fpocketrarg=4.5
+fpocketsarg=2.5
 # default distance cutoff
 distanceCutoff=1
 # PARSIN ARGUMENTS 
 
 
-while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:Lm:M:n:o:p:q:r:st:u:vx:y:z:w:" OPTION
+while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:L:m:M:n:o:p:q:r:s:S:t:u:vx:y:z:w:" OPTION
 do
     case $OPTION in
 		h)
@@ -176,7 +180,7 @@ do
 		v)
 			verbose=true
 			;;
-		r)
+		c)
 			distanceCutoff=$OPTARG
 			;;
 		D)
@@ -190,6 +194,12 @@ do
 			;;
 		M)
 			fpocketMarg=$OPTARG
+			;;
+		r)
+			fpocketrarg=$OPTARG
+			;;
+		S)
+			fpocketsarg=$OPTARG
 			;;
 		t)
 			training=false
@@ -376,8 +386,8 @@ while read line; do
 	if [ ! -f ${outputFolder}${line}_out/pockets/pocket0_vert.pqr ]; then
 		# Delete HETATM # remove the pdb file
    		pdb_delhetatm $pdbFolder$line.pdb |  pdb_tidy > ${pdbFolder}${line}_NoHET.pdb
-   		fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -f ${pdbFolder}${line}_NoHET.pdb 1>> $logfile 2>>$logfile
-   		#echo "fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -f ${pdbFolder}${line}_NoHET.pdb"
+   		fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -r $fpocketrarg -s $fpocketsarg -f ${pdbFolder}${line}_NoHET.pdb 1>> $logfile 2>>$logfile
+   		#echo "fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -r $fpocketrarg -f ${pdbFolder}${line}_NoHET.pdb"
 	else
 		message "fpocket skipped for $line "
 	fi
