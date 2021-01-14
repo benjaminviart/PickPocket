@@ -39,19 +39,18 @@ where:
 	-o 	: Output folder, will contain all PDB downloaded, pocket files and R files.
 	-l 	: Ligand codes file. It has to contain a list of 3 letter code ligands considered as target.
 	      		For a multiclass option a second column (tsv) has to contain the name of the class.  
-	-p  	: PDB folder. All pdb will be downloaded here if not already present
-	-D	: D argument of fpocket (  see man fpocket, default 1.73 )
-	-m	: m argument of fpocket  (  see man fpocket, default 3 )
-	-M	: M argument of fpocket (  see man fpocket, default 6 )
-	-r 	: r argument of fpocket ( see man fpocket, default 4.5 )
-	-S 	: s argument of fpocket ( see man fpocket, default 2 ) 
+	-p  : PDB folder. All pdb will be downloaded here if not already present
+	-D	: D argument of fpocket (see man fpocket, default 1.73 )
+	-m	: m argument of fpocket (see man fpocket, default 3 )
+	-M	: M argument of fpocket (see man fpocket, default 6 )
+	-r 	: r argument of fpocket (see man fpocket, default 4.5 )
+	-S 	: s argument of fpocket (see man fpocket, default 2 ) 
 	-c	: Cutoff distance between the pocket and the ligand to be considered -correct-, default 1A
 	-v 	: Verbose. Show additional output Default False
     	-s	: Silent. Don't show the progress bar. Default False. 
-	-t	: Training, default True. If training is set to false, the program will stop after computing the descriptive matrix.
-	-R	: Remove default False. If set to True, all temporary files from fpocket and other program will be deleted. 
-			If training is set to false, remove will be set to true.
-	-L	: Default false. Check for other ligands. PDB may contain other ligand that will be automatically assume as negative pockets. 
+	-t	: Flag used to disable the training.
+	-R	: Flag used to keep all temporary files from fpocket and other program, otherwhise deleted. 
+	-L	: Flag used to check for other ligands. PDB may contain other ligand that will be automatically assume as negative pockets. 
 		 	If set to true a file will be create storing the other ligands in the PDB for you to check and add if necessary.
 
 "
@@ -143,8 +142,9 @@ checkRequirements
 # default setting => 
 verbose=false
 training=true
-remove=false
+remove=true
 outputFolder="./PickPocket_output/"
+pdbFolder="./PDB/"
 otherLigands=false
 sep="\t"
 # Backing execution dir 
@@ -162,7 +162,7 @@ distanceCutoff=1
 # PARSIN ARGUMENTS 
 
 
-while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:L:m:M:n:o:p:q:r:s:S:t:u:vx:y:z:w:" OPTION
+while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:Lm:M:n:o:p:q:r:sS:tRu:vx:y:z:w:" OPTION
 do
     case $OPTION in
 		h)
