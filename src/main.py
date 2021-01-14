@@ -4,13 +4,18 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_validate
+from sklearn.model_selection import KFold
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.base import clone
 
 import numpy as np
 import pandas as pd
 import pickle
 import sys
+from sklearn.metrics.classification import accuracy_score
 
 np.random.seed(123)
 
@@ -24,33 +29,36 @@ def generate_train_test_idx(groups, nbtest, nbtrain):
         test_idx = np.concatenate((test_idx, random_indices[nbtest:nbtrain]))
     return (train_idx, test_idx);
 
-def import_data(file_name, feature_names=[], label_name='None'):
+def import_data(file_name, feature_names=[]):
     table = pd.read_csv(file_name, decimal=".", sep='\t')
     labels=[]
-    if ( label_name != 'None' ):
-        if type(label_name) ==  type([]):
-            mask = []
-            for lab in label_name:
-                mask = table.columns.str.contains(lab)
-                if any(mask):
-                    if len(labels) == 0:
-                        labels = np.transpose(np.array([table[lab]], dtype="str"));
-                    else :
-                        tmp=np.transpose(np.array([table[lab]], dtype="str"));
-                        labels = np.concatenate((labels, tmp), 1)
+    ids =[]
+    ids_col = ['PDB', 'PocketNumber'];
+    label_col = ['ligandClass' ,'correctPocket'] ;
+    mask = []
+    for lab in label_col:
+        mask = table.columns.str.contains(lab)
+        if any(mask):
             if len(labels) == 0:
-                raise TypeError("None of the labels {} was found in the table".format(label_name))
-        else:
-            labels = np.array(table[label_name], dtype="str")
-    else:
-        labels = []
+                labels = np.transpose(np.array([table[lab]], dtype="str"));
+            else :
+                tmp=np.transpose(np.array([table[lab]], dtype="str"));
+                labels = np.concatenate((labels, tmp), 1)
+    for lab in ids_col:
+        mask = table.columns.str.contains(lab)
+        if any(mask):
+            if len(ids) == 0:
+                ids = np.transpose(np.array([table[lab]], dtype="str"));
+            else :
+                tmp=np.transpose(np.array([table[lab]], dtype="str"));
+                ids = np.concatenate((ids, tmp), 1)
     X= np.array(table[feature_names], dtype="float64")
-    return X, labels
+    return X, labels , ids
 
 
-def training_process(file_name, model, features_to_use, cv):
+def training_process(file_name, model, features_to_use, cv, threads):
     
-    X, labels = import_data(file_name, features_to_use , ['ligandClass' ,'correctPocket'] )
+    X, labels, ids = import_data(file_name, features_to_use )
     
     if len(labels.shape) == 2 and labels.shape[1] > 1:
         labels=labels[:,0] 
@@ -62,15 +70,18 @@ def training_process(file_name, model, features_to_use, cv):
     print("\t- {:d} samples".format(X.shape[0]))
     print("\t- {:d} features".format(X.shape[1]))
     print("\t- {:d} classes : ".format(len(classnames)) + (" ".join("{} ({} samples)".format(classnames[k], groupcount[k]) for k in range(0, len(classnames))) ))
-    cv_indexes = []
-    groupcount = np.bincount(Y)
-    mingroup = (int)(np.nanmin(groupcount))
-    nbtest = (int)(np.round(mingroup / 3))
-    nbtrain = (int)(mingroup-nbtest)
-    print("\nDuring the training process, the cross validation process will use {} for each group as training and {} as test ".format(nbtrain, nbtest) )
+    # Replaced by a simple KFold
     
-    while ( len(cv_indexes) < cv) :
-        cv_indexes.append(generate_train_test_idx(Y, nbtest, nbtrain))
+    # groupcount = np.bincount(Y)
+    # mingroup = (int)(np.nanmin(groupcount))
+    # nbtest = (int)(np.round(mingroup / cv))
+    # nbtrain = (int)(mingroup-nbtest)
+    # print("\nDuring the training process, the cross validation process will use {} for each group as training and {} as test ".format(nbtrain, nbtest) )
+    
+    
+    # cv_indexes = []
+    # while ( len(cv_indexes) < cv) :
+    #    cv_indexes.append(generate_train_test_idx(Y, nbtest, nbtrain))
     
     print("\nRescaling the data in [0-1]")
     scaler= MinMaxScaler(feature_range=(0,1))
@@ -81,88 +92,95 @@ def training_process(file_name, model, features_to_use, cv):
     
     if (model == "mlp"):
         print("Neural network - MultiLayer Perceptron Classifier")
-        parameters = {'activation':['relu'], 'solver' : ['adam', 'lbfgs'] , 
-                      'hidden_layer_sizes' : [ (20,10,5),(15,10,5),(15,10),(10,5) ] }
-        clf_model=MLPClassifier(max_iter=10000)
+        parameters = {'activation':['relu', 'tanh'], 'solver' : ['adam', 'sgd'] , 
+                      'hidden_layer_sizes' : [ (25,15,5), (50,25), (15,10) ] , 'alpha' : [0.0001, 0.05], 'max_iter' : (1000,) }
+        clf_model=MLPClassifier()
     elif (model == "rf"):
         print("Random Forest classifier")
-        parameters = {'n_estimators':(100,150), 'criterion' : ('gini', 'entropy') , 'max_depth' : (None, 10, 20) , 'min_samples_split' : (2, 10 ,.10) }
+        parameters = {'n_estimators':(100,200), 'criterion' : ('gini',) , 'max_depth' : (5,10) , 'min_samples_split' : (2,5,.10,) }
         clf_model=RandomForestClassifier()
     elif (model == "svm"):
         print("Support Vector Machine classifier")
         parameters = {'C': [1, 10, 100, 1000], 'kernel' : ['rbf', 'linear' , 'poly', 'sigmoid'], 'gamma' : ['auto'] }
-        clf_model=SVC()
+        clf_model=SVC(probability=True)
         
-    scores = ["accuracy"] ### you can see the optimization in according to multiple values, like "recall"
-    best_scores={}
-    best_estimators={}
+    scores = {'Precision' : 'precision' , 'Accuracy' : "accuracy" } 
     
-    for score in scores :
-        print("\n---- Tuning hyper-parameters for {:s} ----\n".format(score))
-        clf = GridSearchCV(clf_model, parameters, scoring=score ,cv=cv_indexes, n_jobs=-1)
-        clf.fit(X, Y)
-        print("Best parameters set found on development set:")
-        print()
-        print(clf.best_params_)
-        print(clf.best_score_)
-        print()
-        print("Grid scores on development set:")
-        print()
-        means = clf.cv_results_['mean_test_score']
-        stds = clf.cv_results_['std_test_score']
-        print("mean {}\tstd {}\tparameters".format(score, score))
-        for mean, std, params in zip(means, stds, clf.cv_results_['params']):
-            print("%.3f\t(std: %.3f)\t\t%r"
-                  % (mean, std , params))
-        print()
-        print("Detailed classification report (based on the full set) :")
-        print()
-        y_true, y_pred = Y, clf.predict(X)
-        print(classification_report(y_true, y_pred))
-        print()
-        best_scores[score]= clf.best_score_
-        
-        best_estimators[score] = clf.best_estimator_
-        
-    print("Best values: ")
-    
-    for score in scores :
-        print("{} \t{}".format(score,best_scores[score]));
-    
-    return  best_estimators, scaler, classnames
+    print("\n---- Tuning hyper-parameters for ----\n")
+    clf = GridSearchCV(clf_model, parameters, scoring=scores ,cv=KFold(n_splits=cv, shuffle=True), n_jobs=threads, refit='Precision')
+    clf.fit(X, Y)
+    print("Best parameters set found on development set:")
+    print()
+    print(clf.best_params_)
+    print(clf.best_score_)
+    print()
+    print("Grid scores on development set:")
+    print()
+    for k in scores.keys():
+        print("mean_{}\t".format(k), end="")
+    print("parameters")
+    for i in range(0, len(clf.cv_results_['params']) ):
+        for k in scores.keys():
+            print(clf.cv_results_['mean_test_{}'.format(k)][i], end="\t")
+        print(clf.cv_results_['params'][i])
+    print()
+    cv_results = cross_validate(clone(clf.best_estimator_), X, Y, cv=KFold(n_splits=cv, shuffle=True),scoring = scores  )
+    print("Cross validation results:")
+    for k in scores.keys():
+        print("Score {}:\t {:.3f} +- {:.3f} ".format(k , np.mean(cv_results["test_{}".format(k)]), np.std(cv_results["test_{}".format(k)]) ))
+    print("\n\nDetailed classification report (based on the full set, not cross validated) :")
+    print()
+    y_true, y_pred = Y, clf.predict(X)
+    print(classification_report(y_true, y_pred))
+    print()
+    return  clf.best_estimator_, scaler, classnames
 
 def test_process(file_input, file_output, model_file, features_to_use):
     print("Prediction process \nParameters:\n\t input file\t {}\n\t output file\t {} \n\t model file\t {}".format(file_input, file_output, model_file))
     ofs = open(file_output, "w")
     try :
         ifs = open(model_file, "rb")
-        scaler, clfs, classnames = pickle.load(ifs)
+        scaler, clf, classnames = pickle.load(ifs)
         ifs.close()
     except:
         try:
             ifs = open(model_file, "rb")
-            scaler, clfs, classnames = pickle.load(ifs, encoding='latin1')
+            scaler, clf, classnames = pickle.load(ifs, encoding='latin1')
             ifs.close()
         except:
             print("Erro loading the model file.")
-    print("Loaded model"+(  "" if len(clfs) == 1 else "s")+" based on "+ ", ".join(clfs.keys()))
+    print("Loaded model {}".format(clf.__class__.__name__))
     classnames=[str(elem) for elem in classnames]
-    header = "PDB\tPocketNumber\tprob_" + "\tprob_".join(classnames) +"\tClass\n"
-    X, sample_IDS = import_data(file_input, features_to_use, ['PDB', 'PocketNumber']) ## Note: labels is an empty list
+    X, labels, sample_IDS = import_data(file_input, features_to_use ) ## Note: labels is an empty list
+    if len(labels) > 0 and len(labels.shape) == 2 and labels.shape[1] > 1:
+        tmp=labels[:,0]
+        labels=[]
+        for e in tmp:
+            labels.append(classnames.index(e))
+    header = "PDB\tPocketNumber\tprob_" + "\tprob_".join(classnames) +"\tClass"
+    if len(labels) > 0:
+        header+="\tLabel"
+    header+="\n";
     print("Transforming the input data")
     X= scaler.transform(X)
     print("Predicting and saving the results")
-    for score in clfs:
-        ofs.write("### Prediction from model based on {} \n".format(score))
-        ofs.write(header)
-        probs = clfs[score].predict_proba(X)
-        for sample in range(0, sample_IDS.shape[0]):
-            line="{:s}\t{:s}".format(sample_IDS[sample, 0],sample_IDS[sample, 1])
-            for cl in range(0, probs.shape[1]):
-                line+="\t{:.2f}".format(probs[sample, cl])
-            line+="\t{}\n".format(classnames[np.argmax(probs[sample, ])])
-            ofs.write(line)
+    ofs.write(header)
+    probs = clf.predict_proba(X)
+    for sample in range(0, sample_IDS.shape[0]):
+        line="{:s}\t{:s}".format(sample_IDS[sample, 0],sample_IDS[sample, 1])
+        for cl in range(0, probs.shape[1]):
+            line+="\t{:.2f}".format(probs[sample, cl])
+        line+="\t{}".format(classnames[np.argmax(probs[sample, ])])
+        if len(labels) > 0:
+            line+="\t{}".format(labels[sample])
+        line+="\n"
+        ofs.write(line)
     ofs.close()
+    if len(labels) > 0:
+        y_true, y_pred = labels, clf.predict(X)
+        print(confusion_matrix(y_true, y_pred))
+        print(classification_report(y_true, y_pred))
+        print("Accuracy: {:.3f}".format(accuracy_score(y_true, y_pred)))
     print("Done.\n")
     return
 
@@ -175,7 +193,7 @@ def main():
     if action == "train":
         models=["mlp", "rf", "svm"]
         if len(sys.argv) < 6 or not (sys.argv[4] in models) :
-            print("Usage: {} train input_file output_file model cv".format(sys.argv[0]) );
+            print("Usage: {} train input_file output_file model cv [threads=-1]".format(sys.argv[0]) );
             print("Possible models:");
             print(models);
             exit(1)
@@ -183,7 +201,11 @@ def main():
         file_output= sys.argv[3]
         model=sys.argv[4]
         n_cross_validation=int(sys.argv[5])
-        clfs , scaler , classnames = training_process(file_input, model, features_to_use, n_cross_validation)
+        if len(sys.argv) > 6 :
+            threads=int(sys.argv[6])
+        else:
+            threads=-1
+        clfs , scaler , classnames = training_process(file_input, model, features_to_use, n_cross_validation, threads)
         stream_out = open(file_output, "wb")
         pickle.dump([scaler, clfs, classnames], stream_out)
         stream_out.close();
