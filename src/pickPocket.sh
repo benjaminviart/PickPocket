@@ -38,8 +38,9 @@ where:
 	-i 	: The input file containing the list of the PDB ids to train. 
 	-o 	: Output folder, will contain all PDB downloaded, pocket files and R files.
 	-l 	: Ligand codes file. It has to contain a list of 3 letter code ligands considered as target.
-	      		For a multiclass option a second column (tsv) has to contain the name of the class.  
-	-p  : PDB folder. All pdb will be downloaded here if not already present
+	      		For a multiclass option a second column (tsv) has to contain the name of the class.
+	-d	: Download the PDB files and exit
+	-p	: PDB folder. All pdb will be downloaded here if not already present
 	-D	: D argument of fpocket (see man fpocket, default 1.73 )
 	-m	: m argument of fpocket (see man fpocket, default 3 )
 	-M	: M argument of fpocket (see man fpocket, default 6 )
@@ -143,6 +144,7 @@ checkRequirements
 verbose=false
 training=true
 remove=true
+download_only=false
 outputFolder="./PickPocket_output/"
 pdbFolder="./PDB/"
 otherLigands=false
@@ -162,7 +164,7 @@ distanceCutoff=1
 # PARSIN ARGUMENTS 
 
 
-while getopts "a:b:c:d:D:e:f:g:hi:j:k:l:Lm:M:n:o:p:q:r:sS:tRu:vx:y:z:w:" OPTION
+while getopts "a:b:c:dD:e:f:g:hi:j:k:l:Lm:M:n:o:p:q:r:sS:tRu:vx:y:z:w:" OPTION
 do
     case $OPTION in
 		h)
@@ -212,6 +214,9 @@ do
 			;;
         s)
             silent=true
+            ;;
+        d)  
+            download_only=true
             ;;
 		?)
 			help
@@ -325,17 +330,19 @@ progress "init" $inputFile "Downloading the missing PDB files"
 while read line; do 
     progress "$line"
 	if [ ! -f ${pdbFolder}${line}.pdb ]; then
-		pdb_fetch -biounit $line > "$pdbFolder$line.pdb" 
+		pdb_fetch $line > "$pdbFolder$line.pdb" 
 		message "Downloading pdb = $line..."
 	fi
-    if [[ $(wc -l ${pdbFolder}${line}.pdb | awk '{print $1}' ) -eq 0 ]]; then  
-       message "PDB $line is empty"
+    if [ ! -f "${pdbFolder}${line}.pdb" ]; then
+       message "PDB $line not found"
        echo $line >> ${outputFolder}/empty_pdb.ls
     else
-       echo $line >> ${outputFolder}/pdb_list.ls
+        pdb_delhetatm $pdbFolder$line.pdb |  pdb_tidy > ${pdbFolder}${line}_NoHET.pdb
+        echo $line >> ${outputFolder}/pdb_list.ls
     fi
+    
 done < ${inputFile} 
-
+echo
 inputFile=${outputFolder}/pdb_list.ls
 
 
@@ -349,31 +356,43 @@ if [ "$training" = true ]  ; then
 # if training is true no need to do that
   if [ "$otherLigands" = true ]  ; then
     while read line; do
-      ligandNumber=$(grep "^HETNAM" ${pdbFolder}$line.pdb | wc -l  | awk '{print $1}')
-      if [ ${ligandNumber} -gt 1 ]; then
-            #echo "$line $ligandNumber"
-            # more than one ligand in file
-            grep "^HETNAM" ${pdbFolder}$line.pdb | grep -v -f ${outputFolder}tmp/ligandCode | sed -r 's/^.{11}//' >> ${outputFolder}otherligands_tmp
-      fi
+      grep "^HETNAM" ${pdbFolder}$line.pdb | sed -r 's/^.{11}//' > ${outputFolder}_tmp_ligand
+      awk 'NR == FNR {arr[$1]=1 } NR != FNR && arr[$1] != 1 {print} ' ${outputFolder}tmp/ligandCode ${outputFolder}_tmp_ligand >> ${outputFolder}otherligands_tmp
+      rm ${outputFolder}_tmp_ligand
     done < ${inputFile}
-    sort ${outputFolder}otherligands_tmp | uniq >  ${outputFolder}otherligands
-    rm ${outputFolder}otherligands_tmp
+    sort ${outputFolder}otherligands_tmp | uniq >  ${outputFolder}otherLigands
+    rm -f ${outputFolder}otherligands_tmp ${outputFolder}_tmp_ligand
     message "File other ligand created in the ouput folder: ${outputFolder}otherligands"
   fi
 
   ###################################################
   # For all pdb files in pdb folder
-  files=$pdbFolder*.pdb
-  for f in $files ; do
+  for f in $pdbFolder*.pdb ; do
+    pattern=".*NoHET.*"
+    if [[ ! "${f}" =~ $pattern ]]; then
      ######## HERE ONLY USE the first column !!! ################
     # Removed the HETATM from the start because fome file look like this : HETATM11988 .......
     # Some  lines looks like this : HETATM 2069  C1  STE A1001      27.878  26.507   8.311  1.00 50.33           C
-    grep -f ${outputFolder}tmp/ligandCode $f | grep "^HETATM" | awk -F "!" '{print substr($0,14,3) "_" substr($0,23,4) ";" substr($0,18,3)";" substr($0,31,8)";" substr($0,39,8)";" substr($0,47,8)}' | tr -d ' ' > ${f}.ligand_tmp
+        awk 'NR == FNR {arr[$1]=1 }  NR > FNR && /^HETATM/ { residue=substr($0,18,3) ; if ( arr[residue] ) { line= substr($0,14,3) "_" substr($0,23,4) ";" residue ";" substr($0,31,8)";" substr($0,39,8)";" substr($0,47,8); gsub(/\s/, "", line); print line } }' ${outputFolder}tmp/ligandCode $f > ${f}.ligand_tmp
+        if $otherLigands  && [[ $(wc -l ${f}.ligand_tmp | awk '{print $1}') == "0" ]]; then
+            grep "^HETNAM" $f | sed -r 's/^.{11}//' >> ${outputFolder}otherLigandsOrphan.tmp
+        fi
+    fi
   done
+  
+  if [ -f ${outputFolder}otherLigandsOrphan.tmp ]; then
+    sort ${outputFolder}otherLigandsOrphan.tmp | uniq > ${outputFolder}otherLigandsOrphan
+    rm ${outputFolder}otherLigandsOrphan.tmp
+  fi
 
   mv ${pdbFolder}*.ligand_tmp ${outputFolder}tmp/ 2>>$logfile
 fi
 
+if $download_only ; then
+    echo "Completed"
+    exit 0;
+fi    
+    
 ###########################################################################################
 # FPOCKET 
 
@@ -385,11 +404,10 @@ while read line; do
     progress "fpocket on $line"
 	if [ ! -f ${outputFolder}${line}_out/pockets/pocket0_vert.pqr ]; then
 		# Delete HETATM # remove the pdb file
-   		pdb_delhetatm $pdbFolder$line.pdb |  pdb_tidy > ${pdbFolder}${line}_NoHET.pdb
    		fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -r $fpocketrarg -s $fpocketsarg -f ${pdbFolder}${line}_NoHET.pdb 1>> $logfile 2>>$logfile
    		#echo "fpocket -D $fpocketDarg -M $fpocketMarg -m $fpocketmarg -r $fpocketrarg -f ${pdbFolder}${line}_NoHET.pdb"
 	else
-		message "fpocket skipped for $line "
+		message "fpocket skipped for $line"
 	fi
 	mv ${pdbFolder}${line}_NoHET_out ${outputFolder} 2>>$logfile
 done < ${inputFile} 

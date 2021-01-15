@@ -98,7 +98,7 @@ def training_process(file_name, model, features_to_use, cv, threads):
     elif (model == "rf"):
         print("Random Forest classifier")
         parameters = {'n_estimators':(100,200), 'criterion' : ('gini',) , 'max_depth' : (5,10) , 'min_samples_split' : (2,5,.10,) }
-        clf_model=RandomForestClassifier()
+        clf_model=RandomForestClassifier(class_weight = "balanced_subsample")
     elif (model == "svm"):
         print("Support Vector Machine classifier")
         parameters = {'C': [1, 10, 100, 1000], 'kernel' : ['rbf', 'linear' , 'poly', 'sigmoid'], 'gamma' : ['auto'] }
