@@ -1,0 +1,50 @@
+benjamin@lef-201602:~/Documents/Publication/PickPocketArticle/FattyAcidModel3/FinalModelManCurated$ ~/bin/PickPocket/src/main.py train ../Data/train_mdl3_manCurated_refine.tsv FA_Model3_ManCurated.mdl mlp 5
+Training process
+Options:
+         File name: ../Data/train_mdl3_manCurated_refine.tsv
+         Model: mlp
+         Cross Validation: 5
+
+Total dataset size:
+        - 8483 samples
+        - 21 features
+        - 2 classes : 0 (7960 samples) 1 (523 samples)
+
+During the training process, the cross validation process will use 349 for each group as training and 174 as test
+
+Rescaling the data in [0-1]
+Neural network - MultiLayer Perceptron Classifier
+
+---- Tuning hyper-parameters for accuracy ----
+
+Best parameters set found on development set:
+
+{'activation': 'relu', 'hidden_layer_sizes': (20, 10, 5), 'solver': 'lbfgs'}
+0.8977142857142857
+
+Grid scores on development set:
+
+mean accuracy   std accuracy    parameters
+0.822   (std: 0.010)            {'activation': 'relu', 'hidden_layer_sizes': (20, 10, 5), 'solver': 'adam'}
+0.898   (std: 0.024)            {'activation': 'relu', 'hidden_layer_sizes': (20, 10, 5), 'solver': 'lbfgs'}
+0.794   (std: 0.029)            {'activation': 'relu', 'hidden_layer_sizes': (15, 10, 5), 'solver': 'adam'}
+0.722   (std: 0.184)            {'activation': 'relu', 'hidden_layer_sizes': (15, 10, 5), 'solver': 'lbfgs'}
+0.790   (std: 0.026)            {'activation': 'relu', 'hidden_layer_sizes': (15, 10), 'solver': 'adam'}
+0.866   (std: 0.033)            {'activation': 'relu', 'hidden_layer_sizes': (15, 10), 'solver': 'lbfgs'}
+0.786   (std: 0.013)            {'activation': 'relu', 'hidden_layer_sizes': (10, 5), 'solver': 'adam'}
+0.833   (std: 0.024)            {'activation': 'relu', 'hidden_layer_sizes': (10, 5), 'solver': 'lbfgs'}
+
+Detailed classification report (based on the full set) :
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      7960
+           1       0.92      0.77      0.84       523
+
+    accuracy                           0.98      8483
+   macro avg       0.95      0.88      0.91      8483
+weighted avg       0.98      0.98      0.98      8483
+
+
+Best values:
+accuracy        0.8977142857142857
