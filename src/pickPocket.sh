@@ -48,7 +48,7 @@ where:
 	-S 	: s argument of fpocket (see man fpocket, default 2 ) 
 	-c	: Cutoff distance between the pocket and the ligand to be considered -correct-, default 1A
 	-v 	: Verbose. Show additional output Default False
-    	-s	: Silent. Don't show the progress bar. Default False. 
+  -s	: Silent. Don't show the progress bar. Default False.
 	-t	: Flag used to disable the training.
 	-R	: Flag used to keep all temporary files from fpocket and other program, otherwhise deleted. 
 	-L	: Flag used to check for other ligands. PDB may contain other ligand that will be automatically assume as negative pockets. 
@@ -212,15 +212,15 @@ do
 		L)
 			otherLigands=true
 			;;
-        s)
-            silent=true
-            ;;
-        d)  
-            download_only=true
-            ;;
+    s)
+      silent=true
+      ;;
+    d)
+      download_only=true
+      ;;
 		?)
-			help
-            ;;
+		help
+      ;;
     esac
 done
 # Catching no arguments 
@@ -443,8 +443,9 @@ done < ${inputFile}
 message "Compiling all the fpocket results into one file"
 
 
-# Reference of values to extract from the pocket results 
-pocketValues="Pocket Score${sep}Drug Score${sep}Number of V. Vertices${sep}Mean alpha-sphere radius${sep}Mean alpha-sphere SA${sep}Mean B-factor${sep}Hydrophobicity Score${sep}Polarity Score${sep}Volume Score${sep}Real volume${sep}Charge Score${sep}Local hydrophobic density Score${sep}Number of apolar alpha sphere${sep}Proportion of apolar alpha sphere"
+# Reference of values to extract from the pocket results
+pocketValues="Pocket Score${sep}Drug Score${sep}Number of Alpha Sphere${sep}Total SASA${sep}Polar SASA${sep}Apolar SASA${sep}Real volume${sep}Mean local hydrophobic density${sep}Mean alpha sphere radius${sep}Mean solvent accessibility${sep}Apolar AS proportion${sep}Hydrophobicity score${sep}Volume score${sep}Polarity score${sep}Charged score${sep}Proportion of polar atoms${sep}Alpha sphere density${sep}Cent. of Mass AS max dist${sep}Flexibility"
+
 
 echo -e "${pocketValues}" | awk -F "${sep}" 'NR==1 {for (i=1; i<= NF; i++) {print $i } } ' > ${outputFolder}/tmp/pocketValue_tmp
 
@@ -479,29 +480,30 @@ while read line; do
 			#########################################################################
 
 			# Stride part ! 
-			# Extract only the line that start with 'ATOM' 
+			# Extract only the line that start with 'ATOM'
 			grep "^ATOM" ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_atm.pdb > ${outputFolder}atmpdb_tmp
 			if [[ -s "${outputFolder}atmpdb_tmp" ]]; then
             # build a tmp file with the chain and number of residue from the pocket.
-                rm -f ${outputFolder}residue_tmp
-                touch ${outputFolder}residue_tmp
-                while read fileline; do
-                    chain=${fileline:21:1}
-                    position=${fileline:22:4}
-                    #echo "Chain=" $chain "   Position=" $position
-                    echo $chain";"$position >> ${outputFolder}residue_tmp
-                done < ${outputFolder}atmpdb_tmp
-                cat ${outputFolder}residue_tmp | sort | uniq  | grep "^[A-Z0-9];*" > ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv
-                 # make a file of the different portions of chain  ex A 1-12 \n B 24-34
-                # Check if file is empty before running script
-                if [[ -s "${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv" ]]; then
-                  Rscript $MYDIR/residueDomain.R --filepath=${outputFolder}${line}_NoHET_out/pockets/ --filename=pocket${pocketNum}_residues.csv
-                else
-                  message " No line in pocket residue file for ${line}"
-                fi
-            else
+          rm -f ${outputFolder}residue_tmp
+          touch ${outputFolder}residue_tmp
+          while read fileline ; do
+              chain=${fileline:21:1}
+              position=${fileline:22:4}
+              #echo "Chain=" $chain "   Position=" $position
+              echo $chain";"$position >> ${outputFolder}residue_tmp
+          done < ${outputFolder}atmpdb_tmp
+          cat ${outputFolder}residue_tmp | sort | uniq  | grep "^[A-Z0-9];*" > ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv
+           # make a file of the different portions of chain  ex A 1-12 \n B 24-34
+          # Check if file is empty before running script
+          #echo ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv
+          if [[ -s "${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_residues.csv" ]]; then
+            Rscript $MYDIR/residueDomain.R --filepath=${outputFolder}${line}_NoHET_out/pockets/ --filename=pocket${pocketNum}_residues.csv
+          else
+            message " No line in pocket residue file for ${line}"
+          fi
+      else
                 message "No atom in the file ${outputFolder}atmpdb_tmp"
-            fi
+      fi
 			# Cross match the line from stride file to ATOM selection. ( col 4 5 and 6 match 2 3 and 4 )			
 			awk 'NR==FNR{a[$4,$5,$6];next} ($2,$3,$4) in a'  ${outputFolder}atmpdb_tmp ${outputFolder}${line}_NoHET_out/${line}_stride.out > ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_stride.out
 			# compute the diffent value we want to add in the matrix 		
@@ -524,9 +526,12 @@ while read line; do
 			##################################################################
 			#  	Here we treat the file to make a line out of it 	         #
 			##################################################################
-			# Extract the lines with the pocket descriptives values and reformat. 
-			
-	 		resultLine=$(grep -f ${outputFolder}/tmp/pocketValue_tmp ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr | awk -v sep="${sep}" '{toprint=toprint sep $NF } END { print toprint }' )
+			#-> a remplacer par une ligne qui lit le fichier _info.txt
+			# Extract the lines with the pocket descriptives values and reformat.
+			# in the info file the pockets are number +1
+			pocketNumPlusOne=$((pocketNum + 1))
+	    resultLine=$(grep "Pocket ${pocketNumPlusOne} :" -A 19 ${outputFolder}${line}_NoHET_out/${line}_NoHET_info.txt | tail -n +2 | awk -v sep="${sep}" '{toprint=toprint sep $NF } END { print toprint }')
+	    #resultLine=$(grep -f ${outputFolder}/tmp/pocketValue_tmp ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr | awk -v sep="${sep}" '{toprint=toprint sep $NF } END { print toprint }' )
 			
 			#Reformat the line so it's tsv 
 			lineBuild="${lineBuild}${resultLine}"

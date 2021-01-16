@@ -87,15 +87,13 @@ min.eucl.dist <- function(ligand,pocket) {
 
 #Loading the summary file
 summaryFilePath = paste(argsL$folderOutput,argsL$pocketSummaryFileName,sep="")
-#print(summaryFilePath)
-#Check if file exist, if yes reads. 
+#Check if file exist, if yes reads.
 if (file.exists(summaryFilePath)){
 	summary = read.csv(summaryFilePath, sep = "\t", header = T )
 }else{
 	print("No summary file found !  ")
 	q(save = "no" , status = 1 )
 }
-
 # let's make a list of pdb from the summary file ( so if something wrong happened it will fail ) 
 pdbList = unique(summary[,1])
 
@@ -290,15 +288,14 @@ if(argsL$multicol){
 	results$ligandClass[which(results$correctPocket == FALSE )] = 0
 }
 
-#save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
+save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 
 
 
-columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandResidueType","ligandClass","Pocket_Score","Drug_Score",
-			 "Number_of_V._Vertices","Mean_alpha.sphere_radius","Mean_alpha.sphere_SA","Mean_B.factor","Hydrophobicity_Score",
-			  "Polarity_Score","Volume_Score","Real_volume","Charge_Score","Local_hydrophobic_density_Score",
-			  "Number_of_apolar_alpha_sphere","Proportion_of_apolar_alpha_sphere","SASA","AlphaHelix","Coil","Strand",
-			  "Turn","Bridge","Helix310")
+columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandResidueType","ligandClass",
+"Pocket_Score","Drug_Score","Number_of_Alpha_Sphere","Total_SASA","Polar_SASA","Apolar_SASA","Real_volume","Mean_local_hydrophobic_density",
+"Mean_alpha_sphere_radius","Mean_solvent_accessibility","Apolar_AS_proportion","Hydrophobicity_score","Volume_score","Polarity_score","Charged_score",
+"Proportion_of_polar_atoms","Alpha_sphere_density","Cent._of_Mass_AS_max_dist","Flexibility","SASA","AlphaHelix","Coil","Strand","Turn","Bridge","Helix310")
 
 #colnames(results)
 train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
