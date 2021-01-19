@@ -443,7 +443,7 @@ done < ${inputFile}
 message "Compiling all the fpocket results into one file"
 
 
-# Reference of values to extract from the pocket results
+# Reference of values to extract from the pocket results #For the atoms look at https://cdn.rcsb.org/rcsb-pdb//file_formats/pdb/pdbguide2.2/pdb_contents_guide2.2.pdf
 pocketValues="Pocket Score${sep}Drug Score${sep}Number of Alpha Sphere${sep}Total SASA${sep}Polar SASA${sep}Apolar SASA${sep}Real volume${sep}Mean local hydrophobic density${sep}Mean alpha sphere radius${sep}Mean solvent accessibility${sep}Apolar AS proportion${sep}Hydrophobicity score${sep}Volume score${sep}Polarity score${sep}Charged score${sep}Proportion of polar atoms${sep}Alpha sphere density${sep}Cent. of Mass AS max dist${sep}Flexibility"
 
 
@@ -451,17 +451,22 @@ echo -e "${pocketValues}" | awk -F "${sep}" 'NR==1 {for (i=1; i<= NF; i++) {prin
 
 # Create the pocket summary file. # The output file will use space as separator ! 
 touch ${outputFolder}pocketSummary.csv
-echo -e "PDB${sep}PocketNumber${sep}PocketPosition${sep}"${pocketValues// /_}"${sep}SASA${sep}AlphaHelix${sep}Coil${sep}Strand${sep}Turn${sep}Bridge${sep}Helix310" > ${outputFolder}pocketSummary.csv
+echo -e "PDB${sep}PocketNumber${sep}PocketPosition${sep}"${pocketValues// /_}"${sep}SASA${sep}AlphaHelix${sep}Coil${sep}Strand${sep}Turn${sep}Bridge${sep}Helix310${sep}  C${sep} C1${sep} C2${sep} C3${sep} C4${sep} C5${sep} C6${sep} C7${sep} C8${sep} CA${sep} CB${sep} CD${sep}CD1${sep}CD2${sep} CE${sep}CE1${sep}CE2${sep}CE3${sep} CG${sep}CG1${sep}CG2${sep}CH2${sep} CZ${sep}CZ2${sep}CZ3${sep}  N${sep} N1${sep} N2${sep} N3${sep} N4${sep} N6${sep} N7${sep} N9${sep}ND1${sep}ND2${sep} NE${sep}NE1${sep}NE2${sep}NH1${sep}NH2${sep} NZ${sep}  O${sep} O2${sep} O3${sep} O4${sep} O5${sep} O6${sep}OD1${sep}OD2${sep}OE1${sep}OE2${sep} OG${sep}OG1${sep} OH${sep}OP1${sep}OP2${sep}OXT${sep}  P${sep} SD${sep} SG" > ${outputFolder}pocketSummary.csv
 
 #output before treatment
 message "Parsing all pocket file one by one"
+
+
+#Preparing the uniq atom reference file. It will be in tmp directory
+echo -ne "  C\n C1\n C2\n C3\n C4\n C5\n C6\n C7\n C8\n CA\n CB\n CD\nCD1\nCD2\n CE\nCE1\nCE2\nCE3\n CG\nCG1\nCG2\nCH2\n CZ\nCZ2\nCZ3\n  N\n N1\n N2\n N3\n N4\n N6\n N7\n N9\nND1\nND2\n NE\nNE1\nNE2\nNH1\nNH2\n NZ\n  O\n O2\n O3\n O4\n O5\n O6\nOD1\nOD2\nOE1\nOE2\n OG\nOG1\n OH\nOP1\nOP2\nOXT\n  P\n SD\n SG\n" > ${outputFolder}tmp/uniqAtoms
+
 
 # For each PDB in the input file parse the output folder and gather all the atm.pdb files ( pocket  ) 
 progress "init" $inputFile 
 
 
 
-while read line; do 
+while read line; do
 	# Retrieve the atm files from the pocket folder
 	# Test if the folder contains at least one file !!!!
 	progress "Post processing $line"
@@ -526,16 +531,22 @@ while read line; do
 			##################################################################
 			#  	Here we treat the file to make a line out of it 	         #
 			##################################################################
-			#-> a remplacer par une ligne qui lit le fichier _info.txt
 			# Extract the lines with the pocket descriptives values and reformat.
 			# in the info file the pockets are number +1
 			pocketNumPlusOne=$((pocketNum + 1))
 	    resultLine=$(grep "Pocket ${pocketNumPlusOne} :" -A 19 ${outputFolder}${line}_NoHET_out/${line}_NoHET_info.txt | tail -n +2 | awk -v sep="${sep}" '{toprint=toprint sep $NF } END { print toprint }')
 	    #resultLine=$(grep -f ${outputFolder}/tmp/pocketValue_tmp ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_vert.pqr | awk -v sep="${sep}" '{toprint=toprint sep $NF } END { print toprint }' )
-			
-			#Reformat the line so it's tsv 
+
+      #Counting the different atoms present in the pocket. Using reference uniqAtoms in folder tmp
+      grep "^ATOM " ${outputFolder}${line}_NoHET_out/pockets/pocket${pocketNum}_atm.pdb > ${outputFolder}tmp/atomtmp
+      atomcount=$(while read line ; do grep -w -c ${line} ${outputFolder}tmp/atomtmp ; done < ${outputFolder}tmp/uniqAtoms | tr '\n' '\t' )
+
+			#Reformat the line so it's tsv
 			lineBuild="${lineBuild}${resultLine}"
-			lineBuild="${lineBuild}${sep}${sasasum}${sep}${alpha}${sep}${coil}${sep}${strand}${sep}${turn}${sep}${bridge}${sep}${helix310}"
+			lineBuild="${lineBuild}${sep}${sasasum}${sep}${alpha}${sep}${coil}${sep}${strand}${sep}${turn}${sep}${bridge}${sep}${helix310}${sep}"
+			lineBuild="${lineBuild}${atomcount}"
+
+
 			echo -e "${lineBuild}" >> ${outputFolder}pocketSummary.csv
 			# Let's also store the X Y Z of the AA from the pocket in temp files similar to the ones for the ligand. Format in the same way than the ligand
 			# file will look like this => 4.04;APOL;46.598;-99.180;-37.105
@@ -549,18 +560,17 @@ done < ${inputFile}
 #output after treatment treatment
 message "Parsing done, results are in ${outputFolder}pocketSummary.csv"
 
-# if option remove  
+# if option remove
 if [ "$remove" = true ]; then
 	rm -R $outputFolder/*_out
 fi
-
 ################################################################################
 # Summary  : 
 # At this point you have a table of all pocket descriptive value 'pocketSummary.csv' in the main folder. 
 # In the tmp folder you have '2lkk.pdb.pocket.2_tmp' files that have the pocket residues
 # Also the _ligand file that have the coordinates of the different 'selected ligand' position for all pdb files. 
 # I think it's time for R ! 
-# See you tomorow ! 
+#
 # 
 # The R script compute the distance between pockets and ligands. 
 # From that we determine the correct pocket .
@@ -603,6 +613,11 @@ echo "You can know run the Neural network training "
 echo "Pickpocket finished, results matrix can be found at ${outputFolder}train.tsv " >> $logfile
 echo "You can know run the Neural network training " >> $logfile
 
+
+# if option remove
+if [ "$remove" = true ]; then
+	rm -R $outputFolder/tmp
+fi
 #echo ${MYDIR}
 #cat ${inputFile}
 #cat ${ligandFile}

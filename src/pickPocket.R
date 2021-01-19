@@ -89,7 +89,7 @@ min.eucl.dist <- function(ligand,pocket) {
 summaryFilePath = paste(argsL$folderOutput,argsL$pocketSummaryFileName,sep="")
 #Check if file exist, if yes reads.
 if (file.exists(summaryFilePath)){
-	summary = read.csv(summaryFilePath, sep = "\t", header = T )
+	summary = read.csv(summaryFilePath, sep = "\t", header = T, row.names=NULL)
 }else{
 	print("No summary file found !  ")
 	q(save = "no" , status = 1 )
@@ -288,20 +288,23 @@ if(argsL$multicol){
 	results$ligandClass[which(results$correctPocket == FALSE )] = 0
 }
 
-save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
+#save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 
 
 
 columntosave = c("PDB","PocketNumber","PocketPosition","correctPocket","ligandResidueType","ligandClass",
 "Pocket_Score","Drug_Score","Number_of_Alpha_Sphere","Total_SASA","Polar_SASA","Apolar_SASA","Real_volume","Mean_local_hydrophobic_density",
 "Mean_alpha_sphere_radius","Mean_solvent_accessibility","Apolar_AS_proportion","Hydrophobicity_score","Volume_score","Polarity_score","Charged_score",
-"Proportion_of_polar_atoms","Alpha_sphere_density","Cent._of_Mass_AS_max_dist","Flexibility","SASA","AlphaHelix","Coil","Strand","Turn","Bridge","Helix310")
+"Proportion_of_polar_atoms","Alpha_sphere_density","Cent._of_Mass_AS_max_dist","Flexibility","SASA","AlphaHelix","Coil","Strand","Turn","Bridge","Helix310",
+"C","C1","C2","C3","C4","C5","C6","C7","C8","CA","CB","CD","CD1","CD2","CE","CE1","CE2","CE3","CG","CG1","CG2","CH2","CZ","CZ2","CZ3","N",
+"N1","N2","N3","N4","N6","N7","N9","ND1","ND2","NE","NE1","NE2","NH1","NH2","NZ","O","O2","O3","O4","O5","O6","OD1","OD2","OE1","OE2",
+"OG","OG1","OH","OP1","OP2","OXT","P","SD","SG")
 
 #colnames(results)
 train = rbind(results[which(results$correctPocket == TRUE),columntosave],results[which(results$correctPocket == FALSE),columntosave])
 write.table( train, file = paste(argsL$folderOutput,"train.tsv",sep =""),sep = "\t",  row.names = F, dec=".", na = "0", quote =F)
 
-save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
+#save.image(paste(argsL$folderOutput,".backup.R", sep = ""))
 
 
 
