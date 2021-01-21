@@ -43,7 +43,7 @@ def import_data(self, file_name):
         if any(mask):
             if len(labels) == 0:
                 labels = np.transpose(np.array([table[lab]], dtype="str"));
-            else :
+            else:
                 tmp=np.transpose(np.array([table[lab]], dtype="str"));
                 labels = np.concatenate((labels, tmp), 1)
     for lab in ids_col:

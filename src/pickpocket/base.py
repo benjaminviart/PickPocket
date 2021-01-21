@@ -38,7 +38,7 @@ class NonHetSelect(Select):
 
 
 class PickPocket():
-    def __init__(self, pdb_dir, pdb_list, ligand_list, pymol_dir=None, threads = 1):
+    def __init__(self, pdb_dir, pdb_list, ligand_list, pymol_dir=None, info_dir = None, threads = 1):
         '''
         Initialize pickPocket
         :param pdb_dir:
@@ -61,6 +61,10 @@ class PickPocket():
         if self._pymol_dir != None: 
             if not os.path.exists(self._pymol_dir):
                 os.makedirs(self._pymol_dir)
+        self._info_dir=info_dir
+        if self._info_dir != None: 
+            if not os.path.exists(self._info_dir):
+                os.makedirs(self._info_dir)
         ## Init utils
         self._pdbl = PDBList()
         self._pdbp = PDBParser()
@@ -95,7 +99,8 @@ class PickPocket():
                 os.makedirs("{}/true_pockets/".format(self._pymol_dir))
         for idx in range(len(self.pdbs)):
             self._process_pdb(idx)
-        self._write_infos()
+        if self._info_dir != None:
+            self._write_infos()
     
     def get_optimization_pockets(self):
         out=[]
@@ -239,6 +244,7 @@ class PickPocket():
             args.append((pdb_id, fname, odir, self.fpocket_param.copy()))
         pool = ThreadPool(processes=self.threads)
         self.fpocket_results = pool.starmap(fpocket, args)
+        pool.close()
         if self._pymol_dir!=None:
             if not os.path.exists("{}/predicted_pockets".format(self._pymol_dir)):
                 os.makedirs("{}/predicted_pockets".format(self._pymol_dir))
@@ -259,6 +265,7 @@ class PickPocket():
             args.append((pdb_id, fname, odir))
         pool = ThreadPool(processes=self.threads)
         self.stride_results = pool.starmap(stride, args)
+        pool.close()
     ### End External software methods
     
     
@@ -313,7 +320,7 @@ class PickPocket():
                 
     
     def _write_infos(self):
-        basedir="{}/infos/".format(self.pdb_dir)
+        basedir="{}/infos/".format(self._info_dir)
         if not os.path.exists(basedir):
             os.makedirs(basedir)
         with open("{}/pdb_total.ls".format(basedir), "w") as f:

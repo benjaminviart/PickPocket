@@ -124,7 +124,7 @@ class FpocketOptimizer(Problem):
             out["G"] = [0]
         else:
             out["G"] = [g1]
-            out["F"] = [1,100, 1, 100 ]
+            out["F"] = [1, 1 ]
             return out
         f1 , f2  = self._evaluate_parameters(parameters)
         out["F"] = [f1,f2]
@@ -155,10 +155,12 @@ class FpocketOptimizer(Problem):
                     return (1,1)
                 elif np.std(percentage_residues) < 0.1 or np.std(percentage_ligand_atm) < 0.1:
                     break
-        logging.debug("Accepted {} with {} and {} ".format(par, np.mean(percentage_residues),np.mean(percentage_ligand_atm) ))
-        if len(percentage_residues) < 3:
+        
+        if len(percentage_residues) < min(3, len(self._files)):
+            logging.debug("Refused {} for insufficient data ".format(par))
             return (1,1)
-        return (1 - np.mean(percentage_residues), 1 - np.mean(percentage_ligand_atm))  
+        logging.debug("Accepted {} with {} and {} ".format(par, np.mean(percentage_residues),np.mean(percentage_ligand_atm) ))
+        return (1 - np.mean(percentage_residues), 1 - np.mean(percentage_ligand_atm) )  
             
     def _runFpocket(self, par, idx):
         fname = self._files[idx]

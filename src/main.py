@@ -36,7 +36,8 @@ def extract(args):
     pickpocket = PickPocket(pdb_dir= args.pdb_dir, 
                             pdb_list=args.pdbs, 
                             ligand_list= args.ligands,
-                            threads=args.threads, pymol_dir="{}/pymol/".format(args.output))
+                            threads=args.threads, pymol_dir="{}/pymol/".format(args.output),
+                             info_dir="{}/info/".format(args.output))
     print("Done.")
     print(" 2 - Identifying the full pockets...", end="", flush=True)
     pickpocket.process_structures(distance=args.distance , optimization = False)
@@ -60,6 +61,8 @@ def optimize(args):
     from pymoo.algorithms.nsga2 import NSGA2
     from pymoo.optimize import minimize
     from pymoo.util.termination.default import MultiObjectiveDefaultTermination
+    import copy
+    import json
     if args.known :
         params=json.parse(args.known)
         full_arg_list = ["m", "M", "A", "i", "D", "s", "n", "r" ]
@@ -70,7 +73,7 @@ def optimize(args):
         params=None
     print("\nStarting the optimization process with {} threads".format(args.threads))
     print(" 1 - Setting up the work space...", end="", flush=True)
-    pickpocket = PickPocket(args.pdb_dir, args.pdbs, args.ligands,  pymol_dir="{}_pymol/".format(args.output))
+    pickpocket = PickPocket(args.pdb_dir, args.pdbs, args.ligands, info_dir="{}/info/".format(args.output), pymol_dir="{}/pymol/".format(args.output))
     print("Done.")
     print(" 2 - Identifying the full pockets and redundancy...", end="", flush=True)
     pickpocket.process_structures(distance=args.distance ,rms_thr=args.rmsd_thr  ,optimization = True)
@@ -87,7 +90,7 @@ def optimize(args):
     print("\t  {:15}:{:^10}".format("Total", len(pickpocket.ligands.keys())))
     print("\t Additional Ligands:")
     print("\t  {:15}:{:^10}".format("Total", len(pickpocket.unlisted_ligands.keys())))
-    print("\n\tAn extended list is present in the files {}/infos/*.ls\n".format(args.pdb_dir))
+    print("\n\tAn extended list is present in the files {}/infos/*.ls\n".format(args.output))
     if args.download:
         print("Done. You can copy {} in another location and run the optimization offline.".format(args.pdb_dir))
         return
@@ -105,26 +108,28 @@ def optimize(args):
                    eliminate_duplicates=optimizer.FpocketOptimizerDuplicateElimination()
                     )
     termination = MultiObjectiveDefaultTermination(
-        x_tol=1e-8,
-        cv_tol=1e-6,
-        f_tol=0.0025,
+        x_tol=0.05,
+        cv_tol=0.05,
+        f_tol=0.05,
         nth_gen=1,
-        n_last=30,
+        n_last=3,
         n_max_gen=args.max_gen,
         n_max_evals=100000
         )
-    res = minimize(problem, algorithm, termination,save_history=True,seed=1, verbose=True )
-    if type(res.opt) is list and len(res.opt) > 0 :
+    res = minimize(problem, algorithm, termination, seed=1, verbose=True )
+    pool.close()
+    if type(res.opt) is not type(None) and len(res.opt) > 0 :
         print("Found {} non dominant solution:".format(len(res.opt)))
         n=1
-        print("f1= fraction of the predicted pockets residues in the real pockets")
-        print("f2= fraction of the ligand atoms close to the predicted pocket")
-        print("# \tf1_mean\tf1_std\tf2_mean\tf2_std\t{}".format(problem._arg_list))
+        print("# \ttrue_pocket_residues_fraction\tligand_atom_fraction\t{}".format("\t".join(problem._arg_list)))
         for sol in res.opt:
             F = sol.get("F")
-            X= sol.get("X")
-            print("{}\t{}\t{}\t{}\t{}\t{}".format(n, F[0], F[1], F[2], F[3], X ))
-            out={"f1_mean" : F[0] , "f1_std" : F[1], "f2_mean" : F[2], "f2_std" : F[3], "parameters" : problem._get_parameters(X)}
+            X= problem._get_parameters(sol.get("X"))
+            X_vals = []
+            for k in problem._arg_list:
+                X_vals.append(X[k])
+            print("{}\t{:.3f}\t{:.3f}\t{}".format(n, 1-F[0], 1-F[1], "\t".join(X_vals)))
+            out={"true_pocket_residues_fraction" : round(float(F[0]),3) , "ligand_atom_fraction" : round(float(F[1]),3), "parameters" : X}
             ofs=open("{}_{}.json".format(args.output, n), "w")
             json.dump(out, ofs, indent=2)
             ofs.close()
