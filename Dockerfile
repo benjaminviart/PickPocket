@@ -11,10 +11,11 @@ RUN apt-get update \
     ca-certificates \
     python3-pip \
     python3 \
+	python3-setuptools \
     r-base r-base-core \
 	pymol \
   && rm -rf /var/lib/apt/lists/* && \
- pip3 install pdb-tools numpy==1.18.5 scipy==1.2.0 scikit-learn==0.21.3 pandas==1.1.3
+ pip3 install pdb-tools numpy==1.18.5 scipy==1.2.0 scikit-learn==0.21.3 pandas==1.1.3 pymoo==0.4.2.1 biopython==1.76 
 ## Includes a change of the makefile required for the installation ( https://sourceforge.net/p/fpocket/mailman/message/28785185/ )
 RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 	tar -xzf fpocket2.tar.gz && \

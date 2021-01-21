@@ -1,225 +1,204 @@
 #!/usr/bin/env python3
+import argparse
+import logging
+import os
+from multiprocessing import cpu_count
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s -%(levelname)s - %(message)s', filename="./log.txt")
 
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.neural_network import MLPClassifier
-from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import cross_validate
-from sklearn.model_selection import KFold
-from sklearn.svm import SVC
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.base import clone
+def welcome():
+    print("\n --- Welcome to PickPocket --- \n")
 
-import numpy as np
-import pandas as pd
-import pickle
-import sys
-from sklearn.metrics.classification import accuracy_score
+def train(args):
+    from pickpocket.model import training_process
+    file_input= args.input
+    file_output= args.output
+    model=args.model
+    n_cross_validation=args.cross_validation
+    threads=args.threads
+    clfs , scaler , classnames = training_process(file_input, model, n_cross_validation, threads)
+    stream_out = open(file_output, "wb")
+    pickle.dump([scaler, clfs, classnames], stream_out)
+    stream_out.close();
 
-np.random.seed(123)
+def test(args):
+    from pickpocket.model import test_process
+    file_input= args.input
+    file_output= args.output
+    model_file=args.model
+    test_process(file_input, file_output, model_file)
 
-def generate_train_test_idx(groups, nbtest, nbtrain):
-    train_idx = np.empty((0,), dtype='int')
-    test_idx = np.empty((0,), dtype='int')
-    classnames = np.unique(groups)
-    for g in range(0, classnames.size):
-        random_indices = np.random.permutation(np.arange(len(groups))[groups==g])
-        train_idx = np.concatenate((train_idx, random_indices[nbtest:]))
-        test_idx = np.concatenate((test_idx, random_indices[nbtest:nbtrain]))
-    return (train_idx, test_idx);
+def extract(args):
+    from pickpocket.base import PickPocket
+    if os.path.exists(args.output):
+        print("Error! output directory exists: {}".format(args.output))
+        return -1
+    print("\nStarting the extraction process\n 1 - Setting up the work space...", end="", flush=True)
+    pickpocket = PickPocket(pdb_dir= args.pdb_dir, 
+                            pdb_list=args.pdbs, 
+                            ligand_list= args.ligands,
+                            threads=args.threads, pymol_dir="{}/pymol/".format(args.output))
+    print("Done.")
+    print(" 2 - Identifying the full pockets...", end="", flush=True)
+    pickpocket.process_structures(distance=args.distance , optimization = False)
+    print("Done.")
+    print(" 3 - Running fpocket...", end="", flush=True)
+    pickpocket.run_fpocket(args.fpocket_param, args.output)
+    print("Done.")
+    print(" 4 - Running stride...", end="", flush=True)
+    pickpocket.run_stride(args.output)
+    print("Done.")
+    print(" 5 - Producing the output file...", end="", flush=True)
+    pickpocket.print_table(args.output)
+    print("Done.")
+    print("You can find all your results in {} ".format(args.output))
+    
 
-def import_data(file_name, feature_names=[]):
-    table = pd.read_csv(file_name, decimal=".", sep='\t')
-    labels=[]
-    ids =[]
-    ids_col = ['PDB', 'PocketNumber'];
-    label_col = ['ligandClass' ,'correctPocket'] ;
-    mask = []
-    for lab in label_col:
-        mask = table.columns.str.contains(lab)
-        if any(mask):
-            if len(labels) == 0:
-                labels = np.transpose(np.array([table[lab]], dtype="str"));
-            else :
-                tmp=np.transpose(np.array([table[lab]], dtype="str"));
-                labels = np.concatenate((labels, tmp), 1)
-    for lab in ids_col:
-        mask = table.columns.str.contains(lab)
-        if any(mask):
-            if len(ids) == 0:
-                ids = np.transpose(np.array([table[lab]], dtype="str"));
-            else :
-                tmp=np.transpose(np.array([table[lab]], dtype="str"));
-                ids = np.concatenate((ids, tmp), 1)
-    X= np.array(table[feature_names], dtype="float64")
-    return X, labels , ids
-
-
-def training_process(file_name, model, features_to_use, cv, threads):
+def optimize(args):
+    from pickpocket.base import PickPocket
+    import pickpocket.optimizer as optimizer
+    from multiprocessing.pool import ThreadPool
+    from pymoo.algorithms.nsga2 import NSGA2
+    from pymoo.optimize import minimize
+    from pymoo.util.termination.default import MultiObjectiveDefaultTermination
+    if args.known :
+        params=json.parse(args.known)
+        full_arg_list = ["m", "M", "A", "i", "D", "s", "n", "r" ]
+        for k in params:
+            if not k in full_arg_list:
+                raise ValueError("Error! file {} contains unknown key {}. \nAllowed keys: {}".format(args.known, k, full_arg_list)) 
+    else:
+        params=None
+    print("\nStarting the optimization process with {} threads".format(args.threads))
+    print(" 1 - Setting up the work space...", end="", flush=True)
+    pickpocket = PickPocket(args.pdb_dir, args.pdbs, args.ligands,  pymol_dir="{}_pymol/".format(args.output))
+    print("Done.")
+    print(" 2 - Identifying the full pockets and redundancy...", end="", flush=True)
+    pickpocket.process_structures(distance=args.distance ,rms_thr=args.rmsd_thr  ,optimization = True)
+    print("Done.")
+    print("\n\tFound {} pdbs with pockets having residues with a distance of {} from the respective ligand atoms.".format(len(pickpocket.get_ids("positive")), args.distance))
+    print("\tUsing {} non redundant pdbs for the optimization ( rmsd threshold of {} ).".format( len(pickpocket.get_ids("optimized")), args.rmsd_thr))
+    print("\n\tWork space state:")
+    print("\t Structures")
+    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.pdbs) ))
+    print("\t  {:15}:{:^10}".format("Positive", len(pickpocket.get_ids("positive"))))
+    print("\t  {:15}:{:^10}".format("Negative", len(pickpocket.get_ids("negative"))))
+    print("\t  {:15}:{:^10}".format("Optimization", len(pickpocket.get_ids("optimized"))))
+    print("\t Ligands")
+    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.ligands.keys())))
+    print("\t Additional Ligands:")
+    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.unlisted_ligands.keys())))
+    print("\n\tAn extended list is present in the files {}/infos/*.ls\n".format(args.pdb_dir))
+    if args.download:
+        print("Done. You can copy {} in another location and run the optimization offline.".format(args.pdb_dir))
+        return
     
-    X, labels, ids = import_data(file_name, features_to_use )
+    pool = ThreadPool(processes=args.threads)
+    problem = optimizer.FpocketOptimizer(pockets=pickpocket.get_optimization_pockets(), files=pickpocket.get_files_list(pdb_class="optimized", nohet=True), params= params, max_none=args.max_none,timeout=args.timeout , parallelization=('starmap', pool.starmap))
+    print(" 3 - Starting the NSGA2 parameters optimization with the following settings:")
+    print("\t{:15}:{:^10}".format("Pop size", args.pop_size))
+    print("\t{:15}:{:^10}".format("Max gen", args.max_gen))
+    print("\t{:15}:{:^10}".format("Timeout", str(args.timeout)+" sec" ), flush=True)
     
-    if len(labels.shape) == 2 and labels.shape[1] > 1:
-        labels=labels[:,0] 
-    classnames, Y = np.unique(labels, return_inverse=True)
-    groupcount = np.bincount(Y)
-    print("Training process")
-    print ( "Options:\n\t File name: {:s}\n\t Model: {:s}\n\t Cross Validation: {}\n".format(file_name, model, cv))
-    print("Total dataset size: ")
-    print("\t- {:d} samples".format(X.shape[0]))
-    print("\t- {:d} features".format(X.shape[1]))
-    print("\t- {:d} classes : ".format(len(classnames)) + (" ".join("{} ({} samples)".format(classnames[k], groupcount[k]) for k in range(0, len(classnames))) ))
-    # Replaced by a simple KFold
-    
-    # groupcount = np.bincount(Y)
-    # mingroup = (int)(np.nanmin(groupcount))
-    # nbtest = (int)(np.round(mingroup / cv))
-    # nbtrain = (int)(mingroup-nbtest)
-    # print("\nDuring the training process, the cross validation process will use {} for each group as training and {} as test ".format(nbtrain, nbtest) )
-    
-    
-    # cv_indexes = []
-    # while ( len(cv_indexes) < cv) :
-    #    cv_indexes.append(generate_train_test_idx(Y, nbtest, nbtrain))
-    
-    print("\nRescaling the data in [0-1]")
-    scaler= MinMaxScaler(feature_range=(0,1))
-    X = scaler.fit_transform(X, Y)
-    
-    ### Modify the following "parameters" to tune the grid search
-    
-    
-    if (model == "mlp"):
-        print("Neural network - MultiLayer Perceptron Classifier")
-        parameters = {'activation':['relu', 'tanh'], 'solver' : ['adam', 'sgd'] , 
-                      'hidden_layer_sizes' : [ (25,15,5), (50,25), (15,10) ] , 'alpha' : [0.0001, 0.05], 'max_iter' : (1000,) }
-        clf_model=MLPClassifier()
-    elif (model == "rf"):
-        print("Random Forest classifier")
-        parameters = {'n_estimators':(100,200), 'criterion' : ('gini',) , 'max_depth' : (5,10) , 'min_samples_split' : (2,5,.10,) }
-        clf_model=RandomForestClassifier(class_weight = "balanced_subsample")
-    elif (model == "svm"):
-        print("Support Vector Machine classifier")
-        parameters = {'C': [1, 10, 100, 1000], 'kernel' : ['rbf', 'linear' , 'poly', 'sigmoid'], 'gamma' : ['auto'] }
-        clf_model=SVC(probability=True)
-        
-    scores = {'Precision' : 'precision' , 'Accuracy' : "accuracy" } 
-    
-    print("\n---- Tuning hyper-parameters for ----\n")
-    clf = GridSearchCV(clf_model, parameters, scoring=scores ,cv=KFold(n_splits=cv, shuffle=True), n_jobs=threads, refit='Precision')
-    clf.fit(X, Y)
-    print("Best parameters set found on development set:")
-    print()
-    print(clf.best_params_)
-    print(clf.best_score_)
-    print()
-    print("Grid scores on development set:")
-    print()
-    for k in scores.keys():
-        print("mean_{}\t".format(k), end="")
-    print("parameters")
-    for i in range(0, len(clf.cv_results_['params']) ):
-        for k in scores.keys():
-            print(clf.cv_results_['mean_test_{}'.format(k)][i], end="\t")
-        print(clf.cv_results_['params'][i])
-    print()
-    cv_results = cross_validate(clone(clf.best_estimator_), X, Y, cv=KFold(n_splits=cv, shuffle=True),scoring = scores  )
-    print("Cross validation results:")
-    for k in scores.keys():
-        print("Score {}:\t {:.3f} +- {:.3f} ".format(k , np.mean(cv_results["test_{}".format(k)]), np.std(cv_results["test_{}".format(k)]) ))
-    print("\n\nDetailed classification report (based on the full set, not cross validated) :")
-    print()
-    y_true, y_pred = Y, clf.predict(X)
-    print(classification_report(y_true, y_pred))
-    print()
-    return  clf.best_estimator_, scaler, classnames
-
-def test_process(file_input, file_output, model_file, features_to_use):
-    print("Prediction process \nParameters:\n\t input file\t {}\n\t output file\t {} \n\t model file\t {}".format(file_input, file_output, model_file))
-    ofs = open(file_output, "w")
-    try :
-        ifs = open(model_file, "rb")
-        scaler, clf, classnames = pickle.load(ifs)
-        ifs.close()
-    except:
-        try:
-            ifs = open(model_file, "rb")
-            scaler, clf, classnames = pickle.load(ifs, encoding='latin1')
-            ifs.close()
-        except:
-            print("Erro loading the model file.")
-    print("Loaded model {}".format(clf.__class__.__name__))
-    classnames=[str(elem) for elem in classnames]
-    X, labels, sample_IDS = import_data(file_input, features_to_use ) ## Note: labels is an empty list
-    if len(labels) > 0 and len(labels.shape) == 2 and labels.shape[1] > 1:
-        tmp=labels[:,0]
-        labels=[]
-        for e in tmp:
-            labels.append(classnames.index(e))
-    header = "PDB\tPocketNumber\tprob_" + "\tprob_".join(classnames) +"\tClass"
-    if len(labels) > 0:
-        header+="\tLabel"
-    header+="\n";
-    print("Transforming the input data")
-    X= scaler.transform(X)
-    print("Predicting and saving the results")
-    ofs.write(header)
-    probs = clf.predict_proba(X)
-    for sample in range(0, sample_IDS.shape[0]):
-        line="{:s}\t{:s}".format(sample_IDS[sample, 0],sample_IDS[sample, 1])
-        for cl in range(0, probs.shape[1]):
-            line+="\t{:.2f}".format(probs[sample, cl])
-        line+="\t{}".format(classnames[np.argmax(probs[sample, ])])
-        if len(labels) > 0:
-            line+="\t{}".format(labels[sample])
-        line+="\n"
-        ofs.write(line)
-    ofs.close()
-    if len(labels) > 0:
-        y_true, y_pred = labels, clf.predict(X)
-        print(confusion_matrix(y_true, y_pred))
-        print(classification_report(y_true, y_pred))
-        print("Accuracy: {:.3f}".format(accuracy_score(y_true, y_pred)))
-    print("Done.\n")
-    return
-
+    algorithm = NSGA2(pop_size=args.pop_size,
+                   sampling= optimizer.FpocketOptimizerSampling(),
+                   mutations = optimizer.FpocketOptimizerMutation(),
+                   eliminate_duplicates=optimizer.FpocketOptimizerDuplicateElimination()
+                    )
+    termination = MultiObjectiveDefaultTermination(
+        x_tol=1e-8,
+        cv_tol=1e-6,
+        f_tol=0.0025,
+        nth_gen=1,
+        n_last=30,
+        n_max_gen=args.max_gen,
+        n_max_evals=100000
+        )
+    res = minimize(problem, algorithm, termination,save_history=True,seed=1, verbose=True )
+    if type(res.opt) is list and len(res.opt) > 0 :
+        print("Found {} non dominant solution:".format(len(res.opt)))
+        n=1
+        print("f1= fraction of the predicted pockets residues in the real pockets")
+        print("f2= fraction of the ligand atoms close to the predicted pocket")
+        print("# \tf1_mean\tf1_std\tf2_mean\tf2_std\t{}".format(problem._arg_list))
+        for sol in res.opt:
+            F = sol.get("F")
+            X= sol.get("X")
+            print("{}\t{}\t{}\t{}\t{}\t{}".format(n, F[0], F[1], F[2], F[3], X ))
+            out={"f1_mean" : F[0] , "f1_std" : F[1], "f2_mean" : F[2], "f2_std" : F[3], "parameters" : problem._get_parameters(X)}
+            ofs=open("{}_{}.json".format(args.output, n), "w")
+            json.dump(out, ofs, indent=2)
+            ofs.close()
+            n+=1
+    else:
+        print("No optimal parameters found.")
 
 def main():
-    features_to_use=['Pocket_Score','Drug_Score','Number_of_V._Vertices','Mean_alpha.sphere_radius','Mean_alpha.sphere_SA','Mean_B.factor','Hydrophobicity_Score','Polarity_Score','Volume_Score','Real_volume','Charge_Score','Local_hydrophobic_density_Score','Number_of_apolar_alpha_sphere','Proportion_of_apolar_alpha_sphere','SASA','AlphaHelix','Coil','Strand','Turn','Bridge','Helix310'];
-    action = "help"
-    if len(sys.argv) > 1:
-        action = sys.argv[1]
-    if action == "train":
-        models=["mlp", "rf", "svm"]
-        if len(sys.argv) < 6 or not (sys.argv[4] in models) :
-            print("Usage: {} train input_file output_file model cv [threads=-1]".format(sys.argv[0]) );
-            print("Possible models:");
-            print(models);
-            exit(1)
-        file_input= sys.argv[2]
-        file_output= sys.argv[3]
-        model=sys.argv[4]
-        n_cross_validation=int(sys.argv[5])
-        if len(sys.argv) > 6 :
-            threads=int(sys.argv[6])
-        else:
-            threads=-1
-        clfs , scaler , classnames = training_process(file_input, model, features_to_use, n_cross_validation, threads)
-        stream_out = open(file_output, "wb")
-        pickle.dump([scaler, clfs, classnames], stream_out)
-        stream_out.close();
-    elif action == "test":
-        if len(sys.argv) < 5:
-            print("Usage: {} test input_file output_file model_file".format(sys.argv[0]) );
-            exit(1)
-        file_input= sys.argv[2]
-        file_output= sys.argv[3]
-        model_file=sys.argv[4]
-        test_process(file_input, file_output, model_file, features_to_use)
+
+    parser = argparse.ArgumentParser(prog='pickpocket',  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    subparsers = parser.add_subparsers()
+    
+    ### optimize subparser
+    main_opt_parser = subparsers.add_parser("optimize", formatter_class=argparse.ArgumentDefaultsHelpFormatter, help="Find an optimal combination using NSGA2 of fpocket parameters for a list of ligands in your target structures.\n The parameters that will be optimized are:\n m, M, A, i, D, s, n, r, p. \nCheck fpocket for more informations about them.")
+    opt_mandatory = main_opt_parser.add_argument_group("required arguments")
+    opt_mandatory.add_argument("-p", "--pdbs", help="File containing a list of PDB identifiers, one for each line", type=os.path.realpath, required=True)
+    opt_mandatory.add_argument("-l", "--ligands",help="File containing a list of ligands (three letter code), one for each line", type=os.path.realpath, required=True )
+    opt_parser = main_opt_parser.add_argument_group("additional arguments")
+    opt_parser.add_argument("-o", "--output", help="Folder for the output files. " , default="./optimization")
+    opt_parser.add_argument("-d", "--pdb-dir",help="Folder where the pdbs will be downloaded", type=str, default="./PDB")
+    opt_parser.add_argument("-m", "--max-none",help="Discard a solution with more than max_none structures without valid pockets. If 0 < max_none < 1, it's considered as the fraction of the total structures.", type=float, default="0.1")
+    opt_parser.add_argument("-g", "--max-gen",help="Maximum number of generations", type=int, default="100")
+    opt_parser.add_argument("-s", "--pop-size",help="", type=int, default="10")
+    opt_parser.add_argument("-a", "--distance",help="Distance in angstrom between a protein residue and an atom of the ligand to be consider as part of the pocket", type=float, default="5")
+    opt_parser.add_argument("-t", "--timeout",help="Time in second given to fpocket to generate the pockets before dropping the parameters combinations", type=int, default="20")
+    opt_parser.add_argument("-r", "--rmsd-thr",help="Threshold of the rmds: pockets with the same number of atoms and whose superimposition generate a rmsd lower than this threshold are considered redundant.", type=float, default="6")
+    opt_parser.add_argument("-k", "--known",help="JSON file containing the known fpocket parameters, that won't be optimized", type=str )
+    opt_parser.add_argument("--download", help="Download only the pdbs and setup the workspace, without performing the optimization. Useful in case you have to run the optimization without internet connection.", action="store_true" )
+    opt_parser.add_argument("-@", "--threads", default=1, type=int, help="The number of threads to use. Default: 1")
+    opt_parser.set_defaults(func=optimize)
+    
+    ### extract subparser 
+    main_extract_parser = subparsers.add_parser("extract",formatter_class=argparse.ArgumentDefaultsHelpFormatter, help="Extract pockets from a list of pdb files")
+    mandatory_extract_parser = main_extract_parser.add_argument_group("required arguments")
+    mandatory_extract_parser.add_argument("-p", "--pdbs", help="File containing a list of PDB identifiers, one for each line", type=str, required=True)
+    mandatory_extract_parser.add_argument("-l", "--ligands",help="File containing a list of ligands (three letter code), one for each line", type=str, required=True )
+    extract_parser = main_extract_parser.add_argument_group("additional arguments")
+    extract_parser.add_argument("-o", "--output", help="Prefix for the output files." , default="./pickpocket_extract")
+    extract_parser.add_argument("-d", "--pdb-dir",help="Folder where the pdbs will be downloaded", type=str, default="./PDB")
+    extract_parser.add_argument("-f", "--fpocket-param",help="JSON file containing fpocket parameters, as output of 'optimize'. Defualt:use the default fpocket parameters.", type=str, default=None)
+    extract_parser.add_argument("-a", "--distance",help="Distance in angstrom between a protein residue and an atom of the ligand to be consider as part of the pocket", type=float, default="5")
+    extract_parser.add_argument("-@", "--threads", default=1, type=int, help="The number of threads to use. Default: 1")
+    extract_parser.set_defaults(func=extract)
+    
+    ### training subparser
+    main_training_parser = subparsers.add_parser("train", formatter_class=argparse.ArgumentDefaultsHelpFormatter,help="Train a prediciton model with the pockets generated using extract")
+    mandatory_training_parser = main_training_parser.add_argument_group("required arguments")
+    mandatory_training_parser.add_argument("-i", "--input", help="", type=str, required=True)
+    training_parser = main_training_parser.add_argument_group("additional arguments")
+    training_parser.add_argument("-o", "--output",help="", type=str, default="./model.pkl")
+    training_parser.add_argument("-m", "--model",help="", type=str, default="mlp", choices=["mlp", "rf", "svm"] )
+    training_parser.add_argument("-c", "--cross-validation",help="", type=int, default=5 )
+    training_parser.add_argument("-@", "--threads", default=1, type=int, help="The number of threads to use. Default: 1")
+    training_parser.set_defaults(func=train)
+    
+    ### test subparser
+    main_training_parser = subparsers.add_parser("test",formatter_class=argparse.ArgumentDefaultsHelpFormatter, help="Test a model with the pockets generated using extract")
+    mandatory_training_parser = main_training_parser.add_argument_group("required arguments")
+    mandatory_training_parser.add_argument("-i", "--input", help="", type=str , required=True)
+    mandatory_training_parser.add_argument("-m", "--model",help="", type=str , required=True)
+    training_parser = main_training_parser.add_argument_group("additional arguments")
+    training_parser.add_argument("-o", "--output",help="", type=str , default="./test.txt")
+    
+    training_parser.set_defaults(func=test)
+    
+    args = parser.parse_args()
+    if hasattr(args, "func"):
+        welcome()
+        if args.threads:
+            if args.threads == -1:
+                args.threads=cpu_count()
+        return args.func(args)
     else:
-        print("Usage: {} <train|test> [options]".format(sys.argv[0]) );
-        exit(1)
+        parser.print_help()
     return 
 
 if __name__ == "__main__":
