@@ -24,7 +24,7 @@ fpocket_arg_formatter = {
             "n" : "{:d}",
             "r" : "{:.1f}",
                       }
-stride_one_letter_ss = ["H", "G", "I", "E", "B", "T", "C"]
+stride_one_letter_ss = ["H", "G", "I", "E", "B", "b", "T", "C"]
     
 pickpocket_header = ["PDB",
                    "pocket_number",
@@ -55,6 +55,7 @@ pickpocket_header = ["PDB",
                    "stride_I",
                    "stride_E",
                    "stride_B",
+                   "stride_b",
                    "stride_T",
                    "stride_C",
                    "atm_C",
