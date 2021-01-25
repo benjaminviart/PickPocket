@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ## TODO: header
 
 import numpy as np
@@ -16,11 +17,11 @@ from multiprocessing.pool import ThreadPool
 warnings.simplefilter('ignore', BiopythonWarning)
 logging.getLogger("Bio").setLevel(logging.ERROR)
 
-
+import sys
+sys.path.append(os.path.realpath(__file__+"/../../"))
 from pickpocket.utils import *
  
-
-import os, contextlib
+import contextlib
 
 def supress_stdout(func):
     def wrapper(*a, **ka):
@@ -113,6 +114,7 @@ class PickPocket():
         pdb_id=self.pdbs[idx]
         fname="{}/pdb{}.ent".format(self.pdb_dir, pdb_id)
         if not os.path.isfile(fname):
+            print(fname)
             self._missing_pdbs[idx]=True
             return
         struct = self._pdbp.get_structure(pdb_id, fname)
@@ -271,10 +273,16 @@ class PickPocket():
     
     ### Extraction methods
     
+    def print_results(self, out_dir):
+        self.print_table(out_dir)
+        plot_results("{}/results.tsv".format(out_dir),"{}/plots.pdf".format(out_dir), self.get_ids("positive"))
+    
     def print_table(self, out_dir):
+        positive_found={}
         if len(self.stride_results) == 0 or len(self.stride_results) != len(self.fpocket_results):
             raise ValueError("You need to run stride and fpocket first!")
         with open("{}/results.tsv".format(out_dir), "w") as ofs:
+            ofs.write("#{}\n".format(json.dumps(self.fpocket_param)))
             ofs.write("\t".join(pickpocket_header)+"\n")
             for idx, fpr in enumerate(self.fpocket_results):
                 if fpr != None:
@@ -284,6 +292,10 @@ class PickPocket():
                         line="{}\t{}\t{}".format(fpr.pdb_id, pocket.pocket_number, pocket.get_position() )
                         if self._positive_pdbs[idx]:
                             perc_res, perc_lig = get_best_pocket_coverage(pocket.get_residues_ids(), self._positive_pocket_residues[idx])
+                            if perc_res > 0 or perc_lig >0:
+                                if not fpr.pdb_id in positive_found.keys():
+                                    positive_found[fpr.pdb_id]=0
+                                positive_found[fpr.pdb_id]+=1
                             line+="\t{:.2f}\t{:.2f}".format(perc_res, perc_lig)
                         else:
                             line+="\t0\t0"
@@ -294,7 +306,23 @@ class PickPocket():
                         for atm in "CNOPS":
                             line+="\t{:.3}".format(atm_stats[atm])
                         ofs.write(line+"\n")
-    
+        s1=set(positive_found.keys())
+        s2=set(self.get_ids("positive"))
+        s1_m_s2=s1 - s2
+        s2_m_s1=s2 - s1
+        if len(s1_m_s2) != 0:
+            fname="{}/missing_positives.ls".format(out_dir)
+            print("There are {} missing positives. You can find them in {}".format(len(s1_m_s2), fname ))
+            with(open(fname), "w") as f:
+                for pdb_id in s1_m_s2:
+                    f.write(pdb_id+"\n")
+        if len(s1_m_s2) != 0:
+            fname="{}/false_positives.ls".format(out_dir)
+            print("There are {} false positives. You can find them in {}".format(len(s1_m_s2), fname ))
+            with(open(fname), "w") as f:
+                for pdb_id in s2_m_s1:
+                    f.write(pdb_id+"\n")
+            
     
     ### General methods
                         
@@ -320,7 +348,7 @@ class PickPocket():
                 
     
     def _write_infos(self):
-        basedir="{}/infos/".format(self._info_dir)
+        basedir="{}/".format(self._info_dir)
         if not os.path.exists(basedir):
             os.makedirs(basedir)
         with open("{}/pdb_total.ls".format(basedir), "w") as f:
@@ -331,6 +359,9 @@ class PickPocket():
                 f.write(pdb+"\n")
         with open("{}/pdb_negative.ls".format(basedir), "w") as f:
             for pdb in self.get_ids("negative"):
+                f.write(pdb+"\n")
+        with open("{}/pdb_missing.ls".format(basedir), "w") as f:
+            for pdb in self.get_ids("missing"):
                 f.write(pdb+"\n")
         with open("{}/ligands.ls".format(basedir), "w") as f:
             for lig in self.ligands.keys():
@@ -426,10 +457,12 @@ class PickPocket():
             f.write(self._get_pymol_pockets(true_pockets, "true", [0,0,255]))
             if predicted_pockets != None:
                 f.write(self._get_pymol_pockets(predicted_pockets, "predicted", [0,255,255]))
+                f.write("select TP, true_pocket* and predicted_pocket*\ncolor green, TP\n")
         with open(out_file+".sh", "w") as f:
             f.write("#!/bin/bash\ncd {}\npymol {}\n".format("${BASH_SOURCE%/*}", os.path.relpath(out_file+".pml", start=os.path.dirname(out_file))))
         st = os.stat(out_file+".sh")
         os.chmod(out_file+".sh", st.st_mode | stat.S_IEXEC)
+        
     @supress_stdout
     def _downlaod_pdbs(self):
         self._pdbl.download_pdb_files(self.pdbs, file_format="pdb" ,pdir = self.pdb_dir , obsolete=False)
@@ -443,6 +476,9 @@ class PickPocket():
             raise ValueError("Error! No pdb ids found")
         self._downlaod_pdbs()
 
-
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 2 :
+        plot_results(sys.argv[1], sys.argv[2], [])
 
         

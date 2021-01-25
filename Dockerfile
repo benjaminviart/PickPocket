@@ -15,7 +15,7 @@ RUN apt-get update \
     r-base r-base-core \
 	pymol \
   && rm -rf /var/lib/apt/lists/* && \
- pip3 install pdb-tools numpy==1.18.5 scipy==1.2.0 scikit-learn==0.21.3 pandas==1.1.3 pymoo==0.4.2.1 biopython==1.76 
+ pip3 install pdb-tools numpy==1.18.5 scipy==1.2.0 scikit-learn==0.24.1 pandas==1.1.3 pymoo==0.4.2.1 biopython==1.76 matplotlib==3.3.0 
 ## Includes a change of the makefile required for the installation ( https://sourceforge.net/p/fpocket/mailman/message/28785185/ )
 RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 	tar -xzf fpocket2.tar.gz && \
@@ -32,9 +32,9 @@ RUN mkdir /stride  && cd /stride && wget http://webclu.bio.wzw.tum.de/stride/str
 COPY ./src /PickPocket/src
 COPY ./data /PickPocket/data
 
-RUN ln -s /PickPocket/src/pickPocket.sh /usr/bin/pickPocket && \
-	ln -s /PickPocket/src/neuralNetwork.sh /usr/bin/neuralNetwork && \
-	ln -s /PickPocket/src/main.py /usr/bin/pickPocketModel
+RUN ln -s /PickPocket/src/pickPocket.py /usr/bin/pickPocket
+	
+	
  
 
 WORKDIR /PickPocket

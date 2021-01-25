@@ -10,7 +10,7 @@ import logging
 from sklearn.model_selection import ParameterGrid
 import tempfile
 import shutil
-
+from multiprocessing.pool import ThreadPool
 
 warnings.simplefilter('ignore', BiopythonWarning)
 
@@ -41,7 +41,7 @@ class FpocketOptimizer(Problem):
     ##
     '''
   
-    def __init__(self, pockets, files, params=None, distance=5, max_none=1, max_tests=None , timeout=10, **kwargs):
+    def __init__(self, pockets, files, params=None, distance=5, max_none=0, max_tests=None, max_timeout=0, timeout=10, threads= 1, **kwargs):
         if len(files) != len(pockets):
             raise NameError("Error! ligands and files have to be of the same length")
         if params == None:
@@ -54,12 +54,18 @@ class FpocketOptimizer(Problem):
             self._max_tests = len(files)
         else:
             self._max_tests=max_tests
-            
+        if max_timeout > 0 and max_timeout < 1:
+            self._max_timeout = int(len(files)*max_timeout)
+        else:
+            self._max_timeout=max_timeout
         if max_none > 0 and max_none < 1:
             self._max_none = int(len(files)*max_none)
         else:
             self._max_none = int(max_none)
-            
+        if threads == None:
+            self.threads =1
+        else:
+            self.threads = threads
         logging.info("Initialization FpocketOptimizer with parameters: ")
         logging.info(" {:10}:{:>10} ".format("known par", len(params.keys()) ))
         logging.info(" {:10}:{:>10} ".format("distance", distance))
@@ -137,24 +143,59 @@ class FpocketOptimizer(Problem):
         percentage_residues = []
         percentage_ligand_atm = []
         none_results = 0
-        
-        for i in range(min(len(random_indexes), self._max_tests)):
-            perc_res , perc_lig = self._runFpocket(par, random_indexes[i])
-            if perc_res == None: ## Timeout, skip the structure
-                continue
-            percentage_residues.append(perc_res)
-            percentage_ligand_atm.append(perc_lig)
-            if perc_res == 0:
-                none_results+1
-                if none_results >= self._max_none:
-                    logging.debug("Rejected {} for max_none ".format(par,none_results))
-                    return (1, 1)
-            if i > 10 :
+        running=True
+        current_idx=0
+        step = max(self.threads, 30)
+        curr_timeout=0
+        while running:
+            args= []
+            end_idx=min(current_idx+step, len(random_indexes))
+            if len(random_indexes)-end_idx < step:
+                end_idx=len(random_indexes)
+            for idx in range(current_idx, end_idx):
+                fname = self._files[random_indexes[idx]]
+                out_dir = tempfile.mkdtemp(dir="./")
+                args.append(("query", fname, out_dir, par.copy(), self._timeout))
+            pool = ThreadPool(processes=self.threads)
+            fpocket_results = pool.starmap(fpocket, args)
+            pool.close()
+            for i in range(len(fpocket_results)):
+                shutil.rmtree(args[i][2])
+            for i, result in enumerate(fpocket_results):
+                idx=random_indexes[i+current_idx]
+                if result == -1:
+                    logging.debug("Timeout {} {} ".format(par, self._files[idx]))
+                    curr_timeout+=1
+                    if curr_timeout >= self._max_timeout:
+                        logging.debug("Rejected {} for max_timeout {} ".format(par,curr_timeout))
+                        return (1, 1)
+                elif result != None:
+                    best_pocket=[0,0]
+                    for pocket in result.pockets:
+                        perc_res, perc_lig = get_best_pocket_coverage(pocket.get_residues_ids(), self._pockets[idx])
+                        if best_pocket[0] < perc_res:
+                            best_pocket[0]= perc_res
+                        if best_pocket[1]< perc_lig:
+                            best_pocket[1]= perc_lig
+                    percentage_residues.append(best_pocket[0])
+                    percentage_ligand_atm.append(best_pocket[1])
+                    logging.debug("Found {} for {} ".format(best_pocket, self._files[idx]))
+                else:
+                    percentage_residues.append(0)
+                    percentage_ligand_atm.append(0)
+                    none_results+1
+                    if none_results >= self._max_none:
+                        logging.debug("Rejected {} for max_none {} ".format(par,none_results))
+                        return (1, 1)
+            if len(percentage_residues) > 20 :
                 if np.std(percentage_residues) > 0.5 or np.std(percentage_ligand_atm) > 0.5:
                     logging.debug("Rejected {} for std {} {}".format(par,np.std(percentage_residues), np.std(percentage_ligand_atm) ))
                     return (1,1)
-                elif np.std(percentage_residues) < 0.1 or np.std(percentage_ligand_atm) < 0.1:
-                    break
+                elif np.std(percentage_residues) < 0.1 and np.std(percentage_ligand_atm) < 0.1:
+                    running=False
+            current_idx+=step
+            if current_idx >= len(random_indexes):
+                running=False
         
         if len(percentage_residues) < min(3, len(self._files)):
             logging.debug("Refused {} for insufficient data ".format(par))
@@ -163,9 +204,7 @@ class FpocketOptimizer(Problem):
         return (1 - np.mean(percentage_residues), 1 - np.mean(percentage_ligand_atm) )  
             
     def _runFpocket(self, par, idx):
-        fname = self._files[idx]
-        best_pocket = [0, 0]
-        out_dir = tempfile.mkdtemp(dir="./")
+        
         result=None
         try:
             result = fpocket("query", fname, out_dir, par, timeout=self._timeout)
@@ -191,12 +230,15 @@ from pymoo.model.sampling import Sampling
 class FpocketOptimizerSampling(Sampling):
     def _do(self, problem, n_samples, **kwargs):
         X = np.full((n_samples, problem.n_var), 0, dtype=float)
-        for i in range(n_samples):
+        for i in range(n_samples-1):
             for j in range(problem.n_var):
                 if "d" in problem._arg_formatter[problem._arg_list[j]]:
                     X[i, j] = np.random.randint(low=problem._xl[j], high=problem._xu[j])
                 else:
-                    X[i, j] = round( problem._xl[j] + (np.random.rand() * (problem._xu[j]-problem._xl[j])) , 1 ) 
+                    X[i, j] = round( problem._xl[j] + (np.random.rand() * (problem._xu[j]-problem._xl[j])) , 1 )
+        i=n_samples-1
+        for j in range(problem.n_var):
+            X[i,j]=float(self._default_par[problem._arg_list[j]])
         return X
 
 
@@ -250,4 +292,7 @@ class FpocketOptimizerCrossover(Crossover):
                     Y[0, k, i] = X[1, k, i]
                     Y[1, k, i] = X[0, k, i]
         return Y   
+    
+
+
     

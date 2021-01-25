@@ -2,6 +2,10 @@ import os
 from Bio.PDB import *
 import subprocess
 import logging
+import json
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages 
 
 fpocket_default_param = {
     "m" : 3.0,
@@ -152,7 +156,8 @@ class Pocket():
         self.info.append(float(k_v[1].strip()))
     
     def add_atom(self, line):
-        self.atoms.append({ "id": int(line[6:11].strip()),
+        if line[76:78].strip() in "CNOPS":
+            self.atoms.append({ "id": int(line[6:11].strip()),
               "atom" : line[76:78].strip(),
               "res" : line[17:20].strip(),
               "chain" : line[21],
@@ -220,7 +225,7 @@ def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
         proc.wait(timeout=timeout)
     except subprocess.TimeoutExpired as err:
         proc.kill()
-        raise err
+        return -1
     out_dir = "{}/{}_out/".format(output_folder, pdb_id)
     if proc.returncode == 0 and os.path.exists(out_dir):
         return FpocketResult(out_dir, pdb_id)
@@ -265,12 +270,205 @@ class StrideResult():
         for ss in stride_one_letter_ss:
             stats[ss] = 0
         tot = len(residues)
+        missing=0
         for r in residues:
             if not r in self.results.keys():
-                logging.error("ERROR! Stride result for pdb {} doesn't contains residue {}".format(self.pdb_id, r))
+                logging.warn("WARNING! Stride result for pdb {} doesn't contains residue {}".format(self.pdb_id, r))
+                missing+=1
             else:
                 stats[self.results[r]["ss"]] += 1
+        if tot - missing > 0 :
+            tot=tot-missing
         for k in stats:
             stats[k] /= tot
         return stats
+
+
+
+def PDBKFold( ids, Y, fold=5):
+    pos_pdb_ids=[]
+    neg_pdb_ids=[]
+    pdbs={}
+    for idx, id in enumerate(ids):
+        if Y[idx] == 1:
+            if id[0] not in pos_pdb_ids:
+                pos_pdb_ids.append(id[0])
+        if not id[0] in pdbs:
+            pdbs[id[0]]=[]
+        pdbs[id[0]].append(idx)
+    for idx, id in enumerate(ids):
+        if not id[0] in pos_pdb_ids and not id[0] in neg_pdb_ids :
+            neg_pdb_ids.append(id[0])
+            
+    n_pos=len(pos_pdb_ids)
+    n_neg=len(neg_pdb_ids)
+    random_indices_pos = np.random.permutation(np.arange(n_pos))
+    random_indices_neg = np.random.permutation(np.arange(n_neg))
+    n_pos_test = round(n_pos / fold)
+    n_neg_test = round(n_neg / fold)
+    out = [([],[]) for _ in range(fold)]
+    ## array with (train, test)
+    if n_pos_test == 0:
+        raise ValueError("ERROR! not enough PDBs with positive pockets")
+    for i in range(fold):
+        for j , idx in enumerate(random_indices_pos):
+            if j >= (i*n_pos_test) and j < ((i+1)*n_pos_test):
+                out[i][1].extend(pdbs[pos_pdb_ids[idx]])
+            else:
+                out[i][0].extend(pdbs[pos_pdb_ids[idx]]) 
+    if n_neg_test == 0:
+        print("WARNING! not enough PDBs without positive pockets. Only positive PDBs will be used.")
+    else:
+        for i in range(fold):
+            for j , idx in enumerate(random_indices_neg):
+                if j >= (i*n_neg_test) and j < ((i+1)*n_neg_test):
+                    out[i][1].extend(pdbs[neg_pdb_ids[idx]])
+                else:
+                    out[i][0].extend(pdbs[neg_pdb_ids[idx]])
+    final_out=[]
+    for i in range(fold):
+        pos_train,pos_test,neg_train,neg_test=[],[],[],[]
+        for j in range(len(out[i][0])):
+            if Y[out[i][0][j]] == 0:
+                neg_train.append(out[i][0][j])
+            else:
+                pos_train.append(out[i][0][j])
+        for j in range(len(out[i][1])):
+            if Y[out[i][1][j]] == 0:
+                neg_test.append(out[i][1][j])
+            else:
+                pos_test.append(out[i][1][j])
+        n_train=min(len(pos_train), len(neg_train))
+        n_test= min(len(pos_test), len(neg_test))
+        train=np.concatenate((np.random.permutation(pos_train)[:n_train] , np.random.permutation(neg_train)[:n_train]))
+        test=np.concatenate((np.random.permutation(pos_test)[:n_test], np.random.permutation(neg_test)[:n_test]))
+        final_out.append((train,test))
+    return final_out
+        
+    
+    
+def import_data( file_name, f1_thr = 0.1, f2_thr = 0.1, condition="and"):
+    Y=[]
+    ids =[]
+    X=[]
+    f1=[]
+    f2=[]
+    if not condition in ["and", "or"]:
+        raise ValueError("Condition {} not valid. It as to be 'and' or 'or' ".format(condition))
+    with open(file_name, "r") as f:
+        line = f.readline()
+        if line[0] == "#":
+            fpocket_param = json.loads(line[1:])
+            line = f.readline()
+        else :
+            fpocket_param = fpocket_default_param
+        if not line.strip().split() == pickpocket_header:
+             raise ValueError("File {} is not a pickpocket extraction output.".format(file_name))
+        line = f.readline()
+        while line:
+            arr = line.split()
+            ids.append([arr[0], arr[1]])
+            f1.append(float(arr[3]))
+            f2.append(float(arr[4]))
+            if condition == "and":
+                if f1[-1] >= f1_thr and f2[-1] >= f2_thr:
+                    Y.append(1)
+                else:
+                    Y.append(0)
+            else:
+                if f1[-1] >= f1_thr or f2[-1]  >= f2_thr:
+                    Y.append(1)
+                else:
+                    Y.append(0)
+            x=[]
+            for v in range(5, len(arr)):
+                x.append(float(arr[v]))
+            X.append(x)
+            line = f.readline()
+    return { "X": np.array(X), "Y": Y , "ids": ids, "param": fpocket_param , "f1":  f1, "f2" : f2 }
+
+def plot_results(input_file,out_file, positive_list):
+    data = import_data(input_file)
+    pdbs={}
+    
+    for idx, id in enumerate(data["ids"]):
+        if not id[0] in pdbs.keys():
+            pdbs[id[0]]={"f1":0, "f2": 0, "Y" : 0, "pockets_p" : 0 , "pockets_n" : 0 }
+        for k in ["f1", "f2", "Y"]:
+            if pdbs[id[0]][k] < data[k][idx]:
+                pdbs[id[0]][k]=data[k][idx]
+        if data["Y"][idx] == 0:
+            pdbs[id[0]]["pockets_n"]+=1
+        else:
+            pdbs[id[0]]["pockets_p"]+=1
+    ## [[TP],[FN],[TN],[FP]]
+    f1=[[],[],[],[]]
+    f2=[[],[],[],[]]
+    pocket_n=[[],[],[],[]]
+    pocket_p=[[],[],[],[]]
+    for k in pdbs:
+        i=0
+        if k in positive_list:
+            if pdbs[k]["Y"] == 0:
+                i=1
+        else:
+            i=2
+            if pdbs[k]["Y"] == 1:
+                i=3
+        f1[i].append(pdbs[k]["f1"])
+        f2[i].append(pdbs[k]["f2"])
+        pocket_n[i].append(pdbs[k]["pockets_n"])
+        pocket_p[i].append(pdbs[k]["pockets_p"])
+            
+
+    pdf=PdfPages(out_file)     
+    plt.plot(f1[0], f2[0], 'ob', label="TP")
+    plt.plot(f1[1], f2[1], 'og', label="FN")
+    plt.plot(f1[2], f2[2], 'sr', label="TN")
+    plt.plot(f1[3], f2[3], 'sc', label="FP")
+    plt.xlabel('f1')
+    plt.ylabel('f2')
+    plt.xlim(0,1)
+    plt.ylim(0,1)
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.title("Highest f1 and f2 for each pdb")
+    plt.savefig(pdf, format="pdf")
+    plt.close()
+    plt.xlim(0,1)
+    plt.hist(f1, bins=10, color=["blue", "green", "red", "cyan"] , label=["TP","FN", "TN", "FP" ])
+    plt.xlabel('f1')
+    plt.ylabel('Count')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.title("Distribution of the highest f1")
+    plt.savefig(pdf, format="pdf")
+    plt.close()
+    plt.xlim(0,1)
+    plt.hist(f2, bins=10, color=["blue", "green", "red", "cyan"] , label=["TP","FN", "TN", "FP" ])
+    plt.xlabel('f2')
+    plt.ylabel('Count')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.title("Distribution of the highest f2")
+    plt.savefig(pdf, format="pdf")
+    plt.close()
+    plt.hist(pocket_p, bins=100,
+             color=["blue", "green", "red", "cyan"] , 
+             label=["TP","FN", "TN", "FP" ])
+    plt.xlabel('Number of positive pockets')
+    plt.ylabel('Count')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.title("Number of positive pockets for each pdb")
+    plt.savefig(pdf, format="pdf")
+    plt.close()
+    plt.hist(pocket_n, bins=100,
+             color=["blue", "green", "red", "cyan"] , 
+             label=["TP","FN", "TN", "FP" ])
+    plt.xlabel('Number of negative pockets')
+    plt.ylabel('Count')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.title("Number of negative pockets for each pdb")
+    plt.savefig(pdf, format="pdf")
+    plt.close()
+    pdf.close()
+    
+
 

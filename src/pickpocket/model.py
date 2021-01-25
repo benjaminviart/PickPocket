@@ -1,3 +1,10 @@
+import warnings
+import numpy as np
+import pandas as pd
+import pickle
+import sys
+import json
+import matplotlib.pyplot as plt
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.neural_network import MLPClassifier
@@ -9,137 +16,170 @@ from sklearn.svm import SVC
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.base import clone
-
-import numpy as np
-import pandas as pd
-import pickle
-import sys
 from sklearn.metrics.classification import accuracy_score
+from sklearn.model_selection import cross_val_predict
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import plot_roc_curve
+from sklearn.metrics import auc
 
+
+from pickpocket.utils import pickpocket_header, fpocket_default_param, PDBKFold, import_data
 
 np.random.seed(123)
 
 
-def generate_train_test_idx(self, groups, nbtest, nbtrain):
-    train_idx = np.empty((0,), dtype='int')
-    test_idx = np.empty((0,), dtype='int')
-    classnames = np.unique(groups)
-    for g in range(0, classnames.size):
-        random_indices = np.random.permutation(np.arange(len(groups))[groups==g])
-        train_idx = np.concatenate((train_idx, random_indices[nbtest:]))
-        test_idx = np.concatenate((test_idx, random_indices[nbtest:nbtrain]))
-    return (train_idx, test_idx);
 
-def import_data(self, file_name):
-    features_to_use=['Pocket_Score','Drug_Score','Number_of_V._Vertices','Mean_alpha.sphere_radius','Mean_alpha.sphere_SA','Mean_B.factor','Hydrophobicity_Score','Polarity_Score','Volume_Score','Real_volume','Charge_Score','Local_hydrophobic_density_Score','Number_of_apolar_alpha_sphere','Proportion_of_apolar_alpha_sphere','SASA','AlphaHelix','Coil','Strand','Turn','Bridge','Helix310'];
-    table = pd.read_csv(file_name, decimal=".", sep='\t')
-    labels=[]
-    ids =[]
-    ids_col = ['PDB', 'PocketNumber'];
-    label_col = ['ligandClass' ,'correctPocket'] ;
-    mask = []
-    for lab in label_col:
-        mask = table.columns.str.contains(lab)
-        if any(mask):
-            if len(labels) == 0:
-                labels = np.transpose(np.array([table[lab]], dtype="str"));
-            else:
-                tmp=np.transpose(np.array([table[lab]], dtype="str"));
-                labels = np.concatenate((labels, tmp), 1)
-    for lab in ids_col:
-        mask = table.columns.str.contains(lab)
-        if any(mask):
-            if len(ids) == 0:
-                ids = np.transpose(np.array([table[lab]], dtype="str"));
-            else :
-                tmp=np.transpose(np.array([table[lab]], dtype="str"));
-                ids = np.concatenate((ids, tmp), 1)
-    X= np.array(table[features_to_use], dtype="float64")
-    return X, labels , ids
-
-
-def training_process(self, file_name, model, cv, threads):
+def training_process(file_name, model, out_prefix, cv, f1_thr, f2_thr, condition, threads):
     
-    X, labels, ids = self.import_data(file_name )
+    data= import_data(file_name,  f1_thr, f2_thr, condition )
+    X = data["X"]
+    Y= np.array(data["Y"])
     
-    if len(labels.shape) == 2 and labels.shape[1] > 1:
-        labels=labels[:,0] 
-    classnames, Y = np.unique(labels, return_inverse=True)
-    groupcount = np.bincount(Y)
     print("Training process")
     print ( "Options:\n\t File name: {:s}\n\t Model: {:s}\n\t Cross Validation: {}\n".format(file_name, model, cv))
     print("Total dataset size: ")
-    print("\t- {:d} samples".format(X.shape[0]))
+    print("\t- {:d} pockets".format(X.shape[0]))
     print("\t- {:d} features".format(X.shape[1]))
-    print("\t- {:d} classes : ".format(len(classnames)) + (" ".join("{} ({} samples)".format(classnames[k], groupcount[k]) for k in range(0, len(classnames))) ))
+    classnames=["Negative", "Positive"]
+    groupcount = [len(Y)-sum(Y), sum(Y)]
+    print("\t- classes : " + (" ".join("{} ({} pockets)".format(classnames[k], groupcount[k]) for k in range(0, len(classnames))) ))
     
     print("\nRescaling the data in [0-1]")
     scaler= MinMaxScaler(feature_range=(0,1))
     X = scaler.fit_transform(X, Y)
-    
-    
+    indexes=PDBKFold(data["ids"], Y, cv)
+    print("\nFor cross validation, splited in {} partitions:\n{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}".format(cv, "Group", "train-" , "train+", "test-", "test+", "tot-", "tot+", "tot", "tot train", "tot test"))
+    for gn, grp in enumerate(indexes):
+        n_test, n_train=[0,0], [0,0]
+        for i in grp[0]:
+            n_train[Y[i]]+=1
+        for i in grp[1]:
+            n_test[Y[i]]+=1
+        print("{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}".format(gn,n_train[0], n_train[1], n_test[0], n_test[1], n_train[0]+ n_test[0], n_train[1]+ n_test[1], sum(n_train)+ sum(n_test), n_train[0]+n_train[1], n_test[0]+n_test[1] ))
+    print("\n\n")
     if (model == "mlp"):
         print("Neural network - MultiLayer Perceptron Classifier")
-        parameters = {'activation':['relu', 'tanh'], 'solver' : ['adam', 'sgd'] , 
-                      'hidden_layer_sizes' : [ (25,15,5), (50,25), (15,10) ] , 'alpha' : [0.0001, 0.05], 'max_iter' : (1000,) }
-        clf_model=MLPClassifier()
+        parameters = {'activation':['logistic', 'relu'], 'solver' : ['adam'] , 
+                      'hidden_layer_sizes' : [ (64,), (32,16,8) , (16,8,4,2) ] }
+        clf_model=MLPClassifier(max_iter=100000, alpha=0.01)
     elif (model == "rf"):
         print("Random Forest classifier")
-        parameters = {'n_estimators':(100,200), 'criterion' : ('gini',) , 'max_depth' : (5,10) , 'min_samples_split' : (2,5,.10,) }
-        clf_model=RandomForestClassifier(class_weight = "balanced_subsample")
+        parameters = {'n_estimators':(100,), 'max_depth' : (10,50) , 'min_samples_split' : (0.1,0.05, 2) }
+        clf_model=RandomForestClassifier(class_weight = {0:1, 1:1}, criterion='gini' )
     elif (model == "svm"):
         print("Support Vector Machine classifier")
-        parameters = {'C': [1, 10, 100, 1000], 'kernel' : ['rbf', 'linear' , 'poly', 'sigmoid'], 'gamma' : ['auto'] }
+        parameters = {'C': [1, 10, 100], 'kernel' : ['rbf', 'linear' , 'poly', 'sigmoid'], 'gamma' : ['auto'] }
         clf_model=SVC(probability=True)
-        
-    scores = {'Precision' : 'precision' , 'Accuracy' : "accuracy" } 
     
-    print("\n---- Tuning hyper-parameters for ----\n")
-    clf = GridSearchCV(clf_model, parameters, scoring=scores ,cv=KFold(n_splits=cv, shuffle=True), n_jobs=threads, refit='Precision')
-    clf.fit(X, Y)
-    print("Best parameters set found on development set:")
-    print()
-    print(clf.best_params_)
-    print(clf.best_score_)
+    scores = {'Recall' : 'recall' , 'Accuracy' : "accuracy" , "AUC": "roc_auc"} 
+    print("\n---- Tuning hyper-parameters ----\n")
+    clf = GridSearchCV(clf_model, parameters, scoring=scores ,cv=indexes, n_jobs=threads, refit='Recall')
+    with warnings.catch_warnings(record=True) as w:
+        warnings.simplefilter("always")
+        clf.fit(X, Y)
     print()
     print("Grid scores on development set:")
     print()
     for k in scores.keys():
-        print("mean_{}\t".format(k), end="")
-    print("parameters")
+        print("{:^30}".format(k), end="")
+    print("{:^30}".format("parameters"))
     for i in range(0, len(clf.cv_results_['params']) ):
         for k in scores.keys():
-            print(clf.cv_results_['mean_test_{}'.format(k)][i], end="\t")
+            print("{:^30.3f}".format(clf.cv_results_['mean_test_{}'.format(k)][i]), end="\t")
         print(clf.cv_results_['params'][i])
     print()
-    cv_results = cross_validate(clone(clf.best_estimator_), X, Y, cv=KFold(n_splits=cv, shuffle=True),scoring = scores  )
+    print("Best parameters set found on development set:")
+    print("Parameters: {}".format(clf.best_params_))
+    print()
+    cv_results = cross_validate(clone(clf.best_estimator_), X, Y, cv=indexes,scoring = scores  )
     print("Cross validation results:")
     for k in scores.keys():
-        print("Score {}:\t {:.3f} +- {:.3f} ".format(k , np.mean(cv_results["test_{}".format(k)]), np.std(cv_results["test_{}".format(k)]) ))
-    print("\n\nDetailed classification report (based on the full set, not cross validated) :")
+        print("Score {:30}\t {:.3f} +- {:.3f} ".format(k , np.mean(cv_results["test_{}".format(k)]), np.std(cv_results["test_{}".format(k)]) ))
     print()
-    y_true, y_pred = Y, clf.predict(X)
-    print(classification_report(y_true, y_pred))
+    clf=clone(clf.best_estimator_)
+    ### Save the result
+    clf.fit(X, Y)
+    stream_out = open("{}.pkl".format(out_prefix), "wb")
+    pickle.dump([scaler, clf, data["param"]], stream_out)
+    stream_out.close();            
+    ### Produce ROC graph
+    tprs = []
+    aucs = []
+    mean_fpr = np.linspace(0, 1, 100)
+    fig, ax = plt.subplots()
+    confusion_m=[[[],[]],[[],[]]]
+    for i, (train, test) in enumerate(indexes):
+        clf=clone(clf)
+        clf.fit(X[train], Y[train])
+        viz = plot_roc_curve(clf, X[test], Y[test],
+                         name='ROC fold {}'.format(i),
+                         alpha=0.3, lw=1, ax=ax)
+        interp_tpr = np.interp(mean_fpr, viz.fpr, viz.tpr)
+        interp_tpr[0] = 0.0
+        tprs.append(interp_tpr)
+        aucs.append(viz.roc_auc)
+        y_pred=clf.predict(X[test])
+        cm= confusion_matrix(Y[test], y_pred)
+        confusion_m[0][0].append(cm[0][0])
+        confusion_m[0][1].append(cm[0][1])
+        confusion_m[1][0].append(cm[1][0])
+        confusion_m[1][1].append(cm[1][1])
+        print("Confusion matrix CV {} ".format(i+1))
+        print(cm)
+    
+    ax.plot([0, 1], [0, 1], linestyle='--', lw=2, color='r',
+        label='Chance', alpha=.8)
+    mean_tpr = np.mean(tprs, axis=0)
+    mean_tpr[-1] = 1.0
+    mean_auc = auc(mean_fpr, mean_tpr)
+    std_auc = np.std(aucs)
+    ax.plot(mean_fpr, mean_tpr, color='b',
+        label=r'Mean ROC (AUC = %0.2f $\pm$ %0.2f)' % (mean_auc, std_auc),
+        lw=2, alpha=.8)
+    std_tpr = np.std(tprs, axis=0)
+    tprs_upper = np.minimum(mean_tpr + std_tpr, 1)
+    tprs_lower = np.maximum(mean_tpr - std_tpr, 0)
+    ax.fill_between(mean_fpr, tprs_lower, tprs_upper, color='grey', alpha=.2,
+                label=r'$\pm$ 1 std. dev.')
+    ax.set(xlim=[-0.05, 1.05], ylim=[-0.05, 1.05],
+       title="Receiver operating characteristic example")
+    ax.legend(loc="lower right")
+    plt.savefig("{}_roc_auc.pdf".format(out_prefix))
+    print("\nGlobal CV confusion matrix")
+    print("{:5}{:^10}{:^10}{:^10}".format("", "F", "T", "tot"))
+    print("{:5}{:^10}{:^10}{:^10}".format("F", sum(confusion_m[0][0]), sum(confusion_m[0][1]),  sum(confusion_m[0][0])+ sum(confusion_m[0][1]) ))
+    print("{:5}{:^10}{:^10}{:^10}".format("T", sum(confusion_m[1][0]), sum(confusion_m[1][1]),  sum(confusion_m[1][0])+ sum(confusion_m[1][1])))
+    print("{:5}{:^10}{:^10}{:^10}".format("tot", sum(confusion_m[1][0])+sum(confusion_m[0][0]), sum(confusion_m[0][1])+sum(confusion_m[1][1]), ""))
     print()
-    return  clf.best_estimator_, scaler, classnames
+    if 'feature_importances_' in dir(clf):
+        with open("{}_feature_importances.tsv".format(out_prefix), "w") as f:
+            f.write("Feature\tImportance\n")
+            for idx,imp in enumerate(clf.feature_importances_):
+                f.write("{}\t{}\n".format(pickpocket_header[idx+5], imp ))
+    
+    return 
 
-def test_process(self, file_input, file_output, model_file):
+def test_process(file_input, file_output, model_file, f1_thr, f2_thr, condition):
     print("Prediction process \nParameters:\n\t input file\t {}\n\t output file\t {} \n\t model file\t {}".format(file_input, file_output, model_file))
-    ofs = open(file_output, "w")
+    
     try :
         ifs = open(model_file, "rb")
-        scaler, clf, classnames = pickle.load(ifs)
+        scaler, clf, model_fpocket_param = pickle.load(ifs)
         ifs.close()
     except:
         try:
             ifs = open(model_file, "rb")
-            scaler, clf, classnames = pickle.load(ifs, encoding='latin1')
+            scaler, clf, model_fpocket_param = pickle.load(ifs, encoding='latin1')
             ifs.close()
         except:
             print("Erro loading the model file.")
     print("Loaded model {}".format(clf.__class__.__name__))
-    classnames=[str(elem) for elem in classnames]
-    X, labels, sample_IDS = self.import_data(file_input ) ## Note: labels is an empty list
+    classnames=["Negative", "Positive"]
+    data= import_data(file_name,  f1_thr, f2_thr, condition )
+    X=data["X"]
+    Y=data["Y"]
+    if data["param"] != model_fpocket_param:
+        print("WARNING! You are trying to test on data generated with different fpocket parameters respect to the model's.")
     if len(labels) > 0 and len(labels.shape) == 2 and labels.shape[1] > 1:
         tmp=labels[:,0]
         labels=[]
@@ -152,6 +192,7 @@ def test_process(self, file_input, file_output, model_file):
     print("Transforming the input data")
     X= scaler.transform(X)
     print("Predicting and saving the results")
+    ofs = open(file_output, "w")
     ofs.write(header)
     probs = clf.predict_proba(X)
     for sample in range(0, sample_IDS.shape[0]):
