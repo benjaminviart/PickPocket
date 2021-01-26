@@ -92,7 +92,7 @@ def compare(biolip_file, extract_folder,   out_file):
                 if line[0]!="#":
                     arr=[v.strip() for v in line.split("\t")]
                     res=set([ "{}_{}".format(arr[1], v.strip()) for v in arr[-1].split(",")])
-                    olabel="NA"
+                    olabel="0"
                     if arr[0] in biolip:
                         if len(res.intersection(biolip[arr[0]])) > 1:
                             olabel="1"
