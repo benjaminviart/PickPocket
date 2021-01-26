@@ -178,7 +178,7 @@ class PickPocket():
             for idx, o_p in enumerate(self._optimization_pockets_atoms):
                 if o_p != None:
                     for o in o_p:
-                        if len(o) == len(p):
+                        if len(o) == len(p) and len(o) != 0:
                             sup = Superimposer()
                             sup.set_atoms(list(p), list(o))
                             if sup.rms < self.rms_thr:
@@ -276,6 +276,22 @@ class PickPocket():
     def print_results(self, out_dir):
         self.print_table(out_dir)
         plot_results("{}/results.tsv".format(out_dir),"{}/plots.pdf".format(out_dir), self.get_ids("positive"))
+        self.print_pockets(out_dir)
+    
+    def print_pockets(self, out_dir):
+        with open("{}/pockets.tsv".format(out_dir), "w") as ofs:
+            ofs.write("#{}\n".format(json.dumps(self.fpocket_param)))
+            for idx, fpr in enumerate(self.fpocket_results):
+                if fpr != None:
+                    for idx,p in enumerate(fpr.pockets):
+                        residues={}
+                        for r in p.get_residues_ids():
+                            c=r.split("_")
+                            if not c[0] in residues:
+                                residues[c[0]]=[]
+                            residues[c[0]].append(c[1])
+                        for r in residues:
+                            ofs.write("{}\t{}\t{}\n".format(fpr.pdb_id, r, ",".join(sorted(residues[r]))))
     
     def print_table(self, out_dir):
         positive_found={}
@@ -303,7 +319,7 @@ class PickPocket():
                             line+="\t{}".format(info)
                         for ss in stride_one_letter_ss:
                             line+="\t{:.3}".format(stride_stats[ss])
-                        for atm in "CNOPS":
+                        for atm in pickpocket_header[32:]:
                             line+="\t{:.3}".format(atm_stats[atm])
                         ofs.write(line+"\n")
         s1=set(positive_found.keys())
@@ -351,6 +367,19 @@ class PickPocket():
         basedir="{}/".format(self._info_dir)
         if not os.path.exists(basedir):
             os.makedirs(basedir)
+        with open("{}/pockets.tsv".format(basedir), "w") as f:
+            for i, pockets in enumerate(self._positive_pocket_residues):
+                pdb_id=self.pdbs[i]
+                if len(pockets) > 0:
+                    for idx,p in enumerate(pockets):
+                        residues={}
+                        for r in p[0]:
+                            c=r.split("_")
+                            if not c[0] in residues:
+                                residues[c[0]]=[]
+                            residues[c[0]].append(c[1])
+                        for r in residues:
+                            f.write("{}\t{}\t{}\n".format(pdb_id, r, ",".join(sorted(residues[r]))))
         with open("{}/pdb_total.ls".format(basedir), "w") as f:
             for pdb in self.get_ids("all"):
                 f.write(pdb+"\n")

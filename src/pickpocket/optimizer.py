@@ -238,7 +238,7 @@ class FpocketOptimizerSampling(Sampling):
                     X[i, j] = round( problem._xl[j] + (np.random.rand() * (problem._xu[j]-problem._xl[j])) , 1 )
         i=n_samples-1
         for j in range(problem.n_var):
-            X[i,j]=float(self._default_par[problem._arg_list[j]])
+            X[i,j]=float(problem._default_par[problem._arg_list[j]])
         return X
 
 

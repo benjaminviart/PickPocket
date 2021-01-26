@@ -62,11 +62,67 @@ pickpocket_header = ["PDB",
                    "stride_b",
                    "stride_T",
                    "stride_C",
-                   "atm_C",
-                   "atm_N",
-                   "atm_O",
-                   "atm_P",
-                   "atm_S"
+                   "C",
+                   "C1",
+                   "C2",
+                   "C3",
+                   "C4",
+                   "C5",
+                   "C6",
+                   "C7",
+                   "C8",
+                   "CA",
+                   "CB",
+                   "CD",
+                   "CD1",
+                   "CD2",
+                   "CE",
+                   "CE1",
+                   "CE2",
+                   "CE3",
+                   "CG",
+                   "CG1",
+                   "CG2",
+                   "CH2",
+                   "CZ",
+                   "CZ2",
+                   "CZ3",
+                   "N",
+                   "N1",
+                   "N2",
+                   "N3",
+                   "N4",
+                   "N6",
+                   "N7",
+                   "N9",
+                   "ND1",
+                   "ND2",
+                   "NE",
+                   "NE1",
+                   "NE2",
+                   "NH1",
+                   "NH2",
+                   "NZ",
+                   "O",
+                   "O2",
+                   "O3",
+                   "O4",
+                   "O5",
+                   "O6",
+                   "OD1",
+                   "OD2",
+                   "OE1",
+                   "OE2",
+                   "OG",
+                   "OG1",
+                   "OH",
+                   "OP1",
+                   "OP2",
+                   "OXT",
+                   "P",
+                   "S",
+                   "SD",
+                   "SG"
                 ]
 
 
@@ -156,9 +212,9 @@ class Pocket():
         self.info.append(float(k_v[1].strip()))
     
     def add_atom(self, line):
-        if line[76:78].strip() in "CNOPS":
+        if line[76:78].strip() in pickpocket_header[32:]:
             self.atoms.append({ "id": int(line[6:11].strip()),
-              "atom" : line[76:78].strip(),
+              "atom" : line[12:16].strip(),
               "res" : line[17:20].strip(),
               "chain" : line[21],
               "resn" : line[22:26].strip(),
@@ -169,12 +225,15 @@ class Pocket():
 
     def get_atm_stats(self):
         stats = {}
-        for atm in "CNOPS":
+        for atm in pickpocket_header[32:]:
             stats[atm] = 0
         for atm in self.atoms:
-            stats[atm["atom"]] += 1
+            if atm["atom"] not in pickpocket_header[32:]:
+                print(atm["atom"])
+            else:
+                stats[atm["atom"]] += 1
         tot = len(self.atoms)
-        for atm in "CNOPS":
+        for atm in pickpocket_header[32:]:
             stats[atm] /= tot 
         return stats  
     
@@ -185,6 +244,29 @@ class Pocket():
         return out
     
     def get_position(self):
+        out = ""
+        residues = {}
+        for r in list(self.get_residues_ids()):
+            chain_res = r.split("_")
+            if not chain_res[0] in residues.keys():
+                residues[chain_res[0]] = []
+            residues[chain_res[0]].append(int(chain_res[1]))
+        for idx, chain in enumerate(sorted(residues.keys())):
+            if idx != 0:
+                out += "!"
+            residues[chain] = sorted(residues[chain])                
+            out += "{}[{}".format(chain, residues[chain][0])
+            sep = "-"
+            tot = len(residues[chain])
+            if tot == 1:
+                out += "]"
+            else:
+                for j in range(1, len(residues[chain]) - 1):
+                    if residues[chain][j] != residues[chain][j - 1] + 1:
+                        sep = "~"
+                out += "{}{}]".format(sep, residues[chain][tot - 1])
+        return out
+    def get_full_position(self):
         out = ""
         residues = {}
         for r in list(self.get_residues_ids()):
@@ -470,5 +552,16 @@ def plot_results(input_file,out_file, positive_list):
     plt.close()
     pdf.close()
     
-
-
+def check_dependencies():
+    proc = subprocess.Popen("fpocket", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = proc.communicate()
+    if stdout.decode().split("\n")[0] != "***** POCKET HUNTING BEGINS ***** ":
+        print("fpocket not detected. Install it from https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz")
+        exit(1)
+    proc = subprocess.Popen("stride", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = proc.communicate()
+    arr=stderr.decode().split("\n")
+    if len(arr) < 3 or arr[1].strip() != "You must specify input file":
+        print("stride not detected. Install it from http://webclu.bio.wzw.tum.de/stride/stride.tar.gz")
+        exit(1)
+    

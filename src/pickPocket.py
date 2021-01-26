@@ -176,7 +176,8 @@ def optimize(args):
         print("No optimal parameters found.")
 
 def main():
-
+    from pickpocket.utils import check_dependencies
+    check_dependencies()
     parser = argparse.ArgumentParser(prog='pickpocket',  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     subparsers = parser.add_subparsers()
     
@@ -192,7 +193,7 @@ def main():
     opt_parser.add_argument("-M", "--max-tests",help="For each individual, test a maximum of max-test random structures to determine its fitness.", type=int, default=None)
     opt_parser.add_argument("-g", "--max-gen",help="Maximum number of generations", type=int, default="100")
     opt_parser.add_argument("-s", "--pop-size",help="", type=int, default="10")
-    opt_parser.add_argument("-a", "--distance",help="Distance in angstrom between a protein residue and an atom of the ligand to be consider as part of the pocket", type=float, default="5")
+    opt_parser.add_argument("-a", "--distance",help="Distance in angstrom between a protein residue and an atom of the ligand to be consider as part of the pocket", type=float, default="4")
     opt_parser.add_argument("-t", "--timeout",help="Time in second given to fpocket to generate the pockets before dropping the parameters combinations", type=int, default="20")
     opt_parser.add_argument("-T", "--max-timeout",help="Maximum number of timeout pdbs before rejecting the solution", type=float, default="0.1")
     opt_parser.add_argument("-r", "--rmsd-thr",help="Threshold of the rmds: pockets with the same number of atoms and whose superimposition generate a rmsd lower than this threshold are considered redundant.", type=float, default="6")
@@ -210,7 +211,7 @@ def main():
     extract_parser.add_argument("-o", "--output", help="Prefix for the output files." , default="./pickpocket_extract")
     extract_parser.add_argument("-d", "--pdb-dir",help="Folder where the pdbs will be downloaded", type=str, default="./PDB")
     extract_parser.add_argument("-f", "--fpocket-param",help="JSON file containing fpocket parameters, as output of 'optimize'. Defualt:use the default fpocket parameters.", type=str, default=None)
-    extract_parser.add_argument("-a", "--distance",help="Distance in angstrom between a protein residue and an atom of the ligand to be consider as part of the pocket", type=float, default="5")
+    extract_parser.add_argument("-a", "--distance",help="Distance in angstrom between a protein residue and an atom of the ligand to be consider as part of the pocket", type=float, default="4")
     extract_parser.add_argument("-@", "--threads", default=1, type=int, help="The number of threads to use. Default: 1")
     extract_parser.set_defaults(func=extract)
     
