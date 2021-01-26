@@ -114,7 +114,6 @@ class PickPocket():
         pdb_id=self.pdbs[idx]
         fname="{}/pdb{}.ent".format(self.pdb_dir, pdb_id)
         if not os.path.isfile(fname):
-            print(fname)
             self._missing_pdbs[idx]=True
             return
         struct = self._pdbp.get_structure(pdb_id, fname)

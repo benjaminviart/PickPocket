@@ -214,7 +214,7 @@ class Pocket():
     def add_atom(self, line):
         if line[76:78].strip() in pickpocket_header[32:]:
             self.atoms.append({ "id": int(line[6:11].strip()),
-              "atom" : line[12:16].strip(),
+              "atom" : line[12:16].strip().replace("'", ""),
               "res" : line[17:20].strip(),
               "chain" : line[21],
               "resn" : line[22:26].strip(),
@@ -318,10 +318,17 @@ def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
 def stride(pdb_id, input_file, output_folder):
     ofile = "{}/{}.txt".format(output_folder, pdb_id)
     command = "stride -f{} {}".format(ofile, input_file)
-    proc = subprocess.Popen(command.split(), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    proc = subprocess.Popen(command.split(), stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
     proc.wait()
     if proc.returncode == 0 and os.path.exists(ofile):
         return StrideResult(ofile, pdb_id)
+    else:
+        with open(ofile+".stderr", "w") as f:
+            for line in proc.stderr:
+                f.write(line.decode())
+        return StrideResult(None, pdb_id)
+        
+        
 
     
 class StrideResult():
@@ -330,10 +337,11 @@ class StrideResult():
         self.file = file
         self.pdb_id = pdb_id
         self.results = {}
-        with open(file, "r") as f:
-            for line in f:
-                if line[0:3] == "ASG":
-                    self._parse_line(line)
+        if file!=None:
+            with open(file, "r") as f:
+                for line in f:
+                    if line[0:3] == "ASG":
+                        self._parse_line(line)
                     
     def _parse_line(self, line):
         if line[11:15].isupper():  # ## Discard disorderd residues 
@@ -355,7 +363,6 @@ class StrideResult():
         missing=0
         for r in residues:
             if not r in self.results.keys():
-                logging.warn("WARNING! Stride result for pdb {} doesn't contains residue {}".format(self.pdb_id, r))
                 missing+=1
             else:
                 stats[self.results[r]["ss"]] += 1

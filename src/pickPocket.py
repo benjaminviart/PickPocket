@@ -175,6 +175,14 @@ def optimize(args):
     else:
         print("No optimal parameters found.")
 
+def compare(args):
+    from pickpocket.compare import compare
+    if not os.path.exists(args.extract_folder) or not os.path.isdir(args.extract_folder) :
+        raise NotADirectoryError("Folder {} doesn't exists!".format(args.extract_folder))
+    if not os.path.exists(args.biolip):
+        raise FileNotFoundError("File {} doesn't exists!".format(args.biolip))
+    compare( biolip_file=args.biolip, extract_folder=args.extract_folder,   out_file=args.output_prefix )
+
 def main():
     from pickpocket.utils import check_dependencies
     check_dependencies()
@@ -230,19 +238,27 @@ def main():
     training_parser.set_defaults(func=train)
     
     ### test subparser
-    main_training_parser = subparsers.add_parser("test",formatter_class=argparse.ArgumentDefaultsHelpFormatter, help="Test a model with the pockets generated using extract")
-    mandatory_training_parser = main_training_parser.add_argument_group("required arguments")
-    mandatory_training_parser.add_argument("-i", "--input", help="", type=str , required=True)
-    mandatory_training_parser.add_argument("-m", "--model",help="", type=str , required=True)
-    training_parser = main_training_parser.add_argument_group("additional arguments")
-    training_parser.add_argument("-o", "--output",help="", type=str , default="./test.txt")
+    main_test_parser = subparsers.add_parser("test",formatter_class=argparse.ArgumentDefaultsHelpFormatter, help="Test a model with the pockets generated using extract")
+    mandatory_test_parser = main_test_parser.add_argument_group("required arguments")
+    mandatory_test_parser.add_argument("-i", "--input", help="", type=str , required=True)
+    mandatory_test_parser.add_argument("-m", "--model",help="", type=str , required=True)
+    test_parser = main_test_parser.add_argument_group("additional arguments")
+    test_parser.add_argument("-o", "--output",help="", type=str , default="./test.txt")
+    test_parser.set_defaults(func=test)
     
-    training_parser.set_defaults(func=test)
-    
+    ### compare subparser
+    main_compare_parser = subparsers.add_parser("compare",formatter_class=argparse.ArgumentDefaultsHelpFormatter, help="Compare the pockets generated with BioLip")
+    mandatory_compare_parser= main_compare_parser.add_argument_group("required arguments")
+    mandatory_compare_parser.add_argument("-e", "--extract-folder", help="The folder containing the extract results", type=str , required=True)
+    mandatory_compare_parser.add_argument("-b", "--biolip", help="The biolip file containing the ", type=str , required=True)
+    compare_parser = main_compare_parser.add_argument_group("additional arguments")
+    compare_parser.add_argument("-o", "--output-prefix", help="The prefix of the output files", type=str , default="./compare")
+    compare_parser.set_defaults(func=compare)
     args = parser.parse_args()
+    
     if hasattr(args, "func"):
         welcome()
-        if args.threads:
+        if hasattr(args, "threads"):
             if args.threads == -1:
                 args.threads=cpu_count()
         return args.func(args)
