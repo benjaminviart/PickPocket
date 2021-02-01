@@ -124,8 +124,11 @@ class PickPocket():
         het = []
         for res in res_list:
             self._assign_residue(res, het, nohet)
-        ns = NeighborSearch(nohet)
-        pocket_l, pocket_atms = self._treat_het(het, ns)
+        if len(het)> 0:
+            ns = NeighborSearch(nohet)
+            pocket_l, pocket_atms = self._treat_het(het, ns)
+        else:
+            pocket_l, pocket_atms = [], []
         self._struct_ligand_id[idx]=get_uids( het )
         self._positive_pocket_residues[idx]=pocket_l
         if len(pocket_l) == 0:
@@ -243,15 +246,17 @@ class PickPocket():
             fname="{}/pdb{}.ent_noHet.pdb".format(self.pdb_dir, pdb_id)
             odir= "{}/fpocket/".format(out_dir)
             args.append((pdb_id, fname, odir, self.fpocket_param.copy()))
+            
         pool = ThreadPool(processes=self.threads)
-        self.fpocket_results = pool.starmap(fpocket, args)
+        self.fpocket_results = pool.starmap(fpocket, args, chunksize=1)
         pool.close()
         if self._pymol_dir!=None:
             if not os.path.exists("{}/predicted_pockets".format(self._pymol_dir)):
                 os.makedirs("{}/predicted_pockets".format(self._pymol_dir))
             for idx, res in enumerate(self.fpocket_results):
-                pdb_id=self.pdbs[idx]
-                self.write_pymol_pocket("{}/predicted_pockets/{}".format(self._pymol_dir,pdb_id),
+                if res != None:
+                    pdb_id=self.pdbs[idx]
+                    self.write_pymol_pocket("{}/predicted_pockets/{}".format(self._pymol_dir,pdb_id),
                                         "{}/pdb{}.ent".format(self.pdb_dir, pdb_id), 
                                         self._struct_ligand_id[idx] , 
                                         self._positive_pocket_residues[idx] ,
@@ -265,7 +270,7 @@ class PickPocket():
             odir= "{}/stride/".format(out_dir)
             args.append((pdb_id, fname, odir))
         pool = ThreadPool(processes=self.threads)
-        self.stride_results = pool.starmap(stride, args)
+        self.stride_results = pool.starmap(stride, args, chunksize=1)
         pool.close()
     ### End External software methods
     
@@ -290,7 +295,7 @@ class PickPocket():
                                 residues[c[0]]=[]
                             residues[c[0]].append(c[1])
                         for r in residues:
-                            ofs.write("{}\t{}\t{}\n".format(fpr.pdb_id, r, ",".join(sorted(residues[r]))))
+                            ofs.write("{}\t{}\t{}\t{}\n".format(fpr.pdb_id, p.pocket_number, r, ",".join(sorted(residues[r]))))
     
     def print_table(self, out_dir):
         positive_found={}

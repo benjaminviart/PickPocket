@@ -95,8 +95,8 @@ class FpocketOptimizer(Problem):
         self._inital_parameters = params
         xl = []
         xu = []
-        full_xl = [1, 4 , 1 , 20 , 1 , 2 , 1 , 3.5 ]
-        full_xu = [6, 10 , 4 , 100 , 2 , 3 , 3 , 5.5 ]
+        full_xl = [0.5 , 3 , 1 , 10 , 0.5 , 1 , 1 , 1 ]
+        full_xu = [6, 15 , 5 , 100 , 3 , 5 , 6 , 8 ]
         self._arg_list = []
         for n, p in enumerate(full_arg_list):
             if not p in params:
@@ -145,7 +145,7 @@ class FpocketOptimizer(Problem):
         none_results = 0
         running=True
         current_idx=0
-        step = max(self.threads, 30)
+        step = max(self.threads, 10)
         curr_timeout=0
         while running:
             args= []
@@ -183,16 +183,16 @@ class FpocketOptimizer(Problem):
                 else:
                     percentage_residues.append(0)
                     percentage_ligand_atm.append(0)
-                    none_results+1
+                    none_results+=1
                     if none_results >= self._max_none:
                         logging.debug("Rejected {} for max_none {} ".format(par,none_results))
                         return (1, 1)
-            if len(percentage_residues) > 20 :
-                if np.std(percentage_residues) > 0.5 or np.std(percentage_ligand_atm) > 0.5:
-                    logging.debug("Rejected {} for std {} {}".format(par,np.std(percentage_residues), np.std(percentage_ligand_atm) ))
-                    return (1,1)
-                elif np.std(percentage_residues) < 0.1 and np.std(percentage_ligand_atm) < 0.1:
-                    running=False
+            #if len(percentage_residues) >= 10 and self.fast :
+            #    if np.std(percentage_residues) > 0.5 or np.std(percentage_ligand_atm) > 0.5:
+            #        logging.debug("Rejected {} for std {} {}".format(par,np.std(percentage_residues), np.std(percentage_ligand_atm) ))
+            #        return (1,1)
+            #    elif np.std(percentage_residues) < 0.1 and np.std(percentage_ligand_atm) < 0.1:
+            #        running=False
             current_idx+=step
             if current_idx >= len(random_indexes):
                 running=False
@@ -203,25 +203,7 @@ class FpocketOptimizer(Problem):
         logging.debug("Accepted {} with {} and {} ".format(par, np.mean(percentage_residues),np.mean(percentage_ligand_atm) ))
         return (1 - np.mean(percentage_residues), 1 - np.mean(percentage_ligand_atm) )  
             
-    def _runFpocket(self, par, idx):
-        
-        result=None
-        try:
-            result = fpocket("query", fname, out_dir, par, timeout=self._timeout)
-        except subprocess.TimeoutExpired:
-            logging.debug("Time expired for {} with parameters {} ".format(fname , par))
-            shutil.rmtree(out_dir)
-            return (None, None)
-        if result != None:
-            for pocket in result.pockets:
-                perc_res, perc_lig = get_best_pocket_coverage(pocket.get_residues_ids(), self._pockets[idx])
-                if best_pocket[0] < perc_res:
-                    best_pocket[0]= perc_res
-                if best_pocket[1]< perc_lig:
-                    best_pocket[1]= perc_lig
-            logging.debug("Found {} {} for par {}".format(best_pocket[0], best_pocket[1], par))
-        shutil.rmtree(out_dir)
-        return (best_pocket[0], best_pocket[1])
+    
     
     
 
@@ -293,6 +275,40 @@ class FpocketOptimizerCrossover(Crossover):
                     Y[1, k, i] = X[0, k, i]
         return Y   
     
+from pymoo.model.callback import Callback
 
 
+class FpocketCallback(Callback):
+
+    def __init__(self, out_dir) -> None:
+        super().__init__()
+        self.out_dir=out_dir
+        if not os.path.exists(out_dir):
+            os.makedirs(self.out_dir, exist_ok=True)
+        
+
+    def notify(self, algorithm):
+        res=algorithm.result()
+        odir="{}/gen_{}/".format(self.out_dir, algorithm.n_gen)
+        os.makedirs(odir, exist_ok=True)
+        ofs=open("{}/info.txt".format(odir), "w")
+        if type(res.opt) is not type(None) and len(res.opt) > 0 :
+            ofs.write("Found {} non dominant solution:\n".format(len(res.opt)))
+            n=1
+            ofs.write("# \ttrue_pocket_residues_fraction\tligand_atom_fraction\t{}\n".format("\t".join(algorithm.problem._arg_list)))
+            for sol in res.opt:
+                F = sol.get("F")
+                X= algorithm.problem._get_parameters(sol.get("X"))
+                X_vals = []
+                for k in algorithm.problem._arg_list:
+                    X_vals.append(X[k])
+                ofs.write("{}\t{:.3f}\t{:.3f}\t{}\n".format(n, 1-F[0], 1-F[1], "\t".join(X_vals)))
+                out={"true_pocket_residues_fraction" : round(1-float(F[0]),3) , "ligand_atom_fraction" : round(1-float(F[1]),3), "parameters" : X}
+                jsfs=open("{}/result_{}.json".format(odir, n), "w")
+                json.dump(out, jsfs, indent=2)
+                jsfs.close()
+                n+=1
+        else:
+            ofs.write("No optimal parameters found.\n")
+        ofs.close()
     

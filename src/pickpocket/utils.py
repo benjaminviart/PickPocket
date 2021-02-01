@@ -134,6 +134,8 @@ def get_uids(res_list):
 
 def get_best_pocket_coverage(residues, true_positives):
         best=[0,0]
+        if len(residues) == 0 :
+            return best
         for pk in true_positives:
             fract = len(pk[0].intersection(residues)) / len(residues)
             if fract > best[0]:
@@ -293,7 +295,7 @@ class Pocket():
                         
 def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
     command = "ln -s {} {}/{}.pdb ".format(os.path.realpath(input_file), os.path.realpath(output_folder), pdb_id)
-    proc = subprocess.Popen(command.split(), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    proc = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     proc.wait()
     if proc.returncode != 0 :
         logging.error("Cannot create the link: {}".format(command))
@@ -302,7 +304,7 @@ def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
     for k in parameters:
         command += "-{} {} ".format(k, parameters[k])
     command += "-f {}/{}.pdb ".format(output_folder, pdb_id)
-    proc = subprocess.Popen(command.split(), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    proc = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     try:
         proc.wait(timeout=timeout)
     except subprocess.TimeoutExpired as err:
@@ -312,6 +314,14 @@ def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
     if proc.returncode == 0 and os.path.exists(out_dir):
         return FpocketResult(out_dir, pdb_id)
     else:
+        os.makedirs(out_dir, exist_ok=True)
+        with open("{}/{}.err.log".format(out_dir, pdb_id), "w") as f:
+            f.write("###  STDERR ###\n")
+            for line in proc.stderr:
+                f.write(line.decode())
+            f.write("###  STDOUT ###\n")
+            for line in proc.stdout:
+                f.write(line.decode())    
         return None
 
   
@@ -427,10 +437,8 @@ def PDBKFold( ids, Y, fold=5):
                 neg_test.append(out[i][1][j])
             else:
                 pos_test.append(out[i][1][j])
-        n_train=min(len(pos_train), len(neg_train))
-        n_test= min(len(pos_test), len(neg_test))
-        train=np.concatenate((np.random.permutation(pos_train)[:n_train] , np.random.permutation(neg_train)[:n_train]))
-        test=np.concatenate((np.random.permutation(pos_test)[:n_test], np.random.permutation(neg_test)[:n_test]))
+        train=np.concatenate((pos_train , neg_train))
+        test=np.concatenate((pos_test, neg_test))
         final_out.append((train,test))
     return final_out
         
