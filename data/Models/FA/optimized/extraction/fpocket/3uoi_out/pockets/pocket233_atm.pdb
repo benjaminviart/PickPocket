@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   234:
+HEADER 0  - Pocket Score                      : -0.9923
+HEADER 1  - Drug Score                        : 0.0054
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 4.0642
+HEADER 4  - Mean alpha-sphere SA              : 0.5802
+HEADER 5  - Mean B-factor                     : 0.1167
+HEADER 6  - Hydrophobicity Score              : 1.8000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.6000
+HEADER 9  - Real volume (approximation)       : 331.2899
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 27.4483
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  12424    O VAL J 106     -50.817  10.797-115.710  1.00 18.52           O 0
+ATOM  12446   CB ARG J 109     -47.097  11.607-116.421  1.00 22.42           C 0
+ATOM  12422   CA VAL J 106     -50.676   8.575-114.849  1.00 19.54           C 0
+ATOM  12426  CG1 VAL J 106     -52.391   8.253-116.619  1.00 12.43           C 0
+ATOM  12448   CD ARG J 109     -45.419   9.747-116.297  1.00 18.05           C 0
+ATOM  12427  CG2 VAL J 106     -51.250   6.276-115.653  1.00 20.02           C 0
+ATOM  24013   CD ARG S 109     -44.523   5.048-118.809  1.00 20.00           C 0
+ATOM  23991  CG1 VAL S 106     -46.843   4.483-125.364  1.00 22.95           C 0
+ATOM  23987   CA VAL S 106     -45.575   2.991-123.863  1.00 16.28           C 0
+ATOM  24011   CB ARG S 109     -46.688   3.829-118.976  1.00 20.00           C 0
+ATOM  23989    O VAL S 106     -47.604   2.436-122.824  1.00 14.39           O 0
+ATOM   9881  NH1 ARG H 109     -41.240   7.422-119.710  1.00 16.22           N 0
+ATOM  23992  CG2 VAL S 106     -44.541   4.175-125.848  1.00 18.97           C 0
+ATOM  23984  CG2 ILE S 105     -41.653   2.714-121.686  1.00 16.65           C 0
+ATOM   9875    O ARG H 109     -43.198   8.460-125.899  1.00 20.58           O 0
+ATOM   9876   CB ARG H 109     -42.661  10.128-123.094  1.00 18.61           C 0
+ATOM   9878   CD ARG H 109     -42.305   9.914-120.559  1.00 17.63           C 0
+ATOM  24010    O ARG S 109     -49.765   3.071-118.104  1.00 19.76           O 0
+ATOM  24023   CG GLU S 110     -51.302   3.415-122.666  1.00 27.54           C 0
+ATOM  24019   CA GLU S 110     -50.978   2.479-120.372  1.00 21.99           C 0
+ATOM  24009    C ARG S 109     -49.051   2.741-118.979  1.00 18.14           C 0
+ATOM  24018    N GLU S 110     -49.528   2.461-120.161  1.00 20.35           N 0
+ATOM   9924  CG2 THR H 114     -39.182   5.579-122.480  1.00 12.46           C 0
+TER
+END

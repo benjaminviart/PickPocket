@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 2.4208
+HEADER 1  - Drug Score                        : 0.0110
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 4.0453
+HEADER 4  - Mean alpha-sphere SA              : 0.4145
+HEADER 5  - Mean B-factor                     : 0.6214
+HEADER 6  - Hydrophobicity Score              : 15.7143
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 294.6881
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 27.9310
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1734   CG GLU H  16       9.924  28.735   7.264  1.00 19.22           C 0
+ATOM    687   NZALYS C  29      11.101  30.118  12.144  0.36 30.88           N 0
+ATOM   1754   CB TRP H  19       6.963  33.603   9.774  1.00 11.03           C 0
+ATOM   1730   CA GLU H  16       7.658  29.881   7.019  1.00 10.23           C 0
+ATOM   1756  CD1 TRP H  19       8.914  35.246   9.899  1.00 16.75           C 0
+ATOM    660  OE1 GLN C  26      15.826  33.121   9.691  1.00 34.29           O 0
+ATOM    417  OE2 GLU B  23      13.148  35.299  11.337  1.00 28.66           O 0
+ATOM   1732    O GLU H  16       7.153  32.111   6.265  1.00  8.74           O 0
+ATOM   1733   CB GLU H  16       8.890  29.323   6.308  1.00 11.30           C 0
+ATOM   2016   CEALYS I  22      11.933  35.070   4.573  0.82 21.77           C 0
+ATOM   2018   NZALYS I  22      11.469  35.747   5.816  0.82 26.95           N 0
+ATOM    661  NE2 GLN C  26      17.294  31.513   9.139  1.00 22.91           N 0
+ATOM   1736  OE1 GLU H  16      10.714  27.362   5.490  0.00 16.36           O 0
+ATOM   1990  CZ2 TRP I  19      15.900  32.436   1.616  1.00 35.93           C 0
+ATOM   1992  CH2 TRP I  19      16.238  33.736   1.878  1.00 36.79           C 0
+ATOM   1735   CD GLU H  16      10.602  27.483   6.727  0.00 17.52           C 0
+ATOM   1988  CE2 TRP I  19      14.822  32.212   0.761  1.00 28.39           C 0
+ATOM   1987  NE1 TRP I  19      14.267  31.036   0.327  1.00 23.56           N 0
+ATOM   1978   CB ALA I  18       8.712  31.352   2.212  1.00  8.27           C 0
+ATOM   1986  CD2 TRP I  19      14.090  33.265   0.177  1.00 24.69           C 0
+TER
+END

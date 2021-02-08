@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    26:
+HEADER 0  - Pocket Score                      : 3.5427
+HEADER 1  - Drug Score                        : 0.0081
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9846
+HEADER 4  - Mean alpha-sphere SA              : 0.5601
+HEADER 5  - Mean B-factor                     : 0.2463
+HEADER 6  - Hydrophobicity Score              : 13.7500
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 461.6159
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3226
+ATOM   3476    O ASN B 193       9.476  44.920  35.260  1.00 23.47           O 0
+ATOM   3480  ND2 ASN B 193      13.097  43.960  33.643  1.00 42.75           N 0
+ATOM   3501   CB LYS B 196       8.127  46.876  32.666  1.00 28.08           C 0
+ATOM   3502   CG LYS B 196       8.674  48.316  33.029  1.00 41.06           C 0
+ATOM   3486   CBASER B 194      10.488  46.431  37.864  0.50 26.66           C 0
+ATOM   3488   OGASER B 194      11.798  46.090  38.288  0.50 28.62           O 0
+ATOM   3499    C LYS B 196       6.411  45.044  32.679  1.00 20.78           C 0
+ATOM   3500    O LYS B 196       6.982  44.012  33.072  1.00 23.33           O 0
+ATOM   3505    C ILE B 197       5.620  43.818  29.579  1.00 17.03           C 0
+ATOM   3515   CB SER B 198       7.986  42.558  27.576  1.00 23.42           C 0
+ATOM   3506    O ILE B 197       5.645  44.906  28.837  1.00 20.81           O 0
+ATOM   3516   OG SER B 198       8.622  41.614  28.348  1.00 26.86           O 0
+ATOM   3477   CB ASN B 193      11.043  42.820  34.033  1.00 25.95           C 0
+ATOM   3724    O ALA B 227      11.174  41.892  26.930  1.00 43.92           O 0
+ATOM   3464  CD2ALEU B 191      10.044  39.740  31.595  0.50 22.69           C 0
+ATOM   3457    O LEU B 191       6.576  40.883  31.314  1.00 20.59           O 0
+ATOM   3725   CB ALA B 227      13.851  42.968  25.918  0.50 30.53           C 0
+ATOM   3746   OGASER B 230       6.976  48.615  26.683  0.50 36.23           O 0
+ATOM   3744   CBASER B 230       7.448  47.871  25.529  0.50 27.38           C 0
+ATOM   3511    N SER B 198       6.135  42.720  29.146  1.00 17.73           N 0
+ATOM   3740   CAASER B 230       6.736  46.505  25.403  0.50 20.84           C 0
+TER
+END

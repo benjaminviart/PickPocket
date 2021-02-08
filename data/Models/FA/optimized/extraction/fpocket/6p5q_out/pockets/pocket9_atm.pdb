@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 3.2428
+HEADER 1  - Drug Score                        : 0.0102
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.9356
+HEADER 4  - Mean alpha-sphere SA              : 0.4333
+HEADER 5  - Mean B-factor                     : 0.2473
+HEADER 6  - Hydrophobicity Score              : 19.3000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 329.9618
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 23.0000
+HEADER 12 - Number of apolar alpha sphere     :    24
+HEADER 13 - Proportion of apolar alpha sphere : 0.8000
+ATOM    486  NH2 ARG A  34      23.542  92.709  16.922  1.00 24.44           N 0
+ATOM   6116   CD PRO B 129      20.909  87.347  18.851  1.00 29.14           C 0
+ATOM   6115   CG PRO B 129      19.810  88.344  18.640  1.00 26.60           C 0
+ATOM   6131  OE1 GLU B 130      19.912  86.294  15.712  1.00 24.68           O 0
+ATOM   6132  OE2 GLU B 130      19.704  87.162  13.702  1.00 27.09           O 0
+ATOM   7847  NH2 ARG B 242      25.063  84.722  15.004  1.00 48.21           N 0
+ATOM   6100   CB PRO B 128      22.349  84.391  17.745  1.00 23.22           C 0
+ATOM   7844   NE ARG B 242      22.966  84.603  14.060  1.00 31.22           N 0
+ATOM    485  NH1 ARG A  34      25.069  93.189  15.279  1.00 26.19           N 0
+ATOM   7896  OE1 GLN B 245      24.542  85.066  10.917  1.00 58.77           O 0
+ATOM   3651    O ASP A 234      18.141  92.742  17.207  1.00 13.44           O 0
+ATOM   3705  CD2 TYR A 237      21.393  93.790  13.955  1.00 16.28           C 0
+ATOM   3719    N LEU A 238      17.411  93.415  14.592  1.00 11.12           N 0
+ATOM   3723   CB LEU A 238      16.241  91.275  14.646  1.00 14.36           C 0
+ATOM   3720   CA LEU A 238      16.761  92.406  13.758  1.00 14.39           C 0
+ATOM   3707  CE2 TYR A 237      22.313  93.671  12.930  1.00 19.13           C 0
+ATOM   3725  CD1 LEU A 238      16.717  89.156  13.409  1.00 19.89           C 0
+ATOM   3782   CG GLU A 241      19.922  93.926  10.394  1.00 15.91           C 0
+ATOM   3781   CB GLU A 241      18.641  93.434   9.734  1.00 14.17           C 0
+ATOM   7897  NE2 GLN B 245      23.058  85.095   9.232  1.00 57.46           N 0
+TER
+END

@@ -1,0 +1,181 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb3web.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .         .               ~~~~
+SEQ  1    FVFEDCGSEVGKFSDIIISSCDPSEEKCSIIRESEIHVSMKFTPSVDVKN   50          ~~~~
+STR          EE  TTTEEEEEEEETTTTTTTTTEEETTTEEEEEEEEEEETTTB                 ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .         .               ~~~~
+SEQ  51   VEAKAFGVLLDVPVPFPLKKPEICKDPDSGVKCPLKKDVEIEYKVTFFVE  100          ~~~~
+STR        EEEEEEEETTEEEEE TTTTBGGGTTTTT    BTTTT EEEEEEEEET               ~~~~
+REM                                                                        ~~~~
+REM                .         .         .                                   ~~~~
+SEQ  101  KATPALSLEIMWEFRNEKDEKITCVKFPAKIK                    132          ~~~~
+STR       TTT  EEEEEEEEEEETTTEEEEEEEEEEEE                                  ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  310Helix     ILE    73 A      LYS     75 A                            ~~~~
+LOC  Strand       GLU     4 A      ASP      5 A                            ~~~~
+LOC  Strand       GLY    11 A      ILE     18 A                            ~~~~
+LOC  Strand       CYS    28 A      ILE     30 A                            ~~~~
+LOC  Strand       SER    34 A      PRO     44 A                            ~~~~
+LOC  Strand       GLU    52 A      LEU     59 A                            ~~~~
+LOC  Strand       VAL    62 A      PHE     66 A                            ~~~~
+LOC  Strand       ILE    91 A      VAL     99 A                            ~~~~
+LOC  Strand       LEU   106 A      ASN    116 A                            ~~~~
+LOC  Strand       GLU   120 A      ILE    131 A                            ~~~~
+LOC  TurnIV       SER     8 A      GLY     11 A                            ~~~~
+LOC  TurnI        ILE    18 A      CYS     21 A                            ~~~~
+LOC  TurnI        ASP    22 A      GLU     25 A                            ~~~~
+LOC  TurnVIII     GLU    25 A      CYS     28 A                            ~~~~
+LOC  TurnIV       ILE    31 A      SER     34 A                            ~~~~
+LOC  TurnIV       PRO    44 A      ASP     47 A                            ~~~~
+LOC  TurnIV       VAL    58 A      ASP     61 A                            ~~~~
+LOC  TurnI'       LEU    59 A      VAL     62 A                            ~~~~
+LOC  TurnIV       LEU    68 A      PRO     71 A                            ~~~~
+LOC  TurnIV       LYS    70 A      ILE     73 A                            ~~~~
+LOC  TurnI        ASP    76 A      SER     79 A                            ~~~~
+LOC  TurnI        PRO    77 A      GLY     80 A                            ~~~~
+LOC  TurnII       LYS    86 A      VAL     89 A                            ~~~~
+LOC  TurnI        GLU   100 A      THR    103 A                            ~~~~
+LOC  TurnI        ASN   116 A      ASP    119 A                            ~~~~
+LOC  TurnVIII     LYS   121 A      CYS    124 A                            ~~~~
+LOC  GammaInv     PRO    71 A      ILE     73 A                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  PHE A    1    1    C          Coil    360.00    169.84      39.3      ~~~~
+ASG  VAL A    2    2    C          Coil   -119.90    136.05      94.9      ~~~~
+ASG  PHE A    3    3    C          Coil    -80.02     94.75      31.9      ~~~~
+ASG  GLU A    4    4    E        Strand    -80.76    147.81      92.8      ~~~~
+ASG  ASP A    5    5    E        Strand    -85.17    114.10     102.4      ~~~~
+ASG  CYS A    6    6    C          Coil    -94.98     20.83      38.7      ~~~~
+ASG  GLY A    7    7    C          Coil    102.38    109.88      36.2      ~~~~
+ASG  SER A    8    8    T          Turn   -134.75    145.51      31.5      ~~~~
+ASG  GLU A    9    9    T          Turn   -109.86    -15.55     136.0      ~~~~
+ASG  VAL A   10   10    T          Turn   -125.65     26.52       9.2      ~~~~
+ASG  GLY A   11   11    E        Strand    176.58   -172.72      13.8      ~~~~
+ASG  LYS A   12   12    E        Strand   -150.37    162.59     139.4      ~~~~
+ASG  PHE A   13   13    E        Strand   -120.64    152.43      36.8      ~~~~
+ASG  SER A   14   14    E        Strand   -110.71    -32.89      62.9      ~~~~
+ASG  ASP A   15   15    E        Strand   -153.16    132.55      82.2      ~~~~
+ASG  ILE A   16   16    E        Strand   -117.17    131.82       8.5      ~~~~
+ASG  ILE A   17   17    E        Strand   -124.59    126.08      89.9      ~~~~
+ASG  ILE A   18   18    E        Strand   -119.21    123.24       9.5      ~~~~
+ASG  SER A   19   19    T          Turn    -57.78    -30.57      62.0      ~~~~
+ASG  SER A   20   20    T          Turn    -87.70     -7.50      29.5      ~~~~
+ASG  CYS A   21   21    T          Turn   -143.29    162.70      16.7      ~~~~
+ASG  ASP A   22   22    T          Turn   -125.77    141.80      85.4      ~~~~
+ASG  PRO A   23   23    T          Turn    -61.25     -9.79      66.9      ~~~~
+ASG  SER A   24   24    T          Turn    -66.20    -19.31     102.4      ~~~~
+ASG  GLU A   25   25    T          Turn    -82.80    157.27      54.8      ~~~~
+ASG  GLU A   26   26    T          Turn    -63.08    -40.33     163.3      ~~~~
+ASG  LYS A   27   27    T          Turn   -135.73    153.89      69.9      ~~~~
+ASG  CYS A   28   28    E        Strand    -74.75    110.78       0.0      ~~~~
+ASG  SER A   29   29    E        Strand    -65.42    127.89      12.2      ~~~~
+ASG  ILE A   30   30    E        Strand   -119.87    112.18      15.0      ~~~~
+ASG  ILE A   31   31    T          Turn    -88.02    123.98      71.4      ~~~~
+ASG  ARG A   32   32    T          Turn    -74.04    157.10      87.0      ~~~~
+ASG  GLU A   33   33    T          Turn     59.30     37.58     110.3      ~~~~
+ASG  SER A   34   34    E        Strand   -147.27    154.67      30.3      ~~~~
+ASG  GLU A   35   35    E        Strand    -78.77    132.31     117.6      ~~~~
+ASG  ILE A   36   36    E        Strand   -110.39    127.79       0.2      ~~~~
+ASG  HIS A   37   37    E        Strand   -106.27    125.34      85.0      ~~~~
+ASG  VAL A   38   38    E        Strand   -120.28    134.28      15.8      ~~~~
+ASG  SER A   39   39    E        Strand   -126.40    140.63      14.2      ~~~~
+ASG  MET A   40   40    E        Strand   -133.06    125.87       0.0      ~~~~
+ASG  LYS A   41   41    E        Strand    -94.70    122.61      77.2      ~~~~
+ASG  PHE A   42   42    E        Strand   -144.83    161.05       0.2      ~~~~
+ASG  THR A   43   43    E        Strand   -136.88    115.75      16.1      ~~~~
+ASG  PRO A   44   44    E        Strand    -74.02    147.08       0.2      ~~~~
+ASG  SER A   45   45    T          Turn    -96.18     -2.35      45.2      ~~~~
+ASG  VAL A   46   46    T          Turn   -136.93    164.04      49.0      ~~~~
+ASG  ASP A   47   47    T          Turn    -67.24    137.23     107.8      ~~~~
+ASG  VAL A   48   48    B        Bridge   -123.41    125.51       0.2      ~~~~
+ASG  LYS A   49   49    C          Coil    -85.95    -35.41     162.4      ~~~~
+ASG  ASN A   50   50    C          Coil   -149.98    149.52      27.7      ~~~~
+ASG  VAL A   51   51    C          Coil   -120.61    130.53       0.2      ~~~~
+ASG  GLU A   52   52    E        Strand   -120.60    121.15      77.8      ~~~~
+ASG  ALA A   53   53    E        Strand    -86.68    151.18       3.2      ~~~~
+ASG  LYS A   54   54    E        Strand   -137.85    139.82      75.1      ~~~~
+ASG  ALA A   55   55    E        Strand   -127.36    148.69      17.9      ~~~~
+ASG  PHE A   56   56    E        Strand   -140.46    144.26      35.6      ~~~~
+ASG  GLY A   57   57    E        Strand   -111.07    132.51       1.9      ~~~~
+ASG  VAL A   58   58    E        Strand    -86.16    122.15      19.7      ~~~~
+ASG  LEU A   59   59    E        Strand   -136.00    128.74      73.9      ~~~~
+ASG  LEU A   60   60    T          Turn     57.95     45.18     169.2      ~~~~
+ASG  ASP A   61   61    T          Turn     61.70      2.73     160.4      ~~~~
+ASG  VAL A   62   62    E        Strand   -109.85    127.76      86.2      ~~~~
+ASG  PRO A   63   63    E        Strand    -74.22    115.79      54.0      ~~~~
+ASG  VAL A   64   64    E        Strand    -91.22    124.22      57.0      ~~~~
+ASG  PRO A   65   65    E        Strand    -69.19    131.31      94.6      ~~~~
+ASG  PHE A   66   66    E        Strand   -117.87    137.39     104.1      ~~~~
+ASG  PRO A   67   67    C          Coil    -71.21    136.13     123.4      ~~~~
+ASG  LEU A   68   68    T          Turn   -102.44    149.93      71.4      ~~~~
+ASG  LYS A   69   69    T          Turn    -77.11    -35.40     203.3      ~~~~
+ASG  LYS A   70   70    T          Turn   -131.63     66.07      87.5      ~~~~
+ASG  PRO A   71   71    T          Turn    -70.80    -23.46      46.1      ~~~~
+ASG  GLU A   72   72    B        Bridge    -85.00     84.82      71.5      ~~~~
+ASG  ILE A   73   73    G      310Helix    -53.59    -41.01       0.6      ~~~~
+ASG  CYS A   74   74    G      310Helix    -72.28    -19.33      22.7      ~~~~
+ASG  LYS A   75   75    G      310Helix   -100.49      0.10     137.2      ~~~~
+ASG  ASP A   76   76    T          Turn    -91.94    112.87       8.5      ~~~~
+ASG  PRO A   77   77    T          Turn    -61.86    -19.77     120.1      ~~~~
+ASG  ASP A   78   78    T          Turn    -95.55     -3.28     120.5      ~~~~
+ASG  SER A   79   79    T          Turn    -70.28    -24.93       0.6      ~~~~
+ASG  GLY A   80   80    T          Turn     79.15      3.82      51.1      ~~~~
+ASG  VAL A   81   81    C          Coil   -116.34    124.54       6.6      ~~~~
+ASG  LYS A   82   82    C          Coil   -115.43    126.46     183.7      ~~~~
+ASG  CYS A   83   83    C          Coil    -80.05    154.90      39.3      ~~~~
+ASG  PRO A   84   84    C          Coil    -74.94    149.68      96.2      ~~~~
+ASG  LEU A   85   85    B        Bridge    -84.19    133.12       5.9      ~~~~
+ASG  LYS A   86   86    T          Turn    -84.70    133.78     152.9      ~~~~
+ASG  LYS A   87   87    T          Turn    -45.98    132.94     108.7      ~~~~
+ASG  ASP A   88   88    T          Turn     70.18     10.08     106.3      ~~~~
+ASG  VAL A   89   89    T          Turn   -104.78    122.67      69.3      ~~~~
+ASG  GLU A   90   90    C          Coil    -75.29    133.91      97.4      ~~~~
+ASG  ILE A   91   91    E        Strand   -134.71    170.58      50.2      ~~~~
+ASG  GLU A   92   92    E        Strand   -127.61    125.87      72.4      ~~~~
+ASG  TYR A   93   93    E        Strand    -91.95    139.48      12.0      ~~~~
+ASG  LYS A   94   94    E        Strand   -129.34    139.17      96.6      ~~~~
+ASG  VAL A   95   95    E        Strand   -150.62    141.76      23.8      ~~~~
+ASG  THR A   96   96    E        Strand   -120.07    131.06      64.3      ~~~~
+ASG  PHE A   97   97    E        Strand   -136.59    153.43      89.5      ~~~~
+ASG  PHE A   98   98    E        Strand   -101.99    128.88     120.4      ~~~~
+ASG  VAL A   99   99    E        Strand    -92.43    115.33      10.9      ~~~~
+ASG  GLU A  100  100    T          Turn    -67.83    160.11     123.8      ~~~~
+ASG  LYS A  101  101    T          Turn    -65.02    -32.66     146.4      ~~~~
+ASG  ALA A  102  102    T          Turn    -66.90     -3.96      86.0      ~~~~
+ASG  THR A  103  103    T          Turn    -73.94    125.65      37.1      ~~~~
+ASG  PRO A  104  104    C          Coil    -64.82    143.08      87.7      ~~~~
+ASG  ALA A  105  105    C          Coil    -84.47    113.64      56.8      ~~~~
+ASG  LEU A  106  106    E        Strand   -154.63    165.24      65.5      ~~~~
+ASG  SER A  107  107    E        Strand   -104.35    134.45      57.6      ~~~~
+ASG  LEU A  108  108    E        Strand   -156.90    154.98      27.6      ~~~~
+ASG  GLU A  109  109    E        Strand    -82.22    137.67      64.2      ~~~~
+ASG  ILE A  110  110    E        Strand   -112.27    136.58      41.3      ~~~~
+ASG  MET A  111  111    E        Strand   -121.23    130.88      23.3      ~~~~
+ASG  TRP A  112  112    E        Strand   -136.14    123.71      26.5      ~~~~
+ASG  GLU A  113  113    E        Strand   -125.05    145.50       2.4      ~~~~
+ASG  PHE A  114  114    E        Strand   -110.60    126.64       0.2      ~~~~
+ASG  ARG A  115  115    E        Strand   -114.82    153.70      42.1      ~~~~
+ASG  ASN A  116  116    E        Strand    -85.66   -176.35       1.5      ~~~~
+ASG  GLU A  117  117    T          Turn    -60.47    -19.78      66.7      ~~~~
+ASG  LYS A  118  118    T          Turn    -96.88      8.97     133.9      ~~~~
+ASG  ASP A  119  119    T          Turn     62.86     29.91     104.1      ~~~~
+ASG  GLU A  120  120    E        Strand    -98.42    140.78      50.9      ~~~~
+ASG  LYS A  121  121    E        Strand    -78.03    117.07      64.0      ~~~~
+ASG  ILE A  122  122    E        Strand    -78.23    -46.00       0.0      ~~~~
+ASG  THR A  123  123    E        Strand   -137.73    150.96       0.0      ~~~~
+ASG  CYS A  124  124    E        Strand   -143.55    115.36       0.0      ~~~~
+ASG  VAL A  125  125    E        Strand   -113.87    133.52       0.0      ~~~~
+ASG  LYS A  126  126    E        Strand   -129.96    128.80      53.7      ~~~~
+ASG  PHE A  127  127    E        Strand   -152.10    153.72      11.2      ~~~~
+ASG  PRO A  128  128    E        Strand    -83.34    135.82      24.3      ~~~~
+ASG  ALA A  129  129    E        Strand   -127.21    156.65       0.0      ~~~~
+ASG  LYS A  130  130    E        Strand   -132.52    114.73      88.8      ~~~~
+ASG  ILE A  131  131    E        Strand    -83.42    122.74      25.0      ~~~~
+ASG  LYS A  132  132    C          Coil   -145.49    360.00     109.9      ~~~~

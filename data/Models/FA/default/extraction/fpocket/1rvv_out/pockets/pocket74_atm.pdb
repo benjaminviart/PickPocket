@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    75:
+HEADER 0  - Pocket Score                      : 5.5634
+HEADER 1  - Drug Score                        : 0.0076
+HEADER 2  - Number of V. Vertices             :    36
+HEADER 3  - Mean alpha-sphere radius          : 3.5485
+HEADER 4  - Mean alpha-sphere SA              : 0.4955
+HEADER 5  - Mean B-factor                     : 0.3107
+HEADER 6  - Hydrophobicity Score              : 8.3750
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.6250
+HEADER 9  - Real volume (approximation)       : 156.4637
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.6389
+ATOM  30607  CG2 VAL 1 116     -33.854 -40.246  -0.837  1.00 10.00           C 0
+ATOM  30691   CB ARG 1 127     -32.020 -38.192  -4.578  1.00 13.92           C 0
+ATOM  30606  CG1 VAL 1 116     -32.959 -38.021  -0.521  1.00 10.00           C 0
+ATOM  30693   CD ARG 1 127     -29.945 -37.228  -3.384  1.00 23.29           C 0
+ATOM  30602   CA VAL 1 116     -32.732 -39.824   1.259  1.00 10.00           C 0
+ATOM  30692   CG ARG 1 127     -30.489 -37.992  -4.631  1.00 19.02           C 0
+ATOM  30745   CG LYS 1 135     -32.738 -43.135  -3.324  1.00 17.87           C 0
+ATOM  30747   CE LYS 1 135     -31.671 -43.883  -1.035  1.00 25.74           C 0
+ATOM  31547  CD2 HIS 2  88     -27.256 -43.221   0.516  1.00 61.39           C 0
+ATOM  31545   CG HIS 2  88     -27.333 -42.220   1.432  1.00 60.68           C 0
+ATOM  30694   NE ARG 1 127     -28.498 -36.902  -3.326  1.00 26.07           N 0
+ATOM  31544   CB HIS 2  88     -26.474 -41.013   1.635  1.00 58.59           C 0
+ATOM  30608    N THR 1 117     -31.121 -38.699   2.636  1.00 10.00           N 0
+ATOM  31531  OG1 THR 2  86     -26.168 -37.336   0.831  1.00 51.10           O 0
+ATOM  30611    O THR 1 117     -28.746 -37.057   2.586  1.00 10.00           O 0
+ATOM  30621  CG2 THR 1 118     -30.333 -35.021   0.155  1.00 10.00           C 0
+ATOM  31549  NE2 HIS 2  88     -28.312 -44.059   0.763  1.00 61.77           N 0
+ATOM  30748   NZ LYS 1 135     -30.679 -44.808  -1.678  1.00 27.58           N 0
+ATOM  31546  ND1 HIS 2  88     -28.431 -42.502   2.216  1.00 61.53           N 0
+ATOM  31548  CE1 HIS 2  88     -29.003 -43.617   1.797  1.00 62.27           C 0
+ATOM  30596    O ILE 1 115     -31.900 -42.087   2.613  1.00 10.28           O 0
+TER
+END

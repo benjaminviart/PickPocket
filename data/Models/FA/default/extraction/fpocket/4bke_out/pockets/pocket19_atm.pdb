@@ -1,0 +1,48 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    20:
+HEADER 0  - Pocket Score                      : -0.1994
+HEADER 1  - Drug Score                        : 0.0039
+HEADER 2  - Number of V. Vertices             :    39
+HEADER 3  - Mean alpha-sphere radius          : 3.4662
+HEADER 4  - Mean alpha-sphere SA              : 0.4741
+HEADER 5  - Mean B-factor                     : 0.2524
+HEADER 6  - Hydrophobicity Score              : -5.5556
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.4444
+HEADER 9  - Real volume (approximation)       : 360.9865
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1538
+ATOM    527  ND1 HIS A  67      51.972   3.965  14.368  1.00 53.61           N 0
+ATOM     34  OE2 GLU A   6      55.626   8.993  13.885  0.50 56.35           O 0
+ATOM    513    N LEU A  66      56.242   7.126  16.190  1.00 51.93           N 0
+ATOM    511   CB SER A  65      57.551   5.382  13.965  1.00 53.58           C 0
+ATOM    521    N HIS A  67      54.432   5.042  16.936  1.00 50.84           N 0
+ATOM    517   CB LEU A  66      54.245   8.184  17.156  1.00 51.42           C 0
+ATOM   2038  OD2 ASP A 255      50.335  10.220  11.618  1.00 52.08           O 0
+ATOM    529  CE1 HIS A  67      50.663   4.050  14.192  1.00 54.10           C 0
+ATOM   2019  OE2 GLU A 252      49.508   4.516  10.552  0.50 50.04           O 0
+ATOM   2005    C LEU A 251      47.504   7.579  14.549  1.00 47.04           C 0
+ATOM     33  OE1 GLU A   6      56.888   9.501  12.305  0.00 60.20           O 0
+ATOM     32   CD GLU A   6      55.830  10.066  13.270  0.50 57.32           C 0
+ATOM   2007   CB LEU A 251      49.251   6.833  16.226  1.00 46.97           C 0
+ATOM    519  CD1 LEU A  66      53.448  10.488  16.722  1.00 51.55           C 0
+ATOM     67  NH2 ARG A  10      52.068  12.064  13.053  0.50 51.32           N 0
+ATOM     66  NH1 ARG A  10      51.219  11.928  15.175  0.50 51.88           N 0
+ATOM   2009  CD1 LEU A 251      51.094   6.124  17.831  1.00 48.05           C 0
+ATOM   2006    O LEU A 251      47.597   8.661  13.963  1.00 47.62           O 0
+ATOM   2010  CD2 LEU A 251      50.056   8.404  18.019  1.00 47.78           C 0
+ATOM    512   OG SER A  65      57.170   4.222  14.693  1.00 53.59           O 0
+ATOM   2012   CA GLU A 252      46.628   6.499  12.534  1.00 46.99           C 0
+ATOM   2035   CB ASP A 255      48.108  10.620  10.887  1.00 48.67           C 0
+ATOM   2018  OE1 GLU A 252      47.613   4.723   9.455  0.50 49.60           O 0
+ATOM   2017   CD GLU A 252      48.260   4.509  10.505  0.50 49.94           C 0
+ATOM   2014    O GLU A 252      45.304   8.160  11.436  1.00 46.43           O 0
+ATOM   2011    N GLU A 252      47.060   6.474  13.946  1.00 47.13           N 0
+ATOM   2045  OD1 ASP A 256      45.231   8.406   7.533  1.00 51.12           O 0
+TER
+END

@@ -1,0 +1,21 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5whp.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    NFGTFS                                                6          ~~~~
+STR       TTTT                                                             ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  TurnIV       ASN   312 A      THR    315 A                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  ASN A  312    1    T          Turn    360.00    148.21     189.5      ~~~~
+ASG  PHE A  313    2    T          Turn   -133.87    123.00     194.3      ~~~~
+ASG  GLY A  314    3    T          Turn     63.66     37.94      67.6      ~~~~
+ASG  THR A  315    4    T          Turn   -109.91    159.87      77.4      ~~~~
+ASG  PHE A  316    5    C          Coil   -131.39    128.59     199.4      ~~~~
+ASG  SER A  317    6    C          Coil   -150.23    360.00     189.2      ~~~~

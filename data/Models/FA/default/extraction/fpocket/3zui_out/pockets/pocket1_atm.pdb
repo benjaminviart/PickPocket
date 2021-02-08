@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 8.9949
+HEADER 1  - Drug Score                        : 0.0339
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 3.7574
+HEADER 4  - Mean alpha-sphere SA              : 0.4772
+HEADER 5  - Mean B-factor                     : 0.0820
+HEADER 6  - Hydrophobicity Score              : 31.0000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 5.5556
+HEADER 9  - Real volume (approximation)       : 342.0171
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 23.0000
+HEADER 12 - Number of apolar alpha sphere     :    24
+HEADER 13 - Proportion of apolar alpha sphere : 0.6857
+ATOM   1110   CB HIS A 164     -16.150  14.094   2.158  1.00 12.39           C 0
+ATOM    167  CG1 VAL A  44     -10.346  12.393   0.131  1.00 16.87           C 0
+ATOM    166   CB VAL A  44     -11.693  11.986  -0.450  1.00 16.47           C 0
+ATOM    168  CG2 VAL A  44     -12.160  13.002  -1.493  1.00 16.70           C 0
+ATOM    897  OD1 ASP A 136      -8.389  15.637  -0.338  1.00 23.81           O 0
+ATOM   1145   CB CYS A 168     -12.863  15.358   6.926  1.00 13.97           C 0
+ATOM    277   CE LYS A  58      -7.500  12.664   2.557  1.00 33.00           C 0
+ATOM   1147  OXT CYS A 168     -10.474  16.882   7.419  1.00 40.14           O 0
+ATOM    278   NZ LYS A  58      -6.642  13.821   2.931  1.00 35.07           N 0
+ATOM    259    O CYS A  56     -11.314  10.268   5.285  1.00 15.17           O 0
+ATOM   1109    O HIS A 164     -16.011  15.789   4.692  1.00 14.83           O 0
+ATOM    260   CB CYS A  56     -12.569  11.728   7.274  1.00 13.30           C 0
+ATOM    463  CH2 TRP A  82      -9.129  13.104   8.301  1.00 26.91           C 0
+ATOM    257   CA CYS A  56     -13.381  10.974   6.222  1.00 12.83           C 0
+ATOM    265    O LEU A  57     -12.099   9.028   2.253  1.00 14.27           O 0
+ATOM    172    O LEU A  45     -15.946  10.464   0.945  1.00 14.70           O 0
+ATOM   1107   CA HIS A 164     -16.331  13.677   3.622  1.00 11.78           C 0
+ATOM    258    C CYS A  56     -12.500   9.984   5.463  1.00 15.93           C 0
+ATOM   1106    N HIS A 164     -17.202  12.500   3.710  1.00 12.25           N 0
+ATOM   1146   SG CYS A 168     -14.235  14.176   7.007  1.00 17.13           S 0
+TER
+END

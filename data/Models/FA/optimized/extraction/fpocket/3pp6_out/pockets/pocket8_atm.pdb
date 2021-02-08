@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : 7.9240
+HEADER 1  - Drug Score                        : 0.0074
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9113
+HEADER 4  - Mean alpha-sphere SA              : 0.4225
+HEADER 5  - Mean B-factor                     : 0.3349
+HEADER 6  - Hydrophobicity Score              : -1.4444
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.2222
+HEADER 9  - Real volume (approximation)       : 299.9357
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 24.1481
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.8438
+ATOM    599  OE1 GLU A  70      54.495  48.617 -10.616  1.00 48.78           O 0
+ATOM   1117    C ALA B   3      60.661  45.641 -10.096  1.00 25.72           C 0
+ATOM   1119   CB ALA B   3      58.994  44.880 -11.835  1.00 42.22           C 0
+ATOM    695   NZ LYS A  82      57.253  52.136 -11.765  1.00 44.27           N 0
+ATOM   1118    O ALA B   3      61.556  46.299 -10.645  1.00 29.08           O 0
+ATOM   1120    N ASP B   4      60.200  45.928  -8.877  1.00 29.46           N 0
+ATOM    694   CE LYS A  82      57.475  52.467 -10.335  1.00 38.37           C 0
+ATOM   1121   CA ASP B   4      60.759  47.045  -8.105  1.00 31.01           C 0
+ATOM    693   CD LYS A  82      56.486  51.700  -9.469  1.00 40.21           C 0
+ATOM   1124   CB ASP B   4      59.845  47.463  -6.943  1.00 33.90           C 0
+ATOM   1140   CB ALA B   6      64.805  47.467 -11.744  1.00 30.63           C 0
+ATOM   1139    O ALA B   6      65.355  49.133  -9.122  1.00 27.25           O 0
+ATOM   2138  NH2AARG B 130      64.149  49.915  -6.944  0.05 25.58           N 0
+ATOM    600  OE2 GLU A  70      53.643  48.337  -8.603  1.00 35.45           O 0
+ATOM   1125   CG ASP B   4      59.274  46.281  -6.167  1.00 35.41           C 0
+ATOM   1110    N ALA B   2      58.139  41.557  -8.536  1.00 40.87           N 0
+ATOM   1115    N ALA B   3      59.482  43.436  -9.900  1.00 28.70           N 0
+ATOM   1126  OD1 ASP B   4      59.472  45.111  -6.570  1.00 47.04           O 0
+ATOM   1127  OD2 ASP B   4      58.587  46.531  -5.145  1.00 48.44           O 0
+ATOM   1794  OD1 ASN B  90      55.398  42.763  -5.132  1.00 42.82           O 0
+ATOM    816   NZ LYS A  97      54.453  45.630  -3.524  1.00 70.82           N 0
+TER
+END

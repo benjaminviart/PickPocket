@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    16:
+HEADER 0  - Pocket Score                      : 1.5345
+HEADER 1  - Drug Score                        : 0.0278
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.2430
+HEADER 4  - Mean alpha-sphere SA              : 0.3535
+HEADER 5  - Mean B-factor                     : 0.2600
+HEADER 6  - Hydrophobicity Score              : 36.2000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.3000
+HEADER 9  - Real volume (approximation)       : 109.2034
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 11.0000
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.3871
+ATOM   2136    N MET B 104       5.172 -20.247  22.482  1.00 55.53           N 0
+ATOM   2051  CD1 LEU B  92      -0.584 -20.932  22.344  1.00 70.76           C 0
+ATOM   2141   CG MET B 104       4.808 -23.149  22.639  1.00 57.93           C 0
+ATOM   2122    O VAL B 102       3.937 -18.712  26.041  1.00 56.33           O 0
+ATOM   2143   CE MET B 104       2.876 -24.970  23.303  1.00 61.56           C 0
+ATOM   1418  OE2 GLU A 195       1.638 -24.763  26.681  1.00 72.55           O 0
+ATOM   1844  CE2 TYR B  66       6.255 -21.731  25.642  1.00 61.32           C 0
+ATOM   2127   CA HIS B 103       4.625 -18.081  23.417  1.00 55.52           C 0
+ATOM   2167  OD2 ASP B 107       1.787 -22.091  20.864  1.00 52.42           O 0
+ATOM   2057   CB ALA B  93       0.140 -18.294  26.283  1.00 68.80           C 0
+ATOM   2130   CB HIS B 103       4.231 -16.961  22.437  1.00 55.00           C 0
+ATOM   2164   CB ASP B 107       2.234 -20.372  19.329  1.00 52.73           C 0
+ATOM   2132  ND1 HIS B 103       2.152 -15.919  23.389  1.00 54.52           N 0
+ATOM   2048    O LEU B  92      -2.206 -21.183  26.497  1.00 65.48           O 0
+ATOM   1351    O MET A 188      -1.545 -25.519  19.663  1.00 54.26           O 0
+ATOM   1388   CB HIS A 192      -2.301 -25.945  23.117  1.00 59.80           C 0
+ATOM   1384    N HIS A 192      -0.572 -27.415  22.166  1.00 58.40           N 0
+ATOM   1390  ND1 HIS A 192      -2.774 -24.500  25.148  1.00 61.16           N 0
+ATOM   1385   CA HIS A 192      -1.169 -26.941  23.417  1.00 59.87           C 0
+ATOM   2049   CB LEU B  92      -2.663 -21.560  23.516  1.00 66.22           C 0
+TER
+END

@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    26:
+HEADER 0  - Pocket Score                      : 1.4077
+HEADER 1  - Drug Score                        : 0.0117
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.9519
+HEADER 4  - Mean alpha-sphere SA              : 0.6446
+HEADER 5  - Mean B-factor                     : 0.1500
+HEADER 6  - Hydrophobicity Score              : 23.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.5714
+HEADER 9  - Real volume (approximation)       : 581.3230
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.3939
+ATOM   3760  OD1 ASN A 483      12.618   0.335   5.185  1.00 61.55           O 0
+ATOM   2742   CG LYS A 351      16.288   1.404  -1.180  1.00 54.00           C 0
+ATOM   2779  OG1 THR A 355      14.105  -0.395  -4.991  1.00 55.64           O 0
+ATOM   2751  OG1 THR A 352      11.562   4.505  -2.263  1.00 50.99           O 0
+ATOM   3761  ND2 ASN A 483      13.314  -1.805   5.142  1.00 61.77           N 0
+ATOM   2964  CD2 LEU A 380       9.806   6.655  -0.327  1.00 50.11           C 0
+ATOM   2717   CB ARG A 348      13.846   6.268   2.414  1.00 40.19           C 0
+ATOM   2963  CD1 LEU A 380       8.046   6.122   1.376  1.00 48.57           C 0
+ATOM   2718   CG ARG A 348      13.979   5.523   3.682  1.00 40.69           C 0
+ATOM   2716    O ARG A 348      13.928   5.739  -0.704  1.00 43.63           O 0
+ATOM   2962   CG LEU A 380       9.272   6.950   1.066  1.00 50.06           C 0
+ATOM   3752  CG1 VAL A 482      15.224   2.643   4.269  1.00 61.37           C 0
+ATOM   2719   CD ARG A 348      12.852   5.878   4.619  1.00 42.03           C 0
+ATOM   2741   CB LYS A 351      16.503   2.929  -1.260  1.00 50.21           C 0
+ATOM   2746    N THR A 352      14.362   4.098  -3.276  1.00 49.39           N 0
+ATOM   2714   CA ARG A 348      14.984   6.043   1.433  1.00 41.49           C 0
+ATOM   2744   CE LYS A 351      16.562   0.147  -3.351  1.00 58.66           C 0
+ATOM   2743   CD LYS A 351      17.249   0.586  -2.048  1.00 56.91           C 0
+ATOM   2739    C LYS A 351      15.419   3.334  -3.538  1.00 48.85           C 0
+ATOM   2740    O LYS A 351      15.434   2.506  -4.445  1.00 46.39           O 0
+ATOM   2747   CA THR A 352      13.129   3.991  -4.047  1.00 49.47           C 0
+TER
+END

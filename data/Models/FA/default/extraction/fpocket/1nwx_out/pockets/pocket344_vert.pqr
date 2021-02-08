@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   345:
+HEADER 0  - Pocket Score                      : -0.8127
+HEADER 1  - Drug Score                        : 0.0090
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.6511
+HEADER 4  - Mean alpha-sphere SA              : 0.4222
+HEADER 5  - Mean B-factor                     : 0.0144
+HEADER 6  - Hydrophobicity Score              : 21.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 6.3333
+HEADER 9  - Real volume (approximation)       : 264.7789
+HEADER 10 - Charge Score                      :     4
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.1667
+ATOM  1a6b7  POL STP   345      71.938 117.889 146.905    0.00     3.27
+ATOM  4486f  POL STP   345      70.836 117.759 145.619    0.00     3.14
+ATOM  29518  POL STP   345      70.879 117.867 145.273    0.00     3.23
+ATOM  4486f  POL STP   345      70.790 117.773 145.491    0.00     3.17
+ATOM  4486f  POL STP   345      70.353 117.859 145.055    0.00     3.24
+ATOM  4486f  POL STP   345      70.099 117.881 145.248    0.00     3.07
+ATOM  367c4 APOL STP   345      69.700 117.374 144.201    0.00     3.02
+ATOM  367c4 APOL STP   345      69.717 117.932 144.261    0.00     3.31
+ATOM  367c4 APOL STP   345      70.172 117.849 144.821    0.00     3.25
+ATOM  3ab62  POL STP   345      69.757 118.056 144.112    0.00     3.30
+ATOM  3ab61 APOL STP   345      69.491 117.982 144.266    0.00     3.23
+ATOM  4486f APOL STP   345      70.223 117.842 144.942    0.00     3.24
+ATOM  225ad  POL STP   345      73.918 118.663 146.388    0.00     4.22
+ATOM  225ad  POL STP   345      73.761 118.783 146.413    0.00     4.27
+ATOM  225ad  POL STP   345      73.637 118.842 145.987    0.00     4.22
+ATOM  1a6b6  POL STP   345      73.774 119.182 147.779    0.00     4.18
+ATOM  33f93  POL STP   345      73.740 120.329 148.017    0.00     4.02
+ATOM  225ad  POL STP   345      73.969 119.169 147.348    0.00     4.31
+ATOM  29519  POL STP   345      73.349 118.823 145.596    0.00     4.09
+ATOM  2951a  POL STP   345      73.510 118.936 145.563    0.00     4.19
+ATOM  33f93  POL STP   345      73.894 120.596 147.714    0.00     4.11
+ATOM  2951a  POL STP   345      74.164 118.599 144.902    0.00     3.87
+ATOM  3b5f8  POL STP   345      73.093 119.802 144.426    0.00     4.18
+ATOM  363a0  POL STP   345      74.729 121.488 147.927    0.00     3.64
+ATOM  444dc  POL STP   345      73.667 121.596 147.333    0.00     4.02
+ATOM  33f93  POL STP   345      72.865 121.196 148.318    0.00     3.39
+ATOM  444dc  POL STP   345      73.522 121.728 147.390    0.00     3.93
+ATOM  444b7  POL STP   345      75.255 121.606 147.948    0.00     3.37
+ATOM  3b5f8  POL STP   345      72.131 119.503 144.223    0.00     3.70
+ATOM  47fa6  POL STP   345      71.045 119.133 143.735    0.00     3.36
+TER
+END

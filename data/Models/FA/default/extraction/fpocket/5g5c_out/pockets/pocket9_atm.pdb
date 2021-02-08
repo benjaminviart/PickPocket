@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 4.6789
+HEADER 1  - Drug Score                        : 0.0089
+HEADER 2  - Number of V. Vertices             :    40
+HEADER 3  - Mean alpha-sphere radius          : 4.4954
+HEADER 4  - Mean alpha-sphere SA              : 0.6789
+HEADER 5  - Mean B-factor                     : 0.1850
+HEADER 6  - Hydrophobicity Score              : 14.6000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.2000
+HEADER 9  - Real volume (approximation)       : 839.5709
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 23.0000
+HEADER 12 - Number of apolar alpha sphere     :    24
+HEADER 13 - Proportion of apolar alpha sphere : 0.6000
+ATOM    153   CG LYS A  37     -35.288 -25.491   9.318  1.00 20.80           C 0
+ATOM    155   CE LYS A  37     -37.578 -26.537   9.369  1.00 31.17           C 0
+ATOM    197   CB GLU A  42     -29.785 -29.975   5.803  1.00 15.87           C 0
+ATOM    198   CG GLU A  42     -30.132 -31.292   6.510  1.00 30.41           C 0
+ATOM    194   CA GLU A  42     -29.797 -28.734   6.704  1.00 13.24           C 0
+ATOM    154   CD LYS A  37     -36.282 -26.313  10.133  1.00 26.33           C 0
+ATOM    180   OGASER A  40     -33.765 -22.949   2.813  0.44 13.06           O 0
+ATOM    193    N GLU A  42     -29.736 -27.516   5.903  1.00 12.31           N 0
+ATOM    177    O SER A  40     -31.053 -24.011   3.431  1.00 12.95           O 0
+ATOM    176    C SER A  40     -31.328 -23.698   4.603  1.00 12.26           C 0
+ATOM    205    O TYR A  43     -29.121 -31.132  10.861  1.00 13.26           O 0
+ATOM    208  CD1 TYR A  43     -30.022 -27.570  11.114  1.00 13.60           C 0
+ATOM    202    N TYR A  43     -28.828 -29.384   8.831  1.00 11.66           N 0
+ATOM    210  CE1 TYR A  43     -31.084 -27.427  11.997  1.00 14.52           C 0
+ATOM    213   OH TYR A  43     -31.975 -27.555  14.205  1.00 17.09           O 0
+ATOM    156   NZ LYS A  37     -38.497 -27.464  10.089  1.00 37.47           N 0
+ATOM    152   CB LYS A  37     -33.991 -25.236  10.088  1.00 17.12           C 0
+ATOM    149   CA LYS A  37     -32.982 -24.377   9.330  1.00 15.48           C 0
+ATOM    185    O PHE A  41     -30.156 -26.126   7.624  1.00 14.45           O 0
+ATOM    182    N PHE A  41     -30.633 -24.133   5.653  1.00 11.93           N 0
+ATOM    184    C PHE A  41     -29.843 -26.307   6.446  1.00 13.03           C 0
+ATOM    174   CAASER A  40     -32.532 -22.799   4.910  0.44 12.77           C 0
+ATOM    151    O LYS A  37     -34.187 -22.841   7.920  1.00 14.12           O 0
+TER
+END

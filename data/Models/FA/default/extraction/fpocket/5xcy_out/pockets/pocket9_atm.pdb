@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : -2.2946
+HEADER 1  - Drug Score                        : 0.2115
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.1740
+HEADER 4  - Mean alpha-sphere SA              : 0.6902
+HEADER 5  - Mean B-factor                     : 0.3422
+HEADER 6  - Hydrophobicity Score              : 70.5714
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.2857
+HEADER 9  - Real volume (approximation)       : 434.0273
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2903
+ATOM   1659  NE2AGLN A 280      40.352  -9.919 -10.072  0.57 16.12           N 0
+ATOM   1612   CG GLN A 276      39.829  -7.206 -18.119  1.00 12.87           C 0
+ATOM   1611   CB GLN A 276      38.820  -7.076 -16.990  1.00 11.36           C 0
+ATOM   1614  OE1 GLN A 276      41.452  -5.605 -17.402  1.00 16.77           O 0
+ATOM   1690  NE2 GLN A 283      40.641 -14.786 -12.861  1.00 24.83           N 0
+ATOM   1610    O GLN A 276      37.389  -8.912 -14.639  1.00 10.43           O 0
+ATOM   1608   CA GLN A 276      37.853  -8.252 -16.899  1.00 10.12           C 0
+ATOM   1644  CG2ATHR A 279      38.168 -13.786 -15.308  0.57 12.47           C 0
+ATOM   1640   CBATHR A 279      37.200 -12.684 -15.656  0.57 11.77           C 0
+ATOM   1642  OG1ATHR A 279      36.713 -12.899 -16.986  0.57 12.53           O 0
+ATOM   2097   CB ALA A 335      39.389 -15.431 -18.355  1.00 19.00           C 0
+ATOM   2044    O LEU A 331      37.900 -14.135 -21.747  1.00 13.53           O 0
+ATOM   1606   CB ALA A 275      35.973  -9.742 -20.677  1.00  9.52           C 0
+ATOM   1607    N GLN A 276      36.977  -8.267 -18.062  1.00  9.53           N 0
+ATOM   1604    C ALA A 275      36.122  -9.274 -18.231  1.00  9.48           C 0
+ATOM   1605    O ALA A 275      36.048 -10.215 -17.434  1.00 10.11           O 0
+ATOM   1689  OE1 GLN A 283      40.503 -13.599 -10.959  1.00 25.88           O 0
+ATOM   1646    N GLN A 280      36.783 -11.267 -12.817  1.00 10.43           N 0
+ATOM   1651   CBAGLN A 280      37.584  -9.600 -11.181  0.57 13.12           C 0
+ATOM   1647   CAAGLN A 280      37.170 -11.050 -11.424  0.57 11.33           C 0
+TER
+END

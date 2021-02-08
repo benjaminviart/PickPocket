@@ -1,0 +1,62 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   256:
+HEADER 0  - Pocket Score                      : 2.1073
+HEADER 1  - Drug Score                        : 0.0198
+HEADER 2  - Number of V. Vertices             :    40
+HEADER 3  - Mean alpha-sphere radius          : 3.7269
+HEADER 4  - Mean alpha-sphere SA              : 0.5116
+HEADER 5  - Mean B-factor                     : 0.2942
+HEADER 6  - Hydrophobicity Score              : 32.3000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1000
+HEADER 9  - Real volume (approximation)       : 241.1309
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.5750
+ATOM  2f0d6  POL STP   256      19.276 -30.498-180.882    0.00     3.20
+ATOM  3c7e3  POL STP   256      18.931 -30.469-181.449    0.00     3.05
+ATOM  417bf  POL STP   256      19.382 -30.413-180.686    0.00     3.27
+ATOM  3c7e3 APOL STP   256      19.354 -30.584-180.901    0.00     3.15
+ATOM  417bf APOL STP   256      19.443 -30.632-180.869    0.00     3.13
+ATOM  417bf APOL STP   256      19.461 -30.644-180.872    0.00     3.11
+ATOM  4eb87 APOL STP   256      19.499 -30.648-180.857    0.00     3.10
+ATOM  417bf APOL STP   256      19.222 -30.536-180.286    0.00     3.07
+ATOM  417bf  POL STP   256      19.488 -30.242-180.470    0.00     3.37
+ATOM  4eb8b APOL STP   256      20.109 -30.103-180.042    0.00     3.47
+ATOM  4eb8b APOL STP   256      20.399 -30.154-179.661    0.00     3.46
+ATOM  30efc  POL STP   256      20.817 -28.181-175.670    0.00     3.14
+ATOM  30efc  POL STP   256      21.201 -28.132-175.066    0.00     3.07
+ATOM  30efc  POL STP   256      21.420 -27.899-176.744    0.00     3.60
+ATOM  63847  POL STP   256      21.435 -27.662-177.507    0.00     3.95
+ATOM  63843  POL STP   256      21.670 -27.846-176.568    0.00     3.57
+ATOM  6383f  POL STP   256      22.002 -27.855-175.552    0.00     3.33
+ATOM  6383f  POL STP   256      22.050 -27.782-175.495    0.00     3.29
+ATOM  63843 APOL STP   256      22.055 -28.114-176.258    0.00     3.23
+ATOM  561c2 APOL STP   256      20.275 -27.156-179.363    0.00     4.26
+ATOM  561c2 APOL STP   256      20.448 -26.551-178.946    0.00     4.49
+ATOM  4a17a  POL STP   256      21.136 -27.296-178.592    0.00     4.55
+ATOM  63847  POL STP   256      21.230 -27.316-178.556    0.00     4.55
+ATOM  561c2 APOL STP   256      20.971 -27.096-178.710    0.00     4.53
+ATOM  4a17a APOL STP   256      21.341 -28.290-178.948    0.00     4.10
+ATOM  63847  POL STP   256      21.422 -27.625-178.605    0.00     4.41
+ATOM  3c7e4  POL STP   256      20.777 -29.501-179.630    0.00     3.75
+ATOM  4a17a APOL STP   256      21.050 -28.754-179.302    0.00     3.94
+ATOM  5dd43 APOL STP   256      21.410 -28.224-178.914    0.00     4.11
+ATOM  3c7e1 APOL STP   256      20.621 -28.145-179.206    0.00     4.11
+ATOM  4a17a APOL STP   256      20.681 -28.055-179.159    0.00     4.15
+ATOM  561c2 APOL STP   256      20.332 -27.194-179.328    0.00     4.26
+ATOM  63847  POL STP   256      21.314 -27.061-178.613    0.00     4.52
+ATOM  63847 APOL STP   256      21.516 -27.687-178.636    0.00     4.35
+ATOM  63844 APOL STP   256      22.645 -28.461-178.190    0.00     3.32
+ATOM  63847  POL STP   256      21.644 -26.228-178.638    0.00     4.40
+ATOM  63847 APOL STP   256      22.245 -27.013-178.988    0.00     3.99
+ATOM  63847 APOL STP   256      22.489 -27.120-179.076    0.00     3.86
+ATOM  3c7df APOL STP   256      19.037 -28.537-180.419    0.00     3.62
+ATOM  4eb8b APOL STP   256      21.084 -30.515-179.245    0.00     3.26
+TER
+END

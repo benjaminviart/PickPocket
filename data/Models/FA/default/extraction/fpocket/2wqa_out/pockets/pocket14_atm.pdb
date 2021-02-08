@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 6.2699
+HEADER 1  - Drug Score                        : 0.0088
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 4.3114
+HEADER 4  - Mean alpha-sphere SA              : 0.5418
+HEADER 5  - Mean B-factor                     : 0.2532
+HEADER 6  - Hydrophobicity Score              : 7.2222
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.8889
+HEADER 9  - Real volume (approximation)       : 701.8965
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 14.0000
+HEADER 12 - Number of apolar alpha sphere     :    15
+HEADER 13 - Proportion of apolar alpha sphere : 0.4286
+ATOM   3946    O ASN E  40      21.984  -1.802  12.107  1.00 58.70           O 0
+ATOM   5022    O CYS E 174      28.020  -1.818  15.221  1.00 92.01           O 0
+ATOM   5031  OD1 ASP E 175      26.888  -0.770  18.089  1.00 98.32           O 0
+ATOM   5023   CB CYS E 174      26.400  -3.450  14.040  1.00 89.27           C 0
+ATOM   3949  OD1 ASN E  40      21.628  -3.322  16.314  1.00 62.60           O 0
+ATOM   3965  CG2 VAL E  42      21.993   2.511  12.404  1.00 57.20           C 0
+ATOM   4077   CG LYS E  58      27.188  -1.045  10.217  1.00 68.44           C 0
+ATOM   4078   CD LYS E  58      28.281  -0.112  10.731  1.00 74.84           C 0
+ATOM   4076   CB LYS E  58      26.182  -0.239   9.512  1.00 64.77           C 0
+ATOM   3963   CB VAL E  42      22.670   2.933  11.118  1.00 57.42           C 0
+ATOM   4075    O LYS E  58      23.283  -1.208   9.140  1.00 64.10           O 0
+ATOM   5004   CA GLY E 172      23.928  -2.226  19.448  1.00 79.84           C 0
+ATOM   4992  CD2 HIS E 170      19.145   0.635  14.766  1.00 71.31           C 0
+ATOM   5003    N GLY E 172      22.473  -2.252  19.580  1.00 76.86           N 0
+ATOM   3831  CE1 TYR E  25      21.176   5.532  14.604  1.00 53.55           C 0
+ATOM   4989   CB HIS E 170      18.498  -0.086  17.162  1.00 70.08           C 0
+ATOM   5019    N CYS E 174      25.882  -4.220  16.294  1.00 88.11           N 0
+ATOM   3947   CB ASN E  40      21.417  -3.668  13.943  1.00 58.33           C 0
+ATOM   4080   NZ LYS E  58      30.683  -0.035  11.500  1.00 82.11           N 0
+ATOM   5033    N GLY E 176      31.503  -1.336  16.858  1.00 98.14           N 0
+ATOM   3834   OH TYR E  25      22.440   7.494  15.251  1.00 55.41           O 0
+ATOM   3964  CG1 VAL E  42      22.940   4.426  11.133  1.00 57.08           C 0
+ATOM   3829  CD1 TYR E  25      20.075   4.980  13.969  1.00 52.96           C 0
+TER
+END

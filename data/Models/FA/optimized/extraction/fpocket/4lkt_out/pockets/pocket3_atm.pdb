@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 3.1791
+HEADER 1  - Drug Score                        : 0.0364
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 4.2246
+HEADER 4  - Mean alpha-sphere SA              : 0.5161
+HEADER 5  - Mean B-factor                     : 0.4165
+HEADER 6  - Hydrophobicity Score              : 33.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.6000
+HEADER 9  - Real volume (approximation)       : 379.5911
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 34.0000
+HEADER 12 - Number of apolar alpha sphere     :    35
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   2421   CE MET C  38      37.453 -24.336   4.166  1.00 58.55           C 0
+ATOM   2392   CB LYS C  34      34.392 -26.408   1.201  1.00 34.85           C 0
+ATOM   3471   CE MET D  35      31.874 -24.106   3.460  1.00 51.34           C 0
+ATOM    465  OG1 THR A  59      32.349 -20.894   1.501  1.00 44.39           O 0
+ATOM    474  CD2 LEU A  60      34.964 -20.468   4.642  1.00 44.52           C 0
+ATOM   2420   SD MET C  38      38.487 -23.273   3.161  1.00 56.75           S 0
+ATOM   2394   CD LYS C  34      32.707 -24.927   0.060  1.00 67.61           C 0
+ATOM    472   CG LEU A  60      35.204 -19.343   3.648  1.00 51.66           C 0
+ATOM    473  CD1 LEU A  60      36.676 -19.259   3.276  1.00 39.68           C 0
+ATOM   2419   CG MET C  38      39.541 -24.492   2.354  1.00 44.96           C 0
+ATOM    312   CE MET A  38      40.541 -19.275  -0.443  1.00 73.22           C 0
+ATOM    311   SD MET A  38      41.326 -20.027  -1.868  1.00111.68           S 0
+ATOM   2396   NZ LYS C  34      32.938 -24.245  -2.334  1.00 57.57           N 0
+ATOM    310   CG MET A  38      40.343 -19.332  -3.211  1.00 76.73           C 0
+ATOM   2389   CA LYS C  34      35.444 -27.513   1.072  1.00 41.33           C 0
+ATOM   2391    O LYS C  34      37.555 -26.995   2.085  1.00 40.91           O 0
+ATOM   2393   CG LYS C  34      33.607 -26.144  -0.078  1.00 47.70           C 0
+ATOM   2413   CB ALA C  37      39.696 -28.846  -0.728  1.00 30.36           C 0
+ATOM   2284  OD1 ASP C  20      35.561 -30.296  -3.789  1.00 67.24           O 0
+ATOM    308    O MET A  38      37.709 -18.492  -4.760  1.00 60.51           O 0
+ATOM    318    N LYS A  40      34.089 -17.495  -4.681  1.00 38.90           N 0
+ATOM    314   CA ALA A  39      36.014 -16.764  -3.401  1.00 47.81           C 0
+ATOM   2380    O ARG C  33      36.663 -29.779   0.090  1.00 46.81           O 0
+TER
+END

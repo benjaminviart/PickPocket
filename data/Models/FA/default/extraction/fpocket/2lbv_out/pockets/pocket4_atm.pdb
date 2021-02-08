@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 4.1010
+HEADER 1  - Drug Score                        : 0.0067
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.0494
+HEADER 4  - Mean alpha-sphere SA              : 0.5676
+HEADER 5  - Mean B-factor                     : 0.4441
+HEADER 6  - Hydrophobicity Score              : 6.4444
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 3.4444
+HEADER 9  - Real volume (approximation)       : 533.8765
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2812
+ATOM   1923   CB SER A 118      -4.318  23.506   1.168  1.00 43.25           C 0
+ATOM   1513   CB SER A  94      -9.552  21.165  -3.879  1.00 22.22           C 0
+ATOM   1951  OE1 GLU A 120      -8.208  26.136   4.001  1.00 33.55           O 0
+ATOM   1490    O LYS A  93      -7.022  22.787  -5.297  1.00 13.41           O 0
+ATOM   1510   CA SER A  94      -8.109  20.660  -3.898  1.00 23.01           C 0
+ATOM   1980   OG SER A 122     -13.246  21.993  -0.897  1.00 22.40           O 0
+ATOM   1979   CB SER A 122     -12.268  21.162  -0.286  1.00 24.24           C 0
+ATOM   1976   CA SER A 122     -12.602  20.996   1.197  1.00  2.45           C 0
+ATOM   1992   CD PRO A 123     -15.129  22.023   2.312  1.00 22.11           C 0
+ATOM   1962    O VAL A 121     -12.004  21.303   3.878  1.00  4.10           O 0
+ATOM   1975    N SER A 122     -11.468  20.393   1.891  1.00 61.21           N 0
+ATOM   1948   CB GLU A 120      -7.715  23.581   4.538  1.00 62.22           C 0
+ATOM   1947    O GLU A 120      -7.417  20.580   3.169  1.00  4.55           O 0
+ATOM   1512    O SER A  94      -8.044  19.140  -2.050  1.00 12.21           O 0
+ATOM   1946    C GLU A 120      -7.960  21.144   4.117  1.00 62.33           C 0
+ATOM   1889   OG SER A 116      -6.364  19.369   1.481  1.00 71.21           O 0
+ATOM   1961    C VAL A 121     -11.264  20.602   3.189  1.00 41.10           C 0
+ATOM   1919    N SER A 118      -3.936  21.265   0.275  1.00 74.34           N 0
+ATOM   1899   CB ARG A 117      -4.040  20.839  -3.034  1.00 50.51           C 0
+ATOM   1895    N ARG A 117      -4.694  19.272  -1.271  1.00 11.35           N 0
+TER
+END

@@ -1,0 +1,49 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    21:
+HEADER 0  - Pocket Score                      : 2.7669
+HEADER 1  - Drug Score                        : 0.0083
+HEADER 2  - Number of V. Vertices             :    43
+HEADER 3  - Mean alpha-sphere radius          : 4.8097
+HEADER 4  - Mean alpha-sphere SA              : 0.5188
+HEADER 5  - Mean B-factor                     : 0.2424
+HEADER 6  - Hydrophobicity Score              : 17.0909
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0909
+HEADER 9  - Real volume (approximation)       : 898.6404
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 7.5556
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2093
+ATOM   1261  NH2 ARG A 140      39.199  27.903  47.623  1.00  9.60           N 0
+ATOM    863   CAATHR A  95      36.883  23.975  49.702  0.50  5.23           C 0
+ATOM    873  CG2ATHR A  95      37.989  22.062  50.965  0.50  7.52           C 0
+ATOM    871  OG1ATHR A  95      37.119  24.037  52.090  0.50  6.39           O 0
+ATOM    867    OATHR A  95      37.958  22.867  47.840  0.50  5.80           O 0
+ATOM    856  CD1 PHE A  94      35.978  27.139  52.016  1.00  9.27           C 0
+ATOM    853    O PHE A  94      36.485  26.011  48.065  1.00  7.47           O 0
+ATOM    243   CBAPRO A  25      49.138  30.050  50.046  0.50 11.10           C 0
+ATOM    245   CGAPRO A  25      48.537  30.858  50.997  0.50 13.70           C 0
+ATOM   1650   CB PRO A 187      40.176  31.746  47.800  1.00  6.67           C 0
+ATOM    237   CAAPRO A  25      49.230  28.692  50.695  0.50  9.32           C 0
+ATOM    197    NAARG A  23      47.476  24.293  57.376  0.50  5.37           N 0
+ATOM    178  NE1 TRP A  20      44.248  26.552  58.353  1.00  8.97           N 0
+ATOM    205   CBAARG A  23      46.973  23.492  55.096  0.50  6.67           C 0
+ATOM    176  CD1 TRP A  20      43.363  26.011  59.250  1.00  8.51           C 0
+ATOM    217  NH2AARG A  23      44.950  19.583  56.437  0.50 41.12           N 0
+ATOM    193    N GLY A  22      46.651  24.025  60.104  1.00  7.01           N 0
+ATOM    184    N GLN A  21      44.337  22.843  61.039  1.00  7.11           N 0
+ATOM    188   CB GLN A  21      45.356  20.817  60.140  1.00  8.20           C 0
+ATOM    209   CDAARG A  23      46.242  21.191  54.382  0.50 19.55           C 0
+ATOM    207   CGAARG A  23      47.061  22.040  55.391  0.50 13.54           C 0
+ATOM    203    OAARG A  23      46.543  26.355  55.749  0.50  8.46           O 0
+ATOM    225    OAASP A  24      49.129  26.691  52.347  0.50  7.36           O 0
+ATOM    235    NAPRO A  25      49.000  28.904  52.163  0.50  7.88           N 0
+ATOM    223    CAASP A  24      48.917  27.767  52.887  0.50  6.08           C 0
+ATOM    221   CAAASP A  24      48.461  27.800  54.328  0.50  5.77           C 0
+ATOM    247   CDAPRO A  25      48.695  30.307  52.465  0.50 10.34           C 0
+ATOM   1643  OE2AGLU A 186      44.366  34.429  51.936  0.40  6.13           O 0
+TER
+END

@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 12.3972
+HEADER 1  - Drug Score                        : 0.0225
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 3.7583
+HEADER 4  - Mean alpha-sphere SA              : 0.5256
+HEADER 5  - Mean B-factor                     : 0.1066
+HEADER 6  - Hydrophobicity Score              : 16.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 277.0465
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 34.0000
+HEADER 12 - Number of apolar alpha sphere     :    35
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    888   CB ASN A 141      -3.165 -14.479  -1.583  1.00 21.24           C 0
+ATOM    889   CG ASN A 141      -4.031 -15.666  -1.267  1.00 23.46           C 0
+ATOM    891  ND2 ASN A 141      -5.316 -15.448  -1.511  1.00 27.34           N 0
+ATOM      5   CB ALA A  22      -7.332 -16.769  -4.450  1.00 44.09           C 0
+ATOM    870  OD2 ASP A 138      -6.231 -13.205  -3.115  1.00 24.37           O 0
+ATOM    923   OGASER A 144      -0.620 -14.883  -3.554  0.50 31.78           O 0
+ATOM    890  OD1 ASN A 141      -3.544 -16.706  -0.853  1.00 28.22           O 0
+ATOM      9    O MET A  23      -6.584 -13.962  -7.524  1.00 25.08           O 0
+ATOM    930   CBASER A 145      -1.759 -10.000  -4.815  0.50 15.67           C 0
+ATOM     13   CE MET A  23      -5.051  -9.780  -6.883  1.00 31.84           C 0
+ATOM    867   CB ASP A 138      -5.192 -11.002  -2.892  1.00 20.99           C 0
+ATOM    887    O ASN A 141      -1.594 -12.317  -1.980  1.00 18.28           O 0
+ATOM    926   CAASER A 145      -0.524 -10.640  -5.340  0.50 15.42           C 0
+ATOM     26   CB PRO A  25      -3.039 -14.133 -10.735  1.00 25.66           C 0
+ATOM    919    C SER A 144       0.885 -12.541  -5.027  1.00 15.60           C 0
+ATOM    920    O SER A 144       1.374 -12.486  -6.196  1.00 18.08           O 0
+ATOM    925    N SER A 145      -0.012 -11.740  -4.539  1.00 16.60           N 0
+ATOM    921   CBASER A 144       0.606 -15.022  -4.254  0.50 18.87           C 0
+ATOM     27   CG PRO A  25      -3.832 -15.339 -10.922  1.00 32.70           C 0
+ATOM     28   CD PRO A  25      -5.237 -15.193 -10.429  1.00 22.58           C 0
+ATOM     23   CA PRO A  25      -4.115 -13.020 -10.783  1.00 23.22           C 0
+ATOM    964   CB ASN A 148       0.830 -11.638  -9.373  1.00 16.81           C 0
+ATOM    967  ND2 ASN A 148      -1.078 -11.158 -10.610  1.00 15.23           N 0
+ATOM    965   CG ASN A 148       0.041 -11.721 -10.653  1.00 18.17           C 0
+ATOM    966  OD1 ASN A 148       0.491 -12.319 -11.698  1.00 23.23           O 0
+TER
+END

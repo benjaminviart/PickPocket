@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : 11.4401
+HEADER 1  - Drug Score                        : 0.6792
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9846
+HEADER 4  - Mean alpha-sphere SA              : 0.5010
+HEADER 5  - Mean B-factor                     : 0.0597
+HEADER 6  - Hydrophobicity Score              : 69.3000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.5000
+HEADER 9  - Real volume (approximation)       : 456.8859
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 21.8261
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.7419
+ATOM    228  CG2 VAL A  84       5.720  -1.549   1.441  1.00 24.81           C 0
+ATOM    500  CD1 ILE A 100       6.904  -3.614   6.580  1.00 20.42           C 0
+ATOM    499  CG2 ILE A 100       8.251  -2.525   3.990  1.00 19.96           C 0
+ATOM    721   OH TYR A 118       7.422   0.612   5.446  1.00 21.49           O 0
+ATOM    268  CG2 VAL A  86       4.690  -6.019   3.609  1.00 28.00           C 0
+ATOM   1608  CD1 TYR A 172       3.310   2.617   2.901  1.00 19.13           C 0
+ATOM    227  CG1 VAL A  84       3.664  -1.448  -0.085  1.00 26.53           C 0
+ATOM   1539  CD2 LEU A 168       0.660  -0.552  10.435  1.00 22.10           C 0
+ATOM    760  CD2 LEU A 120       5.542  -1.899   9.511  1.00 25.42           C 0
+ATOM   1606   CB TYR A 172       2.658   3.617   5.142  1.00 18.04           C 0
+ATOM   1589  CD2 PHE A 171       6.509   4.322   9.365  1.00 24.50           C 0
+ATOM    530  OE1 GLN A 102       7.038   2.513   3.701  1.00 24.41           O 0
+ATOM   1603   CA TYR A 172       3.784   4.651   5.465  1.00 17.90           C 0
+ATOM   1667  CD1 ILE A 175       8.984   4.573   5.976  1.00 23.14           C 0
+ATOM    759  CD1 LEU A 120       7.212  -0.485  10.927  1.00 22.06           C 0
+ATOM    718  CE1 TYR A 118       8.843  -0.224   7.148  1.00 17.95           C 0
+ATOM   1538  CD1 LEU A 168       2.700   0.777  10.633  1.00 23.15           C 0
+ATOM   1537   CG LEU A 168       1.249   0.813  10.274  1.00 21.23           C 0
+ATOM   1602    N TYR A 172       3.622   5.106   6.839  1.00 18.78           N 0
+ATOM   1535    O LEU A 168       1.777   3.781   8.831  1.00 18.39           O 0
+TER
+END

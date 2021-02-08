@@ -10,12 +10,15 @@ RUN apt-get update \
 	make build-essential gcc gawk \
     ca-certificates \
     python3-pip \
-    python3 \
+    python3.7 \
 	python3-setuptools \
     r-base r-base-core \
 	pymol \
   && rm -rf /var/lib/apt/lists/* && \
- pip3 install pdb-tools numpy==1.18.5 scipy==1.2.0 scikit-learn==0.24.1 pandas==1.1.3 pymoo==0.4.2.1 biopython==1.76 matplotlib==3.3.0 
+ pip3 install --upgrade pip && \
+ pip3 install pdb-tools numpy==1.18.5 scipy==1.4.1 scikit-learn==0.24.1 \
+ pandas==1.1.3 pymoo==0.4.2.1 biopython==1.76 matplotlib==3.3.0 \
+  tensorflow==2.3.0 keras==2.4.3
 ## Includes a change of the makefile required for the installation ( https://sourceforge.net/p/fpocket/mailman/message/28785185/ )
 RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 	tar -xzf fpocket2.tar.gz && \

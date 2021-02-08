@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   127:
+HEADER 0  - Pocket Score                      : 0.8680
+HEADER 1  - Drug Score                        : 0.0069
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9845
+HEADER 4  - Mean alpha-sphere SA              : 0.5248
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : 17.0000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 5.0000
+HEADER 9  - Real volume (approximation)       : 371.5681
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0312
+ATOM  11621   CG ASP C1188     -25.633 -40.321   3.975  1.00  0.00           C 0
+ATOM  11608    O PHE C1187     -23.932 -37.385   6.176  1.00  0.00           O 0
+ATOM  11623  OD2 ASP C1188     -26.813 -40.722   3.897  1.00  0.00           O 0
+ATOM   8487  OD1 ASN C 620     -27.476 -36.436  11.845  1.00  0.00           O 0
+ATOM   4391  NH1 ARG C  18     -31.075 -37.500   7.075  1.00  0.00           N 0
+ATOM  11622  OD1 ASP C1188     -24.663 -41.089   4.146  1.00  0.00           O 0
+ATOM  18773  OD1 ASN D 768     -24.640 -36.334  11.695  1.00  0.00           O 0
+ATOM   8488  ND2 ASN C 620     -29.577 -36.499  11.057  1.00  0.00           N 0
+ATOM   8486   CG ASN C 620     -28.662 -36.728  11.992  1.00  0.00           C 0
+ATOM   4389   NE ARG C  18     -31.069 -35.945   5.379  1.00  0.00           N 0
+ATOM   4390   CZ ARG C  18     -31.342 -36.277   6.637  1.00  0.00           C 0
+ATOM   8780  CG2 THR C 657     -29.327 -33.375   6.468  1.00  0.00           C 0
+ATOM   4388   CD ARG C  18     -30.478 -36.853   4.399  1.00  0.00           C 0
+ATOM  11609   CB PHE C1187     -24.207 -34.606   6.531  1.00  0.00           C 0
+ATOM  18780  CG1 VAL D 769     -26.475 -33.400  11.139  1.00  0.00           C 0
+ATOM   8779  OG1 THR C 657     -28.297 -32.676   8.532  1.00  0.00           O 0
+ATOM   8778   CB THR C 657     -29.560 -32.866   7.882  1.00  0.00           C 0
+ATOM  11601    O VAL C1186     -25.700 -34.982   3.928  1.00  0.00           O 0
+ATOM  11620   CB ASP C1188     -25.366 -38.832   3.863  1.00  0.00           C 0
+TER
+END

@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 9.3382
+HEADER 1  - Drug Score                        : 0.5287
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.3241
+HEADER 4  - Mean alpha-sphere SA              : 0.4039
+HEADER 5  - Mean B-factor                     : 0.0735
+HEADER 6  - Hydrophobicity Score              : 81.0909
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.9091
+HEADER 9  - Real volume (approximation)       : 188.5661
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.2414
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 0.8788
+ATOM    918    C VAL A 118       8.988  12.152  12.224  1.00 19.51           C 0
+ATOM    925    C CYS A 119       7.174  15.028  11.158  1.00 16.56           C 0
+ATOM    923    N CYS A 119       8.708  13.130  11.369  1.00 18.20           N 0
+ATOM    922  CG2 VAL A 118       6.791  10.433  11.025  1.00 20.85           C 0
+ATOM    934   CG GLN A 120       3.806  14.508  11.694  1.00 14.85           C 0
+ATOM    921  CG1 VAL A 118       7.585   9.798  13.249  1.00 23.82           C 0
+ATOM    310  CG2 VAL A  41       1.145   9.801  13.950  1.00 20.75           C 0
+ATOM    848  CE1 PHE A 105       5.236  13.999  16.155  1.00 15.83           C 0
+ATOM    850   CZ PHE A 105       4.055  14.420  15.533  1.00 15.29           C 0
+ATOM    937  NE2 GLN A 120       2.011  12.907  11.914  1.00 15.80           N 0
+ATOM    288    O LEU A  39       3.486   8.072  11.160  1.00 30.97           O 0
+ATOM    919    O VAL A 118       9.056  12.315  13.438  1.00 19.33           O 0
+ATOM    329  CG2 VAL A  43      -0.493  14.418  15.713  1.00 20.87           C 0
+ATOM    862   CBAMET A 107       8.408  10.370  16.931  0.80 25.79           C 0
+ATOM    866   SDAMET A 107       6.923   8.380  18.132  0.80 37.05           S 0
+ATOM    290   CG LEU A  39       5.965   5.692  13.322  1.00 38.47           C 0
+ATOM    292  CD2 LEU A  39       7.330   6.331  13.402  1.00 40.89           C 0
+ATOM    309  CG1 VAL A  41       0.228   7.458  13.907  1.00 22.96           C 0
+ATOM    286   CA LEU A  39       3.869   5.778  11.759  1.00 35.65           C 0
+ATOM    281    O PRO A  38       2.522   3.699  12.991  1.00 40.09           O 0
+ATOM    289   CB LEU A  39       5.339   6.139  11.999  1.00 37.16           C 0
+ATOM    182   CB MET A  24       3.960  13.224   7.739  1.00 19.72           C 0
+ATOM    244  CD2 LEU A  32       4.433   8.650   8.031  1.00 23.60           C 0
+ATOM    184   SD MET A  24       1.677  11.762   7.703  1.00 23.80           S 0
+TER
+END

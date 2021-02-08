@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 6.4139
+HEADER 1  - Drug Score                        : 0.0322
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.1811
+HEADER 4  - Mean alpha-sphere SA              : 0.4715
+HEADER 5  - Mean B-factor                     : 0.2520
+HEADER 6  - Hydrophobicity Score              : 35.1667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 387.1146
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 30.6875
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    491   CB TYR A  61      40.168  -5.031  72.948  1.00 21.82           C 0
+ATOM    549   CB TYR A  69      37.724   2.082  71.885  1.00 10.57           C 0
+ATOM    552  CD2 TYR A  69      35.440   1.237  72.586  1.00 10.76           C 0
+ATOM    478   OG SER A  59      40.591   0.164  72.989  1.00 17.74           O 0
+ATOM    550   CG TYR A  69      36.728   1.624  72.938  1.00 10.12           C 0
+ATOM    493  CD1 TYR A  61      38.859  -6.449  71.279  1.00 27.36           C 0
+ATOM   2108  OG1 THR B 128      39.060  -2.894  65.989  1.00 23.58           O 0
+ATOM    526   CB PRO A  65      41.180  -4.185  78.346  1.00 14.68           C 0
+ATOM    523   CA PRO A  65      41.932  -3.504  77.192  1.00 12.81           C 0
+ATOM    623  ND2 ASN A  79      38.114  -1.859  78.916  1.00 10.59           N 0
+ATOM    525    O PRO A  65      41.097  -1.272  77.102  1.00 11.52           O 0
+ATOM    494  CD2 TYR A  61      38.756  -7.007  73.604  1.00 28.06           C 0
+ATOM    551  CD1 TYR A  69      37.073   1.582  74.306  1.00 10.52           C 0
+ATOM    553  CE1 TYR A  69      36.176   1.157  75.266  1.00 11.20           C 0
+ATOM    555   CZ TYR A  69      34.911   0.777  74.883  1.00 10.80           C 0
+ATOM    556   OH TYR A  69      34.026   0.343  75.841  1.00 11.69           O 0
+ATOM    554  CE2 TYR A  69      34.520   0.820  73.543  1.00 11.13           C 0
+ATOM    492   CG TYR A  61      39.231  -6.180  72.603  1.00 25.00           C 0
+ATOM    495  CE1 TYR A  61      38.007  -7.497  70.966  1.00 28.14           C 0
+ATOM   2106    O THR B 128      39.477  -6.014  65.462  1.00 18.77           O 0
+TER
+END

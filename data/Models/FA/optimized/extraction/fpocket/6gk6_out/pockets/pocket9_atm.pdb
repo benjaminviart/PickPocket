@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 2.5448
+HEADER 1  - Drug Score                        : 0.0106
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8016
+HEADER 4  - Mean alpha-sphere SA              : 0.3904
+HEADER 5  - Mean B-factor                     : 0.4398
+HEADER 6  - Hydrophobicity Score              : 15.2222
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 271.1123
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1362  NH2 ARG A 169      33.877 -10.175  24.234  1.00 46.18           N 0
+ATOM   1151  CG2 ILE A 142      36.389  -8.840  26.143  1.00 24.93           C 0
+ATOM   2003  CG1AVAL A 249      37.811  -5.530  24.682  0.50 21.02           C 0
+ATOM   1188  CD1 PHE A 147      33.490  -5.573  22.575  1.00 27.94           C 0
+ATOM   1359   NE ARG A 169      33.062  -9.512  22.186  1.00 47.56           N 0
+ATOM   2005  CG2AVAL A 249      37.045  -3.558  23.304  0.50 23.10           C 0
+ATOM   1977  OE1 GLU A 246      38.342  -6.186  18.592  1.00 45.58           O 0
+ATOM   1403   NZ LYS A 173      38.251  -9.080  19.408  1.00 52.19           N 0
+ATOM   1402   CE LYS A 173      36.890  -9.346  18.836  1.00 53.88           C 0
+ATOM   3155    O ALA A 399      38.650 -12.962  25.497  1.00 24.14           O 0
+ATOM   1152  CD1 ILE A 142      39.157 -10.063  26.926  1.00 31.93           C 0
+ATOM   1401   CD LYS A 173      36.916 -10.552  17.909  1.00 55.04           C 0
+ATOM   3153   CA ALA A 399      40.853 -13.479  24.691  1.00 25.84           C 0
+ATOM   3156   CB ALA A 399      40.837 -14.932  24.231  1.00 27.46           C 0
+ATOM   2015  CE1 HIS A 250      41.729  -8.209  21.656  1.00 31.07           C 0
+ATOM   3148    O PRO A 398      41.716 -10.920  25.213  1.00 24.75           O 0
+TER
+END

@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    21:
+HEADER 0  - Pocket Score                      : 1.9842
+HEADER 1  - Drug Score                        : 0.0499
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 4.5244
+HEADER 4  - Mean alpha-sphere SA              : 0.6959
+HEADER 5  - Mean B-factor                     : 0.1180
+HEADER 6  - Hydrophobicity Score              : 43.6667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.8889
+HEADER 9  - Real volume (approximation)       : 609.5309
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.5588
+ATOM   2380    O VAL A 310     -42.924   4.523  18.389  1.00 14.94           O 0
+ATOM   1200   CE MET A 152     -40.059   1.899  17.741  1.00 13.76           C 0
+ATOM   5025  CD2 HIS B 190     -39.764   1.736  11.972  1.00 14.91           C 0
+ATOM   1198   CG MET A 152     -38.528   1.790  15.420  1.00 10.89           C 0
+ATOM   5022   CB HIS B 190     -40.012  -0.549  13.142  1.00 14.34           C 0
+ATOM   1197   CB MET A 152     -38.114   3.249  15.641  1.00 11.05           C 0
+ATOM   2381   CB VAL A 310     -40.899   6.497  17.365  1.00 12.19           C 0
+ATOM   5009    C GLY B 188     -44.878  -2.544  15.959  1.00 14.38           C 0
+ATOM   5010    O GLY B 188     -44.082  -2.298  16.883  1.00 14.26           O 0
+ATOM   5018    N HIS B 190     -41.654  -2.251  13.675  1.00 13.84           N 0
+ATOM   1196    O MET A 152     -38.361   6.142  14.060  1.00 11.82           O 0
+ATOM   1194   CA MET A 152     -37.546   3.924  14.395  1.00  9.91           C 0
+ATOM   2382  CG1 VAL A 310     -40.739   7.721  16.473  1.00 14.00           C 0
+ATOM   5008   CA GLY B 188     -46.289  -2.015  16.051  1.00 15.50           C 0
+ATOM   5019   CA HIS B 190     -41.009  -1.547  12.571  1.00 13.74           C 0
+ATOM   4994    O ARG B 186     -46.095  -4.493  12.755  1.00 15.49           O 0
+ATOM   4988   CB PRO B 185     -44.335  -4.260   8.788  1.00 15.93           C 0
+ATOM   4987    O PRO B 185     -47.240  -5.129   9.725  1.00 17.19           O 0
+ATOM   5007    N GLY B 188     -47.161  -2.386  14.960  1.00 14.76           N 0
+ATOM   5003   CA ALA B 187     -48.600  -3.854  13.723  1.00 15.49           C 0
+ATOM   5034   CD PRO B 191     -41.088  -1.362   9.589  1.00 15.99           C 0
+ATOM   5014    O VAL B 189     -42.916  -3.558  12.339  1.00 14.43           O 0
+ATOM   5011    N VAL B 189     -44.537  -3.257  14.880  1.00 13.54           N 0
+TER
+END

@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 3.8974
+HEADER 1  - Drug Score                        : 0.0141
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.2508
+HEADER 4  - Mean alpha-sphere SA              : 0.6764
+HEADER 5  - Mean B-factor                     : 0.2898
+HEADER 6  - Hydrophobicity Score              : 21.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.4000
+HEADER 9  - Real volume (approximation)       : 521.2245
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 15.0000
+HEADER 12 - Number of apolar alpha sphere     :    16
+HEADER 13 - Proportion of apolar alpha sphere : 0.5161
+ATOM    472   CB LYS A 249       6.701  17.510 -18.722  1.00 26.69           C 0
+ATOM    163   CG LYS A 206       9.242  15.294 -22.621  1.00 37.02           C 0
+ATOM    474   CD LYS A 249       8.383  18.779 -17.355  1.00 42.30           C 0
+ATOM    195  CD1 LEU A 210       9.500  15.539 -17.040  1.00 22.94           C 0
+ATOM    193   CB LEU A 210      11.567  14.461 -17.759  1.00 18.24           C 0
+ATOM    164   CD LYS A 206       8.459  16.387 -23.331  1.00 47.21           C 0
+ATOM    476   NZ LYS A 249       8.984  21.103 -17.959  1.00 61.21           N 0
+ATOM    473   CG LYS A 249       6.972  18.774 -17.920  1.00 32.57           C 0
+ATOM    194   CG LEU A 210      10.900  15.112 -16.560  1.00 18.83           C 0
+ATOM    187   OGASER A 209      15.846  15.024 -21.601  0.50 27.07           O 0
+ATOM    214   CBASER A 213      17.321  16.095 -16.158  0.50 21.11           C 0
+ATOM    216   OGASER A 213      18.370  16.430 -17.067  0.50 29.40           O 0
+ATOM    190   CA LEU A 210      13.079  14.326 -17.762  1.00 17.00           C 0
+ATOM    475   CE LYS A 249       8.774  20.148 -16.834  1.00 56.02           C 0
+ATOM    184    O SER A 209      15.703  13.991 -18.552  1.00 19.31           O 0
+ATOM    189    N LEU A 210      13.529  13.769 -19.046  1.00 16.51           N 0
+ATOM    183    C SER A 209      14.807  13.616 -19.310  1.00 18.31           C 0
+ATOM    192    O LEU A 210      14.112  13.975 -15.636  1.00 16.33           O 0
+ATOM    161    O LYS A 206      11.339  13.400 -20.943  1.00 21.54           O 0
+ATOM    185   CBASER A 209      14.944  13.987 -21.802  0.50 24.59           C 0
+ATOM    159   CA LYS A 206      10.762  13.397 -23.272  1.00 24.37           C 0
+TER
+END

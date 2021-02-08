@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   187:
+HEADER 0  - Pocket Score                      : -4.4168
+HEADER 1  - Drug Score                        : 0.1026
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 3.9309
+HEADER 4  - Mean alpha-sphere SA              : 0.6204
+HEADER 5  - Mean B-factor                     : 0.4011
+HEADER 6  - Hydrophobicity Score              : 55.3333
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.6667
+HEADER 9  - Real volume (approximation)       : 413.2593
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 26.1429
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 0.9655
+ATOM   8271   CG GLN P 129      29.590 -47.604  47.970  1.00 40.69           C 0
+ATOM   8255   CA TYR P 128      30.091 -47.522  52.671  1.00 33.36           C 0
+ATOM   8254    N TYR P 128      28.708 -47.367  53.081  1.00 37.19           N 0
+ATOM   8256    C TYR P 128      30.154 -48.267  51.348  1.00 29.29           C 0
+ATOM   8266    N GLN P 129      31.217 -48.023  50.593  1.00 27.60           N 0
+ATOM   8252    C GLY P 127      28.303 -46.290  53.738  1.00 36.80           C 0
+ATOM   8273  OE1 GLN P 129      28.180 -46.225  46.611  1.00 54.27           O 0
+ATOM   8253    O GLY P 127      29.071 -45.407  54.121  1.00 36.02           O 0
+ATOM   8272   CD GLN P 129      29.283 -46.754  46.753  1.00 56.01           C 0
+ATOM  18311    O TYR W 128      25.959 -48.577  52.122  1.00 31.93           O 0
+ATOM  18327  OE1 GLN W 129      23.580 -43.916  50.052  1.00 64.37           O 0
+ATOM   8251   CA GLY P 127      26.823 -46.206  54.018  1.00 36.83           C 0
+ATOM  18326   CD GLN W 129      23.304 -43.756  51.241  1.00 57.74           C 0
+ATOM  18328  NE2 GLN W 129      23.150 -42.555  51.785  1.00 69.14           N 0
+ATOM   8250    N GLY P 127      26.587 -45.773  55.377  1.00 28.08           N 0
+ATOM  18310    C TYR W 128      24.989 -49.148  51.626  1.00 29.45           C 0
+ATOM  18320    N GLN W 129      23.752 -48.676  51.698  1.00 22.33           N 0
+ATOM  18324   CB GLN W 129      23.475 -46.257  51.495  1.00 30.01           C 0
+ATOM  18309   CA TYR W 128      25.159 -50.450  50.865  1.00 37.25           C 0
+ATOM  18307    O GLY W 127      26.122 -51.843  48.688  1.00 43.40           O 0
+ATOM  18306    C GLY W 127      26.921 -51.274  49.431  1.00 38.39           C 0
+ATOM  18314  CD1 TYR W 128      22.236 -51.855  51.051  1.00 27.22           C 0
+ATOM  18308    N TYR W 128      26.556 -50.612  50.517  1.00 34.80           N 0
+TER
+END

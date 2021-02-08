@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 8.1512
+HEADER 1  - Drug Score                        : 0.0054
+HEADER 2  - Number of V. Vertices             :    36
+HEADER 3  - Mean alpha-sphere radius          : 3.7134
+HEADER 4  - Mean alpha-sphere SA              : 0.5825
+HEADER 5  - Mean B-factor                     : 0.0507
+HEADER 6  - Hydrophobicity Score              : -23.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 2.8333
+HEADER 9  - Real volume (approximation)       : 360.1516
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 4.8889
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2500
+ATOM    313   CA ALA A  27     -12.927  29.601   1.263  1.00  9.70           C 0
+ATOM    304    O ARG A  26     -14.246  31.886   2.017  1.00 11.05           O 0
+ATOM    312    N ALA A  27     -13.029  30.094   2.626  1.00  9.16           N 0
+ATOM    306   CG ARG A  26     -12.181  33.682   4.180  1.00 11.68           C 0
+ATOM    303    C ARG A  26     -13.701  31.207   2.905  1.00  9.20           C 0
+ATOM    310  NH1 ARG A  26      -8.978  35.601   3.130  1.00 14.48           N 0
+ATOM    307   CD ARG A  26     -10.895  34.305   4.776  1.00 13.75           C 0
+ATOM    277    O SER A  23     -11.047  28.695   4.935  1.00  9.74           O 0
+ATOM    281   OGASER A  23      -7.995  27.904   6.077  0.25  2.20           O 0
+ATOM    316   CB ALA A  27     -11.884  28.501   1.204  1.00 12.44           C 0
+ATOM    273   CAASER A  23      -9.958  28.891   7.096  0.25  7.46           C 0
+ATOM    305   CB ARG A  26     -12.389  32.282   4.769  1.00 10.73           C 0
+ATOM    259    O HIS A  22     -12.206  30.396   7.635  1.00  9.41           O 0
+ATOM    266  CD2AHIS A  22     -10.627  32.865   9.318  0.50  9.47           C 0
+ATOM    348  NH2 ARG A  30     -10.776  35.144  -1.777  1.00 18.54           N 0
+ATOM    347  NH1 ARG A  30     -11.791  36.549  -0.347  1.00 23.19           N 0
+ATOM    346   CZ ARG A  30     -11.906  35.567  -1.268  1.00 19.20           C 0
+ATOM    344   CD ARG A  30     -13.248  34.060  -2.747  1.00 18.29           C 0
+ATOM    315    O ALA A  27     -14.687  29.321  -0.392  1.00 11.06           O 0
+ATOM    357  OE2 GLU A  31     -13.875  29.283  -4.794  1.00 15.63           O 0
+ATOM    342   CB ARG A  30     -15.092  32.889  -1.502  1.00 13.41           C 0
+ATOM    345   NE ARG A  30     -13.120  35.123  -1.733  1.00 19.04           N 0
+TER
+END

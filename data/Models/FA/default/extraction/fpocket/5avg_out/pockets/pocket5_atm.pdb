@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 13.3330
+HEADER 1  - Drug Score                        : 0.0068
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8113
+HEADER 4  - Mean alpha-sphere SA              : 0.5542
+HEADER 5  - Mean B-factor                     : 0.0902
+HEADER 6  - Hydrophobicity Score              : 0.8889
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 323.5732
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2188
+ATOM    945  OD1 ASN A 113      16.888  -3.094  -9.882  1.00 10.63           O 0
+ATOM    962   CB SER A 115      13.589  -3.578  -9.272  1.00 10.83           C 0
+ATOM    963   OG SER A 115      14.513  -2.596  -8.841  1.00 12.39           O 0
+ATOM   1683  NH1 ARG A 200      12.405  -4.767 -15.856  1.00 19.90           N 0
+ATOM   1038  NH2 ARG A 125      18.778   0.927 -10.971  1.00 22.72           N 0
+ATOM   1680   CD ARG A 200      14.773  -6.041 -15.432  1.00 13.94           C 0
+ATOM   1678   CB ARG A 200      13.832  -7.201 -13.400  1.00 10.03           C 0
+ATOM   1697  OG1 THR A 202      18.007  -5.219 -14.158  1.00  9.50           O 0
+ATOM     83  NH1AARG A   8      19.622  -0.827 -16.371  0.80 12.21           N 0
+ATOM     85  NH2AARG A   8      18.302  -1.969 -17.843  0.80 13.31           N 0
+ATOM   1677    O ARG A 200      15.370  -7.269 -10.767  1.00  9.09           O 0
+ATOM    967    O PRO A 116       9.862  -4.126 -10.288  1.00 11.63           O 0
+ATOM    977  CG2 THR A 117      10.057  -6.675 -13.442  1.00 11.77           C 0
+ATOM    961    O SER A 115      12.346  -6.457  -9.523  1.00 10.14           O 0
+ATOM   1679   CG ARG A 200      14.957  -7.119 -14.405  1.00 10.75           C 0
+ATOM   1720   CB PRO A 205      21.567  -1.617 -12.349  1.00 11.88           C 0
+ATOM    943   CB ASN A 113      19.251  -3.076  -9.946  1.00  9.25           C 0
+ATOM    944   CG ASN A 113      17.923  -2.477  -9.605  1.00  9.82           C 0
+ATOM   1696   CB THR A 202      19.372  -5.187 -13.823  1.00  9.24           C 0
+ATOM   1698  CG2 THR A 202      20.141  -4.615 -15.030  1.00 10.35           C 0
+TER
+END

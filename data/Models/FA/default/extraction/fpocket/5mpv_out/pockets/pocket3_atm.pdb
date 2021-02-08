@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 2.5448
+HEADER 1  - Drug Score                        : 0.0099
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.1044
+HEADER 4  - Mean alpha-sphere SA              : 0.5357
+HEADER 5  - Mean B-factor                     : 0.1135
+HEADER 6  - Hydrophobicity Score              : 10.0000
+HEADER 7  - Polarity Score                    :     0
+HEADER 8  - Volume Score                      : 3.3333
+HEADER 9  - Real volume (approximation)       : 613.2158
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4667
+ATOM    590   NE ARG D  82      51.656  40.616  66.673  1.00 70.32           N 0
+ATOM    582  CD2 LEU D  81      55.558  35.825  62.847  1.00 42.43           C 0
+ATOM    549  CG2 ILE D  78      55.786  40.721  65.242  1.00 41.18           C 0
+ATOM    593  NH2 ARG D  82      53.429  41.269  68.005  1.00 74.64           N 0
+ATOM    616  NH2 ARG D  85      49.600  37.067  66.839  1.00 39.23           N 0
+ATOM    588   CG ARG D  82      51.008  39.850  64.476  1.00 48.64           C 0
+ATOM    583    N ARG D  82      51.514  38.648  61.780  1.00 34.69           N 0
+ATOM    580   CG LEU D  81      54.323  35.923  61.932  1.00 40.37           C 0
+ATOM    546    O ILE D  78      53.994  40.232  62.816  1.00 34.50           O 0
+ATOM    613   NE ARG D  85      48.289  36.453  65.093  1.00 39.14           N 0
+ATOM    578    O LEU D  81      51.046  36.736  60.680  1.00 38.05           O 0
+ATOM    584   CA ARG D  82      50.157  38.728  62.378  1.00 37.19           C 0
+ATOM    577    C LEU D  81      51.836  37.673  60.943  1.00 34.99           C 0
+ATOM    349  CD2 LEU D  54      53.106  30.745  61.235  1.00 40.37           C 0
+ATOM    348  CD1 LEU D  54      54.464  31.087  63.269  1.00 41.37           C 0
+ATOM    611   CG ARG D  85      47.312  35.596  63.044  1.00 36.92           C 0
+ATOM    581  CD1 LEU D  81      54.298  34.793  60.915  1.00 39.73           C 0
+ATOM    347   CG LEU D  54      53.693  30.068  62.443  1.00 41.31           C 0
+ATOM    328   CBAARG D  53      49.994  26.685  63.225  0.80 42.01           C 0
+TER
+END

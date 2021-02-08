@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 7.1663
+HEADER 1  - Drug Score                        : 0.0079
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 4.1203
+HEADER 4  - Mean alpha-sphere SA              : 0.5861
+HEADER 5  - Mean B-factor                     : 0.0550
+HEADER 6  - Hydrophobicity Score              : 14.8889
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 395.5657
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2353
+ATOM    159   CA GLY A  12      -5.821 -28.527 -13.460  1.00 11.63           C 0
+ATOM    271    N ALA A  21      -1.014 -30.441 -13.601  1.00 14.34           N 0
+ATOM    275   CB ALA A  21      -2.877 -31.598 -12.531  1.00 15.60           C 0
+ATOM    142    O ILE A  11      -7.001 -30.642 -14.807  1.00 11.99           O 0
+ATOM   1284   CB MET A  84      -4.924 -27.257 -17.311  1.00 13.06           C 0
+ATOM   1283    O MET A  84      -7.515 -29.109 -18.136  1.00 12.66           O 0
+ATOM   1285   CG MET A  84      -3.730 -26.659 -18.037  1.00 13.50           C 0
+ATOM    266  OD2 ASP A  20       0.956 -31.824 -16.105  1.00 19.33           O 0
+ATOM   1346  OD1 ASP A  88      -7.648 -34.439 -18.036  1.00 15.78           O 0
+ATOM    263   CB ASP A  20       0.386 -29.523 -16.192  1.00 16.18           C 0
+ATOM    286   CG GLU A  22      -1.530 -35.542 -15.523  1.00 19.70           C 0
+ATOM   1286   SD MET A  84      -2.152 -26.892 -17.210  1.00 14.03           S 0
+ATOM    165    N ALA A  13      -3.787 -27.596 -12.495  1.00 11.64           N 0
+ATOM    289  OE2 GLU A  22      -3.220 -36.893 -14.535  1.00 21.22           O 0
+ATOM    144  CG1 ILE A  11      -6.510 -33.310 -13.160  1.00 14.37           C 0
+ATOM   3790   OH TYR A 254      -7.669 -35.962 -15.315  1.00 15.02           O 0
+ATOM   1345   CG ASP A  88      -8.186 -33.548 -17.346  1.00 13.77           C 0
+ATOM   1344   CB ASP A  88      -8.370 -32.165 -17.931  1.00 13.18           C 0
+ATOM    146  CD1 ILE A  11      -5.599 -34.353 -12.543  1.00 15.77           C 0
+ATOM    281    N GLU A  22      -0.492 -33.246 -13.779  1.00 15.32           N 0
+TER
+END

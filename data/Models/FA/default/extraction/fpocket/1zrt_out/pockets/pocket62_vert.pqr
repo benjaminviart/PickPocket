@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    63:
+HEADER 0  - Pocket Score                      : 2.2787
+HEADER 1  - Drug Score                        : 0.0122
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.2514
+HEADER 4  - Mean alpha-sphere SA              : 0.6235
+HEADER 5  - Mean B-factor                     : 0.7957
+HEADER 6  - Hydrophobicity Score              : 22.8000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.8000
+HEADER 9  - Real volume (approximation)       : 561.2201
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 17.0000
+HEADER 12 - Number of apolar alpha sphere     :    18
+HEADER 13 - Proportion of apolar alpha sphere : 0.5455
+ATOM  25104 APOL STP    63     -30.275 -32.837  46.330    0.00     4.28
+ATOM  53798 APOL STP    63     -30.015 -32.647  46.211    0.00     4.13
+ATOM  25104  POL STP    63     -30.213 -32.913  46.321    0.00     4.30
+ATOM  53798  POL STP    63     -30.010 -32.652  46.210    0.00     4.13
+ATOM  25241  POL STP    63     -28.877 -35.688  45.643    0.00     3.82
+ATOM  25241  POL STP    63     -29.576 -34.125  45.031    0.00     3.91
+ATOM  25241  POL STP    63     -28.599 -32.842  44.510    0.00     3.19
+ATOM  53796  POL STP    63     -28.634 -32.382  44.763    0.00     3.19
+ATOM  33960  POL STP    63     -28.515 -32.830  44.243    0.00     3.05
+ATOM  44407 APOL STP    63     -33.298 -32.226  47.385    0.00     5.24
+ATOM  44407 APOL STP    63     -33.015 -32.628  46.860    0.00     5.39
+ATOM  44407 APOL STP    63     -33.314 -31.763  47.257    0.00     5.05
+ATOM  54916  POL STP    63     -33.527 -32.280  47.772    0.00     5.27
+ATOM  44407 APOL STP    63     -33.030 -31.447  46.473    0.00     4.95
+ATOM  64542 APOL STP    63     -32.973 -31.273  46.403    0.00     4.86
+ATOM  44407 APOL STP    63     -33.150 -31.375  46.732    0.00     4.91
+ATOM  64542 APOL STP    63     -33.483 -31.301  45.195    0.00     4.24
+ATOM  54916  POL STP    63     -33.399 -31.859  47.426    0.00     5.08
+ATOM  64542 APOL STP    63     -32.979 -30.983  46.491    0.00     4.73
+ATOM  54916  POL STP    63     -33.493 -32.173  48.504    0.00     4.94
+ATOM  54916  POL STP    63     -33.954 -32.923  48.438    0.00     5.57
+ATOM  54916  POL STP    63     -34.263 -33.353  49.456    0.00     5.80
+ATOM  64542 APOL STP    63     -33.354 -29.454  46.147    0.00     3.65
+ATOM  64542 APOL STP    63     -32.506 -28.525  46.313    0.00     3.36
+ATOM  71418 APOL STP    63     -31.610 -30.415  45.823    0.00     3.90
+ATOM  55940 APOL STP    63     -32.538 -30.026  47.331    0.00     3.76
+ATOM  64542 APOL STP    63     -32.518 -29.950  46.507    0.00     4.08
+ATOM  54916  POL STP    63     -33.032 -30.680  49.904    0.00     3.56
+ATOM  54916  POL STP    63     -32.988 -30.537  49.797    0.00     3.46
+ATOM  54916  POL STP    63     -32.919 -30.301  48.374    0.00     3.59
+ATOM  55940 APOL STP    63     -32.542 -29.922  47.543    0.00     3.61
+ATOM  71413 APOL STP    63     -31.610 -29.274  46.150    0.00     3.54
+ATOM  71418 APOL STP    63     -31.314 -30.575  45.811    0.00     3.77
+TER
+END

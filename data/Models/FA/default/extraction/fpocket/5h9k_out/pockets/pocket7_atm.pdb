@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 8.7869
+HEADER 1  - Drug Score                        : 0.0564
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.4949
+HEADER 4  - Mean alpha-sphere SA              : 0.4222
+HEADER 5  - Mean B-factor                     : 0.2470
+HEADER 6  - Hydrophobicity Score              : 43.7778
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1111
+HEADER 9  - Real volume (approximation)       : 240.3843
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 12.4000
+HEADER 12 - Number of apolar alpha sphere     :    15
+HEADER 13 - Proportion of apolar alpha sphere : 0.4412
+ATOM    109   CG MET A  18      -3.141  19.236   4.815  1.00 16.91           C 0
+ATOM    102  CG2 ILE A  17       0.932  20.388   3.596  1.00 14.22           C 0
+ATOM    107    O MET A  18      -1.974  19.232   1.934  1.00 19.89           O 0
+ATOM    126   CB PHE A  21      -4.576  23.213   3.221  1.00 11.95           C 0
+ATOM    726    O VAL A  97      -0.396  21.553   6.654  1.00  8.57           O 0
+ATOM    572   CA GLY A  77       1.403  24.782   2.550  1.00 13.28           C 0
+ATOM    127   CG PHE A  21      -4.507  24.132   4.413  1.00 12.01           C 0
+ATOM    571    N GLY A  77       1.800  24.958   1.165  1.00 15.18           N 0
+ATOM    129  CD2 PHE A  21      -4.104  25.449   4.259  1.00 11.82           C 0
+ATOM    727   CB VAL A  97      -1.652  23.565   8.470  1.00  5.80           C 0
+ATOM    723    N VAL A  97       0.743  23.995   7.917  1.00  6.09           N 0
+ATOM    574    O GLY A  77       1.697  25.896   4.633  1.00 11.98           O 0
+ATOM    131  CE2 PHE A  21      -4.012  26.301   5.347  1.00 10.77           C 0
+ATOM    729  CG2 VAL A  97      -1.782  24.903   9.206  1.00  7.55           C 0
+ATOM    595  CE2 TYR A  79      -0.823  28.742   5.459  1.00 15.60           C 0
+ATOM    122    N PHE A  21      -5.950  21.856   1.710  1.00 16.66           N 0
+ATOM    569  OE1 GLN A  76       0.539  22.342  -3.694  1.00 46.86           O 0
+ATOM    118    N GLY A  20      -5.623  19.746  -0.206  1.00 17.45           N 0
+ATOM    113   CA SER A  19      -3.816  18.167   0.187  1.00 18.79           C 0
+ATOM    566   CB GLN A  76       2.347  23.450  -1.799  1.00 21.44           C 0
+ATOM    100   CB ILE A  17       2.067  19.413   3.303  1.00 11.86           C 0
+ATOM     99    O ILE A  17       0.279  17.196   1.958  1.00 14.35           O 0
+ATOM    564    C GLN A  76       2.683  24.154   0.592  1.00 17.66           C 0
+ATOM    565    O GLN A  76       3.238  23.240   1.193  1.00 16.60           O 0
+TER
+END

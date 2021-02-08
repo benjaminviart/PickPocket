@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 12.4607
+HEADER 1  - Drug Score                        : 0.0880
+HEADER 2  - Number of V. Vertices             :    38
+HEADER 3  - Mean alpha-sphere radius          : 3.7814
+HEADER 4  - Mean alpha-sphere SA              : 0.4633
+HEADER 5  - Mean B-factor                     : 0.0287
+HEADER 6  - Hydrophobicity Score              : 45.9286
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.3571
+HEADER 9  - Real volume (approximation)       : 233.9690
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2368
+ATOM    262  CG1 VAL A  33      19.316  16.554  99.734  1.00 12.12           C 0
+ATOM    263  CG2 VAL A  33      18.034  16.200  97.622  1.00 12.17           C 0
+ATOM    284  CD1APHE A  36      22.955  13.527 100.683  0.50 16.87           C 0
+ATOM   1135  CG2ATHR A 136      19.331  12.040 100.052  0.50  9.99           C 0
+ATOM    425  CD1 ILE A  52      20.641  16.774  94.560  1.00 14.08           C 0
+ATOM    288  CE1APHE A  36      23.749  12.622  99.996  0.50 18.55           C 0
+ATOM   1112  NE1 TRP A 134      22.301   9.223  98.547  1.00 14.11           N 0
+ATOM    565  ND2 ASN A  68      21.214  13.517  92.190  1.00 14.34           N 0
+ATOM   1156   OH TYR A 138      16.143  11.449  96.758  1.00 11.14           O 0
+ATOM    564  OD1 ASN A  68      19.027  14.004  92.349  1.00 13.81           O 0
+ATOM   1011  CE2 PHE A 123      18.518   7.320  96.812  1.00 11.88           C 0
+ATOM   1115  CZ2 TRP A 134      23.319   7.586  96.951  1.00 14.36           C 0
+ATOM    676   NZ LYS A  81      20.680  10.113  91.412  1.00 16.32           N 0
+ATOM    867   OH TYR A 106      21.570   6.117  93.719  1.00 13.48           O 0
+ATOM   1012   CZ PHE A 123      18.041   8.288  97.663  1.00 11.85           C 0
+ATOM    675   CE LYS A  81      20.196   8.710  91.459  1.00 14.38           C 0
+ATOM    457   OH TYR A  56      14.861   9.432  95.381  1.00 11.98           O 0
+ATOM    549  CG1 VAL A  66      16.254  10.379  91.019  1.00 11.22           C 0
+ATOM    694   CZ PHE A  83      17.658   6.736  93.158  1.00 10.09           C 0
+ATOM    437  CG2 THR A  54      15.904  13.164  93.030  1.00 10.38           C 0
+ATOM   1153  CE1 TYR A 138      15.675  13.388  98.026  1.00 15.98           C 0
+ATOM    436  OG1 THR A  54      17.218  14.827  94.215  1.00 12.35           O 0
+TER
+END

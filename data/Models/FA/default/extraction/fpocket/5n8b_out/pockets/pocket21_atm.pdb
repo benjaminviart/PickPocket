@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    22:
+HEADER 0  - Pocket Score                      : 4.5739
+HEADER 1  - Drug Score                        : 0.0272
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.5360
+HEADER 4  - Mean alpha-sphere SA              : 0.5342
+HEADER 5  - Mean B-factor                     : 0.3527
+HEADER 6  - Hydrophobicity Score              : 38.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.7500
+HEADER 9  - Real volume (approximation)       : 219.6889
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2500
+ATOM   3221    O ASN G  23      13.175  20.844  -1.091  1.00 12.86           O 0
+ATOM   3201    O TYR G  22      14.813  23.846  -0.081  1.00 11.07           O 0
+ATOM   4051  OG1 THR G 131      19.041  23.128  -0.751  1.00 16.21           O 0
+ATOM   4065    O VAL G 133      17.945  22.099  -3.906  1.00 18.36           O 0
+ATOM   3227   CA GLN G  24      13.423  18.572   0.469  1.00 14.97           C 0
+ATOM   3220    C ASN G  23      12.998  20.954   0.126  1.00 11.64           C 0
+ATOM   4082   CB PRO G 135      15.290  18.166  -4.102  1.00 25.98           C 0
+ATOM   4083   CG PRO G 135      14.397  19.355  -4.017  1.00 24.02           C 0
+ATOM   4084   CD PRO G 135      15.104  20.500  -4.679  1.00 22.30           C 0
+ATOM   3231   CG GLN G  24      15.070  17.888   2.312  1.00 22.70           C 0
+ATOM   4028    O THR G 129      14.407  22.873   3.875  1.00 10.43           O 0
+ATOM   4052  CG2 THR G 131      19.625  23.267   1.605  1.00 15.05           C 0
+ATOM   4046    N THR G 131      17.326  24.972   1.026  1.00 10.83           N 0
+ATOM   3827  NH2 ARG G 103      19.307  21.770   4.825  0.50 15.11           N 0
+ATOM   3226    N GLN G  24      13.064  19.914   0.948  1.00 12.84           N 0
+ATOM   4033  CG2ATHR G 129      16.111  21.277   6.326  0.50 12.19           C 0
+ATOM   3232   CD GLN G  24      15.199  17.265   3.703  1.00 27.38           C 0
+ATOM   3234  NE2 GLN G  24      16.183  16.387   3.862  1.00 32.14           N 0
+ATOM   3826  NH1 ARG G 103      21.254  21.094   3.806  0.50 16.25           N 0
+ATOM   3229    O GLN G  24      12.661  17.032  -1.213  1.00 18.40           O 0
+ATOM   3230   CB GLN G  24      13.719  17.638   1.652  1.00 17.60           C 0
+TER
+END

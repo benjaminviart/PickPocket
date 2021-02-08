@@ -1,0 +1,47 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   256:
+HEADER 0  - Pocket Score                      : 2.1073
+HEADER 1  - Drug Score                        : 0.0198
+HEADER 2  - Number of V. Vertices             :    40
+HEADER 3  - Mean alpha-sphere radius          : 3.7269
+HEADER 4  - Mean alpha-sphere SA              : 0.5116
+HEADER 5  - Mean B-factor                     : 0.2942
+HEADER 6  - Hydrophobicity Score              : 32.3000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1000
+HEADER 9  - Real volume (approximation)       : 241.1309
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.5750
+ATOM  33700  CH2 TRP c  35      18.312 -33.464-180.183  1.00 21.68           C 0
+ATOM  33289   NZ LYS b 143      21.310 -30.021-183.300  1.00 33.03           N 0
+ATOM  33698  CZ2 TRP c  35      18.065 -33.391-181.497  1.00 20.45           C 0
+ATOM  34063    O GLN c  81      16.161 -30.725-180.203  1.00 21.65           O 0
+ATOM  33696  CE2 TRP c  35      19.142 -33.380-182.327  1.00 24.44           C 0
+ATOM  33699  CZ3 TRP c  35      19.602 -33.520-179.684  1.00 21.42           C 0
+ATOM  33694  CD2 TRP c  35      20.451 -33.432-181.847  1.00 23.82           C 0
+ATOM  33697  CE3 TRP c  35      20.653 -33.505-180.480  1.00 18.57           C 0
+ATOM  34070   CA THR c  82      17.552 -30.432-177.715  1.00 23.91           C 0
+ATOM  34076    N LEU c  83      19.532 -30.947-176.407  1.00 25.11           N 0
+ATOM  34080   CB LEU c  83      21.703 -31.160-175.242  1.00 24.01           C 0
+ATOM  34594  OE1 GLU c 146      20.038 -25.318-174.648  1.00 36.40           O 0
+ATOM  34084    N ARG c  84      19.210 -30.062-173.740  1.00 21.39           N 0
+ATOM  34557   CE MET c 141      22.600 -28.793-172.410  1.00 26.63           C 0
+ATOM  34081   CG LEU c  83      22.587 -31.294-176.455  1.00 27.31           C 0
+ATOM  34630   OG SER c 150      25.207 -27.413-176.352  1.00 25.80           O 0
+ATOM  34592   CG GLU c 146      22.255 -24.735-174.266  1.00 26.69           C 0
+ATOM  34082  CD1 LEU c  83      23.913 -30.754-176.147  1.00 27.88           C 0
+ATOM  33288   CE LYS b 143      21.322 -28.609-183.226  1.00 30.16           C 0
+ATOM  33286   CG LYS b 143      22.506 -26.541-182.937  1.00 25.58           C 0
+ATOM  34075  CG2 THR c  82      16.395 -28.215-177.965  1.00 24.62           C 0
+ATOM  34073   CB THR c  82      17.229 -29.063-177.079  1.00 22.26           C 0
+ATOM  33287   CD LYS b 143      22.625 -28.003-182.830  1.00 29.31           C 0
+ATOM  33714  CE2 PHE c  37      24.171 -30.979-180.196  1.00 16.94           C 0
+ATOM  33715   CZ PHE c  37      24.976 -29.898-180.071  1.00 26.08           C 0
+ATOM  33285   CB LYS b 143      23.700 -25.821-182.502  1.00 24.46           C 0
+TER
+END

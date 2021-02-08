@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   245:
+HEADER 0  - Pocket Score                      : -0.4619
+HEADER 1  - Drug Score                        : 0.0090
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.9752
+HEADER 4  - Mean alpha-sphere SA              : 0.5656
+HEADER 5  - Mean B-factor                     : 0.1142
+HEADER 6  - Hydrophobicity Score              : 19.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.7778
+HEADER 9  - Real volume (approximation)       : 508.3228
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2727
+ATOM  85464  POL STP   245     100.683  22.771  62.249    0.00     3.86
+ATOM  1ce48  POL STP   245     100.531  22.838  62.123    0.00     3.93
+ATOM  1ce48  POL STP   245     100.576  22.977  62.362    0.00     3.84
+ATOM  85508  POL STP   245     100.584  24.994  63.198    0.00     3.21
+ATOM  1ce43  POL STP   245      99.874  24.681  62.375    0.00     3.54
+ATOM  1ce2a  POL STP   245     100.756  24.739  63.543    0.00     3.40
+ATOM  1ce48  POL STP   245     100.503  24.398  63.352    0.00     3.61
+ATOM  85464  POL STP   245     101.742  23.847  63.837    0.00     3.06
+ATOM  1ce29  POL STP   245     101.605  23.893  63.792    0.00     3.11
+ATOM  85508 APOL STP   245     100.998  24.759  63.588    0.00     3.28
+ATOM  1ce29 APOL STP   245     100.888  24.657  63.554    0.00     3.36
+ATOM  1ce2a APOL STP   245     100.822  24.738  63.563    0.00     3.37
+ATOM  1ce48  POL STP   245     100.610  24.053  63.319    0.00     3.62
+ATOM  1ce48  POL STP   245     100.550  24.278  63.324    0.00     3.62
+ATOM  1ce2a  POL STP   245     100.782  24.793  63.588    0.00     3.36
+ATOM  46578 APOL STP   245     100.364  22.463  60.006    0.00     4.67
+ATOM  1ce48  POL STP   245      99.868  22.770  60.391    0.00     4.65
+ATOM  1ce48  POL STP   245     100.161  22.826  61.040    0.00     4.33
+ATOM  1ce48  POL STP   245      99.088  22.052  61.191    0.00     3.71
+ATOM  52096 APOL STP   245      97.636  22.527  60.095    0.00     3.89
+ATOM  1ce48 APOL STP   245      98.297  22.483  60.533    0.00     3.86
+ATOM  85006  POL STP   245      98.395  24.720  58.958    0.00     5.30
+ATOM  1ce43  POL STP   245      98.847  24.614  60.233    0.00     4.48
+ATOM  85006 APOL STP   245      97.382  23.457  58.460    0.00     5.24
+ATOM  85006  POL STP   245      97.006  23.329  57.614    0.00     5.56
+ATOM  85006 APOL STP   245      98.408  24.016  58.131    0.00     5.92
+ATOM  1ce48 APOL STP   245      99.066  23.425  59.447    0.00     5.08
+ATOM  85006  POL STP   245      97.984  25.737  60.526    0.00     4.25
+ATOM  1ce43  POL STP   245      98.526  25.262  61.025    0.00     3.97
+ATOM  26ce1  POL STP   245      97.933  25.967  60.513    0.00     4.19
+ATOM  26d4a  POL STP   245      97.198  26.069  61.659    0.00     3.43
+ATOM  26d4a  POL STP   245      97.024  27.204  61.468    0.00     3.40
+ATOM  26d4a  POL STP   245      97.013  27.602  61.861    0.00     3.08
+TER
+END

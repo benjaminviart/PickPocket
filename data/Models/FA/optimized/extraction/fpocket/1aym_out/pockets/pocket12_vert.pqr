@@ -1,0 +1,50 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 13.3086
+HEADER 1  - Drug Score                        : 0.0140
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.7851
+HEADER 4  - Mean alpha-sphere SA              : 0.5976
+HEADER 5  - Mean B-factor                     : 0.0919
+HEADER 6  - Hydrophobicity Score              : -1.7273
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.1818
+HEADER 9  - Real volume (approximation)       : 247.3699
+HEADER 10 - Charge Score                      :     5
+HEADER 11 - Local hydrophobic density Score   : 24.0000
+HEADER 12 - Number of apolar alpha sphere     :    25
+HEADER 13 - Proportion of apolar alpha sphere : 0.8929
+ATOM  10023 APOL STP    13       1.648  39.963 128.327    0.00     3.91
+ATOM  10045 APOL STP    13       2.359  38.889 127.997    0.00     4.55
+ATOM  10023 APOL STP    13       1.565  40.162 128.456    0.00     3.75
+ATOM  10043 APOL STP    13       2.992  39.839 127.912    0.00     3.97
+ATOM  10043 APOL STP    13       3.870  40.719 128.161    0.00     3.40
+ATOM  13381 APOL STP    13       2.701  38.847 128.416    0.00     4.22
+ATOM  13381 APOL STP    13       3.516  39.130 129.093    0.00     3.52
+ATOM  10044 APOL STP    13       4.398  38.214 125.719    0.00     3.60
+ATOM  10045 APOL STP    13       3.697  39.132 125.917    0.00     3.89
+ATOM  10045 APOL STP    13       4.457  37.841 125.828    0.00     3.60
+ATOM  13366  POL STP    13       4.479  39.185 125.419    0.00     3.62
+ATOM  10046 APOL STP    13       3.774  37.543 126.530    0.00     3.87
+ATOM  18440 APOL STP    13       4.486  37.839 125.827    0.00     3.58
+ATOM  10046 APOL STP    13       3.442  37.723 126.733    0.00     4.00
+ATOM  10045  POL STP    13       3.667  39.266 125.901    0.00     3.92
+ATOM  13366  POL STP    13       4.011  39.578 125.608    0.00     3.85
+ATOM  13023 APOL STP    13       3.776  37.301 126.356    0.00     3.67
+ATOM  17996 APOL STP    13       4.140  37.240 127.043    0.00     3.54
+ATOM  13024 APOL STP    13       3.078  37.100 126.365    0.00     3.49
+ATOM  13024 APOL STP    13       2.972  37.013 126.342    0.00     3.43
+ATOM  18439 APOL STP    13       4.795  39.113 125.420    0.00     3.42
+ATOM  18441 APOL STP    13       4.632  37.811 125.854    0.00     3.48
+ATOM  11553 APOL STP    13       1.309  37.839 128.367    0.00     4.53
+ATOM  11553 APOL STP    13       1.727  37.527 128.383    0.00     4.28
+ATOM  13384 APOL STP    13       1.925  38.367 128.504    0.00     4.40
+ATOM  18000 APOL STP    13       4.849  36.488 129.287    0.00     3.48
+ATOM  18002 APOL STP    13       4.728  36.459 129.205    0.00     3.49
+ATOM  18000 APOL STP    13       4.853  36.585 129.267    0.00     3.50
+TER
+END

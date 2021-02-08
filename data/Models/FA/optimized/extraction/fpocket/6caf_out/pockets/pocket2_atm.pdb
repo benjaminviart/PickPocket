@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 16.8497
+HEADER 1  - Drug Score                        : 0.0418
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.9950
+HEADER 4  - Mean alpha-sphere SA              : 0.5687
+HEADER 5  - Mean B-factor                     : 0.1487
+HEADER 6  - Hydrophobicity Score              : 15.0909
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.6364
+HEADER 9  - Real volume (approximation)       : 315.6717
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 25.5714
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 0.9333
+ATOM    653    O GLY A  76     -14.705  70.965   1.685  1.00 23.94           O 0
+ATOM    218  OD1AASN A  26     -14.230  79.105  -0.005  0.50 59.09           O 0
+ATOM    233    O TYR A  28     -10.135  73.693   0.217  1.00 15.11           O 0
+ATOM    248   CD LYS A  29     -13.392  70.187  -2.810  1.00 55.85           C 0
+ATOM    213    O ASN A  26     -10.715  77.999  -1.957  1.00 19.30           O 0
+ATOM    641    O MET A  75     -16.145  74.666   3.097  1.00 24.24           O 0
+ATOM    243   CA LYS A  29     -10.449  71.244  -1.042  1.00 12.50           C 0
+ATOM    246   CB LYS A  29     -10.915  70.557  -2.321  1.00 15.30           C 0
+ATOM    242    N LYS A  29      -9.433  72.232  -1.337  1.00 12.06           N 0
+ATOM    225    O ASN A  27      -7.649  75.734  -3.175  1.00 15.01           O 0
+ATOM    232    C TYR A  28      -9.304  73.330  -0.624  1.00 12.95           C 0
+ATOM     48    N ILE A   7      -7.705  71.473  -5.325  1.00 12.04           N 0
+ATOM     35    O THR A   5     -10.247  72.568  -8.677  1.00 19.53           O 0
+ATOM     40   CA GLU A   6      -9.417  70.620  -6.837  1.00 15.09           C 0
+ATOM     44   CG GLU A   6     -11.609  69.332  -6.547  1.00 24.75           C 0
+ATOM    660  CG2 VAL A  77     -11.732  73.652   3.438  1.00 18.42           C 0
+ATOM    210   CAAASN A  26     -10.863  78.824   0.263  0.50 15.52           C 0
+ATOM    220  ND2AASN A  26     -13.237  79.923   1.815  0.50 25.29           N 0
+ATOM    216   CGAASN A  26     -13.244  79.591   0.551  0.50 34.49           C 0
+ATOM    646   SDAMET A  75     -13.549  77.536   5.709  0.50 36.16           S 0
+ATOM    184    O CYS A  23     -10.159  77.601   3.852  1.00 15.59           O 0
+TER
+END

@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    64:
+HEADER 0  - Pocket Score                      : 5.1416
+HEADER 1  - Drug Score                        : 0.0045
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.0781
+HEADER 4  - Mean alpha-sphere SA              : 0.5883
+HEADER 5  - Mean B-factor                     : 0.3337
+HEADER 6  - Hydrophobicity Score              : -16.9000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 2.7000
+HEADER 9  - Real volume (approximation)       : 222.2584
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3226
+ATOM  11065  OD2 ASP I  96     -52.688  19.387 -73.874  1.00 35.42           O 0
+ATOM  11034  CG1 ILE I  93     -48.458  17.341 -76.327  1.00 27.63           C 0
+ATOM  10413   OG SER I  17     -48.964  13.500 -74.658  1.00 18.87           O 0
+ATOM  11036  CD1 ILE I  93     -48.696  16.617 -77.481  1.00 34.42           C 0
+ATOM  10412   CB SER I  17     -49.800  12.409 -74.882  1.00 20.70           C 0
+ATOM  11062   CB ASP I  96     -51.082  18.463 -72.421  1.00 23.08           C 0
+ATOM  11099  NH2 ARG I 100     -50.355  13.562 -72.372  1.00 45.69           N 0
+ATOM  11098  NH1 ARG I 100     -52.522  13.521 -71.750  1.00 42.13           N 0
+ATOM  10409   CA SER I  17     -49.992  12.030 -76.349  1.00 16.14           C 0
+ATOM  10408    N SER I  17     -50.739  10.784 -76.453  1.00 19.25           N 0
+ATOM  10407  CG2 THR I  16     -53.880  10.260 -77.927  1.00 25.41           C 0
+ATOM  10378    O GLU I  13     -52.071   9.629 -73.921  1.00 21.79           O 0
+ATOM  10890   CA GLY I  75     -54.789  14.145 -80.402  1.00 26.12           C 0
+ATOM  10436  OG1 THR I  20     -51.639  13.020 -80.118  1.00 24.00           O 0
+ATOM  10437  CG2 THR I  20     -50.897  15.246 -80.514  1.00 19.40           C 0
+ATOM  10917  NH2 ARG I  78     -52.213  20.992 -76.832  1.00 33.81           N 0
+ATOM  10893    N SER I  76     -55.175  16.446 -81.016  1.00 24.88           N 0
+ATOM  10896    O SER I  76     -53.319  18.508 -81.047  1.00 24.86           O 0
+ATOM  10435   CB THR I  20     -50.478  13.848 -80.203  1.00 16.78           C 0
+TER
+END

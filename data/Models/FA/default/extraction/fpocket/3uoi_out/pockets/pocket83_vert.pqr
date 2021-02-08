@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    84:
+HEADER 0  - Pocket Score                      : 4.5719
+HEADER 1  - Drug Score                        : 0.0107
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.9665
+HEADER 4  - Mean alpha-sphere SA              : 0.4999
+HEADER 5  - Mean B-factor                     : 0.3725
+HEADER 6  - Hydrophobicity Score              : 22.2727
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.1818
+HEADER 9  - Real volume (approximation)       : 167.9133
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1000
+ATOM  86611  POL STP    84     -46.678  20.688-112.424    0.00     3.51
+ATOM  1a72f  POL STP    84     -45.561  20.831-111.470    0.00     3.90
+ATOM  1a72e  POL STP    84     -46.694  20.689-111.923    0.00     3.85
+ATOM  2291b  POL STP    84     -46.741  19.757-112.371    0.00     3.11
+ATOM  86611  POL STP    84     -47.596  21.328-111.767    0.00     3.99
+ATOM  1a72f  POL STP    84     -47.083  20.956-111.507    0.00     4.13
+ATOM  1a72e  POL STP    84     -47.427  20.620-111.436    0.00     3.90
+ATOM  2292b  POL STP    84     -46.276  21.243-110.852    0.00     4.29
+ATOM  1a72b APOL STP    84     -44.430  19.996-111.472    0.00     3.45
+ATOM  3d884  POL STP    84     -43.913  19.878-111.481    0.00     3.50
+ATOM  1a72f APOL STP    84     -44.840  20.864-111.209    0.00     4.08
+ATOM  1a72f APOL STP    84     -44.976  20.972-111.116    0.00     4.14
+ATOM  3d884  POL STP    84     -44.463  20.862-111.188    0.00     4.12
+ATOM  3d884  POL STP    84     -44.585  21.105-110.967    0.00     4.27
+ATOM  1a735  POL STP    84     -45.174  21.067-110.978    0.00     4.19
+ATOM  2484b  POL STP    84     -44.776  21.176-110.862    0.00     4.29
+ATOM  2292b  POL STP    84     -46.160  21.251-110.818    0.00     4.29
+ATOM  2292b  POL STP    84     -46.257  21.223-110.793    0.00     4.27
+ATOM  2fde7  POL STP    84     -45.354  21.444-110.608    0.00     4.35
+ATOM  2292b  POL STP    84     -46.246  21.182-110.270    0.00     4.02
+ATOM  2fde6  POL STP    84     -45.956  21.236-110.018    0.00     3.96
+ATOM  3d884  POL STP    84     -44.589  21.114-110.954    0.00     4.27
+ATOM  2fde7  POL STP    84     -45.284  21.428-110.622    0.00     4.34
+ATOM  3d884  POL STP    84     -44.522  21.040-110.698    0.00     4.15
+ATOM  2fde7  POL STP    84     -45.326  21.469-110.605    0.00     4.34
+ATOM  3d884  POL STP    84     -44.423  20.982-110.445    0.00     4.03
+ATOM  3d884  POL STP    84     -43.923  20.119-110.046    0.00     3.35
+ATOM  3d884  POL STP    84     -44.003  20.411-109.874    0.00     3.49
+ATOM  3d884  POL STP    84     -44.472  21.189-111.026    0.00     4.20
+ATOM  3d884  POL STP    84     -43.612  19.369-111.449    0.00     3.22
+TER
+END

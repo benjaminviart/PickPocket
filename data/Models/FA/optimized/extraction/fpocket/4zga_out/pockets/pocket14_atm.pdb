@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 2.2148
+HEADER 1  - Drug Score                        : 0.0106
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7589
+HEADER 4  - Mean alpha-sphere SA              : 0.4307
+HEADER 5  - Mean B-factor                     : 0.3082
+HEADER 6  - Hydrophobicity Score              : 13.6000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 332.5468
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 28.2581
+HEADER 12 - Number of apolar alpha sphere     :    31
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1606  OE2 GLU A 283       2.881  82.128  18.008  1.00 72.64           O 0
+ATOM   1993  OE2 GLU A 331      -1.819  83.161  20.516  1.00 66.41           O 0
+ATOM   2019  CD1 ILE A 335       1.054  78.688  17.472  1.00 61.64           C 0
+ATOM   1594  ND1 HIS A 282       2.946  77.831  22.000  1.00 77.60           N 0
+ATOM   1989   CB GLU A 331      -3.113  80.972  21.784  1.00 66.39           C 0
+ATOM   2017  CG1 ILE A 335      -0.165  77.904  17.900  1.00 61.81           C 0
+ATOM   2011   CB LYS A 334      -3.745  81.266  16.104  1.00 74.25           C 0
+ATOM   2039  NE2 GLN A 338       0.933  81.127  14.128  1.00 59.26           N 0
+ATOM   1596  CE1 HIS A 282       2.863  77.342  23.221  1.00 77.84           C 0
+ATOM   1990   CG GLU A 331      -3.044  82.353  22.418  1.00 70.36           C 0
+ATOM   1842   CG GLN A 310      -1.009  76.825  26.105  1.00 56.50           C 0
+ATOM   1845  NE2 GLN A 310      -1.011  78.399  27.960  1.00 60.22           N 0
+ATOM   1966   CA PRO A 328      -5.604  80.107  25.174  1.00 71.32           C 0
+ATOM   1970   CG PRO A 328      -5.460  80.590  27.494  1.00 77.15           C 0
+ATOM   1843   CD GLN A 310      -1.640  77.380  27.385  1.00 64.76           C 0
+ATOM   1994    N ILE A 332      -4.345  78.407  20.581  1.00 72.25           N 0
+ATOM   1987    C GLU A 331      -3.821  79.466  19.959  1.00 71.37           C 0
+ATOM   1841   CB GLN A 310      -1.770  75.617  25.565  1.00 61.58           C 0
+ATOM   1826   OGASER A 308       0.826  74.206  23.423  0.50 58.28           O 0
+ATOM   1995   CA ILE A 332      -4.132  77.062  20.068  1.00 72.26           C 0
+ATOM   1998   CB ILE A 332      -4.706  75.941  20.967  1.00 73.24           C 0
+ATOM   1593   CG HIS A 282       3.252  76.818  21.122  1.00 76.80           C 0
+ATOM   1988    O GLU A 331      -3.170  79.377  18.932  1.00 82.29           O 0
+TER
+END

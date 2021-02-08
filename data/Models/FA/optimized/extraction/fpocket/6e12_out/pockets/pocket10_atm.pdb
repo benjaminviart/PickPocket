@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 10.0727
+HEADER 1  - Drug Score                        : 0.0558
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9042
+HEADER 4  - Mean alpha-sphere SA              : 0.5079
+HEADER 5  - Mean B-factor                     : 0.4435
+HEADER 6  - Hydrophobicity Score              : 38.1111
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 139.5918
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 31.0000
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    726   CB LEU A  96      92.516  39.678  25.186  1.00 69.46           C 0
+ATOM    683  CD2 HIS A  90      89.499  37.067  29.540  1.00 43.55           C 0
+ATOM    869   CG ASP A 121      89.129  41.749  28.552  1.00 56.54           C 0
+ATOM    728  CD1 LEU A  96      90.234  38.754  25.781  1.00 76.02           C 0
+ATOM    678    C HIS A  90      92.349  35.268  29.143  1.00 55.51           C 0
+ATOM    732    C THR A  97      94.948  43.877  26.031  1.00104.52           C 0
+ATOM    730    N THR A  97      94.697  41.822  24.745  1.00 89.08           N 0
+ATOM    724    C LEU A  96      94.867  40.511  24.890  1.00 79.21           C 0
+ATOM    737    N PRO A  98      95.465  44.262  27.209  1.00105.23           N 0
+ATOM    725    O LEU A  96      95.846  40.027  25.464  1.00 74.79           O 0
+ATOM    662   OH TYR A  87      93.018  42.631  31.957  1.00 58.44           O 0
+ATOM    743   CD PRO A  98      96.697  43.730  27.815  1.00102.35           C 0
+ATOM    538  CD1 LEU A  72      98.056  39.394  29.453  1.00 57.96           C 0
+ATOM    539  CD2 LEU A  72      97.165  39.861  31.752  1.00 64.76           C 0
+ATOM    870  OD1 ASP A 121      89.878  42.710  28.249  1.00 59.44           O 0
+ATOM    660  CE2 TYR A  87      91.514  40.938  32.736  1.00 46.65           C 0
+ATOM    661   CZ TYR A  87      92.761  41.550  32.767  1.00 55.40           C 0
+ATOM    654    O TYR A  87      92.979  36.745  32.401  1.00 54.95           O 0
+ATOM    868   CB ASP A 121      88.916  41.425  30.020  1.00 51.24           C 0
+ATOM    686    N ILE A  92      95.604  35.413  28.310  1.00 59.51           N 0
+ATOM    666    O ALA A  88      95.734  35.431  31.214  1.00 54.68           O 0
+TER
+END

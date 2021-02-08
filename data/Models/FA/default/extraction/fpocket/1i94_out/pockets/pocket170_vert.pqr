@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   171:
+HEADER 0  - Pocket Score                      : -1.2704
+HEADER 1  - Drug Score                        : 0.0234
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.1248
+HEADER 4  - Mean alpha-sphere SA              : 0.6084
+HEADER 5  - Mean B-factor                     : 0.5510
+HEADER 6  - Hydrophobicity Score              : 37.5714
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.1429
+HEADER 9  - Real volume (approximation)       : 400.7422
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2581
+ATOM  18917  POL STP   171      32.611 128.762 151.887    0.00     5.39
+ATOM  1cdec  POL STP   171      32.641 128.825 151.814    0.00     5.43
+ATOM  1cdec  POL STP   171      32.780 128.709 151.679    0.00     5.35
+ATOM  18917 APOL STP   171      33.745 127.595 150.551    0.00     4.88
+ATOM  36427 APOL STP   171      33.055 126.833 150.106    0.00     3.81
+ATOM  36427 APOL STP   171      33.749 127.604 150.547    0.00     4.88
+ATOM  205b0 APOL STP   171      33.741 127.546 150.559    0.00     4.85
+ATOM  1cdec  POL STP   171      33.384 128.173 150.960    0.00     5.09
+ATOM  205b0 APOL STP   171      33.608 127.234 150.751    0.00     4.60
+ATOM  205b2 APOL STP   171      34.379 126.959 150.250    0.00     4.59
+ATOM  1cd1f  POL STP   171      34.498 125.774 149.108    0.00     3.46
+ATOM  3213f  POL STP   171      34.432 126.805 149.875    0.00     4.33
+ATOM  1cd1f  POL STP   171      34.434 125.423 149.379    0.00     3.38
+ATOM  1cd1f  POL STP   171      34.458 125.456 149.245    0.00     3.35
+ATOM  205b2  POL STP   171      34.432 125.435 149.398    0.00     3.39
+ATOM  1cd20  POL STP   171      34.798 124.440 150.903    0.00     3.41
+ATOM  25440  POL STP   171      35.139 123.924 151.114    0.00     3.26
+ATOM  205b2  POL STP   171      34.498 125.449 150.601    0.00     3.79
+ATOM  36427 APOL STP   171      33.757 127.610 150.541    0.00     4.89
+ATOM  36427  POL STP   171      33.752 127.620 150.545    0.00     4.89
+ATOM  18917  POL STP   171      32.677 123.366 153.032    0.00     3.55
+ATOM  1cde8  POL STP   171      34.898 127.776 150.235    0.00     4.91
+ATOM  205b1 APOL STP   171      33.762 124.578 151.410    0.00     3.36
+ATOM  293c5  POL STP   171      30.514 128.750 148.336    0.00     3.49
+ATOM  2dcfe  POL STP   171      37.279 126.096 151.305    0.00     3.50
+ATOM  2dcfe  POL STP   171      37.438 125.330 151.576    0.00     3.18
+ATOM  32139  POL STP   171      35.189 128.624 147.872    0.00     3.52
+ATOM  32139  POL STP   171      35.014 128.718 147.760    0.00     3.40
+ATOM  3213c  POL STP   171      32.625 128.573 149.795    0.00     4.41
+ATOM  3213c  POL STP   171      32.789 128.670 149.437    0.00     4.11
+ATOM  36424  POL STP   171      31.819 128.189 148.692    0.00     3.44
+TER
+END

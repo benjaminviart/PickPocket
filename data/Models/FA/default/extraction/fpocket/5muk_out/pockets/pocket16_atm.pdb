@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    17:
+HEADER 0  - Pocket Score                      : 2.3701
+HEADER 1  - Drug Score                        : 0.0053
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.8123
+HEADER 4  - Mean alpha-sphere SA              : 0.6369
+HEADER 5  - Mean B-factor                     : 0.2646
+HEADER 6  - Hydrophobicity Score              : 2.1250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.2500
+HEADER 9  - Real volume (approximation)       : 608.5524
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0312
+ATOM   1011  NH1AARG A 159      42.631   1.492   0.682  0.50 17.47           N 0
+ATOM   1315   OH TYR A 197      38.633   1.067   3.477  1.00 30.27           O 0
+ATOM   1052    N GLY A 166      43.461  -2.535  -1.455  1.00 15.81           N 0
+ATOM   1298   CB ASN A 195      42.674  -1.789   4.362  1.00 24.98           C 0
+ATOM   1005   CDAARG A 159      41.882   2.559  -1.863  0.50 15.29           C 0
+ATOM   1501    O THR A 217      37.387  -3.595   7.492  1.00 24.48           O 0
+ATOM   1506   CA TRP A 218      35.171  -4.352   6.049  1.00 23.60           C 0
+ATOM   1051  NH2 ARG A 165      42.561  -5.829   4.281  1.00 32.92           N 0
+ATOM   1500    C THR A 217      37.095  -4.796   7.463  1.00 24.27           C 0
+ATOM   1505    N TRP A 218      36.071  -5.245   6.755  1.00 23.58           N 0
+ATOM   1040    O GLY A 164      41.447  -6.651  -3.023  1.00 15.94           O 0
+ATOM   1509   CB TRP A 218      34.130  -5.131   5.224  1.00 24.82           C 0
+ATOM   1050  NH1 ARG A 165      42.613  -8.057   3.798  1.00 32.40           N 0
+ATOM   1049   CZ ARG A 165      42.888  -6.818   3.438  1.00 31.56           C 0
+ATOM   1046   CG ARG A 165      43.313  -6.884  -0.081  1.00 21.00           C 0
+ATOM   1048   NE ARG A 165      43.520  -6.513   2.293  1.00 27.91           N 0
+ATOM   1045   CB ARG A 165      43.928  -5.538  -0.500  1.00 17.63           C 0
+ATOM   1042   CA ARG A 165      43.308  -4.923  -1.755  1.00 15.98           C 0
+ATOM   1053   CA GLY A 166      43.988  -1.186  -1.687  1.00 15.52           C 0
+ATOM   1055    O GLY A 166      45.702  -1.449  -0.060  1.00 17.72           O 0
+TER
+END

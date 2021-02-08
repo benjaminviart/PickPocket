@@ -1,0 +1,54 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   235:
+HEADER 0  - Pocket Score                      : -1.4883
+HEADER 1  - Drug Score                        : 0.0040
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.2898
+HEADER 4  - Mean alpha-sphere SA              : 0.6350
+HEADER 5  - Mean B-factor                     : 0.6593
+HEADER 6  - Hydrophobicity Score              : -6.6250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.1250
+HEADER 9  - Real volume (approximation)       : 639.2827
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3125
+ATOM  35858  POL STP   235       9.212 111.589  76.679    0.00     3.07
+ATOM  41399 APOL STP   235       8.252 114.528  75.567    0.00     3.50
+ATOM  41402 APOL STP   235       8.450 114.842  76.283    0.00     3.09
+ATOM  33235  POL STP   235       8.423 112.767  74.489    0.00     4.69
+ATOM  33236  POL STP   235       8.388 112.538  74.471    0.00     4.71
+ATOM  41399  POL STP   235       8.223 113.432  74.796    0.00     4.30
+ATOM  33236  POL STP   235       8.430 112.620  73.899    0.00     5.05
+ATOM  41399 APOL STP   235       8.574 113.045  75.467    0.00     4.07
+ATOM  41399  POL STP   235       8.413 112.619  73.654    0.00     5.19
+ATOM  41399  POL STP   235       8.759 112.531  73.267    0.00     5.29
+ATOM  33236  POL STP   235       8.134 112.263  74.629    0.00     4.49
+ATOM  33236  POL STP   235       8.434 112.398  75.050    0.00     4.34
+ATOM  41399  POL STP   235       8.037 112.318  72.311    0.00     5.96
+ATOM  41399  POL STP   235       8.172 113.577  74.755    0.00     4.27
+ATOM  51852 APOL STP   235       9.924 112.516  72.222    0.00     5.58
+ATOM  51852 APOL STP   235       9.654 112.221  71.897    0.00     5.98
+ATOM  35797 APOL STP   235       8.637 112.375  76.861    0.00     3.51
+ATOM  41399 APOL STP   235       8.653 112.701  76.592    0.00     3.56
+ATOM  51872  POL STP   235       8.899 112.140  77.670    0.00     3.24
+ATOM  41402 APOL STP   235       8.868 113.348  76.426    0.00     3.52
+ATOM  41402 APOL STP   235       8.857 113.279  76.508    0.00     3.49
+ATOM  51872  POL STP   235       9.241 113.529  76.833    0.00     3.15
+ATOM  51871 APOL STP   235       9.023 113.142  77.011    0.00     3.21
+ATOM  27f08  POL STP   235      11.058 111.281  72.121    0.00     5.44
+ATOM  51872  POL STP   235       8.964 112.064  77.753    0.00     3.19
+ATOM  95867  POL STP   235       8.899 112.117  77.742    0.00     3.21
+ATOM  95863  POL STP   235       8.964 112.060  77.766    0.00     3.18
+ATOM  95867  POL STP   235       8.909 112.165  77.782    0.00     3.16
+ATOM  2e767  POL STP   235      11.505 110.885  72.695    0.00     4.92
+ATOM  27f06  POL STP   235      11.307 111.030  70.674    0.00     5.75
+ATOM  27f08  POL STP   235      10.849 111.035  71.462    0.00     5.84
+ATOM  2e766  POL STP   235      11.273 110.698  72.040    0.00     5.30
+TER
+END

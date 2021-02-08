@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    74:
+HEADER 0  - Pocket Score                      : 2.1194
+HEADER 1  - Drug Score                        : 0.0054
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.7162
+HEADER 4  - Mean alpha-sphere SA              : 0.4889
+HEADER 5  - Mean B-factor                     : 0.1450
+HEADER 6  - Hydrophobicity Score              : 1.1250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.2500
+HEADER 9  - Real volume (approximation)       : 122.7953
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.9643
+ATOM  22297  OD1 ASP O  72      54.918  82.530  35.726  1.00 16.53           O 0
+ATOM  25104    O TYR P  45      60.295  85.005  35.758  1.00 22.35           O 0
+ATOM  25147  NH2 ARG P  49      58.523  82.617  34.618  1.00 49.25           N 0
+ATOM  22284   CB ARG O  71      56.165  83.654  32.368  1.00  8.34           C 0
+ATOM  22286   CD ARG O  71      58.396  84.786  32.152  1.00 14.60           C 0
+ATOM  22298  OD2 ASP O  72      54.302  83.667  37.482  1.00  2.26           O 0
+ATOM  22296   CG ASP O  72      54.040  83.092  36.416  1.00  2.16           C 0
+ATOM  22257   CA HIS O  68      53.399  87.601  33.021  1.00 16.43           C 0
+ATOM  22263  CD2 HIS O  68      52.406  86.978  36.135  1.00 39.76           C 0
+ATOM  22256    N HIS O  68      54.130  88.508  32.156  1.00 15.98           N 0
+ATOM  25107  CD1 TYR P  45      59.304  89.732  34.782  1.00 12.66           C 0
+ATOM  22260   CB HIS O  68      52.608  88.416  34.036  1.00 19.50           C 0
+ATOM  22235   OG SER O  64      54.803  92.480  35.612  1.00 31.44           O 0
+ATOM  22252    O THR O  67      55.730  87.053  31.627  1.00 10.55           O 0
+ATOM  22233    O SER O  64      54.336  91.057  32.535  1.00 13.39           O 0
+ATOM  25465   OH TYR P  90      56.619  85.680  39.057  1.00 24.69           O 0
+ATOM  25105   CB TYR P  45      60.343  87.484  34.413  1.00 13.80           C 0
+TER
+END

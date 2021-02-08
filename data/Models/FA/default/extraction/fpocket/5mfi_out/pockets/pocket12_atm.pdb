@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 7.5632
+HEADER 1  - Drug Score                        : 0.0079
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.3583
+HEADER 4  - Mean alpha-sphere SA              : 0.6506
+HEADER 5  - Mean B-factor                     : 0.3629
+HEADER 6  - Hydrophobicity Score              : -7.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.5714
+HEADER 9  - Real volume (approximation)       : 482.8548
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 11.0000
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.4000
+ATOM   1467    O ALA A 191       7.047 -20.229 125.466  1.00 49.51           O 0
+ATOM   3605   CGAGLU B 212      10.988 -20.520 120.069  0.58 39.50           C 0
+ATOM   1479   CB GLU A 193      11.129 -17.202 127.964  1.00 44.54           C 0
+ATOM   1482  OE1 GLU A 193      13.505 -18.572 128.922  1.00 82.94           O 0
+ATOM   3591   CB ASN B 211      13.751 -16.268 122.043  1.00 32.99           C 0
+ATOM   3607   CDAGLU B 212       9.790 -19.752 120.591  0.58 63.14           C 0
+ATOM   3594  ND2 ASN B 211      14.035 -15.094 124.141  1.00 47.20           N 0
+ATOM   1498  OE1AGLU A 194      10.884 -15.338 124.426  0.51 35.80           O 0
+ATOM   3611  OE2AGLU B 212       8.789 -20.406 120.962  0.58 64.44           O 0
+ATOM   1475    N GLU A 193       8.912 -17.083 126.833  1.00 41.40           N 0
+ATOM   3609  OE1AGLU B 212       9.856 -18.502 120.654  0.58 48.88           O 0
+ATOM   3595    NAGLU B 212      12.813 -18.109 119.465  0.58 29.50           N 0
+ATOM   1470   CA SER A 192       7.000 -17.367 125.327  1.00 42.18           C 0
+ATOM   3635   CG GLN B 215      17.686 -22.149 118.964  1.00 37.83           C 0
+ATOM   3634   CB GLN B 215      17.030 -20.777 118.689  1.00 29.27           C 0
+ATOM   3637  OE1 GLN B 215      19.662 -21.169 119.975  1.00 46.95           O 0
+ATOM   3590    O ASN B 211      15.075 -17.870 119.568  1.00 32.09           O 0
+ATOM   3589    C ASN B 211      13.937 -17.442 119.807  1.00 32.91           C 0
+ATOM   3597   CAAGLU B 212      12.861 -19.392 118.749  0.58 28.62           C 0
+TER
+END

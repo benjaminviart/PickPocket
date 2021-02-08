@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    84:
+HEADER 0  - Pocket Score                      : 1.2071
+HEADER 1  - Drug Score                        : 0.0052
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.4036
+HEADER 4  - Mean alpha-sphere SA              : 0.6482
+HEADER 5  - Mean B-factor                     : 0.3959
+HEADER 6  - Hydrophobicity Score              : 1.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.4286
+HEADER 9  - Real volume (approximation)       : 467.8306
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.6333
+ATOM   6750  OG1 THR B 533       6.826  -1.977   5.846  1.00 37.02           O 0
+ATOM   6749   CB THR B 533       7.802  -2.634   6.678  1.00 35.47           C 0
+ATOM   6751  CG2 THR B 533       8.947  -1.682   7.048  1.00 40.83           C 0
+ATOM   6768  OD1 ASP B 535       1.621  -1.490   8.825  1.00 47.92           O 0
+ATOM   6767   CG ASP B 535       1.820  -2.488   8.116  1.00 42.71           C 0
+ATOM   6762    N ASP B 535       3.985  -4.146   6.562  1.00 21.50           N 0
+ATOM   6766   CB ASP B 535       2.280  -2.232   6.621  1.00 34.64           C 0
+ATOM   6915  NE2 GLN B 552       5.003  -4.725  16.540  1.00 48.76           N 0
+ATOM   8816   CB GLU B 803      12.152  -5.145  13.834  1.00 55.51           C 0
+ATOM   8811   CB LYS B 802      11.744  -5.165   8.795  1.00 51.51           C 0
+ATOM   8789  CG1 ILE B 799       6.610  -8.697  11.200  1.00 27.56           C 0
+ATOM   6756   CB HIS B 534       5.032  -6.385   8.500  1.00 30.85           C 0
+ATOM   8790  CG2 ILE B 799       8.254  -8.491  13.108  1.00 23.04           C 0
+ATOM   6769  OD2 ASP B 535       1.670  -3.647   8.619  1.00 45.93           O 0
+ATOM   6752    N HIS B 534       6.638  -5.276   6.984  1.00 29.68           N 0
+ATOM   8785   CA ILE B 799       9.099  -8.806  10.661  1.00 18.88           C 0
+ATOM   8787    O ILE B 799      11.117  -8.008  11.733  1.00 25.03           O 0
+ATOM   8810    O LYS B 802      13.067  -3.812  10.993  1.00 54.16           O 0
+ATOM   8809    C LYS B 802      13.196  -5.021  10.823  1.00 44.90           C 0
+TER
+END

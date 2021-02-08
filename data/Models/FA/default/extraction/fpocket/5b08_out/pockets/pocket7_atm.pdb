@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 14.3552
+HEADER 1  - Drug Score                        : 0.6045
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.1516
+HEADER 4  - Mean alpha-sphere SA              : 0.4030
+HEADER 5  - Mean B-factor                     : 0.0276
+HEADER 6  - Hydrophobicity Score              : 61.2500
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.6250
+HEADER 9  - Real volume (approximation)       : 77.7934
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 30.0000
+HEADER 12 - Number of apolar alpha sphere     :    31
+HEADER 13 - Proportion of apolar alpha sphere : 0.9688
+ATOM    937   CB LEU B   9      11.257  16.670  18.874  1.00  6.93           C 0
+ATOM    943    C LYS B  10      15.733  17.726  18.414  1.00  5.40           C 0
+ATOM    940  CD2 LEU B   9      11.336  16.432  21.336  1.00  8.55           C 0
+ATOM    950    N PHE B  11      16.195  16.528  18.057  1.00  5.49           N 0
+ATOM    957  CD2 PHE B  11      15.398  13.105  20.046  1.00  5.94           C 0
+ATOM    944    O LYS B  10      15.919  18.208  19.532  1.00  5.09           O 0
+ATOM   1615   CB TRP B  89      14.514  17.722  22.757  1.00  4.35           C 0
+ATOM    959  CE2 PHE B  11      14.212  12.415  20.265  1.00  6.75           C 0
+ATOM   1604   CB PHE B  88      15.850  13.123  24.240  1.00  5.68           C 0
+ATOM   1611    N TRP B  89      16.224  16.272  23.742  1.00  4.49           N 0
+ATOM   1617  CD1 TRP B  89      13.282  17.148  24.947  1.00  4.29           C 0
+ATOM   1061  CE2 PHE B  23       9.817  11.455  21.885  1.00  5.80           C 0
+ATOM    939  CD1 LEU B   9      10.113  14.767  19.976  1.00  7.47           C 0
+ATOM   1062   CZ PHE B  23       9.509  11.929  23.143  1.00  5.71           C 0
+ATOM   1060  CE1 PHE B  23      10.027  11.304  24.263  1.00  5.23           C 0
+ATOM   1536  CG2 VAL B  79      10.100  15.181  24.854  1.00  4.19           C 0
+ATOM   1574    O TYR B  85      14.246  13.835  26.877  1.00  4.96           O 0
+ATOM   1575   CB TYR B  85      12.518  11.564  27.290  1.00  4.75           C 0
+ATOM   1058  CD1 PHE B  23      10.849  10.200  24.117  1.00  5.91           C 0
+ATOM   1059  CD2 PHE B  23      10.636  10.350  21.747  1.00  5.88           C 0
+ATOM   1607  CD2 PHE B  88      15.717  10.660  23.828  1.00  6.79           C 0
+ATOM   1057   CG PHE B  23      11.162   9.711  22.860  1.00  5.47           C 0
+TER
+END

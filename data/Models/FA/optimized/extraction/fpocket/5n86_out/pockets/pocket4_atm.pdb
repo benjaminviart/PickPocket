@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 11.8462
+HEADER 1  - Drug Score                        : 0.0270
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 4.0196
+HEADER 4  - Mean alpha-sphere SA              : 0.5044
+HEADER 5  - Mean B-factor                     : 0.1433
+HEADER 6  - Hydrophobicity Score              : 21.0000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 3.8000
+HEADER 9  - Real volume (approximation)       : 234.4391
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.8519
+ATOM   2072   CB SER A 133       3.998  -5.225  14.911  1.00 11.40           C 0
+ATOM   2073   OG SER A 133       2.788  -4.534  15.124  1.00 13.79           O 0
+ATOM   2085   CD ARG A 134      -1.033  -5.906  12.868  1.00 18.56           C 0
+ATOM   2187   OG SER B   0       1.035  -8.465  18.240  1.00 48.06           O 0
+ATOM   2071    O SER A 133       3.852  -6.372  12.029  1.00 10.89           O 0
+ATOM   2086   NE ARG A 134      -1.627  -5.314  14.065  1.00 30.38           N 0
+ATOM   1768    O GLY A 114      -1.087  -2.301  18.311  1.00 16.08           O 0
+ATOM   2182    N SER B   0      -0.510  -6.948  20.322  1.00 40.92           N 0
+ATOM   2185    O SER B   0       2.048  -6.087  19.933  1.00 26.19           O 0
+ATOM   2286  CG2 VAL B   7       9.294  -9.785  15.893  1.00  8.97           C 0
+ATOM   2266    O GLN B   6       6.645 -13.601  15.796  1.00 10.08           O 0
+ATOM    824    O SER A  53       4.922 -10.788  10.522  1.00 12.66           O 0
+ATOM    825   CB SER A  53       7.823  -9.996  11.229  1.00  9.11           C 0
+ATOM    826   OG SER A  53       8.025  -8.623  11.551  1.00  9.02           O 0
+ATOM   2267   CB GLN B   6       5.738 -12.245  18.668  1.00  9.91           C 0
+ATOM   2205   CA GLY B   2       6.317  -7.771  18.720  1.00 13.28           C 0
+ATOM   2265    C GLN B   6       7.196 -13.147  16.806  1.00  9.16           C 0
+ATOM   1831  CD1 LEU A 118       8.507  -5.472  14.163  1.00 12.45           C 0
+ATOM   1832  CD2 LEU A 118       7.852  -5.198  16.552  1.00 11.75           C 0
+ATOM   2337   CBASER B  10       6.398 -13.505  12.001  0.50 11.83           C 0
+ATOM   2281   CA VAL B   7       8.939 -12.238  15.425  1.00  7.57           C 0
+TER
+END

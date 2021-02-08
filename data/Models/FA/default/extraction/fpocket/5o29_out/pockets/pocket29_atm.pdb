@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    30:
+HEADER 0  - Pocket Score                      : 1.8592
+HEADER 1  - Drug Score                        : 0.0341
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.6672
+HEADER 4  - Mean alpha-sphere SA              : 0.5070
+HEADER 5  - Mean B-factor                     : 0.0738
+HEADER 6  - Hydrophobicity Score              : 40.5556
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.2222
+HEADER 9  - Real volume (approximation)       : 314.6800
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2581
+ATOM   4374   CB LEU A 574      33.343   7.658 -33.486  1.00 14.30           C 0
+ATOM   4376  CD1 LEU A 574      31.106   8.094 -32.473  1.00 16.63           C 0
+ATOM   4386  CE1 PHE A 575      36.139   7.747 -29.564  1.00 18.86           C 0
+ATOM   3258   OG SER A 430      34.641  11.551 -28.384  1.00 18.36           O 0
+ATOM   3236    O TYR A 428      30.389   9.993 -29.212  1.00 13.79           O 0
+ATOM   4354  CD1 TYR A 571      32.550   6.553 -28.355  1.00 12.74           C 0
+ATOM   3249   CB ILE A 429      29.320  12.910 -26.289  1.00 13.53           C 0
+ATOM   3025  CE1 PHE A 403      30.045  16.965 -26.219  1.00 19.08           C 0
+ATOM   3207    O THR A 425      28.751  13.294 -30.297  1.00 18.35           O 0
+ATOM   3251  CG2 ILE A 429      28.170  13.684 -26.965  1.00 14.57           C 0
+ATOM   3246   CA ILE A 429      29.971  11.923 -27.271  1.00 13.33           C 0
+ATOM   4384  CD1 PHE A 575      36.711   7.339 -30.780  1.00 15.87           C 0
+ATOM   3285   NZ LYS A 433      38.368  10.305 -29.883  1.00 22.06           N 0
+ATOM   4373    O LEU A 574      36.172   8.267 -34.899  1.00 18.23           O 0
+ATOM   3210  OG1ATHR A 425      30.726  13.526 -33.876  0.35 17.95           O 0
+ATOM   4377  CD2 LEU A 574      31.687   9.131 -34.676  1.00 16.67           C 0
+ATOM   3212  CG2ATHR A 425      29.492  15.138 -32.569  0.35 17.93           C 0
+ATOM   3253    N SER A 430      32.341  11.963 -26.746  1.00 15.17           N 0
+ATOM   3027   CZ PHE A 403      31.009  17.835 -26.691  1.00 19.49           C 0
+ATOM   3204   CAATHR A 425      28.813  12.690 -32.624  0.35 14.53           C 0
+TER
+END

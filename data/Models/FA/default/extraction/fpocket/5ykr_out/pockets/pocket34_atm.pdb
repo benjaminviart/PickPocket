@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    35:
+HEADER 0  - Pocket Score                      : -0.6723
+HEADER 1  - Drug Score                        : 0.0290
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9407
+HEADER 4  - Mean alpha-sphere SA              : 0.5558
+HEADER 5  - Mean B-factor                     : 0.1375
+HEADER 6  - Hydrophobicity Score              : 39.3333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 549.1803
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.4194
+ATOM    528   CA GLY A  66     -10.232 -17.024  40.162  1.00 13.19           C 0
+ATOM   3366   CB ALA A 436      -7.961 -14.385  40.914  1.00 18.64           C 0
+ATOM    738   CD PRO A  94     -15.248 -14.424  45.079  1.00 12.98           C 0
+ATOM    737   CG PRO A  94     -15.297 -14.892  46.475  1.00 18.44           C 0
+ATOM    527    N GLY A  66     -11.201 -18.099  40.457  1.00 13.44           N 0
+ATOM    721    O ALA A  92     -15.761 -16.939  42.951  1.00 12.82           O 0
+ATOM    522   CB GLN A  65     -11.756 -20.985  42.151  1.00 17.91           C 0
+ATOM    523   CG GLN A  65     -12.965 -21.809  42.634  1.00 22.15           C 0
+ATOM    521    O GLN A  65      -9.640 -19.702  40.250  1.00 14.73           O 0
+ATOM    520    C GLN A  65     -10.817 -19.363  40.486  1.00 13.75           C 0
+ATOM    711    O HIS A  91     -13.891 -17.241  40.203  1.00 11.15           O 0
+ATOM    724   CA GLN A  93     -16.182 -14.302  42.269  1.00 11.72           C 0
+ATOM    730  OE1 GLN A  93     -14.648 -11.522  43.092  1.00 19.51           O 0
+ATOM    729   CD GLN A  93     -14.431 -11.572  41.839  1.00 14.98           C 0
+ATOM    731  NE2 GLN A  93     -13.353 -11.006  41.250  1.00 16.96           N 0
+ATOM    728   CG GLN A  93     -15.354 -12.269  40.883  1.00 14.92           C 0
+ATOM    696    O PHE A  89     -12.662 -11.737  38.645  1.00 14.88           O 0
+ATOM    705   CA GLY A  90     -12.325 -14.244  37.343  1.00 10.97           C 0
+ATOM   3362    N ALA A 436      -7.680 -12.005  40.462  1.00 15.28           N 0
+ATOM    706    C GLY A  90     -13.510 -15.183  37.417  1.00 10.71           C 0
+TER
+END

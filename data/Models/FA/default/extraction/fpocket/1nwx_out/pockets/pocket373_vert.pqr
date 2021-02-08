@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   374:
+HEADER 0  - Pocket Score                      : -1.2351
+HEADER 1  - Drug Score                        : 0.0153
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.0131
+HEADER 4  - Mean alpha-sphere SA              : 0.5309
+HEADER 5  - Mean B-factor                     : 0.2577
+HEADER 6  - Hydrophobicity Score              : 31.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 6.1429
+HEADER 9  - Real volume (approximation)       : 406.3739
+HEADER 10 - Charge Score                      :     4
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0909
+ATOM  78650  POL STP   374      -1.836 172.546 117.829    0.00     3.06
+ATOM  24870  POL STP   374      -1.342 173.520 116.513    0.00     3.38
+ATOM  91305  POL STP   374      -2.993 172.723 116.141    0.00     4.16
+ATOM  1bef5  POL STP   374      -2.843 173.492 115.753    0.00     3.86
+ATOM  91305 APOL STP   374      -2.651 173.032 116.245    0.00     4.01
+ATOM  24870 APOL STP   374      -1.715 173.450 116.314    0.00     3.59
+ATOM  1bef5  POL STP   374      -2.429 173.527 116.111    0.00     3.84
+ATOM  4bad6  POL STP   374      -2.240 174.575 116.427    0.00     3.19
+ATOM  2486f  POL STP   374      -2.017 173.637 116.169    0.00     3.66
+ATOM  24f67  POL STP   374      -1.916 169.707 114.031    0.00     3.65
+ATOM  310b0 APOL STP   374      -2.292 170.270 114.806    0.00     3.69
+ATOM  310b0  POL STP   374      -2.547 169.954 114.857    0.00     3.92
+ATOM  310b4  POL STP   374      -1.693 169.696 113.966    0.00     3.53
+ATOM  3f39c  POL STP   374      -3.918 171.102 120.642    0.00     3.73
+ATOM  3f39f  POL STP   374      -3.954 171.307 120.510    0.00     3.75
+ATOM  71908  POL STP   374      -4.541 170.002 116.164    0.00     5.24
+ATOM  71949  POL STP   374      -4.525 169.622 116.017    0.00     5.33
+ATOM  91284  POL STP   374      -4.291 171.402 116.506    0.00     4.92
+ATOM  71908  POL STP   374      -4.015 170.038 117.602    0.00     4.67
+ATOM  91284  POL STP   374      -3.949 171.557 117.406    0.00     4.59
+ATOM  78784  POL STP   374      -4.011 170.087 118.660    0.00     4.19
+ATOM  24f64  POL STP   374      -4.329 169.588 115.879    0.00     5.18
+ATOM  1beef  POL STP   374      -5.677 172.040 115.745    0.00     4.80
+ATOM  91284  POL STP   374      -3.577 171.906 117.456    0.00     4.30
+ATOM  91284  POL STP   374      -4.060 172.195 118.691    0.00     3.93
+ATOM  1beef  POL STP   374      -4.408 172.337 118.460    0.00     3.73
+ATOM  1bef4  POL STP   374      -4.079 172.297 118.803    0.00     3.85
+ATOM  91284  POL STP   374      -3.933 171.898 118.215    0.00     4.20
+ATOM  1bef4  POL STP   374      -4.423 172.691 118.910    0.00     3.46
+ATOM  1bef5  POL STP   374      -3.898 172.075 119.334    0.00     3.84
+ATOM  92014  POL STP   374      -3.944 171.543 120.415    0.00     3.74
+ATOM  1bef5  POL STP   374      -3.846 171.990 120.391    0.00     3.71
+ATOM  3f39f  POL STP   374      -3.950 171.415 120.505    0.00     3.75
+TER
+END

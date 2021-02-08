@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    37:
+HEADER 0  - Pocket Score                      : 3.2367
+HEADER 1  - Drug Score                        : 0.0119
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.0882
+HEADER 4  - Mean alpha-sphere SA              : 0.4738
+HEADER 5  - Mean B-factor                     : 0.3373
+HEADER 6  - Hydrophobicity Score              : 20.2500
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 433.3860
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 30.8750
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 0.9697
+ATOM   2752  CD2 HIS B  51      13.243 -16.117   0.033  1.00 47.28           C 0
+ATOM   2749   CB HIS B  51      14.452 -14.277  -1.314  1.00 41.30           C 0
+ATOM   2750   CG HIS B  51      14.252 -15.240  -0.187  1.00 45.03           C 0
+ATOM   2769  OD1 ASP B  53      17.111 -15.398  -5.463  1.00 72.00           O 0
+ATOM    449  CE1AHIS A  51      20.202 -19.793  -2.849  0.50 49.44           C 0
+ATOM    451  NE2AHIS A  51      19.733 -21.043  -2.790  0.50 49.86           N 0
+ATOM   2754  NE2 HIS B  51      13.539 -16.774   1.206  1.00 47.61           N 0
+ATOM   2751  ND1 HIS B  51      15.177 -15.353   0.842  1.00 46.29           N 0
+ATOM    445  ND1AHIS A  51      20.586 -19.361  -1.660  0.50 49.38           N 0
+ATOM   2753  CE1 HIS B  51      14.697 -16.281   1.653  1.00 46.63           C 0
+ATOM    447  CD2AHIS A  51      19.825 -21.449  -1.480  0.50 49.32           C 0
+ATOM    443   CGAHIS A  51      20.347 -20.410  -0.788  0.50 47.64           C 0
+ATOM    441   CBAHIS A  51      20.660 -20.298   0.670  0.50 44.11           C 0
+ATOM   2771    N ALA B  54      21.110 -12.691  -5.593  1.00 45.30           N 0
+ATOM   2775   CB ALA B  54      23.508 -13.024  -5.885  1.00 45.69           C 0
+ATOM   2764   CA ASP B  53      18.717 -12.868  -5.231  1.00 47.81           C 0
+ATOM   2758    O LEU B  52      19.144 -11.276  -2.824  1.00 48.56           O 0
+ATOM   2763    N ASP B  53      17.761 -12.031  -4.484  1.00 47.69           N 0
+ATOM   2755    N LEU B  52      16.224 -11.354  -1.792  1.00 44.00           N 0
+ATOM   2757    C LEU B  52      18.044 -11.284  -3.387  1.00 49.46           C 0
+TER
+END

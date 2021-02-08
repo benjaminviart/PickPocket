@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 8.9723
+HEADER 1  - Drug Score                        : 0.0123
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.5053
+HEADER 4  - Mean alpha-sphere SA              : 0.6170
+HEADER 5  - Mean B-factor                     : 0.1434
+HEADER 6  - Hydrophobicity Score              : 16.1429
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.7143
+HEADER 9  - Real volume (approximation)       : 714.1756
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.6333
+ATOM    571   CDAARG A 357      21.974  56.647  13.052  0.54 15.41           C 0
+ATOM   1007  CG2 ILE A 411      16.653  57.827  13.996  1.00 17.71           C 0
+ATOM   1004    O ILE A 411      18.882  59.728  15.271  1.00 14.91           O 0
+ATOM    194    O PRO A 315      15.667  56.516   9.893  1.00  8.53           O 0
+ATOM    573   NEAARG A 357      22.880  57.651  13.615  0.54 18.60           N 0
+ATOM    575   CZAARG A 357      24.203  57.717  13.438  0.54 18.10           C 0
+ATOM    733  OD1 ASN A 376      24.459  56.410   9.644  1.00 13.94           O 0
+ATOM    579  NH2AARG A 357      24.882  58.692  14.040  0.54 21.92           N 0
+ATOM    734  ND2 ASN A 376      25.260  56.219   7.557  1.00 14.66           N 0
+ATOM     77   CEALYS A 302      19.462  58.530   2.881  0.38 10.27           C 0
+ATOM     80   NZALYS A 302      18.532  59.686   3.009  0.38  9.53           N 0
+ATOM    732   CG ASN A 376      24.477  55.839   8.562  1.00 12.44           C 0
+ATOM    197   CD PRO A 315      16.592  56.218   6.239  1.00  8.38           C 0
+ATOM    189  OE1 GLN A 314      15.445  59.504   4.291  1.00 12.52           O 0
+ATOM    196   CG PRO A 315      17.649  55.232   6.614  1.00  9.58           C 0
+ATOM    195   CB PRO A 315      17.341  54.777   7.992  1.00  8.80           C 0
+ATOM    186   CB GLN A 314      13.992  58.712   6.587  1.00  8.77           C 0
+ATOM   1008  CD1 ILE A 411      17.683  54.941  14.383  1.00 16.53           C 0
+ATOM    567   CBAARG A 357      21.203  54.271  13.395  0.54 10.19           C 0
+ATOM    751  CD1 ILE A 378      18.069  53.057  11.379  1.00  9.99           C 0
+ATOM    730    O ASN A 376      21.446  52.820   9.262  1.00 10.75           O 0
+ATOM    731   CB ASN A 376      23.609  54.620   8.341  1.00 11.13           C 0
+ATOM    728   CA ASN A 376      23.662  53.663   9.542  1.00  9.83           C 0
+TER
+END

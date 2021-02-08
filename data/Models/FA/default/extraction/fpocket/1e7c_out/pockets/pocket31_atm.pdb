@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    32:
+HEADER 0  - Pocket Score                      : -3.6142
+HEADER 1  - Drug Score                        : 0.0065
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.4946
+HEADER 4  - Mean alpha-sphere SA              : 0.4782
+HEADER 5  - Mean B-factor                     : 0.2784
+HEADER 6  - Hydrophobicity Score              : 13.7143
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.7143
+HEADER 9  - Real volume (approximation)       : 261.1651
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 17.3333
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.7000
+ATOM   3296  CG1 VAL A 424      11.131   5.507  34.283  1.00 45.15           C 0
+ATOM   4049  CG1 ILE A 523      13.118   8.638  37.977  1.00 56.18           C 0
+ATOM   4050  CG2 ILE A 523      12.584   6.335  38.745  1.00 54.96           C 0
+ATOM   3305  OE1 GLU A 425      17.362   4.832  33.099  1.00 81.15           O 0
+ATOM   4051  CD1 ILE A 523      14.528   8.835  38.498  1.00 59.06           C 0
+ATOM   3272    O PRO A 421      14.154   1.534  33.104  1.00 47.67           O 0
+ATOM   3273   CB PRO A 421      13.840  -0.588  35.432  1.00 45.43           C 0
+ATOM   3270   CA PRO A 421      12.828   0.130  34.542  1.00 46.12           C 0
+ATOM   4082  OG1 THR A 527       9.530   3.514  38.278  1.00 45.41           O 0
+ATOM   3265    O THR A 420      10.433   0.657  33.346  1.00 47.26           O 0
+ATOM   3297  CG2 VAL A 424       9.677   3.485  34.183  1.00 46.62           C 0
+ATOM   3268  CG2 THR A 420       8.269  -0.288  35.430  1.00 43.12           C 0
+ATOM   3295   CB VAL A 424      10.947   4.143  33.640  1.00 48.64           C 0
+ATOM   3275   CD PRO A 421      12.041  -2.117  35.061  1.00 45.69           C 0
+ATOM   4083  CG2 THR A 527       8.498   1.353  38.498  1.00 44.44           C 0
+ATOM   3269    N PRO A 421      11.735  -0.838  34.399  1.00 45.48           N 0
+ATOM   3266   CB THR A 420       8.779  -1.651  34.984  1.00 45.18           C 0
+ATOM   3298    N GLU A 425      13.242   4.351  31.548  1.00 53.32           N 0
+ATOM   3299   CA GLU A 425      14.466   4.973  31.060  1.00 55.71           C 0
+ATOM   3326   CD ARG A 428      13.006   8.949  33.484  1.00 50.10           C 0
+TER
+END

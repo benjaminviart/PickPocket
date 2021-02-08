@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    98:
+HEADER 0  - Pocket Score                      : -1.4444
+HEADER 1  - Drug Score                        : 0.0078
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9320
+HEADER 4  - Mean alpha-sphere SA              : 0.5240
+HEADER 5  - Mean B-factor                     : 0.2967
+HEADER 6  - Hydrophobicity Score              : 15.3000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 298.6312
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  29296  CD1 ILE X  88      52.321  28.737  83.395  1.00 22.55           C 0
+ATOM  29269   CG ASP X  85      54.157  24.822  80.486  1.00 20.36           C 0
+ATOM  29488  CD1 LEU X 113      49.274  21.444  82.314  1.00 30.45           C 0
+ATOM  29270  OD1 ASP X  85      53.801  26.009  80.224  1.00 20.34           O 0
+ATOM  29271  OD2 ASP X  85      53.699  23.809  79.895  1.00 19.50           O 0
+ATOM  29295  CG2 ILE X  88      52.103  27.471  86.011  1.00 21.34           C 0
+ATOM  29489  CD2 LEU X 113      50.376  20.548  84.223  1.00 30.52           C 0
+ATOM  29302  CG1 ILE X  89      54.158  22.795  86.518  1.00 17.11           C 0
+ATOM  29461   SG CYS X 109      50.256  24.128  87.762  1.00 28.24           S 0
+ATOM  29459    O CYS X 109      47.473  22.605  86.118  1.00 28.55           O 0
+ATOM  29448    O ARG X 108      45.963  26.368  87.488  1.00 29.53           O 0
+ATOM  29457   CA CYS X 109      47.492  24.215  87.931  1.00 28.60           C 0
+ATOM  29268   CB ASP X  85      55.200  24.586  81.530  1.00 19.52           C 0
+ATOM  29267    O ASP X  85      55.762  25.216  84.659  1.00 21.67           O 0
+ATOM  29265   CA ASP X  85      55.491  25.811  82.352  1.00 20.40           C 0
+ATOM  29528   OH TYR X 117      53.257  21.574  80.998  1.00 27.75           O 0
+ATOM  29516  CG2 THR X 116      46.790  22.104  77.705  1.00 33.55           C 0
+ATOM  29525  CE1 TYR X 117      52.311  20.761  79.028  1.00 25.47           C 0
+ATOM  29263  NH2 ARG X  84      52.608  27.718  78.231  1.00 39.25           N 0
+ATOM  29548  CD1 LEU X 120      49.579  22.056  75.027  1.00 30.56           C 0
+TER
+END

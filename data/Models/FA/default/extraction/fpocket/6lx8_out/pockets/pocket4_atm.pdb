@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 2.2164
+HEADER 1  - Drug Score                        : 0.0118
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.0019
+HEADER 4  - Mean alpha-sphere SA              : 0.5442
+HEADER 5  - Mean B-factor                     : 0.5053
+HEADER 6  - Hydrophobicity Score              : 23.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.6250
+HEADER 9  - Real volume (approximation)       : 417.7562
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 15.0000
+HEADER 12 - Number of apolar alpha sphere     :    16
+HEADER 13 - Proportion of apolar alpha sphere : 0.5161
+ATOM    237  CG1 VAL A 227      -9.140  11.499 -10.164  1.00 22.32           C 0
+ATOM    264    O GLY A 231      -9.462  10.473 -17.293  1.00 44.94           O 0
+ATOM    265    N ASN A 235      -5.903  17.963 -15.278  1.00 31.09           N 0
+ATOM    263    C GLY A 231      -8.717   9.971 -16.454  1.00 35.43           C 0
+ATOM    260   OG SER A 230      -9.973   7.862 -13.514  1.00 32.61           O 0
+ATOM    235    O VAL A 227      -7.969   9.304 -12.276  1.00 20.49           O 0
+ATOM    302   CD PRO A 238      -1.695  11.195 -15.614  1.00 21.93           C 0
+ATOM    290   CA PRO A 237      -2.212  13.974 -16.526  1.00 26.16           C 0
+ATOM    293   CB PRO A 237      -2.854  13.750 -17.905  1.00 30.02           C 0
+ATOM    262   CA GLY A 231      -7.786   8.836 -16.821  1.00 30.60           C 0
+ATOM    242    O ILE A 228      -5.184   8.395 -13.919  1.00 22.28           O 0
+ATOM    240   CA ILE A 228      -5.294   9.474 -11.767  1.00 16.99           C 0
+ATOM    289    N PRO A 237      -2.184  15.431 -16.400  1.00 26.06           N 0
+ATOM    295   CD PRO A 237      -2.539  16.111 -17.657  1.00 28.78           C 0
+ATOM    244  CG1 ILE A 228      -3.953  11.050 -10.355  1.00 13.90           C 0
+ATOM    277    CAASN A 236      -1.748  16.009 -15.283  0.50 27.76           C 0
+ATOM    273    NAASN A 236      -3.188  17.940 -15.091  0.50 30.82           N 0
+ATOM    279    OAASN A 236      -1.324  15.346 -14.328  0.50 29.17           O 0
+ATOM    245  CG2 ILE A 228      -2.805   9.805 -12.225  1.00 13.50           C 0
+ATOM    239    N ILE A 228      -6.322   9.292 -10.736  1.00 14.42           N 0
+TER
+END

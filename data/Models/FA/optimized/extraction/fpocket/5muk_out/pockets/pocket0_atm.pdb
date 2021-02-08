@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     1:
+HEADER 0  - Pocket Score                      : 37.0871
+HEADER 1  - Drug Score                        : 0.6948
+HEADER 2  - Number of V. Vertices             :    38
+HEADER 3  - Mean alpha-sphere radius          : 3.8870
+HEADER 4  - Mean alpha-sphere SA              : 0.4058
+HEADER 5  - Mean B-factor                     : 0.0340
+HEADER 6  - Hydrophobicity Score              : 35.8667
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.8000
+HEADER 9  - Real volume (approximation)       : 324.4521
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 33.0000
+HEADER 12 - Number of apolar alpha sphere     :    34
+HEADER 13 - Proportion of apolar alpha sphere : 0.8947
+ATOM    104  CG2AVAL A  46      46.321  24.291  -6.590  0.50 15.29           C 0
+ATOM    484   CE MET A  96      47.614  20.664  -5.835  1.00 19.52           C 0
+ATOM   2887   CG GLU A 389      48.889  24.490  -3.838  1.00 17.05           C 0
+ATOM   2871    N THR A 388      44.788  24.406  -0.619  1.00 13.81           N 0
+ATOM   2876   CBATHR A 388      46.309  22.659   0.042  0.50 15.14           C 0
+ATOM   2882    N GLU A 389      47.263  25.365  -1.567  1.00 13.69           N 0
+ATOM     87    O LEU A  45      42.452  23.990  -4.280  1.00 14.89           O 0
+ATOM    100   CBAVAL A  46      44.832  24.037  -6.786  0.50 14.90           C 0
+ATOM   2878  OG1ATHR A 388      45.195  21.896   0.547  0.50 18.18           O 0
+ATOM    898  CE2 TYR A 147      48.475  15.334  -0.838  1.00 16.47           C 0
+ATOM   2453  NH1AARG A 335      41.431  18.223   2.050  0.50 20.37           N 0
+ATOM   1342    O LEU A 200      48.243  15.620   2.704  1.00 12.77           O 0
+ATOM   2455  NH2AARG A 335      41.981  20.354   1.384  0.50 16.87           N 0
+ATOM    881    O PHE A 146      47.833  16.791  -4.584  1.00 13.70           O 0
+ATOM     78    N SER A  44      40.391  19.984  -4.866  1.00 30.11           N 0
+ATOM   2856    O HIS A 386      41.947  23.105  -0.500  1.00 14.17           O 0
+ATOM    472    O ILE A  95      44.989  19.557  -7.946  1.00 15.67           O 0
+ATOM    467   OGASER A  94      44.118  15.620  -6.913  0.50 13.72           O 0
+ATOM   1353  CD1 TYR A 201      49.141  19.837   3.680  1.00 15.77           C 0
+ATOM   2880  CG2ATHR A 388      47.490  22.322   0.844  0.50 16.10           C 0
+ATOM    896  CD2 TYR A 147      49.418  16.155  -1.413  1.00 14.69           C 0
+ATOM    907   CD PRO A 148      51.209  20.217  -3.905  1.00 16.25           C 0
+ATOM   2890  OE2 GLU A 389      49.851  23.119  -2.125  1.00 20.11           O 0
+TER
+END

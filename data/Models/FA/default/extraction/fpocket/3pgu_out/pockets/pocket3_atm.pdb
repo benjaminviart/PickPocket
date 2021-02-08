@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 9.7042
+HEADER 1  - Drug Score                        : 0.0158
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.3266
+HEADER 4  - Mean alpha-sphere SA              : 0.4154
+HEADER 5  - Mean B-factor                     : 0.0044
+HEADER 6  - Hydrophobicity Score              : 22.3636
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 3.9091
+HEADER 9  - Real volume (approximation)       : 84.5821
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3333
+ATOM    753    O ALA A  96     -15.109  16.721 -37.713  1.00  9.53           O 0
+ATOM    214  CG1 VAL A  30     -20.930  18.034 -39.795  1.00 10.94           C 0
+ATOM    650    O PHE A  84     -15.517  19.433 -39.525  1.00 13.74           O 0
+ATOM    750    N ALA A  96     -15.433  16.758 -40.364  1.00  8.62           N 0
+ATOM    752    C ALA A  96     -15.112  15.625 -38.267  1.00  9.02           C 0
+ATOM    195    O ALA A  27     -19.974  20.682 -35.523  1.00 10.85           O 0
+ATOM    644  CD2 HIS A  83     -18.156  17.403 -33.600  1.00  6.86           C 0
+ATOM    213   CB VAL A  30     -21.290  18.977 -38.644  1.00  8.07           C 0
+ATOM    641   CB HIS A  83     -16.492  19.239 -34.328  1.00  6.87           C 0
+ATOM    216    N SER A  31     -21.820  16.539 -36.542  1.00  7.26           N 0
+ATOM    759   CB SER A  97     -16.828  14.837 -35.711  1.00  9.69           C 0
+ATOM    647    N PHE A  84     -14.558  19.429 -36.912  1.00  7.43           N 0
+ATOM    670  CG2AVAL A  85     -18.261  21.347 -39.013  0.64 18.59           C 0
+ATOM   1015  ND2 ASN A 129     -18.803  12.812 -40.037  1.00  9.23           N 0
+ATOM    748    C GLY A  95     -16.137  16.723 -41.488  1.00 11.61           C 0
+ATOM   1028   CB SER A 131     -20.190  14.626 -42.738  1.00 12.05           C 0
+ATOM    749    O GLY A  95     -16.343  15.687 -42.125  1.00 11.08           O 0
+ATOM    760   OG SER A  97     -17.724  13.809 -36.125  1.00 10.84           O 0
+ATOM    217   CA SER A  31     -21.707  15.112 -36.230  1.00  8.00           C 0
+ATOM    212    O VAL A  30     -22.939  16.158 -38.448  1.00  9.69           O 0
+TER
+END

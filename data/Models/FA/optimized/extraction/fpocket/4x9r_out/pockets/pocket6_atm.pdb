@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 20.5847
+HEADER 1  - Drug Score                        : 0.0811
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8810
+HEADER 4  - Mean alpha-sphere SA              : 0.5023
+HEADER 5  - Mean B-factor                     : 0.1524
+HEADER 6  - Hydrophobicity Score              : 30.7778
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.8889
+HEADER 9  - Real volume (approximation)       : 351.2570
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 23.9200
+HEADER 12 - Number of apolar alpha sphere     :    25
+HEADER 13 - Proportion of apolar alpha sphere : 0.9259
+ATOM    569  CG1 ILE A 408      -8.659  -0.140  66.968  1.00 27.26           C 0
+ATOM    570  CG2 ILE A 408     -10.521   0.938  68.423  1.00 23.38           C 0
+ATOM    592  CE2 PHE A 409      -9.562   1.948  71.876  1.00 19.29           C 0
+ATOM    568   CB ILE A 408      -9.172   1.119  67.680  1.00 22.89           C 0
+ATOM    590  CD2 PHE A 409      -8.724   2.846  71.192  1.00 18.57           C 0
+ATOM   2573  ND2 ASN A 527      -4.320   3.175  71.083  1.00 18.26           N 0
+ATOM   2570   CB ASN A 527      -2.748   2.052  72.567  1.00 18.61           C 0
+ATOM   2877  CD1ALEU A 546      -0.222  -1.648  69.362  0.59 25.70           C 0
+ATOM   2569    O ASN A 527      -0.144   1.629  71.297  1.00 19.39           O 0
+ATOM   2848   SG CYS A 544      -0.651   1.352  65.881  1.00 18.48           S 0
+ATOM    551   CA PRO A 407      -6.705   3.221  64.109  1.00 16.15           C 0
+ATOM    564    N ILE A 408      -8.061   2.486  65.947  1.00 17.22           N 0
+ATOM   2908   CG MET A 547      -2.261  -0.974  62.954  1.00 21.21           C 0
+ATOM    534    O ILE A 406      -7.324   1.037  62.673  1.00 17.13           O 0
+ATOM   2910   CE MET A 547      -2.043  -3.656  63.412  1.00 30.53           C 0
+ATOM   2873   CBALEU A 546       0.766  -1.868  67.030  0.59 20.77           C 0
+ATOM   2847   CB CYS A 544      -0.676   2.944  64.949  1.00 16.51           C 0
+ATOM    554   CB PRO A 407      -6.108   4.593  64.415  1.00 16.72           C 0
+ATOM   2592   OG SER A 529      -2.060   4.799  68.215  1.00 20.07           O 0
+ATOM    586    O PHE A 409      -6.757   6.348  67.856  1.00 15.87           O 0
+ATOM    583    N PHE A 409      -8.577   4.229  68.010  1.00 15.76           N 0
+TER
+END

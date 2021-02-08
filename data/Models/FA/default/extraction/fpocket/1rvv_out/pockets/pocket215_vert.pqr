@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   216:
+HEADER 0  - Pocket Score                      : -0.6719
+HEADER 1  - Drug Score                        : 0.0646
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.1391
+HEADER 4  - Mean alpha-sphere SA              : 0.3895
+HEADER 5  - Mean B-factor                     : 0.0015
+HEADER 6  - Hydrophobicity Score              : 49.4286
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 66.8793
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 19.0000
+HEADER 12 - Number of apolar alpha sphere     :    20
+HEADER 13 - Proportion of apolar alpha sphere : 0.6452
+ATOM  85101  POL STP   216      36.511  52.202  18.229    0.00     3.21
+ATOM  2517b  POL STP   216      36.657  52.303  18.328    0.00     3.24
+ATOM  2517a  POL STP   216      36.759  52.202  18.310    0.00     3.23
+ATOM  85101 APOL STP   216      36.374  51.909  17.849    0.00     3.00
+ATOM  85101 APOL STP   216      36.371  52.143  18.117    0.00     3.16
+ATOM  85101 APOL STP   216      36.326  52.134  18.215    0.00     3.13
+ATOM  1ca2a APOL STP   216      36.217  52.133  18.274    0.00     3.06
+ATOM  2517b APOL STP   216      36.672  52.319  18.348    0.00     3.24
+ATOM  252db APOL STP   216      37.423  51.730  17.981    0.00     3.06
+ATOM  2517a APOL STP   216      37.027  52.158  18.427    0.00     3.24
+ATOM  2517b APOL STP   216      36.828  52.416  18.508    0.00     3.25
+ATOM  252da APOL STP   216      37.060  52.140  18.420    0.00     3.23
+ATOM  2517b APOL STP   216      36.993  53.147  18.672    0.00     3.07
+ATOM  2517b APOL STP   216      37.001  53.139  18.681    0.00     3.08
+ATOM  2517b APOL STP   216      37.001  53.130  18.682    0.00     3.08
+ATOM  252dc APOL STP   216      37.775  51.319  17.623    0.00     3.00
+ATOM  252af  POL STP   216      38.591  50.186  17.318    0.00     3.05
+ATOM  252b1  POL STP   216      38.916  49.494  16.701    0.00     3.12
+ATOM  252da  POL STP   216      38.624  50.209  17.364    0.00     3.06
+ATOM  1cb1a  POL STP   216      39.278  49.543  16.944    0.00     3.21
+ATOM  1cb1d  POL STP   216      39.286  49.554  16.962    0.00     3.22
+ATOM  1cb1d APOL STP   216      39.258  49.539  16.941    0.00     3.22
+ATOM  311d6 APOL STP   216      39.559  49.414  16.923    0.00     3.06
+ATOM  252d4  POL STP   216      39.407  49.732  17.162    0.00     3.21
+ATOM  252d4 APOL STP   216      39.580  49.650  17.240    0.00     3.18
+ATOM  252b1  POL STP   216      39.239  49.536  16.934    0.00     3.21
+ATOM  252b1 APOL STP   216      39.238  49.520  16.934    0.00     3.20
+ATOM  252da  POL STP   216      39.042  49.910  17.255    0.00     3.14
+ATOM  311da APOL STP   216      40.120  49.579  17.429    0.00     3.07
+ATOM  35030 APOL STP   216      40.256  49.556  17.495    0.00     3.04
+ATOM  35030 APOL STP   216      40.320  49.538  17.557    0.00     3.03
+TER
+END

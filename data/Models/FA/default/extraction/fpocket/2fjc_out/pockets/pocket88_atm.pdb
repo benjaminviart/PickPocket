@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    89:
+HEADER 0  - Pocket Score                      : 1.0730
+HEADER 1  - Drug Score                        : 0.0056
+HEADER 2  - Number of V. Vertices             :    37
+HEADER 3  - Mean alpha-sphere radius          : 4.2770
+HEADER 4  - Mean alpha-sphere SA              : 0.6454
+HEADER 5  - Mean B-factor                     : 0.2200
+HEADER 6  - Hydrophobicity Score              : -17.7778
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.1111
+HEADER 9  - Real volume (approximation)       : 495.3207
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2162
+ATOM   6646  OE2 GLU F 113      44.558 -14.614  43.150  1.00 47.85           O 0
+ATOM   6743   CZ ARG F 126      45.502 -13.773  47.380  1.00 44.48           C 0
+ATOM   6744  NH1 ARG F 126      45.006 -13.701  46.149  1.00 42.86           N 0
+ATOM   6661  OE1 GLU F 115      42.578 -16.615  45.998  1.00 60.56           O 0
+ATOM   6628   CB ALA F 111      51.720 -17.168  40.403  1.00 37.35           C 0
+ATOM   6645  OE1 GLU F 113      45.943 -13.032  43.759  1.00 47.29           O 0
+ATOM   6632    O GLU F 112      47.729 -16.003  39.581  1.00 43.96           O 0
+ATOM   6742   NE ARG F 126      46.640 -13.150  47.696  1.00 43.24           N 0
+ATOM   6741   CD ARG F 126      47.439 -12.344  46.772  1.00 37.96           C 0
+ATOM   6771  NH1 ARG F 129      51.361 -13.291  50.002  1.00 59.46           N 0
+ATOM   6150   NZ LYS F  52      50.968 -12.653  41.855  1.00 37.28           N 0
+ATOM   6739   CB ARG F 126      49.337 -10.672  46.706  1.00 35.66           C 0
+ATOM   6779  OD1 ASP F 130      54.201 -11.745  43.101  1.00 38.42           O 0
+ATOM   6768   CD ARG F 129      54.079 -13.399  49.095  1.00 53.05           C 0
+ATOM   6738    O ARG F 126      52.338  -9.612  45.985  1.00 33.86           O 0
+ATOM   6740   CG ARG F 126      48.655 -11.782  47.480  1.00 36.82           C 0
+ATOM   6736   CA ARG F 126      50.526 -10.077  47.456  1.00 34.46           C 0
+ATOM   6627    O ALA F 111      50.791 -14.257  39.673  1.00 38.81           O 0
+ATOM   6766   CB ARG F 129      54.515 -11.203  47.963  1.00 40.87           C 0
+ATOM   6767   CG ARG F 129      55.142 -12.496  48.455  1.00 47.67           C 0
+ATOM   6149   CE LYS F  52      49.740 -11.880  41.506  1.00 35.63           C 0
+ATOM   6188   OH TYR F  56      47.599 -10.933  43.691  1.00 36.85           O 0
+ATOM   6639   CA GLU F 113      45.968 -13.992  40.213  1.00 45.60           C 0
+TER
+END

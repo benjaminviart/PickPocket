@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   327:
+HEADER 0  - Pocket Score                      : -1.9539
+HEADER 1  - Drug Score                        : 0.0037
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.4584
+HEADER 4  - Mean alpha-sphere SA              : 0.4256
+HEADER 5  - Mean B-factor                     : 0.1436
+HEADER 6  - Hydrophobicity Score              : -21.6250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 2.8750
+HEADER 9  - Real volume (approximation)       : 292.0486
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0303
+ATOM  29ff2  POL STP   327      98.957  35.867 133.311    0.00     4.13
+ATOM  3b841  POL STP   327      98.534  35.610 133.069    0.00     3.95
+ATOM  3b843  POL STP   327      98.621  35.509 133.240    0.00     3.97
+ATOM  2a5a0  POL STP   327      95.756  40.096 130.708    0.00     4.35
+ATOM  3b83f  POL STP   327      95.793  40.269 130.872    0.00     4.50
+ATOM  2a5a2  POL STP   327      95.721  39.769 130.533    0.00     4.15
+ATOM  3b83f  POL STP   327      95.786  40.036 130.814    0.00     4.39
+ATOM  1fc6f  POL STP   327      95.129  37.098 129.989    0.00     3.44
+ATOM  3b83b  POL STP   327      95.277  37.725 130.494    0.00     3.51
+ATOM  3435d  POL STP   327      95.129  36.976 129.971    0.00     3.43
+ATOM  2a5a2  POL STP   327      95.409  38.432 129.663    0.00     3.45
+ATOM  2a5a2  POL STP   327      95.803  38.213 128.917    0.00     3.02
+ATOM  93526  POL STP   327      98.587  34.058 127.863    0.00     3.16
+ATOM  93526  POL STP   327      98.469  34.070 127.883    0.00     3.20
+ATOM  93526  POL STP   327      98.516  33.997 127.844    0.00     3.19
+ATOM  93526  POL STP   327      98.428  34.051 127.879    0.00     3.22
+ATOM  93667 APOL STP   327      98.793  33.838 127.633    0.00     3.02
+ATOM  1fc67  POL STP   327      98.307  33.504 127.953    0.00     3.12
+ATOM  2a57f  POL STP   327      97.735  34.550 127.535    0.00     3.08
+ATOM  1fc67  POL STP   327      98.004  33.917 128.065    0.00     3.30
+ATOM  2a56a  POL STP   327      98.374  33.347 127.892    0.00     3.05
+ATOM  2a582  POL STP   327      97.303  34.174 127.941    0.00     3.31
+ATOM  2a582  POL STP   327      97.138  34.065 127.819    0.00     3.19
+ATOM  1fc67  POL STP   327      97.015  33.985 129.802    0.00     3.32
+ATOM  3b840  POL STP   327      96.985  34.142 130.385    0.00     3.33
+ATOM  1fc67  POL STP   327      96.436  34.331 128.831    0.00     3.35
+ATOM  3435d  POL STP   327      95.826  35.043 129.407    0.00     3.27
+ATOM  2a584  POL STP   327      96.506  34.378 128.371    0.00     3.37
+ATOM  2a584  POL STP   327      96.346  34.132 128.057    0.00     3.15
+ATOM  3435d  POL STP   327      95.450  35.665 129.204    0.00     3.30
+ATOM  3b840  POL STP   327      96.362  34.744 130.402    0.00     3.23
+ATOM  3b841  POL STP   327      96.150  35.978 131.351    0.00     3.23
+ATOM  3b841  POL STP   327      97.415  35.993 132.456    0.00     3.42
+TER
+END

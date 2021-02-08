@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 28.2965
+HEADER 1  - Drug Score                        : 0.1661
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 4.6807
+HEADER 4  - Mean alpha-sphere SA              : 0.6968
+HEADER 5  - Mean B-factor                     : 0.1700
+HEADER 6  - Hydrophobicity Score              : -17.3333
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.1667
+HEADER 9  - Real volume (approximation)       : 582.4359
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 24.0000
+HEADER 12 - Number of apolar alpha sphere     :    25
+HEADER 13 - Proportion of apolar alpha sphere : 0.7143
+ATOM    560    O THR B  71      20.091  18.633  -0.423  1.00 44.64           O 0
+ATOM    569   CG GLU B  72      24.434  16.888  -0.492  1.00 30.00           C 0
+ATOM    566    C GLU B  72      21.649  15.977  -1.219  1.00 54.74           C 0
+ATOM    568   CB GLU B  72      23.340  17.826  -0.939  1.00 30.00           C 0
+ATOM    201   CG ARG B  30      26.566  20.758   7.951  1.00 27.03           C 0
+ATOM    202   CD ARG B  30      25.569  19.563   8.223  1.00 36.74           C 0
+ATOM    200   CB ARG B  30      26.014  22.036   7.254  1.00 16.33           C 0
+ATOM    571  OE1 GLU B  72      25.904  18.578   0.132  1.00 30.00           O 0
+ATOM    199    O ARG B  30      26.891  23.389   4.375  1.00 13.94           O 0
+ATOM    239   CB PHE B  34      25.885  23.436   1.314  1.00 12.86           C 0
+ATOM    241  CD1 PHE B  34      24.549  21.931  -0.234  1.00 16.73           C 0
+ATOM    240   CG PHE B  34      24.720  23.150   0.386  1.00 13.42           C 0
+ATOM    243  CE1 PHE B  34      23.390  21.666  -0.973  1.00 17.38           C 0
+ATOM    245   CZ PHE B  34      22.512  22.691  -1.117  1.00 14.75           C 0
+ATOM    242  CD2 PHE B  34      23.816  24.169   0.201  1.00 15.09           C 0
+ATOM    212   CG GLU B  31      23.488  26.597   5.889  1.00 13.82           C 0
+ATOM    244  CE2 PHE B  34      22.665  23.924  -0.548  1.00 14.87           C 0
+ATOM    208   CA GLU B  31      25.632  25.894   4.774  1.00 12.11           C 0
+ATOM    178    O GLY B  27      24.851  25.175   8.573  1.00 13.38           O 0
+ATOM    207    N GLU B  31      26.078  24.958   5.834  1.00 11.90           N 0
+ATOM    198    C ARG B  30      26.677  23.797   5.544  1.00 12.58           C 0
+ATOM    203   NE ARG B  30      24.711  19.919   9.368  1.00 46.36           N 0
+TER
+END

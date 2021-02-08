@@ -1,0 +1,67 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    96:
+HEADER 0  - Pocket Score                      : 1.3708
+HEADER 1  - Drug Score                        : 0.0105
+HEADER 2  - Number of V. Vertices             :    45
+HEADER 3  - Mean alpha-sphere radius          : 3.8707
+HEADER 4  - Mean alpha-sphere SA              : 0.4743
+HEADER 5  - Mean B-factor                     : 0.1682
+HEADER 6  - Hydrophobicity Score              : 22.8889
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 383.4402
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.4222
+ATOM  26389  POL STP    96      18.755   6.562 100.568    0.00     4.33
+ATOM  66026 APOL STP    96      18.419   6.740 100.792    0.00     4.25
+ATOM  26389  POL STP    96      18.820   6.539 100.512    0.00     4.35
+ATOM  38000  POL STP    96      18.596   6.998 100.282    0.00     4.09
+ATOM  66026  POL STP    96      18.371   6.806 100.778    0.00     4.22
+ATOM  66019  POL STP    96      18.649   5.377 100.573    0.00     4.33
+ATOM  28992 APOL STP    96      18.783   7.973 102.682    0.00     3.09
+ATOM  38001 APOL STP    96      17.636   7.516 101.853    0.00     3.95
+ATOM  66026 APOL STP    96      18.311   6.813 100.888    0.00     4.22
+ATOM  35333 APOL STP    96      16.839   6.290 102.262    0.00     3.88
+ATOM  38001  POL STP    96      17.367   7.218 101.865    0.00     3.99
+ATOM  37992  POL STP    96      16.830   5.894 102.191    0.00     3.91
+ATOM  38001  POL STP    96      16.712   7.686 102.403    0.00     3.91
+ATOM  37998 APOL STP    96      16.126   4.754 103.107    0.00     4.18
+ATOM  66019  POL STP    96      16.944   5.937 102.073    0.00     3.90
+ATOM  37998 APOL STP    96      15.606   3.491 103.876    0.00     4.92
+ATOM  28990  POL STP    96      14.968   4.344 104.782    0.00     4.66
+ATOM  30219  POL STP    96      14.949   4.752 104.489    0.00     4.53
+ATOM  30219 APOL STP    96      14.999   4.413 104.433    0.00     4.67
+ATOM  37998 APOL STP    96      15.466   3.744 103.888    0.00     4.84
+ATOM  30219  POL STP    96      14.328   5.965 104.368    0.00     3.83
+ATOM  38001 APOL STP    96      17.303   8.052 102.252    0.00     3.85
+ATOM  66023  POL STP    96      17.747   6.917 101.383    0.00     4.05
+ATOM  87727  POL STP    96      17.226   8.857 102.065    0.00     3.44
+ATOM  28415  POL STP    96      14.825   8.074 104.055    0.00     3.54
+ATOM  54475  POL STP    96      14.787   8.085 104.076    0.00     3.51
+ATOM  29188 APOL STP    96      14.596   8.666 103.516    0.00     3.18
+ATOM  28415  POL STP    96      15.014   7.940 103.957    0.00     3.66
+ATOM  54481  POL STP    96      14.840   8.115 104.110    0.00     3.48
+ATOM  30219 APOL STP    96      15.178   7.762 103.873    0.00     3.78
+ATOM  30219 APOL STP    96      15.162   7.932 103.732    0.00     3.70
+ATOM  54481  POL STP    96      14.947   8.230 104.284    0.00     3.33
+ATOM  18dcc APOL STP    96      14.690   8.677 103.349    0.00     3.22
+ATOM  18dcc APOL STP    96      15.116   8.082 103.577    0.00     3.61
+ATOM  30219 APOL STP    96      16.185   7.936 103.019    0.00     3.86
+ATOM  30219 APOL STP    96      16.020   8.332 102.782    0.00     3.75
+ATOM  38001 APOL STP    96      16.547   7.938 102.595    0.00     3.92
+ATOM  30219 APOL STP    96      15.470   7.546 103.862    0.00     3.87
+ATOM  38001  POL STP    96      16.035   8.412 102.677    0.00     3.74
+ATOM  87730  POL STP    96      16.040   8.435 102.669    0.00     3.73
+ATOM  87739  POL STP    96      15.960   8.463 102.658    0.00     3.70
+ATOM  18dcf  POL STP    96      15.629   8.642 102.622    0.00     3.54
+ATOM  18dcd  POL STP    96      15.626   8.663 102.531    0.00     3.50
+ATOM  18dcf  POL STP    96      15.064   9.138 102.603    0.00     3.19
+ATOM  29190  POL STP    96      12.728   7.639 105.192    0.00     3.00
+TER
+END

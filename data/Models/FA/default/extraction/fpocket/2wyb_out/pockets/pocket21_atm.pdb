@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    22:
+HEADER 0  - Pocket Score                      : 5.7556
+HEADER 1  - Drug Score                        : 0.0235
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.5266
+HEADER 4  - Mean alpha-sphere SA              : 0.4691
+HEADER 5  - Mean B-factor                     : 0.2492
+HEADER 6  - Hydrophobicity Score              : 34.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.3333
+HEADER 9  - Real volume (approximation)       : 152.5856
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0938
+ATOM    271  NH1 ARG A  40      11.682  50.769  61.680  1.00 25.08           N 0
+ATOM     61   CB TRP A  14      12.560  53.771  64.755  1.00 17.56           C 0
+ATOM     67  CE3 TRP A  14      11.685  50.867  66.052  1.00 20.03           C 0
+ATOM     64  CD2 TRP A  14      12.652  51.184  65.081  1.00 18.22           C 0
+ATOM   5527  OE1 GLN B 540       6.913  52.535  64.259  1.00 40.00           O 0
+ATOM    272  NH2 ARG A  40       9.994  49.346  62.374  1.00 25.69           N 0
+ATOM   5507   CB GLN B 538       8.457  59.849  63.255  1.00 30.37           C 0
+ATOM     74    O THR A  15      13.073  57.333  62.661  1.00 17.66           O 0
+ATOM   5510  OE1 GLN B 538       8.001  59.537  60.103  1.00 35.11           O 0
+ATOM     79   CA ALA A  16      12.283  59.752  61.462  1.00 18.96           C 0
+ATOM     83    N TYR A  17      12.774  58.602  59.396  1.00 18.17           N 0
+ATOM   5506    O GLN B 538       8.111  57.557  65.053  1.00 29.41           O 0
+ATOM   5509   CD GLN B 538       7.319  59.930  61.058  1.00 35.36           C 0
+ATOM   5528  NE2 GLN B 540       5.978  54.483  63.616  1.00 38.33           N 0
+ATOM   5511  NE2 GLN B 538       6.034  59.628  61.201  1.00 37.96           N 0
+ATOM     96   CA GLY A  18      13.820  54.635  60.267  1.00 16.74           C 0
+ATOM   5266  NE2 HIS B 510      10.903  53.851  58.543  1.00 17.14           N 0
+ATOM     95    N GLY A  18      13.540  56.013  59.846  1.00 17.39           N 0
+ATOM   5265  CE1 HIS B 510      10.880  55.097  58.104  1.00 17.05           C 0
+ATOM   5524   CB GLN B 540       8.134  53.684  66.557  1.00 29.40           C 0
+ATOM     60    O TRP A  14      11.720  56.362  66.151  1.00 18.81           O 0
+ATOM   5526   CD GLN B 540       6.601  53.705  64.503  1.00 37.65           C 0
+TER
+END

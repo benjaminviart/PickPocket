@@ -2,7 +2,6 @@
 import argparse
 import logging
 import os
-import sys
 from multiprocessing import cpu_count
 
 if os.environ.get("PICKPOCKET_DEBUG"):
@@ -13,17 +12,6 @@ else:
 def welcome():
     print("\n --- Welcome to PickPocket --- \n")
 
-def cross_validate(args):
-    from pickpocket.model import training_process
-    file_input= args.input
-    file_output= args.output
-    model=args.model
-    n_cross_validation=args.cross_validation
-    threads=args.threads
-    clfs , scaler , classnames = training_process(file_input, model, n_cross_validation, threads)
-    stream_out = open(file_output, "wb")
-    pickle.dump([scaler, clfs, classnames], stream_out)
-    stream_out.close();
 
 def train(args):
     from pickpocket.model import training_process
@@ -44,10 +32,11 @@ def train(args):
 
 def test(args):
     from pickpocket.model import test_process
-    file_input= args.input
-    file_output= args.output
-    model_file=args.model
-    test_process(file_input, file_output, model_file)
+    if args.both:
+        condition="and"
+    else:
+        condition="or"
+    test_process(args.input, args.output, args.model, args.f1_thr, args.f2_thr,condition, args.labels)
 
 def extract(args):
     from pickpocket.base import PickPocket
@@ -77,108 +66,10 @@ def extract(args):
     
 
 def optimize(args):
-    from pickpocket.base import PickPocket
-    import pickpocket.optimizer as optimizer
-    from pymoo.algorithms.nsga2 import NSGA2
-    from pymoo.optimize import minimize
-    from pymoo.util.termination.default import MultiObjectiveDefaultTermination
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import copy
-    import json
-    from pymoo.configuration import Configuration
-    Configuration.show_compile_hint = False
-    if args.known :
-        params=json.parse(args.known)
-        full_arg_list = ["m", "M", "A", "i", "D", "s", "n", "r" ]
-        for k in params:
-            if not k in full_arg_list:
-                raise ValueError("Error! file {} contains unknown key {}. \nAllowed keys: {}".format(args.known, k, full_arg_list)) 
-    else:
-        params=None
-    print("\nStarting the optimization process with {} threads".format(args.threads))
-    print(" 1 - Setting up the work space...", end="", flush=True)
-    pickpocket = PickPocket(args.pdb_dir, args.pdbs, args.ligands, info_dir="{}/info/".format(args.output), pymol_dir="{}/pymol/".format(args.output))
-    print("Done.")
-    print(" 2 - Identifying the full pockets and redundancy...", end="", flush=True)
-    pickpocket.process_structures(distance=args.distance ,rms_thr=args.rmsd_thr  ,optimization = True)
-    print("Done.")
-    print("\n\tFound {} pdbs with pockets having residues with a distance of {} from the respective ligand atoms.".format(len(pickpocket.get_ids("positive")), args.distance))
-    print("\tUsing {} non redundant pdbs for the optimization ( rmsd threshold of {} ).".format( len(pickpocket.get_ids("optimized")), args.rmsd_thr))
-    print("\n\tWork space state:")
-    print("\t Structures")
-    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.pdbs) ))
-    print("\t  {:15}:{:^10}".format("Positive", len(pickpocket.get_ids("positive"))))
-    print("\t  {:15}:{:^10}".format("Negative", len(pickpocket.get_ids("negative"))))
-    print("\t  {:15}:{:^10}".format("Optimization", len(pickpocket.get_ids("optimized"))))
-    print("\t Ligands")
-    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.ligands.keys())))
-    print("\t Additional Ligands:")
-    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.unlisted_ligands.keys())))
-    print("\n\tAn extended list is present in the files {}/infos/*.ls\n".format(args.output))
-    if args.download:
-        print("Done. You can copy {} in another location and run the optimization offline.".format(args.pdb_dir))
-        return
+    from pickpocket.optimizer import run_NSGA2
+    run_NSGA2(args)
     
     
-    problem = optimizer.FpocketOptimizer(
-        pockets=pickpocket.get_optimization_pockets(), 
-        files=pickpocket.get_files_list(pdb_class="optimized", nohet=True), 
-        params= params, 
-        max_none=args.max_none,
-        timeout=args.timeout , 
-        max_tests=args.max_tests,
-        threads = args.threads,
-        max_timeout= args.max_timeout
-        #fast = not args.full
-        )
-    print(" 3 - Starting the NSGA2 parameters optimization with the following settings:")
-    print("\t{:15}:{:^10}".format("Pop size", args.pop_size))
-    print("\t{:15}:{:^10}".format("Max gen", args.max_gen))
-    print("\t{:15}:{:^10}".format("Timeout", str(args.timeout)+" sec" ), flush=True)
-    
-    algorithm = NSGA2(pop_size=args.pop_size,
-                   sampling= optimizer.FpocketOptimizerSampling(),
-                   mutations = optimizer.FpocketOptimizerMutation(),
-                   eliminate_duplicates=optimizer.FpocketOptimizerDuplicateElimination()
-                    )
-    termination = MultiObjectiveDefaultTermination(
-        f_tol=0.05,
-        nth_gen=2,
-        n_last=3,
-        n_max_gen=args.max_gen,
-        n_max_evals=100000
-        )
-    
-    res = minimize(problem, algorithm, termination, seed=1, verbose=True , save_history=True, callback=optimizer.FpocketCallback(out_dir="{}/generations/".format(args.output)))
-    ret1 = [1-np.min([ f[0] for f in e.pop.get("F") ]) for e in res.history]
-    ret2 = [1-np.min([ f[1] for f in e.pop.get("F") ]) for e in res.history]
-    plt.plot(np.arange(len(ret1)), ret1, "--", label="F1", color="red")
-    plt.plot(np.arange(len(ret2)), ret2, "--", label="F2", color="blue")
-    plt.title("Convergence")
-    plt.xlabel("Generation")
-    plt.ylabel("F")
-    plt.legend()
-    plt.savefig("{}.pdf".format(args.output))
-    plt.close()
-    if type(res.opt) is not type(None) and len(res.opt) > 0 :
-        print("Found {} non dominant solution:".format(len(res.opt)))
-        n=1
-        print("# \ttrue_pocket_residues_fraction\tligand_atom_fraction\t{}".format("\t".join(problem._arg_list)))
-        for sol in res.opt:
-            F = sol.get("F")
-            X= problem._get_parameters(sol.get("X"))
-            X_vals = []
-            for k in problem._arg_list:
-                X_vals.append(X[k])
-            print("{}\t{:.3f}\t{:.3f}\t{}".format(n, 1-F[0], 1-F[1], "\t".join(X_vals)))
-            out={"true_pocket_residues_fraction" : round(1-float(F[0]),3) , "ligand_atom_fraction" : round(1-float(F[1]),3), "parameters" : X}
-            ofs=open("{}_{}.json".format(args.output, n), "w")
-            json.dump(out, ofs, indent=2)
-            ofs.close()
-            n+=1
-    else:
-        print("No optimal parameters found.")
 
 def compare(args):
     from pickpocket.compare import compare
@@ -212,7 +103,6 @@ def main():
     opt_parser.add_argument("-r", "--rmsd-thr",help="Threshold of the rmds: pockets with the same number of atoms and whose superimposition generate a rmsd lower than this threshold are considered redundant.", type=float, default="6")
     opt_parser.add_argument("-k", "--known",help="JSON file containing the known fpocket parameters, that won't be optimized", type=str )
     opt_parser.add_argument("--download", help="Download only the pdbs and setup the workspace, without performing the optimization. Useful in case you have to run the optimization without internet connection.", action="store_true" )
-    opt_parser.add_argument("--full", help="Disable the early stop of the fitness computation in case of stable or unstable results.", action="store_true" )
     opt_parser.add_argument("-@", "--threads", default=1, type=int, help="The number of threads to use. Default: 1")
     opt_parser.set_defaults(func=optimize)
     
@@ -251,7 +141,12 @@ def main():
     mandatory_test_parser.add_argument("-i", "--input", help="", type=str , required=True)
     mandatory_test_parser.add_argument("-m", "--model",help="", type=str , required=True)
     test_parser = main_test_parser.add_argument_group("additional arguments")
-    test_parser.add_argument("-o", "--output",help="", type=str , default="./test.txt")
+    test_parser.add_argument("-o", "--output",help="Ouput file", type=str , default="./test.txt")
+    test_parser.add_argument("-l", "--labels",help="For evaluation, labels to assign to each pocket, as output of compare. If absent, the label is based on f1 and f2.", type=str, default=None)
+    test_parser.add_argument("-t", "--f1-thr",help="For evaluation, a pocket is considered positive if the best_true_pocket_fraction is higher than this threshold", type=float, default="0.1" )
+    test_parser.add_argument("-T", "--f2-thr",help="For evaluation, a pocket is considered positive if the best_ligand_atm_fraction is higher than this threshold", type=float, default="0.1" )
+    test_parser.add_argument("-b", "--both",help="Require that both f1-thr and f2-thr are satisfied", action="store_true")
+    
     test_parser.set_defaults(func=test)
     
     ### compare subparser

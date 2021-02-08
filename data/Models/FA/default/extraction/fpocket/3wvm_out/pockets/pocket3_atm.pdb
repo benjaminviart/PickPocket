@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 4.2296
+HEADER 1  - Drug Score                        : 0.1041
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.7038
+HEADER 4  - Mean alpha-sphere SA              : 0.4719
+HEADER 5  - Mean B-factor                     : 0.3723
+HEADER 6  - Hydrophobicity Score              : 52.1111
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.7778
+HEADER 9  - Real volume (approximation)       : 381.8290
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 19.9048
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.6176
+ATOM    456    O GLY A  46      20.776  -0.014  -3.121  1.00 13.20           O 0
+ATOM    465   CBAASP A  47      21.191  -0.005  -6.863  0.52 17.32           C 0
+ATOM    457    NAASP A  47      22.257  -0.158  -4.546  0.52 16.73           N 0
+ATOM    459   CAAASP A  47      21.125  -0.590  -5.426  0.52 17.29           C 0
+ATOM    455    C GLY A  46      21.961   0.179  -3.298  1.00 11.53           C 0
+ATOM    660   CG LEU A  66      15.759  -2.780  -8.629  1.00 12.58           C 0
+ATOM    659   CB LEU A  66      16.502  -2.705  -9.941  1.00 12.09           C 0
+ATOM    463    OAASP A  47      20.535  -2.788  -6.392  0.52 12.01           O 0
+ATOM    655    N LEU A  66      18.445  -4.161  -9.444  1.00  8.59           N 0
+ATOM    661  CD1 LEU A  66      15.182  -1.402  -8.326  1.00 22.28           C 0
+ATOM    493  CD1ALEU A  49      16.938  -3.458  -4.503  0.49 16.42           C 0
+ATOM    658    O LEU A  66      18.813  -3.148 -12.037  1.00  7.76           O 0
+ATOM    471  OD2AASP A  47      22.572  -0.067  -8.773  0.52 15.85           O 0
+ATOM    647   CGALYS A  65      22.010  -3.619  -9.839  0.55  9.62           C 0
+ATOM      1    N MET A   0      13.559   3.861  -4.830  0.83 38.49           N 0
+ATOM    443   NZALYS A  44      17.139   3.150  -0.754  0.60 18.03           N 0
+ATOM     15  CG2 VAL A   1      14.102  -0.282  -3.340  1.00 26.82           C 0
+ATOM    439   CDALYS A  44      17.442   0.679  -0.755  0.60 14.14           C 0
+ATOM      6   CG MET A   0      13.672   5.221  -7.185  0.83 31.73           C 0
+ATOM      5   CB MET A   0      12.688   4.014  -7.018  0.83 24.51           C 0
+ATOM      7   SD MET A   0      13.741   5.683  -8.860  0.83 37.38           S 0
+ATOM     14  CG1 VAL A   1      13.046  -0.749  -5.546  1.00 30.88           C 0
+ATOM    846  CD1ALEU A  86      11.649   0.693  -8.292  0.90 16.47           C 0
+ATOM    435   CBALYS A  44      18.064  -1.729  -0.463  0.60 11.25           C 0
+TER
+END

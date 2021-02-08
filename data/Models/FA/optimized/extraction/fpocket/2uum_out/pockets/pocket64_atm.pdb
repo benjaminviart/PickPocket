@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    65:
+HEADER 0  - Pocket Score                      : 4.0323
+HEADER 1  - Drug Score                        : 0.0070
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8816
+HEADER 4  - Mean alpha-sphere SA              : 0.5104
+HEADER 5  - Mean B-factor                     : 0.2702
+HEADER 6  - Hydrophobicity Score              : -1.1818
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 3.4545
+HEADER 9  - Real volume (approximation)       : 439.2026
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.5172
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 0.9062
+ATOM  24032  CG2 THR T  50       2.311  33.060 101.878  1.00 22.30           C 0
+ATOM  24082  NH2 ARG T  57       5.635  28.521 106.218  1.00 23.92           N 0
+ATOM  24060  OD1 ASN T  54       3.545  28.262 104.272  1.00 19.24           O 0
+ATOM  24053   OG SER T  53       6.239  30.571 102.366  1.00 19.69           O 0
+ATOM  28335  OE1 GLU W 123       5.618  36.276 106.787  1.00 34.86           O 0
+ATOM  21161   CB SER Q 162       6.935  37.513 101.928  1.00 24.13           C 0
+ATOM  24023    O SER T  49       6.062  31.676  99.889  1.00 20.34           O 0
+ATOM  21162   OG SER Q 162       6.010  37.539 100.881  1.00 24.35           O 0
+ATOM  24022    C SER T  49       5.277  32.389  99.205  1.00 20.91           C 0
+ATOM  28313    O THR W 121       9.656  33.126 104.207  1.00 23.08           O 0
+ATOM  21163  OXT SER Q 162       8.983  35.737 100.865  1.00 26.76           O 0
+ATOM  24081  NH1 ARG T  57       7.570  28.703 107.477  1.00 22.14           N 0
+ATOM  27934   CG PRO W  72       5.415  28.995 110.439  1.00 29.30           C 0
+ATOM  28320    O PHE W 122      10.150  33.075 108.798  1.00 23.83           O 0
+ATOM  28319    C PHE W 122      10.518  33.513 107.719  1.00 23.98           C 0
+ATOM  27941   CG ASN W  73       7.417  33.688 111.935  1.00 24.22           C 0
+ATOM  27940   CB ASN W  73       8.610  32.819 111.612  1.00 24.90           C 0
+ATOM  28334   CD GLU W 123       6.242  36.676 107.820  1.00 30.91           C 0
+ATOM  28332   CB GLU W 123       8.584  35.807 108.563  1.00 25.74           C 0
+ATOM  27942  OD1 ASN W  73       6.344  33.209 112.308  1.00 23.74           O 0
+ATOM  28336  OE2 GLU W 123       5.708  36.970 108.964  1.00 31.77           O 0
+ATOM  28318   CA PHE W 122      10.970  32.597 106.637  1.00 23.43           C 0
+ATOM  27935   CD PRO W  72       4.470  29.465 111.467  1.00 28.60           C 0
+TER
+END

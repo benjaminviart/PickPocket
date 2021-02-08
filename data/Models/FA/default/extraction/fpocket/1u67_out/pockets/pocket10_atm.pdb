@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 12.4402
+HEADER 1  - Drug Score                        : 0.0441
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.2550
+HEADER 4  - Mean alpha-sphere SA              : 0.5505
+HEADER 5  - Mean B-factor                     : 0.2111
+HEADER 6  - Hydrophobicity Score              : 35.1429
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 5.1429
+HEADER 9  - Real volume (approximation)       : 642.3176
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 15.0000
+HEADER 12 - Number of apolar alpha sphere     :    16
+HEADER 13 - Proportion of apolar alpha sphere : 0.5000
+ATOM   1642   CB GLN A 243     244.933  76.560 -21.438  1.00 39.32           C 0
+ATOM   1605   CB GLU A 239     240.858  80.383 -18.906  1.00 20.00           C 0
+ATOM   1606    N ARG A 240     242.854  80.901 -20.987  1.00 20.00           N 0
+ATOM   1844    O PRO A 270     241.972  74.450 -25.595  1.00 39.80           O 0
+ATOM   1592  ND2 ASN A 237     240.369  82.524 -21.145  1.00 67.23           N 0
+ATOM   1607   CA ARG A 240     243.614  80.623 -22.209  1.00 20.00           C 0
+ATOM   1603    C GLU A 239     243.200  80.413 -19.800  1.00 23.62           C 0
+ATOM   1857   CB LEU A 272     239.189  77.475 -28.174  1.00 52.29           C 0
+ATOM   1604    O GLU A 239     244.195  79.699 -19.627  1.00 23.62           O 0
+ATOM   1860  CD2 LEU A 272     236.928  78.504 -28.256  1.00 52.29           C 0
+ATOM   1853    N LEU A 272     241.502  76.920 -27.656  1.00 60.90           N 0
+ATOM   1610   CB ARG A 240     243.110  81.522 -23.334  1.00 35.76           C 0
+ATOM   1591  OD1 ASN A 237     240.930  83.352 -23.152  1.00 67.23           O 0
+ATOM   1615  NH1 ARG A 240     242.173  80.598 -27.526  1.00 35.76           N 0
+ATOM   1611   CG ARG A 240     243.753  81.276 -24.664  1.00 35.76           C 0
+ATOM   1849   CA VAL A 271     243.586  76.408 -26.526  1.00 39.51           C 0
+ATOM   1846   CG PRO A 270     243.875  73.009 -22.756  1.00 50.08           C 0
+ATOM   1845   CB PRO A 270     242.994  72.437 -23.825  1.00 50.08           C 0
+ATOM   1852   CB VAL A 271     244.778  77.311 -26.871  1.00 52.44           C 0
+ATOM   1609    O ARG A 240     245.921  80.088 -22.652  1.00 20.00           O 0
+TER
+END

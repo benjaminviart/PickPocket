@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 0.4617
+HEADER 1  - Drug Score                        : 0.0116
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.7719
+HEADER 4  - Mean alpha-sphere SA              : 0.4933
+HEADER 5  - Mean B-factor                     : 0.2648
+HEADER 6  - Hydrophobicity Score              : 23.3636
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5455
+HEADER 9  - Real volume (approximation)       : 285.0923
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.9000
+ATOM   2485  OE1 GLU C  72      10.690   4.313   8.381  1.00 27.16           O 0
+ATOM   3369  OE2 GLU D 107      13.646   5.531   2.253  1.00 21.41           O 0
+ATOM   2486  OE2 GLU C  72       8.896   3.106   8.014  1.00 31.32           O 0
+ATOM   3353   NZ LYS D 105       8.247   6.502   2.534  1.00 31.72           N 0
+ATOM   3280   NE ARG D  96      11.520   7.384   6.680  1.00 17.42           N 0
+ATOM   2484   CD GLU C  72       9.992   3.299   8.582  1.00 29.67           C 0
+ATOM   3265   OH TYR D  94      14.500   6.214   4.651  1.00 19.18           O 0
+ATOM   2456    O ALA C  69      12.686   4.187  11.912  1.00 19.43           O 0
+ATOM   3263  CE2 TYR D  94      16.133   6.510   6.361  1.00 16.02           C 0
+ATOM   3152  CD1 ILE D  79      14.500   8.063  12.299  1.00 15.94           C 0
+ATOM   3168  CG2 VAL D  81      18.037   6.454  10.921  1.00 13.97           C 0
+ATOM   2498   CD PRO C  74      16.882   2.185   8.598  1.00 29.45           C 0
+ATOM   3151  CG2 ILE D  79      14.582   9.574   9.598  1.00 14.96           C 0
+ATOM   2457   CB ALA C  69      11.190   7.015  11.385  1.00 19.10           C 0
+ATOM   2482   CB GLU C  72      11.958   1.907   9.427  1.00 26.74           C 0
+ATOM   2496   CB PRO C  74      17.507   3.035   6.511  1.00 28.75           C 0
+ATOM   2493   CA PRO C  74      17.208   1.554   6.286  1.00 30.05           C 0
+ATOM   3390   OH TYR D 109      17.535   2.655   2.882  1.00 28.67           O 0
+ATOM   2492    N PRO C  74      16.727   1.114   7.598  1.00 30.14           N 0
+ATOM   2490    O ALA C  73      16.210  -0.968   6.920  1.00 30.88           O 0
+ATOM   2489    C ALA C  73      16.255  -0.123   7.814  1.00 30.60           C 0
+ATOM   2487    N ALA C  73      14.361  -0.149   9.372  1.00 28.17           N 0
+TER
+END

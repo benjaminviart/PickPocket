@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 7.5212
+HEADER 1  - Drug Score                        : 0.0368
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 4.0200
+HEADER 4  - Mean alpha-sphere SA              : 0.4993
+HEADER 5  - Mean B-factor                     : 0.1113
+HEADER 6  - Hydrophobicity Score              : 37.6000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.4000
+HEADER 9  - Real volume (approximation)       : 313.1996
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 20.0000
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.7778
+ATOM   1043    O ARG A 137     -10.312   4.599  -7.918  1.00 10.21           O 0
+ATOM   1072    N HIS A 141     -12.923   5.798  -8.037  1.00 11.14           N 0
+ATOM    695  OE1AGLN A  94     -10.603  -0.086  -7.388  0.41 13.29           O 0
+ATOM   1076   CB HIS A 141     -12.719   5.128  -5.711  1.00 12.97           C 0
+ATOM   1073   CA HIS A 141     -13.674   5.621  -6.810  1.00 12.58           C 0
+ATOM   1071  CD2 LEU A 140     -12.952   2.743 -11.968  1.00 20.28           C 0
+ATOM   1078  ND1 HIS A 141     -14.022   3.896  -3.972  1.00 18.38           N 0
+ATOM    697  NE2AGLN A  94     -11.814  -1.417  -8.713  0.41 13.95           N 0
+ATOM   1069   CG LEU A 140     -13.471   4.122 -11.534  1.00 17.06           C 0
+ATOM    687    OAGLN A  94     -11.136  -2.208  -3.488  0.41  9.69           O 0
+ATOM    722    N GLN A  98     -12.319  -0.224  -1.491  1.00 11.71           N 0
+ATOM    729  OE1 GLN A  98     -16.364  -1.705  -2.940  1.00 38.93           O 0
+ATOM    718   CB LEU A  97     -10.505   1.798  -3.157  1.00 12.15           C 0
+ATOM   1119  NE2 HIS A 145     -17.561   4.058  -4.617  1.00 55.27           N 0
+ATOM   1106   CG GLN A 144     -17.579   4.839  -8.141  1.00 20.71           C 0
+ATOM    320   CB ALA A  54     -17.277   1.810 -11.658  1.00 37.78           C 0
+ATOM   1049  NH1 ARG A 137     -11.150  -0.331 -11.756  1.00 21.91           N 0
+ATOM    266  OE2AGLU A  46     -13.181  -1.620 -13.493  0.49 41.09           O 0
+ATOM    316    N ALA A  54     -17.856   0.147 -13.376  1.00 45.22           N 0
+TER
+END

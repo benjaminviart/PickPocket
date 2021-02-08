@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   160:
+HEADER 0  - Pocket Score                      : -5.1352
+HEADER 1  - Drug Score                        : 0.0680
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.9285
+HEADER 4  - Mean alpha-sphere SA              : 0.4443
+HEADER 5  - Mean B-factor                     : 0.5824
+HEADER 6  - Hydrophobicity Score              : 50.8889
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 5.6667
+HEADER 9  - Real volume (approximation)       : 476.4539
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 19.8261
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.7667
+ATOM  209dc  POL STP   160      64.257 152.744 130.158    0.00     4.12
+ATOM  2836c APOL STP   160      62.753 149.150 132.267    0.00     3.72
+ATOM  2836c APOL STP   160      62.747 149.111 132.239    0.00     3.72
+ATOM  2836c  POL STP   160      62.805 149.518 132.036    0.00     3.61
+ATOM  3b099 APOL STP   160      62.545 149.263 132.978    0.00     3.75
+ATOM  2836c  POL STP   160      62.753 149.180 131.970    0.00     3.65
+ATOM  2836c APOL STP   160      62.644 148.925 132.307    0.00     3.71
+ATOM  3b099 APOL STP   160      62.537 149.248 132.979    0.00     3.75
+ATOM  209dc APOL STP   160      61.888 147.714 130.766    0.00     3.43
+ATOM  2836c APOL STP   160      62.454 148.736 131.721    0.00     3.52
+ATOM  31a0f APOL STP   160      67.834 155.844 129.582    0.00     3.91
+ATOM  3cbfd APOL STP   160      67.125 155.583 129.134    0.00     3.88
+ATOM  31a0f  POL STP   160      63.661 154.572 132.946    0.00     4.59
+ATOM  3ac5c  POL STP   160      63.116 154.095 133.292    0.00     4.51
+ATOM  3ac7b APOL STP   160      63.494 154.922 132.500    0.00     4.19
+ATOM  3ac7d APOL STP   160      63.681 154.710 133.425    0.00     4.69
+ATOM  3ac7a APOL STP   160      63.064 155.486 131.727    0.00     3.51
+ATOM  32000 APOL STP   160      62.673 151.986 132.158    0.00     3.76
+ATOM  3b09b APOL STP   160      62.520 151.431 132.764    0.00     3.61
+ATOM  3b099 APOL STP   160      62.624 153.044 133.277    0.00     4.15
+ATOM  342ec  POL STP   160      65.055 154.196 129.283    0.00     4.58
+ATOM  342ec  POL STP   160      64.926 154.352 129.269    0.00     4.45
+ATOM  42030 APOL STP   160      64.312 151.368 129.188    0.00     3.51
+ATOM  42035 APOL STP   160      64.419 152.423 127.381    0.00     3.96
+ATOM  42038 APOL STP   160      64.119 151.663 127.636    0.00     3.73
+ATOM  32160 APOL STP   160      63.745 149.910 126.824    0.00     3.74
+ATOM  42038 APOL STP   160      63.892 150.348 127.021    0.00     3.69
+ATOM  42035 APOL STP   160      63.955 149.856 126.259    0.00     3.92
+ATOM  42035 APOL STP   160      63.999 149.848 126.092    0.00     3.97
+ATOM  42036 APOL STP   160      64.950 153.436 129.794    0.00     4.55
+TER
+END

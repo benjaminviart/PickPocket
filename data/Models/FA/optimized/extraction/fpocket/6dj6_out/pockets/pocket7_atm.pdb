@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 7.0006
+HEADER 1  - Drug Score                        : 0.0147
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7624
+HEADER 4  - Mean alpha-sphere SA              : 0.4363
+HEADER 5  - Mean B-factor                     : 0.1159
+HEADER 6  - Hydrophobicity Score              : 7.4545
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.2727
+HEADER 9  - Real volume (approximation)       : 390.7449
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 29.3548
+HEADER 12 - Number of apolar alpha sphere     :    31
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    492   CB LEU A  59      21.486  21.553  16.089  1.00 20.30           C 0
+ATOM    495  CD2 LEU A  59      19.391  22.411  17.099  1.00 26.55           C 0
+ATOM   1355   CE LYS A 168      20.072  26.966  18.739  1.00 35.82           C 0
+ATOM   1351    O LYS A 168      17.345  27.361  15.389  1.00 19.33           O 0
+ATOM   1352   CB LYS A 168      17.813  25.300  17.887  1.00 22.17           C 0
+ATOM    491    O LEU A  59      22.729  21.472  13.348  1.00 17.00           O 0
+ATOM    499    O PRO A  60      19.823  21.570  12.223  1.00 16.73           O 0
+ATOM    508   CG LYS A  61      20.290  25.142   9.310  1.00 26.31           C 0
+ATOM    507   CB LYS A  61      21.006  23.800   9.391  1.00 21.77           C 0
+ATOM    484   CB ASN A  58      26.451  21.281  14.458  1.00 21.84           C 0
+ATOM    488    N LEU A  59      23.660  20.634  15.851  1.00 17.49           N 0
+ATOM   1357    N GLY A 169      15.643  25.847  15.602  1.00 16.23           N 0
+ATOM   1358   CA GLY A 169      15.261  25.866  14.163  1.00 16.91           C 0
+ATOM   2107    O THR A 264      15.538  19.738  14.573  1.00 12.87           O 0
+ATOM   1328    O ASN A 165      14.303  23.542  16.710  1.00 18.64           O 0
+ATOM   1350    C LYS A 168      16.633  26.588  16.101  1.00 18.40           C 0
+ATOM   2110  CG2 THR A 264      16.915  20.144  11.787  1.00 13.46           C 0
+ATOM   2119  CE1 HIS A 265      13.827  23.811  11.195  1.00 13.06           C 0
+ATOM   1360    O GLY A 169      14.042  27.216  12.594  1.00 18.71           O 0
+ATOM    510   CE LYS A  61      19.149  26.839   7.805  1.00 33.00           C 0
+ATOM    504   CA LYS A  61      20.061  22.614   9.579  1.00 18.20           C 0
+ATOM   1374  NH1 ARG A 171      13.194  27.476   9.993  1.00 14.67           N 0
+ATOM    517  OG1 THR A  62      15.291  22.928   7.800  1.00 12.48           O 0
+ATOM    512    N THR A  62      18.106  22.496   8.091  1.00 13.96           N 0
+TER
+END

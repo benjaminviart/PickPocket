@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   339:
+HEADER 0  - Pocket Score                      : -0.7121
+HEADER 1  - Drug Score                        : 0.0200
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.3860
+HEADER 4  - Mean alpha-sphere SA              : 0.4494
+HEADER 5  - Mean B-factor                     : 0.1907
+HEADER 6  - Hydrophobicity Score              : 35.5714
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 5.4286
+HEADER 9  - Real volume (approximation)       : 132.6773
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.0667
+ATOM  61efd  POL STP   339      23.736  77.961 124.412    0.00     3.29
+ATOM  61f01  POL STP   339      24.372  77.975 124.539    0.00     3.37
+ATOM  49ceb  POL STP   339      24.484  78.489 124.293    0.00     3.25
+ATOM  49ceb  POL STP   339      24.314  78.476 124.368    0.00     3.31
+ATOM  61f01  POL STP   339      24.366  77.981 124.539    0.00     3.37
+ATOM  5fefa  POL STP   339      23.270  78.511 124.292    0.00     3.40
+ATOM  61efd  POL STP   339      23.793  78.113 124.459    0.00     3.35
+ATOM  52dea  POL STP   339      21.092  78.755 121.055    0.00     3.41
+ATOM  5bd16  POL STP   339      20.989  79.076 120.538    0.00     3.29
+ATOM  52dea APOL STP   339      21.738  79.051 121.878    0.00     3.03
+ATOM  52dea  POL STP   339      21.057  78.730 121.066    0.00     3.43
+ATOM  5bd13  POL STP   339      20.807  78.895 120.667    0.00     3.42
+ATOM  52de4  POL STP   339      21.701  78.746 123.318    0.00     3.55
+ATOM  52deb  POL STP   339      21.641  78.800 123.068    0.00     3.47
+ATOM  52deb  POL STP   339      21.558  78.722 123.215    0.00     3.58
+ATOM  5fefa  POL STP   339      22.520  78.591 123.980    0.00     3.45
+ATOM  49ceb  POL STP   339      23.063  79.436 124.437    0.00     3.11
+ATOM  52de1  POL STP   339      22.722  79.095 124.351    0.00     3.34
+ATOM  52de4  POL STP   339      22.069  78.988 123.735    0.00     3.36
+ATOM  5fefa  POL STP   339      22.787  78.841 124.311    0.00     3.41
+ATOM  52deb  POL STP   339      21.349  79.194 123.494    0.00     3.27
+ATOM  2eb89  POL STP   339      21.299  76.228 122.759    0.00     3.60
+ATOM  477d7  POL STP   339      21.162  76.488 122.764    0.00     3.63
+ATOM  5fef8  POL STP   339      21.987  77.179 123.547    0.00     3.29
+ATOM  52de1  POL STP   339      21.381  77.684 123.336    0.00     3.60
+ATOM  5fef8  POL STP   339      21.473  77.701 123.401    0.00     3.56
+ATOM  52deb  POL STP   339      21.436  78.653 123.139    0.00     3.61
+ATOM  52deb  POL STP   339      21.036  79.013 123.295    0.00     3.35
+ATOM  5f8b0  POL STP   339      21.178  79.213 123.467    0.00     3.24
+ATOM  5f8b0 APOL STP   339      21.311  79.222 123.505    0.00     3.25
+TER
+END

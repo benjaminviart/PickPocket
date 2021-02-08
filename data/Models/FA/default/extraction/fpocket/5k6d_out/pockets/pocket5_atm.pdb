@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 13.2661
+HEADER 1  - Drug Score                        : 0.0174
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.4798
+HEADER 4  - Mean alpha-sphere SA              : 0.4448
+HEADER 5  - Mean B-factor                     : 0.1419
+HEADER 6  - Hydrophobicity Score              : -6.6000
+HEADER 7  - Polarity Score                    :     9
+HEADER 8  - Volume Score                      : 3.6000
+HEADER 9  - Real volume (approximation)       : 309.1573
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 9.2000
+HEADER 12 - Number of apolar alpha sphere     :    15
+HEADER 13 - Proportion of apolar alpha sphere : 0.5000
+ATOM    922   CG ASP B  45     -21.925  -5.286   0.527  1.00  8.22           C 0
+ATOM    921   CB ASP B  45     -20.556  -5.200   1.165  1.00  7.62           C 0
+ATOM    313   NZALYS A  39     -18.447 -11.567   0.019  0.61 15.83           N 0
+ATOM    923  OD1 ASP B  45     -22.049  -4.920  -0.658  1.00  8.98           O 0
+ATOM    999    O GLY B  57     -19.134  -4.567  -2.362  1.00  7.91           O 0
+ATOM    896    O ALA B  41     -17.310  -6.304   1.568  1.00  7.70           O 0
+ATOM    897   CB ALA B  41     -15.469  -8.726   0.364  1.00  8.75           C 0
+ATOM   1004   CB SER B  58     -16.863  -5.376  -4.757  1.00 12.94           C 0
+ATOM   1001   CA SER B  58     -16.717  -4.303  -3.695  1.00  8.08           C 0
+ATOM   1006    N CYS B  59     -14.339  -4.217  -3.413  1.00  7.23           N 0
+ATOM    894   CA ALA B  41     -15.243  -7.396   1.043  1.00  7.12           C 0
+ATOM    893    N ALA B  41     -14.002  -7.411   1.807  1.00  6.81           N 0
+ATOM   1011   SG CYS B  59     -12.430  -4.393  -0.839  1.00  7.77           S 0
+ATOM    861    O ASP B  37     -12.314  -9.605   1.082  1.00  8.41           O 0
+ATOM   1010   CB CYS B  59     -12.052  -4.452  -2.599  1.00  7.24           C 0
+ATOM    924  OD2 ASP B  45     -22.887  -5.692   1.211  1.00 11.23           O 0
+ATOM    338   CG LYS A  43     -20.532  -7.588   6.108  1.00 11.36           C 0
+ATOM    899   CA GLY B  42     -17.495  -7.307   4.116  1.00  7.49           C 0
+ATOM    339   CD LYS A  43     -21.849  -8.220   5.674  1.00 18.52           C 0
+ATOM    309   CDALYS A  39     -18.932 -11.380   2.441  0.61 12.90           C 0
+ATOM    276  OD2 ASP A  35     -22.163 -12.046   3.303  1.00 16.60           O 0
+ATOM    341   NZ LYS A  43     -23.111 -10.346   5.349  1.00 15.87           N 0
+ATOM    307   CGALYS A  39     -18.369 -10.944   3.781  0.61 11.07           C 0
+ATOM    311   CEALYS A  39     -17.849 -11.459   1.380  0.61 13.44           C 0
+TER
+END

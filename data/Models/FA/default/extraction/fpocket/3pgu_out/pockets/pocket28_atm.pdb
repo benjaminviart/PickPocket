@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    29:
+HEADER 0  - Pocket Score                      : 2.5493
+HEADER 1  - Drug Score                        : 0.0080
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.3653
+HEADER 4  - Mean alpha-sphere SA              : 0.6028
+HEADER 5  - Mean B-factor                     : 0.1242
+HEADER 6  - Hydrophobicity Score              : 16.3333
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.1111
+HEADER 9  - Real volume (approximation)       : 453.6519
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.0645
+ATOM    293   CA PHE A  40     -21.265  27.308 -41.874  1.00 15.53           C 0
+ATOM    299  CD2 PHE A  40     -20.474  26.152 -38.784  1.00 14.23           C 0
+ATOM    303    N ASP A  41     -20.152  29.207 -42.921  1.00 11.32           N 0
+ATOM    310  OD2 ASP A  41     -19.440  31.862 -42.102  1.00 28.87           O 0
+ATOM    287    O MET A  39     -23.741  28.255 -41.078  1.00 15.76           O 0
+ATOM    352  OG1 THR A  44     -16.773  27.514 -38.420  1.00 13.60           O 0
+ATOM    296   CB PHE A  40     -20.348  26.210 -41.294  1.00 13.32           C 0
+ATOM    311    NAARG A  42     -17.464  29.492 -42.878  0.74 14.92           N 0
+ATOM    321   CGAARG A  42     -16.038  31.093 -40.714  0.74 14.20           C 0
+ATOM    317    OAARG A  42     -16.362  27.757 -41.105  0.74 10.69           O 0
+ATOM    331  NH2AARG A  42     -15.961  34.027 -37.002  0.74 18.87           N 0
+ATOM    325   NEAARG A  42     -16.085  32.955 -39.039  0.74 18.74           N 0
+ATOM   2992   CE LYS A 379     -17.909  36.918 -38.005  1.00 54.35           C 0
+ATOM    179    O ASP A  25     -22.117  28.326 -32.997  1.00 13.81           O 0
+ATOM    174    O ALA A  24     -24.587  27.140 -36.004  1.00 13.75           O 0
+ATOM    301  CE2 PHE A  40     -20.987  25.654 -37.602  1.00 16.66           C 0
+ATOM    353  CG2 THR A  44     -16.806  26.634 -36.159  1.00 13.76           C 0
+ATOM   3361   CB ALA A 420     -14.824  30.603 -36.619  1.00 15.02           C 0
+ATOM   2988    O LYS A 379     -16.704  34.452 -34.248  1.00 19.54           O 0
+ATOM   2990   CG LYS A 379     -17.618  36.880 -35.507  1.00 44.75           C 0
+TER
+END

@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 1.7588
+HEADER 1  - Drug Score                        : 0.0374
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.8410
+HEADER 4  - Mean alpha-sphere SA              : 0.5805
+HEADER 5  - Mean B-factor                     : 0.1667
+HEADER 6  - Hydrophobicity Score              : 41.4286
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.2857
+HEADER 9  - Real volume (approximation)       : 341.1468
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 10.6667
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.3871
+ATOM    923   CA PRO A 137     -10.131   4.495 -10.109  1.00 22.82           C 0
+ATOM   1251  CE1 HIS A 176     -12.649   4.225  -6.561  1.00 30.77           C 0
+ATOM    926   CB PRO A 137      -9.327   3.311  -9.588  1.00 22.86           C 0
+ATOM    925    O PRO A 137      -8.901   6.515 -10.541  1.00 20.96           O 0
+ATOM    945   CB LEU A 140     -11.567   8.702  -9.380  1.00 19.83           C 0
+ATOM    947  CD1 LEU A 140     -13.440   7.563  -8.173  1.00 26.12           C 0
+ATOM    944    O LEU A 140      -9.848  11.368 -10.145  1.00 21.66           O 0
+ATOM   1353  CD1 LEU A 189      -8.379  12.746  -7.385  1.00 26.71           C 0
+ATOM    943    C LEU A 140      -9.868  10.191 -10.508  1.00 23.66           C 0
+ATOM    949    NASER A 141      -8.769   9.509 -10.809  0.25 21.27           N 0
+ATOM   1249  ND1 HIS A 176     -13.830   4.750  -6.286  1.00 45.13           N 0
+ATOM   1246    O HIS A 176     -15.475   6.148  -3.815  1.00 28.65           O 0
+ATOM   1273   CG GLN A 179     -14.759   4.096  -1.053  1.00 35.92           C 0
+ATOM   1272   CB GLN A 179     -14.044   5.375  -0.605  1.00 32.03           C 0
+ATOM   1392  NH2 ARG A 193     -11.626   9.568  -2.043  1.00 39.49           N 0
+ATOM   1390   CZ ARG A 193     -12.772   9.889  -2.627  1.00 36.36           C 0
+ATOM   1389   NE ARG A 193     -12.770  10.460  -3.827  1.00 30.19           N 0
+ATOM   1354  CD2 LEU A 189      -7.054  12.484  -5.252  1.00 29.90           C 0
+ATOM   1352   CG LEU A 189      -8.155  13.264  -5.967  1.00 25.09           C 0
+ATOM    951   CAASER A 141      -7.443  10.116 -10.723  0.25 26.36           C 0
+ATOM    957   CBASER A 141      -6.357   9.079 -11.016  0.25 23.35           C 0
+TER
+END

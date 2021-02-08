@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   128:
+HEADER 0  - Pocket Score                      : 0.4054
+HEADER 1  - Drug Score                        : 0.0049
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.5325
+HEADER 4  - Mean alpha-sphere SA              : 0.6738
+HEADER 5  - Mean B-factor                     : 0.3778
+HEADER 6  - Hydrophobicity Score              : 2.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.6250
+HEADER 9  - Real volume (approximation)       : 656.9120
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0909
+ATOM     55  OE2 GLU A   7     101.087  49.365 163.574  1.00 36.75           O 0
+ATOM     72   CB SER A  10      98.908  52.962 168.011  1.00 25.75           C 0
+ATOM     73   OG SER A  10      98.925  54.094 167.191  1.00 28.74           O 0
+ATOM  12565  NE2 GLN K  15      98.866  47.476 162.959  1.00 25.22           N 0
+ATOM      1    N MET A   1      99.726  54.912 160.979  1.00 34.87           N 0
+ATOM      4    O MET A   1     101.569  53.144 161.921  1.00 34.73           O 0
+ATOM      3    C MET A   1     101.633  53.327 160.724  1.00 34.09           C 0
+ATOM      9    N LYS A   2     102.337  52.520 159.938  1.00 32.77           N 0
+ATOM  12579  NH1 ARG K  17     101.449  47.132 156.757  1.00 32.17           N 0
+ATOM     13   CB LYS A   2     103.056  50.157 159.770  1.00 31.06           C 0
+ATOM    807   CB ASP A 108     101.080  51.212 154.339  1.00 20.10           C 0
+ATOM      2   CA MET A   1     100.844  54.497 160.097  1.00 35.16           C 0
+ATOM    818  OE1 GLU A 109      98.789  56.442 156.808  1.00 37.48           O 0
+ATOM  12562   CG GLN K  15      97.456  45.869 161.976  1.00 25.32           C 0
+ATOM    810  OD2 ASP A 108     102.292  49.735 155.719  1.00 22.35           O 0
+ATOM  12561   CB GLN K  15      97.492  44.704 160.963  1.00 25.02           C 0
+ATOM  12560    O GLN K  15      96.176  43.248 158.777  1.00 24.20           O 0
+ATOM  12576   CD ARG K  17     100.277  45.246 158.470  1.00 29.64           C 0
+ATOM  12564  OE1 GLN K  15      99.822  45.856 161.871  1.00 26.11           O 0
+ATOM     17   NZ LYS A   2     102.266  46.536 161.926  1.00 29.50           N 0
+ATOM  12563   CD GLN K  15      98.820  46.405 162.268  1.00 25.23           C 0
+ATOM     15   CD LYS A   2     103.738  47.763 160.271  1.00 31.17           C 0
+ATOM    808   CG ASP A 108     101.852  49.979 154.578  1.00 21.33           C 0
+TER
+END

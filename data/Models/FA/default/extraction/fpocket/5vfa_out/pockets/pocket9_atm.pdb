@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 10.3750
+HEADER 1  - Drug Score                        : 0.0222
+HEADER 2  - Number of V. Vertices             :    40
+HEADER 3  - Mean alpha-sphere radius          : 3.3028
+HEADER 4  - Mean alpha-sphere SA              : 0.4119
+HEADER 5  - Mean B-factor                     : 0.0407
+HEADER 6  - Hydrophobicity Score              : 31.0769
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.9231
+HEADER 9  - Real volume (approximation)       : 131.4872
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1500
+ATOM   1568    C PHE A  96     157.388  71.280   0.591  1.00 15.63           C 0
+ATOM   2500   CB THR A 159     156.219  70.644   5.655  1.00 15.28           C 0
+ATOM   1545    O ARG A  95     153.961  70.028   1.902  1.00 31.60           O 0
+ATOM   2502  CG2 THR A 159     155.473  69.694   4.721  1.00 17.29           C 0
+ATOM   2501  OG1 THR A 159     155.336  71.668   6.116  1.00 16.22           O 0
+ATOM   1528    O GLN A  94     153.550  74.046   0.892  1.00 19.41           O 0
+ATOM   1544    C ARG A  95     153.912  70.771   0.910  1.00 24.47           C 0
+ATOM   1589    O ALA A  97     157.139  75.048   0.969  1.00 15.90           O 0
+ATOM   1569    O PHE A  96     158.362  70.984   1.295  1.00 16.01           O 0
+ATOM   3173  CE2 TYR A 200     153.009  75.785   3.806  1.00 16.53           C 0
+ATOM   2538   CB ARG A 161     155.829  75.864   6.381  1.00 17.73           C 0
+ATOM   2539   CG ARG A 161     156.738  76.632   5.462  1.00 19.69           C 0
+ATOM   1596    N VAL A  98     159.351  74.987   1.371  1.00 14.94           N 0
+ATOM   1597   CA VAL A  98     159.282  76.124   2.276  1.00 16.61           C 0
+ATOM   2534    N ARG A 161     157.384  74.250   7.440  1.00 16.82           N 0
+ATOM   1191    O PRO A  73     159.440  67.465   6.753  1.00 21.01           O 0
+ATOM   1215    O SER A  75     161.931  70.744   4.605  1.00 18.84           O 0
+ATOM   2514   CB ARG A 160     160.347  73.239   7.390  1.00 16.67           C 0
+ATOM   1600   CB VAL A  98     160.607  76.257   3.062  1.00 18.46           C 0
+ATOM   2510    N ARG A 160     158.499  71.600   7.329  1.00 16.17           N 0
+ATOM   1224   CA VAL A  76     163.923  72.631   3.986  1.00 16.45           C 0
+ATOM   1239    N ILE A  77     163.150  72.638   1.680  1.00 14.37           N 0
+ATOM   2497   CA THR A 159     156.793  69.934   6.873  1.00 14.87           C 0
+ATOM   1588    C ALA A  97     158.253  74.547   0.768  1.00 15.66           C 0
+TER
+END

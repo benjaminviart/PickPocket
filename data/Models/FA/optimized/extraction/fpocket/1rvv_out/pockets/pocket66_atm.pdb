@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    67:
+HEADER 0  - Pocket Score                      : 0.8092
+HEADER 1  - Drug Score                        : 0.0072
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7347
+HEADER 4  - Mean alpha-sphere SA              : 0.4390
+HEADER 5  - Mean B-factor                     : 0.3541
+HEADER 6  - Hydrophobicity Score              : 7.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.2857
+HEADER 9  - Real volume (approximation)       : 227.5686
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 30.0000
+HEADER 12 - Number of apolar alpha sphere     :    31
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   9136   CB PHE H 153      69.141   7.067 -26.556  1.00 59.77           C 0
+ATOM   9635    O LYS I  65      69.557  10.806 -21.338  1.00 10.96           O 0
+ATOM   9636   CB LYS I  65      67.776   8.134 -22.197  1.00 10.00           C 0
+ATOM   9135    O PHE H 153      72.023   6.839 -26.322  1.00 66.73           O 0
+ATOM   9638   CD LYS I  65      68.511   5.919 -23.148  1.00 13.61           C 0
+ATOM   9133   CA PHE H 153      70.163   7.709 -27.538  1.00 59.72           C 0
+ATOM   9640   NZ LYS I  65      69.575   3.754 -23.770  1.00 14.72           N 0
+ATOM   9662  OE2 GLU I  68      71.043   6.742 -18.903  1.00 27.52           O 0
+ATOM   9637   CG LYS I  65      68.015   6.666 -21.934  1.00 11.82           C 0
+ATOM   9659   CG GLU I  68      71.423   9.068 -18.727  1.00 23.39           C 0
+ATOM   9150  OE1 GLU H 154      74.769   8.493 -25.766  0.00 74.59           O 0
+ATOM   9669  CG2 THR I  69      71.705  12.963 -23.261  1.00 14.52           C 0
+ATOM   9663    N THR I  69      72.073  12.811 -20.340  1.00 14.58           N 0
+ATOM   9151  OE2 GLU H 154      74.222   9.427 -27.675  0.00 74.59           O 0
+ATOM   9129    O SER H 152      70.488   9.728 -29.438  1.00 45.17           O 0
+ATOM   9138  CD1 PHE H 153      67.567   8.937 -27.145  1.00 59.37           C 0
+ATOM   9664   CA THR I  69      73.003  13.521 -21.219  1.00 14.30           C 0
+ATOM   9656    C GLU I  68      72.529  12.232 -19.235  1.00 15.65           C 0
+ATOM   9642   CA MET I  66      67.587  12.651 -21.783  1.00 10.61           C 0
+ATOM   9646   CG MET I  66      65.871  12.855 -23.487  1.00 10.00           C 0
+ATOM   9641    N MET I  66      67.374  11.217 -21.590  1.00 10.00           N 0
+ATOM   9634    C LYS I  65      68.388  10.410 -21.316  1.00 10.13           C 0
+ATOM   9657    O GLU I  68      73.723  12.315 -18.979  1.00 16.03           O 0
+TER
+END

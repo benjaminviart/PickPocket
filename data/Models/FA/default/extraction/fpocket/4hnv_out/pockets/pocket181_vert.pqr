@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   182:
+HEADER 0  - Pocket Score                      : 2.2387
+HEADER 1  - Drug Score                        : 0.0089
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.4272
+HEADER 4  - Mean alpha-sphere SA              : 0.5457
+HEADER 5  - Mean B-factor                     : 0.1526
+HEADER 6  - Hydrophobicity Score              : 0.1250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 2.3750
+HEADER 9  - Real volume (approximation)       : 666.3841
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 25.8519
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.9000
+ATOM  42760  POL STP   182      67.473  95.915 -31.033    0.00     4.68
+ATOM  72132  POL STP   182      67.123  96.451 -29.590    0.00     4.98
+ATOM  67323 APOL STP   182      66.846  95.167 -29.102    0.00     5.32
+ATOM  72132 APOL STP   182      67.103  96.408 -29.536    0.00     5.00
+ATOM  72137 APOL STP   182      66.641  95.628 -28.594    0.00     5.41
+ATOM  67316  POL STP   182      68.529  98.016 -29.482    0.00     3.40
+ATOM  67324 APOL STP   182      68.411  97.597 -29.225    0.00     3.86
+ATOM  67324 APOL STP   182      68.394  97.585 -29.234    0.00     3.87
+ATOM  67323 APOL STP   182      68.815  98.079 -28.251    0.00     3.64
+ATOM  67324 APOL STP   182      68.976  97.808 -29.218    0.00     3.43
+ATOM  72132 APOL STP   182      67.045  96.801 -29.176    0.00     5.02
+ATOM  67324 APOL STP   182      68.792  97.494 -29.573    0.00     3.56
+ATOM  67325 APOL STP   182      68.800  97.421 -29.651    0.00     3.55
+ATOM  67324 APOL STP   182      68.397  97.079 -29.741    0.00     3.86
+ATOM  72132 APOL STP   182      67.120  96.467 -29.556    0.00     4.98
+ATOM  72132 APOL STP   182      66.674  96.852 -28.090    0.00     5.37
+ATOM  72137 APOL STP   182      66.338  96.625 -27.239    0.00     5.82
+ATOM  79965 APOL STP   182      66.880  96.872 -25.781    0.00     5.85
+ATOM  79965 APOL STP   182      66.730  96.914 -25.723    0.00     5.90
+ATOM  79966 APOL STP   182      67.309  96.661 -25.404    0.00     5.67
+ATOM  72132 APOL STP   182      65.318  99.965 -29.342    0.00     4.00
+ATOM  2178b APOL STP   182      65.113 100.211 -29.669    0.00     3.82
+ATOM  72137 APOL STP   182      65.361  99.605 -28.836    0.00     4.19
+ATOM  79965 APOL STP   182      69.949  97.413 -25.297    0.00     4.00
+ATOM  94518 APOL STP   182      70.467  97.790 -25.523    0.00     3.70
+ATOM  94515 APOL STP   182      71.264  97.569 -25.697    0.00     3.20
+ATOM  1af7a APOL STP   182      70.544  98.041 -25.768    0.00     3.58
+ATOM  1af77 APOL STP   182      69.286  98.272 -26.456    0.00     3.94
+ATOM  94501 APOL STP   182      69.012  93.453 -28.438    0.00     4.16
+ATOM  94523 APOL STP   182      65.052  95.006 -28.232    0.00     5.05
+TER
+END

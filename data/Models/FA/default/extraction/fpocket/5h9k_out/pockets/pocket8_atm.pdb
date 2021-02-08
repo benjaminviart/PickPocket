@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : 4.4842
+HEADER 1  - Drug Score                        : 0.0051
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.2118
+HEADER 4  - Mean alpha-sphere SA              : 0.7346
+HEADER 5  - Mean B-factor                     : 0.2148
+HEADER 6  - Hydrophobicity Score              : 2.5000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 710.6414
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2667
+ATOM    149    C ASN A  24     -10.661  29.320   7.230  1.00 16.70           C 0
+ATOM    151   CBAASN A  24     -11.398  30.199   5.008  0.44 20.06           C 0
+ATOM    164   CG ARG A  25     -13.011  25.844   6.977  1.00 19.00           C 0
+ATOM    150    O ASN A  24     -10.858  29.954   8.266  1.00 17.50           O 0
+ATOM    159    N ARG A  25     -10.849  28.005   7.139  1.00 13.20           N 0
+ATOM    163   CB ARG A  25     -11.768  25.829   7.834  1.00 14.42           C 0
+ATOM    166   NE ARG A  25     -14.045  23.811   7.935  1.00 18.89           N 0
+ATOM    160   CA ARG A  25     -11.305  27.211   8.281  1.00 13.97           C 0
+ATOM    198  CG2 THR A  28     -13.354  31.279  12.346  1.00 11.77           C 0
+ATOM    162    O ARG A  25     -10.547  26.975  10.551  1.00 16.07           O 0
+ATOM    197  OG1 THR A  28     -12.059  31.347  10.314  1.00 14.72           O 0
+ATOM    196   CB THR A  28     -12.137  30.726  11.603  1.00 10.92           C 0
+ATOM    155  OD1AASN A  24     -12.268  32.235   4.093  0.44 30.62           O 0
+ATOM    984  NH2 ARG A 128     -10.453  26.124  13.729  1.00  8.09           N 0
+ATOM    169  NH2 ARG A  25     -14.830  22.025   9.159  1.00 21.54           N 0
+ATOM    763    C TYR A 102     -11.063  22.089  12.732  1.00  7.32           C 0
+ATOM    764    O TYR A 102     -10.956  23.089  13.440  1.00  8.73           O 0
+ATOM    765   CB TYR A 102     -11.180  22.457  10.254  1.00  9.35           C 0
+ATOM    773    N ALA A 103     -11.829  21.050  13.049  1.00  9.72           N 0
+ATOM    774   CA ALA A 103     -12.754  21.078  14.174  1.00 10.54           C 0
+ATOM    195    O THR A  28     -10.642  29.141  13.824  1.00  8.18           O 0
+ATOM    981   NE ARG A 128     -10.377  24.862  15.641  1.00  7.95           N 0
+TER
+END

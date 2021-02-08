@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    33:
+HEADER 0  - Pocket Score                      : 4.3275
+HEADER 1  - Drug Score                        : 0.0162
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.5918
+HEADER 4  - Mean alpha-sphere SA              : 0.4821
+HEADER 5  - Mean B-factor                     : 0.3007
+HEADER 6  - Hydrophobicity Score              : 29.9000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.8000
+HEADER 9  - Real volume (approximation)       : 255.4017
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2812
+ATOM  10006  NH2 ARG D 204       2.432  22.212 -33.570  1.00 32.11           N 0
+ATOM  10422   CB LYS D 260       2.641  18.926 -35.541  1.00 29.76           C 0
+ATOM  10430    O VAL D 261       0.871  23.207 -35.813  1.00 32.98           O 0
+ATOM  10005  NH1 ARG D 204       3.903  23.921 -34.049  1.00 31.51           N 0
+ATOM  10440  CG2 VAL D 262       1.035  22.977 -39.684  1.00 33.12           C 0
+ATOM  10421    O LYS D 260       0.089  19.763 -36.987  1.00 29.70           O 0
+ATOM  10369  OD2 ASP D 253       2.835  20.264 -40.979  1.00 33.82           O 0
+ATOM   6241   NZ LYS C  80       8.609  18.392 -38.748  1.00 38.24           N 0
+ATOM   9969  CD1 LEU D 200       8.105  23.808 -33.613  1.00 41.38           C 0
+ATOM  10423   CG LYS D 260       3.656  17.941 -34.936  1.00 30.86           C 0
+ATOM  10383  OD1 ASP D 255       6.323  15.188 -35.982  1.00 33.17           O 0
+ATOM  10425   CE LYS D 260       4.947  17.342 -32.857  1.00 33.90           C 0
+ATOM   9941   OG SER D 196       5.755  20.256 -31.461  1.00 32.24           O 0
+ATOM  10424   CD LYS D 260       3.808  18.168 -33.433  1.00 31.41           C 0
+ATOM  10373    O VAL D 254       3.696  14.280 -39.396  1.00 28.40           O 0
+ATOM   6238   CG LYS C  80       7.306  15.174 -40.434  1.00 30.56           C 0
+ATOM   6240   CE LYS C  80       8.113  17.510 -39.861  1.00 33.42           C 0
+ATOM   6239   CD LYS C  80       8.040  16.059 -39.413  1.00 31.21           C 0
+ATOM  10366   CB ASP D 253       2.079  18.158 -40.108  1.00 29.87           C 0
+ATOM  10381   CB ASP D 255       4.161  14.216 -36.011  1.00 28.06           C 0
+ATOM  10365    O ASP D 253       1.276  16.105 -38.002  1.00 28.96           O 0
+TER
+END

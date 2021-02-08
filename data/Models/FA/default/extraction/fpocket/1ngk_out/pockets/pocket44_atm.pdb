@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    45:
+HEADER 0  - Pocket Score                      : 1.4160
+HEADER 1  - Drug Score                        : 0.0048
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.2776
+HEADER 4  - Mean alpha-sphere SA              : 0.6278
+HEADER 5  - Mean B-factor                     : 0.5315
+HEADER 6  - Hydrophobicity Score              : -16.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 422.1244
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2812
+ATOM  10980  OE2 GLU K  30      23.471  -4.892  40.060  1.00 47.76           O 0
+ATOM  10958    O GLU K  28      25.176  -4.668  36.498  1.00 33.42           O 0
+ATOM  10941  OE1 GLN K  25      23.294 -10.190  32.881  1.00 35.61           O 0
+ATOM   5957  NH1 ARG F  60      17.439  -8.225  40.775  1.00 49.24           N 0
+ATOM   5955   NE ARG F  60      19.461  -8.851  41.711  1.00 45.19           N 0
+ATOM  10971  OD2 ASP K  29      25.076  -8.948  39.609  1.00 32.89           O 0
+ATOM  11505   CG ARG K  90      20.707 -12.973  39.204  1.00 33.02           C 0
+ATOM  11541  CG2 THR K  94      21.119 -13.760  34.047  1.00 28.19           C 0
+ATOM   5956   CZ ARG F  60      18.280  -9.175  41.181  1.00 48.03           C 0
+ATOM   5958  NH2 ARG F  60      17.937 -10.453  41.052  1.00 47.40           N 0
+ATOM  11506   CD ARG K  90      20.147 -12.258  40.458  1.00 32.79           C 0
+ATOM  11503    O ARG K  90      22.514 -14.747  36.246  1.00 25.55           O 0
+ATOM  11502    C ARG K  90      23.133 -14.519  37.290  1.00 26.22           C 0
+ATOM  11516   SG CYS K  91      26.182 -11.356  37.043  1.00 26.85           S 0
+ATOM  11512   CA CYS K  91      25.084 -13.731  36.069  1.00 25.55           C 0
+ATOM  11511    N CYS K  91      24.377 -14.045  37.308  1.00 25.62           N 0
+ATOM  11504   CB ARG K  90      22.167 -13.417  39.309  1.00 27.19           C 0
+ATOM  11507   NE ARG K  90      21.203 -11.661  41.296  1.00 36.17           N 0
+ATOM   5954   CD ARG F  60      19.942  -7.481  41.903  1.00 41.25           C 0
+TER
+END

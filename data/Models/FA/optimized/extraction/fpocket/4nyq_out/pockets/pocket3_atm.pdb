@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 5.6065
+HEADER 1  - Drug Score                        : 0.0177
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.1788
+HEADER 4  - Mean alpha-sphere SA              : 0.6275
+HEADER 5  - Mean B-factor                     : 0.0548
+HEADER 6  - Hydrophobicity Score              : 20.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 368.8264
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 28.3333
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1260  CG1 VAL A 149     -22.397  14.817  29.456  1.00 14.03           C 0
+ATOM   1261  CG2 VAL A 149     -20.891  13.975  31.332  1.00 18.82           C 0
+ATOM    289  OD1 ASN A  35     -21.891  16.107  34.924  1.00 10.79           O 0
+ATOM   1268   CD PRO A 150     -25.256  12.314  29.813  1.00 14.91           C 0
+ATOM   1252    O SER A 148     -23.027  10.195  31.586  1.00 14.30           O 0
+ATOM    288   CG ASN A  35     -21.746  15.382  35.918  1.00  9.99           C 0
+ATOM    290  ND2 ASN A  35     -22.592  15.417  36.956  1.00 10.53           N 0
+ATOM   1256   CA VAL A 149     -22.304  12.362  30.060  1.00 11.81           C 0
+ATOM    287   CB ASN A  35     -20.615  14.412  36.012  1.00 10.02           C 0
+ATOM   1254   OG SER A 148     -20.095  10.567  33.270  1.00 13.21           O 0
+ATOM    443  CD2 TYR A  54     -22.208  10.916  40.612  1.00 15.18           C 0
+ATOM    440   CB TYR A  54     -20.250  12.076  39.468  1.00 12.02           C 0
+ATOM    441   CG TYR A  54     -20.934  10.825  40.058  1.00 14.12           C 0
+ATOM   1253   CB SER A 148     -20.415   9.236  32.932  1.00 13.27           C 0
+ATOM    445  CE2 TYR A  54     -22.852   9.826  41.158  1.00 19.23           C 0
+ATOM    282   OG SER A  34     -18.497  10.575  36.568  1.00 22.68           O 0
+ATOM    442  CD1 TYR A  54     -20.297   9.592  40.122  1.00 17.67           C 0
+ATOM    444  CE1 TYR A  54     -20.916   8.490  40.676  1.00 19.77           C 0
+ATOM    446   CZ TYR A  54     -22.184   8.624  41.200  1.00 20.22           C 0
+ATOM    197  NH2 ARG A  23     -21.028  18.082  31.151  1.00 10.06           N 0
+ATOM   1019   OG SER A 119     -22.784  18.512  28.989  1.00 12.06           O 0
+TER
+END

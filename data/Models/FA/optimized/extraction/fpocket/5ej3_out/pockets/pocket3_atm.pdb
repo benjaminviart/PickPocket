@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 12.5986
+HEADER 1  - Drug Score                        : 0.0703
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 4.0919
+HEADER 4  - Mean alpha-sphere SA              : 0.6885
+HEADER 5  - Mean B-factor                     : 0.3287
+HEADER 6  - Hydrophobicity Score              : 44.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.8571
+HEADER 9  - Real volume (approximation)       : 194.8423
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.9310
+ATOM   3038  OD1 ASN B 188      -0.083  11.183  13.016  1.00 25.56           O 0
+ATOM   3042    C VAL B 189      -1.378  14.712  14.898  1.00 21.72           C 0
+ATOM   3037   CG ASN B 188       1.112  10.908  12.951  1.00 25.24           C 0
+ATOM   3035    O ASN B 188       1.879  14.566  13.422  1.00 18.19           O 0
+ATOM   3047    N GLY B 190      -1.170  15.309  16.087  1.00 25.61           N 0
+ATOM   2018    C GLN B  62       2.005  17.322  16.940  1.00 13.18           C 0
+ATOM   2020   CB GLN B  62       1.815  16.574  19.298  1.00 15.86           C 0
+ATOM   2019    O GLN B  62       0.982  16.956  16.389  1.00 13.87           O 0
+ATOM   2026   CA TYR B  63       3.279  16.759  14.965  1.00 12.53           C 0
+ATOM   2042   OG SER B  64       5.406  12.480  14.012  1.00 20.27           O 0
+ATOM   2027    C TYR B  63       4.662  16.199  14.760  1.00 13.44           C 0
+ATOM   2023  OE1 GLN B  62       2.042  14.559  21.320  1.00 30.04           O 0
+ATOM   2025    N TYR B  63       3.176  17.322  16.313  1.00 12.40           N 0
+ATOM   3039  ND2 ASN B 188       1.613   9.765  13.417  1.00 27.51           N 0
+ATOM    787   OH TYR A  97       6.989  13.732  18.724  1.00 23.10           O 0
+ATOM   3048   CA GLY B 190      -1.890  14.952  17.304  1.00 30.17           C 0
+ATOM   3043    O VAL B 189      -2.083  13.713  14.744  1.00 21.61           O 0
+TER
+END

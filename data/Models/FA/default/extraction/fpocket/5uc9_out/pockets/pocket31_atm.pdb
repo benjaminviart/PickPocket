@@ -1,0 +1,47 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    32:
+HEADER 0  - Pocket Score                      : -2.9998
+HEADER 1  - Drug Score                        : 0.0131
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.2339
+HEADER 4  - Mean alpha-sphere SA              : 0.7028
+HEADER 5  - Mean B-factor                     : 0.3656
+HEADER 6  - Hydrophobicity Score              : 28.1429
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.2857
+HEADER 9  - Real volume (approximation)       : 689.3347
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 16.1111
+HEADER 12 - Number of apolar alpha sphere     :    18
+HEADER 13 - Proportion of apolar alpha sphere : 0.5625
+ATOM   2905   CG ARG B 173      17.492 -13.960 -54.994  1.00 44.07           C 0
+ATOM   2908   CZ ARG B 173      17.547 -15.959 -57.977  1.00 45.70           C 0
+ATOM   2907   NE ARG B 173      17.944 -15.509 -56.791  1.00 47.34           N 0
+ATOM   2909  NH1 ARG B 173      16.255 -16.135 -58.229  1.00 42.33           N 0
+ATOM   2906   CD ARG B 173      17.047 -15.215 -55.687  1.00 42.85           C 0
+ATOM   1962    O LYS B  59      22.982  -7.069 -57.377  1.00 29.31           O 0
+ATOM   1954    O LEU B  58      19.361  -5.297 -56.362  1.00 31.89           O 0
+ATOM   2904   CB ARG B 173      18.972 -13.960 -54.712  1.00 37.42           C 0
+ATOM   2910  NH2 ARG B 173      18.447 -16.204 -58.913  1.00 36.89           N 0
+ATOM   2882    O VAL B 170      19.124 -10.914 -52.282  1.00 28.61           O 0
+ATOM   1969   CA GLY B  60      22.631  -7.945 -54.773  1.00 32.43           C 0
+ATOM   2915   CB ALA B 174      22.463 -11.234 -52.010  1.00 31.80           C 0
+ATOM   2911    N ALA B 174      21.113 -13.126 -52.788  1.00 33.24           N 0
+ATOM   2912   CA ALA B 174      22.477 -12.671 -52.526  1.00 34.42           C 0
+ATOM   1971    O GLY B  60      24.564  -9.027 -53.930  1.00 34.48           O 0
+ATOM   1968    N GLY B  60      22.191  -6.675 -55.307  1.00 30.73           N 0
+ATOM   1961    C LYS B  59      22.430  -6.318 -56.567  1.00 33.12           C 0
+ATOM   2884  CG1 VAL B 170      18.652  -7.789 -52.977  1.00 33.24           C 0
+ATOM   2885  CG2 VAL B 170      16.414  -7.656 -54.059  1.00 34.42           C 0
+ATOM   2880   CA VAL B 170      17.101  -9.786 -52.922  1.00 32.75           C 0
+ATOM   2879    N VAL B 170      15.732 -10.225 -52.661  1.00 30.48           N 0
+ATOM   2874   CB LYS B 169      13.089 -11.805 -53.498  1.00 28.71           C 0
+ATOM   2873    O LYS B 169      16.275 -12.394 -52.883  1.00 32.11           O 0
+ATOM   2872    C LYS B 169      15.434 -11.523 -52.642  1.00 32.71           C 0
+ATOM   2875   CG LYS B 169      11.663 -12.281 -53.223  1.00 37.68           C 0
+ATOM   2876   CD LYS B 169      11.676 -13.685 -52.641  1.00 46.84           C 0
+TER
+END

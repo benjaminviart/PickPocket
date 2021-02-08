@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    31:
+HEADER 0  - Pocket Score                      : -0.7836
+HEADER 1  - Drug Score                        : 0.0306
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.7483
+HEADER 4  - Mean alpha-sphere SA              : 0.6368
+HEADER 5  - Mean B-factor                     : 0.2875
+HEADER 6  - Hydrophobicity Score              : 39.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.7500
+HEADER 9  - Real volume (approximation)       : 621.2056
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.7667
+ATOM   3007  CD2 LEU A 394       1.854  13.528  23.201  1.00 64.80           C 0
+ATOM   3107   CB ALA A 406       1.983  11.081  26.715  1.00 44.59           C 0
+ATOM   3106    O ALA A 406       2.347   7.877  26.172  1.00 50.22           O 0
+ATOM   3140  NH1 ARG A 410       3.773   8.982  21.903  1.00 66.50           N 0
+ATOM   3137   CD ARG A 410       2.378   6.606  21.414  1.00 61.62           C 0
+ATOM   4108   CB LYS A 541      -6.194   8.200  26.935  1.00 76.25           C 0
+ATOM   3006  CD1 LEU A 394      -0.175  14.996  23.126  1.00 65.61           C 0
+ATOM   3132   CA ARG A 410       2.089   4.508  24.594  1.00 51.19           C 0
+ATOM   3135   CB ARG A 410       2.480   5.729  23.754  1.00 56.12           C 0
+ATOM   3167   CD LYS A 413      -1.661   1.471  25.809  1.00 52.47           C 0
+ATOM   3169   NZ LYS A 413      -4.145   1.665  26.090  1.00 54.88           N 0
+ATOM   3129  CG1 VAL A 409      -0.666   4.893  28.093  1.00 39.59           C 0
+ATOM   3131    N ARG A 410       2.114   4.875  26.010  1.00 49.23           N 0
+ATOM   3761  CG2 VAL A 493      -2.048  -0.173  20.865  1.00 61.06           C 0
+ATOM   3134    O ARG A 410       2.527   2.434  23.463  1.00 48.86           O 0
+ATOM   3136   CG ARG A 410       2.767   5.433  22.291  1.00 60.37           C 0
+ATOM   3178   NZ LYS A 414       2.803   2.429  18.230  1.00 57.86           N 0
+ATOM   3177   CE LYS A 414       3.594   1.934  19.388  1.00 56.67           C 0
+ATOM   3176   CD LYS A 414       2.933   0.761  20.082  1.00 54.73           C 0
+ATOM   3165   CB LYS A 413       0.059  -0.158  25.068  1.00 46.34           C 0
+TER
+END

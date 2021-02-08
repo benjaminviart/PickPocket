@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    72:
+HEADER 0  - Pocket Score                      : 3.2051
+HEADER 1  - Drug Score                        : 0.0067
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.7901
+HEADER 4  - Mean alpha-sphere SA              : 0.4943
+HEADER 5  - Mean B-factor                     : 0.2665
+HEADER 6  - Hydrophobicity Score              : -1.1818
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 3.4545
+HEADER 9  - Real volume (approximation)       : 279.3419
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 21.4783
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.8519
+ATOM   4154  NH2 ARG D  57      91.540  55.601 129.167  1.00 23.66           N 0
+ATOM   4132  OD1 ASN D  54      88.993  55.701 127.863  1.00 19.69           O 0
+ATOM    934  OE1 GLU A 123      91.789  47.825 129.605  1.00 35.28           O 0
+ATOM   4104  CG2 THR D  50      86.395  50.965 128.304  1.00 22.36           C 0
+ATOM   4125   OG SER D  53      88.664  53.771 131.405  1.00 19.48           O 0
+ATOM  11199  OXT SER I 162      88.181  48.804 134.539  1.00 26.50           O 0
+ATOM  11197   CB SER I 162      88.445  46.797 132.565  1.00 24.16           C 0
+ATOM   4095    O SER D  49      86.071  52.618 132.467  1.00 20.48           O 0
+ATOM  11198   OG SER I 162      87.099  46.742 132.200  1.00 24.13           O 0
+ATOM    912    O THR A 121      91.453  51.301 133.936  1.00 23.33           O 0
+ATOM   4094    C SER D  49      85.114  51.898 132.069  1.00 20.70           C 0
+ATOM   4153  NH1 ARG D  57      93.592  55.451 130.190  1.00 22.62           N 0
+ATOM    533   CDAPRO A  72      95.442  53.987 126.081  0.50 27.53           C 0
+ATOM    919    O PHE A 122      95.579  51.342 132.273  1.00 23.62           O 0
+ATOM    918    C PHE A 122      94.798  50.925 133.175  1.00 24.07           C 0
+ATOM    541  OD1 ASN A  73      97.085  50.646 127.495  1.00 23.59           O 0
+ATOM    540   CG ASN A  73      97.244  50.275 128.661  1.00 24.30           C 0
+ATOM    539   CB ASN A  73      97.583  51.242 129.798  1.00 24.78           C 0
+ATOM    933   CD GLU A 123      93.006  47.477 129.745  1.00 31.62           C 0
+ATOM    935  OE2 GLU A 123      93.795  47.124 128.795  1.00 32.08           O 0
+ATOM    931   CB GLU A 123      94.731  48.331 131.390  1.00 25.78           C 0
+TER
+END

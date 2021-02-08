@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   197:
+HEADER 0  - Pocket Score                      : 2.9791
+HEADER 1  - Drug Score                        : 0.0060
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.0183
+HEADER 4  - Mean alpha-sphere SA              : 0.5958
+HEADER 5  - Mean B-factor                     : 0.3519
+HEADER 6  - Hydrophobicity Score              : -6.3636
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 2.9091
+HEADER 9  - Real volume (approximation)       : 397.8374
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 25.5625
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  61024  NH2 ARG x  78     106.961 -42.254-143.157  1.00 37.51           N 0
+ATOM  61000    N SER x  76     102.665 -40.291-138.283  1.00 22.53           N 0
+ATOM  61172  OD2 ASP x  96     108.093 -45.307-141.461  1.00 33.38           O 0
+ATOM  61004   CB SER x  76     104.365 -38.466-138.229  1.00 23.39           C 0
+ATOM  61003    O SER x  76     103.599 -39.371-141.002  1.00 20.99           O 0
+ATOM  61022   CZ ARG x  78     107.372 -41.116-143.664  1.00 41.06           C 0
+ATOM  61023  NH1 ARG x  78     108.634 -40.812-143.686  1.00 44.27           N 0
+ATOM  61019   CG ARG x  78     105.656 -38.235-144.302  1.00 27.78           C 0
+ATOM  61021   NE ARG x  78     106.497 -40.293-144.182  1.00 40.52           N 0
+ATOM  61020   CD ARG x  78     106.771 -39.021-144.731  1.00 29.87           C 0
+ATOM  61009    O LEU x  77     103.322 -36.305-142.358  1.00 22.35           O 0
+ATOM  61143  CD1 ILE x  93     102.251 -45.146-143.181  1.00 24.71           C 0
+ATOM  60544  CG2 THR x  20     100.369 -42.614-141.124  1.00 25.43           C 0
+ATOM  60997   CA GLY x  75     101.217 -41.985-137.338  1.00 21.45           C 0
+ATOM  61205  NH1 ARG x 100     105.188 -49.648-138.446  1.00 44.18           N 0
+ATOM  60520   OG SER x  17     101.730 -48.246-141.239  1.00 26.26           O 0
+ATOM  61169   CB ASP x  96     107.518 -47.428-142.203  1.00 24.89           C 0
+ATOM  60516   CA SER x  17     100.098 -47.562-139.685  1.00 17.82           C 0
+ATOM  60514  CG2 THR x  16      99.503 -45.637-135.444  1.00 17.04           C 0
+ATOM  60543  OG1 THR x  20      99.350 -43.496-139.141  1.00 16.89           O 0
+ATOM  60515    N SER x  17      99.534 -47.875-138.404  1.00 16.78           N 0
+ATOM  60519   CB SER x  17     101.134 -48.585-140.057  1.00 18.69           C 0
+ATOM  60485    O GLU x  13     100.664 -49.989-136.515  1.00 21.22           O 0
+TER
+END

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 3.0377
+HEADER 1  - Drug Score                        : 0.1420
+HEADER 2  - Number of V. Vertices             :    36
+HEADER 3  - Mean alpha-sphere radius          : 3.3959
+HEADER 4  - Mean alpha-sphere SA              : 0.4525
+HEADER 5  - Mean B-factor                     : 0.2472
+HEADER 6  - Hydrophobicity Score              : 58.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.3333
+HEADER 9  - Real volume (approximation)       : 102.8226
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 28.0000
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 0.8056
+ATOM    307   CA ILE A  66     -55.597  90.873   4.858  1.00 47.37           C 0
+ATOM    333   CA GLY A  69     -52.390  86.963   5.381  1.00 44.39           C 0
+ATOM    805   OG SER A 134     -50.103  90.187   6.354  1.00 34.64           O 0
+ATOM    309    O ILE A  66     -54.666  89.463   6.568  1.00 42.89           O 0
+ATOM    301    O LEU A  65     -55.631  88.536   3.320  1.00 50.09           O 0
+ATOM    192  CE1 PHE A  50     -52.963  87.742   1.300  1.00 35.11           C 0
+ATOM    313  CD1 ILE A  66     -54.546  93.219   3.397  1.00 51.80           C 0
+ATOM    784  CG1 VAL A 131     -49.633  93.750   0.742  1.00 36.94           C 0
+ATOM    780   CA VAL A 131     -50.178  94.737   3.012  1.00 36.54           C 0
+ATOM    194   CZ PHE A  50     -51.602  87.961   1.165  1.00 35.41           C 0
+ATOM    804   CB SER A 134     -49.795  91.576   6.235  1.00 35.20           C 0
+ATOM    785  CG2 VAL A 131     -51.934  94.609   1.232  1.00 37.35           C 0
+ATOM    672  CD1 LEU A 115     -51.209  90.804  -2.069  1.00 30.30           C 0
+ATOM    305  CD2 LEU A  65     -55.066  90.856   0.458  1.00 47.05           C 0
+ATOM    673  CD2 LEU A 115     -48.967  90.334  -1.085  1.00 29.28           C 0
+ATOM    782    O VAL A 131     -48.178  93.561   3.643  1.00 34.30           O 0
+ATOM    813  CD2 LEU A 135     -46.426  89.555   1.912  1.00 32.98           C 0
+ATOM    811   CG LEU A 135     -46.380  91.040   2.234  1.00 31.38           C 0
+ATOM    839  OE1 GLN A 138     -48.670  87.963   5.021  1.00 41.03           O 0
+ATOM    312  CG2 ILE A  66     -54.878  92.594   6.577  1.00 50.72           C 0
+TER
+END

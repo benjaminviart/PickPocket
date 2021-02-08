@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 7.0064
+HEADER 1  - Drug Score                        : 0.2586
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.5180
+HEADER 4  - Mean alpha-sphere SA              : 0.5238
+HEADER 5  - Mean B-factor                     : 0.5363
+HEADER 6  - Hydrophobicity Score              : 60.6667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.8333
+HEADER 9  - Real volume (approximation)       : 545.2192
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 0.9333
+ATOM   1645  NE1 TRP B  92     -28.770 -23.129  36.843  1.00 42.41           N 0
+ATOM   1879  CH2 TRP B 120     -31.042 -15.357  31.515  1.00 13.18           C 0
+ATOM   1891   CG GLU B 122     -29.034 -20.820  28.261  1.00 16.62           C 0
+ATOM   1894  OE2 GLU B 122     -31.197 -21.399  27.434  1.00 22.05           O 0
+ATOM   1629   CE MET B  90     -28.333 -14.574  38.797  1.00 41.08           C 0
+ATOM   1643  CD1 TRP B  92     -28.415 -22.144  37.734  1.00 43.53           C 0
+ATOM   1628   SD MET B  90     -27.038 -15.062  37.661  1.00 44.41           S 0
+ATOM   1648  CZ2 TRP B  92     -27.508 -24.489  35.157  1.00 42.36           C 0
+ATOM   1642   CG TRP B  92     -27.075 -21.892  37.646  1.00 42.73           C 0
+ATOM   1641   CB TRP B  92     -26.292 -20.896  38.441  1.00 37.76           C 0
+ATOM   1916  CD1 LEU B 125     -23.941 -18.627  33.828  1.00 21.69           C 0
+ATOM   1696  CG2 VAL B  99     -25.689 -14.944  33.709  1.00 15.18           C 0
+ATOM   1917  CD2 LEU B 125     -24.661 -20.697  32.601  1.00 25.96           C 0
+ATOM   1646  CE2 TRP B  92     -27.652 -23.530  36.157  1.00 43.81           C 0
+ATOM   1878  CZ3 TRP B 120     -29.872 -15.651  30.809  1.00 12.80           C 0
+ATOM   1644  CD2 TRP B  92     -26.567 -22.771  36.637  1.00 42.30           C 0
+ATOM   1914   CB LEU B 125     -24.287 -18.552  31.324  1.00 13.19           C 0
+ATOM   1887   CA GLU B 122     -27.202 -19.046  27.838  1.00 10.72           C 0
+ATOM   1890   CB GLU B 122     -27.689 -20.484  27.616  1.00 12.61           C 0
+TER
+END

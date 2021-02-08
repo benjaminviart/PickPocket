@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    72:
+HEADER 0  - Pocket Score                      : 4.9576
+HEADER 1  - Drug Score                        : 0.0270
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.6020
+HEADER 4  - Mean alpha-sphere SA              : 0.3917
+HEADER 5  - Mean B-factor                     : 0.3105
+HEADER 6  - Hydrophobicity Score              : 35.2000
+HEADER 7  - Polarity Score                    :    10
+HEADER 8  - Volume Score                      : 5.1333
+HEADER 9  - Real volume (approximation)       : 747.4538
+HEADER 10 - Charge Score                      :     5
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2667
+ATOM  94645  POL STP    72      88.660  79.335 100.868    0.00     4.59
+ATOM  94646  POL STP    72      88.425  79.577 101.514    0.00     4.71
+ATOM  94646  POL STP    72      87.997  79.850 102.032    0.00     4.79
+ATOM  94653  POL STP    72      90.331  82.788  99.959    0.00     3.52
+ATOM  94653  POL STP    72      90.384  82.668  99.881    0.00     3.54
+ATOM  2690d  POL STP    72      90.538  82.297  99.301    0.00     3.55
+ATOM  2690d  POL STP    72      90.378  80.516  98.749    0.00     3.73
+ATOM  26911  POL STP    72      90.257  81.019  98.922    0.00     3.69
+ATOM  2690d  POL STP    72      90.366  82.644  98.798    0.00     3.25
+ATOM  26911  POL STP    72      90.136  81.320  98.556    0.00     3.41
+ATOM  1d4b2  POL STP    72      89.380  78.089  99.673    0.00     4.59
+ATOM  1d4b2 APOL STP    72      90.036  76.655 100.487    0.00     4.70
+ATOM  1d4b2 APOL STP    72      89.880  76.654 100.911    0.00     4.90
+ATOM  1d4b2 APOL STP    72      89.802  76.432 100.991    0.00     4.84
+ATOM  1e8f3  POL STP    72      89.053  77.763 103.506    0.00     5.39
+ATOM  3dfe1  POL STP    72      89.585  77.547 104.010    0.00     5.37
+ATOM  77548  POL STP    72      87.417  81.744 104.634    0.00     4.97
+ATOM  1d4b2  POL STP    72      87.470  80.258 104.219    0.00     5.15
+ATOM  90179  POL STP    72      87.488  81.965 104.376    0.00     4.81
+ATOM  90178  POL STP    72      87.272  81.935 104.658    0.00     4.87
+ATOM  1d4b2  POL STP    72      87.575  79.528 103.695    0.00     5.28
+ATOM  1d4b2 APOL STP    72      86.152  79.304 103.669    0.00     4.61
+ATOM  1e8f3 APOL STP    72      88.394  78.396 103.889    0.00     5.37
+ATOM  3dfe3  POL STP    72      88.910  78.243 104.535    0.00     5.30
+ATOM  1e8f3 APOL STP    72      89.368  75.092 102.281    0.00     5.07
+ATOM  1e8f3 APOL STP    72      89.886  76.414 102.781    0.00     5.54
+ATOM  1e8f3 APOL STP    72      90.372  76.302 103.371    0.00     5.55
+ATOM  3dfe1  POL STP    72      90.388  76.571 103.798    0.00     5.50
+ATOM  26915  POL STP    72      86.882  79.877 100.690    0.00     3.79
+ATOM  26915  POL STP    72      86.956  79.753 100.296    0.00     3.68
+TER
+END

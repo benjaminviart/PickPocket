@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    18:
+HEADER 0  - Pocket Score                      : 1.3526
+HEADER 1  - Drug Score                        : 0.0256
+HEADER 2  - Number of V. Vertices             :    37
+HEADER 3  - Mean alpha-sphere radius          : 4.2068
+HEADER 4  - Mean alpha-sphere SA              : 0.5670
+HEADER 5  - Mean B-factor                     : 0.6330
+HEADER 6  - Hydrophobicity Score              : 22.7143
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.7143
+HEADER 9  - Real volume (approximation)       : 867.5383
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 19.0000
+HEADER 12 - Number of apolar alpha sphere     :    20
+HEADER 13 - Proportion of apolar alpha sphere : 0.5405
+ATOM   3270   CDAARG F  69       4.923 -12.658  -3.878  0.57 46.85           C 0
+ATOM   3268   CGAARG F  69       5.427 -11.616  -2.894  0.57 45.23           C 0
+ATOM   2857  OE2 GLU F  18       0.807  -5.052  -1.353  1.00 46.83           O 0
+ATOM   2856  OE1 GLU F  18      -0.065  -6.014   0.420  1.00 43.77           O 0
+ATOM   3272   NEAARG F  69       4.839 -12.119  -5.232  0.57 48.11           N 0
+ATOM   2855   CD GLU F  18       0.897  -5.487  -0.181  1.00 42.27           C 0
+ATOM   3245  NH1 ARG F  66       2.737 -10.928   3.807  1.00 38.52           N 0
+ATOM   2819  OG1 THR F  14       7.248  -4.344  -2.439  1.00 35.24           O 0
+ATOM   3282    C LEU F  70       8.822  -7.740  -6.173  1.00 59.22           C 0
+ATOM   3266   CBAARG F  69       6.584 -10.834  -3.491  0.57 49.07           C 0
+ATOM   2820  CG2 THR F  14       6.326  -5.495  -0.519  1.00 29.18           C 0
+ATOM   3278  NH2AARG F  69       4.397 -12.242  -7.484  0.57 50.80           N 0
+ATOM   3264    C ARG F  69       8.508  -9.339  -2.995  1.00 53.13           C 0
+ATOM   3280    N LEU F  70       8.787  -9.336  -4.295  1.00 53.24           N 0
+ATOM   3265    O ARG F  69       8.878  -8.454  -2.222  1.00 52.91           O 0
+ATOM   3261    N ARG F  69       7.127 -10.278  -1.174  1.00 45.78           N 0
+ATOM   3246  NH2 ARG F  66       1.286  -9.149   3.943  1.00 37.61           N 0
+ATOM   2854   CG GLU F  18       2.230  -5.372   0.542  1.00 37.97           C 0
+ATOM   3255   CA VAL F  68       6.871 -10.645   1.209  1.00 38.85           C 0
+ATOM   3259  CG1 VAL F  68       6.328  -8.821   2.859  1.00 36.84           C 0
+ATOM   3258   CB VAL F  68       6.930  -9.127   1.498  1.00 39.39           C 0
+ATOM   2853   CB GLU F  18       2.069  -5.110   2.039  1.00 33.30           C 0
+ATOM   2875  CG2 VAL F  20       3.833  -6.683   4.948  1.00 26.84           C 0
+TER
+END

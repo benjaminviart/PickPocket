@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    65:
+HEADER 0  - Pocket Score                      : 1.0882
+HEADER 1  - Drug Score                        : 0.0074
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.7180
+HEADER 4  - Mean alpha-sphere SA              : 0.4382
+HEADER 5  - Mean B-factor                     : 0.3541
+HEADER 6  - Hydrophobicity Score              : 7.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.2857
+HEADER 9  - Real volume (approximation)       : 249.4370
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 31.0000
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  19938   CA MET R  66      48.849 -21.838  47.653  1.00 10.61           C 0
+ATOM  19434  CD1 PHE Q 153      53.453 -23.700  43.405  1.00 59.37           C 0
+ATOM  19931    O LYS R  65      49.243 -24.497  48.164  1.00 10.96           O 0
+ATOM  19937    N MET R  66      48.528 -22.931  46.736  1.00 10.00           N 0
+ATOM  19930    C LYS R  65      48.696 -24.194  47.099  1.00 10.13           C 0
+ATOM  19942   CG MET R  66      49.634 -20.361  45.895  1.00 10.00           C 0
+ATOM  19955   CG GLU R  68      47.650 -27.506  49.477  1.00 23.39           C 0
+ATOM  19431    O PHE Q 153      54.562 -27.998  45.693  1.00 66.73           O 0
+ATOM  19446  OE1 GLU Q 154      55.324 -28.269  48.844  0.00 74.59           O 0
+ATOM  19958  OE2 GLU R  68      47.553 -29.149  47.781  1.00 27.52           O 0
+ATOM  19965  CG2 THR R  69      51.994 -23.462  50.244  1.00 14.52           C 0
+ATOM  19447  OE2 GLU Q 154      56.842 -26.787  48.282  0.00 74.59           O 0
+ATOM  19425    O SER Q 152      56.818 -24.126  45.110  1.00 45.17           O 0
+ATOM  19429   CA PHE Q 153      54.883 -26.012  44.408  1.00 59.72           C 0
+ATOM  19432   CB PHE Q 153      53.530 -26.199  43.665  1.00 59.77           C 0
+ATOM  19959    N THR R  69      49.526 -24.450  51.520  1.00 14.58           N 0
+ATOM  19934   CD LYS R  65      50.224 -27.487  43.881  1.00 13.61           C 0
+ATOM  19932   CB LYS R  65      49.132 -25.512  45.000  1.00 10.00           C 0
+ATOM  19933   CG LYS R  65      48.944 -26.891  44.415  1.00 11.82           C 0
+ATOM  19936   NZ LYS R  65      51.166 -29.675  43.151  1.00 14.72           N 0
+ATOM  19952    C GLU R  68      48.711 -25.417  51.926  1.00 15.65           C 0
+ATOM  19960   CA THR R  69      50.751 -24.173  52.273  1.00 14.30           C 0
+ATOM  19953    O GLU R  68      49.009 -26.050  52.931  1.00 16.03           O 0
+TER
+END

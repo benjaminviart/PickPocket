@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   450:
+HEADER 0  - Pocket Score                      : -3.2266
+HEADER 1  - Drug Score                        : 0.0066
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.0178
+HEADER 4  - Mean alpha-sphere SA              : 0.6282
+HEADER 5  - Mean B-factor                     : 0.3500
+HEADER 6  - Hydrophobicity Score              : 13.7778
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.2222
+HEADER 9  - Real volume (approximation)       : 500.5116
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3030
+ATOM  80631  POL STP   450     -33.497  -8.248 -40.427    0.00     3.15
+ATOM  1f4b1  POL STP   450     -33.978  -8.585 -39.681    0.00     3.67
+ATOM  1f4b2  POL STP   450     -34.261  -8.874 -40.313    0.00     3.27
+ATOM  35242  POL STP   450     -34.372  -9.003 -40.404    0.00     3.23
+ATOM  99074  POL STP   450     -34.272  -9.291 -37.429    0.00     5.43
+ATOM  3523f APOL STP   450     -34.468  -9.416 -38.199    0.00     4.82
+ATOM  99113 APOL STP   450     -35.278  -9.026 -37.416    0.00     4.73
+ATOM  1f4b1  POL STP   450     -34.280  -9.129 -37.753    0.00     5.19
+ATOM  99113  POL STP   450     -35.879  -8.756 -37.632    0.00     4.18
+ATOM  3523f  POL STP   450     -34.374  -9.215 -38.076    0.00     4.92
+ATOM  99074  POL STP   450     -33.899  -9.192 -36.883    0.00     5.83
+ATOM  1f4b1  POL STP   450     -34.279  -9.127 -37.753    0.00     5.18
+ATOM  99076  POL STP   450     -32.897  -9.306 -36.933    0.00     5.54
+ATOM  99076 APOL STP   450     -32.079  -9.114 -36.894    0.00     4.89
+ATOM  99076  POL STP   450     -33.012  -9.202 -36.826    0.00     5.68
+ATOM  99076 APOL STP   450     -32.350  -8.609 -36.420    0.00     5.37
+ATOM  99076  POL STP   450     -31.734  -9.840 -38.429    0.00     3.95
+ATOM  18ea4  POL STP   450     -34.250 -13.020 -40.561    0.00     3.79
+ATOM  18ea4  POL STP   450     -35.164 -12.261 -39.901    0.00     4.28
+ATOM  71113  POL STP   450     -31.680 -13.221 -40.475    0.00     3.41
+ATOM  81432  POL STP   450     -32.511 -13.194 -41.288    0.00     3.01
+ATOM  18ea4  POL STP   450     -33.748 -13.086 -41.094    0.00     3.36
+ATOM  35241 APOL STP   450     -35.181 -10.813 -40.590    0.00     3.50
+ATOM  2a759  POL STP   450     -31.589  -7.409 -42.829    0.00     3.08
+ATOM  2a759 APOL STP   450     -31.589  -7.215 -42.784    0.00     3.10
+ATOM  81093 APOL STP   450     -31.493  -7.449 -40.858    0.00     3.35
+ATOM  1f21c APOL STP   450     -31.414  -7.343 -41.202    0.00     3.33
+ATOM  1f21c APOL STP   450     -31.415  -7.226 -41.086    0.00     3.26
+ATOM  99076  POL STP   450     -31.513  -7.547 -40.631    0.00     3.37
+ATOM  2a74d  POL STP   450     -30.908  -7.579 -41.605    0.00     3.16
+ATOM  1f21c  POL STP   450     -31.814  -7.310 -41.969    0.00     3.12
+ATOM  2a758 APOL STP   450     -31.142  -7.340 -41.676    0.00     3.28
+ATOM  2a759  POL STP   450     -31.567  -7.303 -42.574    0.00     3.16
+TER
+END

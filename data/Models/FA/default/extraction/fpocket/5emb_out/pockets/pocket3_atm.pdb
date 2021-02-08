@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 18.0300
+HEADER 1  - Drug Score                        : 0.0243
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.7652
+HEADER 4  - Mean alpha-sphere SA              : 0.5007
+HEADER 5  - Mean B-factor                     : 0.1224
+HEADER 6  - Hydrophobicity Score              : 20.8750
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 729.0853
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 14.0000
+HEADER 12 - Number of apolar alpha sphere     :    15
+HEADER 13 - Proportion of apolar alpha sphere : 0.4688
+ATOM    644   CG ARG A 120       4.047 -10.381 -17.980  1.00  6.42           C 0
+ATOM    645   CD ARG A 120       5.297 -10.079 -18.794  1.00  8.74           C 0
+ATOM     77   NZ LYS A  46      -2.215 -10.725 -20.541  1.00 47.20           N 0
+ATOM    646   NE ARG A 120       5.369  -8.659 -19.130  1.00  9.87           N 0
+ATOM    794    O VAL B 592       3.251  -3.177 -18.693  1.00  6.15           O 0
+ATOM    804    OAMET B 593      -0.860  -4.858 -17.645  0.62  8.80           O 0
+ATOM    643   CB ARG A 120       3.921 -11.889 -17.725  1.00  5.58           C 0
+ATOM    642    O ARG A 120       2.234 -14.276 -17.856  1.00  6.38           O 0
+ATOM    812   CEAMET B 593       3.823  -6.734 -15.998  0.62  8.79           C 0
+ATOM    110  CD2 TYR A  51      -2.007  -7.598 -15.797  1.00  5.72           C 0
+ATOM    637  CG2 ILE A 119       1.652  -8.620 -13.924  1.00  4.59           C 0
+ATOM    806   CBAMET B 593       1.340  -4.550 -15.526  0.62  6.50           C 0
+ATOM    800   CAAMET B 593       1.218  -3.927 -16.936  0.62  6.14           C 0
+ATOM    112  CE2 TYR A  51      -1.950  -8.979 -15.980  1.00  5.77           C 0
+ATOM    634    O ILE A 119       0.926 -11.493 -14.778  1.00  4.17           O 0
+ATOM     76   CE LYS A  46      -2.849 -10.139 -19.313  1.00 31.75           C 0
+ATOM    649  NH2 ARG A 120       6.410  -6.761 -19.802  1.00 12.62           N 0
+ATOM    640   CA ARG A 120       2.782 -12.228 -16.768  1.00  4.87           C 0
+ATOM    658    O GLY A 122      -1.292 -14.268 -18.023  1.00  5.48           O 0
+ATOM    114   OH TYR A  51      -3.069 -11.110 -15.832  1.00  5.76           O 0
+ATOM    660   CAAGLU A 123      -3.056 -15.376 -19.676  0.64  5.42           C 0
+TER
+END

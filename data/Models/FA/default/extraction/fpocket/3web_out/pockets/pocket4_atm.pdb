@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 1.8961
+HEADER 1  - Drug Score                        : 0.0315
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8619
+HEADER 4  - Mean alpha-sphere SA              : 0.6116
+HEADER 5  - Mean B-factor                     : 0.2777
+HEADER 6  - Hydrophobicity Score              : 37.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 474.0450
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.0625
+ATOM    831    C LEU A 108      20.485   8.599  24.510  1.00 20.70           C 0
+ATOM    842   CG GLU A 109      23.559  10.861  22.640  1.00 25.45           C 0
+ATOM   1011   CB PRO A 128      21.894  13.438  26.280  1.00 13.11           C 0
+ATOM    206   NZ LYS A  27      23.900  11.044  29.699  1.00 22.59           N 0
+ATOM    832    O LEU A 108      19.728   9.491  24.911  1.00 20.82           O 0
+ATOM    837    N GLU A 109      21.296   8.747  23.470  1.00 19.86           N 0
+ATOM    830   CA LEU A 108      20.536   7.247  25.213  1.00 20.83           C 0
+ATOM   1017    O ALA A 129      18.723   9.591  28.031  1.00 17.01           O 0
+ATOM    829    N LEU A 108      20.107   7.357  26.604  1.00 21.02           N 0
+ATOM    204   CD LYS A  27      21.582  11.219  30.632  1.00 19.59           C 0
+ATOM   1014    N ALA A 129      18.907  11.765  26.291  1.00 15.03           N 0
+ATOM    827   CB SER A 107      21.157   7.255  29.784  1.00 22.81           C 0
+ATOM    825    C SER A 107      20.470   6.475  27.532  1.00 22.18           C 0
+ATOM    826    O SER A 107      21.160   5.479  27.289  1.00 21.68           O 0
+ATOM    441    O VAL A  58      22.602   4.905  21.628  1.00 39.76           O 0
+ATOM    844  OE1 GLU A 109      25.362  10.311  21.182  1.00 29.11           O 0
+ATOM    845  OE2 GLU A 109      25.080  12.429  21.686  1.00 28.80           O 0
+ATOM    843   CD GLU A 109      24.753  11.226  21.780  1.00 27.72           C 0
+ATOM    442   CB VAL A  58      23.132   7.173  19.595  1.00 36.04           C 0
+ATOM    841   CB GLU A 109      22.471  10.176  21.832  1.00 22.01           C 0
+ATOM    443  CG1 VAL A  58      24.602   6.808  19.439  1.00 36.12           C 0
+TER
+END

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   240:
+HEADER 0  - Pocket Score                      : -0.2108
+HEADER 1  - Drug Score                        : 0.0046
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.7596
+HEADER 4  - Mean alpha-sphere SA              : 0.5545
+HEADER 5  - Mean B-factor                     : 0.4991
+HEADER 6  - Hydrophobicity Score              : 0.7778
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 543.6406
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 3.0000
+HEADER 12 - Number of apolar alpha sphere     :     4
+HEADER 13 - Proportion of apolar alpha sphere : 0.1333
+ATOM  18547  OE2 GLU C 223      26.552  72.093 -12.774  1.00111.07           O 0
+ATOM  18369    O LYS C 202      29.202  68.779 -15.078  1.00 94.08           O 0
+ATOM  18935  NH1 ARG C 270      28.028  65.961  -8.163  1.00103.05           N 0
+ATOM  18397  NH2 ARG C 205      24.253  69.284 -12.468  1.00 93.86           N 0
+ATOM  18546  OE1 GLU C 223      27.259  71.035 -14.570  1.00110.89           O 0
+ATOM  18936  NH2 ARG C 270      28.957  66.832  -6.256  1.00103.48           N 0
+ATOM  18373   CE LYS C 202      32.717  69.734 -12.175  1.00100.21           C 0
+ATOM  18933   NE ARG C 270      30.306  66.265  -8.032  1.00 99.21           N 0
+ATOM  18934   CZ ARG C 270      29.097  66.350  -7.484  1.00101.74           C 0
+ATOM  18925  NH2 ARG C 269      32.598  67.699  -6.209  1.00 99.94           N 0
+ATOM  18931   CG ARG C 270      31.777  66.458 -10.056  1.00 91.43           C 0
+ATOM  18932   CD ARG C 270      30.576  65.755  -9.380  1.00 96.66           C 0
+ATOM  18371   CG LYS C 202      31.750  71.095 -14.117  1.00 98.00           C 0
+ATOM  18372   CD LYS C 202      32.701  71.082 -12.905  1.00 98.98           C 0
+ATOM  19847    O ASP C 386      32.136  69.631  -3.415  1.00108.37           O 0
+ATOM  19855    O PHE C 387      35.415  71.271  -4.201  1.00101.07           O 0
+ATOM  19851  OD2 ASP C 386      29.209  68.931  -3.436  1.00112.80           O 0
+ATOM  19868   CG MET C 388      32.578  74.822  -2.375  1.00121.63           C 0
+ATOM  19877   CD PRO C 389      36.466  74.198  -5.164  1.00104.26           C 0
+ATOM  19869   SD MET C 388      32.254  76.516  -2.933  1.00128.21           S 0
+TER
+END

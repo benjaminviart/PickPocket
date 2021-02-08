@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    34:
+HEADER 0  - Pocket Score                      : -0.1238
+HEADER 1  - Drug Score                        : 0.3666
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.2941
+HEADER 4  - Mean alpha-sphere SA              : 0.3751
+HEADER 5  - Mean B-factor                     : 0.1059
+HEADER 6  - Hydrophobicity Score              : 82.1111
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 5.3333
+HEADER 9  - Real volume (approximation)       : 128.3544
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 24.3077
+HEADER 12 - Number of apolar alpha sphere     :    26
+HEADER 13 - Proportion of apolar alpha sphere : 0.7879
+ATOM   3270  CG1 VAL A 413       0.613  33.527  28.757  1.00 18.60           C 0
+ATOM    969   CA ALA A 123       3.231  32.871  33.858  1.00 21.74           C 0
+ATOM   1184  CD1 LEU A 148       3.099  35.828  31.396  1.00 14.03           C 0
+ATOM    996  CD2 LEU A 126      -1.421  35.611  31.821  1.00 21.44           C 0
+ATOM    971    O ALA A 123       1.031  32.960  35.005  1.00 22.77           O 0
+ATOM    972   CB ALA A 123       3.484  31.602  33.032  1.00 20.58           C 0
+ATOM   3266   CA VAL A 413       1.247  31.094  28.176  1.00 19.76           C 0
+ATOM   3288   CB MET A 416      -0.954  28.201  31.498  1.00 19.56           C 0
+ATOM   3268    O VAL A 413      -1.228  30.798  28.455  1.00 18.22           O 0
+ATOM   3290   SD MET A 416       1.648  28.104  32.686  1.00 24.43           S 0
+ATOM   1003  CG2 VAL A 127      -2.343  31.103  34.813  1.00 19.34           C 0
+ATOM   3297   CG MET A 417      -3.990  32.626  29.294  1.00 18.58           C 0
+ATOM   3292    N MET A 417      -3.568  29.415  29.848  1.00 19.79           N 0
+ATOM   3293   CA MET A 417      -4.848  30.175  29.787  1.00 20.55           C 0
+ATOM   3287    O MET A 416      -4.250  28.136  31.567  1.00 18.12           O 0
+ATOM   3336  CE2 PHE A 421      -6.953  31.649  34.355  1.00 25.20           C 0
+ATOM   1032  CE3 TRP A 130      -6.487  35.375  32.423  1.00 18.07           C 0
+ATOM   3334  CD2 PHE A 421      -7.788  31.215  33.344  1.00 25.83           C 0
+ATOM   1034  CZ3 TRP A 130      -6.113  35.419  31.066  1.00 18.45           C 0
+ATOM    998   CA VAL A 127      -3.046  33.030  36.378  1.00 21.23           C 0
+ATOM    997    N VAL A 127      -1.883  33.882  35.994  1.00 21.99           N 0
+ATOM    992    O LEU A 126      -3.010  35.792  36.160  1.00 22.36           O 0
+ATOM    994   CG LEU A 126      -1.576  36.328  33.165  1.00 21.70           C 0
+TER
+END

@@ -1,0 +1,48 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    32:
+HEADER 0  - Pocket Score                      : 3.8189
+HEADER 1  - Drug Score                        : 0.0082
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.7245
+HEADER 4  - Mean alpha-sphere SA              : 0.4508
+HEADER 5  - Mean B-factor                     : 0.0599
+HEADER 6  - Hydrophobicity Score              : 11.8571
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 3.6429
+HEADER 9  - Real volume (approximation)       : 280.6563
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 21.0000
+HEADER 12 - Number of apolar alpha sphere     :    22
+HEADER 13 - Proportion of apolar alpha sphere : 0.6667
+ATOM    173  OP1 A   A  10      67.761 104.573 152.604  1.00 44.01           O 0
+ATOM  36403   CB ARG E 126      68.725 106.036 148.415  1.00 29.96           C 0
+ATOM  36400   CA ARG E 126      68.712 104.759 147.585  1.00 29.96           C 0
+ATOM  36402    O ARG E 126      67.208 103.898 149.230  1.00 29.96           O 0
+ATOM  36428   CB ILE E 131      71.810 100.522 148.867  1.00 42.10           C 0
+ATOM    153  C5' G   A   9      71.954 107.199 152.275  1.00 33.94           C 0
+ATOM    152  O5' G   A   9      72.584 108.293 151.620  1.00 33.94           O 0
+ATOM  36384   CB GLU E 122      75.096 107.081 148.162  1.00 53.43           C 0
+ATOM  36288   CA GLY E 103      74.092 104.782 155.142  1.00 32.07           C 0
+ATOM  36300   CB VAL E 105      71.733  99.703 153.355  1.00 42.86           C 0
+ATOM  36296    N VAL E 105      72.072 101.035 155.379  1.00 42.86           N 0
+ATOM  36305   CB PRO E 106      76.593 101.056 152.787  1.00 38.03           C 0
+ATOM  36223   CB ILE E  89      77.440 101.425 147.203  1.00 34.07           C 0
+ATOM    150  OP1 G   A   9      74.894 107.646 152.327  1.00 33.94           O 0
+ATOM  36287    N GLY E 103      75.516 105.040 154.961  1.00 32.07           N 0
+ATOM  36301    N PRO E 106      74.598 100.192 153.660  1.00 38.03           N 0
+ATOM  36378    O LYS E 121      78.348 105.335 147.193  1.00 45.58           O 0
+ATOM  36393    O GLY E 124      70.442 105.189 144.859  1.00 41.02           O 0
+ATOM  36213   CB SER E  87      71.920 101.588 144.212  1.00 38.00           C 0
+ATOM  36397    O SER E 125      68.649 102.965 145.614  1.00 45.80           O 0
+ATOM  36219    N ILE E  89      76.744 102.594 145.091  1.00 34.07           N 0
+ATOM  36220   CA ILE E  89      77.640 102.641 146.246  1.00 34.07           C 0
+ATOM  36381   CA GLU E 122      76.014 106.935 146.980  1.00 53.43           C 0
+ATOM  36291    N ALA E 104      72.416 103.626 156.440  1.00 56.02           N 0
+ATOM  36289    C GLY E 103      73.656 103.596 155.981  1.00 32.07           C 0
+ATOM    157  O3' G   A   9      68.992 106.536 153.490  1.00 33.94           O 0
+ATOM  36295   CB ALA E 104      70.378 102.626 157.345  1.00 56.02           C 0
+TER
+END

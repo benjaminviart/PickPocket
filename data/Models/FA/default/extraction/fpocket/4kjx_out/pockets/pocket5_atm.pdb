@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 11.7866
+HEADER 1  - Drug Score                        : 0.3508
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.5295
+HEADER 4  - Mean alpha-sphere SA              : 0.4508
+HEADER 5  - Mean B-factor                     : 0.3059
+HEADER 6  - Hydrophobicity Score              : 45.6667
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.3333
+HEADER 9  - Real volume (approximation)       : 215.8673
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 23.0000
+HEADER 12 - Number of apolar alpha sphere     :    24
+HEADER 13 - Proportion of apolar alpha sphere : 0.7273
+ATOM   2982   CA VAL B 120     -25.729 -29.548 -27.860  1.00 48.05           C 0
+ATOM   3005   CB THR B 123     -22.717 -32.564 -30.884  1.00 54.84           C 0
+ATOM   2986  CG1 VAL B 120     -24.510 -29.622 -25.584  1.00 42.07           C 0
+ATOM   2985   CB VAL B 120     -25.498 -30.334 -26.523  1.00 51.03           C 0
+ATOM   2984    O VAL B 120     -25.927 -31.481 -29.232  1.00 41.85           O 0
+ATOM   3006  OG1 THR B 123     -21.919 -31.508 -31.391  1.00 54.44           O 0
+ATOM   2978    O SER B 119     -24.738 -27.000 -28.276  1.00 53.69           O 0
+ATOM   2510    N GLY B  59     -21.521 -27.421 -24.281  1.00 52.43           N 0
+ATOM   2508   CB SER B  58     -21.108 -30.643 -23.972  1.00 57.66           C 0
+ATOM   2509   OG SER B  58     -19.860 -31.323 -24.058  1.00 63.06           O 0
+ATOM   3007  CG2 THR B 123     -21.770 -33.738 -30.519  1.00 45.72           C 0
+ATOM   2469   OH TYR B  53     -18.995 -34.892 -27.837  1.00 58.85           O 0
+ATOM   3015  CD2 LEU B 124     -24.156 -35.374 -27.367  1.00 49.39           C 0
+ATOM   3013   CG LEU B 124     -25.521 -34.689 -27.468  1.00 48.29           C 0
+ATOM   3014  CD1 LEU B 124     -26.154 -34.653 -26.065  1.00 42.59           C 0
+ATOM   2538  CG1 VAL B  63     -25.688 -32.132 -21.781  1.00 46.81           C 0
+ATOM   2482  CD1 PHE B  55     -23.261 -34.739 -22.772  1.00 51.45           C 0
+ATOM   2480   CB PHE B  55     -20.951 -34.974 -23.737  1.00 47.59           C 0
+ATOM   2481   CG PHE B  55     -22.341 -35.489 -23.473  1.00 48.33           C 0
+ATOM   2467  CE2 TYR B  53     -20.733 -36.531 -27.641  1.00 52.07           C 0
+TER
+END

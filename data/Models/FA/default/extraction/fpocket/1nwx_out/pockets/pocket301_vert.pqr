@@ -1,0 +1,59 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   302:
+HEADER 0  - Pocket Score                      : -0.1339
+HEADER 1  - Drug Score                        : 0.0055
+HEADER 2  - Number of V. Vertices             :    37
+HEADER 3  - Mean alpha-sphere radius          : 3.7903
+HEADER 4  - Mean alpha-sphere SA              : 0.4500
+HEADER 5  - Mean B-factor                     : 0.7701
+HEADER 6  - Hydrophobicity Score              : 4.3333
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.3333
+HEADER 9  - Real volume (approximation)       : 451.8080
+HEADER 10 - Charge Score                      :     4
+HEADER 11 - Local hydrophobic density Score   : 7.5556
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2432
+ATOM  77661  POL STP   302     117.609  59.897  81.417    0.00     4.79
+ATOM  77661  POL STP   302     118.420  60.246  82.416    0.00     4.32
+ATOM  77661  POL STP   302     117.123  59.741  79.900    0.00     5.32
+ATOM  70752  POL STP   302     118.730  65.317  86.389    0.00     3.29
+ATOM  71324  POL STP   302     118.184  64.967  85.214    0.00     3.83
+ATOM  71321  POL STP   302     117.940  62.891  85.835    0.00     3.15
+ATOM  71321  POL STP   302     117.919  63.220  85.320    0.00     3.41
+ATOM  71324  POL STP   302     118.006  63.278  84.838    0.00     3.60
+ATOM  71321  POL STP   302     117.886  64.515  85.938    0.00     3.56
+ATOM  71324  POL STP   302     118.043  64.833  85.144    0.00     3.89
+ATOM  71324 APOL STP   302     117.988  65.024  84.808    0.00     4.00
+ATOM  77661  POL STP   302     117.831  65.249  84.502    0.00     4.06
+ATOM  77661 APOL STP   302     117.955  65.060  84.607    0.00     4.04
+ATOM  71324  POL STP   302     118.702  61.700  84.761    0.00     3.32
+ATOM  77660  POL STP   302     117.907  63.259  84.223    0.00     3.73
+ATOM  77661  POL STP   302     118.652  61.284  83.410    0.00     3.81
+ATOM  1af2c  POL STP   302     119.207  60.627  82.659    0.00     3.85
+ATOM  1af2c  POL STP   302     119.491  60.938  82.920    0.00     3.65
+ATOM  77662  POL STP   302     117.814  65.265  84.485    0.00     4.06
+ATOM  1d58c  POL STP   302     116.791  65.413  83.354    0.00     3.98
+ATOM  77663  POL STP   302     120.447  61.259  82.504    0.00     3.21
+ATOM  77663  POL STP   302     120.407  61.237  82.538    0.00     3.24
+ATOM  1af2c  POL STP   302     120.109  61.081  82.649    0.00     3.39
+ATOM  1af2c APOL STP   302     120.494  61.154  82.643    0.00     3.19
+ATOM  1d58c  POL STP   302     116.731  65.412  83.348    0.00     3.95
+ATOM  1d58c  POL STP   302     116.802  65.427  83.358    0.00     3.98
+ATOM  94839  POL STP   302     117.870  67.138  83.534    0.00     3.83
+ATOM  3cc02 APOL STP   302     117.894  67.064  83.465    0.00     3.85
+ATOM  3cc02 APOL STP   302     117.870  66.707  83.394    0.00     3.95
+ATOM  1d587  POL STP   302     117.845  66.765  82.961    0.00     3.78
+ATOM  3cc02 APOL STP   302     117.913  66.780  83.288    0.00     3.92
+ATOM  1d58a  POL STP   302     117.821  66.986  82.846    0.00     3.63
+ATOM  3cc02 APOL STP   302     117.922  66.959  83.333    0.00     3.87
+ATOM  94839  POL STP   302     117.684  66.061  84.269    0.00     3.90
+ATOM  94839  POL STP   302     117.647  66.034  83.965    0.00     4.05
+ATOM  1b92c APOL STP   302     114.723  65.352  83.240    0.00     3.35
+ATOM  1d58c APOL STP   302     114.427  65.122  82.919    0.00     3.48
+TER
+END

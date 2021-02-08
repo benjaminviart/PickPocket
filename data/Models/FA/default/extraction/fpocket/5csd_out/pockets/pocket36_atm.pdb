@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    37:
+HEADER 0  - Pocket Score                      : -2.9875
+HEADER 1  - Drug Score                        : 0.0118
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.6174
+HEADER 4  - Mean alpha-sphere SA              : 0.5604
+HEADER 5  - Mean B-factor                     : 0.3368
+HEADER 6  - Hydrophobicity Score              : 25.1667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.3333
+HEADER 9  - Real volume (approximation)       : 243.5934
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3333
+ATOM   1329  NE2 GLN B  16     -31.082 -34.590  50.126  1.00 28.21           N 0
+ATOM   1362  CD2 LEU B  20     -25.831 -30.882  50.247  1.00 18.19           C 0
+ATOM   1359   CB LEU B  20     -27.010 -29.949  48.272  1.00 14.86           C 0
+ATOM   1361  CD1 LEU B  20     -27.437 -28.986  50.566  1.00 17.91           C 0
+ATOM   1326   CG GLN B  16     -30.645 -34.127  47.829  1.00 23.49           C 0
+ATOM   1336  OD1 ASP B  17     -26.129 -35.711  46.649  1.00 24.08           O 0
+ATOM   1327   CD GLN B  16     -31.225 -35.044  48.908  1.00 26.74           C 0
+ATOM   1331   CA ASP B  17     -26.647 -33.428  45.207  1.00 16.05           C 0
+ATOM   1324    O GLN B  16     -28.863 -32.037  46.094  1.00 16.10           O 0
+ATOM   1355    N LEU B  20     -28.275 -29.257  46.290  1.00 12.62           N 0
+ATOM   1382  ND2 ASN B  23     -31.344 -25.858  47.832  1.00 20.72           N 0
+ATOM   1353   OGASER B  19     -31.739 -28.506  45.137  0.58 13.60           O 0
+ATOM   1356   CA LEU B  20     -27.578 -28.800  47.484  1.00 13.28           C 0
+ATOM   1351   CBASER B  19     -30.879 -29.469  44.570  0.58 13.10           C 0
+ATOM   1322   CA GLN B  16     -30.471 -33.654  45.352  1.00 17.98           C 0
+ATOM   1325   CB GLN B  16     -30.785 -34.699  46.418  1.00 20.31           C 0
+ATOM   1328  OE1 GLN B  16     -31.808 -36.133  48.665  1.00 30.87           O 0
+ATOM   1300    O LYS B  13     -28.421 -36.542  44.209  1.00 17.56           O 0
+ATOM   1298   CA LYS B  13     -29.729 -38.520  44.402  1.00 20.42           C 0
+ATOM   1302   CG LYS B  13     -27.491 -39.514  45.356  1.00 25.41           C 0
+TER
+END

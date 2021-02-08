@@ -1,0 +1,68 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    61:
+HEADER 0  - Pocket Score                      : 3.1342
+HEADER 1  - Drug Score                        : 0.0073
+HEADER 2  - Number of V. Vertices             :    46
+HEADER 3  - Mean alpha-sphere radius          : 3.4986
+HEADER 4  - Mean alpha-sphere SA              : 0.4655
+HEADER 5  - Mean B-factor                     : 0.0721
+HEADER 6  - Hydrophobicity Score              : 16.4167
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.1667
+HEADER 9  - Real volume (approximation)       : 186.2098
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0652
+ATOM  1b693  POL STP    61      19.157  -6.084  47.455    0.00     3.06
+ATOM  1b91c  POL STP    61      19.150  -5.980  47.409    0.00     3.06
+ATOM  1b693  POL STP    61      19.208  -6.177  47.448    0.00     3.07
+ATOM  1b91e  POL STP    61      19.624  -6.123  46.985    0.00     3.13
+ATOM  1b91e  POL STP    61      19.654  -6.031  46.645    0.00     3.02
+ATOM  1b91e APOL STP    61      19.820  -6.145  46.695    0.00     3.16
+ATOM  20a5c  POL STP    61      20.047  -6.135  46.509    0.00     3.20
+ATOM  20a5a  POL STP    61      20.135  -6.162  46.604    0.00     3.24
+ATOM  20a5c APOL STP    61      20.042  -6.161  46.552    0.00     3.22
+ATOM  20a5a  POL STP    61      20.629  -6.478  46.734    0.00     3.15
+ATOM  1b91e  POL STP    61      22.442  -4.483  46.099    0.00     3.51
+ATOM  20a5a  POL STP    61      22.591  -4.889  45.729    0.00     3.89
+ATOM  1b923  POL STP    61      22.479  -4.427  45.216    0.00     3.75
+ATOM  20a5c  POL STP    61      22.520  -4.529  45.069    0.00     3.88
+ATOM  20a5a  POL STP    61      23.125  -5.252  45.881    0.00     4.00
+ATOM  1b93c  POL STP    61      21.568  -3.463  41.883    0.00     3.01
+ATOM  1bc2b  POL STP    61      21.382  -3.934  42.763    0.00     3.69
+ATOM  1bc2b  POL STP    61      21.289  -4.030  42.857    0.00     3.79
+ATOM  1b93d  POL STP    61      21.381  -3.891  43.098    0.00     3.83
+ATOM  1bc2b  POL STP    61      21.426  -3.937  43.141    0.00     3.84
+ATOM  1bc2b  POL STP    61      21.368  -3.942  43.024    0.00     3.83
+ATOM  1b923  POL STP    61      21.313  -4.178  44.012    0.00     3.49
+ATOM  1b93d  POL STP    61      21.062  -3.686  43.132    0.00     3.61
+ATOM  20a5c  POL STP    61      21.429  -4.259  44.017    0.00     3.58
+ATOM  21174  POL STP    61      21.289  -4.061  42.855    0.00     3.78
+ATOM  1b645 APOL STP    61      23.114  -4.488  44.833    0.00     3.76
+ATOM  20a5a  POL STP    61      22.946  -4.728  45.005    0.00     3.92
+ATOM  1b644  POL STP    61      23.307  -3.353  44.188    0.00     3.39
+ATOM  1b645  POL STP    61      24.036  -3.695  44.600    0.00     3.17
+ATOM  1b921  POL STP    61      22.883  -3.579  44.209    0.00     3.62
+ATOM  20a5a  POL STP    61      22.860  -4.595  44.829    0.00     3.93
+ATOM  1dc7a  POL STP    61      23.069  -1.956  44.052    0.00     3.09
+ATOM  1bc2b  POL STP    61      22.585  -3.800  44.019    0.00     3.68
+ATOM  20a5c  POL STP    61      22.665  -4.408  44.659    0.00     3.95
+ATOM  20a5c  POL STP    61      21.509  -4.052  43.303    0.00     3.84
+ATOM  20a5c  POL STP    61      22.479  -4.322  44.341    0.00     3.88
+ATOM  20a5a  POL STP    61      22.906  -5.086  44.130    0.00     3.45
+ATOM  21174  POL STP    61      21.351  -4.161  42.976    0.00     3.77
+ATOM  1b93d  POL STP    61      20.036  -4.300  41.636    0.00     3.49
+ATOM  21171  POL STP    61      19.908  -4.486  41.501    0.00     3.49
+ATOM  21171  POL STP    61      19.826  -4.565  41.323    0.00     3.45
+ATOM  89194  POL STP    61      19.087  -4.772  41.366    0.00     3.19
+ATOM  21171  POL STP    61      19.760  -4.628  41.404    0.00     3.47
+ATOM  89194  POL STP    61      19.101  -4.923  41.387    0.00     3.16
+ATOM  2116a  POL STP    61      19.662  -4.905  41.432    0.00     3.37
+ATOM  21171  POL STP    61      20.188  -5.244  42.201    0.00     3.09
+TER
+END

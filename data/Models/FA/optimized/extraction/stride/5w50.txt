@@ -1,0 +1,34 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5w50.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    LIIKGI                                                6          ~~~~
+STR        EE                                                              ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5w50.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    LIIKGI                                                6          ~~~~
+STR        EE                                                              ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       ILE   249 A      ILE    250 A                            ~~~~
+LOC  Strand       ILE   249 B      ILE    250 B                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  LEU A  248    1    C          Coil    360.00    128.52     133.4      ~~~~
+ASG  ILE A  249    2    E        Strand   -121.51    130.54     123.5      ~~~~
+ASG  ILE A  250    3    E        Strand   -126.61    119.61      99.3      ~~~~
+ASG  LYS A  251    4    C          Coil   -123.15    133.53     151.4      ~~~~
+ASG  GLY A  252    5    C          Coil   -119.69   -154.77      52.4      ~~~~
+ASG  ILE A  253    6    C          Coil    -68.96    360.00     238.3      ~~~~
+ASG  LEU B  248    1    C          Coil    360.00    125.69     139.0      ~~~~
+ASG  ILE B  249    2    E        Strand   -120.66    129.73     103.6      ~~~~
+ASG  ILE B  250    3    E        Strand   -125.93    117.03     129.5      ~~~~
+ASG  LYS B  251    4    C          Coil   -120.54    125.54     120.3      ~~~~
+ASG  GLY B  252    5    C          Coil    -86.15   -164.22      57.6      ~~~~
+ASG  ILE B  253    6    C          Coil    -55.19    360.00     228.0      ~~~~

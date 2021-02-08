@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 15.4002
+HEADER 1  - Drug Score                        : 0.0193
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 3.8825
+HEADER 4  - Mean alpha-sphere SA              : 0.5169
+HEADER 5  - Mean B-factor                     : 0.5795
+HEADER 6  - Hydrophobicity Score              : -15.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 2.8571
+HEADER 9  - Real volume (approximation)       : 342.5167
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 28.0000
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   2721  NH1 ARG C 124       5.866   2.212  29.860  1.00 48.64           N 0
+ATOM   2718   CD ARG C 124       6.565  -0.376  28.985  1.00 42.47           C 0
+ATOM   1482  OE2 GLU B  80       3.100  -4.194  34.068  1.00 43.70           O 0
+ATOM   1473  OD2 ASP B  79       2.057   1.967  31.334  1.00 36.73           O 0
+ATOM   1470   CB ASP B  79       0.841  -0.030  31.741  1.00 30.67           C 0
+ATOM   2651  CG2 THR C 114       2.819   0.571  28.140  1.00 31.75           C 0
+ATOM   2705  OG1 THR C 122       4.353  -5.649  27.747  1.00 31.58           O 0
+ATOM   1509   CZ ARG B  83       4.711  -7.937  32.815  1.00 49.43           C 0
+ATOM   2727   CB ALA C 125       6.879  -7.249  28.881  1.00 37.42           C 0
+ATOM   1510  NH1 ARG B  83       4.614  -7.175  33.899  1.00 50.52           N 0
+ATOM   2724   CA ALA C 125       7.929  -6.259  28.397  1.00 38.14           C 0
+ATOM   1508   NE ARG B  83       3.785  -7.860  31.866  1.00 47.24           N 0
+ATOM   2717   CG ARG C 124       7.309  -1.466  28.233  1.00 35.98           C 0
+ATOM   2723    N ALA C 125       7.321  -5.223  27.556  1.00 35.82           N 0
+ATOM   1507   CD ARG B  83       2.643  -6.961  31.922  1.00 39.08           C 0
+ATOM   2716   CB ARG C 124       6.456  -2.150  27.152  1.00 32.62           C 0
+ATOM   1469    O ASP B  79      -0.622  -2.914  31.268  1.00 27.97           O 0
+ATOM   2646   CA THR C 114       2.052  -1.115  26.446  1.00 27.21           C 0
+ATOM   2649   CB THR C 114       1.620  -0.006  27.414  1.00 28.72           C 0
+ATOM   2706  CG2 THR C 122       1.989  -6.172  27.632  1.00 30.36           C 0
+ATOM   1505   CB ARG B  83       0.415  -6.372  31.071  1.00 29.56           C 0
+ATOM   2648    O THR C 114       0.106  -2.521  26.648  1.00 25.41           O 0
+ATOM   1479   CG GLU B  80       1.327  -3.419  35.469  1.00 32.16           C 0
+TER
+END

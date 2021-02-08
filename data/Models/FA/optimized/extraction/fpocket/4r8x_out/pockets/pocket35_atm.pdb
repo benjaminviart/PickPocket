@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    36:
+HEADER 0  - Pocket Score                      : 5.0647
+HEADER 1  - Drug Score                        : 0.0591
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.7992
+HEADER 4  - Mean alpha-sphere SA              : 0.4661
+HEADER 5  - Mean B-factor                     : 0.3980
+HEADER 6  - Hydrophobicity Score              : 40.9167
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1667
+HEADER 9  - Real volume (approximation)       : 307.6275
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 0.9333
+ATOM   9790  NE2 GLN D 299      42.670 124.408  27.768  1.00 21.12           N 0
+ATOM   9564   CB ASN D 271      42.830 119.277  29.705  1.00 14.16           C 0
+ATOM   9567  ND2 ASN D 271      40.640 119.680  30.658  1.00 17.59           N 0
+ATOM   9768   CA GLY D 297      43.196 119.896  25.602  1.00 11.78           C 0
+ATOM   3016  CG2 THR B  69      40.032 122.204  24.071  1.00 16.30           C 0
+ATOM   3015  OG1 THR B  69      39.219 119.984  24.566  1.00 17.41           O 0
+ATOM   9344  CD1 ILE D 244      43.044 122.020  31.761  1.00 19.93           C 0
+ATOM   9352  OE1 GLN D 245      40.318 126.621  29.613  1.00 19.99           O 0
+ATOM   8846   OH TYR D 182      35.130 123.345  29.421  1.00 30.43           O 0
+ATOM   8822  CD2 PHE D 179      36.768 122.383  32.627  1.00 36.71           C 0
+ATOM   8824  CE2 PHE D 179      37.940 122.294  33.360  1.00 36.69           C 0
+ATOM   9342  CG1 ILE D 244      42.481 123.069  32.663  1.00 17.93           C 0
+ATOM   9337    N ILE D 244      40.664 125.409  33.034  1.00 18.46           N 0
+ATOM   9353  NE2 GLN D 245      40.044 127.185  27.449  1.00 19.58           N 0
+ATOM   3010    N THR B  69      37.212 121.792  23.277  1.00 15.84           N 0
+ATOM   8843  CE1 TYR D 182      34.564 124.586  27.483  1.00 28.70           C 0
+ATOM   8845   CZ TYR D 182      34.198 123.730  28.497  0.61 29.16           C 0
+ATOM   3009   CB ALA B  68      33.938 121.924  23.746  1.00 17.57           C 0
+ATOM   2996  CG1 VAL B  66      36.145 127.131  25.084  1.00 18.53           C 0
+ATOM   2540  CE2 TYR B   7      39.378 126.259  23.390  1.00 17.06           C 0
+ATOM   3017    N ASP B  70      36.868 119.112  22.665  1.00 14.91           N 0
+ATOM   3021   CB ASP B  70      35.374 117.243  23.170  1.00 17.80           C 0
+ATOM   8844  CE2 TYR D 182      32.905 123.259  28.587  0.63 28.27           C 0
+TER
+END

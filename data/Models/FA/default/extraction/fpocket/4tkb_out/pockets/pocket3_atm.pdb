@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 6.2672
+HEADER 1  - Drug Score                        : 0.0273
+HEADER 2  - Number of V. Vertices             :    39
+HEADER 3  - Mean alpha-sphere radius          : 3.9264
+HEADER 4  - Mean alpha-sphere SA              : 0.5393
+HEADER 5  - Mean B-factor                     : 0.0876
+HEADER 6  - Hydrophobicity Score              : 34.5000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 542.2228
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 16.0000
+HEADER 12 - Number of apolar alpha sphere     :    17
+HEADER 13 - Proportion of apolar alpha sphere : 0.4359
+ATOM    413   CE LYS A  37       1.410  18.968  25.440  0.80  8.44           C 0
+ATOM    414   NZ LYS A  37       2.265  18.388  26.475  0.80  8.10           N 0
+ATOM    388   SDAMET A  35       3.145  25.689  23.216  0.85  8.19           S 0
+ATOM    390   CEAMET A  35       3.134  25.915  24.982  0.85  9.57           C 0
+ATOM    121   CAAVAL A  11       1.809  13.347  22.872  0.67  5.45           C 0
+ATOM    114    O LEU A  10      -0.479  14.648  23.733  1.00  7.09           O 0
+ATOM    412   CD LYS A  37       0.073  18.265  25.364  0.80  8.58           C 0
+ATOM    123    CAVAL A  11       2.985  13.770  22.015  0.67  4.66           C 0
+ATOM    125    OAVAL A  11       4.097  13.806  22.523  0.67  5.52           O 0
+ATOM    145  OD1AASP A  12       6.836  14.526  19.326  0.56 10.06           O 0
+ATOM    135   CAAASP A  12       3.891  14.559  19.887  0.56  4.66           C 0
+ATOM    133    NAASP A  12       2.794  14.135  20.763  0.56  3.75           N 0
+ATOM    118  CD2 LEU A  10      -0.944  17.372  20.162  0.90  6.02           C 0
+ATOM    116   CG LEU A  10      -0.927  15.861  20.327  0.90  5.33           C 0
+ATOM    398    OATHR A  36      -2.046  20.704  21.343  0.47  9.03           O 0
+ATOM    411   CG LYS A  37      -0.784  18.857  24.283  0.80  8.43           C 0
+ATOM    373    O SER A  34       1.724  23.593  20.152  1.00  9.60           O 0
+ATOM    380    CAMET A  35      -0.960  23.807  22.896  0.85  8.33           C 0
+ATOM    157   CBASER A  13       2.385  17.912  17.303  0.66  4.54           C 0
+ATOM    378   CAAMET A  35       0.189  24.602  22.290  0.85  8.01           C 0
+ATOM    382    OAMET A  35      -1.009  23.637  24.137  0.85 11.53           O 0
+ATOM    149    NASER A  13       3.856  16.161  18.120  0.66  4.80           N 0
+ATOM    155    OASER A  13       5.390  18.007  16.682  0.66  4.40           O 0
+ATOM    137    CAASP A  12       3.220  15.092  18.623  0.56  5.12           C 0
+TER
+END

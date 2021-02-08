@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 12.3002
+HEADER 1  - Drug Score                        : 0.0175
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7267
+HEADER 4  - Mean alpha-sphere SA              : 0.5004
+HEADER 5  - Mean B-factor                     : 0.2996
+HEADER 6  - Hydrophobicity Score              : 23.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.4444
+HEADER 9  - Real volume (approximation)       : 375.4038
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0968
+ATOM    511    O ASN A  70      -3.494  -7.666  11.233  1.00 12.70           O 0
+ATOM    515  ND2 ASN A  70      -2.737  -6.852  14.588  1.00 23.89           N 0
+ATOM    544   CBASER A  72      -0.912  -4.854   9.046  0.78 12.13           C 0
+ATOM    514  OD1 ASN A  70      -4.281  -5.647  13.491  1.00 20.76           O 0
+ATOM    546   OGASER A  72       0.083  -5.809   9.169  0.78 13.68           O 0
+ATOM   1256  NH1AARG A 115       4.778  -7.462  12.165  0.70 22.07           N 0
+ATOM    662  OE2 GLU A  80       3.555   0.265  10.577  0.65 25.58           O 0
+ATOM    753   OH TYR A  86      -1.939  -1.747   9.268  1.00 15.83           O 0
+ATOM   1248   CGAARG A 115       2.123  -9.711   9.596  0.70 15.53           C 0
+ATOM   1289    O VAL A 116      -0.265 -11.946  11.685  1.00 14.39           O 0
+ATOM   1252   NEAARG A 115       3.466  -9.270  11.608  0.70 19.68           N 0
+ATOM   1288    C VAL A 116      -1.401 -11.508  11.548  1.00 13.05           C 0
+ATOM   1305    C GLY A 117      -1.456 -10.209  14.639  1.00 24.01           C 0
+ATOM   1254   CZAARG A 115       4.223  -8.635  12.492  0.70 19.86           C 0
+ATOM   1250   CDAARG A 115       3.253  -8.869  10.246  0.70 17.53           C 0
+ATOM   1258  NH2AARG A 115       4.370  -9.113  13.718  0.70 22.06           N 0
+ATOM   1244    OAARG A 115      -1.626  -9.030   8.548  0.70 11.10           O 0
+ATOM   1242    CAARG A 115      -0.809  -9.937   8.517  0.70  8.72           C 0
+ATOM   1306    O GLY A 117      -1.033 -10.183  15.818  1.00 27.24           O 0
+ATOM    525    O PRO A  71      -4.473  -5.267   8.937  1.00 13.11           O 0
+ATOM    779  CD1 LEU A  88      -7.536  -1.462  11.080  1.00 17.51           C 0
+ATOM    750  CE1 TYR A  86      -3.760  -0.952   7.989  1.00 13.09           C 0
+TER
+END

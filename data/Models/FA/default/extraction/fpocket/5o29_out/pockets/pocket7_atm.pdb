@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 11.2810
+HEADER 1  - Drug Score                        : 0.0249
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.3470
+HEADER 4  - Mean alpha-sphere SA              : 0.4533
+HEADER 5  - Mean B-factor                     : 0.0529
+HEADER 6  - Hydrophobicity Score              : 23.4000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1000
+HEADER 9  - Real volume (approximation)       : 85.1384
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.5588
+ATOM   1900    C ARG A 262      17.350 -19.860 -23.720  1.00 15.87           C 0
+ATOM   1648   OG SER A 231      15.958 -20.909 -19.352  1.00 17.50           O 0
+ATOM   1879  CZ3 TRP A 259      18.034 -17.298 -18.714  1.00 15.45           C 0
+ATOM   1902   CB ARG A 262      16.948 -17.613 -22.651  1.00 15.31           C 0
+ATOM   4193  CG2 THR A 551      20.806 -17.564 -23.090  1.00 15.44           C 0
+ATOM   1909    N ALA A 263      16.607 -20.759 -23.078  1.00 14.67           N 0
+ATOM   1682    N VAL A 236      20.129 -26.063 -18.240  1.00 14.68           N 0
+ATOM   1688  CG2 VAL A 236      20.956 -24.169 -20.267  1.00 17.56           C 0
+ATOM   1646    O SER A 231      18.409 -20.518 -17.083  1.00 16.46           O 0
+ATOM   1674    N ASN A 235      20.331 -24.447 -15.759  1.00 16.27           N 0
+ATOM   1644   CA SER A 231      16.409 -21.853 -17.167  1.00 14.33           C 0
+ATOM   1901    O ARG A 262      18.485 -20.119 -24.137  1.00 16.48           O 0
+ATOM   1673  CD2 LEU A 234      21.809 -19.653 -17.875  1.00 14.63           C 0
+ATOM   1939   CDAARG A 266      22.753 -20.869 -21.904  0.65 12.51           C 0
+ATOM   1910   CA ALA A 263      17.073 -22.137 -22.949  1.00 14.10           C 0
+ATOM   1913   CB ALA A 263      16.108 -22.945 -22.078  1.00 17.32           C 0
+ATOM   1683   CA VAL A 236      19.440 -26.017 -19.533  1.00 17.87           C 0
+ATOM   1705   CB ALA A 239      15.403 -25.051 -18.454  1.00 16.83           C 0
+ATOM   1935   CBAARG A 266      21.469 -21.703 -23.865  0.65 19.01           C 0
+ATOM   4191   CB THR A 551      21.499 -17.256 -21.774  1.00 13.67           C 0
+TER
+END

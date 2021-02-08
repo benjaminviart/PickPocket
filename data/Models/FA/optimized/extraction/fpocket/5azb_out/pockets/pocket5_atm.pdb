@@ -1,0 +1,47 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : -3.7284
+HEADER 1  - Drug Score                        : 0.0054
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.8974
+HEADER 4  - Mean alpha-sphere SA              : 0.5915
+HEADER 5  - Mean B-factor                     : 0.2657
+HEADER 6  - Hydrophobicity Score              : 0.7143
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 2.8571
+HEADER 9  - Real volume (approximation)       : 385.5684
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 24.5714
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 0.9032
+ATOM    357   CAAARG A  44      -9.161  -0.523 -17.346  0.60 30.38           C 0
+ATOM    365   CDAARG A  44      -9.170  -3.490 -15.514  0.60 36.09           C 0
+ATOM    360    O ARG A  44      -9.836  -0.663 -19.645  1.00 31.81           O 0
+ATOM    395   CGAARG A  47      -6.288  -1.206 -20.702  0.43 47.03           C 0
+ATOM   1811    O ILE A 218      -8.373  -9.555 -17.493  1.00 30.99           O 0
+ATOM   1812   CB ILE A 218     -10.190  -9.439 -15.274  1.00 26.64           C 0
+ATOM   1815  CD1 ILE A 218      -9.940  -7.223 -14.062  1.00 31.39           C 0
+ATOM   1088  CE1 PHE A 130     -14.427  -1.367 -16.620  1.00 29.64           C 0
+ATOM   1086  CD1 PHE A 130     -15.335  -2.405 -16.479  1.00 25.53           C 0
+ATOM    361   CBAARG A  44     -10.073  -1.357 -16.440  0.60 33.29           C 0
+ATOM    421    O SER A  50     -14.532  -2.919 -22.472  1.00 31.81           O 0
+ATOM    419   CA SER A  50     -12.399  -2.218 -23.319  1.00 30.71           C 0
+ATOM    422   CB SER A  50     -11.949  -1.120 -22.365  1.00 30.29           C 0
+ATOM    367   NEAARG A  44      -8.102  -4.029 -14.684  0.60 35.81           N 0
+ATOM    327  CD1 LEU A  40      -6.738  -1.231 -11.854  1.00 28.84           C 0
+ATOM    355  NH2 ARG A  43      -2.033  -0.436 -14.936  1.00 66.51           N 0
+ATOM    352   NE ARG A  43      -3.551   1.170 -14.295  1.00 58.41           N 0
+ATOM    405  NH2AARG A  47      -3.490   0.913 -17.909  0.43 47.69           N 0
+ATOM    349   CB ARG A  43      -6.213   2.124 -15.258  1.00 37.03           C 0
+ATOM    373  NH2AARG A  44      -7.189  -4.864 -12.758  0.60 32.28           N 0
+ATOM    356    N ARG A  44      -8.611   0.614 -16.612  1.00 28.77           N 0
+ATOM    347    C ARG A  43      -7.711   1.429 -17.146  1.00 30.69           C 0
+ATOM    399   NEAARG A  47      -4.206  -0.301 -19.727  0.43 47.87           N 0
+ATOM    348    O ARG A  43      -7.265   1.280 -18.287  1.00 33.80           O 0
+ATOM    363   CGAARG A  44      -9.360  -2.014 -15.274  0.60 35.43           C 0
+ATOM    393   CBAARG A  47      -7.115  -1.321 -21.973  0.43 45.34           C 0
+TER
+END

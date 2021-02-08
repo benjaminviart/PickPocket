@@ -1,0 +1,37 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5oqz.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                .                                                       ~~~~
+SEQ  1    GAPSLINSEDNPAFPQRV                                   18          ~~~~
+STR        EETTTTTTTTTTT EE                                                ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       ALA     2 A      PRO      3 A                            ~~~~
+LOC  Strand       GLN    16 A      ARG     17 A                            ~~~~
+LOC  TurnVIII     SER     4 A      ASN      7 A                            ~~~~
+LOC  TurnI        ASN     7 A      ASP     10 A                            ~~~~
+LOC  TurnIV       ASN    11 A      PHE     14 A                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  GLY A    1    1    C          Coil    360.00      1.03      63.3      ~~~~
+ASG  ALA A    2    2    E        Strand   -139.45    141.17      47.9      ~~~~
+ASG  PRO A    3    3    E        Strand    -56.46    135.09     109.6      ~~~~
+ASG  SER A    4    4    T          Turn   -162.75    162.71      30.1      ~~~~
+ASG  LEU A    5    5    T          Turn    -66.84    -27.50     177.5      ~~~~
+ASG  ILE A    6    6    T          Turn    -95.83    113.45      81.9      ~~~~
+ASG  ASN A    7    7    T          Turn    -91.13     51.96      55.2      ~~~~
+ASG  SER A    8    8    T          Turn    -76.54     -5.01      50.7      ~~~~
+ASG  GLU A    9    9    T          Turn    -79.55    -10.66      67.1      ~~~~
+ASG  ASP A   10   10    T          Turn     60.85     38.56     138.2      ~~~~
+ASG  ASN A   11   11    T          Turn    -69.41    138.68      53.5      ~~~~
+ASG  PRO A   12   12    T          Turn    -83.88     -4.19     134.0      ~~~~
+ASG  ALA A   13   13    T          Turn   -121.17    -51.84      67.4      ~~~~
+ASG  PHE A   14   14    T          Turn   -125.73    133.66     141.5      ~~~~
+ASG  PRO A   15   15    C          Coil    -67.88    129.23      69.1      ~~~~
+ASG  GLN A   16   16    E        Strand   -138.71    137.09      40.1      ~~~~
+ASG  ARG A   17   17    E        Strand   -101.20    138.58     133.2      ~~~~
+ASG  VAL A   18   18    C          Coil    -85.64    360.00     153.4      ~~~~

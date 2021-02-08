@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    66:
+HEADER 0  - Pocket Score                      : -1.5019
+HEADER 1  - Drug Score                        : 0.0038
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.4240
+HEADER 4  - Mean alpha-sphere SA              : 0.5669
+HEADER 5  - Mean B-factor                     : 0.3476
+HEADER 6  - Hydrophobicity Score              : -11.3750
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 2.7500
+HEADER 9  - Real volume (approximation)       : 587.6943
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 3.0000
+HEADER 12 - Number of apolar alpha sphere     :     4
+HEADER 13 - Proportion of apolar alpha sphere : 0.1333
+ATOM    697  OD1 ASP A  93      12.826 -99.553  10.942  1.00 78.58           O 0
+ATOM    702    O TYR A  94      13.544 -97.820   4.415  1.00 39.71           O 0
+ATOM    696   CG ASP A  93      13.670 -98.642  10.830  1.00 72.68           C 0
+ATOM    695   CB ASP A  93      14.581 -98.656   9.621  1.00 63.50           C 0
+ATOM    699    N TYR A  94      14.463 -99.791   6.490  1.00 44.25           N 0
+ATOM    692   CA ASP A  93      14.590-100.010   8.902  1.00 55.46           C 0
+ATOM    690    O GLY A  92      14.239-102.748   8.660  1.00 51.85           O 0
+ATOM    716  CG1 ILE A  95      15.872 -95.576   6.618  1.00 30.18           C 0
+ATOM    436   CB GLU A  63      14.857 -91.387  13.390  1.00 46.34           C 0
+ATOM    444    O ILE A  64      16.447 -90.066   9.268  1.00 32.14           O 0
+ATOM    441    N ILE A  64      17.582 -91.579  11.410  1.00 30.47           N 0
+ATOM    718  CD1 ILE A  95      16.487 -94.753   7.740  1.00 30.33           C 0
+ATOM    439  OE1 GLU A  63      12.681 -89.813  12.246  1.00 62.30           O 0
+ATOM    698  OD2 ASP A  93      13.799 -97.713  11.657  1.00 72.31           O 0
+ATOM    887  NH2 ARG A 115      10.768 -89.574   7.190  1.00 46.50           N 0
+ATOM    717  CG2 ILE A  95      15.661 -93.634   5.031  1.00 25.57           C 0
+ATOM    884   NE ARG A 115       9.825 -90.714   5.427  1.00 44.49           N 0
+ATOM    883   CD ARG A 115       8.707 -91.228   4.638  1.00 33.77           C 0
+ATOM    885   CZ ARG A 115       9.693 -90.001   6.542  1.00 49.41           C 0
+ATOM    870   CG ASP A 113      13.311 -89.911   4.233  1.00 41.05           C 0
+ATOM    872  OD2 ASP A 113      13.318 -89.178   5.243  1.00 44.88           O 0
+ATOM    871  OD1 ASP A 113      12.261 -90.280   3.665  1.00 47.03           O 0
+TER
+END

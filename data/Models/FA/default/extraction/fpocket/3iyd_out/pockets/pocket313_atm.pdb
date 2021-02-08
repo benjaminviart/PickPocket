@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   314:
+HEADER 0  - Pocket Score                      : -3.0883
+HEADER 1  - Drug Score                        : 0.0115
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.3192
+HEADER 4  - Mean alpha-sphere SA              : 0.6981
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : 26.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.2222
+HEADER 9  - Real volume (approximation)       : 501.7942
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 15.0000
+HEADER 12 - Number of apolar alpha sphere     :    16
+HEADER 13 - Proportion of apolar alpha sphere : 0.5000
+ATOM  27121  CG2 VAL F 497     -21.419  34.688 -21.005  1.00  0.00           C 0
+ATOM  27144  CG1 ILE F 500     -16.381  33.718 -17.324  1.00  0.00           C 0
+ATOM  26781   CE MET F 456     -20.011  36.897 -16.081  1.00  0.00           C 0
+ATOM  27116   CA VAL F 497     -20.324  32.993 -19.502  1.00  0.00           C 0
+ATOM  27120  CG1 VAL F 497     -21.834  34.763 -18.538  1.00  0.00           C 0
+ATOM  32433  OP1 DG  I  61     -19.868  40.400 -23.808  1.00  0.00           O 0
+ATOM  26780   SD MET F 456     -20.381  38.584 -16.556  1.00  0.00           S 0
+ATOM  13091  CE2 TYR D  46     -14.164  38.108 -16.205  1.00  0.00           C 0
+ATOM  32456  OP2 DG  I  62     -18.798  42.208 -18.315  1.00  0.00           O 0
+ATOM  32455  OP1 DG  I  62     -16.263  42.411 -18.016  1.00  0.00           O 0
+ATOM  13093   OH TYR D  46     -15.597  39.987 -15.897  1.00  0.00           O 0
+ATOM  32436  C5' DG  I  61     -18.637  42.950 -22.743  1.00  0.00           C 0
+ATOM  32440  O3' DG  I  61     -17.447  43.691 -19.792  1.00  0.00           O 0
+ATOM  32435  O5' DG  I  61     -20.018  42.619 -22.652  1.00  0.00           O 0
+ATOM  27145  CG2 ILE F 500     -16.239  34.750 -15.040  1.00  0.00           C 0
+ATOM  27110   CB LYS F 496     -17.940  31.065 -22.989  1.00  0.00           C 0
+ATOM  27081    O LYS F 493     -21.053  33.177 -23.783  1.00  0.00           O 0
+ATOM  27086   NZ LYS F 493     -21.950  37.497 -25.022  1.00  0.00           N 0
+ATOM  27085   CE LYS F 493     -21.190  37.419 -26.301  1.00  0.00           C 0
+ATOM  27115    N VAL F 497     -20.094  32.082 -20.616  1.00  0.00           N 0
+ATOM  27109    O LYS F 496     -18.056  31.437 -19.908  1.00  0.00           O 0
+ATOM  27108    C LYS F 496     -18.974  31.374 -20.727  1.00  0.00           C 0
+ATOM  27146  CD1 ILE F 500     -14.914  33.358 -17.409  1.00  0.00           C 0
+ATOM  27082   CB LYS F 493     -20.908  34.455 -26.630  1.00  0.00           C 0
+ATOM  13099   CG ARG D  47     -11.626  40.946 -17.264  1.00  0.00           C 0
+TER
+END

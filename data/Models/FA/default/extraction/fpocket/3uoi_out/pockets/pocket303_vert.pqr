@@ -1,0 +1,54 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   304:
+HEADER 0  - Pocket Score                      : 1.2960
+HEADER 1  - Drug Score                        : 0.0231
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.6827
+HEADER 4  - Mean alpha-sphere SA              : 0.4961
+HEADER 5  - Mean B-factor                     : 0.2839
+HEADER 6  - Hydrophobicity Score              : 35.0000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.8000
+HEADER 9  - Real volume (approximation)       : 282.7472
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2188
+ATOM  65810  POL STP   304     -32.479 -37.848 -67.024    0.00     3.95
+ATOM  81568  POL STP   304     -32.252 -37.463 -67.733    0.00     3.60
+ATOM  81572  POL STP   304     -32.208 -37.440 -67.800    0.00     3.57
+ATOM  81572  POL STP   304     -32.353 -37.462 -67.813    0.00     3.54
+ATOM  81572  POL STP   304     -35.077 -38.071 -68.500    0.00     3.71
+ATOM  81572  POL STP   304     -35.084 -38.081 -68.519    0.00     3.70
+ATOM  98069  POL STP   304     -32.114 -33.288 -66.221    0.00     3.07
+ATOM  35075  POL STP   304     -32.220 -33.402 -65.859    0.00     3.20
+ATOM  71216  POL STP   304     -33.041 -36.588 -64.184    0.00     4.60
+ATOM  28cd3  POL STP   304     -32.986 -36.039 -64.131    0.00     4.44
+ATOM  28cd3  POL STP   304     -32.954 -36.541 -64.002    0.00     4.64
+ATOM  28cd3  POL STP   304     -32.755 -34.874 -64.469    0.00     3.94
+ATOM  1f042  POL STP   304     -34.095 -34.644 -64.792    0.00     3.31
+ATOM  28cd3  POL STP   304     -33.026 -35.524 -64.139    0.00     4.27
+ATOM  1f042 APOL STP   304     -33.428 -33.525 -65.330    0.00     3.04
+ATOM  28ce3 APOL STP   304     -33.194 -33.372 -65.383    0.00     3.11
+ATOM  28ce2  POL STP   304     -32.676 -34.569 -64.630    0.00     3.80
+ATOM  28ce3 APOL STP   304     -32.650 -34.615 -64.551    0.00     3.83
+ATOM  1f048  POL STP   304     -34.061 -34.847 -62.027    0.00     3.44
+ATOM  28cd3 APOL STP   304     -33.081 -35.537 -63.252    0.00     4.18
+ATOM  28cd3  POL STP   304     -32.957 -36.557 -63.933    0.00     4.64
+ATOM  99656  POL STP   304     -30.691 -37.811 -63.503    0.00     3.28
+ATOM  1efe7  POL STP   304     -30.510 -37.519 -63.804    0.00     3.49
+ATOM  81225  POL STP   304     -32.637 -37.703 -62.971    0.00     3.81
+ATOM  28cd3  POL STP   304     -32.801 -36.635 -63.808    0.00     4.53
+ATOM  99656  POL STP   304     -31.052 -37.957 -63.266    0.00     3.20
+ATOM  28cd3  POL STP   304     -30.720 -37.225 -63.982    0.00     3.69
+ATOM  28cd3  POL STP   304     -30.745 -37.185 -64.111    0.00     3.71
+ATOM  35075  POL STP   304     -32.296 -33.538 -65.625    0.00     3.28
+ATOM  35075 APOL STP   304     -33.096 -33.298 -65.484    0.00     3.09
+ATOM  35079 APOL STP   304     -33.258 -33.208 -65.438    0.00     3.03
+ATOM  35075 APOL STP   304     -32.050 -33.411 -65.584    0.00     3.17
+TER
+END

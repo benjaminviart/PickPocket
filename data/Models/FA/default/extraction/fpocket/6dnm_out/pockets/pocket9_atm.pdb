@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 17.2301
+HEADER 1  - Drug Score                        : 0.1119
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.3029
+HEADER 4  - Mean alpha-sphere SA              : 0.5946
+HEADER 5  - Mean B-factor                     : 0.1296
+HEADER 6  - Hydrophobicity Score              : 45.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.5000
+HEADER 9  - Real volume (approximation)       : 493.0456
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3125
+ATOM    581  OG1 THR A 306      -4.743  42.041   5.705  1.00 17.24           O 0
+ATOM    116  CG1 ILE A 248      -5.546  40.545  10.148  1.00 14.79           C 0
+ATOM    103    O VAL A 246      -3.836  42.939   7.979  1.00 15.08           O 0
+ATOM    568  CD1 LEU A 304      -9.663  39.779   8.144  1.00 17.38           C 0
+ATOM    110    O GLY A 247      -5.650  43.846  11.324  1.00 16.00           O 0
+ATOM    118  CD1 ILE A 248      -5.587  39.532   9.002  1.00 16.28           C 0
+ATOM    566   CB LEU A 304      -9.132  39.804   5.699  1.00 15.45           C 0
+ATOM    569  CD2 LEU A 304     -11.351  40.685   6.531  1.00 19.74           C 0
+ATOM    570    N SER A 305      -8.320  41.126   2.871  1.00 15.80           N 0
+ATOM    270  CD1 LEU A 267     -13.204  45.083   7.601  1.00 28.02           C 0
+ATOM    574   CB SER A 305      -7.635  42.851   1.299  1.00 18.44           C 0
+ATOM    575   OG SER A 305      -8.969  42.994   0.842  1.00 20.68           O 0
+ATOM    251   SG CYS A 265      -9.704  41.198  11.553  1.00 19.03           S 0
+ATOM    255    O TYR A 266     -10.782  45.676  11.571  1.00 19.87           O 0
+ATOM    250   CB CYS A 265      -8.341  41.963  12.430  1.00 16.30           C 0
+ATOM    268   CB LEU A 267     -13.757  44.058   9.819  1.00 23.91           C 0
+ATOM    108   CA GLY A 247      -3.841  44.736  10.070  1.00 13.76           C 0
+ATOM    582  CG2 THR A 306      -3.351  43.134   4.060  1.00 18.76           C 0
+ATOM     94    O GLN A 245      -1.150  45.569   6.531  1.00 18.20           O 0
+ATOM    576    N THR A 306      -5.577  41.094   3.315  1.00 15.79           N 0
+TER
+END

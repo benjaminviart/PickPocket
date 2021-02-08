@@ -1,0 +1,24 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6dkz.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    SIILGILG                                              8          ~~~~
+STR       TTTTT                                                            ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  TurnIV       SER     1 A      LEU      4 A                            ~~~~
+LOC  TurnI        ILE     2 A      GLY      5 A                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  SER A    1    1    T          Turn    360.00    122.30      41.4      ~~~~
+ASG  ILE A    2    2    T          Turn    -62.83    -37.60     168.2      ~~~~
+ASG  ILE A    3    3    T          Turn    -67.20    -45.46     162.4      ~~~~
+ASG  LEU A    4    4    T          Turn    -79.98    -27.16     126.5      ~~~~
+ASG  GLY A    5    5    T          Turn     76.58     16.47      69.7      ~~~~
+ASG  ILE A    6    6    C          Coil   -153.97    162.96     111.5      ~~~~
+ASG  LEU A    7    7    C          Coil     56.81     31.18     165.6      ~~~~
+ASG  GLY A    8    8    C          Coil     74.15    360.00      84.6      ~~~~

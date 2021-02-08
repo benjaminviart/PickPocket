@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 6.3209
+HEADER 1  - Drug Score                        : 0.0179
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.6832
+HEADER 4  - Mean alpha-sphere SA              : 0.4489
+HEADER 5  - Mean B-factor                     : 0.2484
+HEADER 6  - Hydrophobicity Score              : 25.3750
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.7500
+HEADER 9  - Real volume (approximation)       : 308.4909
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1818
+ATOM    271   CB ALA A  33      27.978  45.464 -19.445  1.00 30.84           C 0
+ATOM    270    O ALA A  33      30.359  45.449 -17.368  1.00 35.21           O 0
+ATOM   2332    O ALA B 123      34.390  42.137 -22.990  1.00 36.57           O 0
+ATOM   2333   CB ALA B 123      34.490  45.311 -22.203  1.00 27.73           C 0
+ATOM   2330   CA ALA B 123      35.318  44.062 -21.958  1.00 29.67           C 0
+ATOM    302  NE2AGLN A  36      29.224  42.496 -16.603  0.50 33.77           N 0
+ATOM   2323    O GLU B 122      36.805  43.382 -19.696  1.00 32.01           O 0
+ATOM    298   CDAGLN A  36      29.654  42.109 -15.410  0.50 31.57           C 0
+ATOM    296   CGAGLN A  36      30.649  43.024 -14.719  0.50 29.16           C 0
+ATOM    292    OAGLN A  36      33.421  44.613 -13.300  0.50 27.48           O 0
+ATOM   2316   CB ASN B 121      37.670  46.122 -16.538  1.00 35.74           C 0
+ATOM    275    O SER A  34      32.226  47.937 -15.219  1.00 31.65           O 0
+ATOM   2318  OD1 ASN B 121      37.192  47.166 -14.439  1.00 43.93           O 0
+ATOM   2496    O ALA B 143      36.609  49.900 -17.966  1.00 22.69           O 0
+ATOM   2497   CB ALA B 143      34.423  49.406 -20.127  1.00 23.65           C 0
+ATOM   2315    O ASN B 121      37.749  46.793 -19.605  1.00 25.43           O 0
+ATOM    273   CA SER A  34      30.810  48.144 -17.161  1.00 29.66           C 0
+ATOM   2162  CH2 TRP B 101      31.402  48.699 -22.540  1.00 34.30           C 0
+ATOM    277   OG SER A  34      30.790  49.735 -18.988  1.00 35.15           O 0
+ATOM    272    N SER A  34      29.534  47.506 -17.522  1.00 26.81           N 0
+ATOM    269    C ALA A  33      29.402  46.211 -17.562  1.00 29.00           C 0
+TER
+END

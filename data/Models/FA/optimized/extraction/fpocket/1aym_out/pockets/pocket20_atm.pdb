@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    21:
+HEADER 0  - Pocket Score                      : 7.4099
+HEADER 1  - Drug Score                        : 0.0508
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.8239
+HEADER 4  - Mean alpha-sphere SA              : 0.5147
+HEADER 5  - Mean B-factor                     : 0.0676
+HEADER 6  - Hydrophobicity Score              : 40.7778
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 352.9483
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 26.6207
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 0.9667
+ATOM   3932  CG1 VAL 2 208      23.574   1.211 122.390  1.00  7.55           C 0
+ATOM   1483  CG1 ILE 1 186      28.991  -2.709 123.914  1.00  9.32           C 0
+ATOM   1485  CD1 ILE 1 186      28.396  -3.471 125.103  1.00  8.94           C 0
+ATOM   1481    O ILE 1 186      27.426  -2.653 120.515  1.00 10.80           O 0
+ATOM   1490   CB ALA 1 187      27.404   1.331 121.666  1.00  8.71           C 0
+ATOM   3944    O MET 2 210      18.653   0.909 123.221  1.00  9.64           O 0
+ATOM   2649  CG2 THR 2  48      19.895  -3.452 119.125  1.00 18.25           C 0
+ATOM   3931   CB VAL 2 208      22.171   1.658 122.023  1.00  9.43           C 0
+ATOM   3933  CG2 VAL 2 208      21.560   2.450 123.171  1.00  7.67           C 0
+ATOM   3955  OD1 ASP 2 211      19.956   1.544 127.258  1.00 11.74           O 0
+ATOM   1696    OATHR 1 211      31.265   0.923 127.531  0.50 22.08           O 0
+ATOM   1477   OG SER 1 185      30.821   0.974 122.076  1.00 12.13           O 0
+ATOM   1523  CE2 TYR 1 191      26.529   4.298 125.080  1.00  8.87           C 0
+ATOM   1521  CD2 TYR 1 191      27.732   4.928 125.393  1.00  8.95           C 0
+ATOM   1698   CBATHR 1 211      28.942   2.826 128.387  0.50 18.19           C 0
+ATOM   1702  CG2ATHR 1 211      27.453   2.661 128.640  0.50 16.27           C 0
+ATOM   1692   CAATHR 1 211      29.747   1.780 129.179  0.50 18.59           C 0
+ATOM   1525   OH TYR 1 191      24.175   4.410 124.743  1.00 12.74           O 0
+ATOM   1556   OH TYR 1 194      23.378   3.248 130.083  1.00 18.67           O 0
+ATOM   3956  OD2 ASP 2 211      20.723   3.418 126.446  1.00 11.04           O 0
+ATOM   1682    OAVAL 1 210      29.254   0.014 131.257  0.50 18.09           O 0
+TER
+END

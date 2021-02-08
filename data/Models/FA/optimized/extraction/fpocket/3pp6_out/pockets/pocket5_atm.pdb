@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 11.9706
+HEADER 1  - Drug Score                        : 0.0111
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9012
+HEADER 4  - Mean alpha-sphere SA              : 0.4355
+HEADER 5  - Mean B-factor                     : 0.2260
+HEADER 6  - Hydrophobicity Score              : -7.1111
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 277.2225
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 26.7857
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   2136  NH1AARG B 130      63.026  51.082  -5.322  0.05 27.11           N 0
+ATOM    692   CG LYS A  82      55.962  52.563  -8.362  1.00 37.87           C 0
+ATOM    693   CD LYS A  82      56.486  51.700  -9.469  1.00 40.21           C 0
+ATOM   1124   CB ASP B   4      59.845  47.463  -6.943  1.00 33.90           C 0
+ATOM    694   CE LYS A  82      57.475  52.467 -10.335  1.00 38.37           C 0
+ATOM    811    O LYS A  97      55.492  52.797  -3.434  1.00 29.42           O 0
+ATOM    812   CB LYS A  97      54.993  49.859  -3.547  1.00 29.89           C 0
+ATOM   1946  CG1 VAL B 108      60.933  47.600  -2.227  1.00 26.00           C 0
+ATOM   1127  OD2 ASP B   4      58.587  46.531  -5.145  1.00 48.44           O 0
+ATOM    818   CA GLY A  98      57.245  53.205  -1.383  1.00 32.25           C 0
+ATOM    691   CB LYS A  82      54.791  51.903  -7.654  1.00 27.22           C 0
+ATOM    600  OE2 GLU A  70      53.643  48.337  -8.603  1.00 35.45           O 0
+ATOM   2138  NH2AARG B 130      64.149  49.915  -6.944  0.05 25.58           N 0
+ATOM   2134   CZAARG B 130      64.105  50.911  -6.072  0.05 23.60           C 0
+ATOM   1121   CA ASP B   4      60.759  47.045  -8.105  1.00 31.01           C 0
+ATOM   1966   CA GLY B 111      61.163  50.787  -0.151  1.00 28.80           C 0
+ATOM    817    N GLY A  98      56.247  52.160  -1.422  1.00 27.36           N 0
+ATOM    810    C LYS A  97      55.461  52.024  -2.479  1.00 34.20           C 0
+ATOM    814   CD LYS A  97      54.200  47.808  -2.355  1.00 50.79           C 0
+ATOM    840  OD1 ASP A 101      55.791  49.885   0.181  1.00 25.01           O 0
+TER
+END

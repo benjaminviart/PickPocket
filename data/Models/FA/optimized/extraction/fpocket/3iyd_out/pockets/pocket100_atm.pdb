@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   101:
+HEADER 0  - Pocket Score                      : 0.6485
+HEADER 1  - Drug Score                        : 0.0046
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9112
+HEADER 4  - Mean alpha-sphere SA              : 0.4387
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : -16.6667
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 344.3889
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.6774
+HEADER 12 - Number of apolar alpha sphere     :    31
+HEADER 13 - Proportion of apolar alpha sphere : 0.9688
+ATOM  23308   CZ TYR D1365      39.909   6.403  18.153  1.00  0.00           C 0
+ATOM  23301    O TYR D1365      38.606   8.652  14.642  1.00  0.00           O 0
+ATOM  23306  CE1 TYR D1365      39.892   7.708  18.597  1.00  0.00           C 0
+ATOM  23965  OE1 GLU E  68      45.202   5.516  12.756  1.00  0.00           O 0
+ATOM  23309   OH TYR D1365      40.947   5.572  18.509  1.00  0.00           O 0
+ATOM  23336  OD2 ASP D1368      40.364  11.772  14.850  1.00  0.00           O 0
+ATOM  23341   CB ARG D1369      42.462   7.525   9.750  1.00  0.00           C 0
+ATOM  23342   CG ARG D1369      41.308   6.580  10.039  1.00  0.00           C 0
+ATOM  23333   CB ASP D1368      40.999  11.379  12.590  1.00  0.00           C 0
+ATOM  23337    N ARG D1369      41.270   9.647  10.107  1.00  0.00           N 0
+ATOM  23343   CD ARG D1369      41.813   5.189  10.382  1.00  0.00           C 0
+ATOM  23307  CE2 TYR D1365      38.892   5.925  17.353  1.00  0.00           C 0
+ATOM  23346  NH1 ARG D1369      42.952   2.613  10.374  1.00  0.00           N 0
+ATOM  23316  ND1 HIS D1366      36.726   5.223  10.955  1.00  0.00           N 0
+ATOM  19860  ND2 ASN D 910      36.282  -0.666  14.640  1.00  0.00           N 0
+ATOM  19864    O LYS D 911      33.558   2.768  14.035  1.00  0.00           O 0
+ATOM  19859  OD1 ASN D 910      35.075  -0.831  12.754  1.00  0.00           O 0
+ATOM  23571   CB ASP E  18      38.246   1.370   9.250  1.00  0.00           C 0
+ATOM  19865   CB LYS D 911      35.429   3.127  16.220  1.00  0.00           C 0
+ATOM  23544  ND2 ASN E  15      39.998  -0.030  11.705  1.00  0.00           N 0
+ATOM  23305  CD2 TYR D1365      37.852   6.764  16.998  1.00  0.00           C 0
+ATOM  19866   CG LYS D 911      35.147   4.619  16.204  1.00  0.00           C 0
+ATOM  23572   CG ASP E  18      39.443   2.139   8.726  1.00  0.00           C 0
+TER
+END

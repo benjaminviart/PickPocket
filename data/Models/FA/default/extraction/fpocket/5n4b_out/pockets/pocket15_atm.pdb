@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    16:
+HEADER 0  - Pocket Score                      : 6.4290
+HEADER 1  - Drug Score                        : 0.0126
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.4873
+HEADER 4  - Mean alpha-sphere SA              : 0.5614
+HEADER 5  - Mean B-factor                     : 0.0834
+HEADER 6  - Hydrophobicity Score              : 20.5455
+HEADER 7  - Polarity Score                    :     9
+HEADER 8  - Volume Score                      : 4.1818
+HEADER 9  - Real volume (approximation)       : 600.6129
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 17.0000
+HEADER 12 - Number of apolar alpha sphere     :    18
+HEADER 13 - Proportion of apolar alpha sphere : 0.5625
+ATOM   3667   CB PRO A 455       8.931  99.215  30.176  1.00 16.53           C 0
+ATOM   3669   CD PRO A 455      10.952 100.308  30.698  1.00 18.17           C 0
+ATOM   3676  OD1 ASP A 456       6.146 103.022  31.480  1.00 29.32           O 0
+ATOM   3668   CG PRO A 455      10.201  99.017  30.873  1.00 19.40           C 0
+ATOM   3412    O ASN A 424       6.156  97.340  30.588  1.00 18.31           O 0
+ATOM   3430   CD PRO A 426       8.539  95.828  32.935  1.00 13.41           C 0
+ATOM   3605  CG2ATHR A 447       8.546  97.561  38.772  0.52 13.50           C 0
+ATOM   3422  OG1 THR A 425       3.549  95.553  32.472  1.00 16.68           O 0
+ATOM   3620   CD LYS A 449      12.748  99.546  38.592  1.00 34.86           C 0
+ATOM   3610    O THR A 448      11.470  96.547  36.471  1.00 15.22           O 0
+ATOM   3677  OD2 ASP A 456       7.084 104.947  32.036  1.00 27.76           O 0
+ATOM   3621   CE LYS A 449      12.047 100.041  39.866  1.00 35.80           C 0
+ATOM   3661  OD1 ASP A 454      10.254 103.681  30.493  1.00 16.96           O 0
+ATOM   3429   CG PRO A 426      10.008  95.745  33.170  1.00 20.86           C 0
+ATOM   3440  OG1 THR A 428       5.499  94.933  38.026  1.00 16.11           O 0
+ATOM   3423  CG2 THR A 425       4.706  94.372  34.244  1.00 16.27           C 0
+ATOM   3418   CA THR A 425       5.856  94.996  32.098  1.00 13.16           C 0
+ATOM   3623    N VAL A 450      14.761  97.597  34.396  1.00 11.46           N 0
+ATOM   3629  CG2 VAL A 450      13.999  98.073  31.499  1.00 10.88           C 0
+ATOM   3615   CA LYS A 449      14.074  97.631  36.715  1.00 12.50           C 0
+TER
+END

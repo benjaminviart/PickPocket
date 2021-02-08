@@ -1,0 +1,69 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5jqf.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                .         .                                             ~~~~
+SEQ  1    GIEPLGPVDEDQGEHYLFAGG                                21          ~~~~
+STR         B    BTTTTT BTTEEE                                             ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5jqf.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                .         .                                             ~~~~
+SEQ  1    GIEPLGPVDEDQGEHYLFAGG                                21          ~~~~
+STR         B    BTTTTT B  EEE                                             ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       PHE    18 A      GLY     20 A                            ~~~~
+LOC  Strand       PHE    18 B      GLY     20 B                            ~~~~
+LOC  TurnI        ASP     9 A      GLN     12 A                            ~~~~
+LOC  TurnI        GLU    10 A      GLY     13 A                            ~~~~
+LOC  TurnIV       TYR    16 A      ALA     19 A                            ~~~~
+LOC  TurnIV       ASP     9 B      GLN     12 B                            ~~~~
+LOC  TurnI        GLU    10 B      GLY     13 B                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  GLY A    1    1    C          Coil    360.00    146.59       2.1      ~~~~
+ASG  ILE A    2    2    C          Coil   -111.45     -2.68     128.8      ~~~~
+ASG  GLU A    3    3    B        Bridge    -72.97    155.99      65.0      ~~~~
+ASG  PRO A    4    4    C          Coil    -80.23    -12.34      98.3      ~~~~
+ASG  LEU A    5    5    C          Coil   -143.75    154.39     121.3      ~~~~
+ASG  GLY A    6    6    C          Coil    130.34   -176.58      35.7      ~~~~
+ASG  PRO A    7    7    C          Coil    -56.32    136.74      30.6      ~~~~
+ASG  VAL A    8    8    B        Bridge    -68.14    140.95      61.3      ~~~~
+ASG  ASP A    9    9    T          Turn   -107.71    102.02       0.2      ~~~~
+ASG  GLU A   10   10    T          Turn    -61.60    -31.10     114.5      ~~~~
+ASG  ASP A   11   11    T          Turn    -77.79    -33.17     106.4      ~~~~
+ASG  GLN A   12   12    T          Turn   -113.57     -3.21     119.9      ~~~~
+ASG  GLY A   13   13    T          Turn     85.77      6.25      55.7      ~~~~
+ASG  GLU A   14   14    C          Coil   -124.31   -120.62      94.1      ~~~~
+ASG  HIS A   15   15    B        Bridge   -137.03    146.63      40.7      ~~~~
+ASG  TYR A   16   16    T          Turn    -77.58    156.60      24.5      ~~~~
+ASG  LEU A   17   17    T          Turn    -63.55    -42.20      99.4      ~~~~
+ASG  PHE A   18   18    E        Strand   -155.21    161.86      99.8      ~~~~
+ASG  ALA A   19   19    E        Strand   -149.68    154.61      28.3      ~~~~
+ASG  GLY A   20   20    E        Strand   -149.47    167.57      12.1      ~~~~
+ASG  GLY A   21   21    C          Coil     68.99    360.00      65.0      ~~~~
+ASG  GLY B    1    1    C          Coil    360.00    145.56       2.9      ~~~~
+ASG  ILE B    2    2    C          Coil   -115.32     11.87     126.3      ~~~~
+ASG  GLU B    3    3    B        Bridge    -81.78    162.03      53.0      ~~~~
+ASG  PRO B    4    4    C          Coil    -85.80    -17.57     104.5      ~~~~
+ASG  LEU B    5    5    C          Coil   -137.76    129.84     135.8      ~~~~
+ASG  GLY B    6    6    C          Coil    141.03   -177.43      35.0      ~~~~
+ASG  PRO B    7    7    C          Coil    -55.42    139.50      33.7      ~~~~
+ASG  VAL B    8    8    B        Bridge    -60.53    135.14      33.7      ~~~~
+ASG  ASP B    9    9    T          Turn   -100.53    101.05       0.0      ~~~~
+ASG  GLU B   10   10    T          Turn    -72.42    -27.00      89.5      ~~~~
+ASG  ASP B   11   11    T          Turn    -62.61    -45.31     116.3      ~~~~
+ASG  GLN B   12   12    T          Turn   -114.63      4.08     115.1      ~~~~
+ASG  GLY B   13   13    T          Turn     84.18     -5.82      43.4      ~~~~
+ASG  GLU B   14   14    C          Coil   -110.15   -119.72     101.3      ~~~~
+ASG  HIS B   15   15    B        Bridge   -135.27    143.56      48.9      ~~~~
+ASG  TYR B   16   16    C          Coil    -76.81    158.53      18.8      ~~~~
+ASG  LEU B   17   17    C          Coil    -64.84    -46.79      98.9      ~~~~
+ASG  PHE B   18   18    E        Strand   -147.83    164.27     103.9      ~~~~
+ASG  ALA B   19   19    E        Strand   -153.93    153.57      29.2      ~~~~
+ASG  GLY B   20   20    E        Strand   -149.93    169.31      13.6      ~~~~
+ASG  GLY B   21   21    C          Coil     67.87    360.00      63.5      ~~~~

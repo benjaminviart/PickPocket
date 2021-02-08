@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   161:
+HEADER 0  - Pocket Score                      : 2.1319
+HEADER 1  - Drug Score                        : 0.0103
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8273
+HEADER 4  - Mean alpha-sphere SA              : 0.3995
+HEADER 5  - Mean B-factor                     : 0.3591
+HEADER 6  - Hydrophobicity Score              : 21.4444
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.6667
+HEADER 9  - Real volume (approximation)       : 347.7864
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1875
+ATOM  62131   CA GLY A 256      66.785 176.433 111.880  1.00 52.32           C 0
+ATOM  36763  C5' C   01788      69.007 174.692 116.504  1.00 45.93           C 0
+ATOM  36760  OP1 C   01788      71.842 175.488 115.987  1.00 45.93           O 0
+ATOM  36780  OP1 U   01789      67.483 179.340 115.292  1.00 50.79           O 0
+ATOM  37791  C5' C   01836      71.404 175.335 110.151  1.00 70.58           C 0
+ATOM  36767  O3' C   01788      66.996 177.204 116.472  1.00 45.93           O 0
+ATOM  37792  C4' C   01836      72.771 175.869 110.518  1.00 70.58           C 0
+ATOM  37795  O3' C   01836      72.802 178.244 109.982  1.00 70.58           O 0
+ATOM  37808  OP1 G   01837      72.045 180.569 109.517  1.00 74.96           O 0
+ATOM  36781  OP2 U   01789      68.765 178.718 117.427  1.00 50.79           O 0
+ATOM  37788  OP1 C   01836      68.869 175.141 108.729  1.00 70.58           O 0
+ATOM  37809  OP2 G   01837      71.864 178.755 107.710  1.00 74.96           O 0
+ATOM  37793  O4' C   01836      73.757 174.808 110.414  1.00 70.58           O 0
+ATOM  62129   CA THR A 254      70.270 171.923 113.847  1.00 51.27           C 0
+ATOM  36761  OP2 C   01788      72.153 175.515 118.536  1.00 45.93           O 0
+ATOM  62147   CA THR A 272      74.223 181.415 119.686  1.00 63.23           C 0
+ATOM  62146   CA VAL A 271      74.118 184.051 116.930  1.00 63.87           C 0
+ATOM  37797  O2' C   01836      75.217 177.513 111.092  1.00 70.58           O 0
+ATOM  37811  C5' G   01837      75.014 180.316 109.249  1.00 74.96           C 0
+ATOM  62130   CA LYS A 255      67.185 172.660 111.748  1.00 51.81           C 0
+TER
+END

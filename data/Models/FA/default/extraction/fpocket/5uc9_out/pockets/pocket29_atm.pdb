@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    30:
+HEADER 0  - Pocket Score                      : -2.6434
+HEADER 1  - Drug Score                        : 0.0626
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.3590
+HEADER 4  - Mean alpha-sphere SA              : 0.4007
+HEADER 5  - Mean B-factor                     : 0.2263
+HEADER 6  - Hydrophobicity Score              : 49.5000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 207.3422
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 23.0000
+HEADER 12 - Number of apolar alpha sphere     :    24
+HEADER 13 - Proportion of apolar alpha sphere : 0.7500
+ATOM   5905  CE1 PHE D 116       8.398  32.823  -2.128  1.00 31.21           C 0
+ATOM   5464   CE LYS D  64       3.635  34.154  -0.918  1.00 35.62           C 0
+ATOM   5903  CD1 PHE D 116       7.796  32.502  -0.914  1.00 29.95           C 0
+ATOM   5465   NZ LYS D  64       3.475  35.498  -0.289  1.00 39.86           N 0
+ATOM   5894  CE2 TYR D 115       9.908  35.805  -0.311  1.00 30.24           C 0
+ATOM   6400  CD2 LEU D 177       9.293  35.787  -4.258  1.00 31.23           C 0
+ATOM   5896   OH TYR D 115       9.384  38.041  -0.907  1.00 42.49           O 0
+ATOM   5463   CD LYS D  64       3.171  34.143  -2.373  1.00 36.20           C 0
+ATOM   6379    O LEU D 175       6.699  37.617  -6.582  1.00 27.49           O 0
+ATOM   5462   CG LYS D  64       3.556  32.841  -3.082  1.00 28.97           C 0
+ATOM   5461   CB LYS D  64       3.035  32.809  -4.527  1.00 26.59           C 0
+ATOM   6380   CB LEU D 175       7.372  34.901  -7.377  1.00 28.25           C 0
+ATOM   6383  CD2 LEU D 175       5.445  33.390  -7.836  1.00 28.69           C 0
+ATOM   6382  CD1 LEU D 175       7.621  32.400  -7.036  1.00 30.67           C 0
+ATOM   6387    O LYS D 176       8.440  40.137  -5.670  1.00 32.39           O 0
+ATOM   5458   CA LYS D  64       3.410  31.555  -5.331  1.00 28.43           C 0
+ATOM   5460    O LYS D  64       4.007  29.652  -3.977  1.00 24.34           O 0
+ATOM   5494    N LYS D  68       5.868  27.650  -3.376  1.00 21.57           N 0
+ATOM   5490  CD2 PHE D  67       9.113  29.663  -5.177  1.00 23.16           C 0
+ATOM   5487   CB PHE D  67       6.912  28.945  -6.109  1.00 23.45           C 0
+ATOM   5499   CG LYS D  68       5.272  29.467  -0.843  1.00 24.24           C 0
+TER
+END

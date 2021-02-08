@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    48:
+HEADER 0  - Pocket Score                      : 3.3343
+HEADER 1  - Drug Score                        : 0.0246
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.5042
+HEADER 4  - Mean alpha-sphere SA              : 0.4701
+HEADER 5  - Mean B-factor                     : 0.2376
+HEADER 6  - Hydrophobicity Score              : 33.2500
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 163.0161
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 17.0000
+HEADER 12 - Number of apolar alpha sphere     :    18
+HEADER 13 - Proportion of apolar alpha sphere : 0.6000
+ATOM   6001  CG2 VAL B  31      50.278  55.798  -0.260  1.00 43.15           C 0
+ATOM  10837  CE1 PHE B 632      50.263  53.053   3.314  1.00 25.21           C 0
+ATOM   5961   OG SER B  25      54.294  54.800   1.541  1.00 40.56           O 0
+ATOM   5960   CB SER B  25      53.217  55.581   1.984  1.00 35.82           C 0
+ATOM   5979   CD LYS B  28      53.586  53.042  -2.361  1.00 59.90           C 0
+ATOM  10846  OD1 ASP B 633      54.544  52.947   3.319  1.00 32.29           O 0
+ATOM   5980   CE LYS B  28      54.390  51.758  -2.353  1.00 64.17           C 0
+ATOM  10875  CD2 TYR B 636      48.839  50.234   1.602  1.00 24.32           C 0
+ATOM   5981   NZ LYS B  28      53.665  50.647  -3.013  1.00 68.73           N 0
+ATOM  10877  CE2 TYR B 636      47.961  50.510   0.572  1.00 25.30           C 0
+ATOM   6000  CG1 VAL B  31      48.047  54.718  -0.281  1.00 41.39           C 0
+ATOM  10843    O ASP B 633      54.460  48.410   4.231  1.00 26.35           O 0
+ATOM  10885   CG PRO B 637      52.419  45.976   2.919  1.00 28.19           C 0
+ATOM  10886   CD PRO B 637      51.644  46.749   3.891  1.00 22.13           C 0
+ATOM   5972   OG SER B  27      56.686  53.036   0.237  1.00 52.95           O 0
+ATOM  10844   CB ASP B 633      55.758  51.235   4.421  1.00 26.17           C 0
+ATOM  10845   CG ASP B 633      55.671  52.534   3.653  1.00 41.97           C 0
+ATOM  10841   CA ASP B 633      54.387  50.703   4.861  1.00 24.40           C 0
+ATOM  10872   CB TYR B 636      49.388  49.363   3.923  1.00 19.12           C 0
+ATOM  10832    O PHE B 632      51.886  50.376   5.891  1.00 22.10           O 0
+TER
+END

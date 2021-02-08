@@ -1,0 +1,34 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6c3t.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    AADTWE                                                6          ~~~~
+STR        EEE                                                             ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6c3t.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    AADTWE                                                6          ~~~~
+STR        EEE                                                             ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       ALA     2 A      THR      4 A                            ~~~~
+LOC  Strand       ALA     2 B      THR      4 B                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  ALA A    1    1    C          Coil    360.00    149.16      77.0      ~~~~
+ASG  ALA A    2    2    E        Strand   -151.85    134.84      69.9      ~~~~
+ASG  ASP A    3    3    E        Strand   -125.05    119.53      89.0      ~~~~
+ASG  THR A    4    4    E        Strand   -125.57    126.56     100.5      ~~~~
+ASG  TRP A    5    5    C          Coil   -157.14    160.42     132.9      ~~~~
+ASG  GLU A    6    6    C          Coil   -137.96    360.00     238.2      ~~~~
+ASG  ALA B    1    1    C          Coil    360.00    155.69      67.1      ~~~~
+ASG  ALA B    2    2    E        Strand   -150.25    140.69      69.4      ~~~~
+ASG  ASP B    3    3    E        Strand   -129.71    116.02      82.6      ~~~~
+ASG  THR B    4    4    E        Strand   -126.72    148.97     100.2      ~~~~
+ASG  TRP B    5    5    C          Coil   -167.24    168.98     138.7      ~~~~
+ASG  GLU B    6    6    C          Coil   -116.48    360.00     250.0      ~~~~

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    77:
+HEADER 0  - Pocket Score                      : -2.2547
+HEADER 1  - Drug Score                        : 0.0037
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 4.0126
+HEADER 4  - Mean alpha-sphere SA              : 0.6099
+HEADER 5  - Mean B-factor                     : 0.2425
+HEADER 6  - Hydrophobicity Score              : -26.2500
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 2.7500
+HEADER 9  - Real volume (approximation)       : 226.1043
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1662   CA ILE A 209       0.413  12.138  35.476  1.00 25.67           C 0
+ATOM   1695   CD ARG A 212       3.034  11.187  31.017  0.79 30.50           C 0
+ATOM   1654    O HIS A 208      -1.596  12.574  33.655  0.93 26.54           O 0
+ATOM   1698  NH1 ARG A 212       4.204  13.548  30.173  0.85 35.22           N 0
+ATOM   1653    C HIS A 208      -1.454  13.382  34.568  1.00 26.70           C 0
+ATOM   1668  CD1 ILE A 209       3.150  11.517  34.864  0.50 26.43           C 0
+ATOM   1655   CB HIS A 208      -1.748  15.731  33.824  1.00 25.96           C 0
+ATOM   1661    N ILE A 209      -0.547  13.234  35.527  1.00 24.24           N 0
+ATOM   1665   CB ILE A 209       1.489  12.252  36.600  1.00 25.98           C 0
+ATOM  18064   CZ ARG D 212       3.743  15.147  38.207  0.21 35.03           C 0
+ATOM  18063   NE ARG D 212       4.645  14.294  37.730  0.80 39.10           N 0
+ATOM  18065  NH1 ARG D 212       3.965  16.455  38.152  0.48 38.43           N 0
+ATOM  18062   CD ARG D 212       5.913  14.684  37.111  0.70 39.09           C 0
+ATOM  18020    C HIS D 208       9.283  16.111  32.471  1.00 31.27           C 0
+ATOM  18021    O HIS D 208       9.716  16.156  33.618  0.87 31.38           O 0
+ATOM  18022   CB HIS D 208       8.156  18.212  31.738  1.00 31.08           C 0
+ATOM  18028    N ILE D 209       8.696  15.036  31.961  1.00 30.32           N 0
+ATOM  18035  CD1 ILE D 209       6.328  12.344  33.969  0.72 27.25           C 0
+ATOM  18029   CA ILE D 209       8.471  13.824  32.748  1.00 31.81           C 0
+ATOM   1626    O ASP A 205      -0.620  17.605  36.521  0.76 23.07           O 0
+TER
+END

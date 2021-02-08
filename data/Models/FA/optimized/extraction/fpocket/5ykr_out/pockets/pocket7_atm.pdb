@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 3.1448
+HEADER 1  - Drug Score                        : 0.0056
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.7180
+HEADER 4  - Mean alpha-sphere SA              : 0.5086
+HEADER 5  - Mean B-factor                     : 0.1754
+HEADER 6  - Hydrophobicity Score              : 5.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1250
+HEADER 9  - Real volume (approximation)       : 171.0858
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.8214
+ATOM   4028    O VAL B  61     -38.863  -8.422  44.912  1.00 11.40           O 0
+ATOM   4035    O LYS B  62     -37.750 -11.026  47.515  1.00 14.08           O 0
+ATOM    887   CB THR A 114     -36.061  -7.685  42.548  1.00  8.78           C 0
+ATOM    890    N GLU A 115     -35.923  -5.147  44.057  1.00  8.79           N 0
+ATOM    828  NH2 ARG A 106     -32.106 -10.562  47.831  1.00 38.82           N 0
+ATOM    897  OE1 GLU A 115     -35.492  -4.521  48.831  1.00 29.81           O 0
+ATOM    895   CG GLU A 115     -36.439  -3.747  46.770  1.00 15.21           C 0
+ATOM    894   CB GLU A 115     -35.106  -4.017  46.101  1.00 12.05           C 0
+ATOM   4038   CD LYS B  62     -38.205  -8.147  50.041  1.00 22.99           C 0
+ATOM    899    N ASP A 116     -33.247  -4.897  43.417  1.00  8.38           N 0
+ATOM    905  OD1 ASP A 116     -30.673  -6.380  44.682  1.00 10.53           O 0
+ATOM    904   CG ASP A 116     -30.985  -6.978  43.630  1.00  9.67           C 0
+ATOM    888  OG1 THR A 114     -34.787  -7.454  41.928  1.00  9.42           O 0
+ATOM    906  OD2 ASP A 116     -30.919  -8.232  43.491  1.00 10.08           O 0
+ATOM    889  CG2 THR A 114     -36.699  -8.973  42.010  1.00 10.38           C 0
+ATOM    800  OE1 GLN A 103     -32.889 -11.829  44.484  1.00 12.90           O 0
+ATOM   2605  NH1 ARG A 340     -29.947  -4.040  46.121  1.00 12.99           N 0
+ATOM   4040   NZ LYS B  62     -36.248  -7.188  51.126  1.00 34.60           N 0
+ATOM    825   NE ARG A 106     -33.613 -12.275  47.369  1.00 26.96           N 0
+ATOM    826   CZ ARG A 106     -32.950 -11.510  48.244  1.00 33.82           C 0
+TER
+END

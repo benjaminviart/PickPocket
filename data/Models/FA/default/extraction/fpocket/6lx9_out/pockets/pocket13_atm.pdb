@@ -1,0 +1,50 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    14:
+HEADER 0  - Pocket Score                      : 0.6138
+HEADER 1  - Drug Score                        : 0.0284
+HEADER 2  - Number of V. Vertices             :    48
+HEADER 3  - Mean alpha-sphere radius          : 3.9799
+HEADER 4  - Mean alpha-sphere SA              : 0.4916
+HEADER 5  - Mean B-factor                     : 0.1743
+HEADER 6  - Hydrophobicity Score              : 39.0000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 442.8786
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 15.0000
+HEADER 12 - Number of apolar alpha sphere     :    16
+HEADER 13 - Proportion of apolar alpha sphere : 0.3333
+ATOM   1853    N PHE A 423      -9.109 -10.038   8.542  1.00  9.48           N 0
+ATOM   1821    O ASP A 419     -13.696 -10.731   6.175  1.00 11.14           O 0
+ATOM   1845    N LEU A 422     -10.713 -11.456   6.638  1.00 10.38           N 0
+ATOM   1829    O ILE A 420     -12.909 -13.070   9.054  1.00 14.94           O 0
+ATOM   1764    N GLN A 413     -14.064  -5.834  10.645  1.00 11.93           N 0
+ATOM   1849   CB LEU A 422     -10.619  -9.139   5.792  1.00 11.61           C 0
+ATOM   1760   CB LEU A 412     -11.241  -5.662   9.280  1.00  9.71           C 0
+ATOM   1857   CB PHE A 423      -8.787  -9.595  10.939  1.00  9.48           C 0
+ATOM   1726   CGAARG A 409     -10.516  -8.000  15.237  0.50 19.79           C 0
+ATOM   1728   CDAARG A 409      -9.970  -8.891  16.331  0.50 20.70           C 0
+ATOM   1734  NH1AARG A 409     -12.590  -8.902  17.270  0.50 20.88           N 0
+ATOM   1771  OE1 GLN A 413     -15.901  -7.595  14.998  1.00 18.48           O 0
+ATOM   1860  CD2 PHE A 423      -7.754 -10.339  13.105  1.00 12.05           C 0
+ATOM   1768   CB GLN A 413     -15.480  -6.810  12.351  1.00 15.64           C 0
+ATOM   1769   CG GLN A 413     -16.746  -7.579  12.734  1.00 18.76           C 0
+ATOM   1722    OAARG A 409     -12.140  -5.979  12.995  0.50 12.27           O 0
+ATOM   1770   CD GLN A 413     -16.843  -7.826  14.231  1.00 18.78           C 0
+ATOM   1870   CD PRO A 424      -8.419 -12.765   9.970  1.00 11.14           C 0
+ATOM   1765   CA GLN A 413     -15.328  -6.522  10.856  1.00 13.62           C 0
+ATOM   1827   CA ILE A 420     -14.724 -12.861   7.519  1.00 13.03           C 0
+ATOM   1796    O HIS A 416     -16.032  -8.006   6.066  1.00 12.99           O 0
+ATOM   1806    O PRO A 417     -19.049 -10.217   5.999  1.00 17.06           O 0
+ATOM   1832  CG2 ILE A 420     -17.138 -13.530   7.725  1.00 17.71           C 0
+ATOM   1767    O GLN A 413     -17.424  -6.193   9.705  1.00 15.78           O 0
+ATOM   1804   CA PRO A 417     -18.712  -7.910   6.487  1.00 12.59           C 0
+ATOM   1759    O LEU A 412     -14.370  -5.703   8.419  1.00 11.90           O 0
+ATOM   1830   CB ILE A 420     -15.699 -13.917   8.071  1.00 16.40           C 0
+ATOM   1758    C LEU A 412     -13.702  -5.434   9.423  1.00 10.75           C 0
+ATOM   1772  NE2 GLN A 413     -18.023  -8.267  14.652  1.00 20.99           N 0
+TER
+END

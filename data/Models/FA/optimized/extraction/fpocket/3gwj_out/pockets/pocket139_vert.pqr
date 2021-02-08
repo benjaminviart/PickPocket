@@ -1,0 +1,49 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   140:
+HEADER 0  - Pocket Score                      : 0.0244
+HEADER 1  - Drug Score                        : 0.0064
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8629
+HEADER 4  - Mean alpha-sphere SA              : 0.4157
+HEADER 5  - Mean B-factor                     : 0.2567
+HEADER 6  - Hydrophobicity Score              : 0.1429
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.7143
+HEADER 9  - Real volume (approximation)       : 388.1126
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 25.5556
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  2e9e3 APOL STP   140      -3.877  12.511 -40.180    0.00     3.65
+ATOM  35439 APOL STP   140      -3.069  12.139 -40.998    0.00     3.75
+ATOM  354e2 APOL STP   140      -4.263  13.128 -38.902    0.00     3.43
+ATOM  2e7fa APOL STP   140      -4.367  14.833 -42.283    0.00     4.64
+ATOM  2e7fa APOL STP   140      -3.853  14.425 -42.590    0.00     4.54
+ATOM  2e9e3 APOL STP   140      -4.349  13.759 -40.980    0.00     3.88
+ATOM  2e7fa APOL STP   140      -5.744  13.995 -43.062    0.00     3.54
+ATOM  3543b APOL STP   140      -3.916  11.617 -39.767    0.00     3.52
+ATOM  35439 APOL STP   140      -2.178  11.980 -41.391    0.00     3.75
+ATOM  2e7fa APOL STP   140      -2.603  12.590 -42.293    0.00     4.18
+ATOM  2e7fa APOL STP   140      -2.540  12.371 -42.122    0.00     4.14
+ATOM  2e7fa APOL STP   140      -2.413  12.755 -43.885    0.00     4.75
+ATOM  2e7fa APOL STP   140      -2.495  12.462 -42.376    0.00     4.22
+ATOM  35439 APOL STP   140      -2.468  12.263 -41.967    0.00     4.06
+ATOM  35439 APOL STP   140      -2.578  12.302 -41.976    0.00     4.08
+ATOM  3b2da APOL STP   140      -4.132  10.924 -38.741    0.00     3.51
+ATOM  354e2 APOL STP   140      -4.526  12.950 -37.852    0.00     3.49
+ATOM  3b6a9 APOL STP   140      -5.142  13.946 -36.869    0.00     4.03
+ATOM  3b2da APOL STP   140      -4.029  10.735 -38.570    0.00     3.46
+ATOM  3b6a9 APOL STP   140      -5.244  15.138 -37.777    0.00     4.26
+ATOM  39700 APOL STP   140      -5.162  13.503 -36.888    0.00     3.80
+ATOM  3b2d6 APOL STP   140      -5.031  12.889 -37.141    0.00     3.50
+ATOM  3b2d1 APOL STP   140      -5.210  12.927 -36.434    0.00     3.46
+ATOM  3b6a9 APOL STP   140      -5.160  13.923 -36.847    0.00     4.03
+ATOM  3b2ef APOL STP   140      -5.269  13.133 -35.716    0.00     3.54
+ATOM  3b6a9 APOL STP   140      -5.263  13.385 -35.740    0.00     3.66
+ATOM  3b6a9 APOL STP   140      -3.789  14.472 -35.472    0.00     3.42
+TER
+END

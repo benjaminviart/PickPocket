@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 3.8677
+HEADER 1  - Drug Score                        : 0.0160
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 4.1212
+HEADER 4  - Mean alpha-sphere SA              : 0.6116
+HEADER 5  - Mean B-factor                     : 0.2210
+HEADER 6  - Hydrophobicity Score              : 19.8000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.2000
+HEADER 9  - Real volume (approximation)       : 315.5437
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 25.0000
+HEADER 12 - Number of apolar alpha sphere     :    26
+HEADER 13 - Proportion of apolar alpha sphere : 0.9630
+ATOM   2747  CE2 PHE B 187       9.125  -3.543  -0.586  1.00 78.51           C 0
+ATOM    367    O LEU A  59       9.960  -5.030  -5.035  1.00 70.10           O 0
+ATOM   1241  CG1 VAL A 175       6.933  -5.965  -3.017  1.00 82.02           C 0
+ATOM   2748   CZ PHE B 187       7.896  -3.303   0.001  1.00 69.66           C 0
+ATOM   2721  OD2 ASP B 184       7.440   6.282  -0.471  1.00105.66           O 0
+ATOM    732   CB ALA A 106      12.327   4.488  -5.130  1.00 68.19           C 0
+ATOM   2720  OD1 ASP B 184       6.498   4.339  -0.043  1.00 89.45           O 0
+ATOM    752  OE1 GLU A 109       6.719   7.118  -4.352  1.00 97.85           O 0
+ATOM   2783  NH1 ARG B 191      12.362   1.662  -2.575  1.00 72.68           N 0
+ATOM    731    O ALA A 106      11.680   6.910  -3.049  1.00 73.77           O 0
+ATOM    380   CA GLY A  61      11.641   0.077  -6.045  1.00 72.13           C 0
+ATOM    727  NH2 ARG A 105      10.091   5.280  -8.434  1.00 88.10           N 0
+ATOM    382    O GLY A  61      12.633   1.830  -7.292  1.00 75.62           O 0
+ATOM   2742   CB PHE B 187      10.917  -0.253  -0.009  1.00 65.10           C 0
+ATOM   2715   CA ASP B 184       8.491   3.684   1.841  1.00 74.84           C 0
+ATOM   2719   CG ASP B 184       7.310   5.255   0.237  1.00 89.08           C 0
+ATOM   2744  CD1 PHE B 187       8.625  -1.076   0.563  1.00 83.13           C 0
+ATOM   2743   CG PHE B 187       9.866  -1.305  -0.022  1.00 73.02           C 0
+ATOM    374    C VAL A  60      11.951  -1.721  -4.427  1.00 72.70           C 0
+ATOM    375    O VAL A  60      12.124  -0.927  -3.501  1.00 71.38           O 0
+ATOM   2745  CD2 PHE B 187      10.110  -2.546  -0.591  1.00 81.63           C 0
+ATOM   2717    O ASP B 184      10.872   3.480   1.835  1.00 74.28           O 0
+ATOM   2784  NH2 ARG B 191      13.106   3.610  -1.641  1.00 70.59           N 0
+TER
+END

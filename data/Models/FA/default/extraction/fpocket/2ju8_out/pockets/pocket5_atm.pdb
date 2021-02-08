@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : -0.6234
+HEADER 1  - Drug Score                        : 0.0048
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.0097
+HEADER 4  - Mean alpha-sphere SA              : 0.5545
+HEADER 5  - Mean B-factor                     : 0.4583
+HEADER 6  - Hydrophobicity Score              : -1.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1250
+HEADER 9  - Real volume (approximation)       : 588.7762
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2424
+ATOM   1487    N GLY A 106      16.956   3.077  -1.070  1.00  0.78           N 0
+ATOM   1500  OD1 ASP A 107      18.877  -0.134  -1.363  1.00  2.55           O 0
+ATOM   1488   CA GLY A 106      17.301   3.391  -2.444  1.00  0.82           C 0
+ATOM      8   CE MET A   1      22.104   8.336  -0.183  1.00  6.91           C 0
+ATOM   1490    O GLY A 106      18.433   2.123  -4.124  1.00  1.44           O 0
+ATOM      4    O MET A   1      17.428   9.460  -3.575  1.00  2.87           O 0
+ATOM      5   CB MET A   1      19.244   9.658  -0.721  1.00  4.46           C 0
+ATOM      3    C MET A   1      17.358   9.664  -2.363  1.00  2.89           C 0
+ATOM     20    N ASN A   2      16.394   9.159  -1.599  1.00  2.46           N 0
+ATOM     27  ND2 ASN A   2      15.731   7.791   1.053  1.00  2.73           N 0
+ATOM     24   CB ASN A   2      14.980   7.201  -1.173  1.00  2.52           C 0
+ATOM   1237  OD1 ASP A  88      18.111   7.221   4.164  1.00  2.84           O 0
+ATOM      7   SD MET A   1      21.344   9.375   1.063  1.00  6.04           S 0
+ATOM     21   CA ASN A   2      15.337   8.319  -2.153  1.00  1.86           C 0
+ATOM   1762  NH1 ARG A 126      18.519   3.034  -7.414  1.00  2.51           N 0
+ATOM   1238  OD2 ASP A  88      18.016   5.699   5.746  1.00  2.57           O 0
+ATOM   1482  ND2 ASN A 105      15.706   1.527   3.371  1.00  1.53           N 0
+ATOM   1480   CG ASN A 105      15.581   0.567   2.462  1.00  1.24           C 0
+ATOM   1479   CB ASN A 105      15.853   0.955   1.023  1.00  0.69           C 0
+ATOM   1476   CA ASN A 105      15.465   2.404   0.721  1.00  0.62           C 0
+ATOM   1458    O PHE A 104      14.512   4.107   2.706  1.00  0.62           O 0
+TER
+END

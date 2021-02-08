@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 28.7867
+HEADER 1  - Drug Score                        : 0.7255
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.4094
+HEADER 4  - Mean alpha-sphere SA              : 0.5146
+HEADER 5  - Mean B-factor                     : 0.0427
+HEADER 6  - Hydrophobicity Score              : 68.5000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 5.0000
+HEADER 9  - Real volume (approximation)       : 167.4175
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 16.0000
+HEADER 12 - Number of apolar alpha sphere     :    17
+HEADER 13 - Proportion of apolar alpha sphere : 0.5484
+ATOM   1316    C VAL A 332       6.372  15.072 -10.746  1.00 11.58           C 0
+ATOM   1297    C LEU A 331       6.669  14.023 -14.111  1.00 10.26           C 0
+ATOM   1300   CG LEU A 331       9.191  15.596 -15.029  1.00 14.91           C 0
+ATOM   1314    N VAL A 332       6.837  13.866 -12.800  1.00 10.56           N 0
+ATOM   1298    O LEU A 331       5.667  14.554 -14.594  1.00 10.59           O 0
+ATOM     88  CE2 PHE A 262       4.107  20.428 -14.992  1.00 12.65           C 0
+ATOM   1344  OE1AGLN A 333       7.128  20.474 -11.703  0.51 10.07           O 0
+ATOM   1302  CD2 LEU A 331       9.744  16.635 -15.963  1.00 16.49           C 0
+ATOM   1330    NAGLN A 333       5.609  16.064 -10.310  0.51 11.31           N 0
+ATOM   1340   CGAGLN A 333       5.718  19.062 -10.402  0.51  9.21           C 0
+ATOM   1301  CD1 LEU A 331      10.311  14.966 -14.209  1.00 16.17           C 0
+ATOM   1338   CBAGLN A 333       6.667  18.176  -9.611  0.51 10.28           C 0
+ATOM   1317    O VAL A 332       7.462  14.792 -10.237  1.00 13.21           O 0
+ATOM     82    O PHE A 262       3.309  16.589 -12.308  1.00 10.29           O 0
+ATOM     86  CD2 PHE A 262       3.700  20.111 -13.712  1.00 11.22           C 0
+ATOM   1299   CB LEU A 331       8.425  14.564 -15.844  1.00 12.63           C 0
+ATOM    766  CE1 TYR A 302       3.332  18.816 -19.776  1.00 13.54           C 0
+ATOM    119   CA GLY A 264       3.557  15.195 -17.804  1.00 10.42           C 0
+ATOM     89   CZ PHE A 262       3.231  20.276 -16.032  1.00 12.85           C 0
+ATOM    118    N GLY A 264       3.380  15.082 -16.373  1.00  9.89           N 0
+TER
+END

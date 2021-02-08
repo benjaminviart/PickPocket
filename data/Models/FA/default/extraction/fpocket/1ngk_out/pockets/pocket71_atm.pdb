@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    72:
+HEADER 0  - Pocket Score                      : -1.7563
+HEADER 1  - Drug Score                        : 0.0312
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.4002
+HEADER 4  - Mean alpha-sphere SA              : 0.4283
+HEADER 5  - Mean B-factor                     : 0.2956
+HEADER 6  - Hydrophobicity Score              : 39.6667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.2222
+HEADER 9  - Real volume (approximation)       : 191.5576
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.3939
+ATOM   2444    OAPRO C  37      47.491 -33.118  60.556  0.50 29.75           O 0
+ATOM   2516  CD2ALEU C  41      47.522 -32.109  64.300  0.50 10.52           C 0
+ATOM   2458    OAGLU C  38      47.256 -37.252  60.527  0.50 30.40           O 0
+ATOM   2476    OAASP C  39      49.548 -36.057  63.960  0.50 23.03           O 0
+ATOM   2456    CAGLU C  38      47.729 -36.189  60.106  0.50 30.21           C 0
+ATOM   2402   CG ARG C  33      42.388 -36.492  64.212  1.00 32.53           C 0
+ATOM   2470    NAASP C  39      48.852 -35.740  60.654  0.50 28.46           N 0
+ATOM   2400    O ARG C  33      42.373 -34.323  61.500  1.00 27.13           O 0
+ATOM   2454   CAAGLU C  38      46.932 -35.470  59.007  0.50 30.50           C 0
+ATOM   2514  CD1ALEU C  41      46.813 -33.034  66.533  0.50 13.39           C 0
+ATOM   2512   CGALEU C  41      47.986 -32.789  65.590  0.50 15.33           C 0
+ATOM   2398   CA ARG C  33      41.460 -34.134  63.710  1.00 26.41           C 0
+ATOM   2429    O TYR C  36      44.729 -32.417  60.006  1.00 21.01           O 0
+ATOM   2430   CB TYR C  36      44.765 -30.413  62.372  1.00 16.24           C 0
+ATOM   2349  CG1 VAL C  26      43.474 -30.659  66.999  1.00 17.89           C 0
+ATOM   2347    O VAL C  26      42.132 -33.407  67.763  1.00 16.96           O 0
+ATOM   2352   CA ALA C  27      44.328 -34.843  68.605  1.00 20.51           C 0
+ATOM   2392    O LEU C  32      41.265 -31.413  63.113  1.00 23.18           O 0
+ATOM   2403   CD ARG C  33      42.122 -37.893  64.808  1.00 37.63           C 0
+ATOM   2406  NH1 ARG C  33      41.893 -39.510  62.458  1.00 42.31           N 0
+ATOM   2354    O ALA C  27      43.196 -36.865  67.949  1.00 22.42           O 0
+ATOM   2355   CB ALA C  27      45.602 -35.292  69.300  1.00 19.83           C 0
+ATOM   2468  OE2AGLU C  38      44.590 -38.710  58.852  0.50 36.87           O 0
+TER
+END

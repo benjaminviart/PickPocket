@@ -1,0 +1,59 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    95:
+HEADER 0  - Pocket Score                      : 0.6986
+HEADER 1  - Drug Score                        : 0.0042
+HEADER 2  - Number of V. Vertices             :    37
+HEADER 3  - Mean alpha-sphere radius          : 4.4064
+HEADER 4  - Mean alpha-sphere SA              : 0.5479
+HEADER 5  - Mean B-factor                     : 0.2608
+HEADER 6  - Hydrophobicity Score              : -3.4000
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 5.1000
+HEADER 9  - Real volume (approximation)       : 643.3011
+HEADER 10 - Charge Score                      :     7
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0270
+ATOM  58699  POL STP    95     101.007 165.890 177.173    0.00     4.25
+ATOM  1c570  POL STP    95     101.440 166.550 176.608    0.00     4.78
+ATOM  1c56f  POL STP    95     101.490 166.254 177.395    0.00     4.64
+ATOM  1c571  POL STP    95     101.747 167.098 177.286    0.00     4.94
+ATOM  1c571  POL STP    95     101.485 167.085 175.917    0.00     5.11
+ATOM  186c5  POL STP    95     103.542 167.655 178.336    0.00     4.04
+ATOM  1c571  POL STP    95     102.755 167.229 177.269    0.00     4.37
+ATOM  186c6  POL STP    95     104.750 167.217 178.789    0.00     3.21
+ATOM  1c571  POL STP    95     102.761 167.237 176.819    0.00     4.32
+ATOM  1c571  POL STP    95     101.492 167.087 175.882    0.00     5.11
+ATOM  36d55  POL STP    95     101.345 167.253 175.409    0.00     5.16
+ATOM  89203  POL STP    95      99.973 168.572 174.053    0.00     4.63
+ATOM  36d4f  POL STP    95     100.152 168.255 174.373    0.00     4.89
+ATOM  36d47  POL STP    95      99.940 168.269 174.089    0.00     4.85
+ATOM  36d55  POL STP    95     100.925 167.854 174.924    0.00     5.13
+ATOM  36d55  POL STP    95     101.222 167.484 174.832    0.00     5.23
+ATOM  88936 APOL STP    95      99.840 171.071 173.674    0.00     3.10
+ATOM  1b59f  POL STP    95     100.496 170.705 174.795    0.00     3.33
+ATOM  88951  POL STP    95     102.399 165.036 172.485    0.00     4.94
+ATOM  1c56f  POL STP    95     102.453 165.290 173.517    0.00     4.45
+ATOM  88952  POL STP    95     102.472 164.714 171.249    0.00     5.64
+ATOM  1b59e  POL STP    95     100.490 168.758 176.295    0.00     4.61
+ATOM  36d55  POL STP    95     100.604 168.236 175.183    0.00     5.03
+ATOM  1b59f  POL STP    95     100.672 168.701 175.216    0.00     4.71
+ATOM  2028c  POL STP    95     100.511 168.971 177.088    0.00     4.48
+ATOM  2028d  POL STP    95     100.292 169.194 177.195    0.00     4.41
+ATOM  1c632  POL STP    95     102.206 166.643 179.241    0.00     4.07
+ATOM  290c1  POL STP    95     102.111 166.615 179.160    0.00     4.11
+ATOM  1c633  POL STP    95     101.713 164.940 178.152    0.00     3.77
+ATOM  1c633  POL STP    95     102.213 164.088 178.140    0.00     3.18
+ATOM  290c1  POL STP    95     101.650 165.105 178.178    0.00     3.87
+ATOM  290b2  POL STP    95     101.594 163.856 178.823    0.00     3.09
+ATOM  2028c  POL STP    95     101.684 167.602 178.597    0.00     4.91
+ATOM  290c5  POL STP    95     101.519 167.747 178.936    0.00     4.83
+ATOM  290c4  POL STP    95     101.747 167.434 178.481    0.00     4.93
+ATOM  290bc  POL STP    95     100.613 165.573 178.106    0.00     3.81
+ATOM  36d49  POL STP    95      99.436 165.020 177.153    0.00     3.09
+TER
+END

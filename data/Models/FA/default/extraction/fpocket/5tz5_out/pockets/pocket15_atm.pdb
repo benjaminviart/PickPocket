@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    16:
+HEADER 0  - Pocket Score                      : 6.7576
+HEADER 1  - Drug Score                        : 0.0118
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.6265
+HEADER 4  - Mean alpha-sphere SA              : 0.5506
+HEADER 5  - Mean B-factor                     : 0.3380
+HEADER 6  - Hydrophobicity Score              : 9.3000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.1000
+HEADER 9  - Real volume (approximation)       : 213.3102
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0909
+ATOM   4356   CD ARG B1239      38.753  -8.839   7.602  0.76 43.06           C 0
+ATOM   4354   CB ARG B1239      36.451  -9.774   7.873  1.00 36.02           C 0
+ATOM   4008  OD1 ASP B1195      36.372 -12.033   1.982  1.00 39.97           O 0
+ATOM   4213   NZ LYS B1219      39.055 -13.109   4.052  1.00 45.63           N 0
+ATOM   4212   CE LYS B1219      38.025 -13.526   5.057  1.00 43.26           C 0
+ATOM   4357   NE ARG B1239      38.269  -7.471   7.485  0.55 43.81           N 0
+ATOM   3991   CA GLY B1193      33.087  -7.224   5.544  1.00 37.63           C 0
+ATOM   4341    O GLY B1237      34.316 -12.693   5.275  1.00 29.61           O 0
+ATOM   2785    O VAL B1032      33.013  -6.674   2.443  1.00 32.29           O 0
+ATOM   2794  OG1 THR B1033      35.509  -4.234   1.962  1.00 37.78           O 0
+ATOM   3992    C GLY B1193      32.742  -8.692   5.375  1.00 37.80           C 0
+ATOM   3994    N ILE B1194      32.521  -9.093   4.115  1.00 30.48           N 0
+ATOM   3997    O ILE B1194      33.053 -10.097   1.534  1.00 30.34           O 0
+ATOM   3996    C ILE B1194      32.903 -10.894   2.463  1.00 28.98           C 0
+ATOM   2775   CA ASP B1031      33.841  -8.986  -1.489  1.00 31.81           C 0
+ATOM   2780  OD1 ASP B1031      35.963 -10.674  -2.045  1.00 49.40           O 0
+ATOM   2776    C ASP B1031      33.218  -7.659  -1.042  1.00 29.12           C 0
+ATOM   2778   CB ASP B1031      34.752  -8.770  -2.703  1.00 34.18           C 0
+ATOM   2777    O ASP B1031      33.531  -6.578  -1.583  1.00 30.07           O 0
+ATOM   4360  NH2 ARG B1239      38.260  -5.230   7.951  0.90 44.49           N 0
+ATOM   3988  CG1 VAL B1192      35.220  -5.544   8.996  1.00 34.01           C 0
+ATOM   2795  CG2 THR B1033      35.105  -2.462   3.533  1.00 35.45           C 0
+ATOM   3986    O VAL B1192      32.745  -4.571   6.240  1.00 46.36           O 0
+ATOM   3989  CG2 VAL B1192      34.635  -3.223   8.286  1.00 40.01           C 0
+ATOM   3985    C VAL B1192      32.794  -5.409   7.149  1.00 42.86           C 0
+TER
+END

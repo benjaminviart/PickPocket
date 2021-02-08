@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    31:
+HEADER 0  - Pocket Score                      : -2.0507
+HEADER 1  - Drug Score                        : 0.0604
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.2551
+HEADER 4  - Mean alpha-sphere SA              : 0.7105
+HEADER 5  - Mean B-factor                     : 0.4351
+HEADER 6  - Hydrophobicity Score              : 50.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.3750
+HEADER 9  - Real volume (approximation)       : 447.0864
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4667
+ATOM   2902   NZ LYS A 378       0.848  16.207  -1.921  1.00113.48           N 0
+ATOM   2957  OE1 GLN A 385       6.258  17.182   4.891  1.00 64.43           O 0
+ATOM   2932  OE1 GLU A 382       1.879  15.863   3.204  1.00105.15           O 0
+ATOM   2899   CG LYS A 378       3.306  14.012  -1.818  1.00113.48           C 0
+ATOM   2931   CD GLU A 382       2.303  14.804   2.694  1.00105.15           C 0
+ATOM   2930   CG GLU A 382       3.681  14.353   3.056  1.00105.15           C 0
+ATOM   2626   OH TYR A 341      10.636  16.707   0.991  1.00 49.95           O 0
+ATOM   2923  CG1 VAL A 381       8.526  15.110   2.675  1.00 45.00           C 0
+ATOM   2901   CE LYS A 378       1.076  14.956  -1.140  1.00113.48           C 0
+ATOM   2958  NE2 GLN A 385       8.368  17.949   4.791  1.00 64.43           N 0
+ATOM   2898   CB LYS A 378       3.979  12.688  -2.120  1.00 66.83           C 0
+ATOM   2894    N LYS A 378       6.229  11.742  -2.188  1.00 66.83           N 0
+ATOM   2858    O PHE A 374       7.067  12.087  -5.720  1.00 43.34           O 0
+ATOM   2895   CA LYS A 378       5.269  12.433  -1.332  1.00 66.83           C 0
+ATOM   2562   OH TYR A 334      11.878  14.958  -3.150  1.00 53.51           O 0
+ATOM   2887   CB PHE A 377       9.218  11.561  -3.311  1.00 52.44           C 0
+ATOM   2924  CG2 VAL A 381       9.365  13.479   0.991  1.00 45.00           C 0
+ATOM   2885    C PHE A 377       7.334  11.163  -1.728  1.00 52.44           C 0
+ATOM   2922   CB VAL A 381       8.272  13.768   2.002  1.00 40.98           C 0
+ATOM   2897    O LYS A 378       5.161  12.346   1.065  1.00 66.83           O 0
+TER
+END

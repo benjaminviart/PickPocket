@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 21.2875
+HEADER 1  - Drug Score                        : 0.0523
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.0833
+HEADER 4  - Mean alpha-sphere SA              : 0.4809
+HEADER 5  - Mean B-factor                     : 0.5817
+HEADER 6  - Hydrophobicity Score              : 13.3333
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 292.0024
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 28.0000
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 0.9062
+ATOM   1652   CD LYS B  41     -11.501  18.471  21.742  1.00 24.66           C 0
+ATOM   1619  OE1 GLU B  37      -8.819  22.246  17.409  1.00 35.22           O 0
+ATOM   1615    O GLU B  37      -8.622  18.082  18.534  1.00 16.43           O 0
+ATOM   1654   NZ LYS B  41     -12.266  19.734  19.673  1.00 30.59           N 0
+ATOM   1642   CB LEU B  40      -5.953  18.897  20.885  1.00 13.00           C 0
+ATOM   1640    C LEU B  40      -7.335  17.180  22.059  1.00 11.56           C 0
+ATOM   1677   CEALYS B  44      -8.375  20.210  26.308  0.50 17.13           C 0
+ATOM   1641    O LEU B  40      -7.175  17.176  23.256  1.00 12.38           O 0
+ATOM   1644  CD1 LEU B  40      -4.747  20.712  19.719  1.00 16.20           C 0
+ATOM   1503   CA GLY B  25      -4.931  21.944  27.013  1.00 12.19           C 0
+ATOM   1509    O TYR B  26      -2.579  24.020  24.301  1.00 15.31           O 0
+ATOM   1505    O GLY B  25      -4.783  24.267  26.662  1.00 15.48           O 0
+ATOM   1526  OE2 GLU B  27      -6.782  26.778  23.974  1.00 43.79           O 0
+ATOM   1679   NZALYS B  44      -8.898  21.547  26.738  0.50 23.23           N 0
+ATOM   1574   NZ LYS B  32      -3.393  24.975  19.643  1.00 25.87           N 0
+ATOM   1620  OE2 GLU B  37      -6.806  22.830  16.880  1.00 30.64           O 0
+ATOM   1525  OE1 GLU B  27      -6.025  28.239  22.536  1.00 46.81           O 0
+ATOM   1653   CE LYS B  41     -12.594  19.331  21.086  1.00 25.94           C 0
+ATOM   1645  CD2 LEU B  40      -3.536  19.178  21.198  1.00 13.40           C 0
+ATOM   1490    O ALA B  22      -3.717  18.792  25.868  1.00 10.85           O 0
+TER
+END

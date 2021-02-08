@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 22.4924
+HEADER 1  - Drug Score                        : 0.3812
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.3009
+HEADER 4  - Mean alpha-sphere SA              : 0.4711
+HEADER 5  - Mean B-factor                     : 0.0653
+HEADER 6  - Hydrophobicity Score              : 21.7000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 5.8000
+HEADER 9  - Real volume (approximation)       : 96.7213
+HEADER 10 - Charge Score                      :     5
+HEADER 11 - Local hydrophobic density Score   : 19.0000
+HEADER 12 - Number of apolar alpha sphere     :    20
+HEADER 13 - Proportion of apolar alpha sphere : 0.6667
+ATOM    188    N LYS A  23      17.487   5.189   2.885  1.00 17.94           N 0
+ATOM    197    N ALA A  24      15.450   6.810   3.859  1.00 15.75           N 0
+ATOM    213  CG2 VAL A  26      12.287   3.308   5.845  1.00 13.00           C 0
+ATOM    200    O ALA A  24      14.670   5.888   6.229  1.00 15.14           O 0
+ATOM    184    N GLY A  22      18.522   2.953   4.243  1.00 16.97           N 0
+ATOM    155    O CYS A  18      12.678   1.507   0.137  1.00 10.38           O 0
+ATOM    156   CB CYS A  18      11.567   3.736  -1.424  1.00 10.28           C 0
+ATOM    192   CB LYS A  23      16.091   5.606   0.890  1.00 18.54           C 0
+ATOM    153   CA CYS A  18      12.902   3.037  -1.709  1.00 10.55           C 0
+ATOM    658   SG CYS A  87      12.536   6.579  -0.982  1.00 15.40           S 0
+ATOM    657   CB CYS A  87      11.524   6.972   0.463  1.00 14.08           C 0
+ATOM    212  CG1 VAL A  26      10.678   5.128   5.359  1.00 11.94           C 0
+ATOM    201   CB ALA A  24      13.204   7.798   3.909  1.00 16.60           C 0
+ATOM    166    O TRP A  20      16.468   1.610   1.400  1.00 13.87           O 0
+ATOM    664   SG CYS A  88       8.920   3.657   1.886  1.00 11.65           S 0
+ATOM   1481   SG CYS A 200       9.306   2.370   3.413  1.00 11.90           S 0
+ATOM    230   CA PRO A  29      12.485  -0.285   3.243  1.00 10.94           C 0
+ATOM    234   CG PRO A  29      14.786  -0.821   3.829  1.00 11.58           C 0
+ATOM    233   CB PRO A  29      13.834  -0.659   2.638  1.00 12.11           C 0
+TER
+END

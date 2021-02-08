@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    46:
+HEADER 0  - Pocket Score                      : 0.3069
+HEADER 1  - Drug Score                        : 0.0045
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 5.3862
+HEADER 4  - Mean alpha-sphere SA              : 0.4790
+HEADER 5  - Mean B-factor                     : 0.1905
+HEADER 6  - Hydrophobicity Score              : -0.8333
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 705.2050
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2581
+ATOM   1956   CZ ARG D  45      29.037 115.103   5.327  1.00 26.95           C 0
+ATOM   1958  NH2 ARG D  45      27.852 114.813   4.807  1.00 33.12           N 0
+ATOM   1739   CB PRO D  15      29.133 114.626  -2.006  1.00 18.55           C 0
+ATOM   1957  NH1 ARG D  45      30.138 114.630   4.760  1.00 21.86           N 0
+ATOM   1745    O ALA D  16      32.972 116.118  -1.857  1.00 23.13           O 0
+ATOM      6   CG ASN B   5      26.919 124.078   0.833  1.00 51.45           C 0
+ATOM      8  ND2 ASN B   5      26.853 124.061   2.159  1.00 58.68           N 0
+ATOM   1969   CB SER D  47      34.281 119.428   6.302  1.00 19.21           C 0
+ATOM      7  OD1 ASN B   5      26.176 123.399   0.123  1.00 54.72           O 0
+ATOM   1746   CB ALA D  16      32.438 118.330  -3.995  1.00 23.79           C 0
+ATOM   1742    N ALA D  16      30.961 116.385  -3.801  1.00 17.08           N 0
+ATOM      5   CB ASN B   5      27.965 124.988   0.220  1.00 43.20           C 0
+ATOM      1    N ASN B   5      28.325 124.257  -2.103  1.00 43.79           N 0
+ATOM   1955   NE ARG D  45      29.121 115.863   6.414  1.00 30.50           N 0
+ATOM   1756   CB ARG D  18      38.067 117.018   0.274  1.00 19.53           C 0
+ATOM   1758   CD ARG D  18      37.896 117.814   2.656  1.00 20.36           C 0
+ATOM   1757   CG ARG D  18      37.494 116.737   1.658  1.00 24.10           C 0
+ATOM   1954   CD ARG D  45      30.379 116.237   7.052  1.00 35.23           C 0
+TER
+END

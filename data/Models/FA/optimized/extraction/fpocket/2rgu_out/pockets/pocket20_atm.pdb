@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    21:
+HEADER 0  - Pocket Score                      : 15.1920
+HEADER 1  - Drug Score                        : 0.1599
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7881
+HEADER 4  - Mean alpha-sphere SA              : 0.3723
+HEADER 5  - Mean B-factor                     : 0.1395
+HEADER 6  - Hydrophobicity Score              : 40.6154
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 5.0000
+HEADER 9  - Real volume (approximation)       : 330.6575
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 28.8667
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 0.9677
+ATOM   7814   CD PRO B 255      49.447  76.349  63.049  1.00 41.64           C 0
+ATOM   7313   OH TYR B 195      48.317  77.744  66.790  1.00 40.19           O 0
+ATOM   7284  OD1 ASP B 192      46.286  75.338  64.586  1.00 53.58           O 0
+ATOM   7806  CG1 VAL B 254      51.828  73.683  63.814  1.00 42.49           C 0
+ATOM   6698  NE1 TRP B 124      51.579  71.797  67.821  1.00 39.91           N 0
+ATOM   6701  CZ2 TRP B 124      51.108  70.240  65.903  1.00 40.06           C 0
+ATOM   7349    N TRP B 201      53.141  77.013  68.114  1.00 37.16           N 0
+ATOM   6688  OE1 GLN B 123      48.231  71.252  68.956  1.00 49.66           O 0
+ATOM   7311  CE2 TYR B 195      47.900  77.959  69.106  1.00 37.07           C 0
+ATOM   6689  NE2 GLN B 123      49.440  71.295  70.843  1.00 44.56           N 0
+ATOM   7343    C ASP B 200      52.905  77.434  69.346  1.00 38.10           C 0
+ATOM   7337    O THR B 199      50.674  77.275  71.904  1.00 37.67           O 0
+ATOM   6696  CD1 TRP B 124      52.354  71.722  68.948  1.00 40.20           C 0
+ATOM   7446  CE1 TYR B 211      49.240  74.328  73.549  1.00 42.44           C 0
+ATOM   7449   OH TYR B 211      47.008  73.531  73.156  1.00 41.22           O 0
+ATOM   7807  CG2 VAL B 254      50.828  71.605  62.842  1.00 44.91           C 0
+ATOM   6952  NE2 GLN B 153      43.983  74.397  72.429  1.00 35.33           N 0
+ATOM   7098  OD1 ASN B 170      43.150  77.087  71.150  1.00 44.64           O 0
+ATOM   7274   CG GLU B 191      42.328  75.204  65.860  1.00 56.95           C 0
+ATOM   7276  OE1 GLU B 191      41.087  73.341  66.760  1.00 59.79           O 0
+ATOM   7275   CD GLU B 191      41.621  73.841  65.739  1.00 58.90           C 0
+ATOM   7277  OE2 GLU B 191      41.610  73.260  64.624  1.00 59.12           O 0
+ATOM   7278    N ASP B 192      44.375  77.678  65.842  1.00 52.14           N 0
+TER
+END

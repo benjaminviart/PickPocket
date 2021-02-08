@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    41:
+HEADER 0  - Pocket Score                      : 2.4743
+HEADER 1  - Drug Score                        : 0.0299
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7569
+HEADER 4  - Mean alpha-sphere SA              : 0.4990
+HEADER 5  - Mean B-factor                     : 0.3628
+HEADER 6  - Hydrophobicity Score              : 38.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.6250
+HEADER 9  - Real volume (approximation)       : 248.0201
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.4194
+ATOM    357   CD PRO A1046     -35.982  29.109  -8.661  1.00113.28           C 0
+ATOM    355   CB PRO A1046     -37.001  29.270 -10.788  1.00113.21           C 0
+ATOM    356   CG PRO A1046     -35.683  29.416 -10.087  1.00117.25           C 0
+ATOM    825    O ARG A  41     -33.249  23.216 -10.305  1.00119.13           O 0
+ATOM   5711  CD2 LEU B 332     -32.342  27.269  -8.406  1.00140.23           C 0
+ATOM    827   CG ARG A  41     -36.322  20.488  -8.445  1.00128.41           C 0
+ATOM    362   CB LYS A1047     -40.033  25.673  -8.151  1.00114.83           C 0
+ATOM    363   CG LYS A1047     -41.035  24.520  -8.055  1.00130.01           C 0
+ATOM    364   CD LYS A1047     -40.701  23.565  -6.901  1.00137.21           C 0
+ATOM    805    O TYR A1105     -36.595  25.180  -6.286  1.00115.17           O 0
+ATOM    796    O LYS A1104     -38.344  21.315  -5.788  1.00121.90           O 0
+ATOM    826   CB ARG A  41     -35.154  20.778  -9.408  1.00118.68           C 0
+ATOM    822    N ARG A  41     -34.274  22.509  -7.833  1.00116.16           N 0
+ATOM   5716   CB CYS B 333     -35.012  24.391 -14.184  1.00155.68           C 0
+ATOM   5712    N CYS B 333     -33.084  25.380 -12.984  1.00125.72           N 0
+ATOM   5714    C CYS B 333     -34.887  26.882 -13.740  1.00176.74           C 0
+ATOM    358    N LYS A1047     -39.326  27.777  -9.209  1.00111.24           N 0
+ATOM    359   CA LYS A1047     -40.469  26.872  -9.030  1.00111.80           C 0
+ATOM   5717   SG CYS B 333     -34.204  22.783 -13.954  1.00157.51           S 0
+ATOM    815   CA LEU A1106     -33.987  24.141  -6.032  1.00112.95           C 0
+TER
+END

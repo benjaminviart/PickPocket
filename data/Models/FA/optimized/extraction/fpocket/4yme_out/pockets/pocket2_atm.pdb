@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 8.8182
+HEADER 1  - Drug Score                        : 0.0131
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 4.1526
+HEADER 4  - Mean alpha-sphere SA              : 0.6685
+HEADER 5  - Mean B-factor                     : 0.0499
+HEADER 6  - Hydrophobicity Score              : 19.2500
+HEADER 7  - Polarity Score                    :     0
+HEADER 8  - Volume Score                      : 2.6250
+HEADER 9  - Real volume (approximation)       : 376.6443
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 26.5714
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    144  NH2AARG A 389      17.261  24.245  20.243  0.50 23.18           N 0
+ATOM    697  CD1 ILE A 460      19.238  29.652  16.556  1.00 19.75           C 0
+ATOM    194  NH1 ARG A 396      19.219  31.559  20.758  1.00 16.42           N 0
+ATOM    567    O PRO A 444      20.153  26.631  18.389  1.00 17.50           O 0
+ATOM    585  CE1 PHE A 446      17.479  25.471  16.095  1.00 18.27           C 0
+ATOM    131    O ARG A 389      13.647  27.303  15.593  1.00 16.60           O 0
+ATOM    165   CA ALA A 393      15.048  30.715  15.205  1.00 16.24           C 0
+ATOM    138   NEAARG A 389      15.172  23.846  19.357  0.50 23.32           N 0
+ATOM    168   CB ALA A 393      15.969  29.594  14.705  1.00 17.54           C 0
+ATOM    191   CD ARG A 396      17.732  33.082  18.921  1.00 15.91           C 0
+ATOM    164    N ALA A 393      13.691  30.210  15.421  1.00 16.30           N 0
+ATOM    163   CB ALA A 392      11.288  29.529  17.428  1.00 17.79           C 0
+ATOM    162    O ALA A 392      12.916  32.138  16.287  1.00 17.48           O 0
+ATOM    161    C ALA A 392      12.725  30.958  15.957  1.00 16.53           C 0
+ATOM    189   CB ARG A 396      15.821  34.061  17.632  1.00 16.12           C 0
+ATOM    134   CGAARG A 389      12.958  23.826  18.326  0.50 20.96           C 0
+ATOM    128   CAAARG A 389      12.480  25.353  16.327  0.50 18.43           C 0
+ATOM    132   CBAARG A 389      13.449  24.357  16.947  0.50 19.20           C 0
+ATOM    568   CB PRO A 444      21.343  28.861  20.027  1.00 18.14           C 0
+ATOM    565   CA PRO A 444      21.492  27.339  20.266  1.00 18.34           C 0
+ATOM    563   CB ALA A 443      21.623  25.002  23.083  1.00 22.65           C 0
+ATOM    564    N PRO A 444      22.838  27.249  20.831  1.00 18.99           N 0
+TER
+END

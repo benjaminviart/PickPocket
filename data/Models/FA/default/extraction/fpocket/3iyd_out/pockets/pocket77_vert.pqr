@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    78:
+HEADER 0  - Pocket Score                      : 2.3387
+HEADER 1  - Drug Score                        : 0.0086
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7808
+HEADER 4  - Mean alpha-sphere SA              : 0.3444
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : 20.4444
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 4.8889
+HEADER 9  - Real volume (approximation)       : 280.8044
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.4194
+ATOM  1b439 APOL STP    78      38.273 -49.493  -3.970    0.00     3.69
+ATOM  22eff APOL STP    78      38.122 -49.721  -3.857    0.00     3.67
+ATOM  1b439 APOL STP    78      39.306 -48.502  -4.250    0.00     3.98
+ATOM  1b439 APOL STP    78      38.371 -49.226  -5.390    0.00     3.46
+ATOM  269f8 APOL STP    78      37.994 -49.645  -6.779    0.00     3.55
+ATOM  1b434  POL STP    78      40.436 -47.753  -5.735    0.00     4.36
+ATOM  22f26  POL STP    78      39.797 -48.370  -7.176    0.00     4.08
+ATOM  1b439 APOL STP    78      39.395 -48.387  -4.517    0.00     3.98
+ATOM  28c47  POL STP    78      40.591 -47.459  -6.027    0.00     4.42
+ATOM  22ef9  POL STP    78      36.559 -52.271  -5.360    0.00     3.00
+ATOM  22efb  POL STP    78      36.561 -51.326  -4.768    0.00     3.32
+ATOM  269f6 APOL STP    78      36.667 -52.341  -6.080    0.00     3.11
+ATOM  1b4a7 APOL STP    78      37.271 -50.379  -3.298    0.00     3.59
+ATOM  1b4a8  POL STP    78      36.736 -50.722  -3.274    0.00     3.51
+ATOM  22eff APOL STP    78      37.431 -50.334  -3.394    0.00     3.62
+ATOM  22eff  POL STP    78      36.927 -50.850  -3.666    0.00     3.49
+ATOM  269f8 APOL STP    78      36.751 -51.273  -5.921    0.00     3.38
+ATOM  22f26  POL STP    78      39.691 -48.457  -7.272    0.00     4.05
+ATOM  22f26  POL STP    78      39.810 -48.319  -7.323    0.00     4.10
+ATOM  269f8  POL STP    78      38.920 -49.053  -7.589    0.00     3.88
+ATOM  28c49  POL STP    78      39.830 -48.280  -7.363    0.00     4.12
+ATOM  269f8 APOL STP    78      37.198 -50.859  -6.061    0.00     3.35
+ATOM  269f8 APOL STP    78      36.115 -50.977  -6.595    0.00     3.05
+ATOM  1b4a5  POL STP    78      39.074 -48.556  -8.325    0.00     4.03
+ATOM  28c49  POL STP    78      39.818 -48.210  -7.535    0.00     4.13
+ATOM  28c49  POL STP    78      39.927 -48.090  -8.303    0.00     4.05
+ATOM  269f8  POL STP    78      38.968 -48.621  -8.402    0.00     4.03
+ATOM  2da0f APOL STP    78      38.063 -48.597  -8.769    0.00     3.72
+ATOM  28c47  POL STP    78      40.641 -47.281  -6.166    0.00     4.44
+ATOM  2da08  POL STP    78      40.087 -47.909  -8.307    0.00     4.01
+ATOM  2da08  POL STP    78      39.989 -48.081  -8.558    0.00     4.02
+TER
+END

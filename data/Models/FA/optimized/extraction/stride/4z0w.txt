@@ -1,0 +1,43 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4z0w.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    PPFPAALLL                                             9          ~~~~
+STR       TTTTT                                                            ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4z0w.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                .                                                       ~~~~
+SEQ  1    PPFPAALLLG                                           10          ~~~~
+STR       TTTTT                                                            ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  GammaClassic  PRO     3 A      PHE      6 A                           ~~~~
+LOC  GammaClassic  PHE     6 A      ALA      9 A                           ~~~~
+LOC  GammaClassic  PRO     3 B      PHE      6 B                           ~~~~
+LOC  GammaClassic  PHE     6 B      ALA      9 B                           ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  PRO A    3    1    T          Turn    360.00    360.00     164.7      ~~~~
+ASG  PRO A    5    2    T          Turn    360.00    -30.31     126.6      ~~~~
+ASG  PHE A    6    3    T          Turn   -103.99    360.00     173.3      ~~~~
+ASG  PRO A    8    4    T          Turn    360.00    -43.95      61.8      ~~~~
+ASG  ALA A    9    5    T          Turn    -64.73    360.00      88.5      ~~~~
+ASG  ALA A   12    6    C          Coil    360.00    360.00     122.9      ~~~~
+ASG  LEU A   15    7    C          Coil    360.00    360.00     185.8      ~~~~
+ASG  LEU A   18    8    C          Coil    360.00    360.00     187.0      ~~~~
+ASG  LEU A   21    9    C          Coil    360.00    360.00     238.9      ~~~~
+ASG  PRO B    3    1    T          Turn    360.00    360.00     167.5      ~~~~
+ASG  PRO B    5    2    T          Turn    360.00    -28.97     130.8      ~~~~
+ASG  PHE B    6    3    T          Turn   -107.09    360.00     173.3      ~~~~
+ASG  PRO B    8    4    T          Turn    360.00    -41.92     148.4      ~~~~
+ASG  ALA B    9    5    T          Turn    -66.78    360.00      85.4      ~~~~
+ASG  ALA B   12    6    C          Coil    360.00    360.00     124.1      ~~~~
+ASG  LEU B   15    7    C          Coil    360.00    360.00     165.5      ~~~~
+ASG  LEU B   18    8    C          Coil    360.00    360.00     150.2      ~~~~
+ASG  LEU B   21    9    C          Coil    360.00    360.00     225.4      ~~~~
+ASG  GLY B   23   10    C          Coil    360.00    360.00     193.9      ~~~~

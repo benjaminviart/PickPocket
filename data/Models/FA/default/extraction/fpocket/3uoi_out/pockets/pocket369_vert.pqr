@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   370:
+HEADER 0  - Pocket Score                      : -0.5099
+HEADER 1  - Drug Score                        : 0.0036
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.6085
+HEADER 4  - Mean alpha-sphere SA              : 0.7427
+HEADER 5  - Mean B-factor                     : 0.3441
+HEADER 6  - Hydrophobicity Score              : -20.8333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 2.6667
+HEADER 9  - Real volume (approximation)       : 599.7739
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4516
+ATOM  75488  POL STP   370     -53.717  26.766 -84.274    0.00     5.16
+ATOM  75488  POL STP   370     -54.286  26.745 -84.537    0.00     5.51
+ATOM  75479  POL STP   370     -53.601  27.946 -83.686    0.00     5.78
+ATOM  75488 APOL STP   370     -53.827  26.807 -84.289    0.00     5.25
+ATOM  1a874  POL STP   370     -50.560  26.421 -83.464    0.00     3.74
+ATOM  1a874  POL STP   370     -50.508  26.392 -83.483    0.00     3.70
+ATOM  86913 APOL STP   370     -50.333  26.775 -83.228    0.00     4.00
+ATOM  1a874 APOL STP   370     -50.498  26.441 -83.435    0.00     3.76
+ATOM  1a872 APOL STP   370     -50.190  26.450 -83.276    0.00     3.76
+ATOM  75362 APOL STP   370     -51.294  28.257 -80.997    0.00     5.20
+ATOM  1b720 APOL STP   370     -51.468  28.442 -81.103    0.00     5.38
+ATOM  75362  POL STP   370     -51.320  28.366 -80.849    0.00     5.26
+ATOM  86910 APOL STP   370     -51.130  28.080 -81.146    0.00     5.00
+ATOM  75362  POL STP   370     -51.475  28.678 -80.655    0.00     5.50
+ATOM  86911  POL STP   370     -50.073  27.625 -81.076    0.00     3.95
+ATOM  1b720 APOL STP   370     -51.511  28.718 -80.674    0.00     5.54
+ATOM  86913  POL STP   370     -50.839  27.763 -82.473    0.00     4.70
+ATOM  1b720  POL STP   370     -50.888  27.816 -82.413    0.00     4.74
+ATOM  86913  POL STP   370     -50.591  27.335 -83.045    0.00     4.43
+ATOM  75361  POL STP   370     -49.299  27.825 -83.381    0.00     3.49
+ATOM  86913  POL STP   370     -50.246  27.423 -83.031    0.00     4.25
+ATOM  1b71b  POL STP   370     -49.434  27.954 -83.224    0.00     3.56
+ATOM  86913  POL STP   370     -50.473  27.325 -83.088    0.00     4.36
+ATOM  75490  POL STP   370     -49.930  26.778 -83.708    0.00     3.49
+ATOM  86913 APOL STP   370     -50.172  26.883 -83.263    0.00     3.97
+ATOM  86913 APOL STP   370     -50.186  26.894 -83.259    0.00     3.98
+ATOM  1a870 APOL STP   370     -49.846  26.143 -83.373    0.00     3.43
+ATOM  1b720 APOL STP   370     -51.813  28.984 -80.517    0.00     5.74
+ATOM  1b720  POL STP   370     -50.496  29.149 -80.755    0.00     4.67
+ATOM  1b722 APOL STP   370     -52.478  28.707 -81.640    0.00     5.77
+ATOM  1b723 APOL STP   370     -52.644  28.694 -81.923    0.00     5.80
+TER
+END

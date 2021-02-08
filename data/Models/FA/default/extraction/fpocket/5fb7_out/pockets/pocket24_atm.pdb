@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    25:
+HEADER 0  - Pocket Score                      : -0.1064
+HEADER 1  - Drug Score                        : 0.0380
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.6456
+HEADER 4  - Mean alpha-sphere SA              : 0.5486
+HEADER 5  - Mean B-factor                     : 0.2641
+HEADER 6  - Hydrophobicity Score              : 43.2857
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 5.0000
+HEADER 9  - Real volume (approximation)       : 195.0592
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4118
+ATOM    798    C ARG A 111     -16.146  19.297 -17.773  1.00 20.94           C 0
+ATOM    854  OE1 GLU A 115     -14.090  14.545 -19.914  1.00 47.49           O 0
+ATOM    819   CG GLN A 112     -13.385  17.554 -15.190  1.00 24.08           C 0
+ATOM    799    O ARG A 111     -16.592  18.472 -18.542  1.00 20.70           O 0
+ATOM    815   CA GLN A 112     -15.725  17.602 -16.113  1.00 21.17           C 0
+ATOM    814    N GLN A 112     -15.687  18.970 -16.550  1.00 20.53           N 0
+ATOM   2753  NE2 GLN C  56     -11.519  20.351 -17.163  1.00 30.42           N 0
+ATOM    800   CBAARG A 111     -14.860  21.235 -18.752  0.50 21.81           C 0
+ATOM   2722   CB LEU C  52      -9.994  14.439 -15.302  1.00 32.00           C 0
+ATOM   2721    O LEU C  52      -7.958  16.955 -15.621  1.00 27.77           O 0
+ATOM    822  NE2 GLN A 112     -11.375  17.478 -13.852  1.00 29.19           N 0
+ATOM   2751   CD GLN C  56     -10.488  20.135 -16.401  1.00 29.68           C 0
+ATOM   2724  CD1 LEU C  52     -11.904  13.041 -15.974  1.00 36.81           C 0
+ATOM   2725  CD2 LEU C  52      -9.810  12.936 -17.306  1.00 34.41           C 0
+ATOM   2750   CG GLN C  56      -9.171  20.062 -17.124  1.00 28.01           C 0
+ATOM   3247   NZ LYS C 119     -11.743  13.353 -21.504  1.00 53.99           N 0
+ATOM   3245   CD LYS C 119      -9.454  12.562 -21.360  1.00 40.08           C 0
+ATOM   2743  CG1 VAL C  55      -6.178  17.012 -19.890  1.00 31.19           C 0
+ATOM   2742   CB VAL C  55      -6.016  16.494 -18.488  1.00 29.18           C 0
+ATOM   2744  CG2 VAL C  55      -5.650  15.003 -18.478  1.00 29.52           C 0
+TER
+END

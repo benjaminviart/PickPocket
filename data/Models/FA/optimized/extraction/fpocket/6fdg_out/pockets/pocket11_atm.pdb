@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 7.1895
+HEADER 1  - Drug Score                        : 0.0127
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.7524
+HEADER 4  - Mean alpha-sphere SA              : 0.5206
+HEADER 5  - Mean B-factor                     : 0.0919
+HEADER 6  - Hydrophobicity Score              : 8.3750
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.1250
+HEADER 9  - Real volume (approximation)       : 208.1616
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 25.0000
+HEADER 12 - Number of apolar alpha sphere     :    26
+HEADER 13 - Proportion of apolar alpha sphere : 0.9630
+ATOM   3376   CE LYS C  91     -32.179  15.439  -0.423  1.00 34.71           C 0
+ATOM   3398  OE2 GLU C  93     -36.360  18.043   3.867  1.00 29.91           O 0
+ATOM   3483  CG2 THR C 104     -31.938  18.195   6.081  1.00 17.45           C 0
+ATOM   3377   NZ LYS C  91     -31.638  16.549  -1.261  1.00 42.40           N 0
+ATOM   3481   CB THR C 104     -30.819  17.195   5.709  1.00 16.44           C 0
+ATOM   3482  OG1 THR C 104     -29.578  17.921   5.666  1.00 18.53           O 0
+ATOM   3395   CG GLU C  93     -35.619  16.392   5.403  1.00 18.04           C 0
+ATOM   3261  CH2 TRP C  79     -36.051  14.857   1.685  1.00 21.73           C 0
+ATOM   3381    O TYR C  92     -32.885  14.176   5.285  1.00 14.61           O 0
+ATOM   3487    O GLY C 105     -30.211  12.740   3.261  1.00 14.54           O 0
+ATOM   3486    C GLY C 105     -29.087  12.616   3.819  1.00 14.14           C 0
+ATOM   3089  OD1AASN C  61     -25.602  15.205   3.637  0.50 24.65           O 0
+ATOM   3485   CA GLY C 105     -28.680  13.480   4.942  1.00 14.77           C 0
+ATOM   3484    N GLY C 105     -29.813  14.348   5.386  1.00 14.89           N 0
+ATOM   3493   OG SER C 106     -26.856  11.898   0.765  1.00 19.95           O 0
+ATOM   3492   CB SER C 106     -28.189  11.511   0.937  1.00 15.96           C 0
+ATOM   3375   CD LYS C  91     -31.964  14.160  -1.159  1.00 27.81           C 0
+TER
+END

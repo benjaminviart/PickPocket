@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : 1.7990
+HEADER 1  - Drug Score                        : 0.0322
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.0610
+HEADER 4  - Mean alpha-sphere SA              : 0.6133
+HEADER 5  - Mean B-factor                     : 0.1930
+HEADER 6  - Hydrophobicity Score              : 39.1429
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.8571
+HEADER 9  - Real volume (approximation)       : 302.3363
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 10.6667
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.4000
+ATOM   1400   NZ LYS B  69     -32.253  26.808 -11.888  1.00 41.19           N 0
+ATOM     12  CG1 VAL A   2     -28.475  30.971 -13.426  1.00 25.61           C 0
+ATOM   1398   CD LYS B  69     -30.372  28.024 -10.809  1.00 38.46           C 0
+ATOM     13  CG2 VAL A   2     -29.060  30.151 -15.704  1.00 30.24           C 0
+ATOM     10    O VAL A   2     -31.116  32.431 -15.706  1.00 21.81           O 0
+ATOM     15   CA VAL A   3     -31.804  33.657 -13.341  1.00 22.57           C 0
+ATOM     20  CG2 VAL A   3     -31.266  33.057 -10.973  1.00 23.40           C 0
+ATOM      9    C VAL A   2     -30.213  32.804 -14.960  1.00 24.12           C 0
+ATOM     14    N VAL A   3     -30.445  33.403 -13.798  1.00 21.86           N 0
+ATOM     40    C GLY A   6     -35.582  33.150 -17.852  1.00 22.19           C 0
+ATOM     39   CA GLY A   6     -34.281  32.368 -17.800  1.00 19.51           C 0
+ATOM     74  CD1 ILE A  10     -39.713  31.254 -17.088  1.00 27.60           C 0
+ATOM    124   CG PRO A  18     -35.125  28.513 -18.257  1.00 25.75           C 0
+ATOM     17    O VAL A   3     -33.619  34.453 -14.693  1.00 25.03           O 0
+ATOM    125   CD PRO A  18     -36.467  28.945 -18.765  1.00 27.16           C 0
+ATOM     50   NZ LYS A   7     -37.133  35.113 -11.804  1.00 38.30           N 0
+ATOM     42    N LYS A   7     -35.664  34.239 -17.087  1.00 22.39           N 0
+ATOM     19  CG1 VAL A   3     -33.213  34.588 -11.470  1.00 24.19           C 0
+ATOM     41    O GLY A   6     -36.507  32.763 -18.569  1.00 22.76           O 0
+ATOM     47   CG LYS A   7     -36.555  35.659 -14.597  1.00 31.96           C 0
+ATOM     43   CA LYS A   7     -36.872  35.066 -17.062  1.00 23.44           C 0
+TER
+END

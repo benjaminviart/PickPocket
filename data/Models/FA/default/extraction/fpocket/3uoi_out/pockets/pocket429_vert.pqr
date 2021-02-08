@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   430:
+HEADER 0  - Pocket Score                      : -2.3298
+HEADER 1  - Drug Score                        : 0.0060
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.1601
+HEADER 4  - Mean alpha-sphere SA              : 0.6896
+HEADER 5  - Mean B-factor                     : 0.3190
+HEADER 6  - Hydrophobicity Score              : 10.6250
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 516.2994
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4242
+ATOM  1b9ee  POL STP   430      23.447 -41.699-219.395    0.00     4.43
+ATOM  1b9ee  POL STP   430      24.003 -41.630-219.626    0.00     4.13
+ATOM  2fc2e  POL STP   430      23.705 -41.800-219.038    0.00     4.25
+ATOM  1b9ee  POL STP   430      24.911 -41.615-219.665    0.00     3.72
+ATOM  23824  POL STP   430      25.922 -41.169-219.917    0.00     3.24
+ATOM  23821  POL STP   430      25.578 -41.928-220.105    0.00     3.22
+ATOM  2fc34  POL STP   430      24.697 -41.752-219.191    0.00     3.75
+ATOM  23824  POL STP   430      25.978 -41.109-219.948    0.00     3.20
+ATOM  1b9ee APOL STP   430      21.246 -40.863-217.716    0.00     5.53
+ATOM  1b9f5 APOL STP   430      20.666 -40.635-218.463    0.00     5.97
+ATOM  2fc1b  POL STP   430      21.332 -40.763-217.521    0.00     5.42
+ATOM  1b9f8 APOL STP   430      20.893 -41.413-217.603    0.00     5.20
+ATOM  2ebed APOL STP   430      22.193 -41.230-217.331    0.00     4.92
+ATOM  244e7 APOL STP   430      20.584 -41.936-217.231    0.00     4.72
+ATOM  244ec APOL STP   430      21.253 -42.783-216.997    0.00     3.97
+ATOM  2fc3a APOL STP   430      20.558 -42.065-216.629    0.00     4.19
+ATOM  244ec APOL STP   430      20.644 -42.253-217.084    0.00     4.43
+ATOM  2fc33 APOL STP   430      22.868 -41.488-217.582    0.00     4.51
+ATOM  2fc1b  POL STP   430      22.174 -41.019-217.094    0.00     4.87
+ATOM  2fc1b  POL STP   430      20.940 -39.415-217.268    0.00     5.44
+ATOM  3d6a9  POL STP   430      21.230 -41.068-216.522    0.00     4.51
+ATOM  2fc34  POL STP   430      25.074 -41.629-218.856    0.00     3.41
+ATOM  3d6a9 APOL STP   430      20.568 -42.057-216.585    0.00     4.15
+ATOM  3d6aa  POL STP   430      20.647 -42.826-215.665    0.00     3.05
+ATOM  244dd  POL STP   430      21.186 -42.582-220.365    0.00     4.60
+ATOM  244dd  POL STP   430      22.062 -43.201-221.428    0.00     3.30
+ATOM  244df APOL STP   430      21.168 -43.063-220.385    0.00     4.28
+ATOM  2fc1f APOL STP   430      21.253 -44.565-220.608    0.00     3.35
+ATOM  2fc1c APOL STP   430      21.464 -44.281-220.383    0.00     3.41
+ATOM  2fc1a  POL STP   430      23.048 -39.090-215.845    0.00     3.93
+ATOM  2fc1a  POL STP   430      23.582 -39.987-215.844    0.00     3.76
+ATOM  3c090 APOL STP   430      23.423 -42.899-216.646    0.00     3.38
+ATOM  3d6a8  POL STP   430      20.936 -41.201-214.708    0.00     3.04
+TER
+END

@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    24:
+HEADER 0  - Pocket Score                      : 3.6763
+HEADER 1  - Drug Score                        : 0.0375
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8841
+HEADER 4  - Mean alpha-sphere SA              : 0.4888
+HEADER 5  - Mean B-factor                     : 0.3342
+HEADER 6  - Hydrophobicity Score              : 37.6250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.6250
+HEADER 9  - Real volume (approximation)       : 383.9437
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   6211   CG LEU D 265      40.080  88.863  12.303  1.00 46.15           C 0
+ATOM   6180  OD1 ASP D 261      40.252  84.824   8.938  1.00 48.81           O 0
+ATOM   6212  CD1 LEU D 265      39.517  88.034  13.463  1.00 48.33           C 0
+ATOM   6213  CD2 LEU D 265      39.089  89.978  11.939  1.00 43.80           C 0
+ATOM   6045  NH1 ARG D 244      38.435  85.211   6.879  1.00 64.42           N 0
+ATOM   6046  NH2 ARG D 244      38.189  83.098   7.769  1.00 64.71           N 0
+ATOM   5950  OD2 ASP D 232      35.571  87.382   5.809  1.00 69.61           O 0
+ATOM   5949  OD1 ASP D 232      34.861  89.394   6.319  1.00 70.90           O 0
+ATOM   5948   CG ASP D 232      35.389  88.589   5.524  1.00 70.14           C 0
+ATOM   5944   CA ASP D 232      37.177  89.858   4.222  1.00 66.34           C 0
+ATOM   5943    N ASP D 232      37.018  91.120   4.937  1.00 66.88           N 0
+ATOM   6169    O LEU D 260      42.453  88.442   9.227  1.00 44.02           O 0
+ATOM   6204  CG1 VAL D 264      42.290  92.516   7.976  1.00 38.92           C 0
+ATOM   6170   CB LEU D 260      41.873  87.601   6.073  1.00 44.84           C 0
+ATOM   6240  NE2 GLN D 268      39.109  93.652  10.379  1.00 52.10           N 0
+ATOM   5939   CG LYS D 231      34.184  92.448   6.749  1.00 70.54           C 0
+ATOM   5941   CE LYS D 231      32.176  91.555   8.027  1.00 73.50           C 0
+ATOM   5940   CD LYS D 231      32.764  92.742   7.249  1.00 72.22           C 0
+ATOM   5935   CA LYS D 231      36.176  93.354   5.390  1.00 65.92           C 0
+ATOM   6239  OE1 GLN D 268      39.662  94.773   8.503  1.00 53.57           O 0
+ATOM   6173  CD2 LEU D 260      42.004  89.403   4.316  1.00 45.10           C 0
+TER
+END

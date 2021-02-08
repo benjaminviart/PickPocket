@@ -1,0 +1,51 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 15.3024
+HEADER 1  - Drug Score                        : 0.0238
+HEADER 2  - Number of V. Vertices             :    41
+HEADER 3  - Mean alpha-sphere radius          : 3.8616
+HEADER 4  - Mean alpha-sphere SA              : 0.6341
+HEADER 5  - Mean B-factor                     : 0.2505
+HEADER 6  - Hydrophobicity Score              : 5.3333
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.7778
+HEADER 9  - Real volume (approximation)       : 673.2131
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2195
+ATOM   1446  NH1 ARG C  83     -26.999   8.482  29.398  1.00 36.34           N 0
+ATOM   1420  OE1AGLU C  80     -21.886   7.384  29.280  0.54 33.33           O 0
+ATOM   1380    O ALA C  76     -24.925   5.898  32.826  1.00 24.74           O 0
+ATOM   1414   CBAGLU C  80     -24.257   6.012  29.243  0.54 25.02           C 0
+ATOM   1381   CB ALA C  76     -24.235   7.711  35.505  1.00 25.24           C 0
+ATOM    768  ND2AASN B 194     -20.319  10.695  27.440  0.62 28.21           N 0
+ATOM   1422  OE2AGLU C  80     -22.318   8.466  27.412  0.54 34.45           O 0
+ATOM   1418   CDAGLU C  80     -22.548   7.557  28.237  0.54 30.95           C 0
+ATOM   1389   OGASER C  77     -20.494   3.508  32.146  0.61 25.36           O 0
+ATOM   1387   CBASER C  77     -21.152   4.023  33.281  0.61 24.11           C 0
+ATOM    729    O SER B 190     -17.627   6.693  30.308  1.00 21.41           O 0
+ATOM    730   CBASER B 190     -17.880   6.182  33.570  0.50 22.52           C 0
+ATOM    732   OGASER B 190     -16.950   7.176  33.949  0.50 24.01           O 0
+ATOM    728    C SER B 190     -16.894   6.347  31.240  1.00 20.46           C 0
+ATOM    741  CD2 LEU B 191     -14.298  10.447  31.512  1.00 27.95           C 0
+ATOM    734    N LEU B 191     -15.627   6.746  31.320  1.00 21.41           N 0
+ATOM    762   CBAASN B 194     -18.613   9.076  27.975  0.62 22.68           C 0
+ATOM    735   CA LEU B 191     -15.031   7.639  30.312  1.00 21.81           C 0
+ATOM    764   CGAASN B 194     -19.018  10.452  27.516  0.62 25.78           C 0
+ATOM   1379    C ALA C  76     -24.348   5.776  33.906  1.00 24.35           C 0
+ATOM   1382    N SER C  77     -23.196   5.116  34.022  1.00 22.97           N 0
+ATOM   1383   CAASER C  77     -22.549   4.500  32.875  0.61 23.05           C 0
+ATOM   1362    O VAL C  73     -21.463   5.360  36.347  1.00 25.43           O 0
+ATOM   1364  CG1 VAL C  73     -18.579   6.495  37.118  1.00 25.13           C 0
+ATOM   1360   CA VAL C  73     -20.813   6.598  38.333  1.00 24.70           C 0
+ATOM   1365  CG2 VAL C  73     -18.902   8.120  39.017  1.00 26.02           C 0
+ATOM   1407  OE1 GLU C  79     -28.820   6.643  34.703  0.42 36.56           O 0
+ATOM   1447  NH2 ARG C  83     -29.083   7.670  29.918  1.00 38.71           N 0
+ATOM   1404   CB GLU C  79     -28.320   4.881  32.608  1.00 29.41           C 0
+ATOM   1378   CA ALA C  76     -24.934   6.383  35.172  1.00 24.67           C 0
+TER
+END

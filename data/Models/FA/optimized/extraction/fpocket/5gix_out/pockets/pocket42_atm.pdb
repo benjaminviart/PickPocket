@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    43:
+HEADER 0  - Pocket Score                      : -2.9853
+HEADER 1  - Drug Score                        : 0.0076
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.6629
+HEADER 4  - Mean alpha-sphere SA              : 0.4194
+HEADER 5  - Mean B-factor                     : 0.4739
+HEADER 6  - Hydrophobicity Score              : 17.3333
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 130.1620
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   8133    N MET B 446      10.691 -54.379  30.203  1.00 62.06           N 0
+ATOM   7684  CD1 ILE B 388      12.535 -57.437  31.351  1.00 89.39           C 0
+ATOM   8102    O GLU B 442       7.061 -56.127  28.398  1.00 87.10           O 0
+ATOM   8140   CE MET B 446      12.615 -56.702  26.360  1.00 43.78           C 0
+ATOM   8104   CG GLU B 442       6.730 -59.099  27.604  1.00104.15           C 0
+ATOM   7657   CG GLN B 385      11.507 -60.229  25.676  1.00 71.27           C 0
+ATOM   8126   CB ARG B 445       8.669 -56.174  31.872  1.00 61.28           C 0
+ATOM   7683  CG2 ILE B 388      10.924 -59.339  32.721  1.00 81.11           C 0
+ATOM   7681   CB ILE B 388      12.164 -59.866  32.018  1.00 80.68           C 0
+ATOM   7655    O GLN B 385      12.255 -62.364  29.296  1.00 72.85           O 0
+ATOM   7653   CA GLN B 385      13.121 -61.060  27.476  1.00 67.27           C 0
+ATOM   8105   CD GLU B 442       6.867 -60.478  26.990  1.00112.04           C 0
+ATOM   8107  OE2 GLU B 442       7.843 -60.703  26.243  1.00112.99           O 0
+ATOM   8131  NH1 ARG B 445       7.115 -60.746  33.932  1.00 70.34           N 0
+ATOM   7685    N LYS B 389      11.328 -62.841  32.312  1.00 87.39           N 0
+ATOM   7686   CA LYS B 389      10.368 -63.906  32.589  1.00 92.48           C 0
+ATOM   8103   CB GLU B 442       5.725 -59.063  28.744  1.00 98.21           C 0
+ATOM   8106  OE1 GLU B 442       5.994 -61.333  27.249  1.00115.61           O 0
+ATOM   8128   CD ARG B 445       7.560 -58.111  33.035  1.00 65.56           C 0
+ATOM   7689   CB LYS B 389      10.171 -64.786  31.352  1.00 94.61           C 0
+TER
+END

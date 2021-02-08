@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    21:
+HEADER 0  - Pocket Score                      : -0.5897
+HEADER 1  - Drug Score                        : 0.0382
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.4313
+HEADER 4  - Mean alpha-sphere SA              : 0.4374
+HEADER 5  - Mean B-factor                     : 0.0610
+HEADER 6  - Hydrophobicity Score              : 44.5000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.0833
+HEADER 9  - Real volume (approximation)       : 106.3381
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.0938
+ATOM   2237    NAPHE A 288      35.460   5.668  13.292  0.50  9.96           N 0
+ATOM   2226    N PHE A 287      34.266   5.884  10.467  1.00 10.04           N 0
+ATOM   2243    OAPHE A 288      33.232   6.372  14.960  0.50 10.82           O 0
+ATOM   2783    O PRO A 349      36.103  10.067  15.222  1.00  8.38           O 0
+ATOM   2781   CA PRO A 349      34.800  11.958  14.484  1.00  7.65           C 0
+ATOM   1915   OH TYR A 249      37.665  10.525  11.177  1.00 10.79           O 0
+ATOM   2784   CB PRO A 349      35.428  12.483  13.177  1.00  8.63           C 0
+ATOM   2210    O TYR A 285      33.427   8.863   8.635  1.00 10.60           O 0
+ATOM   2177    O ARG A 282      34.348  12.363   9.870  1.00  9.16           O 0
+ATOM   2530  ND2 ASN A 320      31.705  12.376  13.238  1.00 11.77           N 0
+ATOM   2230   CB PHE A 287      36.662   6.405  10.713  1.00  9.26           C 0
+ATOM   2497   CB LEU A 316      31.441   9.086  16.590  1.00 10.01           C 0
+ATOM   2501    N TYR A 317      29.348   8.502  14.358  1.00  9.98           N 0
+ATOM   2188    O ARG A 283      31.053  12.556   8.906  1.00 10.06           O 0
+ATOM   2507  CD1 TYR A 317      29.432   7.797   9.874  1.00 11.52           C 0
+ATOM   2527   CB ASN A 320      29.672  13.042  12.073  1.00  9.17           C 0
+ATOM   2220   CA PRO A 286      32.461   6.257   8.884  1.00 10.70           C 0
+ATOM   2505   CB TYR A 317      28.932   7.237  12.295  1.00 10.32           C 0
+ATOM   2502   CA TYR A 317      28.941   8.618  12.961  1.00  9.81           C 0
+ATOM     92  CD1 TYR A  21      31.038   3.464  11.576  1.00 11.89           C 0
+TER
+END

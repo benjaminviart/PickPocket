@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    18:
+HEADER 0  - Pocket Score                      : 9.8802
+HEADER 1  - Drug Score                        : 0.2448
+HEADER 2  - Number of V. Vertices             :    36
+HEADER 3  - Mean alpha-sphere radius          : 4.4772
+HEADER 4  - Mean alpha-sphere SA              : 0.4490
+HEADER 5  - Mean B-factor                     : 0.2215
+HEADER 6  - Hydrophobicity Score              : 41.1667
+HEADER 7  - Polarity Score                    :    10
+HEADER 8  - Volume Score                      : 5.2778
+HEADER 9  - Real volume (approximation)       : 576.0727
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 21.3333
+HEADER 12 - Number of apolar alpha sphere     :    24
+HEADER 13 - Proportion of apolar alpha sphere : 0.6667
+ATOM  62447   CA LEU C  95       2.200 140.732  66.696  1.00 36.82           C 0
+ATOM  62385   CA TRP C  33      -0.936 137.478  72.551  1.00 35.31           C 0
+ATOM  62386   CA GLN C  34      -4.187 139.098  73.682  1.00 35.59           C 0
+ATOM  62452   CA ARG C 100      -4.253 139.935  64.557  1.00 40.11           C 0
+ATOM  62382   CA VAL C  30      -3.784 136.242  68.340  1.00 35.65           C 0
+ATOM  62446   CA THR C  94       2.921 142.921  69.692  1.00 36.35           C 0
+ATOM  12274  OP2 A   0 628      -5.619 145.393  67.975  1.00 70.18           O 0
+ATOM  12254  C5' A   0 627      -8.928 143.317  71.088  1.00 73.69           C 0
+ATOM  12251  OP1 A   0 627      -7.374 141.879  73.567  1.00 73.69           O 0
+ATOM  12273  OP1 A   0 628      -6.448 143.642  66.291  1.00 70.18           O 0
+ATOM  12258  O3' A   0 627      -7.903 144.346  68.186  1.00 73.69           O 0
+ATOM  12253  O5' A   0 627      -8.142 143.799  72.176  1.00 73.69           O 0
+ATOM  62529   CA VAL C 177     -10.856 136.522  68.642  1.00 39.27           C 0
+ATOM  62456   CA LEU C 104     -10.002 137.988  64.262  1.00 38.85           C 0
+ATOM  62528   CA ASN C 176     -12.122 139.857  70.086  1.00 38.66           C 0
+ATOM  62455   CA GLY C 103      -6.812 136.075  63.436  1.00 39.02           C 0
+ATOM  62530   CA TYR C 178     -10.679 135.756  72.329  1.00 39.83           C 0
+ATOM  62383   CA VAL C  31      -5.235 134.431  71.434  1.00 35.37           C 0
+ATOM  12257  C3' A   0 627      -8.148 145.087  69.383  1.00 73.69           C 0
+ATOM  62449   CA ARG C  97      -1.391 144.266  62.793  1.00 38.63           C 0
+ATOM  62451   CA VAL C  99      -1.231 139.037  62.429  1.00 40.07           C 0
+ATOM  62448   CA PRO C  96       2.020 142.617  63.381  1.00 37.61           C 0
+ATOM  12015  OP1 U   0 616       1.960 145.324  64.402  1.00 56.83           O 0
+TER
+END

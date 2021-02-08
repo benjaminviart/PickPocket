@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   388:
+HEADER 0  - Pocket Score                      : -0.9113
+HEADER 1  - Drug Score                        : 0.0040
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.6426
+HEADER 4  - Mean alpha-sphere SA              : 0.7379
+HEADER 5  - Mean B-factor                     : 0.2929
+HEADER 6  - Hydrophobicity Score              : -12.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 2.5714
+HEADER 9  - Real volume (approximation)       : 493.4244
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 20.0000
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.6364
+ATOM  1c34c  POL STP   388      92.271  -9.459-170.390    0.00     5.56
+ATOM  1c34d  POL STP   388      92.477  -9.267-170.815    0.00     5.75
+ATOM  25385 APOL STP   388      92.311  -9.343-170.250    0.00     5.59
+ATOM  31192 APOL STP   388      92.258  -9.470-170.383    0.00     5.54
+ATOM  1c34c APOL STP   388      92.590  -9.099-170.871    0.00     5.85
+ATOM  1c34c APOL STP   388      92.406  -8.936-171.590    0.00     5.75
+ATOM  31192 APOL STP   388      91.966  -9.580-171.389    0.00     5.34
+ATOM  31192 APOL STP   388      92.178  -9.493-170.263    0.00     5.47
+ATOM  25394  POL STP   388      91.549 -10.862-173.170    0.00     3.90
+ATOM  25398  POL STP   388      91.125 -10.838-172.516    0.00     4.24
+ATOM  31195  POL STP   388      90.979 -10.902-172.505    0.00     4.18
+ATOM  31194  POL STP   388      91.222 -10.529-172.346    0.00     4.49
+ATOM  31192 APOL STP   388      91.952  -9.585-171.412    0.00     5.33
+ATOM  31194 APOL STP   388      91.426 -10.050-172.163    0.00     4.85
+ATOM  4cb2d  POL STP   388      92.011  -9.994-170.191    0.00     5.02
+ATOM  4cb2f APOL STP   388      91.935  -9.678-169.944    0.00     5.19
+ATOM  31194  POL STP   388      90.121 -12.368-172.712    0.00     3.11
+ATOM  25385 APOL STP   388      91.690  -9.323-167.511    0.00     5.06
+ATOM  253e3 APOL STP   388      91.367  -9.860-168.220    0.00     4.64
+ATOM  3f1b2 APOL STP   388      91.218  -9.961-168.253    0.00     4.51
+ATOM  3f1b2 APOL STP   388      91.361  -9.911-168.394    0.00     4.62
+ATOM  3f1b2 APOL STP   388      90.260 -10.295-167.833    0.00     3.80
+ATOM  4cb2f APOL STP   388      91.385  -9.903-168.465    0.00     4.63
+ATOM  4cb2d APOL STP   388      91.361  -9.923-168.401    0.00     4.61
+ATOM  4cb2f APOL STP   388      91.700  -9.797-169.811    0.00     4.95
+ATOM  24bd2  POL STP   388      93.006 -11.471-170.833    0.00     3.87
+ATOM  24bd4 APOL STP   388      93.701 -11.962-171.053    0.00     3.36
+ATOM  25372 APOL STP   388      89.187  -9.543-173.184    0.00     3.19
+ATOM  25389  POL STP   388      89.906  -8.517-173.389    0.00     4.15
+ATOM  25389 APOL STP   388      90.061  -8.122-173.417    0.00     4.45
+ATOM  25389  POL STP   388      91.907  -9.086-172.177    0.00     5.42
+ATOM  31190 APOL STP   388      89.983 -10.193-170.206    0.00     3.53
+ATOM  31199  POL STP   388      89.605 -11.499-172.832    0.00     3.26
+TER
+END

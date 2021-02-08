@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   333:
+HEADER 0  - Pocket Score                      : -0.6010
+HEADER 1  - Drug Score                        : 0.0069
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9385
+HEADER 4  - Mean alpha-sphere SA              : 0.3713
+HEADER 5  - Mean B-factor                     : 0.0766
+HEADER 6  - Hydrophobicity Score              : 14.3333
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 5.5556
+HEADER 9  - Real volume (approximation)       : 407.9625
+HEADER 10 - Charge Score                      :     6
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0323
+ATOM  21b9c  POL STP   333      -1.696 127.674  99.804    0.00     4.01
+ATOM  3ed4d  POL STP   333      -2.586 127.984  98.745    0.00     4.05
+ATOM  21b9c  POL STP   333      -1.695 127.671  99.836    0.00     4.01
+ATOM  21b9d  POL STP   333      -0.521 126.715  99.712    0.00     4.12
+ATOM  3ed72  POL STP   333      -1.375 128.356 100.523    0.00     3.33
+ATOM  2f678  POL STP   333      -0.471 126.666  99.886    0.00     4.13
+ATOM  23988  POL STP   333      -0.223 126.040  98.514    0.00     4.23
+ATOM  55bb7  POL STP   333      -0.556 125.848  97.280    0.00     4.43
+ATOM  4afb9  POL STP   333       0.323 125.812  97.282    0.00     4.30
+ATOM  2f678  POL STP   333      -0.205 126.038  98.621    0.00     4.21
+ATOM  4afba  POL STP   333      -3.144 128.020  97.648    0.00     4.37
+ATOM  55bb7  POL STP   333      -0.526 125.845  97.269    0.00     4.43
+ATOM  4afb9  POL STP   333       1.391 125.447  97.132    0.00     4.17
+ATOM  4afb9 APOL STP   333       1.561 124.926  96.868    0.00     3.93
+ATOM  4afbb  POL STP   333      -3.910 128.109  97.677    0.00     4.38
+ATOM  4afbb  POL STP   333      -4.193 127.797  97.561    0.00     4.18
+ATOM  55bb4  POL STP   333      -1.612 126.628  97.141    0.00     4.19
+ATOM  55bb7  POL STP   333      -1.952 124.832  96.477    0.00     3.87
+ATOM  55bba  POL STP   333      -0.670 125.679  97.189    0.00     4.35
+ATOM  55bba  POL STP   333      -0.616 125.710  97.196    0.00     4.36
+ATOM  2f67a  POL STP   333       2.396 125.173  98.918    0.00     3.86
+ATOM  3d8d3  POL STP   333      -2.320 121.990  96.926    0.00     3.42
+ATOM  3daa7  POL STP   333      -2.314 122.634  96.848    0.00     3.55
+ATOM  3daa5  POL STP   333      -1.950 123.581  96.601    0.00     3.77
+ATOM  4afba  POL STP   333      -2.598 124.007  95.754    0.00     3.59
+ATOM  3daa5  POL STP   333      -1.933 123.644  96.619    0.00     3.78
+ATOM  3daa7  POL STP   333      -2.293 122.855  97.113    0.00     3.43
+ATOM  4afa0  POL STP   333      -0.719 129.604  94.722    0.00     3.32
+ATOM  55bb3  POL STP   333      -0.932 129.003  94.965    0.00     3.35
+ATOM  4afa1  POL STP   333      -1.306 130.261  94.938    0.00     3.41
+ATOM  55bb3  POL STP   333      -1.817 128.797  95.525    0.00     3.56
+TER
+END

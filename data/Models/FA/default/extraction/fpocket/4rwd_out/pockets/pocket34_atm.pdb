@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    35:
+HEADER 0  - Pocket Score                      : 0.6963
+HEADER 1  - Drug Score                        : 0.0265
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.5119
+HEADER 4  - Mean alpha-sphere SA              : 0.4971
+HEADER 5  - Mean B-factor                     : 0.1188
+HEADER 6  - Hydrophobicity Score              : 34.1000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.4000
+HEADER 9  - Real volume (approximation)       : 532.5759
+HEADER 10 - Charge Score                      :     3
+HEADER 11 - Local hydrophobic density Score   : 9.8182
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.3667
+ATOM   3213   CB GLN B1025       6.419  22.590  18.942  1.00 65.51           C 0
+ATOM   3153  CG1 VAL B1016       2.698  21.214  16.084  1.00 55.29           C 0
+ATOM   3214   CG GLN B1025       6.188  24.001  19.437  1.00 71.92           C 0
+ATOM   3217  NE2 GLN B1025       5.358  25.486  17.718  1.00 82.47           N 0
+ATOM   3175    O LYS B1019       5.444  25.023  13.218  1.00 83.97           O 0
+ATOM   3154  CG2 VAL B1016       0.443  21.175  15.027  1.00 56.45           C 0
+ATOM   3149   CA VAL B1016       2.482  21.153  13.549  1.00 57.82           C 0
+ATOM   3177   CG LYS B1019       3.586  24.846  10.744  1.00 74.78           C 0
+ATOM   3151    O VAL B1016       4.778  21.820  13.790  1.00 58.99           O 0
+ATOM   3241  OD2 ASP B1028       1.642  19.362  22.285  1.00 51.97           O 0
+ATOM   3270   NZ LYS B1032      -1.330  19.129  21.948  1.00 49.24           N 0
+ATOM   3133  OD1 ASN B1013      -0.082  17.415  17.385  1.00 53.45           O 0
+ATOM   3212    O GLN B1025       5.345  19.515  19.167  1.00 61.34           O 0
+ATOM   3246   CB ALA B1029       3.394  17.399  17.443  1.00 44.82           C 0
+ATOM   3242    N ALA B1029       3.753  17.054  19.825  1.00 45.15           N 0
+ATOM   3243   CA ALA B1029       2.965  16.643  18.684  1.00 44.47           C 0
+ATOM   3210   CA GLN B1025       6.358  21.509  20.011  1.00 60.67           C 0
+ATOM   3211    C GLN B1025       6.379  20.160  19.306  1.00 59.62           C 0
+ATOM   3182   CB ALA B1020       7.746  22.788  14.957  1.00 69.22           C 0
+ATOM   3218    N VAL B1026       7.560  19.755  18.844  1.00 57.87           N 0
+ATOM   3219   CA VAL B1026       7.722  18.507  18.107  1.00 57.13           C 0
+ATOM   3156   CA ILE B1017       5.811  19.327  13.199  1.00 54.82           C 0
+ATOM   3160  CG1 ILE B1017       5.559  17.149  14.439  1.00 50.04           C 0
+ATOM   3224  CG2 VAL B1026       9.322  19.441  16.401  1.00 58.53           C 0
+TER
+END

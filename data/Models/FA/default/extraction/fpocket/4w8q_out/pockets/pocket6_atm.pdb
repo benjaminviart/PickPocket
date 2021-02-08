@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 14.2538
+HEADER 1  - Drug Score                        : 0.0257
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.6573
+HEADER 4  - Mean alpha-sphere SA              : 0.4754
+HEADER 5  - Mean B-factor                     : 0.1364
+HEADER 6  - Hydrophobicity Score              : 20.5455
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.5455
+HEADER 9  - Real volume (approximation)       : 231.8781
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.1613
+ATOM    341    N GLY A  74      78.795   2.602  20.264  1.00 14.96           N 0
+ATOM    329    O ASN A  72      81.910   5.160  18.494  1.00 16.13           O 0
+ATOM    335   CA VAL A  73      79.219   4.469  18.793  1.00 14.07           C 0
+ATOM    364    O GLY A  77      78.432   6.051  24.134  1.00 16.65           O 0
+ATOM    369   CB ALA A  78      78.871   8.863  22.110  1.00 15.28           C 0
+ATOM    148   CGAGLN A  51      83.322   6.175  24.307  0.32 20.42           C 0
+ATOM    130    O GLY A  49      81.471   3.715  26.622  1.00 22.45           O 0
+ATOM    360   CD PRO A  76      77.731   0.657  24.470  1.00 19.79           C 0
+ATOM      9    N GLY A  31      85.617   3.259  20.564  1.00 25.47           N 0
+ATOM      1    N ASN A  30      86.670   2.207  22.978  1.00 60.28           N 0
+ATOM    342   CA GLY A  74      78.217   1.291  20.615  1.00 15.78           C 0
+ATOM    152  OE1AGLN A  51      84.533   6.151  22.247  0.32 25.34           O 0
+ATOM    146   CBAGLN A  51      82.505   7.462  24.324  0.32 18.20           C 0
+ATOM    339  CG1 VAL A  73      77.217   5.558  19.985  1.00 15.83           C 0
+ATOM     20  CD1 ILE A  32      82.438   8.759  19.917  1.00 18.75           C 0
+ATOM    340  CG2 VAL A  73      78.711   6.954  18.438  1.00 15.33           C 0
+ATOM    359   CG PRO A  76      78.328   0.783  25.866  1.00 21.58           C 0
+ATOM    358   CB PRO A  76      78.003   2.192  26.261  1.00 20.51           C 0
+ATOM    361    N GLY A  77      76.444   4.129  24.025  1.00 18.24           N 0
+ATOM    150   CDAGLN A  51      84.576   6.290  23.475  0.32 22.39           C 0
+ATOM     10   CA GLY A  31      85.074   3.455  19.222  1.00 20.93           C 0
+TER
+END

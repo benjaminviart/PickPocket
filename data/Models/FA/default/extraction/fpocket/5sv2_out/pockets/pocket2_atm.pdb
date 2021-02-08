@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 20.6372
+HEADER 1  - Drug Score                        : 0.0274
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.2736
+HEADER 4  - Mean alpha-sphere SA              : 0.3824
+HEADER 5  - Mean B-factor                     : 0.1728
+HEADER 6  - Hydrophobicity Score              : 25.1111
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.2222
+HEADER 9  - Real volume (approximation)       : 97.5954
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.3824
+ATOM    114    N LYS A   9       1.092 -14.492 -16.926  1.00 17.32           N 0
+ATOM   1036  NH1 ARG A  60      -4.629 -10.660 -16.590  1.00 17.16           N 0
+ATOM    161   CB ALA A  12      -3.315 -14.692 -15.130  1.00 23.00           C 0
+ATOM     88    O LEU A   7       0.347 -10.715 -15.466  1.00 15.01           O 0
+ATOM    106    C ALA A   8       1.101 -14.029 -15.680  1.00 16.04           C 0
+ATOM    610    O THR A  39      -2.174 -10.904 -20.751  1.00 11.07           O 0
+ATOM   1037  NH2 ARG A  60      -3.508  -9.208 -17.961  1.00 13.30           N 0
+ATOM    611   CB THR A  39      -0.001  -9.294 -18.992  1.00 10.45           C 0
+ATOM    702   CB PHE A  43      -5.166 -12.581 -20.322  1.00 16.68           C 0
+ATOM    115   CA LYS A   9       0.206 -15.557 -17.371  1.00 20.08           C 0
+ATOM    118   CB LYS A   9       0.615 -15.905 -18.810  1.00 23.57           C 0
+ATOM    698    N PHE A  43      -3.439 -13.308 -21.881  1.00 14.19           N 0
+ATOM    676   CBAGLU A  42      -0.313 -13.754 -22.292  0.49 10.87           C 0
+ATOM    682  OE1AGLU A  42       2.297 -14.001 -21.016  0.49 20.90           O 0
+ATOM    608   CA THR A  39      -0.177  -9.614 -20.479  1.00 10.92           C 0
+ATOM    613  CG2 THR A  39       1.461  -9.272 -18.602  1.00 12.08           C 0
+ATOM    175  CE1 TYR A  13      -4.169 -17.682 -19.495  1.00 66.98           C 0
+ATOM    699   CA PHE A  43      -4.676 -13.725 -21.224  1.00 14.82           C 0
+ATOM    704  CD1 PHE A  43      -6.021 -13.746 -18.283  1.00 29.34           C 0
+ATOM    173  CD1 TYR A  13      -3.966 -18.136 -18.217  1.00 54.88           C 0
+ATOM    674    C GLU A  42      -2.760 -14.157 -22.644  1.00 15.25           C 0
+ATOM    675    O GLU A  42      -3.145 -15.321 -22.814  1.00 16.80           O 0
+TER
+END

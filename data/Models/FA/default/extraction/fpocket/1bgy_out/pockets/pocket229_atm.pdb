@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   230:
+HEADER 0  - Pocket Score                      : -1.3118
+HEADER 1  - Drug Score                        : 0.0334
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9656
+HEADER 4  - Mean alpha-sphere SA              : 0.6164
+HEADER 5  - Mean B-factor                     : 0.1292
+HEADER 6  - Hydrophobicity Score              : 41.6250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 465.2870
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 16.0000
+HEADER 12 - Number of apolar alpha sphere     :    17
+HEADER 13 - Proportion of apolar alpha sphere : 0.5312
+ATOM  31223  OG1 THR W  36      32.142  68.238  28.404  1.00 40.74           O 0
+ATOM  31216    O ALA W  35      36.076  68.393  26.469  1.00 35.65           O 0
+ATOM  31217   CB ALA W  35      33.952  67.588  24.257  1.00 39.41           C 0
+ATOM  27086  CG1 VAL Q  55      36.515  75.547  23.500  1.00  2.16           C 0
+ATOM  31224  CG2 THR W  36      33.164  69.318  30.251  1.00 39.51           C 0
+ATOM  27120  CG2 VAL Q  59      37.839  76.799  27.585  1.00  7.39           C 0
+ATOM  27093   OG SER Q  56      40.125  71.683  26.207  1.00  2.16           O 0
+ATOM  31215    C ALA W  35      35.204  67.528  26.382  1.00 40.67           C 0
+ATOM  31218    N THR W  36      34.324  67.338  27.351  1.00 42.15           N 0
+ATOM  31219   CA THR W  36      34.495  67.803  28.714  1.00 41.76           C 0
+ATOM  27089   CA SER Q  56      40.764  74.014  26.032  1.00  6.84           C 0
+ATOM  27088    N SER Q  56      40.357  74.424  24.688  1.00  2.16           N 0
+ATOM  27085   CB VAL Q  55      37.812  75.130  22.779  1.00  2.16           C 0
+ATOM  27060    O LYS Q  52      40.219  71.922  23.123  1.00  6.42           O 0
+ATOM  27083    C VAL Q  55      39.722  75.615  24.490  1.00  2.16           C 0
+ATOM  27057    N LYS Q  52      39.048  70.977  20.022  1.00 13.98           N 0
+ATOM  27056   CB ALA Q  51      37.604  72.256  17.916  1.00  2.16           C 0
+ATOM  27033    O ALA Q  48      38.291  68.569  18.360  1.00 17.60           O 0
+ATOM  27061   CB LYS Q  52      39.225  69.151  21.658  1.00  7.59           C 0
+ATOM  27058   CA LYS Q  52      39.216  70.640  21.420  1.00  7.51           C 0
+ATOM  27062   CG LYS Q  52      38.964  68.769  23.108  1.00  2.54           C 0
+ATOM  27087  CG2 VAL Q  55      37.658  74.898  21.281  1.00  2.27           C 0
+TER
+END

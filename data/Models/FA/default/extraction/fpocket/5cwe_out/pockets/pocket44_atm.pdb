@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    45:
+HEADER 0  - Pocket Score                      : -4.5994
+HEADER 1  - Drug Score                        : 0.0718
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.7213
+HEADER 4  - Mean alpha-sphere SA              : 0.5388
+HEADER 5  - Mean B-factor                     : 0.3339
+HEADER 6  - Hydrophobicity Score              : 52.4286
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.4286
+HEADER 9  - Real volume (approximation)       : 293.3350
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 17.0000
+HEADER 12 - Number of apolar alpha sphere     :    18
+HEADER 13 - Proportion of apolar alpha sphere : 0.5806
+ATOM   2022   CG ARG A 260     -36.049  -4.354  38.196  1.00 48.24           C 0
+ATOM   2017    N ARG A 260     -35.813  -7.076  36.704  1.00 48.62           N 0
+ATOM   2047   SD MET A 263     -31.893  -8.070  38.247  1.00 49.78           S 0
+ATOM   2018   CA ARG A 260     -35.892  -6.907  38.154  1.00 49.77           C 0
+ATOM   2014   CG LEU A 259     -33.000  -7.451  34.533  1.00 43.29           C 0
+ATOM   2793  CD1 LEU A 362     -30.284  -3.726  35.879  1.00 52.26           C 0
+ATOM   1997  CD1 LEU A 256     -34.610  -2.838  34.878  1.00 37.36           C 0
+ATOM   2794  CD2 LEU A 362     -31.724  -1.987  36.927  1.00 51.71           C 0
+ATOM   2791   CB LEU A 362     -30.273  -3.439  38.377  1.00 53.21           C 0
+ATOM   2026  NH1 ARG A 260     -33.783  -2.384  39.708  1.00 39.54           N 0
+ATOM   2790    O LEU A 362     -31.480  -2.606  41.327  1.00 50.50           O 0
+ATOM   2789    C LEU A 362     -30.400  -3.003  40.877  1.00 49.62           C 0
+ATOM   2021   CB ARG A 260     -36.726  -5.673  38.509  1.00 49.85           C 0
+ATOM   2020    O ARG A 260     -35.992  -8.694  39.783  1.00 54.11           O 0
+ATOM   2796   CA GLU A 363     -29.791  -4.343  42.883  1.00 57.33           C 0
+ATOM   2023   CD ARG A 260     -36.492  -3.277  39.162  1.00 46.68           C 0
+ATOM   2825   CB PRO A 366     -35.216  -0.865  43.965  1.00 50.42           C 0
+ATOM   2798    O GLU A 363     -30.599  -3.301  44.887  1.00 54.34           O 0
+ATOM   2046   CG MET A 263     -31.985  -9.546  39.316  1.00 53.39           C 0
+ATOM   2795    N GLU A 363     -29.587  -3.855  41.509  1.00 54.09           N 0
+ATOM   2800   CG GLU A 363     -29.132  -6.808  42.739  1.00 67.59           C 0
+TER
+END

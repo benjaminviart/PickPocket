@@ -1,0 +1,29 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4wbv.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    GYVLGS                                                6          ~~~~
+STR                                                                        ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4wbv.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    GYVLGS                                                6          ~~~~
+STR                                                                        ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  GLY A  127    1    C          Coil    360.00   -179.16     127.6      ~~~~
+ASG  TYR A  128    2    C          Coil   -155.51    156.73     159.5      ~~~~
+ASG  VAL A  129    3    C          Coil   -136.80    127.26     141.2      ~~~~
+ASG  LEU A  130    4    C          Coil   -126.04    139.73      90.4      ~~~~
+ASG  GLY A  131    5    C          Coil   -146.27    143.97      72.1      ~~~~
+ASG  SER A  132    6    C          Coil   -151.55    360.00     111.4      ~~~~
+ASG  GLY B  127    1    C          Coil    360.00   -179.38     120.6      ~~~~
+ASG  TYR B  128    2    C          Coil   -138.59    151.56     147.8      ~~~~
+ASG  VAL B  129    3    C          Coil   -133.11    125.47     147.1      ~~~~
+ASG  LEU B  130    4    C          Coil   -128.62    136.68      82.4      ~~~~
+ASG  GLY B  131    5    C          Coil   -145.34    133.76      68.1      ~~~~
+ASG  SER B  132    6    C          Coil   -148.80    360.00     161.2      ~~~~

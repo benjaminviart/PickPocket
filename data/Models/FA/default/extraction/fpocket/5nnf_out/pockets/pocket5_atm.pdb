@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 6.3144
+HEADER 1  - Drug Score                        : 0.1836
+HEADER 2  - Number of V. Vertices             :    42
+HEADER 3  - Mean alpha-sphere radius          : 3.5182
+HEADER 4  - Mean alpha-sphere SA              : 0.4898
+HEADER 5  - Mean B-factor                     : 0.1785
+HEADER 6  - Hydrophobicity Score              : 58.6250
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.8750
+HEADER 9  - Real volume (approximation)       : 276.1825
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0238
+ATOM    410  CG1 VAL A  90      29.907   3.421   6.577  1.00 16.91           C 0
+ATOM      1    N MET A  43      35.453   3.555   8.849  1.00 28.08           N 0
+ATOM    438  OD1AASN A  93      33.971   2.478   0.649  0.50 21.15           O 0
+ATOM    406   CA VAL A  90      31.105   5.260   5.352  1.00 11.88           C 0
+ATOM    403    O ALA A  89      32.787   6.547   3.560  1.00 13.40           O 0
+ATOM    408    O VAL A  90      30.269   4.349   3.283  1.00 13.72           O 0
+ATOM    411  CG2 VAL A  90      31.653   4.767   7.747  1.00 15.63           C 0
+ATOM    454   CB PRO A  95      38.447   4.206   2.790  1.00 10.41           C 0
+ATOM    451   CA PRO A  95      38.014   5.627   3.196  1.00  9.36           C 0
+ATOM    450    N PRO A  95      37.125   6.012   2.112  1.00  9.82           N 0
+ATOM    456   CD PRO A  95      37.003   4.944   1.098  1.00 10.83           C 0
+ATOM    442    N LEU A  94      34.309   6.583   1.170  1.00 10.60           N 0
+ATOM    481   CB TYR A  98      38.349  10.738   8.420  1.00  7.75           C 0
+ATOM      4    O MET A  43      35.651   6.423   9.448  1.00 23.03           O 0
+ATOM    453    O PRO A  95      39.829   6.495   4.437  1.00 10.73           O 0
+ATOM    500   CEALYS A  99      41.130   6.450   7.497  0.50 13.07           C 0
+ATOM    477    N TYR A  98      38.846  10.956   6.021  1.00  7.36           N 0
+ATOM    405    N VAL A  90      31.555   6.654   5.434  1.00 10.35           N 0
+ATOM    402    C ALA A  89      32.349   7.187   4.515  1.00 10.26           C 0
+ATOM    502   NZALYS A  99      41.200   5.302   6.543  0.50 12.20           N 0
+ATOM    445    O LEU A  94      36.606   7.959   3.136  1.00  9.63           O 0
+ATOM    404   CB ALA A  89      34.089   8.797   5.287  1.00 10.39           C 0
+ATOM    484  CD2 TYR A  98      35.856  10.803   7.945  1.00  7.37           C 0
+TER
+END

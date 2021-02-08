@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   101:
+HEADER 0  - Pocket Score                      : 1.9898
+HEADER 1  - Drug Score                        : 0.0198
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.7540
+HEADER 4  - Mean alpha-sphere SA              : 0.3609
+HEADER 5  - Mean B-factor                     : 0.1443
+HEADER 6  - Hydrophobicity Score              : 28.7333
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.8667
+HEADER 9  - Real volume (approximation)       : 331.4930
+HEADER 10 - Charge Score                      :     5
+HEADER 11 - Local hydrophobic density Score   : 28.2000
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  53435  O2' C   02598      45.462  92.874 129.392  1.00 54.63           O 0
+ATOM  53436  C1' C   02598      43.729  93.849 128.028  1.00 54.63           C 0
+ATOM  62302   CA LYS B 154      49.634  94.581 130.083  1.00 32.13           C 0
+ATOM  62298   CA VAL B 150      46.976  96.364 123.462  1.00 32.26           C 0
+ATOM  62299   CA TYR B 151      48.713  92.973 124.015  1.00 32.34           C 0
+ATOM  53431  O4' C   02598      43.894  93.312 126.727  1.00 54.63           O 0
+ATOM  53422   N2 G   02597      43.735  98.229 126.980  1.00 59.96           N 0
+ATOM  53451  O4' U   02599      44.180  92.905 132.287  1.00 49.93           O 0
+ATOM  62304   CA MET B 156      46.811  97.229 134.672  1.00 31.69           C 0
+ATOM  62303   CA ARG B 155      50.151  95.733 133.699  1.00 31.90           C 0
+ATOM  53450  C4' U   02599      44.773  91.698 132.840  1.00 49.93           C 0
+ATOM  42029  O2' C   02033      46.817 101.260 131.593  1.00 46.08           O 0
+ATOM  62286   CA PRO B 138      50.851 102.271 134.110  1.00 30.79           C 0
+ATOM  51147  O2' C   02491      53.467  98.355 129.983  1.00 35.15           O 0
+ATOM  42033   O2 C   02033      43.969  99.487 129.731  1.00 46.08           O 0
+ATOM  62289   CA ILE B 141      50.003 100.622 126.469  1.00 31.26           C 0
+ATOM  53439   O2 C   02598      43.003  95.916 129.659  1.00 54.63           O 0
+ATOM  42016   N2 G   02032      42.357  96.878 132.189  1.00 46.71           N 0
+ATOM  42049  O2' A   02034      46.145 101.328 125.477  1.00 45.53           O 0
+ATOM  42045  O4' A   02034      45.632 102.824 128.215  1.00 45.53           O 0
+ATOM  62301   CA GLY B 153      48.293  91.024 129.573  1.00 32.31           C 0
+TER
+END

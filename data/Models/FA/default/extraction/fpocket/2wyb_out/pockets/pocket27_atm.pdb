@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    28:
+HEADER 0  - Pocket Score                      : 4.6895
+HEADER 1  - Drug Score                        : 0.0099
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.9472
+HEADER 4  - Mean alpha-sphere SA              : 0.6354
+HEADER 5  - Mean B-factor                     : 0.2391
+HEADER 6  - Hydrophobicity Score              : 18.5000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.5000
+HEADER 9  - Real volume (approximation)       : 295.0223
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0333
+ATOM   4126   CB ASN B 363      22.667  72.414  40.320  1.00 25.53           C 0
+ATOM   4123   CA ASN B 363      23.027  70.926  40.172  1.00 24.18           C 0
+ATOM   4128  OD1 ASN B 363      23.848  73.034  42.321  1.00 27.75           O 0
+ATOM   5367  NE2 GLN B 521      22.102  71.186  46.145  1.00 20.26           N 0
+ATOM   3821  ND2 ASN B 323      24.623  69.962  43.916  1.00 19.52           N 0
+ATOM   4130    N LEU B 364      20.806  69.968  39.878  1.00 24.82           N 0
+ATOM   4828   CB PRO B 452      22.207  67.348  43.163  1.00 21.29           C 0
+ATOM   4135   CG LEU B 364      18.453  68.304  41.191  1.00 23.89           C 0
+ATOM   5345    O SER B 519      17.816  67.638  44.974  1.00 22.64           O 0
+ATOM   5364   CG GLN B 521      21.000  69.270  47.130  1.00 21.69           C 0
+ATOM   4136  CD1 LEU B 364      17.042  68.183  41.757  1.00 23.44           C 0
+ATOM   5351    O ARG B 520      17.432  70.471  48.340  1.00 24.06           O 0
+ATOM   4150  OD1AASP B 365      18.655  75.549  39.104  0.50 31.32           O 0
+ATOM   4134   CB LEU B 364      18.429  69.269  39.995  1.00 25.90           C 0
+ATOM   5349   CA ARG B 520      16.365  68.669  47.180  1.00 23.87           C 0
+ATOM   4138    NAASP B 365      19.368  71.630  38.060  0.50 28.05           N 0
+ATOM   4148   CGAASP B 365      19.188  74.638  38.433  0.50 30.30           C 0
+ATOM   4146   CBAASP B 365      18.292  73.786  37.551  0.50 31.34           C 0
+ATOM   4152  OD2AASP B 365      20.418  74.396  38.455  0.50 27.31           O 0
+ATOM   5350    C ARG B 520      17.473  69.285  48.039  1.00 23.20           C 0
+TER
+END

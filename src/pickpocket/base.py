@@ -165,9 +165,11 @@ class PickPocket():
             all_atm=set()
             for a in h:
                 pocket_res=ns.search(center=a.coord, radius=self.distance, level="R")
-                all_atm|= set(Selection.unfold_entities(pocket_res, "A"))
-                residues.append(set(get_uids(pocket_res)))
-                residues[0] |= residues[len(residues)-1]
+                to_add =set(get_uids(pocket_res))
+                if len(to_add) > 0:
+                    all_atm|= set(Selection.unfold_entities(pocket_res, "A"))
+                    residues.append(to_add)
+                    residues[0] |= to_add
             if len(residues) > 1:
                 pocket_l.append(residues)
                 pocket_atms.append(all_atm)

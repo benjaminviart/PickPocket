@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    30:
+HEADER 0  - Pocket Score                      : 4.1232
+HEADER 1  - Drug Score                        : 0.0260
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.0716
+HEADER 4  - Mean alpha-sphere SA              : 0.5593
+HEADER 5  - Mean B-factor                     : 0.1407
+HEADER 6  - Hydrophobicity Score              : 25.6000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.8000
+HEADER 9  - Real volume (approximation)       : 554.7294
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 16.0000
+HEADER 12 - Number of apolar alpha sphere     :    17
+HEADER 13 - Proportion of apolar alpha sphere : 0.5484
+ATOM  10543  POL STP    30       5.543  30.004 104.558    0.00     3.31
+ATOM  14858 APOL STP    30       2.207  27.331 103.656    0.00     3.89
+ATOM  20904 APOL STP    30       1.565  28.819 103.438    0.00     4.81
+ATOM  14449 APOL STP    30       2.352  25.672 103.884    0.00     3.23
+ATOM  14856 APOL STP    30       2.344  25.670 103.891    0.00     3.23
+ATOM  14856 APOL STP    30       2.351  25.675 103.886    0.00     3.23
+ATOM  10836 APOL STP    30       2.785  27.527 101.619    0.00     3.56
+ATOM  20904 APOL STP    30       3.375  28.159 101.087    0.00     3.44
+ATOM  14446  POL STP    30       2.970  26.913 101.951    0.00     3.25
+ATOM  20904 APOL STP    30       2.337  28.127 102.104    0.00     3.94
+ATOM  14858  POL STP    30       2.453  26.864 103.590    0.00     3.64
+ATOM  19490 APOL STP    30       1.843  25.243 104.339    0.00     3.24
+ATOM  19486 APOL STP    30       1.644  25.347 104.398    0.00     3.33
+ATOM  20904 APOL STP    30       0.986  29.044 103.710    0.00     5.07
+ATOM  24472 APOL STP    30       1.586  28.261 102.067    0.00     3.83
+ATOM  24472 APOL STP    30       1.003  28.607 102.636    0.00     4.24
+ATOM  20782  POL STP    30       6.248  28.995 100.636    0.00     3.02
+ATOM  20904  POL STP    30       4.804  29.097 100.408    0.00     3.48
+ATOM  20904 APOL STP    30       4.678  28.858 100.342    0.00     3.45
+ATOM  20904 APOL STP    30       4.254  28.328  99.525    0.00     3.17
+ATOM  20780  POL STP    30       5.216  30.701 102.578    0.00     3.70
+ATOM  20904 APOL STP    30       2.822  31.183 104.084    0.00     5.29
+ATOM  20904 APOL STP    30       2.687  31.519 104.270    0.00     5.51
+ATOM  20780  POL STP    30       4.655  32.802 103.492    0.00     4.76
+ATOM  26256  POL STP    30       5.189  33.914 103.795    0.00     5.03
+ATOM  26256  POL STP    30       5.190  33.700 102.916    0.00     4.36
+ATOM  12006  POL STP    30       3.562  31.755 104.117    0.00     5.37
+ATOM  20780  POL STP    30       3.915  31.608 103.424    0.00     4.98
+ATOM  20904  POL STP    30       3.080  31.502 104.083    0.00     5.40
+ATOM  20902  POL STP    30       3.867  31.536 103.319    0.00     4.93
+ATOM  27251  POL STP    30       6.169  34.029 103.625    0.00     4.49
+TER
+END

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    99:
+HEADER 0  - Pocket Score                      : 3.5668
+HEADER 1  - Drug Score                        : 0.0142
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.1859
+HEADER 4  - Mean alpha-sphere SA              : 0.4880
+HEADER 5  - Mean B-factor                     : 0.3881
+HEADER 6  - Hydrophobicity Score              : 22.1667
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.0833
+HEADER 9  - Real volume (approximation)       : 467.4819
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.3939
+ATOM  63796   CA ASP M  45      69.123 121.374  23.045  1.00 53.84           C 0
+ATOM  63800   CA GLN M  49      72.494 118.276  19.048  1.00 64.49           C 0
+ATOM  63794   CA ILE M  43      73.947 122.134  18.416  1.00 46.97           C 0
+ATOM  63797   CA SER M  46      70.517 117.909  23.771  1.00 57.32           C 0
+ATOM  59506  O5' G   9  11      77.717 119.233  24.374  1.00 69.65           O 0
+ATOM  63795   CA ASP M  44      70.329 122.335  19.568  1.00 50.17           C 0
+ATOM  59508  C4' G   9  11      76.241 117.334  24.628  1.00 69.65           C 0
+ATOM  59493  O2' U   9  10      78.109 119.448  20.887  1.00 68.74           O 0
+ATOM  59513  O2' G   9  11      73.753 115.649  24.297  1.00 69.65           O 0
+ATOM  59509  O4' G   9  11      76.599 116.662  23.384  1.00 69.65           O 0
+ATOM  61741   N2 G   9 115      74.785 115.078  19.604  1.00 68.36           N 0
+ATOM  59514  C1' G   9  11      75.958 115.392  23.323  1.00 69.65           C 0
+ATOM  63799   CA GLY M  48      68.937 116.951  18.826  1.00 62.74           C 0
+ATOM  63779   CA ARG M  28      73.821 127.236  20.282  1.00 46.84           C 0
+ATOM  63768   CA VAL M  17      73.133 125.461  27.891  1.00 49.83           C 0
+ATOM  59504  OP1 G   9  11      78.611 121.266  25.573  1.00 69.65           O 0
+ATOM  59491  O3' U   9  10      79.300 120.764  23.211  1.00 68.74           O 0
+ATOM  59507  C5' G   9  11      77.437 118.091  25.169  1.00 69.65           C 0
+ATOM  59511  O3' G   9  11      75.007 116.670  26.627  1.00 69.65           O 0
+ATOM  59527  OP1 C   9  12      74.644 117.114  29.019  1.00 69.64           O 0
+TER
+END

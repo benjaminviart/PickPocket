@@ -1,0 +1,3 @@
+load ../../../PDB/pdb4w5l.ent
+select TP, true_pocket* and predicted_pocket*
+color green, TP

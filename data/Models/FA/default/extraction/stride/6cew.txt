@@ -1,0 +1,34 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6cew.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    AMMAAA                                                6          ~~~~
+STR        EEEE                                                            ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6cew.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    AMMAAA                                                6          ~~~~
+STR        EEEE                                                            ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       MET   322 A      ALA    325 A                            ~~~~
+LOC  Strand       MET   322 B      ALA    325 B                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  ALA A  321    1    C          Coil    360.00    151.74     107.7      ~~~~
+ASG  MET A  322    2    E        Strand   -153.98    149.47     145.8      ~~~~
+ASG  MET A  323    3    E        Strand   -142.22    145.77     144.9      ~~~~
+ASG  ALA A  324    4    E        Strand   -133.29    142.89      64.1      ~~~~
+ASG  ALA A  325    5    E        Strand   -142.59    130.76      61.7      ~~~~
+ASG  ALA A  326    6    C          Coil   -147.33    360.00     153.5      ~~~~
+ASG  ALA B  321    1    C          Coil    360.00    145.78     117.9      ~~~~
+ASG  MET B  322    2    E        Strand   -137.21    142.30     151.9      ~~~~
+ASG  MET B  323    3    E        Strand   -140.59    149.63     151.3      ~~~~
+ASG  ALA B  324    4    E        Strand   -136.89    144.41      60.9      ~~~~
+ASG  ALA B  325    5    E        Strand   -125.95    127.84      75.4      ~~~~
+ASG  ALA B  326    6    C          Coil   -155.78    360.00     129.1      ~~~~

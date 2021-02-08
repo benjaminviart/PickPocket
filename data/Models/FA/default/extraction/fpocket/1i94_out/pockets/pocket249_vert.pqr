@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   250:
+HEADER 0  - Pocket Score                      : -3.0939
+HEADER 1  - Drug Score                        : 0.0090
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.3572
+HEADER 4  - Mean alpha-sphere SA              : 0.6278
+HEADER 5  - Mean B-factor                     : 0.1806
+HEADER 6  - Hydrophobicity Score              : 22.0000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 5.5000
+HEADER 9  - Real volume (approximation)       : 880.2336
+HEADER 10 - Charge Score                      :     6
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0333
+ATOM  2b306  POL STP   250      64.815 102.560  82.370    0.00     5.71
+ATOM  3dbab  POL STP   250      64.873 102.931  82.181    0.00     5.42
+ATOM  3dbac  POL STP   250      64.471 102.788  81.951    0.00     5.28
+ATOM  2b306  POL STP   250      63.903 102.427  84.013    0.00     5.90
+ATOM  37fb8  POL STP   250      63.916 105.377  83.305    0.00     3.50
+ATOM  3dbab  POL STP   250      64.699 105.289  81.941    0.00     3.66
+ATOM  3aabe  POL STP   250      64.798 100.916  78.521    0.00     3.82
+ATOM  3aabe  POL STP   250      63.927 101.642  77.810    0.00     3.12
+ATOM  3dba8  POL STP   250      65.812 106.406  80.943    0.00     3.45
+ATOM  3dbaa  POL STP   250      66.404 106.139  80.547    0.00     3.88
+ATOM  3dbaa  POL STP   250      66.495 105.787  80.535    0.00     4.06
+ATOM  3dbaa  POL STP   250      65.878 106.431  79.205    0.00     3.12
+ATOM  3dbb1  POL STP   250      62.601 103.750  79.041    0.00     3.34
+ATOM  416a2  POL STP   250      62.489 104.082  78.557    0.00     3.11
+ATOM  3dbb1  POL STP   250      62.184 103.870  79.074    0.00     3.28
+ATOM  3dbb1  POL STP   250      61.622 103.887  80.170    0.00     3.51
+ATOM  416a2 APOL STP   250      62.297 104.170  78.518    0.00     3.06
+ATOM  3dbb1  POL STP   250      61.619 103.884  80.198    0.00     3.52
+ATOM  3feba  POL STP   250      62.086 102.075  84.018    0.00     5.77
+ATOM  3febc  POL STP   250      63.119 102.709  85.235    0.00     5.42
+ATOM  42cdd  POL STP   250      62.950 103.223  85.800    0.00     4.93
+ATOM  3b092  POL STP   250      63.881 102.346  85.510    0.00     5.24
+ATOM  3febc  POL STP   250      63.824 102.317  85.408    0.00     5.32
+ATOM  3b092  POL STP   250      64.341 102.384  86.571    0.00     4.36
+ATOM  42cde  POL STP   250      64.084 102.554  86.021    0.00     4.80
+ATOM  3b092  POL STP   250      64.424 102.511  86.791    0.00     4.19
+ATOM  42cde  POL STP   250      64.424 102.516  86.793    0.00     4.19
+ATOM  42ce2  POL STP   250      64.442 102.519  86.859    0.00     4.14
+ATOM  42d1a  POL STP   250      63.462  98.204  82.937    0.00     5.76
+ATOM  42d1a  POL STP   250      63.481  98.955  83.423    0.00     5.86
+TER
+END

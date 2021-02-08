@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    16:
+HEADER 0  - Pocket Score                      : 3.6129
+HEADER 1  - Drug Score                        : 0.0062
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.3241
+HEADER 4  - Mean alpha-sphere SA              : 0.5944
+HEADER 5  - Mean B-factor                     : 0.2853
+HEADER 6  - Hydrophobicity Score              : -0.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 2.6250
+HEADER 9  - Real volume (approximation)       : 243.5618
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 28.9333
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 0.9091
+ATOM   7330    O SER G  98      76.879 -16.107  58.309  1.00 25.14           O 0
+ATOM   7348  OD2 ASP G 100      77.498 -19.104  64.084  1.00 38.42           O 0
+ATOM   7341    N ASP G 100      77.374 -19.402  60.101  1.00 25.58           N 0
+ATOM   7345   CB ASP G 100      78.846 -19.476  62.129  1.00 28.87           C 0
+ATOM   6618   CG LYS G  13      67.597 -17.781  63.770  1.00 24.70           C 0
+ATOM   6627  OG1 THR G  14      69.896 -21.976  60.941  1.00 17.85           O 0
+ATOM   6623   CA THR G  14      68.660 -20.353  59.662  1.00 17.82           C 0
+ATOM   6652   CB ALA G  17      69.976 -16.038  58.663  1.00 19.73           C 0
+ATOM   6616    O LYS G  13      67.460 -17.945  60.414  1.00 19.52           O 0
+ATOM   7340  CD1 ILE G  99      72.921 -18.182  57.625  1.00 22.38           C 0
+ATOM   7370  CG2 THR G 103      72.811 -22.475  62.225  1.00 23.08           C 0
+ATOM   7369  OG1 THR G 103      74.406 -21.608  63.702  1.00 26.29           O 0
+ATOM   6621   NZ LYS G  13      70.241 -17.035  66.350  1.00 40.09           N 0
+ATOM   6620   CE LYS G  13      69.076 -16.661  65.476  1.00 35.09           C 0
+ATOM   6684  NH2 ARG G  21      72.932 -13.141  59.869  1.00 32.79           N 0
+ATOM   6619   CD LYS G  13      68.203 -17.874  65.175  1.00 32.24           C 0
+ATOM   6622    N THR G  14      67.643 -20.170  60.696  1.00 17.04           N 0
+ATOM   6683  NH1 ARG G  21      73.930 -14.528  58.343  1.00 29.89           N 0
+ATOM   7339  CG2 ILE G  99      74.342 -20.535  58.975  1.00 21.65           C 0
+ATOM   7334   CA ILE G  99      75.987 -18.760  58.205  1.00 23.51           C 0
+TER
+END

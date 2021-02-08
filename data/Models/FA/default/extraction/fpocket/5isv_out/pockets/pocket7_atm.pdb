@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 7.4202
+HEADER 1  - Drug Score                        : 0.0592
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.7021
+HEADER 4  - Mean alpha-sphere SA              : 0.5294
+HEADER 5  - Mean B-factor                     : 0.0465
+HEADER 6  - Hydrophobicity Score              : 43.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 223.3066
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.5758
+ATOM   2171    N GLU B 103      39.714  51.317 -27.330  1.00 17.95           N 0
+ATOM   2175   CB GLU B 103      39.497  50.027 -29.359  1.00 23.00           C 0
+ATOM   1835    O LEU B  66      38.630  55.791 -28.515  1.00 19.21           O 0
+ATOM   2174    O GLU B 103      42.204  51.273 -28.492  1.00 21.98           O 0
+ATOM   1843    O PHE B  67      40.759  56.709 -31.850  1.00 17.59           O 0
+ATOM   2402   OH TYR B 130      41.583  49.785 -32.471  1.00 30.56           O 0
+ATOM   2484  CD1 ILE B 141      36.505  48.187 -28.609  1.00 34.71           C 0
+ATOM   2153   CB TRP B 101      34.364  52.658 -24.471  1.00 22.12           C 0
+ATOM   2483  CG2 ILE B 141      35.621  47.876 -25.834  1.00 24.76           C 0
+ATOM   2166    O LEU B 102      38.401  50.272 -25.808  1.00 18.74           O 0
+ATOM   2165    C LEU B 102      38.916  51.308 -26.280  1.00 17.71           C 0
+ATOM   2163    N LEU B 102      37.513  52.484 -24.664  1.00 18.08           N 0
+ATOM   1831  CG2 THR B  65      34.684  55.087 -28.270  1.00 21.04           C 0
+ATOM   2164   CA LEU B 102      38.607  52.628 -25.670  1.00 18.01           C 0
+ATOM   2151    C TRP B 101      36.643  53.452 -24.464  1.00 19.46           C 0
+ATOM   1848  CE1 PHE B  67      34.473  57.319 -31.373  1.00 21.00           C 0
+ATOM   1849  CE2 PHE B  67      35.221  56.938 -33.587  1.00 20.68           C 0
+ATOM   1850   CZ PHE B  67      34.212  56.904 -32.653  1.00 21.23           C 0
+ATOM   2178  OE1 GLU B 103      38.372  49.755 -31.905  1.00 27.06           O 0
+ATOM   1847  CD2 PHE B  67      36.459  57.440 -33.256  1.00 19.56           C 0
+ATOM   1846  CD1 PHE B  67      35.716  57.829 -31.048  1.00 18.94           C 0
+ATOM   1845   CG PHE B  67      36.719  57.901 -32.009  1.00 17.85           C 0
+ATOM   1841   CA PHE B  67      38.828  57.524 -30.673  1.00 16.87           C 0
+TER
+END

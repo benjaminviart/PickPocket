@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    24:
+HEADER 0  - Pocket Score                      : -0.8633
+HEADER 1  - Drug Score                        : 0.0114
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9052
+HEADER 4  - Mean alpha-sphere SA              : 0.5850
+HEADER 5  - Mean B-factor                     : 0.2498
+HEADER 6  - Hydrophobicity Score              : 23.8333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 346.6366
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4375
+ATOM   2490   CD GLU K  23       5.527  86.814  11.037  1.00 13.13           C 0
+ATOM   2488   CB GLU K  23       3.781  88.361   9.905  1.00  9.08           C 0
+ATOM   2755   CB ALA L  25       5.583  90.708   6.795  1.00 10.30           C 0
+ATOM   2491  OE1 GLU K  23       5.739  86.091  10.037  1.00 15.85           O 0
+ATOM   2729    O LYS L  22       8.602  89.350   5.528  1.00  9.53           O 0
+ATOM   2492  OE2 GLU K  23       6.378  86.932  11.952  1.00 18.08           O 0
+ATOM   2761   CG GLN L  26      10.851  91.534   6.918  1.00 16.48           C 0
+ATOM   2756    N GLN L  26       8.112  92.291   5.708  1.00  9.26           N 0
+ATOM   2764  NE2 GLN L  26      12.118  89.482   7.057  1.00 38.16           N 0
+ATOM   2727   CA LYS L  22       7.849  87.067   5.728  1.00  8.74           C 0
+ATOM   2730   CB LYS L  22       8.801  86.273   6.625  1.00 11.34           C 0
+ATOM   2731   CG LYS L  22       8.085  85.278   7.515  1.00 13.27           C 0
+ATOM   2732   CD LYS L  22       9.064  84.385   8.265  1.00 14.92           C 0
+ATOM   2754    O ALA L  25       6.533  93.828   6.215  1.00  8.69           O 0
+ATOM   2753    C ALA L  25       6.837  92.677   5.865  1.00  7.56           C 0
+ATOM   2784   CGALYS L  29       6.481  95.818   8.895  0.46 15.01           C 0
+ATOM   2757   CA GLN L  26       9.217  93.229   5.916  1.00 10.09           C 0
+ATOM   2516  OE1AGLN K  26       2.068  90.608  13.427  0.68 25.97           O 0
+ATOM   2786   CDALYS L  29       5.989  96.423  10.207  0.46 22.03           C 0
+ATOM   2487    O GLU K  23       2.400  91.233   9.098  1.00  7.74           O 0
+ATOM   2489   CG GLU K  23       4.180  87.555  11.160  1.00 10.50           C 0
+ATOM   2460    O ALA K  20       2.669  86.637   7.320  1.00  5.96           O 0
+TER
+END

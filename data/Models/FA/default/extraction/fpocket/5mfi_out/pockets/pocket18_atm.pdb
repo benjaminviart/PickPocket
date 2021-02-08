@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    19:
+HEADER 0  - Pocket Score                      : 5.2390
+HEADER 1  - Drug Score                        : 0.0069
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9850
+HEADER 4  - Mean alpha-sphere SA              : 0.5666
+HEADER 5  - Mean B-factor                     : 0.1642
+HEADER 6  - Hydrophobicity Score              : 4.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1667
+HEADER 9  - Real volume (approximation)       : 602.4023
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2500
+ATOM   2731   CBAGLU B 109      15.640 -17.421  82.106  0.52 26.47           C 0
+ATOM   3053   OG SER B 150      19.300 -15.748  86.108  1.00 35.24           O 0
+ATOM   3052   CB SER B 150      20.389 -16.633  85.913  1.00 36.08           C 0
+ATOM   3079  OE1 GLU B 152      19.520 -10.790  84.063  1.00 31.45           O 0
+ATOM   2733   CGAGLU B 109      16.229 -18.725  82.625  0.52 35.85           C 0
+ATOM   2737  OE1AGLU B 109      16.708 -18.281  84.917  0.52 47.01           O 0
+ATOM   2745   CB GLU B 110      12.656 -13.639  79.471  1.00 23.63           C 0
+ATOM   2741    N GLU B 110      13.335 -15.287  81.136  1.00 22.84           N 0
+ATOM   2742   CA GLU B 110      12.872 -13.916  80.951  1.00 21.74           C 0
+ATOM   2746   CG GLU B 110      12.426 -12.175  79.182  1.00 29.29           C 0
+ATOM   2748  OE1 GLU B 110      12.595 -12.746  76.870  1.00 25.21           O 0
+ATOM   3087  CG2 VAL B 153      16.164 -15.161  87.033  1.00 30.08           C 0
+ATOM   2729    OAGLU B 109      13.749 -15.126  83.363  0.52 24.38           O 0
+ATOM   2727    CAGLU B 109      13.732 -15.786  82.324  0.52 26.07           C 0
+ATOM   3076   CB GLU B 152      20.074 -11.676  86.648  1.00 25.30           C 0
+ATOM   2773   CBAGLN B 113      13.744 -12.280  85.127  0.65 22.02           C 0
+ATOM   2775   CGAGLN B 113      14.598 -11.095  85.621  0.65 28.71           C 0
+ATOM   3077   CG GLU B 152      19.118 -10.509  86.394  1.00 28.25           C 0
+ATOM   3078   CD GLU B 152      19.018 -10.060  84.947  1.00 45.41           C 0
+ATOM   2779  OE1AGLN B 113      13.243  -9.394  84.531  0.65 28.49           O 0
+ATOM   3080  OE2 GLU B 152      18.374  -9.017  84.689  1.00 36.99           O 0
+ATOM   2744    O GLU B 110      11.449 -12.717  82.440  1.00 23.78           O 0
+TER
+END

@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    38:
+HEADER 0  - Pocket Score                      : 4.4998
+HEADER 1  - Drug Score                        : 0.0109
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.2356
+HEADER 4  - Mean alpha-sphere SA              : 0.4485
+HEADER 5  - Mean B-factor                     : 0.3159
+HEADER 6  - Hydrophobicity Score              : 22.3333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.1667
+HEADER 9  - Real volume (approximation)       : 97.4200
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.4667
+ATOM   3024    O ASP B  45      32.842 -80.693 -16.222  1.00 77.38           O 0
+ATOM   3023    C ASP B  45      32.751 -80.029 -17.250  1.00 77.27           C 0
+ATOM   3016    O LEU B  44      30.059 -77.256 -16.947  1.00 75.26           O 0
+ATOM   3018   CG LEU B  44      32.579 -74.961 -16.787  1.00 74.19           C 0
+ATOM   3202   CGAGLN B  67      31.479 -76.431 -12.026  0.50 75.24           C 0
+ATOM   3071   CB ALA B  50      36.980 -73.645 -14.843  1.00 80.70           C 0
+ATOM   3206  OE1AGLN B  67      33.466 -75.077 -11.983  0.50 75.15           O 0
+ATOM   3020  CD2 LEU B  44      32.658 -73.813 -15.806  1.00 74.37           C 0
+ATOM   3045  OE2 GLU B  47      36.422 -75.744 -12.158  1.00 82.05           O 0
+ATOM   3019  CD1 LEU B  44      33.898 -75.132 -17.523  1.00 73.42           C 0
+ATOM   3038   CA GLU B  47      37.270 -78.169 -15.078  1.00 80.04           C 0
+ATOM   3204   CDAGLN B  67      32.960 -76.182 -11.775  0.50 75.21           C 0
+ATOM   3208  NE2AGLN B  67      33.664 -77.220 -11.333  0.50 75.20           N 0
+ATOM   3042   CG GLU B  47      36.944 -78.043 -12.547  1.00 80.84           C 0
+ATOM   3037    N GLU B  47      36.582 -79.199 -15.860  1.00 79.40           N 0
+ATOM   3031    C ASN B  46      35.904 -78.886 -16.960  1.00 78.90           C 0
+ATOM   3032    O ASN B  46      35.855 -77.739 -17.401  1.00 79.05           O 0
+ATOM   3041   CB GLU B  47      37.688 -78.700 -13.705  1.00 80.16           C 0
+TER
+END

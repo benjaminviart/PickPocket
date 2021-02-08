@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    92:
+HEADER 0  - Pocket Score                      : 1.6444
+HEADER 1  - Drug Score                        : 0.0122
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.0414
+HEADER 4  - Mean alpha-sphere SA              : 0.5622
+HEADER 5  - Mean B-factor                     : 0.2033
+HEADER 6  - Hydrophobicity Score              : 26.4444
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 466.5710
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2333
+ATOM   5072  NH1 ARG A 658      41.206  49.769  54.900  1.00 53.23           N 0
+ATOM   5096  OE2 GLU A 660      38.518  48.333  53.346  1.00 47.26           O 0
+ATOM   5073  NH2 ARG A 658      40.517  47.778  55.802  1.00 55.12           N 0
+ATOM   5307  NH2 ARG A 684      39.092  48.127  58.492  1.00 58.64           N 0
+ATOM   7728    O SER B 245      39.712  53.068  56.899  1.00 49.91           O 0
+ATOM   1883    O ALA A 259      35.945  52.600  48.258  1.00 40.46           O 0
+ATOM   5218   CG PRO A 674      34.564  49.304  49.471  1.00 56.30           C 0
+ATOM   7747  NE2 GLN B 247      38.010  53.694  49.791  1.00 44.19           N 0
+ATOM   7746  OE1 GLN B 247      37.055  55.229  51.132  1.00 45.89           O 0
+ATOM   5093   CG GLU A 660      38.927  49.242  51.178  1.00 44.62           C 0
+ATOM   7745   CD GLN B 247      38.059  54.664  50.708  1.00 46.35           C 0
+ATOM   5092   CB GLU A 660      40.010  50.273  50.890  1.00 42.46           C 0
+ATOM   7743   CB GLN B 247      39.443  55.271  52.720  1.00 46.84           C 0
+ATOM   5217   CB PRO A 674      34.999  48.000  50.017  1.00 56.54           C 0
+ATOM   5216    O PRO A 674      33.191  47.463  52.119  1.00 58.00           O 0
+ATOM   5265  CD1 LEU A 680      35.057  46.031  54.088  1.00 55.76           C 0
+ATOM   5266  CD2 LEU A 680      32.929  45.717  55.340  1.00 56.51           C 0
+ATOM   5304   NE ARG A 684      37.995  46.323  57.544  1.00 60.30           N 0
+ATOM   7740   CA GLN B 247      40.832  55.300  53.347  1.00 47.56           C 0
+ATOM   5105  CE1 TYR A 661      44.153  52.639  52.956  1.00 41.57           C 0
+TER
+END

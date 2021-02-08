@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    41:
+HEADER 0  - Pocket Score                      : -0.1257
+HEADER 1  - Drug Score                        : 0.0429
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.4853
+HEADER 4  - Mean alpha-sphere SA              : 0.6410
+HEADER 5  - Mean B-factor                     : 0.1582
+HEADER 6  - Hydrophobicity Score              : 44.8333
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.8333
+HEADER 9  - Real volume (approximation)       : 564.5123
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 10.0000
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.3667
+ATOM    609   CD GLU 1  79      53.828  10.793 131.623  1.00 20.94           C 0
+ATOM    611  OE2 GLU 1  79      54.522  11.537 130.896  1.00 23.43           O 0
+ATOM    813   CE MET 1 103      49.659  11.050 131.023  1.00 24.40           C 0
+ATOM    610  OE1 GLU 1  79      53.584  11.065 132.815  1.00 25.20           O 0
+ATOM    812   SD MET 1 103      48.285  12.157 131.281  1.00 25.54           S 0
+ATOM    583   CB CYS 1  76      51.009  11.723 126.406  1.00 11.36           C 0
+ATOM    584   SG CYS 1  76      51.599  10.494 127.579  1.00 15.88           S 0
+ATOM   6145  OE1 GLN 3 232      46.399  16.201 132.500  1.00 19.78           O 0
+ATOM    826  OE1 GLN 1 105      48.925  18.685 125.813  1.00 16.78           O 0
+ATOM   6141    O GLN 3 232      48.437  20.255 135.116  1.00 23.36           O 0
+ATOM   6144   CD GLN 3 232      46.479  16.151 133.731  1.00 18.18           C 0
+ATOM   6146  NE2 GLN 3 232      46.713  15.022 134.385  1.00 19.09           N 0
+ATOM   6142   CB GLN 3 232      46.342  18.687 133.766  1.00 19.28           C 0
+ATOM    824   CG GLN 1 105      47.115  18.744 127.383  1.00 17.20           C 0
+ATOM    825   CD GLN 1 105      48.219  19.371 126.554  1.00 16.97           C 0
+ATOM    811   CG MET 1 103      47.255  11.758 129.859  1.00 17.62           C 0
+ATOM    582    O CYS 1  76      47.922  11.860 126.695  1.00 14.15           O 0
+ATOM    810   CB MET 1 103      46.323  12.890 129.455  1.00 14.51           C 0
+ATOM    823   CB GLN 1 105      46.292  17.720 126.611  1.00 17.55           C 0
+ATOM    819    N GLN 1 105      44.655  17.186 128.384  1.00 16.01           N 0
+ATOM    814    N ALA 1 104      44.329  15.500 130.731  1.00 15.31           N 0
+TER
+END

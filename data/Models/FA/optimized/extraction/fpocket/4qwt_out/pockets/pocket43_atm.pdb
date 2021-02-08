@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    44:
+HEADER 0  - Pocket Score                      : 1.1232
+HEADER 1  - Drug Score                        : 0.0059
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 3.9882
+HEADER 4  - Mean alpha-sphere SA              : 0.6721
+HEADER 5  - Mean B-factor                     : 0.1627
+HEADER 6  - Hydrophobicity Score              : 5.3750
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 335.5874
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.6552
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   2048  OD1 ASN A 254     -35.741  23.800  46.931  1.00 27.92           O 0
+ATOM   2047   CG ASN A 254     -34.917  23.747  47.845  0.93 23.65           C 0
+ATOM   2046   CB ASN A 254     -34.937  24.767  48.982  1.00 19.64           C 0
+ATOM   2041   OG SER A 253     -39.085  25.932  48.151  0.74 22.90           O 0
+ATOM   2043   CA ASN A 254     -35.023  26.214  48.486  1.00 18.61           C 0
+ATOM   2703   CD PRO A 347     -32.617  26.254  51.660  1.00 24.03           C 0
+ATOM   2696  OE2 GLU A 346     -34.438  24.907  54.647  0.49 29.18           O 0
+ATOM   2702   CG PRO A 347     -32.735  27.721  51.327  1.00 23.69           C 0
+ATOM   2039    O SER A 253     -36.552  28.512  48.310  0.91 22.27           O 0
+ATOM   2320   CD LYS A 287     -35.687  16.502  45.511  0.74 30.13           C 0
+ATOM   2302  OD2 ASP A 285     -34.202  19.572  43.312  0.75 24.23           O 0
+ATOM   2686  OE1 GLN A 345     -32.929  19.633  47.516  1.00 26.30           O 0
+ATOM   2423   CGAASP A 302     -33.048  18.326  53.685  0.47 33.05           C 0
+ATOM   2695  OE1 GLU A 346     -34.145  23.104  55.874  0.13 33.65           O 0
+ATOM   2427  OD2AASP A 302     -34.063  18.034  54.352  0.47 38.87           O 0
+ATOM   2049  ND2 ASN A 254     -33.977  22.803  47.911  1.00 23.42           N 0
+ATOM   2682    O GLN A 345     -32.026  23.331  49.987  0.85 22.77           O 0
+ATOM   2694   CD GLU A 346     -33.703  24.062  55.206  0.71 33.27           C 0
+ATOM   2689   CA GLU A 346     -31.451  23.767  52.665  1.00 24.18           C 0
+ATOM   2692   CB GLU A 346     -31.619  23.213  54.080  0.92 27.94           C 0
+ATOM   2681    C GLN A 345     -31.209  22.591  50.538  0.88 22.95           C 0
+ATOM   2425  OD1AASP A 302     -32.867  17.931  52.512  0.47 32.46           O 0
+ATOM   2683   CB GLN A 345     -31.419  20.151  50.021  1.00 26.27           C 0
+ATOM   2688    N GLU A 346     -30.823  22.762  51.799  0.97 24.17           N 0
+TER
+END

@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 19.5250
+HEADER 1  - Drug Score                        : 0.0880
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.7548
+HEADER 4  - Mean alpha-sphere SA              : 0.4504
+HEADER 5  - Mean B-factor                     : 0.2989
+HEADER 6  - Hydrophobicity Score              : 11.7500
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.5000
+HEADER 9  - Real volume (approximation)       : 270.8888
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    960  OE1 GLU A 127       6.310  29.176  28.951  1.00 42.11           O 0
+ATOM    974   CG ASP A 129      -0.910  28.406  28.716  1.00 35.59           C 0
+ATOM    975  OD1 ASP A 129      -1.542  29.249  29.378  1.00 37.48           O 0
+ATOM    795   CD LYS A 101      -0.015  31.016  25.627  1.00 36.15           C 0
+ATOM    976  OD2 ASP A 129      -0.721  28.502  27.493  1.00 38.22           O 0
+ATOM    965    O VAL A 128       1.697  27.590  32.906  1.00 34.23           O 0
+ATOM    959   CD GLU A 127       6.791  28.997  30.103  1.00 39.64           C 0
+ATOM    957   CB GLU A 127       5.389  26.935  30.482  1.00 30.90           C 0
+ATOM    970   CA ASP A 129      -0.236  27.380  30.915  1.00 34.35           C 0
+ATOM    961  OE2 GLU A 127       7.340  29.894  30.773  1.00 38.92           O 0
+ATOM    794   CG LYS A 101       0.544  30.801  24.187  1.00 32.21           C 0
+ATOM    944  OG1 THR A 125       5.915  27.182  27.024  1.00 27.72           O 0
+ATOM    945  CG2 THR A 125       7.067  27.694  24.989  1.00 27.69           C 0
+ATOM    973   CB ASP A 129      -0.335  27.202  29.408  1.00 34.36           C 0
+ATOM    925   CB VAL A 123       1.523  24.057  26.177  1.00 19.36           C 0
+ATOM    932   CB ARG A 124       4.184  26.205  21.961  1.00 22.66           C 0
+ATOM    792    O LYS A 101       0.668  26.431  23.606  1.00 26.69           O 0
+ATOM    790   CA LYS A 101       0.603  28.647  22.717  1.00 28.24           C 0
+ATOM    783    O LYS A 100       2.711  29.441  20.933  1.00 29.18           O 0
+ATOM    939    N THR A 125       5.488  25.239  24.813  1.00 24.73           N 0
+ATOM    956    O GLU A 127       3.100  24.929  30.366  1.00 30.16           O 0
+TER
+END

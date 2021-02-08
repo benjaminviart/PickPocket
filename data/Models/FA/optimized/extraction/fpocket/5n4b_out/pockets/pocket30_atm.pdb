@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    31:
+HEADER 0  - Pocket Score                      : -0.5266
+HEADER 1  - Drug Score                        : 0.0105
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 4.0375
+HEADER 4  - Mean alpha-sphere SA              : 0.5234
+HEADER 5  - Mean B-factor                     : 0.1668
+HEADER 6  - Hydrophobicity Score              : 22.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 257.2648
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   6821   CA PHE B 131      27.967  31.754  49.977  1.00 14.48           C 0
+ATOM   6826  CD1 PHE B 131      29.180  34.222  51.413  1.00 15.63           C 0
+ATOM   6676   CD ARG B 111      30.870  30.387  54.973  1.00 18.96           C 0
+ATOM   6824   CB PHE B 131      29.453  31.920  50.382  1.00 13.50           C 0
+ATOM   6816    O VAL B 130      25.985  29.994  50.894  1.00 17.75           O 0
+ATOM   6679  NH1 ARG B 111      30.038  28.904  57.277  1.00 31.38           N 0
+ATOM   6812  OD2 ASP B 129      26.512  25.804  55.197  1.00 46.06           O 0
+ATOM   6809   CB ASP B 129      26.181  26.419  52.896  1.00 22.46           C 0
+ATOM   6674   CB ARG B 111      31.127  29.155  52.816  1.00 15.90           C 0
+ATOM   7190   CG PRO B 179      24.233  33.419  53.189  1.00 32.06           C 0
+ATOM   7171    O SER B 177      25.950  35.802  56.746  1.00 26.52           O 0
+ATOM   7191   CD PRO B 179      24.642  34.633  53.922  1.00 26.08           C 0
+ATOM   7163    O THR B 176      29.929  34.857  54.816  1.00 23.51           O 0
+ATOM   7168   CAASER B 177      28.340  35.946  56.801  0.50 25.75           C 0
+ATOM   6678   CZ ARG B 111      30.872  29.927  57.404  1.00 33.20           C 0
+ATOM   6677   NE ARG B 111      31.300  30.622  56.343  1.00 22.14           N 0
+ATOM   6680  NH2 ARG B 111      31.302  30.251  58.619  1.00 31.57           N 0
+ATOM   7172   CBASER B 177      28.315  36.323  58.274  0.50 26.61           C 0
+TER
+END

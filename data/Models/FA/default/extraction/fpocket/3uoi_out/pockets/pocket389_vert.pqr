@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   390:
+HEADER 0  - Pocket Score                      : -1.0025
+HEADER 1  - Drug Score                        : 0.0036
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.4396
+HEADER 4  - Mean alpha-sphere SA              : 0.7397
+HEADER 5  - Mean B-factor                     : 0.4004
+HEADER 6  - Hydrophobicity Score              : -20.8333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 2.6667
+HEADER 9  - Real volume (approximation)       : 487.7830
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.4333
+ATOM  59e6f  POL STP   390      70.648-122.713-177.999    0.00     5.45
+ATOM  59e77 APOL STP   390      71.018-123.146-178.792    0.00     5.87
+ATOM  59e6d APOL STP   390      72.366-120.465-177.774    0.00     3.17
+ATOM  59e77  POL STP   390      72.782-121.084-178.790    0.00     3.93
+ATOM  292e3  POL STP   390      68.520-122.266-175.782    0.00     4.22
+ATOM  292e3  POL STP   390      68.820-121.050-176.048    0.00     3.77
+ATOM  35571 APOL STP   390      68.030-121.137-175.989    0.00     3.23
+ATOM  2933b APOL STP   390      68.687-123.489-175.748    0.00     5.12
+ATOM  35571 APOL STP   390      68.786-120.892-176.079    0.00     3.68
+ATOM  4316f  POL STP   390      69.188-121.049-176.231    0.00     3.98
+ATOM  2933b  POL STP   390      69.422-123.311-176.130    0.00     5.31
+ATOM  4316f APOL STP   390      68.857-120.634-176.193    0.00     3.62
+ATOM  4fc11  POL STP   390      69.713-121.399-176.459    0.00     4.46
+ATOM  4316f APOL STP   390      68.800-120.123-176.423    0.00     3.39
+ATOM  4fc13 APOL STP   390      69.725-121.323-176.510    0.00     4.43
+ATOM  4fc11  POL STP   390      69.722-121.413-176.462    0.00     4.47
+ATOM  35570 APOL STP   390      70.230-122.336-177.438    0.00     5.09
+ATOM  4fc13 APOL STP   390      69.760-121.372-176.524    0.00     4.47
+ATOM  59e6f  POL STP   390      70.615-122.668-177.956    0.00     5.42
+ATOM  59e6a  POL STP   390      70.092-121.005-176.641    0.00     4.23
+ATOM  59e61  POL STP   390      69.876-119.461-176.527    0.00     3.19
+ATOM  59e6a  POL STP   390      70.649-120.380-176.388    0.00     3.60
+ATOM  59e6d  POL STP   390      71.089-121.267-177.142    0.00     4.05
+ATOM  59e77 APOL STP   390      70.836-122.842-178.774    0.00     5.59
+ATOM  59e77 APOL STP   390      71.154-123.226-179.012    0.00     5.96
+ATOM  35570 APOL STP   390      70.533-122.214-179.451    0.00     4.93
+ATOM  59e77  POL STP   390      70.919-122.691-179.186    0.00     5.50
+ATOM  59e77  POL STP   390      73.139-119.915-179.058    0.00     3.08
+ATOM  59e77  POL STP   390      72.403-121.665-178.917    0.00     4.43
+ATOM  59e77  POL STP   390      70.948-122.730-179.205    0.00     5.54
+TER
+END

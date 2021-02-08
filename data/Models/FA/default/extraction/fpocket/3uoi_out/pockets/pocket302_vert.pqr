@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   303:
+HEADER 0  - Pocket Score                      : 1.3023
+HEADER 1  - Drug Score                        : 0.0095
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.6411
+HEADER 4  - Mean alpha-sphere SA              : 0.5367
+HEADER 5  - Mean B-factor                     : 0.2316
+HEADER 6  - Hydrophobicity Score              : 19.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8333
+HEADER 9  - Real volume (approximation)       : 220.7845
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.6129
+ATOM  2e0dc  POL STP   303      99.588 -68.984-207.578    0.00     3.14
+ATOM  2e20f  POL STP   303      98.622 -68.909-207.301    0.00     3.52
+ATOM  5ce11 APOL STP   303      95.234 -68.395-204.552    0.00     4.46
+ATOM  5ce13 APOL STP   303      96.091 -68.196-205.080    0.00     4.22
+ATOM  5ce14 APOL STP   303      97.619 -68.044-204.799    0.00     3.95
+ATOM  1b0a0 APOL STP   303      96.385 -70.422-207.044    0.00     3.26
+ATOM  2e20f APOL STP   303      96.926 -69.098-206.896    0.00     3.81
+ATOM  2e1f6 APOL STP   303      96.248 -70.353-207.020    0.00     3.34
+ATOM  2e1f3 APOL STP   303      96.464 -69.160-207.352    0.00     3.48
+ATOM  2e20e  POL STP   303      96.808 -68.958-207.221    0.00     3.64
+ATOM  2e1f6 APOL STP   303      96.431 -69.344-206.884    0.00     3.78
+ATOM  2e20f APOL STP   303      96.784 -69.092-206.881    0.00     3.84
+ATOM  1ae93  POL STP   303      98.356 -68.742-208.559    0.00     3.02
+ATOM  2e222  POL STP   303      98.539 -68.919-208.256    0.00     3.12
+ATOM  2e20e  POL STP   303      98.320 -68.663-208.293    0.00     3.21
+ATOM  2e20e  POL STP   303      98.499 -68.826-207.925    0.00     3.37
+ATOM  2e222  POL STP   303      98.537 -68.888-208.048    0.00     3.26
+ATOM  2e210  POL STP   303      98.158 -69.052-207.283    0.00     3.59
+ATOM  2e20f APOL STP   303      97.864 -68.756-206.226    0.00     3.61
+ATOM  2e0de APOL STP   303      98.494 -68.224-204.347    0.00     3.82
+ATOM  2e20f APOL STP   303      98.049 -68.435-205.588    0.00     3.68
+ATOM  5ce12 APOL STP   303      98.467 -68.072-203.957    0.00     4.00
+ATOM  3b269 APOL STP   303      98.686 -68.155-203.371    0.00     4.10
+ATOM  5ce14 APOL STP   303      98.687 -68.108-203.404    0.00     4.08
+ATOM  5ce12 APOL STP   303      98.662 -68.138-203.407    0.00     4.10
+ATOM  5ce11  POL STP   303      98.845 -66.809-204.207    0.00     3.18
+ATOM  5ce11 APOL STP   303      99.014 -67.353-203.702    0.00     3.62
+ATOM  5ce13 APOL STP   303      98.025 -67.769-204.655    0.00     3.75
+ATOM  5ce14 APOL STP   303      98.899 -67.700-203.646    0.00     3.84
+ATOM  5ce11  POL STP   303      97.239 -67.424-205.029    0.00     3.44
+ATOM  5ce14  POL STP   303      97.490 -67.673-204.916    0.00     3.64
+TER
+END

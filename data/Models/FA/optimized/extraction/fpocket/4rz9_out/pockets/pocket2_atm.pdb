@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 25.5802
+HEADER 1  - Drug Score                        : 0.0479
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9529
+HEADER 4  - Mean alpha-sphere SA              : 0.4685
+HEADER 5  - Mean B-factor                     : 0.2337
+HEADER 6  - Hydrophobicity Score              : -0.7500
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.2500
+HEADER 9  - Real volume (approximation)       : 346.6446
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 26.0690
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 0.9355
+ATOM   1736  OE1AGLU A  89      30.985  45.115  36.901  0.81 21.56           O 0
+ATOM   1677  CG2 ILE A  86      31.385  40.632  35.005  1.00 12.60           C 0
+ATOM    937   CB VAL A  48      36.739  41.850  37.945  1.00 18.60           C 0
+ATOM    938  CG1 VAL A  48      36.480  41.983  39.457  1.00 19.85           C 0
+ATOM    875    O GLU A  45      33.771  39.704  41.217  1.00 23.53           O 0
+ATOM   1676  CG1 ILE A  86      29.291  41.094  36.304  1.00 13.80           C 0
+ATOM   1738  OE2AGLU A  89      29.130  46.278  37.112  0.81 16.58           O 0
+ATOM    884  OE2AGLU A  45      28.733  41.620  43.010  0.50 28.94           O 0
+ATOM   1665  OD1 ASP A  85      25.981  43.072  35.665  1.00 14.52           O 0
+ATOM    872   CAAGLU A  45      31.656  38.691  40.816  0.50 21.80           C 0
+ATOM    878   CGAGLU A  45      29.647  39.702  41.981  0.50 26.85           C 0
+ATOM   1678  CD1 ILE A  86      29.259  39.793  36.925  1.00 16.51           C 0
+ATOM    863    O ALA A  44      32.130  37.947  38.229  1.00 15.57           O 0
+ATOM   1666  OD2 ASP A  85      25.255  44.962  36.511  1.00 13.88           O 0
+ATOM   1621  OE1AGLU A  83      26.161  38.229  37.184  0.60 18.42           O 0
+ATOM   1623  OE2AGLU A  83      24.355  37.673  38.288  0.60 23.95           O 0
+ATOM   1619   CDAGLU A  83      24.922  38.193  37.302  0.60 19.90           C 0
+ATOM   1617   CGAGLU A  83      24.056  38.820  36.222  0.60 16.95           C 0
+ATOM   1760  CE1 PHE A  90      34.870  41.839  34.797  1.00 10.55           C 0
+TER
+END

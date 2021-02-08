@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   178:
+HEADER 0  - Pocket Score                      : 4.0544
+HEADER 1  - Drug Score                        : 0.0059
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9052
+HEADER 4  - Mean alpha-sphere SA              : 0.5207
+HEADER 5  - Mean B-factor                     : 0.1700
+HEADER 6  - Hydrophobicity Score              : 3.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 2.7143
+HEADER 9  - Real volume (approximation)       : 216.6401
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  42671   CG ASP j  33     103.479 -54.989-167.669  1.00 33.05           C 0
+ATOM  42672  OD1 ASP j  33     102.581 -54.447-168.284  1.00 38.63           O 0
+ATOM  42771  NH1 ARG j  45     102.303 -62.043-170.478  1.00 14.22           N 0
+ATOM  42673  OD2 ASP j  33     103.316 -55.439-166.558  1.00 37.08           O 0
+ATOM  42740    N ALA j  42     101.926 -55.072-174.092  1.00 18.02           N 0
+ATOM  42714    O THR j  38     101.095 -52.511-172.157  1.00 16.15           O 0
+ATOM  42744   CB ALA j  42      99.622 -55.336-174.536  1.00 19.19           C 0
+ATOM  42741   CA ALA j  42     100.924 -55.969-174.616  1.00 18.06           C 0
+ATOM  42768   CD ARG j  45     101.196 -60.883-172.763  1.00 19.31           C 0
+ATOM  42670   CB ASP j  33     104.811 -55.111-168.281  1.00 26.75           C 0
+ATOM  42739   CB ALA j  41     104.230 -54.442-172.011  1.00 18.14           C 0
+ATOM  42637    O SER j  29     106.822 -56.460-170.751  1.00 17.79           O 0
+ATOM  42639   OG SER j  29     106.254 -59.710-172.474  1.00 15.97           O 0
+ATOM  42646   CD LYS j  30     106.027 -60.456-168.315  1.00 14.50           C 0
+ATOM  42648   NZ LYS j  30     104.273 -60.599-166.704  1.00 17.86           N 0
+ATOM  42738    O ALA j  41     103.587 -56.397-174.494  1.00 17.91           O 0
+ATOM  42638   CB SER j  29     106.386 -58.559-173.207  1.00 17.48           C 0
+ATOM  42737    C ALA j  41     103.186 -55.422-174.041  1.00 18.21           C 0
+ATOM  42766   CB ARG j  45     102.566 -59.865-174.507  1.00 18.93           C 0
+ATOM  42743    O ALA j  42     101.096 -57.499-176.402  1.00 16.25           O 0
+TER
+END

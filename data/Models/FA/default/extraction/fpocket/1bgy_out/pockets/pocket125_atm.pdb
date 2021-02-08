@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   126:
+HEADER 0  - Pocket Score                      : 1.3462
+HEADER 1  - Drug Score                        : 0.0066
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 4.1034
+HEADER 4  - Mean alpha-sphere SA              : 0.6658
+HEADER 5  - Mean B-factor                     : 0.0872
+HEADER 6  - Hydrophobicity Score              : 12.8750
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.6250
+HEADER 9  - Real volume (approximation)       : 489.4142
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 11.0000
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.3529
+ATOM   7175   CG ASN C  74      41.708 119.328  33.051  1.00 16.53           C 0
+ATOM   7187  CE2 TYR C  75      36.551 121.480  31.806  1.00  5.38           C 0
+ATOM   7176  OD1 ASN C  74      42.126 119.540  34.190  1.00 22.92           O 0
+ATOM   7189   OH TYR C  75      36.008 123.632  32.649  1.00  4.65           O 0
+ATOM   7188   CZ TYR C  75      35.810 122.269  32.646  1.00 10.37           C 0
+ATOM  11991   OG SER E  60      40.571 120.562  29.054  1.00  5.51           O 0
+ATOM   7174   CB ASN C  74      40.307 118.864  32.745  1.00  9.45           C 0
+ATOM   7177  ND2 ASN C  74      42.474 119.495  31.980  1.00 20.62           N 0
+ATOM  11184  CE1 HIS D 200      33.930 124.303  36.467  1.00 18.23           C 0
+ATOM  11182  ND1 HIS D 200      34.115 124.150  37.759  1.00 26.90           N 0
+ATOM   7186  CE1 TYR C  75      34.906 121.689  33.517  1.00 13.27           C 0
+ATOM   7202  NE1 TRP C  77      34.978 118.819  37.777  1.00  2.16           N 0
+ATOM   7171   CA ASN C  74      39.714 117.955  33.838  1.00  7.55           C 0
+ATOM   7184  CD1 TYR C  75      34.763 120.324  33.475  1.00  2.16           C 0
+ATOM   7178    N TYR C  75      37.336 117.586  34.043  1.00  2.16           N 0
+ATOM   7185  CD2 TYR C  75      36.360 120.113  31.805  1.00  6.57           C 0
+ATOM   7147    O ARG C  71      41.117 117.014  40.310  1.00 23.70           O 0
+ATOM   7158    O ASP C  72      43.013 117.139  36.840  1.00  7.84           O 0
+ATOM   7166    O VAL C  73      39.527 116.083  35.842  1.00 22.93           O 0
+ATOM   7200  CD1 TRP C  77      35.534 117.602  38.072  1.00  9.17           C 0
+TER
+END

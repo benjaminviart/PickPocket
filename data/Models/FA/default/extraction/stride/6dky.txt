@@ -1,0 +1,40 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6dky.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    ILGSIILG                                              8          ~~~~
+STR       TTTTTTT                                                          ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb6dky.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    ILGSIILG                                              8          ~~~~
+STR       TTTTTTT                                                          ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  TurnI'       ILE     6 A      SER      1 A                            ~~~~
+LOC  TurnI        SER     1 A      LEU      4 A                            ~~~~
+LOC  TurnI'       ILE     6 B      SER      1 B                            ~~~~
+LOC  TurnIV       SER     1 B      LEU      4 B                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  ILE A    6    1    T          Turn    360.00    174.50     111.8      ~~~~
+ASG  LEU A    7    2    T          Turn     55.84     27.55     160.2      ~~~~
+ASG  GLY A    8    3    T          Turn     73.17     19.11      89.0      ~~~~
+ASG  SER A    1    4    T          Turn   -111.44    133.00      44.2      ~~~~
+ASG  ILE A    2    5    T          Turn    -60.30    -40.85     128.8      ~~~~
+ASG  ILE A    3    6    T          Turn    -72.05    -44.74     107.6      ~~~~
+ASG  LEU A    4    7    T          Turn    -82.92    -21.94      94.1      ~~~~
+ASG  GLY A    5    8    C          Coil     67.81    360.00      41.4      ~~~~
+ASG  ILE B    6    1    T          Turn    360.00    171.20      76.2      ~~~~
+ASG  LEU B    7    2    T          Turn     56.30     30.87     106.8      ~~~~
+ASG  GLY B    8    3    T          Turn     67.07     26.40      56.9      ~~~~
+ASG  SER B    1    4    T          Turn   -117.63    127.78      38.9      ~~~~
+ASG  ILE B    2    5    T          Turn    -73.14    -17.66     176.8      ~~~~
+ASG  ILE B    3    6    T          Turn    -74.60    -51.46     154.6      ~~~~
+ASG  LEU B    4    7    T          Turn    -73.50    -28.16     113.9      ~~~~
+ASG  GLY B    5    8    C          Coil     80.01    360.00      51.4      ~~~~

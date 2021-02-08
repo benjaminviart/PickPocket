@@ -1,0 +1,50 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   135:
+HEADER 0  - Pocket Score                      : -2.2874
+HEADER 1  - Drug Score                        : 0.0043
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9059
+HEADER 4  - Mean alpha-sphere SA              : 0.4911
+HEADER 5  - Mean B-factor                     : 0.2406
+HEADER 6  - Hydrophobicity Score              : -8.1429
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 5.1429
+HEADER 9  - Real volume (approximation)       : 380.9435
+HEADER 10 - Charge Score                      :     4
+HEADER 11 - Local hydrophobic density Score   : 17.1579
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.6786
+ATOM  1a7e5  POL STP   135      -8.183  70.589 161.479    0.00     3.69
+ATOM  3eb64 APOL STP   135      -8.664  70.499 160.309    0.00     3.58
+ATOM  3eb65 APOL STP   135      -9.018  70.900 159.413    0.00     3.61
+ATOM  1b967  POL STP   135      -5.960  69.080 162.026    0.00     3.90
+ATOM  1b96a  POL STP   135      -6.067  69.380 161.855    0.00     3.73
+ATOM  224f3 APOL STP   135      -9.037  70.255 163.631    0.00     3.57
+ATOM  224f3 APOL STP   135      -9.035  70.236 163.441    0.00     3.60
+ATOM  224f3 APOL STP   135      -8.903  69.762 163.780    0.00     3.78
+ATOM  224f3 APOL STP   135      -8.985  70.039 163.343    0.00     3.71
+ATOM  248c9 APOL STP   135      -8.115  71.435 155.861    0.00     4.30
+ATOM  248c9  POL STP   135      -7.359  71.040 156.025    0.00     3.85
+ATOM  248c9 APOL STP   135      -8.901  71.679 156.060    0.00     4.64
+ATOM  248ca APOL STP   135      -6.768  70.526 155.647    0.00     3.60
+ATOM  2cfa8 APOL STP   135      -8.698  75.454 161.433    0.00     3.91
+ATOM  2cfa8 APOL STP   135      -8.507  75.757 161.803    0.00     3.58
+ATOM  2d1ee APOL STP   135      -8.610  75.448 160.906    0.00     4.24
+ATOM  233f1  POL STP   135      -9.425  75.506 160.974    0.00     3.92
+ATOM  2d1e0  POL STP   135      -8.802  75.416 160.842    0.00     4.23
+ATOM  2d1df  POL STP   135      -9.513  75.647 160.539    0.00     4.09
+ATOM  2cfaa APOL STP   135      -8.589  75.226 160.875    0.00     4.23
+ATOM  2d1e0 APOL STP   135      -8.682  75.336 160.847    0.00     4.25
+ATOM  2d1e8 APOL STP   135      -8.638  75.374 160.889    0.00     4.26
+ATOM  2cfab  POL STP   135      -8.246  74.064 161.346    0.00     3.72
+ATOM  2cfab  POL STP   135      -8.186  74.069 161.210    0.00     3.79
+ATOM  2cfab APOL STP   135      -7.161  74.981 160.773    0.00     3.62
+ATOM  2cfab APOL STP   135      -7.140  75.127 160.783    0.00     3.61
+ATOM  2d1ee APOL STP   135      -8.565  75.433 160.889    0.00     4.22
+ATOM  3eb61 APOL STP   135      -9.111  71.178 157.358    0.00     4.11
+TER
+END

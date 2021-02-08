@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 0.6303
+HEADER 1  - Drug Score                        : 0.1294
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.0075
+HEADER 4  - Mean alpha-sphere SA              : 0.6610
+HEADER 5  - Mean B-factor                     : 0.0875
+HEADER 6  - Hydrophobicity Score              : 50.1667
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.1667
+HEADER 9  - Real volume (approximation)       : 547.0719
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 21.3913
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.7419
+ATOM   1553   CG LEU A 110     -36.605 -14.133  -2.255  1.00 15.39           C 0
+ATOM   1555  CD2 LEU A 110     -36.788 -13.138  -1.122  1.00 21.03           C 0
+ATOM   1489  CG2 ILE A 106     -33.651 -13.862  -5.336  1.00 14.59           C 0
+ATOM   1554  CD1 LEU A 110     -36.899 -13.478  -3.591  1.00 17.62           C 0
+ATOM   1599    N ALA A 114     -40.293 -17.108   3.018  1.00 12.32           N 0
+ATOM   1600   CA ALA A 114     -41.730 -16.839   3.034  1.00 12.68           C 0
+ATOM   1591  CG2 THR A 113     -37.423 -15.342   4.750  1.00 16.12           C 0
+ATOM   1551    O LEU A 110     -39.156 -16.861   0.363  1.00 12.43           O 0
+ATOM   1603   CB ALA A 114     -42.287 -16.676   1.614  1.00 14.00           C 0
+ATOM   1590  OG1 THR A 113     -35.903 -16.789   3.596  1.00 14.08           O 0
+ATOM   1532    O LEU A 109     -35.848 -17.770   0.963  1.00 12.85           O 0
+ATOM   2855  CE2 PHE A 202     -32.315 -16.566   3.448  1.00 17.19           C 0
+ATOM   1531    C LEU A 109     -35.436 -17.755  -0.191  1.00 12.03           C 0
+ATOM   1549   CA LEU A 110     -37.197 -16.249  -0.888  1.00 12.88           C 0
+ATOM   1548    N LEU A 110     -35.995 -17.012  -1.133  1.00 11.97           N 0
+ATOM   1589   CB THR A 113     -37.273 -16.404   3.683  1.00 13.59           C 0
+ATOM   1533   CB LEU A 109     -32.950 -17.732  -0.539  1.00 12.86           C 0
+ATOM   1535  CD1 LEU A 109     -30.491 -17.641  -1.090  1.00 19.27           C 0
+ATOM   1486    O ILE A 106     -34.779 -16.393  -3.716  1.00 13.01           O 0
+ATOM   1484   CA ILE A 106     -32.760 -16.181  -4.961  1.00 12.20           C 0
+ATOM   1488  CG1 ILE A 106     -31.215 -14.340  -5.765  1.00 15.13           C 0
+ATOM   2856   CZ PHE A 202     -31.147 -15.894   3.775  1.00 18.61           C 0
+TER
+END

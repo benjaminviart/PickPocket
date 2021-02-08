@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 0.3204
+HEADER 1  - Drug Score                        : 0.0046
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8670
+HEADER 4  - Mean alpha-sphere SA              : 0.5065
+HEADER 5  - Mean B-factor                     : 0.6163
+HEADER 6  - Hydrophobicity Score              : -12.1111
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 331.1566
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 25.0000
+HEADER 12 - Number of apolar alpha sphere     :    26
+HEADER 13 - Proportion of apolar alpha sphere : 0.9630
+ATOM   1640   CB GLN A 204       7.290  66.377  24.522  1.00 54.15           C 0
+ATOM   1641   CG GLN A 204       6.599  65.046  24.985  1.00 55.36           C 0
+ATOM   1643  OE1 GLN A 204       5.745  65.458  27.229  1.00 58.76           O 0
+ATOM   1607  OE2 GLU A 200       5.418  70.601  25.861  1.00 67.84           O 0
+ATOM   1604   CG GLU A 200       5.028  71.420  23.597  1.00 65.35           C 0
+ATOM   1614  OD1 ASN A 201       4.070  67.762  18.780  1.00 61.68           O 0
+ATOM   1602    O GLU A 200       7.385  69.451  22.706  1.00 62.96           O 0
+ATOM   1608    N ASN A 201       6.781  69.773  20.528  1.00 62.23           N 0
+ATOM   1609   CA ASN A 201       6.921  68.361  20.122  1.00 61.59           C 0
+ATOM   1611    O ASN A 201       8.616  66.733  20.807  1.00 60.10           O 0
+ATOM   1474  OE1 GLU A 183       5.992  64.241  17.707  1.00 44.99           O 0
+ATOM   1440   CG ARG A 179       4.135  60.999  24.016  1.00 33.30           C 0
+ATOM   1438    O ARG A 179       5.947  59.673  21.207  1.00 34.70           O 0
+ATOM   1471   CB GLU A 183       6.964  61.760  18.623  1.00 35.21           C 0
+ATOM   1645    N PHE A 205      10.026  65.138  23.052  1.00 50.57           N 0
+ATOM   1466  OD2 ASP A 182       1.912  60.320  19.016  1.00 34.23           O 0
+ATOM   1646   CA PHE A 205      10.791  63.988  22.505  1.00 50.08           C 0
+ATOM   1681  OD2 ASP A 208       7.748  61.117  25.348  1.00 40.54           O 0
+ATOM   1472   CG GLU A 183       7.945  62.871  18.155  1.00 36.30           C 0
+ATOM   1441   CD ARG A 179       3.621  61.642  25.338  1.00 34.76           C 0
+ATOM   1496  ND2 ASN A 186       1.919  62.160  16.510  1.00 34.30           N 0
+TER
+END

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    93:
+HEADER 0  - Pocket Score                      : 0.7563
+HEADER 1  - Drug Score                        : 0.0048
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.9910
+HEADER 4  - Mean alpha-sphere SA              : 0.5424
+HEADER 5  - Mean B-factor                     : 0.3056
+HEADER 6  - Hydrophobicity Score              : 1.6250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 334.1617
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.3939
+ATOM   2426    O ILE A 676     -25.964  21.579  55.539  1.00 39.43           O 0
+ATOM   2739    O GLU A 723     -23.531  26.254  54.744  1.00 26.35           O 0
+ATOM   2740   CB GLU A 723     -24.482  27.292  57.485  1.00 28.83           C 0
+ATOM   4722   NZ LYS A 970     -23.061  22.635  59.039  1.00 38.77           N 0
+ATOM   2743  OE1 GLU A 723     -24.398  26.301  60.166  1.00 37.57           O 0
+ATOM   2738    C GLU A 723     -24.320  27.175  54.911  1.00 26.24           C 0
+ATOM   2749   CB ASN A 724     -26.497  25.694  52.914  1.00 20.79           C 0
+ATOM   2745    N ASN A 724     -25.204  27.519  53.987  1.00 23.71           N 0
+ATOM   2712    O GLU A 719     -29.855  25.267  53.506  1.00 24.93           O 0
+ATOM   2427   CB ILE A 676     -28.428  21.539  57.292  1.00 38.62           C 0
+ATOM   2430  CD1 ILE A 676     -26.566  20.304  58.548  1.00 38.56           C 0
+ATOM   2424   CA ILE A 676     -28.306  21.079  55.767  1.00 38.25           C 0
+ATOM   2429  CG2 ILE A 676     -29.878  21.996  57.638  1.00 37.08           C 0
+ATOM   2726   CA GLY A 721     -29.136  29.649  54.625  1.00 28.91           C 0
+ATOM   2721    O PRO A 720     -31.236  27.817  54.247  1.00 28.62           O 0
+ATOM   2735   CD PRO A 722     -28.107  31.476  56.592  1.00 31.10           C 0
+ATOM   2736    N GLU A 723     -25.210  29.200  56.131  1.00 29.00           N 0
+ATOM   2741   CG GLU A 723     -24.294  28.233  58.700  1.00 32.42           C 0
+ATOM   2742   CD GLU A 723     -24.284  27.532  60.074  1.00 38.15           C 0
+ATOM   2714   CG GLU A 719     -32.334  23.996  55.311  1.00 31.27           C 0
+TER
+END

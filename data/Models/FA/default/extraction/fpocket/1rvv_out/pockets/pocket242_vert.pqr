@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   243:
+HEADER 0  - Pocket Score                      : -1.0597
+HEADER 1  - Drug Score                        : 0.0109
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.7019
+HEADER 4  - Mean alpha-sphere SA              : 0.6518
+HEADER 5  - Mean B-factor                     : 0.0639
+HEADER 6  - Hydrophobicity Score              : 24.8571
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 683.5356
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1935
+ATOM  69867  POL STP   243      12.473 -59.137  25.958    0.00     5.82
+ATOM  97104 APOL STP   243      12.488 -59.050  25.966    0.00     5.80
+ATOM  20382  POL STP   243      12.430 -59.156  25.958    0.00     5.79
+ATOM  97104  POL STP   243      12.510 -59.114  25.951    0.00     5.83
+ATOM  2037e  POL STP   243      12.466 -59.160  25.958    0.00     5.82
+ATOM  20381  POL STP   243      12.536 -59.177  25.944    0.00     5.86
+ATOM  2037e  POL STP   243      13.173 -60.305  26.595    0.00     5.97
+ATOM  33782  POL STP   243      13.302 -60.254  27.156    0.00     5.62
+ATOM  3378e  POL STP   243      13.046 -61.024  27.233    0.00     5.78
+ATOM  20381  POL STP   243      12.944 -59.712  26.208    0.00     5.96
+ATOM  20382  POL STP   243      11.774 -59.123  26.003    0.00     5.29
+ATOM  3378d  POL STP   243      13.262 -60.461  27.322    0.00     5.56
+ATOM  3378e  POL STP   243      13.818 -60.063  27.928    0.00     4.89
+ATOM  3378e  POL STP   243      12.232 -61.836  28.237    0.00     5.28
+ATOM  3378e  POL STP   243      13.064 -62.955  27.950    0.00     5.88
+ATOM  3620e  POL STP   243      14.105 -59.958  28.279    0.00     4.54
+ATOM  36215  POL STP   243      14.281 -59.635  28.740    0.00     4.09
+ATOM  97104 APOL STP   243      14.850 -59.725  25.723    0.00     5.27
+ATOM  1faf6  POL STP   243       9.225 -59.403  25.011    0.00     3.35
+ATOM  20382  POL STP   243       9.831 -59.404  25.232    0.00     3.76
+ATOM  2037f  POL STP   243       9.211 -59.497  25.011    0.00     3.39
+ATOM  20378  POL STP   243      10.249 -62.674  28.130    0.00     3.60
+ATOM  33735  POL STP   243       9.345 -59.760  27.105    0.00     3.51
+ATOM  361db  POL STP   243       9.632 -60.394  27.851    0.00     3.62
+ATOM  361db  POL STP   243      10.188 -60.723  28.187    0.00     3.99
+ATOM  361df  POL STP   243      10.156 -61.081  28.493    0.00     4.04
+ATOM  361e2  POL STP   243       9.247 -61.149  28.465    0.00     3.51
+ATOM  361e2 APOL STP   243       9.335 -61.184  28.503    0.00     3.57
+ATOM  33739 APOL STP   243       8.701 -61.328  28.611    0.00     3.19
+ATOM  361e2 APOL STP   243       9.190 -61.198  28.530    0.00     3.49
+ATOM  3620e APOL STP   243      14.841 -61.870  29.958    0.00     3.70
+TER
+END

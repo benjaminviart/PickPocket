@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   230:
+HEADER 0  - Pocket Score                      : -0.8724
+HEADER 1  - Drug Score                        : 0.0634
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.1437
+HEADER 4  - Mean alpha-sphere SA              : 0.3825
+HEADER 5  - Mean B-factor                     : 0.0015
+HEADER 6  - Hydrophobicity Score              : 49.4286
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 57.2221
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.6333
+ATOM  1ca93  POL STP   230      32.596  56.125  11.296    0.00     3.04
+ATOM  1ca93  POL STP   230      31.707  55.975  11.689    0.00     3.12
+ATOM  1ca93  POL STP   230      32.614  56.178  11.271    0.00     3.06
+ATOM  61941 APOL STP   230      31.703  56.802  11.423    0.00     3.19
+ATOM  1c96c  POL STP   230      31.826  56.647  11.479    0.00     3.21
+ATOM  61941 APOL STP   230      31.427  56.597  11.620    0.00     3.06
+ATOM  1c96c  POL STP   230      31.661  56.397  11.577    0.00     3.21
+ATOM  61941 APOL STP   230      31.465  57.325  11.361    0.00     3.07
+ATOM  1c96c  POL STP   230      31.672  56.415  11.566    0.00     3.22
+ATOM  85114 APOL STP   230      31.405  57.462  11.327    0.00     3.05
+ATOM  85114 APOL STP   230      31.378  57.534  11.281    0.00     3.03
+ATOM  1ca93  POL STP   230      32.152  56.415  11.368    0.00     3.14
+ATOM  1c96c APOL STP   230      31.665  56.376  11.573    0.00     3.22
+ATOM  1ca93 APOL STP   230      31.655  56.353  11.569    0.00     3.21
+ATOM  1ca93  POL STP   230      31.667  56.358  11.574    0.00     3.21
+ATOM  32495 APOL STP   230      35.445  55.056  10.615    0.00     3.13
+ATOM  358ac APOL STP   230      35.503  54.980  10.532    0.00     3.05
+ATOM  32495 APOL STP   230      35.412  55.063  10.717    0.00     3.16
+ATOM  1ca15 APOL STP   230      35.202  55.778  10.613    0.00     3.23
+ATOM  1ca15 APOL STP   230      35.230  55.760  10.605    0.00     3.24
+ATOM  251a9 APOL STP   230      34.590  55.812  10.954    0.00     3.06
+ATOM  358b7 APOL STP   230      35.560  55.692  10.574    0.00     3.25
+ATOM  251a6  POL STP   230      35.351  55.493  10.661    0.00     3.23
+ATOM  32495  POL STP   230      35.433  55.246  10.671    0.00     3.21
+ATOM  32491  POL STP   230      35.486  55.441  10.654    0.00     3.24
+ATOM  251a9 APOL STP   230      33.999  55.866  11.219    0.00     3.00
+ATOM  358b7 APOL STP   230      35.501  55.469  10.644    0.00     3.24
+ATOM  358b7 APOL STP   230      36.158  56.126  10.712    0.00     3.08
+ATOM  358b7 APOL STP   230      36.176  56.122  10.724    0.00     3.07
+ATOM  358b7 APOL STP   230      36.169  56.129  10.716    0.00     3.08
+TER
+END

@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   322:
+HEADER 0  - Pocket Score                      : 0.7975
+HEADER 1  - Drug Score                        : 0.0176
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.7686
+HEADER 4  - Mean alpha-sphere SA              : 0.5531
+HEADER 5  - Mean B-factor                     : 0.1253
+HEADER 6  - Hydrophobicity Score              : 30.8571
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 299.9515
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.5938
+ATOM  42046    O THR i 114     106.242 -65.421-149.113  1.00 16.90           O 0
+ATOM  42047   CB THR i 114     106.400 -63.914-146.273  1.00 20.00           C 0
+ATOM  42045    C THR i 114     106.746 -64.400-148.719  1.00 16.53           C 0
+ATOM  42074  CG2 VAL i 118     103.335 -66.831-148.959  1.00 25.17           C 0
+ATOM  42051   CA THR i 115     106.098 -63.275-150.703  1.00 17.03           C 0
+ATOM  42072   CB VAL i 118     103.435 -67.044-150.412  1.00 22.45           C 0
+ATOM  42053    O THR i 115     106.098 -64.987-152.255  1.00 14.93           O 0
+ATOM  42073  CG1 VAL i 118     102.128 -67.455-150.880  1.00 20.50           C 0
+ATOM  42056  CG2 THR i 115     105.329 -61.841-152.609  1.00 18.06           C 0
+ATOM  42108   NZ LYS i 122      99.540 -67.795-153.276  1.00 34.51           N 0
+ATOM  61395   CB ALA x 125     101.753 -59.927-150.860  1.00 15.88           C 0
+ATOM  42075    N LEU i 119     104.998 -67.802-153.084  1.00 21.52           N 0
+ATOM  61361    O GLU x 121     101.914 -60.997-147.310  1.00 16.11           O 0
+ATOM  42055  OG1 THR i 115     105.175 -61.083-150.414  1.00 17.19           O 0
+ATOM  61372   CG LYS x 122      97.386 -62.426-147.392  1.00 25.59           C 0
+ATOM  42050    N THR i 115     106.754 -63.297-149.435  1.00 17.47           N 0
+ATOM  61367    N LYS x 122      99.991 -61.260-146.329  1.00 18.80           N 0
+ATOM  61368   CA LYS x 122      99.191 -60.683-147.372  1.00 19.67           C 0
+ATOM  42079   CB LEU i 119     105.616 -67.254-155.433  1.00 20.03           C 0
+ATOM  42076   CA LEU i 119     104.954 -68.236-154.477  1.00 19.04           C 0
+ATOM  61362   CB GLU x 121     102.090 -63.383-145.210  1.00 10.73           C 0
+ATOM  42048  OG1 THR i 114     106.162 -62.538-146.274  1.00 20.00           O 0
+ATOM  61360    C GLU x 121     101.295 -61.296-146.365  1.00 13.64           C 0
+TER
+END

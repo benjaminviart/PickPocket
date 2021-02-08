@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    24:
+HEADER 0  - Pocket Score                      : 2.4419
+HEADER 1  - Drug Score                        : 0.0172
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.6038
+HEADER 4  - Mean alpha-sphere SA              : 0.5100
+HEADER 5  - Mean B-factor                     : 0.0990
+HEADER 6  - Hydrophobicity Score              : 28.8750
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.6250
+HEADER 9  - Real volume (approximation)       : 244.4789
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 21.0000
+HEADER 12 - Number of apolar alpha sphere     :    22
+HEADER 13 - Proportion of apolar alpha sphere : 0.6667
+ATOM   1320  CD1 TYR A 109     -28.856   7.363  46.123  1.00 62.72           C 0
+ATOM    883   CB ALA A  49     -29.004  13.324  46.057  1.00 49.05           C 0
+ATOM   1317    O TYR A 109     -27.005  11.186  48.178  1.00 54.33           O 0
+ATOM    834  NH2 ARG A  41     -25.359  12.631  46.868  1.00 67.76           N 0
+ATOM    855    O SER A  45     -27.063  14.294  42.790  1.00 55.54           O 0
+ATOM   1318   CB TYR A 109     -29.595   9.305  47.569  1.00 57.70           C 0
+ATOM    880   CA ALA A  49     -30.229  13.176  45.171  1.00 49.99           C 0
+ATOM    857   OG SER A  45     -23.955  13.451  42.754  1.00 67.20           O 0
+ATOM    878  CD2 LEU A  48     -29.071  10.731  39.867  1.00 56.70           C 0
+ATOM   2792  NE2 HIS A 301     -29.243   6.406  41.049  1.00 62.36           N 0
+ATOM   2763  CG1 VAL A 297     -27.186   8.388  37.490  1.00 63.16           C 0
+ATOM   2789  ND1 HIS A 301     -31.321   6.536  41.537  1.00 58.52           N 0
+ATOM    876   CG LEU A  48     -30.114  11.699  40.412  1.00 56.62           C 0
+ATOM   2791  CE1 HIS A 301     -30.140   6.161  41.985  1.00 59.33           C 0
+ATOM    902  CG1 ILE A  52     -33.388  10.080  42.958  1.00 58.35           C 0
+ATOM   1319   CG TYR A 109     -29.857   7.987  46.863  1.00 59.40           C 0
+ATOM   1321  CD2 TYR A 109     -31.106   7.366  46.928  1.00 59.80           C 0
+ATOM   1323  CE2 TYR A 109     -31.343   6.169  46.278  1.00 61.10           C 0
+ATOM    875   CB LEU A  48     -29.487  13.061  40.754  1.00 54.49           C 0
+ATOM    879    N ALA A  49     -29.946  13.657  43.827  1.00 49.47           N 0
+ATOM    901   CB ILE A  52     -33.791  10.466  44.389  1.00 57.83           C 0
+ATOM    874    O LEU A  48     -31.895  12.935  42.995  1.00 48.60           O 0
+ATOM    873    C LEU A  48     -30.817  13.491  42.840  1.00 50.39           C 0
+TER
+END

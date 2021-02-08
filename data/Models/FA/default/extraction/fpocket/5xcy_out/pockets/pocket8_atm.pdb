@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : -0.8560
+HEADER 1  - Drug Score                        : 0.1522
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.3685
+HEADER 4  - Mean alpha-sphere SA              : 0.7043
+HEADER 5  - Mean B-factor                     : 0.5112
+HEADER 6  - Hydrophobicity Score              : 62.6667
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.8333
+HEADER 9  - Real volume (approximation)       : 424.3076
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 11.0000
+HEADER 12 - Number of apolar alpha sphere     :    12
+HEADER 13 - Proportion of apolar alpha sphere : 0.3636
+ATOM   1612   CG GLN A 276      39.829  -7.206 -18.119  1.00 12.87           C 0
+ATOM   1589   OG SER A 272      39.931  -6.017 -22.229  1.00 14.72           O 0
+ATOM   1615  NE2 GLN A 276      40.501  -5.270 -19.406  1.00 14.79           N 0
+ATOM   1613   CD GLN A 276      40.669  -5.956 -18.283  1.00 14.70           C 0
+ATOM   2045   CB LEU A 331      36.733 -11.804 -23.767  1.00 14.07           C 0
+ATOM   2047  CD1 LEU A 331      36.430  -9.579 -24.878  1.00 15.79           C 0
+ATOM   1606   CB ALA A 275      35.973  -9.742 -20.677  1.00  9.52           C 0
+ATOM   1585   CA SER A 272      37.535  -6.085 -22.528  1.00 10.70           C 0
+ATOM   2048  CD2 LEU A 331      38.052 -11.232 -25.847  1.00 17.33           C 0
+ATOM   1588   CB SER A 272      38.894  -5.741 -23.140  1.00 12.59           C 0
+ATOM   2089  OE1AGLN A 334      41.104 -14.543 -25.737  0.62 24.89           O 0
+ATOM   2087   CDAGLN A 334      42.082 -15.001 -25.140  0.62 23.97           C 0
+ATOM   2091  NE2AGLN A 334      43.315 -14.553 -25.341  0.62 24.29           N 0
+ATOM   2044    O LEU A 331      37.900 -14.135 -21.747  1.00 13.53           O 0
+ATOM   2093    N ALA A 335      39.778 -16.733 -20.394  1.00 17.94           N 0
+ATOM   2097   CB ALA A 335      39.389 -15.431 -18.355  1.00 19.00           C 0
+ATOM   2085   CGAGLN A 334      41.919 -16.110 -24.107  0.62 22.28           C 0
+ATOM   2083   CBAGLN A 334      40.522 -16.134 -23.523  0.62 20.20           C 0
+ATOM   2079    CAGLN A 334      40.613 -17.265 -21.290  0.62 17.68           C 0
+ATOM   2081    OAGLN A 334      41.747 -17.660 -20.987  0.62 18.05           O 0
+ATOM   2094   CA ALA A 335      40.143 -16.605 -18.988  1.00 17.80           C 0
+ATOM   2042   CA LEU A 331      37.072 -13.293 -23.839  1.00 13.22           C 0
+ATOM   1587    O SER A 272      37.511  -6.384 -20.164  1.00 10.47           O 0
+TER
+END

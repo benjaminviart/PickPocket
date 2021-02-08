@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : 7.5557
+HEADER 1  - Drug Score                        : 0.0069
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.6672
+HEADER 4  - Mean alpha-sphere SA              : 0.3935
+HEADER 5  - Mean B-factor                     : 0.1585
+HEADER 6  - Hydrophobicity Score              : 2.8750
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 275.8683
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.4333
+ATOM    221  OE2 GLU A 466      12.191 -11.738 -32.004  1.00 29.10           O 0
+ATOM    231    O ASP A 467      11.303  -7.134 -31.746  1.00 16.22           O 0
+ATOM    218   CG GLU A 466      10.306 -10.873 -30.814  1.00 20.67           C 0
+ATOM   1559  NH1AARG A 542      17.113  -8.437 -26.255  0.52 28.87           N 0
+ATOM   1555   NEAARG A 542      15.714  -6.650 -25.865  0.52 25.02           N 0
+ATOM    228    N ASP A 467       8.931  -7.941 -30.161  1.00 12.90           N 0
+ATOM    232   CB ASP A 467       9.579  -5.558 -30.008  1.00 14.43           C 0
+ATOM    175  CD1 LEU A 463       8.571  -7.540 -25.794  1.00 18.47           C 0
+ATOM    234  OD1 ASP A 467      10.589  -3.401 -30.238  1.00 13.36           O 0
+ATOM   1549   CBAARG A 542      16.023  -3.816 -26.918  0.52 13.66           C 0
+ATOM   1553   CDAARG A 542      15.251  -5.474 -25.139  0.52 21.03           C 0
+ATOM   1485   CA ILE A 539      11.968  -1.593 -25.510  1.00 12.11           C 0
+ATOM   1489  CG1 ILE A 539       9.694  -2.630 -25.086  1.00 17.20           C 0
+ATOM   1490  CG2 ILE A 539      10.196  -1.394 -27.312  1.00 16.14           C 0
+ATOM   1487    O ILE A 539      13.433  -1.113 -27.376  1.00 12.56           O 0
+ATOM   1409  NH2 ARG A 535      10.346  -4.289 -22.226  1.00 18.08           N 0
+ATOM   1484    N ILE A 539      12.210  -1.318 -24.099  1.00 11.20           N 0
+ATOM   1453    O LEU A 538      14.423  -1.840 -24.237  1.00 12.87           O 0
+ATOM   1408  NH1 ARG A 535       9.937  -6.499 -22.501  1.00 18.81           N 0
+ATOM    214   CA GLU A 466       8.075 -10.168 -29.687  1.00 14.46           C 0
+ATOM    387  CG2 ILE A 474       6.695  -2.262 -29.711  1.00 19.78           C 0
+ATOM    176  CD2 LEU A 463       6.774  -5.848 -26.340  1.00 19.92           C 0
+TER
+END

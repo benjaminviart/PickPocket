@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    20:
+HEADER 0  - Pocket Score                      : 0.2522
+HEADER 1  - Drug Score                        : 0.0124
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.8434
+HEADER 4  - Mean alpha-sphere SA              : 0.3707
+HEADER 5  - Mean B-factor                     : 0.0672
+HEADER 6  - Hydrophobicity Score              : 22.4000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.2000
+HEADER 9  - Real volume (approximation)       : 239.3248
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 29.0000
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   6460   CA GLY C 146      27.461-107.330 -52.084  1.00 34.24           C 0
+ATOM   3813    O GLY B 146      25.435-104.569 -47.076  1.00 31.24           O 0
+ATOM   6597   CGAARG C 164      30.808-104.555 -48.129  0.50 26.59           C 0
+ATOM   6462    O GLY C 146      29.368-105.906 -52.402  1.00 34.24           O 0
+ATOM   1293   CGAARG A 164      31.221-101.773 -49.875  0.50 30.28           C 0
+ATOM   1158    O GLY A 146      26.749 -99.380 -51.639  1.00 30.22           O 0
+ATOM   1156   CA GLY A 146      26.792-100.328 -53.832  1.00 30.65           C 0
+ATOM   1291   CBAARG A 164      31.526-101.056 -51.179  0.50 31.00           C 0
+ATOM   3946   CBAARG B 164      28.257-101.528 -46.269  0.50 28.50           C 0
+ATOM   6335    O TYR C 128      25.589-107.153 -55.002  1.00 33.17           O 0
+ATOM   1154   OG SER A 145      28.505-102.225 -57.240  1.00 35.37           O 0
+ATOM   1032   CB TYR A 128      23.384-102.806 -55.676  1.00 33.58           C 0
+ATOM   3811   CA GLY B 146      23.629-103.332 -48.045  1.00 31.52           C 0
+ATOM   3687   CB TYR B 128      20.603-103.301 -51.522  1.00 31.20           C 0
+ATOM   1031    O TYR A 128      23.356-100.540 -54.011  1.00 34.02           O 0
+ATOM   3686    O TYR B 128      21.405-105.256 -49.561  1.00 31.73           O 0
+ATOM   6336   CB TYR C 128      23.107-107.366 -53.782  1.00 32.24           C 0
+ATOM   6458   OG SER C 145      24.847-110.231 -50.172  1.00 37.39           O 0
+ATOM   3706  CG2 VAL B 130      21.787-109.164 -49.130  1.00 31.86           C 0
+TER
+END

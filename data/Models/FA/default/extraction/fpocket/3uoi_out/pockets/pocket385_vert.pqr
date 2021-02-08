@@ -1,0 +1,54 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   386:
+HEADER 0  - Pocket Score                      : -0.8569
+HEADER 1  - Drug Score                        : 0.0230
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.6976
+HEADER 4  - Mean alpha-sphere SA              : 0.4927
+HEADER 5  - Mean B-factor                     : 0.3143
+HEADER 6  - Hydrophobicity Score              : 35.0000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.8000
+HEADER 9  - Real volume (approximation)       : 323.0802
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 3.7143
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2188
+ATOM  94400  POL STP   386     -10.395 -20.531-135.934    0.00     3.85
+ATOM  1db20  POL STP   386     -10.189 -20.537-135.931    0.00     3.86
+ATOM  1db1f  POL STP   386     -10.237 -20.443-136.328    0.00     3.87
+ATOM  1db20  POL STP   386      -9.494 -19.991-135.266    0.00     3.37
+ATOM  94707  POL STP   386     -13.514 -20.996-135.800    0.00     4.45
+ATOM  1d70a  POL STP   386     -13.512 -21.009-135.722    0.00     4.46
+ATOM  1d709  POL STP   386     -13.598 -21.628-135.506    0.00     4.16
+ATOM  1d70a  POL STP   386     -13.185 -20.996-135.520    0.00     4.33
+ATOM  94728  POL STP   386     -13.524 -19.158-133.690    0.00     3.48
+ATOM  1dd24  POL STP   386     -13.421 -18.941-133.517    0.00     3.40
+ATOM  1d709 APOL STP   386     -13.579 -19.280-133.692    0.00     3.49
+ATOM  1dd20 APOL STP   386     -13.568 -18.795-133.658    0.00     3.31
+ATOM  27873 APOL STP   386     -13.470 -19.106-132.773    0.00     3.14
+ATOM  27871  POL STP   386     -13.039 -18.488-133.208    0.00     3.20
+ATOM  27873 APOL STP   386     -13.434 -19.017-132.902    0.00     3.18
+ATOM  27871  POL STP   386     -12.821 -18.307-133.105    0.00     3.11
+ATOM  1d70b  POL STP   386     -13.747 -20.797-135.612    0.00     4.37
+ATOM  1d70b APOL STP   386     -13.769 -20.811-135.614    0.00     4.37
+ATOM  33886  POL STP   386     -14.608 -20.611-135.840    0.00     3.80
+ATOM  1dafb  POL STP   386     -12.810 -23.562-134.877    0.00     3.01
+ATOM  1dafc  POL STP   386     -12.423 -22.917-134.197    0.00     3.47
+ATOM  1dafc  POL STP   386     -12.410 -23.058-134.004    0.00     3.37
+ATOM  1d70a  POL STP   386     -12.151 -22.681-134.128    0.00     3.50
+ATOM  1dafc  POL STP   386     -12.295 -22.884-134.131    0.00     3.47
+ATOM  1db1a APOL STP   386      -7.729 -18.443-140.139    0.00     4.35
+ATOM  39e4a APOL STP   386      -7.527 -18.148-139.669    0.00     3.92
+ATOM  94400  POL STP   386      -8.056 -17.637-137.966    0.00     3.16
+ATOM  1db1e  POL STP   386      -8.674 -18.318-138.898    0.00     3.91
+ATOM  94400  POL STP   386      -8.908 -18.247-137.982    0.00     3.58
+ATOM  1db1f  POL STP   386      -8.996 -18.346-138.121    0.00     3.69
+ATOM  1db20  POL STP   386      -8.969 -18.400-137.894    0.00     3.55
+ATOM  1db1f  POL STP   386      -9.455 -18.665-138.671    0.00     4.14
+TER
+END

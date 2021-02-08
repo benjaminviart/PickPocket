@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 20.8477
+HEADER 1  - Drug Score                        : 0.0507
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9223
+HEADER 4  - Mean alpha-sphere SA              : 0.6426
+HEADER 5  - Mean B-factor                     : 0.3513
+HEADER 6  - Hydrophobicity Score              : 29.8750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.7500
+HEADER 9  - Real volume (approximation)       : 438.7232
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3226
+ATOM   1397   CG GLN A2069      26.616  -3.333   2.301  1.00 29.23           C 0
+ATOM   1398   CD GLN A2069      26.978  -2.646   3.616  1.00 46.40           C 0
+ATOM   1710   CD LYS A2089      28.637  -5.559   6.197  1.00 41.47           C 0
+ATOM   1400  NE2 GLN A2069      28.103  -1.949   3.642  1.00 56.92           N 0
+ATOM   1712   NZ LYS A2089      30.595  -3.996   6.353  1.00 70.34           N 0
+ATOM   1910   CD LYS A2102      30.043 -10.678   3.906  1.00 33.24           C 0
+ATOM   1396   CB GLN A2069      26.668  -2.446   1.035  1.00 22.02           C 0
+ATOM   1387    C GLY A2068      26.643  -3.361  -2.514  1.00 17.26           C 0
+ATOM   1388    O GLY A2068      26.697  -4.591  -2.481  1.00 18.48           O 0
+ATOM   1392    N GLN A2069      26.378  -2.612  -1.451  1.00 19.08           N 0
+ATOM   1393   CA GLN A2069      26.115  -3.232  -0.157  1.00 16.08           C 0
+ATOM   1750   CB SER A2091      27.523 -10.589  -0.311  1.00 17.91           C 0
+ATOM   1347    O THR A2065      26.804  -7.243  -3.738  1.00 16.78           O 0
+ATOM   1751   OG SER A2091      28.490 -11.207   0.497  1.00 21.43           O 0
+ATOM   1726    N PHE A2090      24.624  -8.552   3.428  1.00 12.87           N 0
+ATOM   1728    C PHE A2090      24.904  -9.911   1.452  1.00 13.11           C 0
+ATOM   1729    O PHE A2090      24.741  -9.021   0.608  1.00 14.06           O 0
+ATOM   1708   CB LYS A2089      26.623  -6.954   5.628  1.00 17.98           C 0
+ATOM   1709   CG LYS A2089      27.126  -5.568   5.994  1.00 33.12           C 0
+ATOM   1409    N TYR A2070      24.218  -4.732   0.121  1.00 14.12           N 0
+ATOM   1412    O TYR A2070      23.417  -6.192   2.325  1.00 13.87           O 0
+ATOM   1705   CA LYS A2089      25.154  -6.996   5.207  1.00 14.52           C 0
+ATOM   1746    N SER A2091      25.632 -10.991   1.224  1.00 12.64           N 0
+TER
+END

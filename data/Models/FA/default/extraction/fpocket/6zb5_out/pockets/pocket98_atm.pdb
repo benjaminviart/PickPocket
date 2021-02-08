@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    99:
+HEADER 0  - Pocket Score                      : -2.2124
+HEADER 1  - Drug Score                        : 0.0340
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.2514
+HEADER 4  - Mean alpha-sphere SA              : 0.4187
+HEADER 5  - Mean B-factor                     : 0.1561
+HEADER 6  - Hydrophobicity Score              : 40.3750
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.5000
+HEADER 9  - Real volume (approximation)       : 102.6908
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 20.0000
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.7000
+ATOM  21566    O ASN A 798      86.556 118.687  67.426  1.00 24.70           O 0
+ATOM  21602  CG1 ILE A 802      89.366 121.117  71.846  1.00 19.25           C 0
+ATOM  21604  CD1 ILE A 802      90.736 121.004  71.278  1.00 19.25           C 0
+ATOM  21577  CD1 PHE A 799      90.347 120.723  67.434  1.00 21.08           C 0
+ATOM  21572   CA PHE A 799      87.280 121.200  68.495  1.00 21.08           C 0
+ATOM  22487   CZ PHE A 924      90.891 116.561  67.313  1.00 18.21           C 0
+ATOM  22513  CG2 ILE A 928      87.121 115.219  71.317  1.00 18.44           C 0
+ATOM  21588    N GLN A 801      84.557 120.364  71.865  1.00 23.14           N 0
+ATOM  21603  CG2 ILE A 802      89.331 119.281  73.456  1.00 19.25           C 0
+ATOM  21597    N ILE A 802      86.823 120.880  73.321  1.00 19.25           N 0
+ATOM  22514  CD1 ILE A 928      89.897 115.221  70.916  1.00 18.44           C 0
+ATOM  21592   CB GLN A 801      84.601 118.307  73.180  1.00 23.14           C 0
+ATOM  22512  CG1 ILE A 928      89.020 114.643  69.845  1.00 18.44           C 0
+ATOM  21595  OE1 GLN A 801      83.705 116.163  71.516  1.00 23.14           O 0
+ATOM  22486  CE2 PHE A 924      89.744 116.517  66.572  1.00 18.21           C 0
+ATOM  23400  CE2 PHE A1049      94.260 118.357  69.157  1.00 10.85           C 0
+ATOM  23398  CD2 PHE A1049      94.381 118.424  70.510  1.00 10.85           C 0
+ATOM  23482  CD2 LEU A1060      92.096 116.196  74.743  1.00 11.12           C 0
+ATOM  23395   CB PHE A1049      94.919 119.657  72.602  1.00 10.85           C 0
+TER
+END

@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 12.6778
+HEADER 1  - Drug Score                        : 0.9273
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.5980
+HEADER 4  - Mean alpha-sphere SA              : 0.5657
+HEADER 5  - Mean B-factor                     : 0.1761
+HEADER 6  - Hydrophobicity Score              : 74.2000
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.6000
+HEADER 9  - Real volume (approximation)       : 391.6706
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 29.1875
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 0.9697
+ATOM     54  CG1 ILE A  74      -3.354 -11.353  -5.231  1.00 30.28           C 0
+ATOM     55  CG2 ILE A  74      -2.476  -9.957  -3.331  1.00 29.55           C 0
+ATOM    109  CD2 LEU A  77      -3.596  -5.358  -7.292  1.00 29.01           C 0
+ATOM     56  CD1 ILE A  74      -4.345 -12.088  -4.365  1.00 32.49           C 0
+ATOM    132   OH TYR A  78      -3.741  -7.114   0.187  1.00 26.17           O 0
+ATOM    126   CG TYR A  78      -0.437  -5.680  -1.862  1.00 23.57           C 0
+ATOM    127  CD1 TYR A  78      -1.256  -4.832  -1.041  1.00 25.78           C 0
+ATOM    185  CD2 LEU A  81      -3.407  -1.170  -4.871  1.00 22.17           C 0
+ATOM    129  CE1 TYR A  78      -2.368  -5.322  -0.429  1.00 25.60           C 0
+ATOM    128  CD2 TYR A  78      -0.708  -7.038  -1.859  1.00 25.67           C 0
+ATOM    121    N TYR A  78       0.524  -5.372  -5.037  1.00 23.95           N 0
+ATOM     52    O ILE A  74      -0.099  -8.194  -4.764  1.00 24.40           O 0
+ATOM    107   CG LEU A  77      -2.189  -5.100  -7.507  1.00 25.22           C 0
+ATOM    122   CA TYR A  78       0.759  -4.400  -3.954  1.00 24.58           C 0
+ATOM    130  CE2 TYR A  78      -1.826  -7.542  -1.170  1.00 25.79           C 0
+ATOM     49    N ILE A  74      -0.596 -11.309  -6.348  1.00 25.46           N 0
+ATOM     50   CA ILE A  74      -1.136 -10.249  -5.496  1.00 26.10           C 0
+ATOM     35    C VAL A  73       0.011 -10.975  -7.455  1.00 26.04           C 0
+ATOM     36    O VAL A  73       0.182  -9.774  -7.781  1.00 25.38           O 0
+ATOM     38  CG1 VAL A  73      -1.197 -11.831 -10.049  1.00 32.46           C 0
+ATOM    106   CB LEU A  77      -1.232  -6.308  -7.509  1.00 22.65           C 0
+ATOM    131   CZ TYR A  78      -2.624  -6.701  -0.485  1.00 26.29           C 0
+TER
+END

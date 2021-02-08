@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    24:
+HEADER 0  - Pocket Score                      : 5.7239
+HEADER 1  - Drug Score                        : 0.1253
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.2016
+HEADER 4  - Mean alpha-sphere SA              : 0.3752
+HEADER 5  - Mean B-factor                     : 0.0348
+HEADER 6  - Hydrophobicity Score              : 43.9167
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5833
+HEADER 9  - Real volume (approximation)       : 105.7346
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 28.1333
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 0.9375
+ATOM    358   CZ PHE A1004      11.717  20.814 -26.893  1.00 15.68           C 0
+ATOM     30   CB LEU A 965      11.699  22.727 -22.686  1.00 14.70           C 0
+ATOM     33  CD2 LEU A 965       9.455  22.446 -23.699  1.00 15.87           C 0
+ATOM    202  CD1 LEU A 985       9.175  17.723 -25.017  1.00 26.66           C 0
+ATOM    203  CD2 LEU A 985       8.189  18.786 -22.950  1.00 26.47           C 0
+ATOM    683  CG1 VAL A1048      14.133  16.409 -23.265  1.00 18.20           C 0
+ATOM    183   OG SER A 983      11.643  17.924 -20.388  1.00 18.15           O 0
+ATOM    682   CB VAL A1048      12.903  15.632 -22.746  1.00 15.27           C 0
+ATOM    684  CG2 VAL A1048      11.869  15.355 -23.871  1.00 19.48           C 0
+ATOM     29    O LEU A 965      12.868  20.243 -20.943  1.00 15.67           O 0
+ATOM    418  CD1 ILE A1012      14.961  20.633 -24.249  1.00 14.26           C 0
+ATOM    357  CE2 PHE A1004      12.662  20.352 -27.792  1.00 15.62           C 0
+ATOM    607  CD2 LEU A1038      11.622  15.239 -28.120  1.00 23.10           C 0
+ATOM    812  CG2 ILE A1064      17.079  17.159 -25.531  1.00 15.35           C 0
+ATOM     27   CA LEU A 965      11.336  22.067 -21.339  1.00 13.84           C 0
+ATOM    817    O PHE A1065      15.793  13.299 -24.063  1.00 14.94           O 0
+ATOM    911  CD2 HIS A1081      15.496  13.270 -28.606  1.00 16.96           C 0
+ATOM    829   CB SER A1066      13.212  11.828 -25.951  1.00 19.20           C 0
+ATOM    390  CE1 TYR A1009      15.505  18.201 -29.464  1.00 15.79           C 0
+ATOM    355  CD2 PHE A1004      12.218  19.584 -28.896  1.00 15.43           C 0
+TER
+END

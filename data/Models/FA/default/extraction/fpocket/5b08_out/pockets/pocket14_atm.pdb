@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 11.1352
+HEADER 1  - Drug Score                        : 0.0241
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.1710
+HEADER 4  - Mean alpha-sphere SA              : 0.5739
+HEADER 5  - Mean B-factor                     : 0.1083
+HEADER 6  - Hydrophobicity Score              : 28.3333
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.8333
+HEADER 9  - Real volume (approximation)       : 393.6659
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2258
+ATOM   1225  NE1 TRP B  42       6.267   6.540  16.463  1.00  7.02           N 0
+ATOM    849    O LYS A 101       2.705   2.511  17.341  1.00 11.27           O 0
+ATOM    855  OXT LYS A 101       3.079   2.363  15.258  1.00 12.94           O 0
+ATOM   1078   CB LYS B  25       8.582   2.326  21.481  1.00  9.12           C 0
+ATOM   1079   CG LYS B  25       7.933   1.031  21.976  1.00 11.65           C 0
+ATOM   1039   CG GLU B  21      12.584   2.288  17.755  1.00  9.37           C 0
+ATOM   1042  OE2 GLU B  21      12.740   0.638  16.051  1.00  8.69           O 0
+ATOM   1080   CD LYS B  25       8.917  -0.138  21.958  1.00 14.27           C 0
+ATOM   1228  CZ2 TRP B  42       8.351   6.365  15.087  1.00  8.69           C 0
+ATOM   1037    O GLU B  21      10.995   4.173  19.911  1.00  6.51           O 0
+ATOM   1075   CA LYS B  25       7.639   3.534  21.470  1.00  7.05           C 0
+ATOM    848    C LYS A 101       2.658   3.015  16.220  1.00 11.00           C 0
+ATOM   1074    N LYS B  25       8.337   4.736  21.025  1.00  6.58           N 0
+ATOM   1067   CB PHE B  24       8.696   7.173  18.934  1.00  5.75           C 0
+ATOM   1077    O LYS B  25       5.895   3.366  23.098  1.00  6.41           O 0
+ATOM   1106   CB VAL B  28       3.151   4.728  20.855  1.00  6.49           C 0
+ATOM   1107  CG1 VAL B  28       1.964   3.843  20.489  1.00  7.28           C 0
+ATOM   1108  CG2 VAL B  28       3.533   5.621  19.686  1.00  6.87           C 0
+ATOM   1066    O PHE B  24       6.482   6.023  21.030  1.00  6.03           O 0
+ATOM   1065    C PHE B  24       7.692   5.893  20.854  1.00  6.73           C 0
+ATOM   1040   CD GLU B  21      13.263   1.115  17.082  1.00  9.26           C 0
+TER
+END

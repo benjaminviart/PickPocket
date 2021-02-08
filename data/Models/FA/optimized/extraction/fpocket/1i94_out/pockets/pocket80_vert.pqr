@@ -1,0 +1,50 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    81:
+HEADER 0  - Pocket Score                      : 0.5866
+HEADER 1  - Drug Score                        : 0.0074
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 4.0521
+HEADER 4  - Mean alpha-sphere SA              : 0.4422
+HEADER 5  - Mean B-factor                     : 0.3946
+HEADER 6  - Hydrophobicity Score              : 12.9000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.7000
+HEADER 9  - Real volume (approximation)       : 453.4294
+HEADER 10 - Charge Score                      :     5
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.8214
+ATOM  1dbe5 APOL STP    81      -4.315  84.010 185.690    0.00     4.07
+ATOM  39ef5 APOL STP    81      -5.497  84.121 186.284    0.00     4.03
+ATOM  39ef5 APOL STP    81      -6.455  84.460 187.190    0.00     4.15
+ATOM  309d7 APOL STP    81      -6.655  83.519 187.410    0.00     3.91
+ATOM  39ef5 APOL STP    81      -6.509  83.703 187.185    0.00     3.95
+ATOM  1dbef  POL STP    81      -5.030  84.795 184.672    0.00     3.70
+ATOM  39ef6  POL STP    81      -5.938  85.465 184.452    0.00     3.53
+ATOM  1dbf0 APOL STP    81      -4.892  84.096 185.400    0.00     4.07
+ATOM  39ef5 APOL STP    81      -4.944  84.101 185.427    0.00     4.06
+ATOM  39ef5 APOL STP    81      -5.364  83.463 185.115    0.00     3.46
+ATOM  39ef5 APOL STP    81      -6.673  83.446 187.054    0.00     3.73
+ATOM  39ef6  POL STP    81      -6.659  86.207 184.213    0.00     3.59
+ATOM  39ef7 APOL STP    81      -7.982  86.720 185.381    0.00     3.89
+ATOM  39ef7 APOL STP    81      -8.075  86.675 185.616    0.00     3.93
+ATOM  309cc APOL STP    81     -11.812  87.505 186.705    0.00     4.70
+ATOM  309d5  POL STP    81     -10.053  87.540 186.697    0.00     4.40
+ATOM  1dc40 APOL STP    81      -8.825  88.361 187.903    0.00     3.58
+ATOM  309d2 APOL STP    81      -9.456  87.281 187.509    0.00     4.49
+ATOM  309d5 APOL STP    81      -9.777  87.510 186.804    0.00     4.41
+ATOM  309d5 APOL STP    81      -8.445  86.702 187.893    0.00     4.45
+ATOM  1d28c APOL STP    81      -8.674  87.073 185.523    0.00     3.92
+ATOM  309d5 APOL STP    81      -8.863  87.095 185.731    0.00     3.99
+ATOM  309d5 APOL STP    81      -8.676  87.007 185.543    0.00     3.97
+ATOM  39ef7  POL STP    81      -8.774  86.735 184.990    0.00     3.72
+ATOM  39ef7 APOL STP    81      -8.246  86.780 185.457    0.00     3.94
+ATOM  1dc39 APOL STP    81      -6.707  85.783 189.525    0.00     4.45
+ATOM  1dc39 APOL STP    81      -7.342  85.489 189.243    0.00     4.77
+ATOM  1dc39 APOL STP    81      -7.082  85.524 189.869    0.00     4.59
+TER
+END

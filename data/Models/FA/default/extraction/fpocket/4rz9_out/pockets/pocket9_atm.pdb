@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 12.4427
+HEADER 1  - Drug Score                        : 0.0079
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.4904
+HEADER 4  - Mean alpha-sphere SA              : 0.3648
+HEADER 5  - Mean B-factor                     : 0.0948
+HEADER 6  - Hydrophobicity Score              : 8.3750
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.1250
+HEADER 9  - Real volume (approximation)       : 225.2300
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 7.7778
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2812
+ATOM    362  CG1 VAL A  21      37.599  25.911  24.155  1.00 12.36           C 0
+ATOM    358   CA VAL A  21      35.553  26.012  22.671  1.00 12.04           C 0
+ATOM   3163    O ASP A 159      40.094  28.049  19.085  1.00  8.13           O 0
+ATOM    373    N GLU A  22      36.708  24.185  21.489  1.00 11.06           N 0
+ATOM   3173   CA ILE A 160      38.010  29.920  19.133  1.00  8.20           C 0
+ATOM    452  CD1 ILE A  25      41.524  24.844  21.158  1.00 12.61           C 0
+ATOM   3177  CG1 ILE A 160      38.046  30.342  21.644  1.00  9.99           C 0
+ATOM   3191    N ILE A 161      36.585  29.434  17.211  1.00  9.21           N 0
+ATOM    378   CG GLU A  22      38.133  22.968  18.799  1.00 12.46           C 0
+ATOM    341    O LEU A  20      34.166  27.204  20.583  1.00 13.46           O 0
+ATOM   3198  CG1AILE A 161      36.417  27.868  14.593  0.80 14.13           C 0
+ATOM    381  OE2 GLU A  22      36.094  22.250  17.846  1.00 12.42           O 0
+ATOM   3196   CBAILE A 161      35.258  28.557  15.330  0.80 12.87           C 0
+ATOM   3202  CD1AILE A 161      36.061  26.540  13.860  0.80 15.42           C 0
+ATOM   3118  NH1 ARG A 156      41.709  26.688  14.274  1.00 13.26           N 0
+ATOM    380  OE1 GLU A  22      37.766  20.868  17.671  1.00 12.20           O 0
+ATOM   3119  NH2 ARG A 156      40.049  26.480  12.733  1.00 16.38           N 0
+ATOM    379   CD GLU A  22      37.269  21.957  18.067  1.00 12.57           C 0
+ATOM   3117   CZ ARG A 156      40.680  27.185  13.640  1.00 14.16           C 0
+ATOM   3116   NE ARG A 156      40.292  28.438  13.880  1.00 14.40           N 0
+TER
+END

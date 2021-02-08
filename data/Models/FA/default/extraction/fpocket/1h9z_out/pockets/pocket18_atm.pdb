@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    19:
+HEADER 0  - Pocket Score                      : -0.9421
+HEADER 1  - Drug Score                        : 0.0050
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8216
+HEADER 4  - Mean alpha-sphere SA              : 0.6466
+HEADER 5  - Mean B-factor                     : 0.6568
+HEADER 6  - Hydrophobicity Score              : 6.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 345.7441
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2188
+ATOM   2862   CB ASP A 365       7.301   3.465 -23.526  1.00 91.03           C 0
+ATOM   2861    O ASP A 365       8.061   3.661 -20.847  1.00 90.21           O 0
+ATOM   2887   CB GLU A 368       5.381   6.077 -20.150  1.00 85.34           C 0
+ATOM   2890  OE1 GLU A 368       3.340   5.786 -22.039  1.00 91.50           O 0
+ATOM   2888   CG GLU A 368       3.920   6.184 -19.772  1.00 88.02           C 0
+ATOM   2893   CA CYS A 369       7.021   3.728 -16.488  1.00 71.14           C 0
+ATOM   2892    N CYS A 369       7.076   4.642 -17.623  1.00 74.68           N 0
+ATOM   2886    O GLU A 368       5.203   5.756 -17.061  1.00 77.92           O 0
+ATOM   2885    C GLU A 368       6.162   5.582 -17.817  1.00 78.32           C 0
+ATOM   2896   CB CYS A 369       7.928   2.531 -16.752  1.00 70.21           C 0
+ATOM   2857   CB ALA A 364       7.045  -1.105 -23.295  1.00 87.23           C 0
+ATOM   2858    N ASP A 365       8.212   1.275 -22.959  1.00 89.21           N 0
+ATOM   2851    O ALA A 363      10.756  -0.524 -21.455  1.00 82.48           O 0
+ATOM   2860    C ASP A 365       8.912   3.191 -21.608  1.00 90.09           C 0
+ATOM   2866    N PRO A 366      10.212   3.096 -21.262  1.00 89.33           N 0
+ATOM   2852   CB ALA A 363       9.282  -2.333 -19.048  1.00 80.07           C 0
+ATOM   2834    O CYS A 360      11.895   0.754 -17.714  1.00 67.85           O 0
+ATOM   2867   CA PRO A 366      10.777   3.508 -19.970  1.00 88.31           C 0
+ATOM   2853    N ALA A 364       9.030  -1.861 -22.078  1.00 84.69           N 0
+ATOM   2850    C ALA A 363      10.058  -1.530 -21.295  1.00 82.74           C 0
+TER
+END

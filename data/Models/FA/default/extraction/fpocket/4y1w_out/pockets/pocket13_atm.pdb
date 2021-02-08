@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    14:
+HEADER 0  - Pocket Score                      : 7.0912
+HEADER 1  - Drug Score                        : 0.0339
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.4124
+HEADER 4  - Mean alpha-sphere SA              : 0.4761
+HEADER 5  - Mean B-factor                     : 0.1392
+HEADER 6  - Hydrophobicity Score              : 37.6250
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 3.3750
+HEADER 9  - Real volume (approximation)       : 83.2545
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 24.0000
+HEADER 12 - Number of apolar alpha sphere     :    25
+HEADER 13 - Proportion of apolar alpha sphere : 0.8333
+ATOM   2347   CB LEU A 168      -6.645  36.238   9.023  1.00 16.55           C 0
+ATOM   1500  CD1 TYR A 116      -6.904  42.398  11.270  1.00 14.91           C 0
+ATOM     62  CG1 ILE A  24      -9.746  39.978  10.255  1.00 23.09           C 0
+ATOM     64  CD1 ILE A  24      -9.179  38.977  11.262  1.00 24.50           C 0
+ATOM   2365    O PHE A 169      -4.621  39.703  12.264  1.00 14.99           O 0
+ATOM   2036   CB ALA A 150      -3.644  41.505   6.859  1.00 21.75           C 0
+ATOM   1498   CB TYR A 116      -4.789  42.733  10.005  1.00 13.32           C 0
+ATOM   1518    O ARG A 117      -2.610  37.984   9.808  1.00 16.42           O 0
+ATOM   2350  CD2 LEU A 168      -5.541  36.176   6.758  1.00 27.75           C 0
+ATOM   2349  CD1 LEU A 168      -7.999  36.511   6.883  1.00 29.48           C 0
+ATOM   2047   CG LYS A 151      -7.852  39.677   4.199  1.00 23.37           C 0
+ATOM   1990    O PRO A 147      -6.690  42.570   5.201  1.00 16.13           O 0
+ATOM   1991   CB PRO A 147      -8.702  43.737   7.498  1.00 17.85           C 0
+ATOM   1988   CA PRO A 147      -7.317  44.079   6.942  1.00 14.54           C 0
+ATOM     63  CG2 ILE A  24     -10.430  38.386   8.409  1.00 28.13           C 0
+ATOM   2042    N LYS A 151      -4.859  40.445   4.132  1.00 18.70           N 0
+ATOM   2049   CE LYS A 151     -10.220  40.501   4.609  1.00 34.60           C 0
+ATOM   1515    N ARG A 117      -2.367  40.664  10.263  1.00 13.09           N 0
+TER
+END

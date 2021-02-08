@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    24:
+HEADER 0  - Pocket Score                      : 1.3941
+HEADER 1  - Drug Score                        : 0.0041
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.8132
+HEADER 4  - Mean alpha-sphere SA              : 0.5909
+HEADER 5  - Mean B-factor                     : 0.7560
+HEADER 6  - Hydrophobicity Score              : -10.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.8333
+HEADER 9  - Real volume (approximation)       : 520.3033
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2333
+ATOM   4341  POL STP    24      24.970  31.474  79.404    0.00     3.22
+ATOM   6913  POL STP    24      24.951  31.608  79.373    0.00     3.19
+ATOM  15932  POL STP    24      25.224  30.879  79.918    0.00     3.25
+ATOM  15932  POL STP    24      24.811  30.717  79.305    0.00     3.59
+ATOM  15936  POL STP    24      25.841  30.782  81.280    0.00     3.09
+ATOM  10448  POL STP    24      23.964  32.534  78.288    0.00     3.75
+ATOM  13299  POL STP    24      24.138  31.998  78.510    0.00     3.62
+ATOM   6915  POL STP    24      22.907  34.303  78.064    0.00     4.29
+ATOM   8147  POL STP    24      22.261  34.366  77.873    0.00     4.63
+ATOM   9617  POL STP    24      23.151  34.267  78.261    0.00     4.07
+ATOM   8149  POL STP    24      22.357  35.407  77.898    0.00     4.56
+ATOM   6915  POL STP    24      23.321  33.887  78.068    0.00     4.11
+ATOM  10448 APOL STP    24      23.468  33.277  77.924    0.00     4.12
+ATOM   9617  POL STP    24      23.398  34.097  78.336    0.00     3.92
+ATOM   6916  POL STP    24      24.822  33.679  77.700    0.00     3.16
+ATOM  10448 APOL STP    24      23.981  33.174  77.792    0.00     3.80
+ATOM  10448 APOL STP    24      22.374  33.448  77.621    0.00     4.59
+ATOM   9617  POL STP    24      23.781  34.523  78.864    0.00     3.40
+ATOM  13299  POL STP    24      24.682  32.998  77.200    0.00     3.16
+ATOM  15932  POL STP    24      24.764  30.680  79.260    0.00     3.63
+ATOM  15936  POL STP    24      23.943  29.351  79.372    0.00     4.30
+ATOM  15936 APOL STP    24      23.606  28.739  79.506    0.00     4.70
+ATOM  13299 APOL STP    24      25.018  27.743  77.401    0.00     3.39
+ATOM  13560  POL STP    24      25.102  27.686  77.421    0.00     3.42
+ATOM  15932  POL STP    24      24.828  27.929  78.551    0.00     3.96
+ATOM  19058  POL STP    24      25.626  27.568  76.973    0.00     3.22
+ATOM  15936 APOL STP    24      24.203  28.380  78.995    0.00     4.26
+ATOM  19063  POL STP    24      26.353  27.673  77.674    0.00     3.36
+ATOM  10448  POL STP    24      20.545  33.198  77.298    0.00     5.60
+ATOM  10448 APOL STP    24      23.680  33.081  76.045    0.00     3.03
+TER
+END

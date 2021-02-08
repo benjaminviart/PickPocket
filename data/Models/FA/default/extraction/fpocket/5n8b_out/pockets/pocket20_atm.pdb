@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    21:
+HEADER 0  - Pocket Score                      : 5.4222
+HEADER 1  - Drug Score                        : 0.0058
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.7441
+HEADER 4  - Mean alpha-sphere SA              : 0.5172
+HEADER 5  - Mean B-factor                     : 0.2344
+HEADER 6  - Hydrophobicity Score              : 4.8571
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 309.2726
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1818
+ATOM   1922  OD1 ASP B 128       0.353  39.811  24.696  1.00 11.09           O 0
+ATOM   1917   CA ASP B 128       0.230  37.413  23.272  1.00  8.94           C 0
+ATOM   1933  CG2ATHR B 129      -4.137  38.569  24.951  0.50 13.74           C 0
+ATOM   1924    N THR B 129      -1.860  38.616  23.188  1.00  9.74           N 0
+ATOM   1918    C ASP B 128      -1.115  37.677  22.608  1.00  9.17           C 0
+ATOM   1123   CD GLN B  24      -3.133  41.597  29.852  1.00 28.92           C 0
+ATOM   1125  NE2 GLN B  24      -4.263  40.900  29.760  1.00 34.49           N 0
+ATOM   1124  OE1 GLN B  24      -2.289  41.379  30.732  1.00 34.99           O 0
+ATOM   1914  CE1 HIS B 127       0.558  33.184  27.248  1.00 13.93           C 0
+ATOM   2075    O GLY C  11       3.505  39.842  28.409  1.00 11.94           O 0
+ATOM   1909    O HIS B 127       2.221  35.963  24.516  1.00  9.52           O 0
+ATOM   1912  ND1 HIS B 127       0.249  33.578  26.020  1.00 13.35           N 0
+ATOM   1916    N ASP B 128       0.709  36.098  22.858  1.00  8.55           N 0
+ATOM   2961  NE2 HIS D 127      -2.147  31.329  24.440  1.00 15.07           N 0
+ATOM   1910   CB HIS B 127       0.927  33.087  23.647  1.00  9.24           C 0
+ATOM   2960  CE1 HIS D 127      -2.531  31.625  25.668  1.00 14.96           C 0
+ATOM   1741    O THR B 106      -0.453  34.051  20.753  1.00  8.43           O 0
+ATOM   1919    O ASP B 128      -1.442  37.079  21.585  1.00  9.87           O 0
+ATOM   1734   CB ASN B 105      -5.789  35.161  19.906  1.00 11.60           C 0
+ATOM   1929   CBATHR B 129      -4.320  38.422  23.448  0.50 11.91           C 0
+ATOM   1736  OD1 ASN B 105      -6.676  36.525  21.648  1.00 18.11           O 0
+ATOM   1731   CA ASN B 105      -4.770  36.205  19.496  1.00 10.03           C 0
+ATOM   1738    N THR B 106      -2.452  35.485  19.363  1.00  8.86           N 0
+TER
+END

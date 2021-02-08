@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 12.2659
+HEADER 1  - Drug Score                        : 0.0154
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8827
+HEADER 4  - Mean alpha-sphere SA              : 0.5157
+HEADER 5  - Mean B-factor                     : 0.5597
+HEADER 6  - Hydrophobicity Score              : 24.8889
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.4444
+HEADER 9  - Real volume (approximation)       : 436.8324
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 7.7778
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2812
+ATOM     46   CG ARG A   4      28.875  19.006  34.143  1.00 46.92           C 0
+ATOM    258  ND2 ASN A  16      27.163  22.499  28.676  1.00 23.71           N 0
+ATOM     45   CB ARG A   4      28.722  20.483  34.489  1.00 40.60           C 0
+ATOM     42   CA ARG A   4      29.872  21.354  33.971  1.00 34.71           C 0
+ATOM     65    N THR A   5      28.780  23.271  33.029  1.00 29.30           N 0
+ATOM     47   CD ARG A   4      27.893  18.147  34.916  1.00 52.27           C 0
+ATOM    318   OHATYR A  19      27.783  19.036  26.360  0.61 24.36           O 0
+ATOM     48   NE ARG A   4      28.064  16.722  34.635  1.00 56.69           N 0
+ATOM     68    O THR A   5      26.494  23.715  34.454  1.00 32.35           O 0
+ATOM     69   CB THR A   5      27.565  24.861  31.669  1.00 25.04           C 0
+ATOM      5   CB MET A   1      31.531  16.688  33.420  0.65 49.42           C 0
+ATOM      6   CG MET A   1      32.129  18.059  33.069  0.65 50.32           C 0
+ATOM      8   CE MET A   1      33.546  17.055  30.875  0.65 51.64           C 0
+ATOM    287  NE2 GLN A  18      31.373  24.087  31.187  1.00 18.91           N 0
+ATOM    312  CE1ATYR A  19      29.457  20.677  25.873  0.61 21.82           C 0
+ATOM    471   NE ARG A  26      34.260  21.281  26.244  1.00 19.13           N 0
+ATOM    577   OH TYR A  30      34.601  22.170  30.203  1.00 18.59           O 0
+ATOM    474  NH2 ARG A  26      33.286  19.575  25.078  1.00 21.11           N 0
+ATOM      7   SD MET A   1      33.792  18.054  32.347  0.65 52.11           S 0
+ATOM     30    O ASN A   3      32.389  22.082  33.224  1.00 32.35           O 0
+ATOM    283   CB GLN A  18      31.585  25.072  28.047  1.00 15.53           C 0
+ATOM    308  CD1ATYR A  19      29.900  21.736  25.094  0.61 20.32           C 0
+ATOM    285   CD GLN A  18      32.229  24.736  30.410  1.00 18.39           C 0
+ATOM    257  OD1 ASN A  16      27.974  24.532  28.180  1.00 21.84           O 0
+TER
+END

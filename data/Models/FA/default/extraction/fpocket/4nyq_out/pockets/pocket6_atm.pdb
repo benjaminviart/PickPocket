@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 1.3111
+HEADER 1  - Drug Score                        : 0.0116
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.2181
+HEADER 4  - Mean alpha-sphere SA              : 0.6627
+HEADER 5  - Mean B-factor                     : 0.4414
+HEADER 6  - Hydrophobicity Score              : 23.4286
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.5714
+HEADER 9  - Real volume (approximation)       : 521.3206
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.2000
+ATOM     76   CG GLN A  10      -0.520  37.638  25.236  1.00 51.80           C 0
+ATOM     83    O LEU A  11      -4.108  36.418  30.266  1.00 27.53           O 0
+ATOM    573   CA GLY A  71       1.407  35.024  32.785  1.00 19.46           C 0
+ATOM     78  OE1 GLN A  10       0.264  39.868  25.652  1.00 58.22           O 0
+ATOM     75   CB GLN A  10      -1.770  36.881  25.669  1.00 51.34           C 0
+ATOM    575    O GLY A  71      -0.673  33.921  32.290  1.00 21.05           O 0
+ATOM     80    N LEU A  11      -2.759  34.805  28.072  1.00 30.02           N 0
+ATOM    574    C GLY A  71       0.542  33.924  32.176  1.00 16.68           C 0
+ATOM     72   CA GLN A  10      -1.479  35.454  26.141  1.00 39.03           C 0
+ATOM     77   CD GLN A  10      -0.677  39.155  25.297  1.00 56.07           C 0
+ATOM     66    O LEU A   9       0.769  33.779  26.195  1.00 37.36           O 0
+ATOM    576    N ARG A  72       1.204  32.947  31.583  1.00 17.73           N 0
+ATOM    577   CA ARG A  72       0.556  31.840  30.918  1.00 20.21           C 0
+ATOM     58    O ASN A   8       1.784  35.251  23.156  1.00 49.54           O 0
+ATOM     59   CB ASN A   8       4.557  35.488  22.885  1.00 65.67           C 0
+ATOM     56   CA ASN A   8       3.932  34.164  23.367  1.00 45.31           C 0
+ATOM     57    C ASN A   8       2.403  34.220  23.379  1.00 36.44           C 0
+ATOM    583   NE ARG A  72       3.598  31.120  27.592  1.00 65.48           N 0
+ATOM     49    O GLU A   7       6.007  32.428  24.136  1.00 59.41           O 0
+ATOM    581   CG ARG A  72       2.839  31.269  29.918  1.00 40.25           C 0
+ATOM    580   CB ARG A  72       1.353  31.443  29.663  1.00 29.62           C 0
+TER
+END

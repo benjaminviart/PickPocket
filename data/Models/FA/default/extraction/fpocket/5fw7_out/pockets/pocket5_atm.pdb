@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 14.7100
+HEADER 1  - Drug Score                        : 0.1503
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.6262
+HEADER 4  - Mean alpha-sphere SA              : 0.5623
+HEADER 5  - Mean B-factor                     : 0.0615
+HEADER 6  - Hydrophobicity Score              : 45.6250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 292.0934
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 10.0000
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.3548
+ATOM   1871  OG1 THR B 119      -2.710  -3.360 -10.741  0.90 15.69           O 0
+ATOM   1860   CA THR B 118      -6.257  -1.148 -11.949  1.00  7.67           C 0
+ATOM   1853    OASER B 117      -5.892   1.473 -12.410  0.50  6.54           O 0
+ATOM   1851    CASER B 117      -5.483   0.682 -13.301  0.50  7.98           C 0
+ATOM   1857   OGASER B 117      -2.831  -0.259 -14.255  0.50 13.25           O 0
+ATOM   1779    O ALA B 108      -6.365  -0.423  -8.965  1.00 10.03           O 0
+ATOM   1788    N LEU B 110      -4.808   3.564 -10.611  1.00  6.85           N 0
+ATOM   1866    N THR B 119      -5.416  -2.801 -10.448  0.90  7.76           N 0
+ATOM   1792   CB LEU B 110      -2.510   3.865 -11.411  1.00  8.81           C 0
+ATOM   1859    N THR B 118      -5.755  -0.605 -13.195  1.00  8.40           N 0
+ATOM   1780   CB ALA B 108      -4.473  -0.634  -6.445  1.00 12.86           C 0
+ATOM   1778    C ALA B 108      -6.181   0.328  -7.960  1.00  8.03           C 0
+ATOM   1050   CB LEU B  17      -1.943   6.280  -7.000  1.00  8.73           C 0
+ATOM   1052  CD1 LEU B  17      -0.411   4.547  -6.105  1.00 13.06           C 0
+ATOM   1784    O VAL B 109      -5.166   4.212  -8.500  1.00  9.75           O 0
+ATOM   1783    C VAL B 109      -5.410   3.469  -9.465  1.00  7.12           C 0
+ATOM   1781    N VAL B 109      -6.203   1.632  -8.053  1.00  8.12           N 0
+ATOM   1051   CG LEU B  17      -1.641   5.409  -5.770  1.00 10.59           C 0
+ATOM   1033    O LYS B  15      -6.583   2.775  -5.483  1.00 10.83           O 0
+ATOM   1035   CG LYS B  15      -4.258   2.987  -2.678  1.00 17.96           C 0
+ATOM   1036   CD LYS B  15      -3.084   2.266  -2.102  1.00 26.21           C 0
+ATOM   1795  CD2 LEU B 110      -0.271   4.017 -12.534  1.00 14.02           C 0
+ATOM   1794  CD1 LEU B 110      -0.833   5.476 -10.558  1.00 11.04           C 0
+TER
+END

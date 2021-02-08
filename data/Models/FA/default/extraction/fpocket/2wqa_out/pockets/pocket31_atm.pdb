@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    32:
+HEADER 0  - Pocket Score                      : 4.5332
+HEADER 1  - Drug Score                        : 0.0063
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.2395
+HEADER 4  - Mean alpha-sphere SA              : 0.6956
+HEADER 5  - Mean B-factor                     : 0.2339
+HEADER 6  - Hydrophobicity Score              : 2.5714
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.5714
+HEADER 9  - Real volume (approximation)       : 364.6997
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.1667
+ATOM   5155  ND2 ASN F  14      89.983 -57.097   2.240  1.00 73.71           N 0
+ATOM   5144   CG GLU F  13      88.225 -61.495   0.268  1.00 73.49           C 0
+ATOM   5154  OD1 ASN F  14      90.650 -58.840   0.945  1.00 75.56           O 0
+ATOM   5146  OE1 GLU F  13      88.870 -63.428   1.545  1.00 81.34           O 0
+ATOM   5148    N ASN F  14      87.232 -58.133   0.121  1.00 69.58           N 0
+ATOM   5153   CG ASN F  14      90.091 -57.737   1.062  1.00 73.39           C 0
+ATOM   5675    O GLU F  81      83.603 -55.700   8.076  1.00 72.34           O 0
+ATOM   5686   CG ASP F  82      81.252 -58.118   4.381  1.00 65.75           C 0
+ATOM   5687  OD1 ASP F  82      80.830 -59.285   4.468  1.00 66.69           O 0
+ATOM   5685   CB ASP F  82      80.929 -57.222   5.526  1.00 66.15           C 0
+ATOM   5682   CA ASP F  82      82.009 -56.201   5.793  1.00 66.86           C 0
+ATOM   5688  OD2 ASP F  82      81.913 -57.687   3.400  1.00 65.22           O 0
+ATOM   5140   CA GLU F  13      86.215 -60.199  -0.697  1.00 70.24           C 0
+ATOM   5133    O LYS F  12      83.745 -58.883  -0.600  1.00 67.85           O 0
+ATOM   5694   CG PRO F  83      85.297 -55.767   2.884  1.00 64.21           C 0
+ATOM   5695   CD PRO F  83      84.553 -55.992   4.173  1.00 63.98           C 0
+ATOM   5129  CG2 VAL F  11      80.297 -60.287   1.233  1.00 62.82           C 0
+ATOM   5126    O VAL F  11      82.376 -62.141  -1.076  1.00 66.49           O 0
+ATOM   5143   CB GLU F  13      87.172 -61.372  -0.830  1.00 70.03           C 0
+TER
+END

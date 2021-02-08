@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 5.9754
+HEADER 1  - Drug Score                        : 0.1541
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 4.0620
+HEADER 4  - Mean alpha-sphere SA              : 0.6542
+HEADER 5  - Mean B-factor                     : 0.1488
+HEADER 6  - Hydrophobicity Score              : 54.7143
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 6.0000
+HEADER 9  - Real volume (approximation)       : 329.3669
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1342   CA VAL A 168       6.269  39.299   2.005  1.00 11.12           C 0
+ATOM   1371  CG2 VAL A 171       7.285  35.412   5.262  1.00 14.02           C 0
+ATOM   1347  CG2 VAL A 168       4.359  39.122   0.398  1.00 11.06           C 0
+ATOM   1369   CB VAL A 171       8.220  35.463   4.084  1.00 13.87           C 0
+ATOM   1370  CG1 VAL A 171       8.404  34.064   3.491  1.00 14.08           C 0
+ATOM   1336    O ASN A 167       6.409  38.697   4.692  1.00 11.95           O 0
+ATOM   1341    N VAL A 168       5.518  39.969   3.062  1.00 11.18           N 0
+ATOM   1335    C ASN A 167       5.668  39.620   4.334  1.00 11.39           C 0
+ATOM   2015   CB HIS A 250       0.201  35.252   5.937  1.00 14.15           C 0
+ATOM   1377   CG MET A 172       9.344  36.570  -0.464  1.00 14.02           C 0
+ATOM   1346  CG1 VAL A 168       6.681  39.190  -0.493  1.00 11.80           C 0
+ATOM   1378   SD MET A 172       9.459  34.855  -1.046  1.00 17.20           S 0
+ATOM   1819  CE2 PHE A 225       0.650  36.864  -0.971  1.00 15.00           C 0
+ATOM   1820   CZ PHE A 225       0.600  37.169  -2.322  1.00 14.01           C 0
+ATOM   1817  CD2 PHE A 225       0.818  37.876  -0.034  1.00 14.37           C 0
+ATOM   1340  ND2 ASN A 167       1.263  39.957   4.409  1.00 11.63           N 0
+ATOM   1338   CG ASN A 167       2.487  40.483   4.390  1.00 11.07           C 0
+ATOM   1337   CB ASN A 167       3.419  40.012   5.529  1.00 11.45           C 0
+ATOM   2018  CD2 HIS A 250      -1.267  36.387   4.119  1.00 14.67           C 0
+ATOM   1832  CG2 VAL A 227      -1.634  34.744  -0.357  1.00 14.78           C 0
+ATOM   2016   CG HIS A 250      -1.044  35.541   5.153  1.00 14.50           C 0
+TER
+END

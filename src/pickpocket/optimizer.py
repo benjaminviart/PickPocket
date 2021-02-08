@@ -1,19 +1,11 @@
 from pymoo.model.problem import Problem
-from Bio.PDB import *
 import warnings
-import numpy as np
 from Bio import BiopythonWarning
-from Bio.PDB.PDBExceptions import PDBConstructionException
-import subprocess
-import os
-import logging
-from sklearn.model_selection import ParameterGrid
 import tempfile
 import shutil
 from multiprocessing.pool import ThreadPool
-
 warnings.simplefilter('ignore', BiopythonWarning)
-
+import numpy as np
 from pickpocket.utils import *
 
 class FpocketOptimizer(Problem):
@@ -75,7 +67,7 @@ class FpocketOptimizer(Problem):
         logging.info(" {:10}:{:>10} ".format("structures", len(files)))
         xl, xu = self._init_params(params)
         super().__init__(n_var=len(xl),
-                         n_obj=2,
+                         n_obj=3,
                          n_constr=1,
                          xl=xl,
                          xu=xu,
@@ -130,10 +122,10 @@ class FpocketOptimizer(Problem):
             out["G"] = [0]
         else:
             out["G"] = [g1]
-            out["F"] = [1, 1 ]
+            out["F"] = [1, 1 ,1]
             return out
-        f1 , f2  = self._evaluate_parameters(parameters)
-        out["F"] = [f1,f2]
+        f1 , f2 , f3 = self._evaluate_parameters(parameters)
+        out["F"] = [f1,f2, f3]
         
         return out
     
@@ -142,6 +134,7 @@ class FpocketOptimizer(Problem):
         random_indexes = np.random.permutation(np.arange(len(self._files)))
         percentage_residues = []
         percentage_ligand_atm = []
+        percentage_pos_pockets=[]
         none_results = 0
         running=True
         current_idx=0
@@ -168,45 +161,47 @@ class FpocketOptimizer(Problem):
                     curr_timeout+=1
                     if curr_timeout >= self._max_timeout:
                         logging.debug("Rejected {} for max_timeout {} ".format(par,curr_timeout))
-                        return (1, 1)
-                elif result != None:
-                    best_pocket=[0,0]
+                        return (1, 1, 1)
+                elif result != None and len(result.pockets) > 0:
+                    best_pocket=[0,0,0]
                     for pocket in result.pockets:
                         perc_res, perc_lig = get_best_pocket_coverage(pocket.get_residues_ids(), self._pockets[idx])
                         if best_pocket[0] < perc_res:
                             best_pocket[0]= perc_res
                         if best_pocket[1]< perc_lig:
                             best_pocket[1]= perc_lig
+                        if perc_res > 0:
+                            best_pocket[2]+=1
+                    best_pocket[2]=best_pocket[2]/len(result.pockets)
+                    if best_pocket[0] == 0:
+                        none_results+=1
+                        if none_results >= self._max_none:
+                            logging.debug("Rejected {} for max_none {} ".format(par,none_results))
+                            return (1, 1, 1)
                     percentage_residues.append(best_pocket[0])
                     percentage_ligand_atm.append(best_pocket[1])
+                    percentage_pos_pockets.append(best_pocket[2])
                     logging.debug("Found {} for {} ".format(best_pocket, self._files[idx]))
                 else:
+                    logging.debug("None result for {} {}".format(par,self._files[idx]))
                     percentage_residues.append(0)
                     percentage_ligand_atm.append(0)
+                    percentage_pos_pockets.append(0)
                     none_results+=1
                     if none_results >= self._max_none:
                         logging.debug("Rejected {} for max_none {} ".format(par,none_results))
-                        return (1, 1)
-            #if len(percentage_residues) >= 10 and self.fast :
-            #    if np.std(percentage_residues) > 0.5 or np.std(percentage_ligand_atm) > 0.5:
-            #        logging.debug("Rejected {} for std {} {}".format(par,np.std(percentage_residues), np.std(percentage_ligand_atm) ))
-            #        return (1,1)
-            #    elif np.std(percentage_residues) < 0.1 and np.std(percentage_ligand_atm) < 0.1:
-            #        running=False
+                        return (1, 1, 1)
             current_idx+=step
             if current_idx >= len(random_indexes):
                 running=False
         
         if len(percentage_residues) < min(3, len(self._files)):
             logging.debug("Refused {} for insufficient data ".format(par))
-            return (1,1)
-        logging.debug("Accepted {} with {} and {} ".format(par, np.mean(percentage_residues),np.mean(percentage_ligand_atm) ))
-        return (1 - np.mean(percentage_residues), 1 - np.mean(percentage_ligand_atm) )  
+            return (1,1,1)
+        logging.debug("Accepted {} with {} and {} and {} ".format(par, np.mean(percentage_residues),np.mean(percentage_ligand_atm), np.mean(percentage_pos_pockets) ))
+        return (1 - np.mean(percentage_residues), 1 - np.mean(percentage_ligand_atm), 1-np.mean(percentage_pos_pockets) )  
             
     
-    
-    
-
 from pymoo.model.sampling import Sampling
 
 class FpocketOptimizerSampling(Sampling):
@@ -295,15 +290,18 @@ class FpocketCallback(Callback):
         if type(res.opt) is not type(None) and len(res.opt) > 0 :
             ofs.write("Found {} non dominant solution:\n".format(len(res.opt)))
             n=1
-            ofs.write("# \ttrue_pocket_residues_fraction\tligand_atom_fraction\t{}\n".format("\t".join(algorithm.problem._arg_list)))
+            ofs.write("# \ttrue_pocket_residues_fraction\tligand_atom_fraction\tpositive_pockets_fraction\t{}\n".format("\t".join(algorithm.problem._arg_list)))
             for sol in res.opt:
                 F = sol.get("F")
                 X= algorithm.problem._get_parameters(sol.get("X"))
                 X_vals = []
                 for k in algorithm.problem._arg_list:
                     X_vals.append(X[k])
-                ofs.write("{}\t{:.3f}\t{:.3f}\t{}\n".format(n, 1-F[0], 1-F[1], "\t".join(X_vals)))
-                out={"true_pocket_residues_fraction" : round(1-float(F[0]),3) , "ligand_atom_fraction" : round(1-float(F[1]),3), "parameters" : X}
+                ofs.write("{}\t{:.3f}\t{:.3f}\t{:.3f}\t{}\n".format(n, 1-F[0], 1-F[1],1-F[2], "\t".join(X_vals)))
+                out={"true_pocket_residues_fraction" : round(1-float(F[0]),3) , 
+                     "ligand_atom_fraction" : round(1-float(F[1]),3),
+                     "positive_pockets_fraction" : round(1-float(F[2]),3),
+                      "parameters" : X}
                 jsfs=open("{}/result_{}.json".format(odir, n), "w")
                 json.dump(out, jsfs, indent=2)
                 jsfs.close()
@@ -311,4 +309,91 @@ class FpocketCallback(Callback):
         else:
             ofs.write("No optimal parameters found.\n")
         ofs.close()
+
+
+def run_NSGA2(args):
+    from pymoo.algorithms.nsga2 import NSGA2
+    from pymoo.optimize import minimize
+    from pymoo.util.termination.default import MultiObjectiveDefaultTermination
+    import matplotlib.pyplot as plt
+    import json
+    from pymoo.configuration import Configuration
+    from pickpocket.base import PickPocket
+    Configuration.show_compile_hint = False
+    if args.known :
+        params= json.parse(args.known)
+        full_arg_list = ["m", "M", "A", "i", "D", "s", "n", "r" ]
+        for k in params:
+            if not k in full_arg_list:
+                raise ValueError("Error! file {} contains unknown key {}. \nAllowed keys: {}".format(args.known, k, full_arg_list)) 
+    else:
+        params=None
+    print("\nStarting the optimization process with {} threads".format(args.threads))
+    print(" 1 - Setting up the work space...", end="", flush=True)
+    pickpocket = PickPocket(args.pdb_dir, args.pdbs, args.ligands, info_dir="{}/info/".format(args.output), pymol_dir="{}/pymol/".format(args.output))
+    print("Done.")
+    print(" 2 - Identifying the full pockets and redundancy...", end="", flush=True)
+    pickpocket.process_structures(distance=args.distance ,rms_thr=args.rmsd_thr  ,optimization = True)
+    print("Done.")
+    print("\n\tFound {} pdbs with pockets having residues with a distance of {} from the respective ligand atoms.".format(len(pickpocket.get_ids("positive")), args.distance))
+    print("\tUsing {} non redundant pdbs for the optimization ( rmsd threshold of {} ).".format( len(pickpocket.get_ids("optimized")), args.rmsd_thr))
+    print("\n\tWork space state:")
+    print("\t Structures")
+    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.pdbs) ))
+    print("\t  {:15}:{:^10}".format("Positive", len(pickpocket.get_ids("positive"))))
+    print("\t  {:15}:{:^10}".format("Negative", len(pickpocket.get_ids("negative"))))
+    print("\t  {:15}:{:^10}".format("Optimization", len(pickpocket.get_ids("optimized"))))
+    print("\t Ligands")
+    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.ligands.keys())))
+    print("\t Additional Ligands:")
+    print("\t  {:15}:{:^10}".format("Total", len(pickpocket.unlisted_ligands.keys())))
+    print("\n\tAn extended list is present in the files {}/infos/*.ls\n".format(args.output))
+    if args.download:
+        print("Done. You can copy {} in another location and run the optimization offline.".format(args.pdb_dir))
+        return
+    problem = FpocketOptimizer(
+        pockets=pickpocket.get_optimization_pockets(), 
+        files=pickpocket.get_files_list(pdb_class="optimized", nohet=True), 
+        params= params, 
+        max_none=args.max_none,
+        timeout=args.timeout , 
+        max_tests=args.max_tests,
+        threads = args.threads,
+        max_timeout= args.max_timeout
+        )
+    print(" 3 - Starting the NSGA2 parameters optimization with the following settings:")
+    print("\t{:15}:{:^10}".format("Pop size", args.pop_size))
+    print("\t{:15}:{:^10}".format("Max gen", args.max_gen))
+    print("\t{:15}:{:^10}".format("Timeout", str(args.timeout)+" sec" ), flush=True)
+    
+    algorithm = NSGA2(pop_size=args.pop_size,
+                   sampling= FpocketOptimizerSampling(),
+                   mutations = FpocketOptimizerMutation(),
+                   eliminate_duplicates=FpocketOptimizerDuplicateElimination()
+                    )
+    termination = MultiObjectiveDefaultTermination(
+        f_tol=0.05,
+        nth_gen=2,
+        n_last=3,
+        n_max_gen=args.max_gen,
+        n_max_evals=100000
+        )
+    
+    res = minimize(problem, algorithm, termination, seed=1, verbose=True , save_history=True, callback=FpocketCallback(out_dir="{}/generations/".format(args.output)))
+    ret1 = [1-np.min([ f[0] for f in e.pop.get("F") ]) for e in res.history]
+    ret2 = [1-np.min([ f[1] for f in e.pop.get("F") ]) for e in res.history]
+    ret3 = [1-np.min([ f[2] for f in e.pop.get("F") ]) for e in res.history]
+    plt.plot(np.arange(len(ret1)), ret1, "--", label="F1", color="red")
+    plt.plot(np.arange(len(ret2)), ret2, "--", label="F2", color="blue")
+    plt.plot(np.arange(len(ret3)), ret3, "--", label="F3", color="green")
+    plt.title("Convergence")
+    plt.xlabel("Generation")
+    plt.ylabel("F")
+    plt.legend()
+    plt.savefig("{}/evolution.pdf".format(args.output))
+    plt.close()
+    if type(res.opt) is not type(None) and len(res.opt) > 0 :
+        print("Found {} non dominant solution in the last generation.".format(len(res.opt)))
+    else:
+        print("No optimal parameters found.")
     

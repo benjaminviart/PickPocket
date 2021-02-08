@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 14.1120
+HEADER 1  - Drug Score                        : 0.1614
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.0871
+HEADER 4  - Mean alpha-sphere SA              : 0.6193
+HEADER 5  - Mean B-factor                     : 0.1032
+HEADER 6  - Hydrophobicity Score              : 46.2857
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 494.2675
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 19.0000
+HEADER 12 - Number of apolar alpha sphere     :    20
+HEADER 13 - Proportion of apolar alpha sphere : 0.6667
+ATOM    605   CB ALA A  76       5.524   9.681   3.672  1.00 12.42           C 0
+ATOM    604    O ALA A  76       6.826   7.652   1.366  1.00 11.38           O 0
+ATOM    602   CA ALA A  76       5.095   8.999   2.372  1.00 10.33           C 0
+ATOM     31    N ALA A   3       5.394  13.049   0.077  1.00 12.78           N 0
+ATOM     26   CA SER A   2       7.294  14.065  -1.150  1.00 13.79           C 0
+ATOM     27    C SER A   2       6.028  13.134  -1.086  1.00 12.91           C 0
+ATOM    636   CD ARG A  80      11.363   6.772   3.066  1.00 21.73           C 0
+ATOM    639  NH1 ARG A  80       8.779   6.710   4.869  1.00 33.28           N 0
+ATOM    634   CB ARG A  80       9.960   6.629   0.982  1.00 14.10           C 0
+ATOM     20    O MET A   1       9.888  14.562  -1.919  1.00 18.53           O 0
+ATOM    635   CG ARG A  80      11.399   6.444   1.534  1.00 17.74           C 0
+ATOM    666  CD1 LEU A  83      11.608   9.396  -3.316  1.00 18.19           C 0
+ATOM    627   CB VAL A  79       6.319   8.819  -2.284  1.00 10.50           C 0
+ATOM    628  CG1 VAL A  79       7.345   9.627  -3.080  1.00 10.79           C 0
+ATOM    630    N ARG A  80       8.402   6.863  -0.881  1.00 10.61           N 0
+ATOM    631   CA ARG A  80       9.843   6.509  -0.525  1.00 11.04           C 0
+ATOM     19    C MET A   1       9.093  14.341  -2.739  1.00 19.07           C 0
+ATOM     25    N SER A   2       7.826  14.077  -2.476  1.00 14.59           N 0
+ATOM     21   CB MET A   1       9.318  12.930  -4.798  1.00 24.80           C 0
+ATOM     29   CB SER A   2       6.876  15.475  -0.726  1.00 17.08           C 0
+TER
+END

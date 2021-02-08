@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 23.9896
+HEADER 1  - Drug Score                        : 0.5711
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.6552
+HEADER 4  - Mean alpha-sphere SA              : 0.3319
+HEADER 5  - Mean B-factor                     : 0.2547
+HEADER 6  - Hydrophobicity Score              : 57.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 4.1000
+HEADER 9  - Real volume (approximation)       : 235.3133
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 28.8667
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    471  CD2 TYR A  75     -15.664 -13.584  29.617  1.00 22.51           C 0
+ATOM   1052   OG SER A 149     -14.142 -10.650  23.207  1.00 14.50           O 0
+ATOM    468   CB TYR A  75     -15.449 -14.680  27.350  1.00 15.17           C 0
+ATOM    467    O TYR A  75     -18.271 -13.705  26.627  1.00 15.32           O 0
+ATOM   1698  CD1 LEU A 235     -14.912  -6.043  26.121  1.00 16.16           C 0
+ATOM   1501  CE2 PHE A 206     -11.761 -11.813  29.455  1.00 39.27           C 0
+ATOM   1058   CBAMET A 150     -12.879 -15.223  24.535  0.54 17.03           C 0
+ATOM   1053    N MET A 150     -12.782 -13.403  22.834  1.00 12.86           N 0
+ATOM   1228   CG PRO A 174      -9.760 -10.182  24.283  1.00 16.90           C 0
+ATOM   1281  CG2 THR A 180     -10.323  -7.145  27.668  1.00 15.55           C 0
+ATOM   1951  NE2 HIS A 264     -14.550  -8.069  22.696  1.00 13.20           N 0
+ATOM   1502   CZ PHE A 206     -10.655 -11.023  29.217  1.00 38.43           C 0
+ATOM   1950  CE1 HIS A 264     -13.448  -7.482  22.264  1.00 12.80           C 0
+ATOM   1257  CD2 LEU A 177      -7.626 -11.702  27.517  1.00 29.94           C 0
+ATOM   1082  CD2 LEU A 153      -6.664 -15.629  24.644  1.00 31.58           C 0
+ATOM   1256  CD1 LEU A 177      -7.155 -13.673  28.928  1.00 34.90           C 0
+ATOM   1064   CEAMET A 150     -12.610 -16.823  27.619  0.54 23.94           C 0
+ATOM   1060   CGAMET A 150     -12.448 -16.671  24.861  0.54 16.73           C 0
+ATOM   1054   CAAMET A 150     -12.081 -14.580  23.382  0.54 12.36           C 0
+TER
+END

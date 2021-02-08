@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    22:
+HEADER 0  - Pocket Score                      : 1.2400
+HEADER 1  - Drug Score                        : 0.0387
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8181
+HEADER 4  - Mean alpha-sphere SA              : 0.5932
+HEADER 5  - Mean B-factor                     : 0.2932
+HEADER 6  - Hydrophobicity Score              : 42.6250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1250
+HEADER 9  - Real volume (approximation)       : 328.0745
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 6.0000
+HEADER 12 - Number of apolar alpha sphere     :     7
+HEADER 13 - Proportion of apolar alpha sphere : 0.2188
+ATOM     43  CG1 VAL A 236      18.695 -22.045  18.119  1.00 37.02           C 0
+ATOM     52  OE1 GLU A 237      18.233 -24.374  20.973  1.00 52.13           O 0
+ATOM     53  OE2 GLU A 237      18.580 -25.402  19.055  1.00 64.02           O 0
+ATOM      1    N SER A 231      22.484 -20.383  23.129  1.00 67.68           N 0
+ATOM   1269  NE2 GLN A 407      23.624 -25.702  14.495  1.00 67.12           N 0
+ATOM   1232   CB ALA A 403      25.702 -18.885  17.871  1.00 35.32           C 0
+ATOM   1268  OE1 GLN A 407      22.695 -24.203  13.100  1.00 74.68           O 0
+ATOM   1267   CD GLN A 407      23.698 -24.745  13.577  1.00 64.38           C 0
+ATOM   1234   CA TYR A 404      22.526 -19.506  14.587  1.00 36.81           C 0
+ATOM   1231    O ALA A 403      25.359 -19.885  14.785  1.00 36.49           O 0
+ATOM   1265   CB GLN A 407      25.332 -22.855  13.243  1.00 50.10           C 0
+ATOM   1233    N TYR A 404      23.481 -18.794  15.477  1.00 36.51           N 0
+ATOM   1230    C ALA A 403      24.793 -19.075  15.532  1.00 36.57           C 0
+ATOM   1239  CD1 TYR A 404      19.578 -21.050  14.111  1.00 37.20           C 0
+ATOM      4    O SER A 231      21.033 -21.891  24.737  1.00 76.88           O 0
+ATOM     38    N VAL A 236      17.922 -21.073  20.987  1.00 37.21           N 0
+ATOM     32   CA PRO A 235      18.177 -21.421  23.383  1.00 41.53           C 0
+ATOM   1210  CG2 THR A 400      19.862 -18.080  20.238  1.00 32.42           C 0
+ATOM   1207    O THR A 400      22.129 -17.532  17.828  1.00 32.21           O 0
+ATOM   1205   CA THR A 400      21.998 -16.718  20.080  1.00 31.24           C 0
+ATOM     42   CB VAL A 236      18.194 -20.690  18.540  1.00 36.02           C 0
+ATOM   1237   CB TYR A 404      21.074 -19.191  14.928  1.00 35.78           C 0
+TER
+END

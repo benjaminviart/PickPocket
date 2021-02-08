@@ -1,0 +1,45 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    62:
+HEADER 0  - Pocket Score                      : 1.1911
+HEADER 1  - Drug Score                        : 0.0034
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 4.2572
+HEADER 4  - Mean alpha-sphere SA              : 0.6636
+HEADER 5  - Mean B-factor                     : 0.3423
+HEADER 6  - Hydrophobicity Score              : -43.5000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.1667
+HEADER 9  - Real volume (approximation)       : 436.5113
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 5.0000
+HEADER 12 - Number of apolar alpha sphere     :     6
+HEADER 13 - Proportion of apolar alpha sphere : 0.1765
+ATOM     10   CB ARG A   3      69.923  81.338  46.056  1.00 19.88           C 0
+ATOM     13   NE ARG A   3      72.076  82.384  47.898  1.00 16.09           N 0
+ATOM     14   CZ ARG A   3      71.704  82.747  49.127  1.00 15.12           C 0
+ATOM     16  NH2 ARG A   3      72.139  82.066  50.174  1.00 15.54           N 0
+ATOM   7305  CD2 HIS C 304      67.167  83.127  49.483  1.00 17.38           C 0
+ATOM      6    N ARG A   3      68.479  79.600  45.154  1.00 23.58           N 0
+ATOM      3    C GLU A   2      67.380  79.069  44.637  1.00 27.61           C 0
+ATOM      2   CA GLU A   2      67.314  77.545  44.632  1.00 29.85           C 0
+ATOM      1    N GLU A   2      66.004  77.070  45.066  1.00 30.94           N 0
+ATOM   7306  CE1 HIS C 304      65.352  82.473  48.440  1.00 18.53           C 0
+ATOM      4    O GLU A   2      66.458  79.743  44.183  1.00 28.05           O 0
+ATOM   7304  ND1 HIS C 304      65.120  82.411  49.740  1.00 19.08           N 0
+ATOM   7307  NE2 HIS C 304      66.588  82.904  48.257  1.00 17.48           N 0
+ATOM   7364  NH2AARG C 310      71.646  80.524  53.702  0.45 20.55           N 0
+ATOM   7321   CB GLU C 306      68.037  80.013  55.450  1.00 19.95           C 0
+ATOM   7322   CG GLU C 306      66.896  78.987  55.603  0.52 22.53           C 0
+ATOM   7362  NH1AARG C 310      71.674  78.788  55.198  0.45 21.06           N 0
+ATOM   7303   CG HIS C 304      66.245  82.810  50.426  1.00 17.35           C 0
+ATOM   7324  OE1 GLU C 306      65.259  80.384  54.480  1.00 24.87           O 0
+ATOM   7302   CB HIS C 304      66.299  82.876  51.923  1.00 16.97           C 0
+ATOM   7333  OD2 ASP C 307      69.946  84.088  51.860  1.00 16.83           O 0
+ATOM   7326    N ASP C 307      69.416  82.933  55.419  1.00 13.72           N 0
+ATOM   7331   CG ASP C 307      70.735  83.839  52.795  1.00 14.60           C 0
+ATOM   7332  OD1 ASP C 307      71.630  82.973  52.697  1.00 16.21           O 0
+TER
+END

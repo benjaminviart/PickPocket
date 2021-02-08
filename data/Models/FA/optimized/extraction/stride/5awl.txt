@@ -1,0 +1,26 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb5awl.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                .                                                       ~~~~
+SEQ  1    YYDPETGTWY                                           10          ~~~~
+STR        BTTTTT B                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  TurnI        ASP     3 A      THR      6 A                            ~~~~
+LOC  TurnI        PRO     4 A      GLY      7 A                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  TYR A    1    1    C          Coil    360.00    150.44     174.2      ~~~~
+ASG  TYR A    2    2    B        Bridge    -93.26    138.44     165.4      ~~~~
+ASG  ASP A    3    3    T          Turn    -75.58    133.63      51.1      ~~~~
+ASG  PRO A    4    4    T          Turn    -71.80    -20.92     123.8      ~~~~
+ASG  GLU A    5    5    T          Turn    -91.87    -40.79     176.0      ~~~~
+ASG  THR A    6    6    T          Turn   -106.28    -17.07      88.6      ~~~~
+ASG  GLY A    7    7    T          Turn     70.40     17.04      49.6      ~~~~
+ASG  THR A    8    8    C          Coil   -104.00    153.28      83.0      ~~~~
+ASG  TRP A    9    9    B        Bridge    -80.57    133.24     178.5      ~~~~
+ASG  TYR A   10   10    C          Coil   -136.82    360.00     163.9      ~~~~

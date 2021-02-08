@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 11.9277
+HEADER 1  - Drug Score                        : 0.2383
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.1575
+HEADER 4  - Mean alpha-sphere SA              : 0.5552
+HEADER 5  - Mean B-factor                     : 0.0926
+HEADER 6  - Hydrophobicity Score              : 58.5556
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 255.8325
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 31.0000
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1894  CE1 PHE A 231      11.057  13.828  24.256  1.00 25.63           C 0
+ATOM   1006   CG MET A 123      10.061  11.510  21.257  1.00 23.04           C 0
+ATOM   2136   CBASER A 261      11.868  14.587  20.228  0.49 18.23           C 0
+ATOM   2119    O TYR A 260      14.413  15.526  22.125  1.00 24.21           O 0
+ATOM   2138   OGASER A 261      11.728  13.590  19.225  0.49 19.43           O 0
+ATOM   2320    O LEU A 287      15.572   8.146  27.586  1.00 24.79           O 0
+ATOM   2321   CB LEU A 287      13.867  10.105  28.876  1.00 19.22           C 0
+ATOM   2115   CB ALA A 259      12.930  15.582  26.554  1.00 18.92           C 0
+ATOM    135  CD1 LEU A  17      14.064   6.715  24.105  1.00 23.35           C 0
+ATOM    111   OG SER A  14      16.471   7.494  21.472  1.00 25.45           O 0
+ATOM   1896   CZ PHE A 231      10.593  12.938  25.224  1.00 25.62           C 0
+ATOM   2324  CD2 LEU A 287      11.455  10.354  28.160  1.00 21.43           C 0
+ATOM   1008   CE MET A 123       9.901   9.967  23.627  1.00 18.03           C 0
+ATOM   2323  CD1 LEU A 287      12.797  12.381  28.852  1.00 29.88           C 0
+ATOM   1007   SD MET A 123      10.087   9.787  21.850  1.00 21.89           S 0
+ATOM    110   CB SER A  14      16.408   8.314  20.313  1.00 24.58           C 0
+ATOM    106    N SER A  14      14.122   7.671  19.652  1.00 22.69           N 0
+ATOM     89    O TYR A  12      11.360   9.695  18.290  1.00 18.97           O 0
+TER
+END

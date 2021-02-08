@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   240:
+HEADER 0  - Pocket Score                      : -0.8731
+HEADER 1  - Drug Score                        : 0.0634
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.1437
+HEADER 4  - Mean alpha-sphere SA              : 0.3824
+HEADER 5  - Mean B-factor                     : 0.0015
+HEADER 6  - Hydrophobicity Score              : 49.4286
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.8571
+HEADER 9  - Real volume (approximation)       : 52.2527
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 18.0000
+HEADER 12 - Number of apolar alpha sphere     :    19
+HEADER 13 - Proportion of apolar alpha sphere : 0.6333
+ATOM  96214 APOL STP   240      -0.807 -55.836  37.254    0.00     3.25
+ATOM  280b2 APOL STP   240      -0.862 -56.270  37.866    0.00     3.08
+ATOM  2811c APOL STP   240      -0.719 -55.613  37.219    0.00     3.24
+ATOM  1fc9b APOL STP   240      -0.677 -55.904  36.949    0.00     3.24
+ATOM  1fc9b APOL STP   240      -0.661 -55.924  36.924    0.00     3.23
+ATOM  2ee29  POL STP   240      -0.659 -55.640  37.081    0.00     3.23
+ATOM  2ee29 APOL STP   240      -0.152 -55.962  36.447    0.00     3.06
+ATOM  2ee66 APOL STP   240      -0.861 -56.273  37.877    0.00     3.08
+ATOM  2811c APOL STP   240      -0.823 -55.123  37.187    0.00     3.05
+ATOM  2ee66 APOL STP   240      -0.855 -56.265  37.887    0.00     3.07
+ATOM  2ee29  POL STP   240      -0.706 -55.587  37.209    0.00     3.24
+ATOM  2811c APOL STP   240      -0.728 -55.200  37.157    0.00     3.13
+ATOM  2ee29  POL STP   240      -0.672 -55.390  37.163    0.00     3.21
+ATOM  2ee28 APOL STP   240      -0.620 -55.208  37.157    0.00     3.16
+ATOM  2ee29 APOL STP   240       0.284 -56.020  35.962    0.00     3.00
+ATOM  27f37 APOL STP   240       1.178 -57.486  33.592    0.00     3.07
+ATOM  2ec5b APOL STP   240       1.168 -56.962  33.839    0.00     3.18
+ATOM  28125 APOL STP   240       1.443 -56.758  33.637    0.00     3.06
+ATOM  33704 APOL STP   240       1.163 -57.622  33.525    0.00     3.05
+ATOM  3398d  POL STP   240       1.333 -56.557  33.846    0.00     3.21
+ATOM  3398d  POL STP   240       1.318 -56.576  33.854    0.00     3.22
+ATOM  3398c  POL STP   240       1.186 -56.807  33.973    0.00     3.21
+ATOM  33704 APOL STP   240       1.127 -57.693  33.486    0.00     3.03
+ATOM  33723 APOL STP   240       1.327 -56.516  33.840    0.00     3.21
+ATOM  3398d APOL STP   240       1.327 -56.535  33.849    0.00     3.22
+ATOM  3398c  POL STP   240       1.327 -56.520  33.851    0.00     3.21
+ATOM  33993  POL STP   240       1.429 -56.136  33.924    0.00     3.12
+ATOM  3398c  POL STP   240       0.984 -56.575  34.249    0.00     3.14
+ATOM  3398d  POL STP   240       0.753 -56.335  34.660    0.00     3.06
+ATOM  33992  POL STP   240       0.782 -56.282  34.651    0.00     3.04
+TER
+END

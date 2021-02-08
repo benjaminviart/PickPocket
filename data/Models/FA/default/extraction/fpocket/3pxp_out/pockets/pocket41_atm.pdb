@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    42:
+HEADER 0  - Pocket Score                      : -1.2532
+HEADER 1  - Drug Score                        : 0.0046
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.7760
+HEADER 4  - Mean alpha-sphere SA              : 0.6118
+HEADER 5  - Mean B-factor                     : 0.5285
+HEADER 6  - Hydrophobicity Score              : -1.5000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 2.9000
+HEADER 9  - Real volume (approximation)       : 706.3936
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.0645
+ATOM    445  ND1AHIS A  51      20.586 -19.361  -1.660  0.50 49.38           N 0
+ATOM    434    O ALA A  50      24.333 -20.518  -0.761  1.00 46.85           O 0
+ATOM   2775   CB ALA B  54      23.508 -13.024  -5.885  1.00 45.69           C 0
+ATOM     24  NH2 ARG A   3      25.723 -18.223   0.564  1.00 61.94           N 0
+ATOM    449  CE1AHIS A  51      20.202 -19.793  -2.849  0.50 49.44           C 0
+ATOM    437   CAAHIS A  51      22.147 -20.487   0.996  0.50 43.07           C 0
+ATOM    680    O GLY A  80      29.335 -12.216  -0.630  1.00 56.74           O 0
+ATOM    696  CD1 ILE A  82      32.179 -15.039  -3.063  1.00 82.36           C 0
+ATOM     23  NH1 ARG A   3      27.911 -18.083   1.220  1.00 45.12           N 0
+ATOM     22   CZ ARG A   3      26.884 -18.813   0.810  1.00 64.33           C 0
+ATOM    689    N ILE A  82      30.003 -11.573  -3.996  1.00 70.19           N 0
+ATOM    688  CD1 ILE A  81      25.156 -11.080  -3.001  1.00 76.23           C 0
+ATOM     19   CG ARG A   3      28.746 -21.508  -0.428  1.00 42.36           C 0
+ATOM     12  OE1 GLU A   2      32.475 -19.350  -4.775  1.00 81.45           O 0
+ATOM     21   NE ARG A   3      27.013 -20.120   0.655  1.00 53.99           N 0
+ATOM     14    N ARG A   3      31.767 -20.717  -0.660  1.00 33.27           N 0
+ATOM      6   CA GLU A   2      33.286 -18.969  -1.517  1.00 33.48           C 0
+ATOM    693   CB ILE A  82      31.803 -13.154  -4.767  1.00 74.76           C 0
+ATOM    692    O ILE A  82      29.784 -11.610  -6.742  1.00 77.56           O 0
+ATOM    695  CG2 ILE A  82      33.024 -13.277  -5.716  1.00 76.17           C 0
+ATOM     13  OE2 GLU A   2      33.626 -17.670  -5.617  1.00 85.21           O 0
+ATOM    700    O GLU A  83      32.516 -11.807  -8.900  1.00 82.25           O 0
+ATOM    707   CA GLN A  84      31.485 -11.637 -11.512  1.00 83.35           C 0
+TER
+END

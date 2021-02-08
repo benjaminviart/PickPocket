@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   168:
+HEADER 0  - Pocket Score                      : -1.8956
+HEADER 1  - Drug Score                        : 0.0037
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9767
+HEADER 4  - Mean alpha-sphere SA              : 0.4048
+HEADER 5  - Mean B-factor                     : 0.0000
+HEADER 6  - Hydrophobicity Score              : -23.1250
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.1250
+HEADER 9  - Real volume (approximation)       : 387.3289
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 19.8095
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.7500
+ATOM  33815  OP1 DT  J  31     -32.411  33.646  -5.151  1.00  0.00           O 0
+ATOM  33796  OP2 DT  J  30     -30.212  27.239  -7.066  1.00  0.00           O 0
+ATOM  33798  C5' DT  J  30     -29.779  29.409  -4.986  1.00  0.00           C 0
+ATOM  26882  NH2 ARG F 468     -35.963  30.679 -10.236  1.00  0.00           N 0
+ATOM  33795  OP1 DT  J  30     -31.688  26.808  -5.017  1.00  0.00           O 0
+ATOM  26846  ND2 ASN F 464     -31.038  31.889 -11.188  1.00  0.00           N 0
+ATOM  33816  OP2 DT  J  31     -29.924  33.656  -5.766  1.00  0.00           O 0
+ATOM  26881  NH1 ARG F 468     -34.817  29.234 -11.600  1.00  0.00           N 0
+ATOM  33802  O3' DT  J  30     -30.770  32.276  -3.873  1.00  0.00           O 0
+ATOM  26878   CD ARG F 468     -37.177  27.810 -12.175  1.00  0.00           C 0
+ATOM  26879   NE ARG F 468     -37.083  28.975 -11.300  1.00  0.00           N 0
+ATOM   7522   NZ LYS C 496     -36.066  23.221  -9.802  1.00  0.00           N 0
+ATOM  26880   CZ ARG F 468     -35.955  29.629 -11.045  1.00  0.00           C 0
+ATOM   7521   CE LYS C 496     -34.774  22.840  -9.168  1.00  0.00           C 0
+ATOM   7387  NH2 ARG C 478     -38.761  25.849  -5.752  1.00  0.00           N 0
+ATOM   7384   NE ARG C 478     -40.525  27.325  -5.769  1.00  0.00           N 0
+ATOM  26877   CG ARG F 468     -38.567  27.196 -12.155  1.00  0.00           C 0
+ATOM   7507  OD1 ASN C 494     -37.659  22.927  -7.445  1.00  0.00           O 0
+ATOM   7375  OE1 GLU C 477     -39.090  30.619  -2.537  1.00  0.00           O 0
+ATOM   7376  OE2 GLU C 477     -38.052  32.487  -2.032  1.00  0.00           O 0
+TER
+END

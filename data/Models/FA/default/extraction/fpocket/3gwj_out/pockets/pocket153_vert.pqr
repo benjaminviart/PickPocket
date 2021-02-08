@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   154:
+HEADER 0  - Pocket Score                      : 0.0157
+HEADER 1  - Drug Score                        : 0.0078
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.7244
+HEADER 4  - Mean alpha-sphere SA              : 0.4708
+HEADER 5  - Mean B-factor                     : 0.1666
+HEADER 6  - Hydrophobicity Score              : 19.3000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.8000
+HEADER 9  - Real volume (approximation)       : 218.6230
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 8.0000
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.3000
+ATOM  199a1  POL STP   154     -22.803  10.437  -9.194    0.00     3.06
+ATOM  199a3  POL STP   154     -22.488  10.283  -9.469    0.00     3.17
+ATOM  1a144  POL STP   154     -22.493  10.280  -9.478    0.00     3.17
+ATOM  22620  POL STP   154     -25.920   8.318 -10.653    0.00     4.05
+ATOM  22620  POL STP   154     -25.814   9.016 -10.609    0.00     4.08
+ATOM  22620  POL STP   154     -24.824   7.859 -11.720    0.00     4.42
+ATOM  27fe1  POL STP   154     -25.750   9.393 -10.491    0.00     4.08
+ATOM  27fe1 APOL STP   154     -27.015   8.895 -10.504    0.00     3.46
+ATOM  22620 APOL STP   154     -24.780   8.690 -12.033    0.00     4.18
+ATOM  22620  POL STP   154     -24.737   8.411 -11.688    0.00     4.39
+ATOM  19652  POL STP   154     -25.497  10.584  -9.395    0.00     3.90
+ATOM  1f8eb  POL STP   154     -25.498  10.581  -9.408    0.00     3.91
+ATOM  1f8eb  POL STP   154     -25.491  10.589  -9.404    0.00     3.91
+ATOM  27fe1  POL STP   154     -25.618  10.046  -9.986    0.00     3.96
+ATOM  27fe8  POL STP   154     -25.838  10.497  -9.537    0.00     3.73
+ATOM  1f8e7 APOL STP   154     -25.277  10.266 -11.856    0.00     3.67
+ATOM  22620 APOL STP   154     -25.145   9.506 -11.809    0.00     3.94
+ATOM  1f8eb  POL STP   154     -25.292   9.684 -10.807    0.00     4.19
+ATOM  1f8fa  POL STP   154     -25.135  11.021 -12.236    0.00     3.28
+ATOM  22620 APOL STP   154     -25.177   9.252 -11.128    0.00     4.24
+ATOM  27fe1  POL STP   154     -25.532   9.667 -10.577    0.00     4.13
+ATOM  1f8eb  POL STP   154     -25.053  10.339 -10.197    0.00     3.98
+ATOM  1f8eb  POL STP   154     -25.305  10.645  -9.526    0.00     3.91
+ATOM  226cd APOL STP   154     -24.879  11.362 -10.860    0.00     3.27
+ATOM  1f8eb  POL STP   154     -25.528  12.184  -9.143    0.00     3.27
+ATOM  1f8eb  POL STP   154     -25.399  10.958  -9.310    0.00     3.78
+ATOM  226ca  POL STP   154     -25.093  11.164 -12.180    0.00     3.21
+ATOM  226cd APOL STP   154     -24.888  11.867 -10.917    0.00     3.00
+ATOM  27fe1 APOL STP   154     -27.625   8.714 -10.460    0.00     3.27
+ATOM  27fe1 APOL STP   154     -27.587   8.898 -10.616    0.00     3.12
+TER
+END

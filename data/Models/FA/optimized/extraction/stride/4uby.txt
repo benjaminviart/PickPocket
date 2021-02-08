@@ -1,0 +1,60 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4uby.ent_noHet.pdb A                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    GGYVLG                                                6          ~~~~
+STR          EE                                                            ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4uby.ent_noHet.pdb B                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    GGYVLG                                                6          ~~~~
+STR          BE                                                            ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4uby.ent_noHet.pdb C                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    GGYVLG                                                6          ~~~~
+STR        EEEE                                                            ~~~~
+REM                                                                        ~~~~
+CHN  ./PDB/pdb4uby.ent_noHet.pdb D                                         ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+SEQ  1    GGYVLG                                                6          ~~~~
+STR        EEEE                                                            ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       VAL   129 A      LEU    130 A                            ~~~~
+LOC  Strand       LEU   130 B      LEU    130 B                            ~~~~
+LOC  Strand       GLY   127 C      LEU    130 C                            ~~~~
+LOC  Strand       GLY   127 D      LEU    130 D                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  GLY A  126    1    C          Coil    360.00   -172.63     125.5      ~~~~
+ASG  GLY A  127    2    C          Coil   -170.36   -157.72      42.8      ~~~~
+ASG  TYR A  128    3    C          Coil   -159.39    144.58     147.6      ~~~~
+ASG  VAL A  129    4    E        Strand   -129.23    136.33      18.2      ~~~~
+ASG  LEU A  130    5    E        Strand   -115.67    124.35     144.8      ~~~~
+ASG  GLY A  131    6    C          Coil   -129.63    360.00      58.5      ~~~~
+ASG  GLY B  126    1    C          Coil    360.00    169.19     138.8      ~~~~
+ASG  GLY B  127    2    C          Coil    173.52   -176.61      57.7      ~~~~
+ASG  TYR B  128    3    C          Coil   -152.44    157.35      75.8      ~~~~
+ASG  VAL B  129    4    B        Bridge   -124.13    150.52      81.3      ~~~~
+ASG  LEU B  130    5    E        Strand   -131.23    139.91      14.4      ~~~~
+ASG  GLY B  131    6    C          Coil    128.47    360.00      85.3      ~~~~
+ASG  GLY C  126    1    C          Coil    360.00    171.10      89.7      ~~~~
+ASG  GLY C  127    2    E        Strand    170.76   -177.49      44.7      ~~~~
+ASG  TYR C  128    3    E        Strand   -159.53    145.99     119.7      ~~~~
+ASG  VAL C  129    4    E        Strand   -131.54    139.18     107.9      ~~~~
+ASG  LEU C  130    5    E        Strand   -120.66    127.56      27.5      ~~~~
+ASG  GLY C  131    6    C          Coil   -132.77    360.00     118.5      ~~~~
+ASG  GLY D  126    1    C          Coil    360.00    172.62      82.7      ~~~~
+ASG  GLY D  127    2    E        Strand    175.59    175.18      25.4      ~~~~
+ASG  TYR D  128    3    E        Strand   -150.51    158.91     163.8      ~~~~
+ASG  VAL D  129    4    E        Strand   -126.38    152.03      40.7      ~~~~
+ASG  LEU D  130    5    E        Strand   -129.80    141.92     145.2      ~~~~
+ASG  GLY D  131    6    C          Coil   -142.85    360.00     120.1      ~~~~

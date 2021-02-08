@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 23.1780
+HEADER 1  - Drug Score                        : 0.1483
+HEADER 2  - Number of V. Vertices             :    37
+HEADER 3  - Mean alpha-sphere radius          : 3.8817
+HEADER 4  - Mean alpha-sphere SA              : 0.5338
+HEADER 5  - Mean B-factor                     : 0.4663
+HEADER 6  - Hydrophobicity Score              : 22.2222
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 507.2339
+HEADER 10 - Charge Score                      :    -2
+HEADER 11 - Local hydrophobic density Score   : 22.0000
+HEADER 12 - Number of apolar alpha sphere     :    23
+HEADER 13 - Proportion of apolar alpha sphere : 0.6216
+ATOM    471  OE2 GLU A1183     -20.706   7.267 -23.533  1.00 95.38           O 0
+ATOM    781    O MET A1222     -19.971   0.204 -24.178  1.00 70.87           O 0
+ATOM    777  CG2 THR A1221     -17.597   2.568 -25.646  1.00 78.93           C 0
+ATOM    782   CB MET A1222     -18.951   0.671 -21.273  1.00 66.31           C 0
+ATOM    468   CG GLU A1183     -21.800   7.281 -21.414  1.00 71.31           C 0
+ATOM    436  CD2 LEU A1178     -23.337   0.662 -19.465  1.00 51.94           C 0
+ATOM    444   CA GLY A1180     -26.541   4.875 -21.422  1.00 57.94           C 0
+ATOM    446    O GLY A1180     -25.497   6.805 -22.377  1.00 66.97           O 0
+ATOM    440    O SER A1179     -25.274   5.349 -18.971  1.00 52.56           O 0
+ATOM    783   CG MET A1222     -20.056   0.077 -20.420  1.00 60.53           C 0
+ATOM    467   CB GLU A1183     -21.327   7.148 -19.975  1.00 59.73           C 0
+ATOM    466    O GLU A1183     -20.863   5.513 -17.595  1.00 46.60           O 0
+ATOM    435  CD1 LEU A1178     -22.941   2.410 -17.712  1.00 45.06           C 0
+ATOM    464   CA GLU A1183     -22.425   6.605 -19.051  1.00 49.35           C 0
+ATOM    434   CG LEU A1178     -23.981   1.516 -18.383  1.00 44.90           C 0
+ATOM    279  ND1 HIS A1160     -24.719  -2.480 -20.079  1.00 45.39           N 0
+ATOM    788    C SER A1223     -21.875  -3.459 -23.416  1.00 58.84           C 0
+ATOM    281  CE1 HIS A1160     -23.612  -3.199 -20.118  1.00 45.88           C 0
+ATOM    786    N SER A1223     -20.007  -1.852 -23.250  1.00 66.72           N 0
+ATOM    787   CA SER A1223     -21.063  -2.373 -24.128  1.00 66.20           C 0
+ATOM    792    N MET A1224     -22.935  -3.942 -24.063  1.00 61.07           N 0
+ATOM    798   SD MET A1224     -26.974  -4.384 -22.461  1.00 70.94           S 0
+ATOM    780    C MET A1222     -19.546  -0.608 -23.353  1.00 69.32           C 0
+TER
+END

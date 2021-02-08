@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 4.8267
+HEADER 1  - Drug Score                        : 0.0060
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.9184
+HEADER 4  - Mean alpha-sphere SA              : 0.4614
+HEADER 5  - Mean B-factor                     : 0.3590
+HEADER 6  - Hydrophobicity Score              : -17.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 305.6153
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.9643
+ATOM   3259    N ARG B  87     -34.562  13.615  -9.035  1.00 49.81           N 0
+ATOM   3244    O GLY B  84     -36.855  12.743 -13.341  1.00 49.34           O 0
+ATOM   3264   CG ARG B  87     -33.169  17.134  -8.789  1.00 53.49           C 0
+ATOM   3260   CA ARG B  87     -33.458  14.585  -8.899  1.00 49.47           C 0
+ATOM   3263   CB ARG B  87     -33.903  15.906  -8.252  1.00 51.77           C 0
+ATOM   3265   CD ARG B  87     -33.832  18.442  -8.371  1.00 54.93           C 0
+ATOM   3251  OD1 ASN B  85     -40.748  13.997 -12.445  1.00 49.40           O 0
+ATOM   5149  NH2 ARG B 335     -41.170  16.047  -7.587  1.00 56.24           N 0
+ATOM   3246   CA ASN B  85     -38.513  12.234 -11.151  1.00 48.80           C 0
+ATOM   3247    C ASN B  85     -37.814  11.864  -9.848  1.00 48.74           C 0
+ATOM   5147   CZ ARG B 335     -40.893  14.937  -6.911  1.00 55.10           C 0
+ATOM   3248    O ASN B  85     -38.469  11.600  -8.842  1.00 48.93           O 0
+ATOM   5146   NE ARG B 335     -40.271  15.026  -5.736  1.00 53.12           N 0
+ATOM   3268  NH1 ARG B  87     -35.132  20.405  -6.764  1.00 56.87           N 0
+ATOM   5185  OE2 GLU B 339     -40.184  17.145  -3.440  1.00 40.32           O 0
+ATOM   5312  CZ3 TRP B 356     -35.083  17.014  -3.157  1.00 36.30           C 0
+ATOM   5144   CG ARG B 335     -38.797  14.287  -3.908  1.00 48.22           C 0
+ATOM   3255    C SER B  86     -34.737  12.575  -8.217  1.00 49.20           C 0
+ATOM   3256    O SER B  86     -34.217  12.496  -7.098  1.00 48.52           O 0
+ATOM   5313  CH2 TRP B 356     -36.173  17.440  -2.389  1.00 36.24           C 0
+TER
+END

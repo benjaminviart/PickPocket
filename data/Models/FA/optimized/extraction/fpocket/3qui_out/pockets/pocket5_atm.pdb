@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 5.0728
+HEADER 1  - Drug Score                        : 0.0919
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.8882
+HEADER 4  - Mean alpha-sphere SA              : 0.4264
+HEADER 5  - Mean B-factor                     : 0.3156
+HEADER 6  - Hydrophobicity Score              : 38.7778
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 230.2934
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 32.0000
+HEADER 12 - Number of apolar alpha sphere     :    33
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   1296  CD2 TYR C  25      43.071   7.303  22.857  1.00 29.90           C 0
+ATOM   1298  CE2 TYR C  25      43.850   7.583  23.970  1.00 35.07           C 0
+ATOM    781  CG2 ILE B  30      36.857  10.663  25.459  1.00 25.08           C 0
+ATOM    780  CG1 ILE B  30      36.348   8.325  26.117  1.00 30.56           C 0
+ATOM    799  CD2 LEU B  32      38.912  13.996  24.281  1.00 19.86           C 0
+ATOM   1294   CG TYR C  25      43.062   8.155  21.761  1.00 28.87           C 0
+ATOM   1299   CZ TYR C  25      44.633   8.733  23.989  1.00 37.75           C 0
+ATOM   1295  CD1 TYR C  25      43.861   9.300  21.803  1.00 30.21           C 0
+ATOM   1297  CE1 TYR C  25      44.642   9.594  22.905  1.00 27.05           C 0
+ATOM   1592  OG1 THR C  61      42.079  11.359  20.171  1.00 26.14           O 0
+ATOM    959  OE1 GLN B  52      42.154  14.916  22.196  1.00 35.79           O 0
+ATOM    754  CD1 LEU B  26      36.702  11.052  21.440  1.00 25.28           C 0
+ATOM   1293   CB TYR C  25      42.214   7.854  20.558  1.00 25.75           C 0
+ATOM    770  ND2 ASN B  28      35.983   6.051  21.742  1.00 36.15           N 0
+ATOM   1586   OG SER C  60      38.991   8.891  18.916  1.00 23.92           O 0
+ATOM   1304    O LEU C  26      38.912   5.196  19.391  1.00 20.10           O 0
+ATOM    779   CB ILE B  30      35.827   9.536  25.333  1.00 26.84           C 0
+ATOM   1325   CA GLY C  29      38.965   3.615  22.647  1.00 33.36           C 0
+ATOM    782  CD1 ILE B  30      35.645   7.035  25.807  1.00 35.17           C 0
+ATOM   1327    O GLY C  29      41.087   3.200  23.686  1.00 36.15           O 0
+TER
+END

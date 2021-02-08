@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 6.8723
+HEADER 1  - Drug Score                        : 0.0089
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 4.1637
+HEADER 4  - Mean alpha-sphere SA              : 0.5688
+HEADER 5  - Mean B-factor                     : 0.2896
+HEADER 6  - Hydrophobicity Score              : 11.8750
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 4.5000
+HEADER 9  - Real volume (approximation)       : 470.1631
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.1429
+ATOM    118  ND2AASN A  16      43.859  56.321  15.600  0.44 30.97           N 0
+ATOM    116  OD1AASN A  16      44.533  58.213  16.598  0.44 34.41           O 0
+ATOM    146  OD2 ASP A  19      49.893  58.335  16.701  1.00 53.74           O 0
+ATOM    114   CGAASN A  16      44.448  57.510  15.595  0.44 26.51           C 0
+ATOM   1032  CG2 VAL A 122      51.049  54.845  12.821  1.00 27.58           C 0
+ATOM   1024  OD2AASP A 121      52.658  50.623  16.081  0.28 37.11           O 0
+ATOM   1016    OAASP A 121      49.217  50.733  13.935  0.28 30.89           O 0
+ATOM   1022  OD1AASP A 121      52.901  51.567  14.111  0.28 34.90           O 0
+ATOM   1020   CGAASP A 121      52.501  50.635  14.842  0.28 34.55           C 0
+ATOM   2839    O ILE C  87      49.499  47.745  16.941  1.00 42.50           O 0
+ATOM   2850  OD1 ASP C  88      51.060  49.248  21.318  1.00 54.80           O 0
+ATOM   2849   CG ASP C  88      49.895  48.789  21.289  1.00 66.97           C 0
+ATOM   2851  OD2 ASP C  88      48.931  49.342  21.862  1.00 67.37           O 0
+ATOM   2845   CA ASP C  88      50.669  47.240  19.433  1.00 38.10           C 0
+ATOM   2835   NZ LYS C  86      43.554  51.226  15.715  1.00 54.74           N 0
+ATOM   2831   CB LYS C  86      45.230  47.399  16.448  1.00 41.65           C 0
+ATOM   2833   CD LYS C  86      43.960  48.909  14.863  1.00 52.52           C 0
+ATOM   1027   CA VAL A 122      49.232  53.103  12.481  1.00 27.86           C 0
+ATOM   1033    N VAL A 123      46.793  53.026  12.310  1.00 21.22           N 0
+ATOM   1031  CG1 VAL A 122      48.812  55.545  11.918  1.00 28.52           C 0
+ATOM   1036    O VAL A 123      44.344  54.671  12.812  1.00 30.69           O 0
+ATOM    143   CB ASP A  19      49.728  58.819  14.370  1.00 24.98           C 0
+ATOM    112   CBAASN A  16      45.016  57.970  14.275  0.44 28.60           C 0
+TER
+END

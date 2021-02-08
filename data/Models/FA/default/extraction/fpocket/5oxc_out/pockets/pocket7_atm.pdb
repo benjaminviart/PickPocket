@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 13.9169
+HEADER 1  - Drug Score                        : 0.0113
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.7990
+HEADER 4  - Mean alpha-sphere SA              : 0.5523
+HEADER 5  - Mean B-factor                     : 0.1084
+HEADER 6  - Hydrophobicity Score              : 4.1667
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.1667
+HEADER 9  - Real volume (approximation)       : 243.8832
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 9.0000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.3125
+ATOM    700   CE LYS A  41      -6.249  14.881  -6.359  1.00 13.80           C 0
+ATOM    701   NZ LYS A  41      -6.902  15.866  -7.225  1.00 13.85           N 0
+ATOM    609  OE2AGLU A  34       1.046  17.930  -7.010  0.50 31.68           O 0
+ATOM    755  CG2 THR A  43      -2.509  12.795  -7.286  1.00 13.75           C 0
+ATOM    754  OG1 THR A  43      -0.395  13.714  -6.767  1.00 13.66           O 0
+ATOM    600    O GLU A  34       0.421  13.916  -3.244  1.00 10.03           O 0
+ATOM    696    O LYS A  41      -3.221  14.145  -1.553  1.00 11.15           O 0
+ATOM    749    N THR A  43      -1.104  11.815  -4.765  1.00  9.14           N 0
+ATOM    698   CG LYS A  41      -5.780  14.137  -4.031  1.00 11.04           C 0
+ATOM    699   CD LYS A  41      -6.383  15.184  -4.901  1.00 12.29           C 0
+ATOM    636  OD2 ASP A  36      -4.675  20.012  -2.299  1.00 21.23           O 0
+ATOM    633   CB ASP A  36      -3.616  18.194  -1.298  1.00 13.23           C 0
+ATOM    601   CBAGLU A  34       1.806  16.342  -4.670  0.50 13.49           C 0
+ATOM    185  CG1 VAL A  11       0.750  19.847  -3.482  1.00 15.69           C 0
+ATOM    624    C GLY A  35      -0.819  16.535  -0.461  1.00  9.59           C 0
+ATOM    186  CG2 VAL A  11      -1.298  21.204  -3.146  1.00 15.76           C 0
+ATOM    629    N ASP A  36      -2.160  16.475  -0.370  1.00  9.84           N 0
+ATOM    599    C GLU A  34       1.195  14.769  -2.805  1.00  9.09           C 0
+ATOM    622    N GLY A  35       1.001  15.458  -1.678  1.00  9.26           N 0
+TER
+END

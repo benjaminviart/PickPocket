@@ -1,0 +1,55 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    18:
+HEADER 0  - Pocket Score                      : 7.6560
+HEADER 1  - Drug Score                        : 0.0267
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 4.2700
+HEADER 4  - Mean alpha-sphere SA              : 0.6839
+HEADER 5  - Mean B-factor                     : 0.2998
+HEADER 6  - Hydrophobicity Score              : 35.6667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.6667
+HEADER 9  - Real volume (approximation)       : 643.7488
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     4
+HEADER 13 - Proportion of apolar alpha sphere : 0.1212
+ATOM   2302  POL STP    18       1.965  40.402 -35.069    0.00     5.10
+ATOM   2302  POL STP    18       1.289  39.634 -35.447    0.00     5.58
+ATOM   2726  POL STP    18       0.925  40.819 -38.344    0.00     4.01
+ATOM   2726 APOL STP    18       1.344  40.598 -39.846    0.00     3.01
+ATOM   7251  POL STP    18       3.730  36.476 -33.626    0.00     3.04
+ATOM   7256 APOL STP    18       2.888  34.894 -35.659    0.00     3.41
+ATOM  12414 APOL STP    18       3.107  34.019 -36.228    0.00     3.07
+ATOM   2302  POL STP    18       3.261  38.606 -36.048    0.00     4.61
+ATOM   3612  POL STP    18       3.452  38.541 -36.069    0.00     4.53
+ATOM   2236 APOL STP    18       2.863  39.395 -37.172    0.00     3.74
+ATOM   2302  POL STP    18       3.189  38.598 -36.050    0.00     4.65
+ATOM   2236  POL STP    18       2.080  39.947 -37.170    0.00     4.01
+ATOM   3612  POL STP    18       3.294  38.496 -36.081    0.00     4.62
+ATOM   3612  POL STP    18       3.058  38.301 -35.992    0.00     4.66
+ATOM   3613  POL STP    18       2.908  37.923 -35.723    0.00     4.54
+ATOM   5140  POL STP    18       3.855  38.599 -35.993    0.00     4.30
+ATOM   7253  POL STP    18       2.041  36.898 -34.753    0.00     4.65
+ATOM   5140  POL STP    18       3.433  37.982 -35.609    0.00     4.15
+ATOM   7253  POL STP    18       1.322  36.615 -34.235    0.00     5.05
+ATOM   7253  POL STP    18       1.265  36.440 -34.214    0.00     5.02
+ATOM   7256  POL STP    18       1.746  35.668 -34.682    0.00     4.33
+ATOM   7256  POL STP    18       3.433  35.023 -36.062    0.00     3.25
+ATOM  11286  POL STP    18       0.822  34.743 -34.706    0.00     4.37
+ATOM   7256  POL STP    18       3.156  35.706 -35.762    0.00     3.50
+ATOM  12411  POL STP    18       1.323  34.354 -35.160    0.00     3.86
+ATOM   7528  POL STP    18      -0.611  36.066 -33.687    0.00     5.95
+ATOM  11286  POL STP    18      -0.292  35.346 -34.076    0.00     5.36
+ATOM   7532  POL STP    18      -0.094  34.948 -32.520    0.00     4.85
+ATOM   7229  POL STP    18       0.370  35.565 -31.508    0.00     4.07
+ATOM   7532  POL STP    18      -0.332  35.255 -32.623    0.00     5.10
+ATOM  12408  POL STP    18       1.126  33.912 -34.464    0.00     3.66
+ATOM  13170  POL STP    18       1.152  33.221 -34.058    0.00     3.26
+ATOM  13170  POL STP    18       0.648  33.267 -33.633    0.00     3.62
+TER
+END

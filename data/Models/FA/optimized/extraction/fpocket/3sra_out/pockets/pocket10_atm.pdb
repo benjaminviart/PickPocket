@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : 3.6911
+HEADER 1  - Drug Score                        : 0.0091
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 3.9394
+HEADER 4  - Mean alpha-sphere SA              : 0.5204
+HEADER 5  - Mean B-factor                     : 0.3389
+HEADER 6  - Hydrophobicity Score              : 8.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 331.0669
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 29.4839
+HEADER 12 - Number of apolar alpha sphere     :    31
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM   3802  OD2 ASP B 545      37.176  77.292  40.042  1.00 34.78           O 0
+ATOM   3614  NH2 ARG B 520      35.333  79.746  45.744  1.00 42.89           N 0
+ATOM   3765  NE2 HIS B 540      33.583  76.044  40.154  1.00 30.28           N 0
+ATOM   3763  CD2 HIS B 540      33.440  75.125  41.167  1.00 30.39           C 0
+ATOM   3581  CE1 TYR B 516      34.605  74.117  45.309  1.00 22.94           C 0
+ATOM   3779  CD1 PHE B 542      37.807  74.200  41.804  1.00 25.74           C 0
+ATOM   3603   OG SER B 519      39.018  76.271  45.922  1.00 31.76           O 0
+ATOM   3579  CD1 TYR B 516      35.748  73.524  44.799  1.00 24.08           C 0
+ATOM   3781  CE1 PHE B 542      38.948  74.952  42.069  1.00 27.13           C 0
+ATOM   3611   NE ARG B 520      35.445  78.015  47.242  1.00 41.19           N 0
+ATOM   3602   CB SER B 519      40.376  76.658  46.088  1.00 31.02           C 0
+ATOM   3601    O SER B 519      39.714  78.537  48.571  1.00 32.13           O 0
+ATOM   3760   CB HIS B 540      31.359  74.008  42.254  1.00 28.46           C 0
+ATOM   3747   CB ALA B 538      28.379  74.530  45.662  1.00 26.71           C 0
+ATOM   3584   OH TYR B 516      32.832  74.111  46.927  1.00 24.78           O 0
+ATOM   3613  NH1 ARG B 520      33.892  79.706  47.527  1.00 43.06           N 0
+ATOM   3612   CZ ARG B 520      34.887  79.156  46.842  1.00 42.37           C 0
+ATOM   3762  ND1 HIS B 540      31.480  75.698  40.385  1.00 30.31           N 0
+ATOM   3761   CG HIS B 540      32.111  74.903  41.319  1.00 30.07           C 0
+ATOM   3764  CE1 HIS B 540      32.387  76.371  39.698  1.00 30.05           C 0
+TER
+END

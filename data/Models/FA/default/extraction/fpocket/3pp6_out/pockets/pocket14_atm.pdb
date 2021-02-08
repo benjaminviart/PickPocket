@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    15:
+HEADER 0  - Pocket Score                      : 4.8332
+HEADER 1  - Drug Score                        : 0.0065
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.8313
+HEADER 4  - Mean alpha-sphere SA              : 0.4730
+HEADER 5  - Mean B-factor                     : 0.2628
+HEADER 6  - Hydrophobicity Score              : 4.3750
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.3750
+HEADER 9  - Real volume (approximation)       : 309.2967
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.1667
+ATOM    977  CD1 ILE A 116      38.947  50.921   7.533  1.00 26.84           C 0
+ATOM   1052  CG2 THR A 125      37.829  55.650  10.330  1.00 30.25           C 0
+ATOM   1051  OG1 THR A 125      39.739  54.456  11.240  1.00 31.18           O 0
+ATOM    975  CG1 ILE A 116      39.509  52.316   7.410  1.00 35.12           C 0
+ATOM    958  ND1 HIS A 114      33.851  53.728   8.537  1.00 33.53           N 0
+ATOM   2707   CB GLU C  70      35.294  46.908  11.893  1.00 44.70           C 0
+ATOM   2703    N GLU C  70      37.342  46.353  10.684  1.00 36.66           N 0
+ATOM   2684    O GLY C  68      40.493  48.694  10.302  1.00 41.68           O 0
+ATOM   2819  OG1 THR C  84      37.277  47.179  14.718  1.00 31.82           O 0
+ATOM    913   NZALYS A 109      33.480  48.404   8.248  0.58 53.27           N 0
+ATOM    911   CEALYS A 109      33.194  49.491   7.261  0.58 49.45           C 0
+ATOM    956   CB HIS A 114      34.700  53.887   6.172  1.00 21.46           C 0
+ATOM   2710  OE1 GLU C  70      32.433  48.087  12.776  1.00 45.97           O 0
+ATOM   2711  OE2 GLU C  70      33.873  48.171  14.439  1.00 46.78           O 0
+ATOM    960  CE1 HIS A 114      32.759  54.001   9.224  1.00 34.47           C 0
+ATOM   2820  CG2 THR C  84      39.633  47.513  14.296  1.00 39.47           C 0
+ATOM    965    O MET A 115      39.634  56.051   6.622  1.00 26.16           O 0
+ATOM    962    N MET A 115      37.259  55.868   4.967  1.00 23.31           N 0
+ATOM    909   CDALYS A 109      31.796  50.078   7.427  0.58 43.77           C 0
+ATOM   2709   CD GLU C  70      33.439  47.659  13.387  1.00 47.91           C 0
+TER
+END

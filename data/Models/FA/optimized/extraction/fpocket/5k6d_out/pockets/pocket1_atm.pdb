@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 30.2780
+HEADER 1  - Drug Score                        : 0.7028
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.0682
+HEADER 4  - Mean alpha-sphere SA              : 0.4438
+HEADER 5  - Mean B-factor                     : 0.2731
+HEADER 6  - Hydrophobicity Score              : 48.1667
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.8333
+HEADER 9  - Real volume (approximation)       : 429.4876
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 29.0000
+HEADER 12 - Number of apolar alpha sphere     :    30
+HEADER 13 - Proportion of apolar alpha sphere : 0.9677
+ATOM    128  CE2APHE A  14     -29.103   7.407   7.834  0.64 10.76           C 0
+ATOM    981  CD2 LEU B  53     -26.625   5.294   4.480  1.00  9.10           C 0
+ATOM    980  CD1 LEU B  53     -27.816   7.368   3.665  1.00 12.83           C 0
+ATOM    964    O VAL B  51     -23.078   6.791   3.976  1.00  7.14           O 0
+ATOM    699    O PHE B  14     -23.534  12.616   6.541  1.00 13.98           O 0
+ATOM    960    O GLY B  50     -24.243   3.957   6.902  1.00  6.58           O 0
+ATOM     55  NH1 ARG A   6     -26.730   5.306   9.742  1.00  6.99           N 0
+ATOM    644  NH1 ARG B   6     -20.897   8.509   8.642  1.00 25.71           N 0
+ATOM    124  CD2APHE A  14     -28.906   8.085   9.044  0.64 11.87           C 0
+ATOM    703  CD2 PHE B  14     -21.982  10.917  10.669  1.00 22.47           C 0
+ATOM    700   CB PHE B  14     -22.600  13.052   9.529  1.00 19.09           C 0
+ATOM    395    O VAL A  51     -23.498   4.586  14.027  1.00  8.21           O 0
+ATOM    705  CE2 PHE B  14     -21.255  10.194  11.583  1.00 22.92           C 0
+ATOM    117    O PHE A  14     -27.992   8.566  13.789  1.00 10.10           O 0
+ATOM    411  CD1 LEU A  53     -21.379   8.480  15.216  1.00 14.71           C 0
+ATOM    412  CD2 LEU A  53     -20.222   7.029  13.531  1.00 14.36           C 0
+ATOM    391    O GLY A  50     -21.172   4.998  10.542  1.00  9.80           O 0
+ATOM    118   CBAPHE A  14     -29.740   9.172  11.164  0.64 10.98           C 0
+ATOM    133   CA GLN A  15     -28.861  10.497  15.384  1.00 15.13           C 0
+ATOM    116    C PHE A  14     -29.133   8.929  13.595  1.00 10.59           C 0
+ATOM    132    N GLN A  15     -29.701   9.848  14.368  1.00 15.30           N 0
+ATOM    701   CG PHE B  14     -21.797  12.282  10.534  1.00 20.65           C 0
+ATOM    136   CB GLN A  15     -29.483  11.813  15.867  1.00 21.46           C 0
+TER
+END

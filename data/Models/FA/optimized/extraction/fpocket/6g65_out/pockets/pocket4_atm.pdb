@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 3.0051
+HEADER 1  - Drug Score                        : 0.0089
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 3.7830
+HEADER 4  - Mean alpha-sphere SA              : 0.4722
+HEADER 5  - Mean B-factor                     : 0.3158
+HEADER 6  - Hydrophobicity Score              : 5.6250
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 3.7500
+HEADER 9  - Real volume (approximation)       : 317.5168
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 27.0000
+HEADER 12 - Number of apolar alpha sphere     :    28
+HEADER 13 - Proportion of apolar alpha sphere : 0.9655
+ATOM   1000  OE2 GLU E   9       7.708  11.860  13.348  1.00 18.61           O 0
+ATOM   1656  NE2 GLN H   5      10.067  10.824  10.256  1.00 16.72           N 0
+ATOM    998   CD GLU E   9       8.585  11.144  13.887  1.00 15.48           C 0
+ATOM   1411  OE1 GLU G   2       5.343   6.061  10.181  1.00 22.92           O 0
+ATOM   1277   NZ LYS F  15       9.804   4.856  11.572  1.00 18.52           N 0
+ATOM    997   CG GLU E   9       8.153  10.270  15.068  1.00 12.15           C 0
+ATOM   1647   CB ALA H   4       5.327  10.150   7.411  1.00 10.15           C 0
+ATOM   1408   CB GLU G   2       3.113   7.806  10.266  1.00 13.37           C 0
+ATOM   1623    N GLY H   1       8.032   6.973   7.985  1.00 15.67           N 0
+ATOM    999  OE1 GLU E   9       9.772  11.141  13.500  1.00 20.72           O 0
+ATOM    970  NE2 GLN E   5       5.478  12.773  15.169  1.00 23.04           N 0
+ATOM    986    O LYS E   8       7.463   8.630  19.523  1.00  8.75           O 0
+ATOM   1017   CB LYS E  12       6.170   5.432  18.296  1.00 10.41           C 0
+ATOM    993   CA GLU E   9       8.804   8.933  17.142  1.00  8.58           C 0
+ATOM   1018   CG LYS E  12       5.554   4.602  17.180  1.00 26.22           C 0
+ATOM    985    C LYS E   8       7.902   9.757  19.249  1.00  7.87           C 0
+ATOM    987   CB LYS E   8       6.450  11.691  19.957  1.00 10.74           C 0
+ATOM    992    N GLU E   9       8.527  10.014  18.091  1.00  7.88           N 0
+ATOM    996   CB GLU E   9       9.287   9.505  15.802  1.00  9.53           C 0
+ATOM    995    O GLU E   9       9.620   6.691  17.503  1.00  7.83           O 0
+ATOM   1276   CE LYS F  15      10.206   3.981  12.709  1.00 15.88           C 0
+TER
+END

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 3.1403
+HEADER 1  - Drug Score                        : 0.0119
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 4.0183
+HEADER 4  - Mean alpha-sphere SA              : 0.4878
+HEADER 5  - Mean B-factor                     : 0.4569
+HEADER 6  - Hydrophobicity Score              : 22.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.8750
+HEADER 9  - Real volume (approximation)       : 312.0687
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 16.0000
+HEADER 12 - Number of apolar alpha sphere     :    17
+HEADER 13 - Proportion of apolar alpha sphere : 0.5000
+ATOM    271    C GLY A 231      -8.770  10.225 -16.679  1.00 41.45           C 0
+ATOM    245  CG1 VAL A 227      -9.203  11.656 -10.232  1.00 21.46           C 0
+ATOM    276    O ASN A 235      -3.989  17.539 -14.330  1.00 29.58           O 0
+ATOM    273    N ASN A 235      -6.177  18.204 -15.970  1.00 40.46           N 0
+ATOM    272    O GLY A 231      -8.952  11.022 -17.599  1.00 55.93           O 0
+ATOM    243    O VAL A 227      -8.026   9.444 -12.302  1.00 19.73           O 0
+ATOM    248   CA ILE A 228      -5.350   9.617 -11.772  1.00 16.10           C 0
+ATOM    290   CA PRO A 237      -2.260  14.151 -16.456  1.00 29.98           C 0
+ATOM    293   CB PRO A 237      -2.909  13.881 -17.829  1.00 29.12           C 0
+ATOM    250    O ILE A 228      -5.249   8.614 -13.941  1.00 20.37           O 0
+ATOM    270   CA GLY A 231      -7.839   9.043 -16.853  1.00 33.84           C 0
+ATOM    302   CD PRO A 238      -1.814  11.288 -15.622  1.00 21.62           C 0
+ATOM    253  CG2 ILE A 228      -2.859   9.890 -12.228  1.00 15.81           C 0
+ATOM   1065    O GLY A 335       0.332  11.890 -11.602  1.00 12.37           O 0
+ATOM    284    O ASN A 236      -1.429  15.651 -14.308  1.00 26.82           O 0
+ATOM    252  CG1 ILE A 228      -4.053  11.100 -10.280  1.00 14.34           C 0
+ATOM    254  CD1 ILE A 228      -2.862  11.266  -9.355  1.00 16.22           C 0
+ATOM    289    N PRO A 237      -2.180  15.621 -16.413  1.00 22.49           N 0
+ATOM    295   CD PRO A 237      -2.485  16.238 -17.715  1.00 27.58           C 0
+ATOM    294   CG PRO A 237      -2.522  15.040 -18.654  1.00 28.26           C 0
+TER
+END

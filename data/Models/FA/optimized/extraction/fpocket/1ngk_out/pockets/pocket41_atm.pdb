@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    42:
+HEADER 0  - Pocket Score                      : -2.2775
+HEADER 1  - Drug Score                        : 0.0077
+HEADER 2  - Number of V. Vertices             :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.7070
+HEADER 4  - Mean alpha-sphere SA              : 0.4765
+HEADER 5  - Mean B-factor                     : 0.1905
+HEADER 6  - Hydrophobicity Score              : 17.7500
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 140.6800
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 0.9643
+ATOM    649   CA ALA A  76      65.222  -4.264  18.137  1.00 16.74           C 0
+ATOM   1050   CB ASN A 125      63.562  -8.749  15.391  1.00 17.95           C 0
+ATOM  12828   CB ASN L 125      59.050  -7.331  15.487  1.00 16.90           C 0
+ATOM  12395  NH1 ARG L  72      62.514  -5.049  13.171  1.00 33.41           N 0
+ATOM    651    O ALA A  76      64.643  -3.018  16.168  1.00 17.97           O 0
+ATOM   1052  OD1 ASN A 125      65.390  -7.176  15.576  1.00 17.36           O 0
+ATOM    652   CB ALA A  76      64.248  -3.861  19.233  1.00 16.56           C 0
+ATOM    615   NE ARG A  72      61.059  -9.929  21.087  0.00 29.51           N 0
+ATOM  12829   CG ASN L 125      58.036  -7.309  16.614  1.00 16.94           C 0
+ATOM  12827    O ASN L 125      59.962  -9.997  15.960  1.00 18.84           O 0
+ATOM  12831  ND2 ASN L 125      57.868  -6.153  17.254  1.00 18.33           N 0
+ATOM  12429    O ALA L  76      59.152  -5.459  21.433  1.00 19.21           O 0
+ATOM    613   CG ARG A  72      63.312  -9.056  21.630  1.00 24.96           C 0
+ATOM    616   CZ ARG A  72      60.363  -9.085  21.874  0.00 30.11           C 0
+ATOM  12389    O ARG L  72      59.932  -1.289  17.136  1.00 19.56           O 0
+ATOM  12430   CB ALA L  76      60.863  -3.001  20.274  1.00 17.76           C 0
+ATOM  12427   CA ALA L  76      59.453  -3.551  20.038  1.00 18.37           C 0
+ATOM    611    O ARG A  72      65.526  -6.712  20.876  1.00 18.72           O 0
+ATOM  12394   CZ ARG L  72      61.308  -4.805  12.651  1.00 37.80           C 0
+ATOM  12812    O LEU L 123      56.202  -5.380  13.661  1.00 20.25           O 0
+ATOM  12393   NE ARG L  72      60.921  -3.567  12.351  1.00 37.57           N 0
+TER
+END

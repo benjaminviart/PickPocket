@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    90:
+HEADER 0  - Pocket Score                      : 2.5475
+HEADER 1  - Drug Score                        : 0.0089
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.5534
+HEADER 4  - Mean alpha-sphere SA              : 0.6156
+HEADER 5  - Mean B-factor                     : 0.1946
+HEADER 6  - Hydrophobicity Score              : 17.8750
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.0000
+HEADER 9  - Real volume (approximation)       : 627.9049
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 1.0000
+HEADER 12 - Number of apolar alpha sphere     :     2
+HEADER 13 - Proportion of apolar alpha sphere : 0.0667
+ATOM  13604  POL STP    90      58.189  53.246  74.748    0.00     4.00
+ATOM  14170  POL STP    90      58.210  50.642  77.888    0.00     5.97
+ATOM  21893  POL STP    90      58.620  50.722  77.547    0.00     5.75
+ATOM  21893  POL STP    90      58.296  50.893  77.874    0.00     5.98
+ATOM  21893  POL STP    90      59.542  50.889  76.582    0.00     5.26
+ATOM  19550  POL STP    90      60.653  50.360  73.386    0.00     3.69
+ATOM  19550  POL STP    90      60.825  50.223  73.168    0.00     3.55
+ATOM  13604  POL STP    90      60.157  50.921  74.876    0.00     4.35
+ATOM  13604 APOL STP    90      60.215  51.817  75.780    0.00     5.15
+ATOM  19550  POL STP    90      60.517  50.161  73.399    0.00     3.66
+ATOM  21893  POL STP    90      60.209  51.851  75.837    0.00     5.20
+ATOM  21894 APOL STP    90      60.194  51.918  75.849    0.00     5.21
+ATOM  19550  POL STP    90      60.503  49.887  73.269    0.00     3.55
+ATOM  23301  POL STP    90      60.375  49.312  73.276    0.00     3.37
+ATOM  19552  POL STP    90      60.219  49.452  72.802    0.00     3.10
+ATOM  23301  POL STP    90      60.336  49.308  73.180    0.00     3.30
+ATOM  13073  POL STP    90      58.399  46.664  76.491    0.00     5.16
+ATOM  13144  POL STP    90      58.821  47.671  76.631    0.00     4.99
+ATOM  13143  POL STP    90      58.928  46.880  75.846    0.00     4.68
+ATOM  17761  POL STP    90      59.219  46.698  74.917    0.00     4.24
+ATOM  14171  POL STP    90      58.882  48.882  77.204    0.00     5.31
+ATOM  16878  POL STP    90      59.947  48.090  76.884    0.00     4.17
+ATOM  16878  POL STP    90      59.818  48.720  77.174    0.00     4.52
+ATOM  21893  POL STP    90      59.301  50.388  76.950    0.00     5.34
+ATOM  17761  POL STP    90      59.378  46.648  74.761    0.00     4.09
+ATOM  23301  POL STP    90      59.912  47.148  74.119    0.00     3.42
+ATOM  21893  POL STP    90      58.960  50.904  78.570    0.00     5.21
+ATOM  21894  POL STP    90      59.751  52.902  76.252    0.00     5.59
+ATOM  21894  POL STP    90      60.037  52.880  76.022    0.00     5.48
+ATOM  23301  POL STP    90      60.285  49.089  73.392    0.00     3.32
+TER
+END

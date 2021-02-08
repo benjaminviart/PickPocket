@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 27.1234
+HEADER 1  - Drug Score                        : 0.1275
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.9622
+HEADER 4  - Mean alpha-sphere SA              : 0.5124
+HEADER 5  - Mean B-factor                     : 0.1043
+HEADER 6  - Hydrophobicity Score              : 14.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1429
+HEADER 9  - Real volume (approximation)       : 250.7823
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 31.0000
+HEADER 12 - Number of apolar alpha sphere     :    32
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    239    O ASN A  40     -16.564  -1.968  15.027  1.00 18.15           O 0
+ATOM    278    N LEU A  44     -16.741  -0.800  12.276  1.00 16.02           N 0
+ATOM    266   CBAHIS A  43     -13.648  -2.098  12.261  0.46 20.06           C 0
+ATOM   2125  CG2 THR D 238     -18.759  -6.018  10.868  1.00 17.60           C 0
+ATOM    240   CB ASN A  40     -16.001  -4.086  17.466  1.00 19.36           C 0
+ATOM    242  OD1 ASN A  40     -14.084  -5.498  17.305  1.00 27.15           O 0
+ATOM   2124  OG1 THR D 238     -19.877  -5.120  12.762  1.00 15.37           O 0
+ATOM    237   CA ASN A  40     -15.217  -3.036  16.715  1.00 18.10           C 0
+ATOM    241   CG ASN A  40     -15.131  -5.244  17.895  1.00 23.44           C 0
+ATOM   2093   CA ASP D 235     -21.324  -8.744  15.222  1.00 19.46           C 0
+ATOM   2083    O LEU D 234     -21.720  -6.062  14.590  1.00 17.64           O 0
+ATOM   2084   CBALEU D 234     -21.375  -4.861  17.616  0.50 18.07           C 0
+ATOM   2082    C LEU D 234     -21.951  -6.447  15.744  1.00 17.68           C 0
+ATOM   2092    N ASP D 235     -21.779  -7.698  16.122  1.00 18.39           N 0
+ATOM   2049    O ASP D 231     -21.488  -8.512  18.949  1.00 22.14           O 0
+ATOM    243  ND2 ASN A  40     -15.559  -5.955  18.927  1.00 24.08           N 0
+ATOM   2096   CB ASP D 235     -21.154 -10.023  16.020  1.00 23.44           C 0
+ATOM   2099  OD2 ASP D 235     -20.236 -11.009  14.112  0.62 28.47           O 0
+ATOM   2123   CB THR D 238     -20.003  -6.110  11.730  1.00 15.71           C 0
+TER
+END

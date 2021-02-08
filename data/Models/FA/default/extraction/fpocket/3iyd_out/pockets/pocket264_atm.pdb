@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   265:
+HEADER 0  - Pocket Score                      : -1.9807
+HEADER 1  - Drug Score                        : 0.0037
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 4.0491
+HEADER 4  - Mean alpha-sphere SA              : 0.5103
+HEADER 5  - Mean B-factor                     : 0.4638
+HEADER 6  - Hydrophobicity Score              : -9.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.3750
+HEADER 9  - Real volume (approximation)       : 574.1904
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 10.0000
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.3235
+ATOM  10674  OE2 GLU C 908       9.604  25.849 -46.426  1.00  0.00           O 0
+ATOM  27893   CG ARG F 596      17.043  30.092 -46.414  1.00  0.00           C 0
+ATOM  27894   CD ARG F 596      16.831  30.094 -47.920  1.00  0.00           C 0
+ATOM  27926  NH2 ARG F 599      14.087  28.460 -42.397  1.00  0.00           N 0
+ATOM  10673  OE1 GLU C 908      11.287  24.668 -47.195  1.00  0.00           O 0
+ATOM  10606   CB LYS C 900      10.014  27.697 -41.449  1.00  0.00           C 0
+ATOM  10610   NZ LYS C 900       7.963  27.443 -44.349  1.00  0.00           N 0
+ATOM  10605    O LYS C 900      12.136  25.467 -41.523  1.00  0.00           O 0
+ATOM  10642   CB ALA C 904      14.210  24.091 -43.316  1.00  0.00           C 0
+ATOM  10672   CD GLU C 908      10.230  24.774 -46.539  1.00  0.00           C 0
+ATOM   2025    O ALA A 267      19.839  22.288 -49.874  1.00  0.00           O 0
+ATOM   2033  OD1 ASN A 268      19.554  25.191 -50.809  1.00  0.00           O 0
+ATOM   2055   CD LYS A 271      17.764  20.687 -47.972  1.00 20.00           C 0
+ATOM   2057   NZ LYS A 271      18.429  21.802 -45.844  1.00 20.00           N 0
+ATOM  10641    O ALA C 904      15.479  21.557 -44.452  1.00  0.00           O 0
+ATOM  27891    O ARG F 596      20.047  27.538 -44.501  1.00  0.00           O 0
+ATOM  27892   CB ARG F 596      18.450  29.645 -46.049  1.00  0.00           C 0
+ATOM  27921   CG ARG F 599      17.529  25.188 -42.483  1.00  0.00           C 0
+ATOM  27922   CD ARG F 599      17.296  26.678 -42.292  1.00  0.00           C 0
+ATOM  27889   CA ARG F 596      18.690  29.517 -44.542  1.00  0.00           C 0
+ATOM  27923   NE ARG F 599      15.881  27.021 -42.421  1.00  0.00           N 0
+ATOM  27924   CZ ARG F 599      15.388  28.244 -42.260  1.00  0.00           C 0
+ATOM  27897  NH1 ARG F 596      15.990  32.731 -48.426  1.00  0.00           N 0
+TER
+END

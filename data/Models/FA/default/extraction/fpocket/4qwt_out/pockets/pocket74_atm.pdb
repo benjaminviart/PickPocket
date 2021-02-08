@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    75:
+HEADER 0  - Pocket Score                      : 1.0896
+HEADER 1  - Drug Score                        : 0.0047
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.8284
+HEADER 4  - Mean alpha-sphere SA              : 0.5386
+HEADER 5  - Mean B-factor                     : 0.2760
+HEADER 6  - Hydrophobicity Score              : 1.6250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.8750
+HEADER 9  - Real volume (approximation)       : 311.9859
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 12.0000
+HEADER 12 - Number of apolar alpha sphere     :    13
+HEADER 13 - Proportion of apolar alpha sphere : 0.3824
+ATOM   2705   CA GLY A 348     -28.884  29.678  54.477  1.00 27.63           C 0
+ATOM   2704    N GLY A 348     -29.148  28.832  53.334  0.87 25.61           N 0
+ATOM   2728   CB ASN A 351     -26.166  25.727  52.907  1.00 25.24           C 0
+ATOM   2691    O GLU A 346     -29.540  25.116  53.239  0.95 25.58           O 0
+ATOM   2724    N ASN A 351     -24.936  27.556  54.031  1.00 25.42           N 0
+ATOM   2700    O PRO A 347     -31.074  28.001  54.153  0.80 25.44           O 0
+ATOM   2717    C GLU A 350     -24.005  27.261  54.934  0.74 30.23           C 0
+ATOM   2432    O ILE A 303     -25.748  21.705  55.476  1.00 36.62           O 0
+ATOM   2718    O GLU A 350     -23.209  26.329  54.811  1.00 30.17           O 0
+ATOM   2719   CB GLU A 350     -24.118  27.416  57.453  1.00 36.36           C 0
+ATOM   4728   NZ LYS A 597     -22.798  22.778  58.842  1.00 46.47           N 0
+ATOM   2723  OE2 GLU A 350     -24.414  26.500  60.130  0.67 33.25           O 0
+ATOM   2433   CB ILE A 303     -28.165  21.610  57.081  0.72 32.15           C 0
+ATOM   2436  CD1 ILE A 303     -27.624  20.832  59.448  0.22 33.02           C 0
+ATOM   2714   CD PRO A 349     -27.862  31.315  56.606  1.00 40.99           C 0
+ATOM   2720   CG GLU A 350     -23.899  28.307  58.663  1.00 37.94           C 0
+ATOM   2715    N GLU A 350     -24.952  29.249  56.065  1.00 33.41           N 0
+ATOM   2435  CG2 ILE A 303     -29.585  22.004  57.465  1.00 29.42           C 0
+ATOM   2430   CA ILE A 303     -28.092  21.195  55.589  1.00 29.87           C 0
+ATOM   2693   CG GLU A 346     -32.206  24.206  55.071  1.00 29.98           C 0
+TER
+END

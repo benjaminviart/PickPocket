@@ -1,0 +1,49 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket    73:
+HEADER 0  - Pocket Score                      : 1.2549
+HEADER 1  - Drug Score                        : 0.0069
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8917
+HEADER 4  - Mean alpha-sphere SA              : 0.4343
+HEADER 5  - Mean B-factor                     : 0.3832
+HEADER 6  - Hydrophobicity Score              : 13.5000
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 5.5000
+HEADER 9  - Real volume (approximation)       : 289.5359
+HEADER 10 - Charge Score                      :     5
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2963
+ATOM  63745  POL STP    73     -17.223  83.392 168.442    0.00     4.20
+ATOM  230d9  POL STP    73     -17.218  83.381 168.453    0.00     4.20
+ATOM  230d7  POL STP    73     -17.235  83.404 168.452    0.00     4.20
+ATOM  230d7  POL STP    73     -17.337  83.730 168.612    0.00     4.04
+ATOM  230d7  POL STP    73     -17.578  83.749 168.483    0.00     4.12
+ATOM  230da APOL STP    73     -17.286  83.809 168.753    0.00     3.92
+ATOM  230da APOL STP    73     -17.593  83.759 168.487    0.00     4.12
+ATOM  1e3ee  POL STP    73     -16.567  81.150 168.740    0.00     4.26
+ATOM  230da  POL STP    73     -16.877  82.343 168.750    0.00     4.12
+ATOM  230d7  POL STP    73     -16.660  81.383 169.080    0.00     4.25
+ATOM  230da APOL STP    73     -15.899  81.905 170.116    0.00     3.61
+ATOM  230da APOL STP    73     -15.835  82.133 170.197    0.00     3.51
+ATOM  1e3da  POL STP    73     -14.363  79.859 167.413    0.00     3.44
+ATOM  230da APOL STP    73     -20.186  84.217 169.732    0.00     3.58
+ATOM  26c91  POL STP    73     -16.626  80.067 167.272    0.00     4.32
+ATOM  26c91  POL STP    73     -16.411  79.957 167.239    0.00     4.24
+ATOM  1e3ee APOL STP    73     -15.100  79.996 167.839    0.00     3.70
+ATOM  26c92  POL STP    73     -15.999  80.072 167.918    0.00     4.12
+ATOM  26c92  POL STP    73     -18.401  78.707 167.684    0.00     3.41
+ATOM  39eb2  POL STP    73     -17.451  79.894 170.653    0.00     3.99
+ATOM  39eb2 APOL STP    73     -17.030  80.096 171.469    0.00     3.59
+ATOM  30985 APOL STP    73     -18.538  80.487 170.561    0.00     3.49
+ATOM  30985  POL STP    73     -17.778  79.950 170.386    0.00     4.03
+ATOM  30986  POL STP    73     -18.797  78.925 169.715    0.00     3.46
+ATOM  39eb2  POL STP    73     -17.635  79.805 170.762    0.00     3.99
+ATOM  41319  POL STP    73     -17.690  79.778 171.406    0.00     3.77
+ATOM  41329  POL STP    73     -18.025  78.616 171.287    0.00     3.41
+TER
+END

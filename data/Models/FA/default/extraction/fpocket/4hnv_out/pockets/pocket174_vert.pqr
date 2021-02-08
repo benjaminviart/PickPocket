@@ -1,0 +1,54 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   175:
+HEADER 0  - Pocket Score                      : 2.2945
+HEADER 1  - Drug Score                        : 0.0054
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.1891
+HEADER 4  - Mean alpha-sphere SA              : 0.4830
+HEADER 5  - Mean B-factor                     : 0.4047
+HEADER 6  - Hydrophobicity Score              : 5.6667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 329.8864
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 4.0000
+HEADER 12 - Number of apolar alpha sphere     :     5
+HEADER 13 - Proportion of apolar alpha sphere : 0.1562
+ATOM  1a312  POL STP   175      36.993  70.545 -10.800    0.00     4.21
+ATOM  314ff  POL STP   175      37.052  70.761 -10.069    0.00     4.72
+ATOM  314fd  POL STP   175      37.271  71.447 -10.318    0.00     5.07
+ATOM  55680 APOL STP   175      36.906  71.722 -10.206    0.00     5.04
+ATOM  76776  POL STP   175      37.113  71.799 -10.394    0.00     5.13
+ATOM  314ff  POL STP   175      36.804  71.441  -9.908    0.00     4.98
+ATOM  314fd  POL STP   175      37.203  71.590 -10.270    0.00     5.13
+ATOM  314fb  POL STP   175      38.027  71.848  -9.815    0.00     4.59
+ATOM  234d8 APOL STP   175      34.977  72.303  -9.090    0.00     4.61
+ATOM  314f2 APOL STP   175      35.307  71.601  -8.820    0.00     4.63
+ATOM  314f2  POL STP   175      35.389  71.533  -8.834    0.00     4.64
+ATOM  314ff  POL STP   175      36.594  71.361  -9.677    0.00     4.89
+ATOM  2bbcd  POL STP   175      34.856  70.475  -8.548    0.00     4.28
+ATOM  314f2  POL STP   175      34.765  70.720  -8.466    0.00     4.35
+ATOM  2bbcc  POL STP   175      37.228  67.881  -8.595    0.00     3.50
+ATOM  314ff  POL STP   175      37.243  67.873  -8.589    0.00     3.50
+ATOM  1b17a  POL STP   175      36.006  68.924  -9.517    0.00     3.96
+ATOM  2bbcd  POL STP   175      36.232  69.355  -9.410    0.00     4.22
+ATOM  1b17b  POL STP   175      35.749  68.378 -10.033    0.00     3.41
+ATOM  1b16c  POL STP   175      34.849  67.831  -9.698    0.00     3.38
+ATOM  1b16d  POL STP   175      34.371  68.617  -9.368    0.00     3.44
+ATOM  1b17c  POL STP   175      35.089  67.710  -9.774    0.00     3.44
+ATOM  1b16d  POL STP   175      34.026  68.885  -9.107    0.00     3.44
+ATOM  2bbcd  POL STP   175      36.421  69.104  -9.319    0.00     4.08
+ATOM  1b17c APOL STP   175      35.034  67.389 -10.323    0.00     3.08
+ATOM  1b17c APOL STP   175      35.137  67.167  -9.629    0.00     3.19
+ATOM  314ff  POL STP   175      36.868  69.080  -9.305    0.00     3.98
+ATOM  314ff  POL STP   175      36.658  70.098  -9.669    0.00     4.46
+ATOM  2bbcd  POL STP   175      35.683  69.848  -9.165    0.00     4.23
+ATOM  314ff  POL STP   175      36.597  71.104  -9.699    0.00     4.80
+ATOM  3487c  POL STP   175      37.022  71.465  -8.699    0.00     4.05
+ATOM  314ff  POL STP   175      37.977  68.753  -9.511    0.00     3.61
+TER
+END

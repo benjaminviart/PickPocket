@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   261:
+HEADER 0  - Pocket Score                      : -3.5469
+HEADER 1  - Drug Score                        : 0.0138
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.0900
+HEADER 4  - Mean alpha-sphere SA              : 0.4904
+HEADER 5  - Mean B-factor                     : 0.2305
+HEADER 6  - Hydrophobicity Score              : 29.9000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.2000
+HEADER 9  - Real volume (approximation)       : 582.4592
+HEADER 10 - Charge Score                      :     4
+HEADER 11 - Local hydrophobic density Score   : 2.0000
+HEADER 12 - Number of apolar alpha sphere     :     3
+HEADER 13 - Proportion of apolar alpha sphere : 0.1000
+ATOM  14485  OP2 U   A 675      22.476  96.658 101.837  1.00 81.41           O 0
+ATOM  14464  C5' G   A 674      21.928  99.433  98.910  1.00 66.46           C 0
+ATOM  14484  OP1 U   A 675      24.175  98.136 103.069  1.00 81.41           O 0
+ATOM  14461  OP1 G   A 674      23.417  97.593  97.043  1.00 66.46           O 0
+ATOM  14462  OP2 G   A 674      21.291  96.184  97.037  1.00 66.46           O 0
+ATOM  39708   CB ASN K  26      20.592  93.776  98.524  1.00 98.00           C 0
+ATOM  39701    C TYR K  25      22.446  91.742 100.071  1.00 85.42           C 0
+ATOM  39699    N TYR K  25      24.309  90.868  98.696  1.00 85.42           N 0
+ATOM  39698   CB SER K  24      24.433  91.464  95.731  1.00 66.80           C 0
+ATOM  39703   CB TYR K  25      24.764  91.673 100.943  1.00 85.42           C 0
+ATOM  39704    N ASN K  26      21.646  91.641  99.023  1.00 98.00           N 0
+ATOM  39702    O TYR K  25      22.147  92.403 101.062  1.00 85.42           O 0
+ATOM  14468  O3' G   A 674      22.151  99.141 102.053  1.00 66.46           O 0
+ATOM  16771  OP1 G   A 781      22.552 102.876 100.003  1.00 48.05           O 0
+ATOM  40186   CB LYS K 124      29.585 100.602 103.065  1.00 75.58           C 0
+ATOM  16751  OP1 C   A 780      25.663 101.690 104.985  1.00 50.06           O 0
+ATOM  16758  O3' C   A 780      21.787 103.191 102.332  1.00 50.06           O 0
+ATOM  16772  OP2 G   A 781      23.763 104.594 101.496  1.00 48.05           O 0
+ATOM  40176   CB LYS K 122      30.334 103.496  99.566  1.00 55.90           C 0
+ATOM  40191   CB PHE K 125      33.341  98.587 100.417  1.00 74.33           C 0
+ATOM  40185    O LYS K 124      31.836  98.581 103.769  1.00 75.58           O 0
+TER
+END

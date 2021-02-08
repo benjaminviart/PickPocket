@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   151:
+HEADER 0  - Pocket Score                      : -4.0444
+HEADER 1  - Drug Score                        : 0.0038
+HEADER 2  - Number of V. Vertices             :    33
+HEADER 3  - Mean alpha-sphere radius          : 3.5746
+HEADER 4  - Mean alpha-sphere SA              : 0.5093
+HEADER 5  - Mean B-factor                     : 0.2455
+HEADER 6  - Hydrophobicity Score              : -5.8000
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 201.9823
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 7.3333
+HEADER 12 - Number of apolar alpha sphere     :     9
+HEADER 13 - Proportion of apolar alpha sphere : 0.2727
+ATOM   1656   CB HIS A 581      -1.837  15.676  33.830  1.00 24.82           C 0
+ATOM   1662    N ILE A 582      -0.670  13.221  35.564  1.00 26.07           N 0
+ATOM   1654    C HIS A 581      -1.542  13.333  34.574  1.00 26.07           C 0
+ATOM   1699  NH1 ARG A 585       3.911  13.503  30.383  1.00 32.41           N 0
+ATOM   1655    O HIS A 581      -1.656  12.484  33.667  1.00 27.31           O 0
+ATOM   1696   CD ARG A 585       2.574  11.218  31.145  1.00 33.17           C 0
+ATOM  18018  NH1 ARG D 585       3.331  14.879  36.754  1.00 45.89           N 0
+ATOM   1663   CA ILE A 582       0.246  12.097  35.620  1.00 26.48           C 0
+ATOM  17988  CD1 ILE D 582       5.982  12.190  33.940  1.00 29.50           C 0
+ATOM   1669  CD1 ILE A 582       3.269  11.326  35.671  1.00 31.16           C 0
+ATOM   1627    O ASP A 578      -0.856  17.667  36.509  1.00 29.07           O 0
+ATOM   1689   OH TYR A 584      -3.878  15.016  30.659  1.00 16.38           O 0
+ATOM   1686  CE1 TYR A 584      -3.674  12.605  30.273  1.00 18.54           C 0
+ATOM   1694   CB ARG A 585       0.572  10.019  31.870  1.00 26.97           C 0
+ATOM  17973    C HIS D 581       9.052  16.116  32.751  1.00 26.41           C 0
+ATOM  17974    O HIS D 581       9.351  16.193  33.927  1.00 29.43           O 0
+ATOM  17975   CB HIS D 581       7.964  18.171  31.970  1.00 24.94           C 0
+ATOM  18015   CD ARG D 585       5.955  14.610  37.455  1.00 30.11           C 0
+ATOM  17982   CA ILE D 582       8.278  13.818  32.960  1.00 30.10           C 0
+ATOM  17985   CB ILE D 582       7.508  12.765  32.084  1.00 27.65           C 0
+ATOM  17981    N ILE D 582       8.540  15.017  32.205  1.00 27.68           N 0
+TER
+END

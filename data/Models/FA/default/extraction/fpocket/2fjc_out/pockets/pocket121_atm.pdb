@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   122:
+HEADER 0  - Pocket Score                      : -1.1871
+HEADER 1  - Drug Score                        : 0.0062
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.5482
+HEADER 4  - Mean alpha-sphere SA              : 0.6896
+HEADER 5  - Mean B-factor                     : 0.2210
+HEADER 6  - Hydrophobicity Score              : 6.7143
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 2.8571
+HEADER 9  - Real volume (approximation)       : 495.7275
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 7.0000
+HEADER 12 - Number of apolar alpha sphere     :     8
+HEADER 13 - Proportion of apolar alpha sphere : 0.2667
+ATOM   5975   CB ARG F  30      80.052 -13.574  28.033  1.00 40.57           C 0
+ATOM   5974    O ARG F  30      76.945 -12.558  28.807  1.00 41.47           O 0
+ATOM   5978   NE ARG F  30      81.767 -15.795  28.944  1.00 36.62           N 0
+ATOM   5981  NH2 ARG F  30      82.447 -16.854  30.866  1.00 38.59           N 0
+ATOM   6925   CB SER F 148      79.316  -6.171  32.406  1.00 37.84           C 0
+ATOM   6922   CA SER F 148      80.324  -5.366  33.212  1.00 39.51           C 0
+ATOM   6915    O GLU F 147      82.063  -5.561  35.328  1.00 42.55           O 0
+ATOM   5964  OD1 ASP F  28      82.195 -10.022  29.656  1.00 61.91           O 0
+ATOM   6916   CB GLU F 147      80.303  -6.825  37.593  1.00 43.73           C 0
+ATOM   6921    N SER F 148      79.939  -5.323  34.622  1.00 41.15           N 0
+ATOM   6914    C GLU F 147      80.861  -5.442  35.577  1.00 42.66           C 0
+ATOM   5979   CZ ARG F  30      82.733 -16.320  29.686  1.00 37.15           C 0
+ATOM   5982    N ALA F  31      78.548 -10.969  28.880  1.00 45.68           N 0
+ATOM   5983   CA ALA F  31      77.862 -10.144  29.871  1.00 45.64           C 0
+ATOM   6004   CB ALA F  34      74.468 -12.614  31.463  1.00 36.29           C 0
+ATOM   6919  OE1 GLU F 147      79.293  -9.184  39.007  1.00 53.11           O 0
+ATOM   6901  CD2 LEU F 144      75.339 -10.774  36.021  1.00 39.78           C 0
+ATOM   5986   CB ALA F  31      78.788  -9.024  30.338  1.00 44.62           C 0
+ATOM   6897    O LEU F 144      77.173  -6.497  35.042  1.00 40.84           O 0
+ATOM   5973    C ARG F  30      78.035 -12.113  28.433  1.00 43.71           C 0
+TER
+END

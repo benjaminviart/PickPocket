@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 22.4366
+HEADER 1  - Drug Score                        : 0.0367
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.8912
+HEADER 4  - Mean alpha-sphere SA              : 0.5875
+HEADER 5  - Mean B-factor                     : 0.0134
+HEADER 6  - Hydrophobicity Score              : -30.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.1429
+HEADER 9  - Real volume (approximation)       : 278.9034
+HEADER 10 - Charge Score                      :    -3
+HEADER 11 - Local hydrophobic density Score   : 25.8519
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM    633   CEALYS A  60       2.546  36.262   0.304  0.60 10.31           C 0
+ATOM    421  CD2 HIS A  37       7.822  34.074   3.214  1.00  8.84           C 0
+ATOM    971  CD1 ILE B  10       3.957  39.294  -2.023  1.00 10.83           C 0
+ATOM    423  NE2 HIS A  37       8.405  35.020   4.014  1.00  9.51           N 0
+ATOM    658   CB GLU A  62       9.032  38.357  -2.678  1.00  8.89           C 0
+ATOM    654    N GLU A  62       8.839  35.925  -2.549  1.00  7.98           N 0
+ATOM    969  CG1 ILE B  10       4.890  38.695  -2.997  1.00 10.12           C 0
+ATOM    631   CDALYS A  60       2.808  34.786   0.521  0.60 10.37           C 0
+ATOM    629   CGALYS A  60       3.695  34.132  -0.561  0.60  9.93           C 0
+ATOM    638   CAAHIS A  61       8.114  33.691  -2.031  0.50  7.82           C 0
+ATOM    661  OE1 GLU A  62       8.236  41.046  -2.079  1.00 12.81           O 0
+ATOM    391   CGAGLU A  35      13.966  35.867   0.860  0.60 15.49           C 0
+ATOM    389   CBAGLU A  35      12.921  34.808   0.518  0.60 12.80           C 0
+ATOM    383   CAAGLU A  35      12.441  34.018   1.737  0.60 10.30           C 0
+ATOM    387    OAGLU A  35      10.238  33.724   0.899  0.60  9.83           O 0
+ATOM    395  OE1AGLU A  35      13.617  37.698  -0.883  0.60 12.80           O 0
+ATOM    626    O LYS A  60       6.956  32.274   0.003  1.00  8.89           O 0
+ATOM    660   CD GLU A  62       9.163  40.920  -2.898  1.00 10.37           C 0
+ATOM    662  OE2 GLU A  62       9.860  41.883  -3.281  1.00  9.51           O 0
+ATOM    956  NH2 ARG B   8      12.898  39.906  -2.735  1.00 13.51           N 0
+TER
+END

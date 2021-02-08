@@ -23,7 +23,7 @@ fpocket_arg_formatter = {
             "M" : "{:.1f}",
             "A" : "{:d}",
             "i" : "{:d}",
-            "D" : "{:.1f}",
+            "D" : "{:.2f}",
             "s" : "{:.1f}",
             "n" : "{:d}",
             "r" : "{:.1f}",
@@ -137,7 +137,7 @@ def get_best_pocket_coverage(residues, true_positives):
         if len(residues) == 0 :
             return best
         for pk in true_positives:
-            fract = len(pk[0].intersection(residues)) / len(residues)
+            fract = len(pk[0].intersection(residues)) / len(pk[0])
             if fract > best[0]:
                 best[0]=fract
             n=0
@@ -384,7 +384,9 @@ class StrideResult():
 
 
 
-def PDBKFold( ids, Y, fold=5):
+def PDBKFold( ids, Y, fold=5, seed=None):
+    if seed != None:
+        np.random.seed(seed)
     pos_pdb_ids=[]
     neg_pdb_ids=[]
     pdbs={}
@@ -460,7 +462,7 @@ def import_data( file_name, f1_thr = 0.1, f2_thr = 0.1, condition="and"):
         else :
             fpocket_param = fpocket_default_param
         if not line.strip().split() == pickpocket_header:
-             raise ValueError("File {} is not a pickpocket extraction output.".format(file_name))
+            raise ValueError("File {} is not a pickpocket extraction output.".format(file_name))
         line = f.readline()
         while line:
             arr = line.split()
@@ -487,7 +489,6 @@ def import_data( file_name, f1_thr = 0.1, f2_thr = 0.1, condition="and"):
 def plot_results(input_file,out_file, positive_list):
     data = import_data(input_file)
     pdbs={}
-    
     for idx, id in enumerate(data["ids"]):
         if not id[0] in pdbs.keys():
             pdbs[id[0]]={"f1":0, "f2": 0, "Y" : 0, "pockets_p" : 0 , "pockets_n" : 0 }
@@ -508,6 +509,7 @@ def plot_results(input_file,out_file, positive_list):
         if k in positive_list:
             if pdbs[k]["Y"] == 0:
                 i=1
+                print("Found FN: {}".format(k))
         else:
             i=2
             if pdbs[k]["Y"] == 1:
@@ -516,7 +518,6 @@ def plot_results(input_file,out_file, positive_list):
         f2[i].append(pdbs[k]["f2"])
         pocket_n[i].append(pdbs[k]["pockets_n"])
         pocket_p[i].append(pdbs[k]["pockets_p"])
-            
 
     pdf=PdfPages(out_file)     
     plt.plot(f1[0], f2[0], 'ob', label="TP")

@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : 1.4365
+HEADER 1  - Drug Score                        : 0.0204
+HEADER 2  - Number of V. Vertices             :    34
+HEADER 3  - Mean alpha-sphere radius          : 3.9284
+HEADER 4  - Mean alpha-sphere SA              : 0.4389
+HEADER 5  - Mean B-factor                     : 0.2351
+HEADER 6  - Hydrophobicity Score              : 31.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 3.7143
+HEADER 9  - Real volume (approximation)       : 284.0264
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 3.0000
+HEADER 12 - Number of apolar alpha sphere     :     4
+HEADER 13 - Proportion of apolar alpha sphere : 0.1176
+ATOM   2921  OE1 GLU B  66      40.416  29.262  -1.347  1.00 26.48           O 0
+ATOM   2758    O PRO B  56      41.626  35.392  -1.558  1.00 15.53           O 0
+ATOM   2922  OE2 GLU B  66      38.741  30.667  -1.585  1.00 28.62           O 0
+ATOM   2825  NE2AGLN B  60      43.831  30.456  -0.575  0.61 24.23           N 0
+ATOM   2920   CD GLU B  66      39.374  29.818  -0.927  1.00 25.85           C 0
+ATOM   2817   CBAGLN B  60      44.517  33.246  -1.148  0.61 17.34           C 0
+ATOM   2907    O ALA B  65      43.087  31.868   2.182  1.00 13.05           O 0
+ATOM   2915   CA GLU B  66      40.769  30.398   1.842  1.00 13.59           C 0
+ATOM   2929    N LYS B  67      39.423  32.399   2.044  1.00 12.52           N 0
+ATOM   2770   CA ALA B  57      42.731  36.234  -3.901  1.00 16.98           C 0
+ATOM   1065   NZ LYS A  69      43.691  28.150  -7.044  1.00 26.99           N 0
+ATOM   1007  OE2AGLU A  66      39.748  29.597  -8.216  0.80 27.62           O 0
+ATOM   1064   CE LYS A  69      44.826  28.676  -7.888  1.00 26.11           C 0
+ATOM   2773   CB ALA B  57      42.962  36.666  -5.344  1.00 18.75           C 0
+ATOM   2819   CGAGLN B  60      45.432  32.060  -1.428  0.61 20.63           C 0
+ATOM   2769    N ALA B  57      41.322  36.380  -3.561  1.00 16.94           N 0
+ATOM   1005  OE1AGLU A  66      37.767  30.523  -8.335  0.80 27.39           O 0
+ATOM   2759   CB PRO B  56      38.488  35.136  -2.728  1.00 20.14           C 0
+ATOM   2757    C PRO B  56      40.880  35.946  -2.379  1.00 16.54           C 0
+TER
+END

@@ -1,0 +1,47 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   288:
+HEADER 0  - Pocket Score                      : 1.5835
+HEADER 1  - Drug Score                        : 0.0079
+HEADER 2  - Number of V. Vertices             :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.6157
+HEADER 4  - Mean alpha-sphere SA              : 0.5852
+HEADER 5  - Mean B-factor                     : 0.2920
+HEADER 6  - Hydrophobicity Score              : 13.1818
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Volume Score                      : 3.8182
+HEADER 9  - Real volume (approximation)       : 827.9894
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 9.8182
+HEADER 12 - Number of apolar alpha sphere     :    11
+HEADER 13 - Proportion of apolar alpha sphere : 0.3548
+ATOM  54918   CA LEU s 119     100.699 -61.365-203.629  1.00 21.08           C 0
+ATOM  54917    N LEU s 119     101.673 -62.397-203.395  1.00 20.95           N 0
+ATOM  54921   CB LEU s 119     101.217 -60.004-203.211  1.00 21.36           C 0
+ATOM  54950   NZ LYS s 122      98.100 -64.932-199.694  1.00 39.42           N 0
+ATOM  54923  CD1 LEU s 119      99.058 -58.805-202.922  1.00 21.82           C 0
+ATOM  54895    O THR s 115     104.234 -61.654-201.496  1.00 20.13           O 0
+ATOM  54898  CG2 THR s 115     104.819 -61.224-198.256  1.00 18.05           C 0
+ATOM  54915  CG1 VAL s 118     101.213 -65.552-201.463  1.00 22.30           C 0
+ATOM  54948   CD LYS s 122      97.314 -63.918-201.966  1.00 32.08           C 0
+ATOM  43448  OE2 GLU j 129     101.159 -58.554-191.957  1.00 43.79           O 0
+ATOM  54428  OE1 GLU s  57      95.826 -58.087-201.750  1.00 32.87           O 0
+ATOM  43413   CB ALA j 125     104.479 -63.170-195.004  1.00 20.21           C 0
+ATOM  54924  CD2 LEU s 119     101.073 -57.568-203.381  1.00 27.80           C 0
+ATOM  54459   CD ARG s  61     105.133 -56.788-200.341  1.00 22.79           C 0
+ATOM  43420  OD1 ASP j 126     102.551 -63.556-191.014  1.00 29.08           O 0
+ATOM  54429  OE2 GLU s  57      93.975 -57.527-200.857  1.00 34.78           O 0
+ATOM  54427   CD GLU s  57      95.119 -57.277-201.192  1.00 31.96           C 0
+ATOM  54424    O GLU s  57      99.767 -54.314-201.463  1.00 18.21           O 0
+ATOM  54426   CG GLU s  57      95.692 -55.922-200.919  1.00 19.38           C 0
+ATOM  54452  OD2 ASP s  60      98.160 -52.116-197.396  1.00 34.49           O 0
+ATOM  54449   CB ASP s  60     100.297 -52.349-198.192  1.00 20.61           C 0
+ATOM  54486  CD1 LEU s  64     105.619 -55.102-195.307  1.00 21.03           C 0
+ATOM  54453    N ARG s  61     102.606 -53.196-200.126  1.00 20.22           N 0
+ATOM  54462  NH1 ARG s  61     106.300 -58.054-198.153  1.00 19.52           N 0
+ATOM  54425   CB GLU s  57      96.773 -55.573-201.810  1.00 16.01           C 0
+ATOM  54422   CA GLU s  57      97.406 -54.246-201.481  1.00 17.70           C 0
+TER
+END

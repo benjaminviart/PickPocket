@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    41:
+HEADER 0  - Pocket Score                      : -0.6742
+HEADER 1  - Drug Score                        : 0.0292
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.0742
+HEADER 4  - Mean alpha-sphere SA              : 0.7058
+HEADER 5  - Mean B-factor                     : 0.2395
+HEADER 6  - Hydrophobicity Score              : 37.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 5.0000
+HEADER 9  - Real volume (approximation)       : 621.7384
+HEADER 10 - Charge Score                      :     2
+HEADER 11 - Local hydrophobic density Score   : 16.5556
+HEADER 12 - Number of apolar alpha sphere     :    18
+HEADER 13 - Proportion of apolar alpha sphere : 0.6000
+ATOM    111    O LYS A1015       0.677  -1.709  37.419  1.00 69.06           O 0
+ATOM    110    C LYS A1015      -0.021  -0.755  37.092  1.00 65.75           C 0
+ATOM    116    N VAL A1016      -0.278  -0.457  35.823  1.00 63.84           N 0
+ATOM    122  CG2 VAL A1016      -1.724  -1.200  33.240  1.00 62.44           C 0
+ATOM    117   CA VAL A1016       0.332  -1.180  34.705  1.00 64.43           C 0
+ATOM    112   CB LYS A1015      -2.059  -0.342  38.550  1.00 72.25           C 0
+ATOM    146   CD LYS A1019       0.398  -5.940  37.905  1.00 83.77           C 0
+ATOM     87    O ASP A1012      -3.134   0.896  35.501  1.00 62.67           O 0
+ATOM    145   CG LYS A1019       1.433  -4.890  37.533  1.00 80.62           C 0
+ATOM    113   CG LYS A1015      -2.101  -1.228  39.792  1.00 79.16           C 0
+ATOM     91  OD2 ASP A1012      -8.350   0.881  35.393  1.00 78.17           O 0
+ATOM     88   CB ASP A1012      -6.233   1.934  35.142  1.00 68.40           C 0
+ATOM     89   CG ASP A1012      -7.520   1.667  35.893  1.00 72.84           C 0
+ATOM     90  OD1 ASP A1012      -7.696   2.232  36.995  1.00 76.81           O 0
+ATOM    115   CE LYS A1015      -3.854  -0.021  41.159  1.00 80.25           C 0
+ATOM     85   CA ASP A1012      -5.052   2.198  36.083  1.00 64.76           C 0
+ATOM    143    O LYS A1019       3.279  -5.096  35.006  1.00 82.74           O 0
+ATOM    119    O VAL A1016       2.619  -1.881  34.438  1.00 66.69           O 0
+ATOM    121  CG1 VAL A1016       0.523  -1.273  32.166  1.00 61.81           C 0
+ATOM    186  NE2 GLN A1025       3.142  -5.554  30.502  1.00 74.52           N 0
+TER
+END

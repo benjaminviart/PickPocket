@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   167:
+HEADER 0  - Pocket Score                      : 2.0113
+HEADER 1  - Drug Score                        : 0.0047
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.6507
+HEADER 4  - Mean alpha-sphere SA              : 0.4671
+HEADER 5  - Mean B-factor                     : 0.3417
+HEADER 6  - Hydrophobicity Score              : -3.6923
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Volume Score                      : 5.2308
+HEADER 9  - Real volume (approximation)       : 623.9897
+HEADER 10 - Charge Score                      :     6
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0333
+ATOM  65283   CA ARG 4  19      75.478  66.015 103.857  1.00 52.78           C 0
+ATOM  65284   CA HIS 4  20      71.907  67.338 103.809  1.00 52.27           C 0
+ATOM  56071  OP1 A   02721      73.474  72.177 110.525  1.00 46.92           O 0
+ATOM  65286   CA ARG 4  22      76.004  71.206 102.870  1.00 51.21           C 0
+ATOM  56094  OP2 C   02722      77.464  71.460 111.208  1.00 51.10           O 0
+ATOM  56072  OP2 A   02721      73.409  70.259 112.230  1.00 46.92           O 0
+ATOM  56383   O2 C   02735      78.686  63.996 110.934  1.00 74.03           O 0
+ATOM  56110   C5 C   02722      76.704  68.839 114.148  1.00 51.10           C 0
+ATOM  56109   N4 C   02722      75.071  67.214 114.793  1.00 51.10           N 0
+ATOM  56049  OP1 A   02720      70.662  67.630 112.707  1.00 43.98           O 0
+ATOM  56411  OP2 A   02737      74.110  61.579 105.456  1.00 73.56           O 0
+ATOM  56410  OP1 A   02737      74.256  63.509 103.775  1.00 73.56           O 0
+ATOM  56379  O2' C   02735      77.430  60.784 109.314  1.00 74.03           O 0
+ATOM  56493   N4 C   02740      73.574  58.597 111.402  1.00 69.58           N 0
+ATOM  56149   O6 G   02724      75.929  60.059 112.964  1.00 60.47           O 0
+ATOM  56513   O6 G   02741      75.271  61.913 115.199  1.00 66.40           O 0
+ATOM  56129   N4 C   02723      77.034  64.383 115.116  1.00 56.03           N 0
+ATOM  56050  OP2 A   02720      71.359  67.160 115.132  1.00 43.98           O 0
+ATOM  56391  OP2 U   02736      79.033  61.952 105.611  1.00 73.96           O 0
+ATOM  56378  C2' C   02735      78.698  61.382 109.129  1.00 74.03           C 0
+TER
+END

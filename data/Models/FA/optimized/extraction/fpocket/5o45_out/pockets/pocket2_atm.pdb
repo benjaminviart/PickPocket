@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 15.1788
+HEADER 1  - Drug Score                        : 0.0571
+HEADER 2  - Number of V. Vertices             :    29
+HEADER 3  - Mean alpha-sphere radius          : 4.0060
+HEADER 4  - Mean alpha-sphere SA              : 0.6364
+HEADER 5  - Mean B-factor                     : 0.3021
+HEADER 6  - Hydrophobicity Score              : 18.7778
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 3.5556
+HEADER 9  - Real volume (approximation)       : 382.3071
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 26.7586
+HEADER 12 - Number of apolar alpha sphere     :    29
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM     10    O ALA A  18       1.417   8.438 -28.127  0.71 25.03           O 0
+ATOM     43    OATHR A  20       1.833   4.794 -23.972  0.75 16.86           O 0
+ATOM     45   CBATHR A  20       0.674   7.561 -24.383  0.75 18.60           C 0
+ATOM    430   CB PRO A  43       1.887   1.598 -28.103  0.89 11.83           C 0
+ATOM    431   CG PRO A  43       2.884   2.558 -27.606  0.89 12.72           C 0
+ATOM     37    NATHR A  20       2.712   6.899 -25.642  0.75 15.36           N 0
+ATOM      4    O ASN A  17       1.167   8.224 -31.309  0.77 37.70           O 0
+ATOM      5   CB ASN A  17      -1.914   8.435 -30.733  0.53 35.11           C 0
+ATOM    463  OE1 GLU A  45       0.840   1.032 -33.170  0.42 37.81           O 0
+ATOM     18   CA PHE A  19       3.961   7.436 -27.624  1.00 17.43           C 0
+ATOM     47  OG1ATHR A  20       0.498   8.667 -25.287  0.75 21.81           O 0
+ATOM    408    C PHE A  42       2.688   0.082 -24.955  1.00 10.09           C 0
+ATOM    387    O LYS A  41       2.118   1.744 -21.267  1.00 11.55           O 0
+ATOM    406    N PHE A  42       2.527  -0.045 -22.553  1.00 10.11           N 0
+ATOM    407   CA PHE A  42       3.106   0.717 -23.646  1.00 10.48           C 0
+ATOM     86  OG1 THR A  22      -1.834   2.146 -20.558  1.00 16.97           O 0
+ATOM    388   CB LYS A  41       0.013  -0.649 -20.657  1.00 12.45           C 0
+ATOM    386    C LYS A  41       2.097   0.522 -21.443  1.00  9.91           C 0
+ATOM    409    O PHE A  42       2.329  -1.104 -25.002  0.95 10.98           O 0
+ATOM    426    N PRO A  43       2.707   0.833 -26.052  0.96 10.09           N 0
+ATOM     87  CG2 THR A  22      -2.032   4.317 -21.656  1.00 18.05           C 0
+ATOM    427   CA PRO A  43       2.148   0.321 -27.300  1.00 10.98           C 0
+ATOM    432   CD PRO A  43       2.939   2.294 -26.128  0.97 11.68           C 0
+TER
+END

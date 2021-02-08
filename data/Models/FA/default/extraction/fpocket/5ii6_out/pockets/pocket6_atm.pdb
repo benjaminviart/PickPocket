@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 13.5405
+HEADER 1  - Drug Score                        : 0.0168
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 3.3058
+HEADER 4  - Mean alpha-sphere SA              : 0.5335
+HEADER 5  - Mean B-factor                     : 0.3396
+HEADER 6  - Hydrophobicity Score              : -2.1667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Volume Score                      : 2.6667
+HEADER 9  - Real volume (approximation)       : 184.2325
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 18.5714
+HEADER 12 - Number of apolar alpha sphere     :    21
+HEADER 13 - Proportion of apolar alpha sphere : 0.7000
+ATOM    324   CB SER A  62     -18.187  -9.954  12.195  1.00 13.22           C 0
+ATOM    871  CE2 PHE A  93     -19.768  -5.953   9.841  1.00 15.88           C 0
+ATOM    312    O SER A  61     -19.715  -9.744   9.292  1.00 12.03           O 0
+ATOM    872   CZ PHE A  93     -19.749  -5.130  10.917  1.00 16.23           C 0
+ATOM    321   CA SER A  62     -17.856  -8.908  11.127  1.00 11.57           C 0
+ATOM    452   CD GLU A  67     -12.559  -5.909  17.402  1.00 22.87           C 0
+ATOM    385  CD1 PHE A  64     -16.300  -9.266  17.956  1.00 20.49           C 0
+ATOM    453  OE1 GLU A  67     -12.736  -6.847  18.205  0.60 24.29           O 0
+ATOM    454  OE2 GLU A  67     -13.061  -4.779  17.555  0.98 24.25           O 0
+ATOM    387  CE1 PHE A  64     -17.244  -8.641  18.752  1.00 23.25           C 0
+ATOM    339   CBAARG A  63     -16.079  -5.336  13.922  0.74 18.89           C 0
+ATOM    343   CDAARG A  63     -15.287  -3.234  15.200  0.74 20.65           C 0
+ATOM    349  NH1AARG A  63     -17.891  -3.181  16.342  0.74 21.46           N 0
+ATOM    389   CZ PHE A  64     -18.568  -8.615  18.358  1.00 24.92           C 0
+ATOM    388  CE2 PHE A  64     -18.943  -9.211  17.171  1.00 24.41           C 0
+ATOM    386  CD2 PHE A  64     -17.997  -9.831  16.382  1.00 21.52           C 0
+ATOM    379    N PHE A  64     -15.460  -8.597  14.426  1.00 12.85           N 0
+ATOM    331    NAARG A  63     -16.860  -7.223  12.516  0.74 14.29           N 0
+ATOM    870  CE1 PHE A  93     -18.647  -4.419  11.272  1.00 15.79           C 0
+ATOM    351  NH2AARG A  63     -18.604  -1.730  14.711  0.74 18.48           N 0
+ATOM    347   CZAARG A  63     -17.651  -2.458  15.260  0.74 19.59           C 0
+ATOM    335    CAARG A  63     -14.857  -7.538  13.883  0.74 13.68           C 0
+TER
+END

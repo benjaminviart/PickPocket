@@ -1,0 +1,48 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    56:
+HEADER 0  - Pocket Score                      : 0.1784
+HEADER 1  - Drug Score                        : 0.0213
+HEADER 2  - Number of V. Vertices             :    38
+HEADER 3  - Mean alpha-sphere radius          : 3.4514
+HEADER 4  - Mean alpha-sphere SA              : 0.4610
+HEADER 5  - Mean B-factor                     : 0.3471
+HEADER 6  - Hydrophobicity Score              : 32.9000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.1000
+HEADER 9  - Real volume (approximation)       : 180.9754
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 13.0000
+HEADER 12 - Number of apolar alpha sphere     :    14
+HEADER 13 - Proportion of apolar alpha sphere : 0.3684
+ATOM   1320   CA ARG B  33      44.687  38.565  56.278  1.00 25.51           C 0
+ATOM   1438  CD2ALEU B  41      49.734  35.626  58.836  0.50 20.19           C 0
+ATOM   1323   CB ARG B  33      44.415  39.751  57.220  1.00 25.63           C 0
+ATOM   1380    OAGLU B  38      44.743  35.732  62.580  0.50 30.40           O 0
+ATOM   1322    O ARG B  33      43.245  36.868  57.224  1.00 25.67           O 0
+ATOM   1436  CD1ALEU B  41      50.367  38.010  59.148  0.50 20.23           C 0
+ATOM   1351    O TYR B  36      44.982  33.692  57.424  1.00 24.57           O 0
+ATOM   1276    O ALA B  27      47.414  42.455  59.291  1.00 32.47           O 0
+ATOM   1274   CA ALA B  27      49.539  41.476  58.690  1.00 30.91           C 0
+ATOM   1269    O VAL B  26      48.484  41.182  56.135  1.00 27.45           O 0
+ATOM   1326   NE ARG B  33      42.614  41.304  59.085  0.00 34.58           N 0
+ATOM   1329  NH2 ARG B  33      42.086  41.547  61.309  0.00 35.58           N 0
+ATOM   1327   CZ ARG B  33      42.452  42.080  60.151  0.00 35.20           C 0
+ATOM   1378    CAGLU B  38      45.069  34.591  62.236  0.50 30.21           C 0
+ATOM   1398    OAASP B  39      48.614  36.315  63.286  0.50 23.03           O 0
+ATOM   1392    NAASP B  39      46.152  34.072  62.785  0.50 28.46           N 0
+ATOM   1364    CAPRO B  37      45.661  32.125  60.065  0.50 29.38           C 0
+ATOM   1374    NAGLU B  38      44.666  33.016  60.100  0.50 25.17           N 0
+ATOM   1434   CGALEU B  41      50.448  36.612  59.738  0.50 21.70           C 0
+ATOM   1277   CB ALA B  27      50.488  41.597  59.898  1.00 30.89           C 0
+ATOM   1352   CB TYR B  36      47.686  34.610  56.010  1.00 20.19           C 0
+ATOM   1376   CAAGLU B  38      44.171  33.893  61.195  0.50 30.50           C 0
+ATOM   1271  CG1 VAL B  26      50.050  38.696  55.008  1.00 27.89           C 0
+ATOM   1314    O LEU B  32      45.463  37.021  54.109  1.00 23.29           O 0
+ATOM   1396    CAASP B  39      48.202  35.234  63.722  0.50 24.03           C 0
+ATOM   1414    OAASP B  40      51.164  32.959  62.475  0.50 18.71           O 0
+ATOM   1366    OAPRO B  37      46.422  31.925  61.004  0.50 30.71           O 0
+TER
+END

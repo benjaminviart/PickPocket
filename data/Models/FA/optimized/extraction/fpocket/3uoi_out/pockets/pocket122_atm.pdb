@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket   123:
+HEADER 0  - Pocket Score                      : 5.7432
+HEADER 1  - Drug Score                        : 0.0183
+HEADER 2  - Number of V. Vertices             :    27
+HEADER 3  - Mean alpha-sphere radius          : 3.9121
+HEADER 4  - Mean alpha-sphere SA              : 0.4789
+HEADER 5  - Mean B-factor                     : 0.3044
+HEADER 6  - Hydrophobicity Score              : 28.6667
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Volume Score                      : 4.2500
+HEADER 9  - Real volume (approximation)       : 184.7567
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 26.0000
+HEADER 12 - Number of apolar alpha sphere     :    27
+HEADER 13 - Proportion of apolar alpha sphere : 1.0000
+ATOM  41653  CD2 LEU i  65     111.776 -58.708-154.285  1.00 20.33           C 0
+ATOM  61421  OE2 GLU x 128     107.920 -58.341-150.364  1.00 24.11           O 0
+ATOM  41126   CG MET i   1     111.704 -54.402-153.079  1.00 34.62           C 0
+ATOM  41127   SD MET i   1     109.995 -54.288-152.627  1.00 45.58           S 0
+ATOM  61186  CD1 LEU x  98     108.666 -54.166-148.401  1.00 19.18           C 0
+ATOM  61223   NZ LYS x 102     113.030 -57.395-146.097  1.00 27.05           N 0
+ATOM  61222   CE LYS x 102     111.892 -58.053-145.497  1.00 27.90           C 0
+ATOM  41132    O GLN i   2     115.743 -56.264-151.933  1.00 28.92           O 0
+ATOM  42040   CG ASP i 113     111.131 -62.699-150.573  1.00 16.85           C 0
+ATOM  41621  NH2 ARG i  61     109.130 -60.316-152.660  1.00 19.29           N 0
+ATOM  42041  OD1 ASP i 113     111.784 -62.711-151.592  1.00 22.12           O 0
+ATOM  41139   CA GLY i   3     115.757 -58.692-153.165  1.00 27.97           C 0
+ATOM  41142    N ASP i   4     116.821 -60.273-151.694  1.00 24.94           N 0
+ATOM  42039   CB ASP i 113     111.833 -63.073-149.261  1.00 23.07           C 0
+ATOM  41146   CB ASP i   4     117.463 -61.886-150.046  1.00 25.55           C 0
+ATOM  42020    O LYS i 111     114.643 -62.072-145.472  1.00 26.84           O 0
+ATOM  42029    O GLN i 112     111.083 -61.118-145.777  1.00 22.30           O 0
+ATOM  42042  OD2 ASP i 113     109.965 -62.375-150.548  1.00 22.90           O 0
+ATOM  42036   CA ASP i 113     110.936 -62.908-148.021  1.00 20.90           C 0
+TER
+END

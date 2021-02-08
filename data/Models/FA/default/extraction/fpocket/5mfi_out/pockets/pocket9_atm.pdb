@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 9.5236
+HEADER 1  - Drug Score                        : 0.0328
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 4.3765
+HEADER 4  - Mean alpha-sphere SA              : 0.6506
+HEADER 5  - Mean B-factor                     : 0.0442
+HEADER 6  - Hydrophobicity Score              : 11.1429
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 3.0000
+HEADER 9  - Real volume (approximation)       : 379.0417
+HEADER 10 - Charge Score                      :     0
+HEADER 11 - Local hydrophobic density Score   : 16.0000
+HEADER 12 - Number of apolar alpha sphere     :    17
+HEADER 13 - Proportion of apolar alpha sphere : 0.5312
+ATOM    376   CBASER A  56      -0.161  19.914 115.221  0.53 25.18           C 0
+ATOM    697   CA ALA A  94      -0.422  17.587 119.883  1.00 18.85           C 0
+ATOM    700   CB ALA A  94       0.748  17.063 119.058  1.00 19.44           C 0
+ATOM    668   CD LYS A  90       5.856  20.664 123.081  1.00 23.26           C 0
+ATOM    371    N SER A  56       1.711  18.298 115.306  1.00 21.71           N 0
+ATOM    665    O LYS A  90       2.845  17.330 121.803  1.00 19.29           O 0
+ATOM    690    O GLU A  93      -1.615  19.136 121.958  1.00 22.14           O 0
+ATOM    691   CB GLU A  93       0.755  19.352 124.049  1.00 18.34           C 0
+ATOM    367   CB LEU A  55       4.069  17.056 117.110  1.00 18.59           C 0
+ATOM    696    N ALA A  94      -0.072  17.606 121.307  1.00 17.90           N 0
+ATOM    335    O ILE A  50       8.148  21.583 116.908  1.00 22.62           O 0
+ATOM    355   CA GLY A  53       6.019  22.090 114.168  1.00 23.92           C 0
+ATOM    689    C GLU A  93      -0.688  18.377 122.230  1.00 20.98           C 0
+ATOM    666   CB LYS A  90       5.952  18.148 122.603  1.00 17.65           C 0
+ATOM    370  CD2 LEU A  55       5.442  16.386 119.128  1.00 21.71           C 0
+ATOM    338  CG2 ILE A  50       8.766  20.276 119.967  1.00 23.10           C 0
+ATOM    333   CA ILE A  50       9.047  19.453 117.553  1.00 19.28           C 0
+ATOM    363    N LEU A  55       4.655  17.798 114.842  1.00 20.54           N 0
+ATOM    357    O GLY A  53       4.335  20.904 112.953  1.00 24.93           O 0
+ATOM    356    C GLY A  53       5.449  20.862 113.481  1.00 26.30           C 0
+ATOM    694  OE1 GLU A  93       2.863  20.776 125.200  1.00 22.31           O 0
+TER
+END

@@ -1,0 +1,44 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    35:
+HEADER 0  - Pocket Score                      : 0.1849
+HEADER 1  - Drug Score                        : 0.0285
+HEADER 2  - Number of V. Vertices             :    32
+HEADER 3  - Mean alpha-sphere radius          : 3.8125
+HEADER 4  - Mean alpha-sphere SA              : 0.5177
+HEADER 5  - Mean B-factor                     : 0.1766
+HEADER 6  - Hydrophobicity Score              : 39.1667
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Volume Score                      : 4.3333
+HEADER 9  - Real volume (approximation)       : 319.2070
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 15.0000
+HEADER 12 - Number of apolar alpha sphere     :    16
+HEADER 13 - Proportion of apolar alpha sphere : 0.5000
+ATOM   2932  CE2 TYR B  42     -17.785  22.924  26.684  1.00 42.98           C 0
+ATOM   5743   CB ILE B 414     -16.500  25.190  22.153  1.00 27.25           C 0
+ATOM   5745  CG2 ILE B 414     -17.171  23.849  22.416  1.00 27.10           C 0
+ATOM   5740   CA ILE B 414     -17.565  26.297  21.974  1.00 26.98           C 0
+ATOM   2933   CZ TYR B  42     -19.160  22.876  26.832  1.00 43.13           C 0
+ATOM   2934   OH TYR B  42     -19.780  23.727  27.720  1.00 43.67           O 0
+ATOM   5733    O GLN B 413     -20.035  27.364  21.221  1.00 39.46           O 0
+ATOM   4543   NZ LYS B 257     -17.596  27.683  28.770  1.00 65.51           N 0
+ATOM   5741    C ILE B 414     -16.960  27.646  22.369  1.00 28.05           C 0
+ATOM   4541   CD LYS B 257     -15.726  27.195  27.203  1.00 62.43           C 0
+ATOM   4539   CB LYS B 257     -14.053  26.417  25.514  1.00 59.37           C 0
+ATOM   2931  CE1 TYR B  42     -19.915  21.976  26.090  1.00 42.63           C 0
+ATOM   4618  CG1 VAL B 268     -23.336  21.373  24.100  1.00 33.76           C 0
+ATOM   5725   CD ARG B 412     -25.621  25.231  21.426  1.00 35.66           C 0
+ATOM   4619  CG2 VAL B 268     -22.461  21.905  21.842  1.00 33.37           C 0
+ATOM   5723   CB ARG B 412     -23.512  25.033  20.083  1.00 35.34           C 0
+ATOM   5732    C GLN B 413     -19.310  26.872  20.353  1.00 39.22           C 0
+ATOM   5722    O ARG B 412     -20.462  24.165  18.964  1.00 35.70           O 0
+ATOM   2929  CD1 TYR B  42     -19.281  21.122  25.197  1.00 41.79           C 0
+ATOM   5726   NE ARG B 412     -25.872  26.661  21.244  1.00 35.92           N 0
+ATOM   5728  NH1 ARG B 412     -27.289  26.850  23.056  1.00 36.28           N 0
+ATOM   5727   CZ ARG B 412     -26.658  27.398  22.025  1.00 36.35           C 0
+ATOM   5729  NH2 ARG B 412     -26.817  28.689  21.768  1.00 36.84           N 0
+TER
+END

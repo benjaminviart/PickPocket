@@ -1,0 +1,46 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : 6.0619
+HEADER 1  - Drug Score                        : 0.0260
+HEADER 2  - Number of V. Vertices             :    35
+HEADER 3  - Mean alpha-sphere radius          : 3.4950
+HEADER 4  - Mean alpha-sphere SA              : 0.4410
+HEADER 5  - Mean B-factor                     : 0.2092
+HEADER 6  - Hydrophobicity Score              : 33.3636
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Volume Score                      : 4.0909
+HEADER 9  - Real volume (approximation)       : 246.5816
+HEADER 10 - Charge Score                      :    -1
+HEADER 11 - Local hydrophobic density Score   : 7.8000
+HEADER 12 - Number of apolar alpha sphere     :    10
+HEADER 13 - Proportion of apolar alpha sphere : 0.2857
+ATOM    246  NH1 ARG A  28      13.254  28.423   8.238  1.00 39.17           N 0
+ATOM    188    O LEU A  21      18.180  30.699   6.144  1.00 12.36           O 0
+ATOM     80  CD2 HIS A   8      14.791  28.449   2.207  1.00 20.72           C 0
+ATOM    220  OD2AASP A  24      13.775  31.708   7.902  0.56 22.78           O 0
+ATOM    192  CD2 LEU A  21      15.962  32.439   2.286  1.00 18.29           C 0
+ATOM     82  NE2 HIS A   8      13.837  29.276   1.662  1.00 19.79           N 0
+ATOM     60   SDAMET A   6      18.772  27.187   4.798  0.44 14.38           S 0
+ATOM    226   CB ALA A  25      17.702  27.832   8.188  1.00 12.78           C 0
+ATOM     58   CGAMET A   6      17.907  25.659   5.255  0.44 12.76           C 0
+ATOM    214   CBAASP A  24      15.880  32.810   8.049  0.56 16.76           C 0
+ATOM    189   CB LEU A  21      18.176  31.456   2.952  1.00 12.87           C 0
+ATOM    186   CA LEU A  21      18.309  32.201   4.278  1.00 12.33           C 0
+ATOM    216   CGAASP A  24      14.431  32.627   8.436  0.56 18.89           C 0
+ATOM    180    O ASP A  20      18.699  34.099   6.205  1.00 13.62           O 0
+ATOM   1770    C PRO A 229      11.284  23.674   2.567  1.00 16.72           C 0
+ATOM   1772   CB PRO A 229      11.771  25.622   1.035  1.00 17.55           C 0
+ATOM   1771    O PRO A 229      10.077  23.598   2.805  1.00 18.81           O 0
+ATOM    247  NH2 ARG A  28      11.529  26.951   8.610  1.00 32.60           N 0
+ATOM   1776   CA GLY A 230      11.811  22.966   4.799  1.00 14.66           C 0
+ATOM   1775    N GLY A 230      12.214  23.368   3.464  1.00 14.30           N 0
+ATOM   1777    C GLY A 230      12.995  22.928   5.733  1.00 12.16           C 0
+ATOM   1785  CD1 LEU A 231      16.019  24.156   9.527  1.00 15.82           C 0
+ATOM   1778    O GLY A 230      14.155  23.032   5.322  1.00 14.23           O 0
+ATOM   1783   CB LEU A 231      13.554  23.908   9.002  1.00 14.07           C 0
+ATOM     67    O GLN A   7      14.805  24.051   2.355  1.00 12.77           O 0
+TER
+END

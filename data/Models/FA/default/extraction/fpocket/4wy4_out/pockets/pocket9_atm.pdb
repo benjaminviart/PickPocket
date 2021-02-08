@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : 16.4947
+HEADER 1  - Drug Score                        : 0.0604
+HEADER 2  - Number of V. Vertices             :    37
+HEADER 3  - Mean alpha-sphere radius          : 3.6359
+HEADER 4  - Mean alpha-sphere SA              : 0.4866
+HEADER 5  - Mean B-factor                     : 0.1020
+HEADER 6  - Hydrophobicity Score              : 31.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.7500
+HEADER 9  - Real volume (approximation)       : 271.1249
+HEADER 10 - Charge Score                      :     1
+HEADER 11 - Local hydrophobic density Score   : 14.0000
+HEADER 12 - Number of apolar alpha sphere     :    15
+HEADER 13 - Proportion of apolar alpha sphere : 0.4054
+ATOM   1508   CDAARG C  90     -33.743   4.580  15.478  0.56 21.67           C 0
+ATOM   1554   SD MET C  94     -34.189   3.009   9.909  0.88 20.84           S 0
+ATOM   1553   CG MET C  94     -32.552   2.539  10.492  1.00 18.93           C 0
+ATOM   1505   CGAARG C  90     -33.409   3.171  14.997  0.56 19.49           C 0
+ATOM    915  OD1AASN B 208     -32.324   7.844   9.368  0.52 23.89           O 0
+ATOM   1555   CE MET C  94     -33.745   4.050   8.588  1.00 25.85           C 0
+ATOM    906    N ASN B 208     -28.573   5.746   8.578  1.00 13.52           N 0
+ATOM    904  CG1 VAL B 207     -28.374   2.177   9.060  1.00 16.45           C 0
+ATOM    874    O ALA B 204     -27.580   6.242  11.217  1.00 16.09           O 0
+ATOM   1524   CA THR C  91     -29.581   0.827  13.355  1.00 15.57           C 0
+ATOM    911   CBAASN B 208     -29.995   7.592   9.306  0.52 17.88           C 0
+ATOM    907   CAAASN B 208     -29.784   6.499   8.281  0.52 15.76           C 0
+ATOM   1528  OG1 THR C  91     -27.987   2.324  14.398  1.00 17.41           O 0
+ATOM    875   CB ALA B 204     -26.988   5.878  14.438  1.00 16.40           C 0
+ATOM   1517  NH1AARG C  90     -32.910   5.265  18.120  0.56 32.90           N 0
+ATOM    885  OD1AASP B 205     -27.228  10.310  12.922  0.39 20.35           O 0
+ATOM    913   CGAASN B 208     -31.257   8.340   9.056  0.52 21.05           C 0
+ATOM   1475    O VAL C  87     -29.141   2.031  16.868  1.00 17.70           O 0
+ATOM   1502   CBAARG C  90     -32.773   2.337  16.102  0.56 17.70           C 0
+ATOM   1477  CG1 VAL C  87     -27.657   4.631  17.793  1.00 20.32           C 0
+ATOM   1501    O ARG C  90     -32.332   0.660  13.297  1.00 16.72           O 0
+ATOM   1523    N THR C  91     -30.444   0.893  14.519  1.00 16.10           N 0
+TER
+END

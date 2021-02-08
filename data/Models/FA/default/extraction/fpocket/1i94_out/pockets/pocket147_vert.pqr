@@ -1,0 +1,52 @@
+HEADER
+HEADER This is a pqr format file writen by the programm fpocket.                 
+HEADER It represent the voronoi vertices of a single pocket found by the         
+HEADER algorithm.                                                                
+HEADER                                                                           
+HEADER Information about the pocket   148:
+HEADER 0  - Pocket Score                      : -0.8063
+HEADER 1  - Drug Score                        : 0.0043
+HEADER 2  - Number of V. Vertices             :    30
+HEADER 3  - Mean alpha-sphere radius          : 4.5323
+HEADER 4  - Mean alpha-sphere SA              : 0.4452
+HEADER 5  - Mean B-factor                     : 0.1318
+HEADER 6  - Hydrophobicity Score              : 0.1111
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Volume Score                      : 4.1111
+HEADER 9  - Real volume (approximation)       : 488.9218
+HEADER 10 - Charge Score                      :     4
+HEADER 11 - Local hydrophobic density Score   : 0.0000
+HEADER 12 - Number of apolar alpha sphere     :     1
+HEADER 13 - Proportion of apolar alpha sphere : 0.0333
+ATOM  1d3e2  POL STP   148      55.956 128.151 152.264    0.00     4.00
+ATOM  1d3e4  POL STP   148      56.730 128.259 152.799    0.00     4.25
+ATOM  2dcec  POL STP   148      59.196 126.031 156.697    0.00     4.20
+ATOM  39340  POL STP   148      59.361 125.998 156.882    0.00     4.18
+ATOM  39342  POL STP   148      59.134 126.065 156.793    0.00     4.18
+ATOM  39340  POL STP   148      60.421 125.949 157.479    0.00     4.15
+ATOM  39340  POL STP   148      60.361 125.359 157.911    0.00     4.06
+ATOM  2dcec  POL STP   148      57.764 126.461 154.046    0.00     4.90
+ATOM  2dcec  POL STP   148      58.043 126.590 155.004    0.00     4.58
+ATOM  89705  POL STP   148      60.509 127.277 152.798    0.00     4.92
+ATOM  1e82a  POL STP   148      60.311 127.234 152.485    0.00     5.05
+ATOM  1e82a  POL STP   148      60.170 127.357 152.303    0.00     5.01
+ATOM  1d3e2  POL STP   148      57.794 126.437 152.993    0.00     5.28
+ATOM  1e82a  POL STP   148      58.750 126.743 152.730    0.00     5.05
+ATOM  1e82b  POL STP   148      57.688 126.279 152.881    0.00     5.28
+ATOM  2dcec  POL STP   148      57.805 126.398 153.785    0.00     5.02
+ATOM  1e82b  POL STP   148      57.044 125.978 152.378    0.00     5.12
+ATOM  1d3da  POL STP   148      57.715 124.915 152.890    0.00     4.49
+ATOM  1e82b  POL STP   148      57.633 125.296 152.773    0.00     4.79
+ATOM  2dceb  POL STP   148      57.741 124.970 153.556    0.00     4.25
+ATOM  1e872  POL STP   148      58.542 123.517 153.036    0.00     3.28
+ATOM  1e82b  POL STP   148      57.503 125.988 152.882    0.00     5.23
+ATOM  2dcec  POL STP   148      57.517 125.991 153.151    0.00     5.12
+ATOM  1e82b  POL STP   148      57.003 125.809 152.452    0.00     5.12
+ATOM  2dcec  POL STP   148      58.243 126.483 154.716    0.00     4.68
+ATOM  39330 APOL STP   148      58.011 126.624 155.964    0.00     4.27
+ATOM  39340  POL STP   148      57.977 126.735 156.572    0.00     4.11
+ATOM  39342  POL STP   148      58.381 126.447 156.611    0.00     4.14
+ATOM  39342  POL STP   148      58.475 125.756 157.464    0.00     3.58
+ATOM  39335  POL STP   148      55.793 125.354 154.568    0.00     3.68
+TER
+END
