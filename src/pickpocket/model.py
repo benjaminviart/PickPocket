@@ -97,7 +97,7 @@ def training_process(file_name, model, labels, out_prefix, cv, f1_thr, f2_thr, c
         print("Neural network - MultiLayer Perceptron Classifier")
         parameters = {'activation':['logistic', 'relu', 'tanh', 'identity'], 'solver' : ['adam', 'lbfgs'] , 
                       'hidden_layer_sizes' : [ (88,44,22), (44,22,11) , (88,176,88) ] }
-        clf_model=MLPClassifier(max_iter=100000, alpha=0.0001,early_stopping=True, class_weight=class_weight)
+        clf_model=MLPClassifier(max_iter=100000, alpha=0.0001,early_stopping=True)
     elif (model == "rf"):
         print("Random Forest classifier")
         parameters = {'n_estimators':[1000], 'max_depth' : [50] , 'min_samples_split' : [2] }
@@ -168,17 +168,17 @@ def training_process(file_name, model, labels, out_prefix, cv, f1_thr, f2_thr, c
                     idx=0;
                     line=ifs.readline()
                     if line[0]=="#":
-                        ofs_train.write(line+"\n")
-                        ofs_test.write(line+"\n")
+                        ofs_train.write(line)
+                        ofs_test.write(line)
                         line=ifs.readline()
-                    ofs_train.write(line+"\n")
-                    ofs_test.write(line+"\n")
+                    ofs_train.write(line)
+                    ofs_test.write(line)
                     line=ifs.readline()
                     while line:
                         if idx in train:
-                            ofs_train.write(line+"\n")
+                            ofs_train.write(line)
                         else:
-                            ofs_test.write(line+"\n")
+                            ofs_test.write(line)
                         idx+=1
                         line=ifs.readline()
         clf=clone(clf)
@@ -187,10 +187,10 @@ def training_process(file_name, model, labels, out_prefix, cv, f1_thr, f2_thr, c
         else:
             clf.fit(X[train], Y[train])
         clf._estimator_type="classifier"
-        stream_out = open("{}/model.pkl".format(out_dir, i), "wb")
+        stream_out = open("{}/model.pkl".format(out_dir), "wb")
         if model == "deep":
             pickle.dump([scaler, "deep", data["param"]], stream_out)
-            clf.model.save("{}.h5".format(out_prefix))
+            clf.model.save("{}/model.h5".format(out_dir))
         else:
             pickle.dump([scaler, clf, data["param"]], stream_out)
         stream_out.close();

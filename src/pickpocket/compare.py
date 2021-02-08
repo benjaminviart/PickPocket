@@ -46,12 +46,12 @@ def compare(biolip_file, extract_folder,   out_file):
     else:
         f=open(biolip_file, "r")
     for line in f:
-      arr=[ v.strip() for v in line.split("\t")]
-      if arr[4] in ligands:
-          residues=[ "{}_{}".format(arr[1], v[1:].strip()) for v in arr[7].split() ]
-          if not arr[0] in biolip:
-              biolip[arr[0]]=[]
-          biolip[arr[0]].extend(residues)
+        arr=[ v.strip() for v in line.split("\t")]
+        if arr[4] in ligands:
+            residues=[ "{}_{}".format(arr[1], v[1:].strip()) for v in arr[7].split() ]
+            if not arr[0] in biolip:
+                biolip[arr[0]]=[]
+            biolip[arr[0]].extend(residues)
     f.close()
     print("Done.")
     
