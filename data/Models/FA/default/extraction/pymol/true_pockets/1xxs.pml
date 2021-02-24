@@ -42,42 +42,42 @@ show spheres, ligand_5
 set sphere_scale , 1 , ligand_5 
 set sphere_transparency , 0.1 , ligand_5 
 # true pocket number 0
-select true_pocket_0, chain A and resi 49+102+5+48+22+6+30+2+18+45+28+69+3+9+29
+select true_pocket_0, chain A and resi 28+5+3+69+30+45+49+102+18+2+22+6+29+9+48
 set_color true_pk_0, [ 0, 0, 255 ] 
 color true_pk_0 , true_pocket_0 
 show spheres, true_pocket_0 
 set sphere_scale , 0.3 , true_pocket_0 
 set sphere_transparency , 0.1 , true_pocket_0 
 # true pocket number 1
-select true_pocket_1, chain A and resi 49+5+30+52+2+23+69+19+31+24
+select true_pocket_1, chain A and resi 69+5+30+23+19+52+31+49+24+2
 set_color true_pk_1, [ 0, 0, 255 ] 
 color true_pk_1 , true_pocket_1 
 show spheres, true_pocket_1 
 set sphere_scale , 0.3 , true_pocket_1 
 set sphere_transparency , 0.1 , true_pocket_1 
 # true pocket number 2
-select true_pocket_2, ( chain A and resi 11+77+10+7+75 )  or  ( chain B and resi 7+11+10+77+15 ) 
+select true_pocket_2, ( chain B and resi 10+15+7+77+11 )  or  ( chain A and resi 11+77+75+10+7 ) 
 set_color true_pk_2, [ 0, 0, 255 ] 
 color true_pk_2 , true_pocket_2 
 show spheres, true_pocket_2 
 set sphere_scale , 0.3 , true_pocket_2 
 set sphere_transparency , 0.1 , true_pocket_2 
 # true pocket number 3
-select true_pocket_3, chain B and resi 49+22+48+9+45+3+30+28+2+18+6+29
+select true_pocket_3, chain B and resi 2+29+22+48+49+18+6+3+28+9+30+45
 set_color true_pk_3, [ 0, 0, 255 ] 
 color true_pk_3 , true_pocket_3 
 show spheres, true_pocket_3 
 set sphere_scale , 0.3 , true_pocket_3 
 set sphere_transparency , 0.1 , true_pocket_3 
 # true pocket number 4
-select true_pocket_4, chain B and resi 49+69+52+30+31+2
+select true_pocket_4, chain B and resi 69+2+30+31+52+49
 set_color true_pk_4, [ 0, 0, 255 ] 
 color true_pk_4 , true_pocket_4 
 show spheres, true_pocket_4 
 set sphere_scale , 0.3 , true_pocket_4 
 set sphere_transparency , 0.1 , true_pocket_4 
 # true pocket number 5
-select true_pocket_5, ( chain A and resi 11+15+77+10 )  or  ( chain B and resi 7+11+10+77+3+75+15 ) 
+select true_pocket_5, ( chain B and resi 10+15+7+77+11+3+75 )  or  ( chain A and resi 11+77+15+10 ) 
 set_color true_pk_5, [ 0, 0, 255 ] 
 color true_pk_5 , true_pocket_5 
 show spheres, true_pocket_5 

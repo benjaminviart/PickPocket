@@ -7,7 +7,7 @@ show spheres, ligand_0
 set sphere_scale , 1 , ligand_0 
 set sphere_transparency , 0.1 , ligand_0 
 # true pocket number 0
-select true_pocket_0, chain A and resi 440+255+251+254+321+318+276+241+330+464+275+355+314+339+277+354+272+280+332+250+279+247
+select true_pocket_0, chain A and resi 277+276+332+464+255+318+321+355+330+339+241+275+272+251+250+314+254+280+440+354+247+279
 set_color true_pk_0, [ 0, 0, 255 ] 
 color true_pk_0 , true_pocket_0 
 show spheres, true_pocket_0 

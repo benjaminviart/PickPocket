@@ -14,14 +14,14 @@ show spheres, ligand_1
 set sphere_scale , 1 , ligand_1 
 set sphere_transparency , 0.1 , ligand_1 
 # true pocket number 0
-select true_pocket_0, chain A and resi 44+81+69+14+58+79+11+10+35+38+54+51
+select true_pocket_0, chain A and resi 11+58+14+81+54+51+38+79+44+35+69+10
 set_color true_pk_0, [ 0, 0, 255 ] 
 color true_pk_0 , true_pocket_0 
 show spheres, true_pocket_0 
 set sphere_scale , 0.3 , true_pocket_0 
 set sphere_transparency , 0.1 , true_pocket_0 
 # true pocket number 1
-select true_pocket_1, chain B and resi 54+14+77+79+35+69+58+81+38+11+7+34+31+51+10+13
+select true_pocket_1, chain B and resi 35+77+38+10+51+81+79+31+34+13+7+69+54+58+14+11
 set_color true_pk_1, [ 0, 0, 255 ] 
 color true_pk_1 , true_pocket_1 
 show spheres, true_pocket_1 

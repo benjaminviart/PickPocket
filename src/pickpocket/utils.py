@@ -29,6 +29,96 @@ fpocket_arg_formatter = {
             "r" : "{:.1f}",
                       }
 stride_one_letter_ss = ["H", "G", "I", "E", "B", "b", "T", "C"]
+
+amino_acids=[ "ALA",
+                    "ARG",
+                    "ASN",
+                    "ASP",
+                    "CYS",
+                    "GLN",
+                    "GLU",
+                    "GLY",
+                    "HIS",
+                    "ILE",
+                    "LEU",
+                    "LYS",
+                    "MET",
+                    "PHE",
+                    "PRO",
+                    "SER",
+                    "SEC",
+                    "THR",
+                    "TRP",
+                    "TYR",
+                    "VAL",
+                    "UNK"]
+amino_acid_groups={"AA_Charged_plus" : ["ARG", "HIS", "LYS"],
+                   "AA_Charged_minus": ["ASP", "GLU"],
+                   "AA_Uncharged" : ["SER", "THR", "ASN", "GLN"],
+                   "AA_Hydrophobic" : ["ALA", "VAL", "ILE", "LEU", "MET", "PHE", "TYR", "TRP"],
+                   "AA_Other": ["CYS", "SEC", "GLY", "PRO"]}
+
+atoms_ids=["C",
+                   "C1",
+                   "C2",
+                   "C3",
+                   "C4",
+                   "C5",
+                   "C6",
+                   "C7",
+                   "C8",
+                   "CA",
+                   "CB",
+                   "CD",
+                   "CD1",
+                   "CD2",
+                   "CE",
+                   "CE1",
+                   "CE2",
+                   "CE3",
+                   "CG",
+                   "CG1",
+                   "CG2",
+                   "CH2",
+                   "CZ",
+                   "CZ2",
+                   "CZ3",
+                   "N",
+                   "N1",
+                   "N2",
+                   "N3",
+                   "N4",
+                   "N6",
+                   "N7",
+                   "N9",
+                   "ND1",
+                   "ND2",
+                   "NE",
+                   "NE1",
+                   "NE2",
+                   "NH1",
+                   "NH2",
+                   "NZ",
+                   "O",
+                   "O2",
+                   "O3",
+                   "O4",
+                   "O5",
+                   "O6",
+                   "OD1",
+                   "OD2",
+                   "OE1",
+                   "OE2",
+                   "OG",
+                   "OG1",
+                   "OH",
+                   "OP1",
+                   "OP2",
+                   "OXT",
+                   "P",
+                   "S",
+                   "SD",
+                   "SG"]
     
 pickpocket_header = ["PDB",
                    "pocket_number",
@@ -62,6 +152,11 @@ pickpocket_header = ["PDB",
                    "stride_b",
                    "stride_T",
                    "stride_C",
+                   "AA_Charged_plus" ,
+                   "AA_Charged_minus",
+                   "AA_Uncharged" ,
+                   "AA_Hydrophobic",
+                   "AA_Other",
                    "C",
                    "C1",
                    "C2",
@@ -132,22 +227,24 @@ def get_uids(res_list):
         out.append("{}_{}".format(r.get_full_id()[2], r.id[1]))
     return out
 
+
 def get_best_pocket_coverage(residues, true_positives):
-        best=[0,0]
+        best = [0, 0]
         if len(residues) == 0 :
             return best
         for pk in true_positives:
             fract = len(pk[0].intersection(residues)) / len(pk[0])
             if fract > best[0]:
-                best[0]=fract
-            n=0
+                best[0] = fract
+            n = 0
             for i in range(1, len(pk)):
                if len(pk[i].intersection(residues)) > 0:
-                   n+=1
-            fract = n / (len(pk)-1)
+                   n += 1
+            fract = n / (len(pk) - 1)
             if fract > best[1]:
-                best[1]=fract
+                best[1] = fract
         return (best[0], best[1])
+
             
 class FpocketResult():
 
@@ -172,6 +269,7 @@ class FpocketResult():
 
 
 class Pocket():
+
     def __init__(self, pocket_number, folder):
         '''
         Get the pocket results from fpocket.
@@ -214,7 +312,7 @@ class Pocket():
         self.info.append(float(k_v[1].strip()))
     
     def add_atom(self, line):
-        if line[76:78].strip() in pickpocket_header[32:]:
+        if line[76:78].strip() in atoms_ids:
             self.atoms.append({ "id": int(line[6:11].strip()),
               "atom" : line[12:16].strip().replace("'", ""),
               "res" : line[17:20].strip(),
@@ -227,22 +325,30 @@ class Pocket():
 
     def get_atm_stats(self):
         stats = {}
-        for atm in pickpocket_header[32:]:
-            stats[atm] = 0
+        for atm in atoms_ids:
+            stats[atm] = 0.0
         for atm in self.atoms:
-            if atm["atom"] not in pickpocket_header[32:]:
-                print(atm["atom"])
-            else:
+            if atm["atom"] in atoms_ids:
                 stats[atm["atom"]] += 1
-        tot = len(self.atoms)
-        for atm in pickpocket_header[32:]:
-            stats[atm] /= tot 
         return stats  
     
     def get_residues_ids(self):
         out = set()
         for atm in self.atoms:
             out.add("{}_{}".format(atm["chain"], atm["resn"]))
+        return out
+    
+    def get_residues_stats(self):
+        out={}
+        for k in amino_acid_groups.keys():
+            out[k]=0.0
+        residues={}
+        for atm in self.atoms:
+            residues[atm["resn"]]=atm["res"]
+        for k in residues.keys():
+            for g in amino_acid_groups.keys():
+                if residues[k] in amino_acid_groups[g]:
+                    out[g]+=1
         return out
     
     def get_position(self):
@@ -268,6 +374,7 @@ class Pocket():
                         sep = "~"
                 out += "{}{}]".format(sep, residues[chain][tot - 1])
         return out
+
     def get_full_position(self):
         out = ""
         residues = {}
@@ -294,6 +401,12 @@ class Pocket():
         
                         
 def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
+    out_dir = "{}/{}_out/".format(output_folder, pdb_id)
+    if os.path.exists(out_dir):
+        if os.path.exists("{}{}_info.txt".format(out_dir, pdb_id)):
+            return FpocketResult(out_dir, pdb_id)
+        else:
+            return None
     command = "ln -s {} {}/{}.pdb ".format(os.path.realpath(input_file), os.path.realpath(output_folder), pdb_id)
     proc = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     proc.wait()
@@ -310,7 +423,7 @@ def fpocket(pdb_id, input_file, output_folder, parameters, timeout=None):
     except subprocess.TimeoutExpired as err:
         proc.kill()
         return -1
-    out_dir = "{}/{}_out/".format(output_folder, pdb_id)
+    
     if proc.returncode == 0 and os.path.exists(out_dir):
         return FpocketResult(out_dir, pdb_id)
     else:
@@ -333,12 +446,10 @@ def stride(pdb_id, input_file, output_folder):
     if proc.returncode == 0 and os.path.exists(ofile):
         return StrideResult(ofile, pdb_id)
     else:
-        with open(ofile+".stderr", "w") as f:
+        with open(ofile + ".stderr", "w") as f:
             for line in proc.stderr:
                 f.write(line.decode())
         return StrideResult(None, pdb_id)
-        
-        
 
     
 class StrideResult():
@@ -347,7 +458,7 @@ class StrideResult():
         self.file = file
         self.pdb_id = pdb_id
         self.results = {}
-        if file!=None:
+        if file != None:
             with open(file, "r") as f:
                 for line in f:
                     if line[0:3] == "ASG":
@@ -368,52 +479,43 @@ class StrideResult():
     def get_residues_stats(self, residues):
         stats = {}
         for ss in stride_one_letter_ss:
-            stats[ss] = 0
-        tot = len(residues)
-        missing=0
+            stats[ss] = 0.0
         for r in residues:
-            if not r in self.results.keys():
-                missing+=1
-            else:
+            if r in self.results.keys():
                 stats[self.results[r]["ss"]] += 1
-        if tot - missing > 0 :
-            tot=tot-missing
-        for k in stats:
-            stats[k] /= tot
         return stats
 
 
-
-def PDBKFold( ids, Y, fold=5, seed=None):
+def PDBKFold(ids, Y, fold=5, seed=None):
     if seed != None:
         np.random.seed(seed)
-    pos_pdb_ids=[]
-    neg_pdb_ids=[]
-    pdbs={}
+    pos_pdb_ids = []
+    neg_pdb_ids = []
+    pdbs = {}
     for idx, id in enumerate(ids):
         if Y[idx] == 1:
             if id[0] not in pos_pdb_ids:
                 pos_pdb_ids.append(id[0])
         if not id[0] in pdbs:
-            pdbs[id[0]]=[]
+            pdbs[id[0]] = []
         pdbs[id[0]].append(idx)
     for idx, id in enumerate(ids):
         if not id[0] in pos_pdb_ids and not id[0] in neg_pdb_ids :
             neg_pdb_ids.append(id[0])
             
-    n_pos=len(pos_pdb_ids)
-    n_neg=len(neg_pdb_ids)
+    n_pos = len(pos_pdb_ids)
+    n_neg = len(neg_pdb_ids)
     random_indices_pos = np.random.permutation(np.arange(n_pos))
     random_indices_neg = np.random.permutation(np.arange(n_neg))
     n_pos_test = round(n_pos / fold)
     n_neg_test = round(n_neg / fold)
-    out = [([],[]) for _ in range(fold)]
-    ## array with (train, test)
+    out = [([], []) for _ in range(fold)]
+    # # array with (train, test)
     if n_pos_test == 0:
         raise ValueError("ERROR! not enough PDBs with positive pockets")
     for i in range(fold):
         for j , idx in enumerate(random_indices_pos):
-            if j >= (i*n_pos_test) and j < ((i+1)*n_pos_test):
+            if j >= (i * n_pos_test) and j < ((i + 1) * n_pos_test):
                 out[i][1].extend(pdbs[pos_pdb_ids[idx]])
             else:
                 out[i][0].extend(pdbs[pos_pdb_ids[idx]]) 
@@ -422,13 +524,13 @@ def PDBKFold( ids, Y, fold=5, seed=None):
     else:
         for i in range(fold):
             for j , idx in enumerate(random_indices_neg):
-                if j >= (i*n_neg_test) and j < ((i+1)*n_neg_test):
+                if j >= (i * n_neg_test) and j < ((i + 1) * n_neg_test):
                     out[i][1].extend(pdbs[neg_pdb_ids[idx]])
                 else:
                     out[i][0].extend(pdbs[neg_pdb_ids[idx]])
-    final_out=[]
+    final_out = []
     for i in range(fold):
-        pos_train,pos_test,neg_train,neg_test=[],[],[],[]
+        pos_train, pos_test, neg_train, neg_test = [], [], [], []
         for j in range(len(out[i][0])):
             if Y[out[i][0][j]] == 0:
                 neg_train.append(out[i][0][j])
@@ -439,19 +541,18 @@ def PDBKFold( ids, Y, fold=5, seed=None):
                 neg_test.append(out[i][1][j])
             else:
                 pos_test.append(out[i][1][j])
-        train=np.concatenate((pos_train , neg_train))
-        test=np.concatenate((pos_test, neg_test))
-        final_out.append((train,test))
+        train = np.concatenate((pos_train , neg_train))
+        test = np.concatenate((pos_test, neg_test))
+        final_out.append((train, test))
     return final_out
-        
     
     
-def import_data( file_name, f1_thr = 0.1, f2_thr = 0.1, condition="and"):
-    Y=[]
-    ids =[]
-    X=[]
-    f1=[]
-    f2=[]
+def import_data(file_name, f1_thr=0.1, f2_thr=0.1, condition="and"):
+    Y = []
+    ids = []
+    X = []
+    f1 = []
+    f2 = []
     if not condition in ["and", "or"]:
         raise ValueError("Condition {} not valid. It as to be 'and' or 'or' ".format(condition))
     with open(file_name, "r") as f:
@@ -473,100 +574,108 @@ def import_data( file_name, f1_thr = 0.1, f2_thr = 0.1, condition="and"):
                 if f1[-1] >= f1_thr and f2[-1] >= f2_thr:
                     Y.append(1)
                 else:
-                    Y.append(0)
+                    if f1[-1]==0:
+                        Y.append(0)
+                    else:
+                        Y.append(-1)
             else:
-                if f1[-1] >= f1_thr or f2[-1]  >= f2_thr:
+                if f1[-1] >= f1_thr or f2[-1] >= f2_thr:
                     Y.append(1)
                 else:
-                    Y.append(0)
-            x=[]
+                    if f1[-1]==0:
+                        Y.append(0)
+                    else:
+                        Y.append(-1)
+            x = []
             for v in range(5, len(arr)):
                 x.append(float(arr[v]))
             X.append(x)
             line = f.readline()
     return { "X": np.array(X), "Y": Y , "ids": ids, "param": fpocket_param , "f1":  f1, "f2" : f2 }
 
-def plot_results(input_file,out_file, positive_list):
+
+def plot_results(input_file, out_file, positive_list):
     data = import_data(input_file)
-    pdbs={}
+    pdbs = {}
     for idx, id in enumerate(data["ids"]):
         if not id[0] in pdbs.keys():
-            pdbs[id[0]]={"f1":0, "f2": 0, "Y" : 0, "pockets_p" : 0 , "pockets_n" : 0 }
+            pdbs[id[0]] = {"f1":0, "f2": 0, "Y" : 0, "pockets_p" : 0 , "pockets_n" : 0 }
         for k in ["f1", "f2", "Y"]:
             if pdbs[id[0]][k] < data[k][idx]:
-                pdbs[id[0]][k]=data[k][idx]
+                pdbs[id[0]][k] = data[k][idx]
         if data["Y"][idx] == 0:
-            pdbs[id[0]]["pockets_n"]+=1
+            pdbs[id[0]]["pockets_n"] += 1
         else:
-            pdbs[id[0]]["pockets_p"]+=1
-    ## [[TP],[FN],[TN],[FP]]
-    f1=[[],[],[],[]]
-    f2=[[],[],[],[]]
-    pocket_n=[[],[],[],[]]
-    pocket_p=[[],[],[],[]]
+            pdbs[id[0]]["pockets_p"] += 1
+    # # [[TP],[FN],[TN],[FP]]
+    f1 = [[], [], [], []]
+    f2 = [[], [], [], []]
+    pocket_n = [[], [], [], []]
+    pocket_p = [[], [], [], []]
     for k in pdbs:
-        i=0
+        i = 0
         if k in positive_list:
             if pdbs[k]["Y"] == 0:
-                i=1
+                i = 1
                 print("Found FN: {}".format(k))
         else:
-            i=2
+            i = 2
             if pdbs[k]["Y"] == 1:
-                i=3
+                i = 3
         f1[i].append(pdbs[k]["f1"])
         f2[i].append(pdbs[k]["f2"])
         pocket_n[i].append(pdbs[k]["pockets_n"])
         pocket_p[i].append(pdbs[k]["pockets_p"])
 
-    pdf=PdfPages(out_file)     
+    pdf = PdfPages(out_file)     
     plt.plot(f1[0], f2[0], 'ob', label="TP")
     plt.plot(f1[1], f2[1], 'og', label="FN")
     plt.plot(f1[2], f2[2], 'sr', label="TN")
     plt.plot(f1[3], f2[3], 'sc', label="FP")
     plt.xlabel('f1')
     plt.ylabel('f2')
-    plt.xlim(0,1)
-    plt.ylim(0,1)
-    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.xlim(0, 1)
+    plt.ylim(0, 1)
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left', fontsize='xx-small')
     plt.title("Highest f1 and f2 for each pdb")
     plt.savefig(pdf, format="pdf")
     plt.close()
-    plt.xlim(0,1)
-    plt.hist(f1, bins=10, color=["blue", "green", "red", "cyan"] , label=["TP","FN", "TN", "FP" ])
+    plt.xlim(0, 1)
+    plt.hist(f1, bins=10, color=["blue", "green", "red", "cyan"] , label=["TP", "FN", "TN", "FP" ])
     plt.xlabel('f1')
     plt.ylabel('Count')
-    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left', fontsize='xx-small')
     plt.title("Distribution of the highest f1")
     plt.savefig(pdf, format="pdf")
     plt.close()
-    plt.xlim(0,1)
-    plt.hist(f2, bins=10, color=["blue", "green", "red", "cyan"] , label=["TP","FN", "TN", "FP" ])
+    plt.xlim(0, 1)
+    plt.hist(f2, bins=10, color=["blue", "green", "red", "cyan"] , label=["TP", "FN", "TN", "FP" ])
     plt.xlabel('f2')
     plt.ylabel('Count')
-    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left', fontsize='xx-small')
     plt.title("Distribution of the highest f2")
     plt.savefig(pdf, format="pdf")
     plt.close()
     plt.hist(pocket_p, bins=100,
-             color=["blue", "green", "red", "cyan"] , 
-             label=["TP","FN", "TN", "FP" ])
+             color=["blue", "green", "red", "cyan"] ,
+             label=["TP", "FN", "TN", "FP" ])
     plt.xlabel('Number of positive pockets')
     plt.ylabel('Count')
-    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left', fontsize='xx-small')
     plt.title("Number of positive pockets for each pdb")
     plt.savefig(pdf, format="pdf")
     plt.close()
     plt.hist(pocket_n, bins=100,
-             color=["blue", "green", "red", "cyan"] , 
-             label=["TP","FN", "TN", "FP" ])
+             color=["blue", "green", "red", "cyan"] ,
+             label=["TP", "FN", "TN", "FP" ])
     plt.xlabel('Number of negative pockets')
     plt.ylabel('Count')
-    plt.legend(bbox_to_anchor=(1, 1), loc='upper left',  fontsize='xx-small')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper left', fontsize='xx-small')
     plt.title("Number of negative pockets for each pdb")
     plt.savefig(pdf, format="pdf")
     plt.close()
     pdf.close()
+
     
 def check_dependencies():
     proc = subprocess.Popen("fpocket", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -576,7 +685,7 @@ def check_dependencies():
         exit(1)
     proc = subprocess.Popen("stride", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = proc.communicate()
-    arr=stderr.decode().split("\n")
+    arr = stderr.decode().split("\n")
     if len(arr) < 3 or arr[1].strip() != "You must specify input file":
         print("stride not detected. Install it from http://webclu.bio.wzw.tum.de/stride/stride.tar.gz")
         exit(1)

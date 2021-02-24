@@ -1,6 +1,6 @@
 load ../../../PDB/pdb4zhw.ent
 # predicted pocket number 0
-select predicted_pocket_0, chain A and resi 67+82+79+66+61+83+63+65
+select predicted_pocket_0, chain A and resi 61+67+66+83+79+65+82+63
 set_color predicted_pk_0, [ 0, 255, 255 ] 
 color predicted_pk_0 , predicted_pocket_0 
 show spheres, predicted_pocket_0 

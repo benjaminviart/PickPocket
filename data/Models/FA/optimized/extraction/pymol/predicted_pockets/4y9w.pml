@@ -1,20 +1,20 @@
 load ../../../PDB/pdb4y9w.ent
 # predicted pocket number 0
-select predicted_pocket_0, chain A and resi 156+153+14+158+9+157+155+305+159+160
+select predicted_pocket_0, chain A and resi 153+160+14+157+156+159+155+158+9+305
 set_color predicted_pk_0, [ 0, 255, 255 ] 
 color predicted_pk_0 , predicted_pocket_0 
 show spheres, predicted_pocket_0 
 set sphere_scale , 0.3 , predicted_pocket_0 
 set sphere_transparency , 0.1 , predicted_pocket_0 
 # predicted pocket number 1
-select predicted_pocket_1, ( chain A and resi 81+30+79+49+111+13+114+112+12+113 )  or  ( chain B and resi 401 ) 
+select predicted_pocket_1, ( chain A and resi 113+49+112+30+81+13+79+114+12+111 )  or  ( chain B and resi 401 ) 
 set_color predicted_pk_1, [ 0, 255, 255 ] 
 color predicted_pk_1 , predicted_pocket_1 
 show spheres, predicted_pocket_1 
 set sphere_scale , 0.3 , predicted_pocket_1 
 set sphere_transparency , 0.1 , predicted_pocket_1 
 # predicted pocket number 2
-select predicted_pocket_2, chain A and resi 56+27+17+26+54+55+28
+select predicted_pocket_2, chain A and resi 17+55+28+56+54+26+27
 set_color predicted_pk_2, [ 0, 255, 255 ] 
 color predicted_pk_2 , predicted_pocket_2 
 show spheres, predicted_pocket_2 

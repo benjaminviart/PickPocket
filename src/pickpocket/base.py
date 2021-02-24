@@ -92,6 +92,7 @@ class PickPocket():
         self._negative_pdbs=[False for _ in self.pdbs]
         self._optimization_pdbs=[False for _ in self.pdbs]
         self._positive_pocket_residues=[None for _ in self.pdbs]
+        self._positive_pocket_residues_other=[None for _ in self.pdbs]
         self.ligands={}
         self.redundancy = {}
         self.unlisted_ligands = {}
@@ -122,15 +123,22 @@ class PickPocket():
         res_list = Selection.unfold_entities(struct, "R")
         nohet = []
         het = []
+        het_other = []
         for res in res_list:
-            self._assign_residue(res, het, nohet)
-        if len(het)> 0:
+            self._assign_residue(res, het, het_other, nohet)
+        if len(het)> 0  and len(nohet) > 0:
             ns = NeighborSearch(nohet)
             pocket_l, pocket_atms = self._treat_het(het, ns)
         else:
             pocket_l, pocket_atms = [], []
-        self._struct_ligand_id[idx]=get_uids( het )
+        if len(het_other) > 0 and len(nohet) > 0:
+            ns = NeighborSearch(nohet)
+            pocket_l_other, pocket_atms_other = self._treat_het(het_other, ns)
+        else:
+            pocket_l_other, pocket_atms_other = [], []
+        self._struct_ligand_id[idx]=get_uids(het)
         self._positive_pocket_residues[idx]=pocket_l
+        self._positive_pocket_residues_other[idx]=pocket_l_other
         if len(pocket_l) == 0:
             self._negative_pdbs[idx]=True
         else:
@@ -138,9 +146,9 @@ class PickPocket():
             if self._pymol_dir != None:
                 self.write_pymol_pocket("{}/true_pockets/{}".format(self._pymol_dir, pdb_id), fname, self._struct_ligand_id[idx],self._positive_pocket_residues[idx])
             if self.optimization:
-                self._treat_for_opt(idx, pocket_atms, pocket_l, pdb_id)   
+                self._treat_for_opt(idx, pocket_atms, pocket_l, pdb_id)
                 
-    def _assign_residue(self, res, het, nohet):
+    def _assign_residue(self, res, het_targer, het_other, nohet):
         if res.id[0] == ' ':
             if res.id[2] == ' ': ## Ignore disorder
                 nohet.extend(Selection.unfold_entities(res, "A"))
@@ -148,11 +156,12 @@ class PickPocket():
             if "_" in res.id[0]:
                 l_id=res.id[0].split("_")[1].strip()
                 if l_id in self.ligand_codes:
-                    het.append(res)
+                    het_targer.append(res)
                     if not l_id in self.ligands:
                         self.ligands[l_id]=0 
                     self.ligands[l_id]+=1
                 else:
+                    het_other.append(res)
                     if not l_id in self.unlisted_ligands:
                         self.unlisted_ligands[l_id]=0
                     self.unlisted_ligands[l_id]+=1
@@ -311,6 +320,7 @@ class PickPocket():
                     for pocket in fpr.pockets:
                         stride_stats= self.stride_results[idx].get_residues_stats(pocket.get_residues_ids())
                         atm_stats = pocket.get_atm_stats()
+                        residues_stats=pocket.get_residues_stats()
                         line="{}\t{}\t{}".format(fpr.pdb_id, pocket.pocket_number, pocket.get_position() )
                         if self._positive_pdbs[idx]:
                             perc_res, perc_lig = get_best_pocket_coverage(pocket.get_residues_ids(), self._positive_pocket_residues[idx])
@@ -320,12 +330,18 @@ class PickPocket():
                                 positive_found[fpr.pdb_id]+=1
                             line+="\t{:.2f}\t{:.2f}".format(perc_res, perc_lig)
                         else:
-                            line+="\t0\t0"
+                            perc_res, perc_lig = get_best_pocket_coverage(pocket.get_residues_ids(), self._positive_pocket_residues_other[idx])
+                            if perc_res > 0:
+                                line+="\t{:.2f}\t{:.2f}".format(-perc_res, -perc_lig)
+                            else:
+                                line+="\t0\t0"
                         for info in pocket.info:
                             line+="\t{}".format(info)
                         for ss in stride_one_letter_ss:
                             line+="\t{:.3}".format(stride_stats[ss])
-                        for atm in pickpocket_header[32:]:
+                        for k in pickpocket_header[32:37]:
+                            line+="\t{:.3}".format(residues_stats[k])
+                        for atm in pickpocket_header[37:]:
                             line+="\t{:.3}".format(atm_stats[atm])
                         ofs.write(line+"\n")
         s1=set(positive_found.keys())

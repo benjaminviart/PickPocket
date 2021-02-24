@@ -14,126 +14,126 @@ show spheres, ligand_1
 set sphere_scale , 1 , ligand_1 
 set sphere_transparency , 0.1 , ligand_1 
 # true pocket number 0
-select true_pocket_0, chain A and resi 5+17+21+6+44+27+2+7+9+29
+select true_pocket_0, chain A and resi 5+7+21+27+44+2+6+29+9+17
 set_color true_pk_0, [ 0, 0, 255 ] 
 color true_pk_0 , true_pocket_0 
 show spheres, true_pocket_0 
 set sphere_scale , 0.3 , true_pocket_0 
 set sphere_transparency , 0.1 , true_pocket_0 
 # true pocket number 1
-select true_pocket_1, chain B and resi 22+48+7+21+9+5+17+44+28+47+18+27+6+29
+select true_pocket_1, chain B and resi 29+17+27+22+48+6+18+7+44+28+9+5+21+47
 set_color true_pk_1, [ 0, 0, 255 ] 
 color true_pk_1 , true_pocket_1 
 show spheres, true_pocket_1 
 set sphere_scale , 0.3 , true_pocket_1 
 set sphere_transparency , 0.1 , true_pocket_1 
 # predicted pocket number 0
-select predicted_pocket_0, chain B and resi 26+110+109+112+28+118+27+117+22+48+32+115+24+33+31+34+111+25+30+116+23+29
+select predicted_pocket_0, chain B and resi 23+29+24+27+22+32+112+25+111+115+48+28+26+109+31+33+117+110+118+30+34+116
 set_color predicted_pk_0, [ 0, 255, 255 ] 
 color predicted_pk_0 , predicted_pocket_0 
 show spheres, predicted_pocket_0 
 set sphere_scale , 0.3 , predicted_pocket_0 
 set sphere_transparency , 0.1 , predicted_pocket_0 
 # predicted pocket number 1
-select predicted_pocket_1, chain B and resi 22+60+21+9+17+30+5+2+18+6+29
+select predicted_pocket_1, chain B and resi 2+29+22+6+60+18+9+5+30+21+17
 set_color predicted_pk_1, [ 0, 255, 255 ] 
 color predicted_pk_1 , predicted_pocket_1 
 show spheres, predicted_pocket_1 
 set sphere_scale , 0.3 , predicted_pocket_1 
 set sphere_transparency , 0.1 , predicted_pocket_1 
 # predicted pocket number 2
-select predicted_pocket_2, ( chain B and resi 14+7+11+10+68 )  or  ( chain A and resi 11+14+10+7+68 ) 
+select predicted_pocket_2, ( chain B and resi 10+7+11+68+14 )  or  ( chain A and resi 11+68+10+14+7 ) 
 set_color predicted_pk_2, [ 0, 255, 255 ] 
 color predicted_pk_2 , predicted_pocket_2 
 show spheres, predicted_pocket_2 
 set sphere_scale , 0.3 , predicted_pocket_2 
 set sphere_transparency , 0.1 , predicted_pocket_2 
 # predicted pocket number 3
-select predicted_pocket_3, chain A and resi 43+50+92+39+88+46+42+91+47+87+99+95
+select predicted_pocket_3, chain A and resi 91+39+46+50+47+92+95+88+43+87+99+42
 set_color predicted_pk_3, [ 0, 255, 255 ] 
 color predicted_pk_3 , predicted_pocket_3 
 show spheres, predicted_pocket_3 
 set sphere_scale , 0.3 , predicted_pocket_3 
 set sphere_transparency , 0.1 , predicted_pocket_3 
 # predicted pocket number 4
-select predicted_pocket_4, ( chain B and resi 97+98+13+101+100+15+12 )  or  ( chain A and resi 71+70+69+68 ) 
+select predicted_pocket_4, ( chain A and resi 69+68+70+71 )  or  ( chain B and resi 97+13+15+12+100+98+101 ) 
 set_color predicted_pk_4, [ 0, 255, 255 ] 
 color predicted_pk_4 , predicted_pocket_4 
 show spheres, predicted_pocket_4 
 set sphere_scale , 0.3 , predicted_pocket_4 
 set sphere_transparency , 0.1 , predicted_pocket_4 
 # predicted pocket number 5
-select predicted_pocket_5, chain B and resi 91+43+87+46+92+95+47+88+50
+select predicted_pocket_5, chain B and resi 87+50+46+43+92+88+95+91+47
 set_color predicted_pk_5, [ 0, 255, 255 ] 
 color predicted_pk_5 , predicted_pocket_5 
 show spheres, predicted_pocket_5 
 set sphere_scale , 0.3 , predicted_pocket_5 
 set sphere_transparency , 0.1 , predicted_pocket_5 
 # predicted pocket number 6
-select predicted_pocket_6, chain A and resi 21+5+48+92+30+44+2+27+47+96+9+29+51
+select predicted_pocket_6, chain A and resi 5+21+30+51+27+96+47+44+92+2+29+9+48
 set_color predicted_pk_6, [ 0, 255, 255 ] 
 color predicted_pk_6 , predicted_pocket_6 
 show spheres, predicted_pocket_6 
 set sphere_scale , 0.3 , predicted_pocket_6 
 set sphere_transparency , 0.1 , predicted_pocket_6 
 # predicted pocket number 7
-select predicted_pocket_7, chain A and resi 5+17+6+22+30+2+18+9+21+29
+select predicted_pocket_7, chain A and resi 5+21+30+2+18+22+6+29+9+17
 set_color predicted_pk_7, [ 0, 255, 255 ] 
 color predicted_pk_7 , predicted_pocket_7 
 show spheres, predicted_pocket_7 
 set sphere_scale , 0.3 , predicted_pocket_7 
 set sphere_transparency , 0.1 , predicted_pocket_7 
 # predicted pocket number 8
-select predicted_pocket_8, chain B and resi 33+59+48+52+32+51+30+60
+select predicted_pocket_8, chain B and resi 30+51+32+33+48+60+59+52
 set_color predicted_pk_8, [ 0, 255, 255 ] 
 color predicted_pk_8 , predicted_pocket_8 
 show spheres, predicted_pocket_8 
 set sphere_scale , 0.3 , predicted_pocket_8 
 set sphere_transparency , 0.1 , predicted_pocket_8 
 # predicted pocket number 9
-select predicted_pocket_9, chain B and resi 48+9+21+92+96+44+28+47+5+27+29
+select predicted_pocket_9, chain B and resi 96+21+29+92+27+48+9+28+5+44+47
 set_color predicted_pk_9, [ 0, 255, 255 ] 
 color predicted_pk_9 , predicted_pocket_9 
 show spheres, predicted_pocket_9 
 set sphere_scale , 0.3 , predicted_pocket_9 
 set sphere_transparency , 0.1 , predicted_pocket_9 
 # predicted pocket number 10
-select predicted_pocket_10, ( chain B and resi 67+70+69+68 )  or  ( chain A and resi 15+100+101+97+98 ) 
+select predicted_pocket_10, ( chain B and resi 70+69+68+67 )  or  ( chain A and resi 98+15+97+100+101 ) 
 set_color predicted_pk_10, [ 0, 255, 255 ] 
 color predicted_pk_10 , predicted_pocket_10 
 show spheres, predicted_pocket_10 
 set sphere_scale , 0.3 , predicted_pocket_10 
 set sphere_transparency , 0.1 , predicted_pocket_10 
 # predicted pocket number 11
-select predicted_pocket_11, chain A and resi 1+2+60+61+3+63
+select predicted_pocket_11, chain A and resi 63+60+61+2+3+1
 set_color predicted_pk_11, [ 0, 255, 255 ] 
 color predicted_pk_11 , predicted_pocket_11 
 show spheres, predicted_pocket_11 
 set sphere_scale , 0.3 , predicted_pocket_11 
 set sphere_transparency , 0.1 , predicted_pocket_11 
 # predicted pocket number 12
-select predicted_pocket_12, chain B and resi 114+110+107+37+106
+select predicted_pocket_12, chain B and resi 37+114+106+110+107
 set_color predicted_pk_12, [ 0, 255, 255 ] 
 color predicted_pk_12 , predicted_pocket_12 
 show spheres, predicted_pocket_12 
 set sphere_scale , 0.3 , predicted_pocket_12 
 set sphere_transparency , 0.1 , predicted_pocket_12 
 # predicted pocket number 13
-select predicted_pocket_13, chain A and resi 20+15+103+108+100+105+21
+select predicted_pocket_13, chain A and resi 103+21+20+15+100+105+108
 set_color predicted_pk_13, [ 0, 255, 255 ] 
 color predicted_pk_13 , predicted_pocket_13 
 show spheres, predicted_pocket_13 
 set sphere_scale , 0.3 , predicted_pocket_13 
 set sphere_transparency , 0.1 , predicted_pocket_13 
 # predicted pocket number 14
-select predicted_pocket_14, chain A and resi 17+6+16+2+18+10+7+3
+select predicted_pocket_14, chain A and resi 10+18+2+16+3+6+7+17
 set_color predicted_pk_14, [ 0, 255, 255 ] 
 color predicted_pk_14 , predicted_pocket_14 
 show spheres, predicted_pocket_14 
 set sphere_scale , 0.3 , predicted_pocket_14 
 set sphere_transparency , 0.1 , predicted_pocket_14 
 # predicted pocket number 15
-select predicted_pocket_15, chain B and resi 34+42+45+119+35+36+118+116+117
+select predicted_pocket_15, chain B and resi 118+36+119+117+42+34+35+116+45
 set_color predicted_pk_15, [ 0, 255, 255 ] 
 color predicted_pk_15 , predicted_pocket_15 
 show spheres, predicted_pocket_15 

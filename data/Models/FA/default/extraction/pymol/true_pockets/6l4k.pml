@@ -84,84 +84,84 @@ show spheres, ligand_11
 set sphere_scale , 1 , ligand_11 
 set sphere_transparency , 0.1 , ligand_11 
 # true pocket number 0
-select true_pocket_0, chain A and resi 182+138+117+158+135+161+139
+select true_pocket_0, chain A and resi 158+135+139+161+117+138+182
 set_color true_pk_0, [ 0, 0, 255 ] 
 color true_pk_0 , true_pocket_0 
 show spheres, true_pocket_0 
 set sphere_scale , 0.3 , true_pocket_0 
 set sphere_transparency , 0.1 , true_pocket_0 
 # true pocket number 1
-select true_pocket_1, chain A and resi 258+23+251+287+46+284+10+152+254+69+150+257
+select true_pocket_1, chain A and resi 254+69+251+23+46+152+150+257+287+284+258+10
 set_color true_pk_1, [ 0, 0, 255 ] 
 color true_pk_1 , true_pocket_1 
 show spheres, true_pocket_1 
 set sphere_scale , 0.3 , true_pocket_1 
 set sphere_transparency , 0.1 , true_pocket_1 
 # true pocket number 2
-select true_pocket_2, chain A and resi 453+485+344+391+387+342+348+450+446+433+430
+select true_pocket_2, chain A and resi 348+446+387+344+342+485+391+430+453+433+450
 set_color true_pk_2, [ 0, 0, 255 ] 
 color true_pk_2 , true_pocket_2 
 show spheres, true_pocket_2 
 set sphere_scale , 0.3 , true_pocket_2 
 set sphere_transparency , 0.1 , true_pocket_2 
 # true pocket number 3
-select true_pocket_3, chain A and resi 411+457+488+460+473+387+489+464+418
+select true_pocket_3, chain A and resi 387+418+473+464+460+488+489+457+411
 set_color true_pk_3, [ 0, 0, 255 ] 
 color true_pk_3 , true_pocket_3 
 show spheres, true_pocket_3 
 set sphere_scale , 0.3 , true_pocket_3 
 set sphere_transparency , 0.1 , true_pocket_3 
 # true pocket number 4
-select true_pocket_4, chain A and resi 580+535+532+401+502+528+552+579+548+547+551+507+525
+select true_pocket_4, chain A and resi 547+579+548+552+502+532+507+525+551+580+528+535+401
 set_color true_pk_4, [ 0, 0, 255 ] 
 color true_pk_4 , true_pocket_4 
 show spheres, true_pocket_4 
 set sphere_scale , 0.3 , true_pocket_4 
 set sphere_transparency , 0.1 , true_pocket_4 
 # true pocket number 5
-select true_pocket_5, chain A and resi 216+213+354+210+324+228+350+209+327+232
+select true_pocket_5, chain A and resi 350+327+324+354+209+232+216+228+213+210
 set_color true_pk_5, [ 0, 0, 255 ] 
 color true_pk_5 , true_pocket_5 
 show spheres, true_pocket_5 
 set sphere_scale , 0.3 , true_pocket_5 
 set sphere_transparency , 0.1 , true_pocket_5 
 # true pocket number 6
-select true_pocket_6, chain I and resi 158+117+138+135+161
+select true_pocket_6, chain I and resi 138+135+117+161+158
 set_color true_pk_6, [ 0, 0, 255 ] 
 color true_pk_6 , true_pocket_6 
 show spheres, true_pocket_6 
 set sphere_scale , 0.3 , true_pocket_6 
 set sphere_transparency , 0.1 , true_pocket_6 
 # true pocket number 7
-select true_pocket_7, chain I and resi 257+284+23+10+283+258+66+287+70+46+250+152+150+254+69+251
+select true_pocket_7, chain I and resi 254+258+23+250+69+10+66+150+284+257+251+152+287+46+283+70
 set_color true_pk_7, [ 0, 0, 255 ] 
 color true_pk_7 , true_pocket_7 
 show spheres, true_pocket_7 
 set sphere_scale , 0.3 , true_pocket_7 
 set sphere_transparency , 0.1 , true_pocket_7 
 # true pocket number 8
-select true_pocket_8, chain I and resi 342+387+430+403+438+344+434+348+388+485+453+433+446
+select true_pocket_8, chain I and resi 403+433+430+438+453+434+344+387+446+342+485+388+348
 set_color true_pk_8, [ 0, 0, 255 ] 
 color true_pk_8 , true_pocket_8 
 show spheres, true_pocket_8 
 set sphere_scale , 0.3 , true_pocket_8 
 set sphere_transparency , 0.1 , true_pocket_8 
 # true pocket number 9
-select true_pocket_9, chain I and resi 488+387+464+411+457+418+489+422+460
+select true_pocket_9, chain I and resi 460+488+457+411+464+387+418+422+489
 set_color true_pk_9, [ 0, 0, 255 ] 
 color true_pk_9 , true_pocket_9 
 show spheres, true_pocket_9 
 set sphere_scale , 0.3 , true_pocket_9 
 set sphere_transparency , 0.1 , true_pocket_9 
 # true pocket number 10
-select true_pocket_10, chain I and resi 401+580+552+579+535+548+507+525+528+576+551
+select true_pocket_10, chain I and resi 548+525+535+580+507+528+579+552+551+401+576
 set_color true_pk_10, [ 0, 0, 255 ] 
 color true_pk_10 , true_pocket_10 
 show spheres, true_pocket_10 
 set sphere_scale , 0.3 , true_pocket_10 
 set sphere_transparency , 0.1 , true_pocket_10 
 # true pocket number 11
-select true_pocket_11, chain I and resi 209+327+354+350+216+232+351+210+324
+select true_pocket_11, chain I and resi 324+210+351+354+350+216+209+327+232
 set_color true_pk_11, [ 0, 0, 255 ] 
 color true_pk_11 , true_pocket_11 
 show spheres, true_pocket_11 
