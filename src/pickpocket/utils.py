@@ -507,8 +507,8 @@ def PDBKFold(ids, Y, fold=5, seed=None):
     n_neg = len(neg_pdb_ids)
     random_indices_pos = np.random.permutation(np.arange(n_pos))
     random_indices_neg = np.random.permutation(np.arange(n_neg))
-    n_pos_test = round(n_pos / fold)
-    n_neg_test = round(n_neg / fold)
+    n_pos_test = np.ceil(n_pos / fold)
+    n_neg_test = np.ceil(n_neg / fold)
     out = [([], []) for _ in range(fold)]
     # # array with (train, test)
     if n_pos_test == 0:

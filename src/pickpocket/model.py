@@ -102,6 +102,7 @@ def training_process(file_name, model, labels, out_prefix, cv, f1_thr, f2_thr, c
     X= pca.fit_transform(X)
     indexes=PDBKFold(ids, Y, cv, seed=123)
     print("\nFor cross validation, splited in {} partitions:\n{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}".format(cv, "Group", "train-" , "train+", "test-", "test+", "tot-", "tot+", "tot", "tot train", "tot test"))
+    tot_test=0
     for gn, grp in enumerate(indexes):
         n_test, n_train=[0,0], [0,0]
         for i in grp[0]:
@@ -109,10 +110,9 @@ def training_process(file_name, model, labels, out_prefix, cv, f1_thr, f2_thr, c
         for i in grp[1]:
             n_test[Y[i]]+=1
         print("{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}\t{:^10}".format(gn,n_train[0], n_train[1], n_test[0], n_test[1], n_train[0]+ n_test[0], n_train[1]+ n_test[1], sum(n_train)+ sum(n_test), n_train[0]+n_train[1], n_test[0]+n_test[1] ))
+        tot_test+=len(grp[1])
     print("\n\n")
-    n_pos=sum(Y)
-    n_neg=len(Y)-n_pos
-    class_weight={0:len(Y)/n_neg,1: len(Y)/n_pos }
+    class_weight={0:len(Y)/groupcount[0],1: len(Y)/groupcount[1] }
     print(class_weight)
     if (model == "mlp"):
         print("Neural network - MultiLayer Perceptron Classifier")
