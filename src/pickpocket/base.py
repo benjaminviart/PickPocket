@@ -465,8 +465,11 @@ class PickPocket():
         self._negative_pdbs=[False for _ in self.pdbs]
         self._optimization_pdbs=[False for _ in self.pdbs]
     
-    def _get_pymol_pockets(self, pockets, prefix, color):
+    def _get_pymol_pockets(self, pockets, prefix, color=None):
         out=""
+        if color == None:
+            state=np.random.get_state()
+            np.random.seed(123)
         for idx , res in enumerate(pockets):
             out+="# {} pocket number {}\n".format(prefix, idx)
             residues = {}
@@ -477,38 +480,44 @@ class PickPocket():
                 residues[tmp[0]].append(tmp[1])
             if len(residues.keys()) == 1:
                 k=list(residues.keys())[0]
-                out+="select {}_pocket_{}, chain {} and resi {}\n".format(prefix, idx, k, "+".join(residues[k]))
+                out+="select {}_p_{}, chain {} and resi {}\n".format(prefix, idx, k, "+".join(residues[k]))
             else:
-                line = "select {}_pocket_{},".format(prefix, idx)
+                line = "select {}_p_{},".format(prefix, idx)
                 for i, k in enumerate(list(residues.keys())):
                     if i > 0:
                         line+=" or "
                     line+=" ( chain {} and resi {} ) ".format(k, "+".join(residues[k]))
                 out+=line+"\n"
-            out+="set_color {}_pk_{}, [ {}, {}, {} ] \n".format(prefix,idx,color[0], color[1], color[2])
-            out+="color {}_pk_{} , {}_pocket_{} \n".format(prefix,idx, prefix,idx)
-            out+="show spheres, {}_pocket_{} \n".format(prefix,idx)
-            out+="set sphere_scale , 0.3 , {}_pocket_{} \n".format(prefix,idx)
-            out+="set sphere_transparency , 0.1 , {}_pocket_{} \n".format(prefix, idx)
+            if color == None:
+                col=[np.random.randint(0,255),np.random.randint(0,255),np.random.randint(0,255) ]
+                out+="set_color {}_pk_{}, [ {}, {}, {} ] \n".format(prefix,idx,col[0], col[1], col[2])
+            else:
+                out+="set_color {}_pk_{}, [ {}, {}, {} ] \n".format(prefix,idx,color[0], color[1], color[2])
+            out+="color {}_pk_{} , {}_p_{} \n".format(prefix,idx, prefix,idx)
+            out+="show spheres, {}_p_{} \n".format(prefix,idx)
+            out+="set sphere_scale , 0.3 , {}_p_{} \n".format(prefix,idx)
+            out+="set sphere_transparency , 0.1 , {}_p_{} \n".format(prefix, idx)
+        if color == None:
+            np.random.set_state(state)
         return out
     
     def write_pymol_pocket(self, out_file, structure_file, ligands, true_pockets, predicted_pockets=None ):
         with open(out_file+".pml", "w") as f:
-            f.write("load {}\n".format(os.path.relpath(structure_file, start=os.path.dirname(out_file))))
+            f.write("load {}\nbg_color white\n".format(os.path.relpath(structure_file, start=os.path.dirname(out_file))))
             if ligands != None and len(ligands) > 0:
                 for idx, lig in enumerate(ligands):
                     f.write("# ligand_{}\n".format(idx))
                     chain_num = lig.split("_")
-                    f.write("select ligand_{}, chain {} and resi {} \n".format(idx, chain_num[0], chain_num[1]))
+                    f.write("select lig_{}, chain {} and resi {} \n".format(idx, chain_num[0], chain_num[1]))
                     f.write("set_color lg_{}, [ {}, {}, {} ] \n".format(idx, 255 , 0 , 0))
-                    f.write("color lg_{} , ligand_{} \n".format(idx, idx))
-                    f.write("show spheres, ligand_{} \n".format(idx))
-                    f.write("set sphere_scale , 1 , ligand_{} \n".format(idx))
-                    f.write("set sphere_transparency , 0.1 , ligand_{} \n".format(idx))
-            f.write(self._get_pymol_pockets(true_pockets, "true", [0,0,255]))
+                    f.write("color lg_{} , lig_{} \n".format(idx, idx))
+                    f.write("show spheres, lig_{} \n".format(idx))
+                    f.write("set sphere_scale , 1 , lig_{} \n".format(idx))
+                    f.write("set sphere_transparency , 0.1 , lig_{} \n".format(idx))
+            f.write(self._get_pymol_pockets(true_pockets, "T", [0,0,255]))
             if predicted_pockets != None:
-                f.write(self._get_pymol_pockets(predicted_pockets, "predicted", [0,255,255]))
-                f.write("select TP, true_pocket* and predicted_pocket*\ncolor green, TP\n")
+                f.write(self._get_pymol_pockets(predicted_pockets, "P"))
+                f.write("select TP, T_p* and P_p*\n")
         with open(out_file+".sh", "w") as f:
             f.write("#!/bin/bash\ncd {}\npymol {}\n".format("${BASH_SOURCE%/*}", os.path.relpath(out_file+".pml", start=os.path.dirname(out_file))))
         st = os.stat(out_file+".sh")
