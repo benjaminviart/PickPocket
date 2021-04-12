@@ -25,6 +25,7 @@ def read_pockets(fname):
 
 def compare(biolip_file, extract_folder,   out_file):
     ligands=[]
+    intersection_thr=4
     ligand_file="{}/info/ligands.ls".format(extract_folder)
     print("Reading ligand file...", end="")
     with open(ligand_file, "r") as f:
@@ -70,15 +71,22 @@ def compare(biolip_file, extract_folder,   out_file):
     
     stats={}
     print("Computing stats...")
-    for pdb in pdbs:
+    positives=[]
+    for pn, pdb in enumerate(pdbs):
         if pdb in biolip:
             bl = set(biolip[pdb])
             be = set(best_pockets[pdb][0])
             pos_pocket=[[],[]]
-            for pocket in pred_pockets[pdb]:
-                if len(set(pocket).intersection(bl)) > 1:
-                  pos_pocket[0].append(len(set(pocket).intersection(bl)) / len(pocket))
-                  pos_pocket[1].append(len(bl.intersection(set(pocket)))/ len(bl))  
+            n_pos=0
+            thr_mod=0
+            while n_pos == 0 and thr_mod != intersection_thr:
+                for n, pocket in enumerate(pred_pockets[pdb]):
+                    if len(set(pocket).intersection(bl)) >= (intersection_thr-thr_mod) :
+                        n_pos+=1
+                        positives.append("{}_{}".format(pdb, n))
+                        pos_pocket[0].append(len(set(pocket).intersection(bl)) / len(pocket))
+                        pos_pocket[1].append(len(bl.intersection(set(pocket)))/ len(bl))
+                thr_mod+=1
             stats[pdb]={ 
             "common_best" : len(bl.intersection(be)),
             "tot_biolip" : len(bl),
@@ -116,7 +124,7 @@ def compare(biolip_file, extract_folder,   out_file):
             for pn, pocket in enumerate(pred_pockets[pdb]): 
                 olabel="0"
                 if pdb in biolip:
-                    if len(set(pocket).intersection(biolip[pdb])) > 1:
+                    if "{}_{}".format(pdb, pn) in positives:
                         olabel="1"
                     else:
                         olabel="0"

@@ -8,6 +8,7 @@ setup(
         'Pick ligand specific pockets'
     ),
     author='Benjamin Viart and Claudio Lorenzi',
+    author_email='claudio.lorenzi@gmail.com',
     entry_points={
         'console_scripts': [
             'pickPocket = src.pickPocket:main',
