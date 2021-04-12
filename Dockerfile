@@ -32,10 +32,10 @@ RUN wget https://netix.dl.sourceforge.net/project/fpocket/fpocket2.tar.gz && \
 RUN mkdir /stride  && cd /stride && wget http://webclu.bio.wzw.tum.de/stride/stride.tar.gz && \
 	 tar -zxf stride.tar.gz && make && mv ./stride /usr/bin/
 
-COPY ./src /PickPocket/src
+COPY ./pickpocket /PickPocket/pickpocket
 COPY ./data /PickPocket/data
 
-RUN ln -s /PickPocket/src/pickPocket.py /usr/bin/pickPocket
+RUN ln -s /PickPocket/pickpocket/pickPocket.py /usr/bin/pickPocket
 	
 	
  

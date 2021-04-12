@@ -1,9 +1,15 @@
+
+
 # PickPocket Program - finding out the correct pocket for YOU ! 
 
 
-# Algorithm – Installation instructions
-
-The software is embedded in a Docker image, that can be used with Docker and Singularity. 
+# Installation instructions
+Pickpocket is available in pip using
+```
+pip install pickpocket
+```
+And requires [fpocket2](#fpocket2) and [stride](#stride)
+The software is also embedded in a Docker image, that can be used with Docker and Singularity. 
 We strongly recommend to [use Singularity](#singularity) to run your analysis in a safe and reproducible environment.
 In case you have root access and are confident with it, [Docker usage](#docker) is also recomended. 
 Finally, if you want to implement the code or just you don't like images, you can [install it](#local). 
@@ -76,18 +82,10 @@ python
 The whole dependencies for a debian distribution can be installed using the following commands
 
 ``` bash
-
-sudo apt-get install -y python3-pip \
-    python3 \
-    python3-pandas \
-    python3-sklearn \
-    python3-numpy \
-    r-base r-base-core \
-    make build-essential gcc gawk 
-
-pip3 install pdb-tools
+pip install pickpocket
 
 ```
+### <a name="fpocket2"></a> install fpocket2
 Then install [fpocket2](https://sourceforge.net/projects/fpocket/)
 
 ``` bash 
@@ -103,13 +101,11 @@ cd ..
 rm -fr ./fpocket2/ 
 
 ```
+### <a name="stride"></a> install stride
 
-
-### Clone the repository 
-Clone the repository wherever you want and use the two main scripts ( pickPocket.sh and neuralNetwork.sh )
-
- ``` bash
- 
- git clone https://github.com/benjaminviart/PickPocket.git
- 
- ```
+```bash
+wget http://webclu.bio.wzw.tum.de/stride/stride.tar.gz
+tar -zxf stride.tar.gz 
+make 
+mv ./stride /usr/bin/
+```
